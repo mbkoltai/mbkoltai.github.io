@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pdf
 title: About me
 permalink: /about/
 ---
