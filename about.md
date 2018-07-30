@@ -11,4 +11,4 @@ permalink: /about/
 
 ### Contact me
 
-Current institutional email.
+Write to current institutional [email](mailto:mihaly.koltai@curie.fr).
