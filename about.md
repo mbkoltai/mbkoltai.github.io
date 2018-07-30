@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
@@ -8,6 +8,8 @@ permalink: /about/
 
 CV.
 
+<object data="{{ images/CV.pdf }}" width="1000" height="1000" type='application/pdf'/>
+
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+See mail below.
