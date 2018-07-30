@@ -8,7 +8,7 @@ permalink: /about/
 
 [Download CV](images/CV.pdf)
 
-<iframe src="https://drive.google.com/file/d/1qcSqpnGdNKNBlfVs2LcCyrGXgXQhIBWO/preview" width="100%" height=”800em”></iframe>
+<iframe src="https://drive.google.com/file/d/1qcSqpnGdNKNBlfVs2LcCyrGXgXQhIBWO/preview" width="100%" height="100%"></iframe>
 
 ### Contact me
 
