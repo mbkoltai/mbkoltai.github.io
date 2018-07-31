@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Research interests
 
-Since 2010 I have been working on the quantitative analysis of biomolecular systems, specifically cellular signaling networks, in a field often referred to as 'systems biology'. In practice this means building mathematical models capable of making experimentally testable predictions.
+Since 2010 I have been working on the quantitative analysis of biomolecular systems, specifically cellular signaling networks, in a field often referred to as 'systems biology'. In practice this means building mathematical models to gain mechanistic understanding of biomolecular systems and to formulate experimentally testable predictions about them.
 
 I am a postdoctoral fellow in the [Computational Systems Biology of Cancer](https://sysbio.curie.fr) group at the [Institut Curie](https://institut-curie.org) (Paris), a major cancer research center in France. The group uses mathematical models, advanced data analysis and data visualization to provide a quantitative framework to understand cancer.
 
