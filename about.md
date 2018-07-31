@@ -1,10 +1,10 @@
 ---
 layout: page
-title:
+title: About me
 permalink: /about/
 ---
 
-### Research interest
+### Research interests
 
 Since 2010 I have been working on the quantitative analysis of biomolecular systems, specifically cellular signaling networks, in a field often referred to as 'systems biology'. In practice this means building mathematical models capable of making experimentally testable predictions.
 
