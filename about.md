@@ -1,8 +1,10 @@
 ---
 layout: page
-title: About me
+title:
 permalink: /about/
 ---
+
+### Research interest
 
 I am currently a postdoctoral fellow in the [Computational Systems Biology of Cancer](https://sysbio.curie.fr) group at the [Institut Curie](https://institut-curie.org) (Paris), a major cancer research center in France. The group uses mathematical models, advanced data analysis and data visualization to provide a quantitative framework to understand cancer.
 
