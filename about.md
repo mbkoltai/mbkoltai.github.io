@@ -21,6 +21,6 @@ I am currently uploading some of my work to this site and plan to shortly launch
 
 ### Contact
 
-Institut Curie
-26 Rue d'Ulm, 75005 Paris, France
+Institut Curie<br>
+26 Rue d'Ulm, 75005 Paris, France<br>
 Email: mihaly(dot)koltai(at)curie(dot)fr
