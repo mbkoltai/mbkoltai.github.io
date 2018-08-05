@@ -15,7 +15,7 @@ D Fazekas\*, _M Koltai_\*, D Türei\* et al
 S Bubendorfer\*, _M Koltai_\*, F Rossmann, V Sourjik, KM Thormann  
 *Proceedings of the National Academy of Sciences* 111 (31), 11485-11490	(2014)
 
-**[Sensory input attenuation allows predictive sexual response in yeast](https://www.ncbi.nlm.nih.gov/pubmed/27557894)**
+**[Sensory input attenuation allows predictive sexual response in yeast](https://www.ncbi.nlm.nih.gov/pubmed/27557894)**  
 A Banderas\*, _M Koltai_\*, A Anders, V Sourjik  
 *Nature communications* 7, 12590 (2016)
 
