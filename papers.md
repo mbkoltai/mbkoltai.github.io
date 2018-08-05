@@ -24,12 +24,12 @@ A Banderas\*, _M Koltai_\*, A Anders, V Sourjik
 ## Talks at conferences
 
 **Using perturbation data for ensemble modeling to infer vulnerabilities in colon cancer cells**  
+[*Mathematical Perspectives in the Biology and Therapeutics of Cancer*](https://conferences.cirm-math.fr/1752.html)  
 12/07/2018, Marseille, France  
-[*Mathematical Perspectives in the Biology and Therapeutics of Cancer*](https://conferences.cirm-math.fr/1752.html)
 
 **A data-driven logical model of colon cancer for biomarker and drug discovery**  
-19/07/2018, Visegrád, Hungary  
-*Interdisciplinary Signalling Workshop*
+*Interdisciplinary Signalling Workshop*  
+19/07/2018, Visegrád, Hungary
 
 ## PhD dissertation
 
