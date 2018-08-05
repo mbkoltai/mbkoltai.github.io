@@ -1,5 +1,5 @@
 ---
 layout: post
-title: home
+title: post
 date: 2018-08-06
 ---
