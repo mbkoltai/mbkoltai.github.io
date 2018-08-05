@@ -6,7 +6,7 @@ permalink: /papers/
 
 ## Peer-reviewed articles
 
-#### [SignaLink 2 – a signaling pathway resource with multi-layered regulatory networks](https://www.ncbi.nlm.nih.gov/pubmed/23331499)
+**[SignaLink 2 – a signaling pathway resource with multi-layered regulatory networks](https://www.ncbi.nlm.nih.gov/pubmed/23331499)**
 D Fazekas\*, _M Koltai_\*, D Türei\* et al  
 *BMC Systems Biology* 7 (1), 7 (2013)  
 [Website](http://signalink.org)
