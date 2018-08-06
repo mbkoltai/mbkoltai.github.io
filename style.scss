@@ -192,9 +192,10 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  float: left;
+  color: $navy;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $calibri;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -213,7 +214,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $calibri;
   font-size: 18px;
 
   @include mobile {
