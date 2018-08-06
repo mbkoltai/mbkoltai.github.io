@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
+	background: $lightGray;
   font: 19px/1.4 $calibri;
-  color: $darkGray;
+  color: $black;
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $calibri;
-  color: $darkerGray;
+  color: $blue;
   font-weight: bold;
 
   line-height: 1.7;
