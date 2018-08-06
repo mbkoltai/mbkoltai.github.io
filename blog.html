@@ -4,7 +4,9 @@ layout: default
 
 <div class="blog-index">  
 
-{% for post in site.posts %}
+  <ul style="list-style: none;">
+    
+    {% for post in site.posts %}
   {% assign currentdate = post.date | date: "%B %Y" %}
   {% if currentdate != date %}
     <li id="y{{currentdate}}">{{ currentdate }}
@@ -16,5 +18,9 @@ layout: default
   {% endif %}
     
 {% endfor %}
+
+    
+</ul>
+  
 
 </div>
