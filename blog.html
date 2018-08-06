@@ -3,9 +3,14 @@ layout: default
 ---
 
 <div class="blog-index">  
-{% for post in site.posts limit:5 %}  
-  <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>  
-{% endfor %}  
-  {% assign content = post.content %}
-  {% include post_detail.html %}
+<ul>
+{% for post in site.posts %}
+  {% assign currentdate = post.date | date: "%B %Y" %}
+  {% if currentdate != date %}
+    <li id="y{{currentdate}}">{{ currentdate }}</li>
+    {% assign date = currentdate %} 
+  {% endif %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
 </div>
