@@ -28,8 +28,8 @@ A Banderas\*, _M Koltai_\*, A Anders, V Sourjik
 12/07/2018, Marseille, France  
 
 **A data-driven logical model of colon cancer for biomarker and drug discovery**  
-*Interdisciplinary Signalling Workshop*  
-19/07/2018, Visegrád, Hungary
+[*Interdisciplinary Signalling Workshop*](http://www.earlham.ac.uk/2nd-interdisciplinary-signaling-workshop-isw)  
+19/07/2017, Visegrád, Hungary
 
 ## PhD dissertation
 
