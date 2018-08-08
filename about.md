@@ -10,7 +10,7 @@ Since 2010 I have been working on the quantitative analysis of biomolecular syst
 
 I am a postdoctoral fellow in the [Computational Systems Biology of Cancer](https://sysbio.curie.fr) group at the [Institut Curie](https://institut-curie.org) (Paris), a major cancer research center in France. The group uses mathematical models, advanced data analysis and data visualization to provide a quantitative framework to understand cancer.
 
-I am currently uploading some of my work to this site and plan to shortly launch a blog too, where I will review articles and topics that caught my interest. Besides systems biology and bioinformatics I also have a general interest in dynamical systems theory and its applications to other, for example economic, phenomena.
+I am currently uploading some of my work to this site and plan to shortly launch a blog too, where I will review articles and topics that caught my interest. Besides systems biology and bioinformatics I also have a general interest in dynamical systems theory and its applications to other (for example economic) phenomena.
 
 ### CV
 
