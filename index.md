@@ -3,6 +3,8 @@ title: Home
 layout: default
 ---
 
+### About this site
+My name is Mihály (Bence) Koltai and this is a website on both my professional work in systems biology and my other interests.
 
 ### Research interests
 
