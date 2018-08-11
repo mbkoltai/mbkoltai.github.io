@@ -1,27 +1,27 @@
 ---
 layout: page
-title: "Science blogging"
+# title: "Science blogging"
 description: "Science blogging"
 tags: science #list of tags that you want to show in description of blog
 ---
 
-<div class="blog-index">  
+<div class="blog-index">
 <p>Blog posts on scientific topics.</p>
-  
+
   <ul style="list-style: none;">
-    
+
     {% for post in site.posts %}
   {% assign currentdate = post.date | date: "%B %Y" %}
   {% if currentdate != date %}
     <li id="y{{currentdate}}">{{ currentdate }}
-  <ul> 
+  <ul>
   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   </ul>
   </li>
-    {% assign date = currentdate %} 
+    {% assign date = currentdate %}
   {% endif %}
-    
+
 {% endfor %}
-    
+
 </ul>
 </div>
