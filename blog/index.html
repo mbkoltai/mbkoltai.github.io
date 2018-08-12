@@ -7,29 +7,31 @@ tags: science #list of tags that you want to show in description of blog
 ---
 
 <div class="blog-index">
-      {% if post.secondary != null %}
-    {% else %}
+
 
 <p>Blog posts on scientific topics.</p>
 
 
-<ul style="list-style-type: none;">{%
-  assign p = '9999'
-%}{%  for post in site.posts
-%}{%    assign n = post.date | date: "%Y"
-%}{%    if n != p
-%}{%      assign p = n
-%}
-  <br /><h5>{{ n }}</h5>{%
-    endif %}
+<ul style="list-style-type: none;">
+      {%  assign p = '9999' %}
+      {%  for post in site.posts%}
+            {% if post.secondary != null %}
+    {% else %}
+      {% assign n = post.date | date: "%Y" %}
+      {% if n != p %}
+      {%      assign p = n%}
+            <br /><h5>{{ n }}</h5>
+      {% endif %}
   <li style="padding-bottom: 6px;"><code>[{{ post.date | date: "%d %b" }}]</code>&nbsp;
     <a href="{{ post.url }}" style="white-space: nowrap;"><b>{{ post.title }}</b></a>&nbsp;
-      {{ post.excerpt | strip_html | truncatewords: 12 }}</li>{%
-  endfor
-%}
+      {{ post.excerpt | strip_html | truncatewords: 12 }}
+      </li>
+      
+            {% endif %}
+
+      {% endfor %}
 </ul>
 
-      {% endif %}
 
 </div>
 
