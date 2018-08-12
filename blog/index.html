@@ -7,6 +7,9 @@ tags: science #list of tags that you want to show in description of blog
 ---
 
 <div class="blog-index">
+      {% if post.secondary != null %}
+    {% else %}
+
 <p>Blog posts on scientific topics.</p>
 
 
@@ -25,6 +28,8 @@ tags: science #list of tags that you want to show in description of blog
   endfor
 %}
 </ul>
+
+      {% endif %}
 
 </div>
 
