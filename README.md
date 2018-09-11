@@ -6,6 +6,8 @@
 
 **Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
 
+edit
+
 - You don't need to touch the command line
 - You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
 - You don't need to install runtime dependencies like markdown processors, Pygments, etc
