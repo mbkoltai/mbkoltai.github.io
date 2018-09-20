@@ -6,4 +6,4 @@ excerpt: The circuit of capital model as a macroeconomic model
 secondary: ecopol
 ---
 
-T
+The circuit of capital model is a model of economic reproduction and growth. 
