@@ -7,8 +7,7 @@ secondary: ecopol
 mathjax: true
 ---
 
-In his book [*'Marxian reproduction schema : money and aggregate demand in a capitalist economy.
-'*](http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663) Andrew Trigg mathematically formalizes models of the (simple and expanded) reproduction of total social capital coming from classical political economy, and how they connect to the 'Keynesian' idea of the multiplier effect of investment demand.
+In his book [*Marxian reproduction schema : money and aggregate demand in a capitalist economy*](http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663) Andrew Trigg mathematically formalizes models of the (simple and expanded) reproduction of total social capital coming from classical political economy, and how they connect to the 'Keynesian' idea of the multiplier effect of investment demand.
 Below I go step by step through his derivation, also discussing the meaning of the terms introduced along the way.
 
 The basic aim of this analysis is to connect the 'multiplier' relationship between investment and total income with a 2-sector (consumption goods and capital goods) model of economic reproduction, where all capital and labour is reproduced and the capital stock is potentially incremented.
