@@ -50,4 +50,13 @@ This means that you can set up a *mathjax* flag for those posts where you'll hav
 2) In the posts where you'll have equations insert the flag  
 **mathjax: true**
 
-3) You can now write equations between double \$ signs and a good resource for different formulae [is here](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+3) You can now write equations between double \$ signs such as
+
+$$
+    \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \begin{bmatrix} a_{11} & a_{12}\\ 0 & 0\\ \end{bmatrix}
+    \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} + \begin{bmatrix} 0\\ h_2\\ \end{bmatrix}
+    \begin{bmatrix} l_1 & l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
+    + \begin{bmatrix} da\\ dh + C_k \end{bmatrix}  
+$$
+
+A good resource for different formulae [is here](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
