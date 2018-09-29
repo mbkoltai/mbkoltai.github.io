@@ -14,7 +14,7 @@ The steps are then the following:
 1) If you want to use equations in your blog posts as I do, paste the following script into *post.html* that should be in your *layouts* folder
 
 ```
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script>
         MathJax.Hub.Config({
             config: ["MMLorHTML.js"],
