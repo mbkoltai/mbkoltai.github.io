@@ -28,7 +28,7 @@ $$
 
 Where *Y* is again net income (*Y=S+V*), *I* investment and *b* is the 'propensity to consume'. This last term was not very clear to me: does it mean the fraction of net income going to workers' consumption or all consumption? For the identity to work out it has to be  
 $$b = \frac{V+S-I}{V+S} = \frac{Y-I}{Y} = 1 - I/Y $$,  
-so *all* income spent on consumption, or in other words the share of wages + profit spent on consumption, assuming all wages are spent on consumption.
+so $$b$$ takes into account *all* income spent on consumption, or in other words the share of wages + profit spent on consumption, assuming all wages are spent on consumption.
 
 This is a mathematical identity, since $$ \frac{1}{1-(1 - I/Y)}I = Y $$. In other words, I don't see a causal relationship here, in fact I would say the causality to be explained runs the other way: the investment in *Period 2* is made possible by the realization of profits in *Period 1*. I would say it has to be shown that everything can be sold with a profit in *Period 1*, then some of this profit can be directed to new investment (and not to the consumption of owners who receive the profits) to increase the capital stock.
 Technically, we can say the 'multiplier' effect is 4-fold, 1/4 of the net income will be invested in the next period. However this is not a causal statement as far as I can see, but simply restating the fact that whatever fraction $$\frac{I}{Y}$$ is spent on investment out of total net income, the reciprocal ratio $$\frac{Y}{I}$$ will be - by definition - the reciprocal.
