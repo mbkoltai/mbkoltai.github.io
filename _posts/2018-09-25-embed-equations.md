@@ -43,6 +43,7 @@ The steps are then the following:
 **within the block**:  
 
 \{ % if page.mathjax % \}  
+\(code comes here\)  
 \{ % endif % \}
 
 This means that you can set up a *mathjax* flag for those posts where you'll have equations.  
