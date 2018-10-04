@@ -61,4 +61,4 @@ Y = \frac{b}{1-b}I + I = \frac{1}{1-b}I,
 $$  
 yielding the formula obtained from the one-sector model. In other words the 'multiplier relationship' (which as I said above seems to me more an identity than a causal relationship) can be derived in a two-sector model.
 
-The main problem with this description is that it takes no account of the role of constant capital (the capital stock embodied in machines etc), which has to be also reproduced in each cycle of production, and even expanded if there is accumulation. This is so although there is now a department producing capital goods. I want to address this problem in my next post, using the reproduction schemas and input-output analysis.
+The main problem with this description is that it takes no account of the role of constant capital (machines, materials etc whose value is 'transferred into' the gross output), which has to be also reproduced in each cycle of production, and even expanded if there is accumulation. This is so although there is now a department producing capital goods. I want to address this problem in my next post, using the reproduction schemas and input-output analysis.
