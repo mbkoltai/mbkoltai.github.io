@@ -178,7 +178,7 @@ $$
 \tag{9}\label{eq9}
 $$
 
-This is not very intuitive, but if we realize that $$a_{11}X_1 = X_{11} = C_1$$ and $$a_{12}X_2 = X_{12} = C_2$$ (since $$C_1$$ and $$C_2$$ are the amounts of constant capital transferred into the output, while $$X_11$$ and $$X_{12}$$ are parts of the output of $$D_2$$ that go into replacement) and that $$X_i = L_i + C_i$$, then $$\mathbf{v}$$ simplifies to $$\mathbf{v} = \begin{bmatrix} 1 & 1 \end{bmatrix} $$. This is because I previously dropped unit prices $$p_1$$ and $$p_2$$ (by setting them to 1).
+This is not very intuitive, but if we realize that $$a_{11}X_1 = X_{11} = C_1$$ and $$a_{12}X_2 = X_{12} = C_2$$ (since $$C_1$$ and $$C_2$$ are the amounts of constant capital transferred into the output, while $$X_{11}$$ and $$X_{12}$$ are parts of the output of $$D_1$$ that go into replacement) and that $$X_i = L_i + C_i$$, then $$\mathbf{v}$$ simplifies to $$\mathbf{v} = \begin{bmatrix} 1 & 1 \end{bmatrix} $$. This is because I previously dropped unit prices $$p_1$$ and $$p_2$$ (by setting them to 1).
 
 
 Continuing, let us note that $$\mathbf{v} Q$$ is a scalar, since $$\mathbf{v}$$ is a 2-column row vector and $$Q$$ a 2-row column vector. Therefore if we multiply both sides of Equation \eqref{eq8} by $$\mathbf{v}$$, we get  
@@ -206,15 +206,15 @@ $$
 so the meaning of this term is quite clear.
 
 As for $$\mathbf{v} h$$ in the denominator, it is the *propensity to consume*. As discussed above $$h$$ is the labour share (wages to net income/total labour) or in other words workers' consumption divided by total labour performed ($$h_2 = B_2/L$$).
-In the 'net income' ('Keynesian') analysis of the previous post (see Equation 1 and 9), though $$b$$ was *all* consumption, whereas here $$B_2$$ is only consumption from wages, so the multiplier formulas are not identical. Since $$\mathbf{v} = [1 \ 1] $$ and $$\mathbf{h} = \begin{bmatrix} 0 \\ h_2 \end{bmatrix} $$, then the product is
+In the 'net income' ('Keynesian') analysis of the [previous post](https://mbkoltai.github.io/reprod_multipl/) (see Equation 1 and 9) $$b$$ was *all* consumption, whereas here $$B_2$$ is only consumption from wages, so the multiplier formulas are not identical. Since $$\mathbf{v} = [1 \ 1] $$ and $$\mathbf{h} = \begin{bmatrix} 0 \\ h_2 \end{bmatrix} $$, then the product is
 $$
-$$\mathbf{v} h$$ = h_2 = B_2 / L
+\mathbf{v} h = h_2 = B_2 / L
 $$
 or the part of new value added paid out as wages and spent on consumption.
 
-Finally, the product $$v F$$ is *total number of labour units required to produce final demand*, or the total value of the products corresponding to final demand, and if $$v = [1 \ 1]$$, then $$\mathbf{v} \mathbf{F} = F_1 + F_2 = dA + dH + C_k$$.
+Finally, the product $$v F$$ is the value of the products corresponding to final demand, and if $$v = [1 \ 1]$$, then $$\mathbf{v} \mathbf{F} = F_1 + F_2 = dA + dH + C_k$$.
 
-In summary, Equation \eqref{eqmult} expresses the relationship between net income, workers' consumption and final demand (the surplus product). The multiplier relationship can be derived in the two-department model of the reproduction schema, that considers constant capital as well. A difference is that the ratio of net income to final demand here is $$1/(1- vh)$$ where $$\mathbf{v h} $$ is workers' consumption per unit of labour, and not total consumption [as previously](https://mbkoltai.github.io/reprod_multipl/). (Or: labour embodied $$\mathbf{v}$$ in the bundle consumed by workers per unit of labour.) Then $$e = 1 - \mathbf{v h}$$ is the per capita share of surplus value extracted from each unit of labour. If we say that for simplicity $$\mathbf{v} = \mathbf{p}$$, so that net money output is $$y = \mathbf{v Q} = \mathbf{p Q}$$ and money final demand $$f = \mathbf{vF} = \mathbf{pF}$$, then Equation \eqref{eqmult} can be expressed as a 'macro income multiplier':
+In summary, Equation \eqref{eqmult} expresses the relationship between net income, workers' consumption (per unit of labour performed) and final demand (the surplus product). The multiplier relationship can be derived in the two-department model of the reproduction schema, that considers constant capital as well. A difference is that the ratio of net income to final demand here is $$1/(1- vh)$$ where $$\mathbf{v h} $$ is *workers'* consumption per unit of labour, and not total consumption [as previously](https://mbkoltai.github.io/reprod_multipl/). (Or: labour embodied $$\mathbf{v}$$ in the bundle consumed by workers per unit of labour.) Then $$e = 1 - \mathbf{v h}$$ is the share of surplus value extracted from each unit of labour. If we say that for simplicity $$\mathbf{v} = \mathbf{p}$$ (prices and values are the same), so that net money output is $$y = \mathbf{v Q} = \mathbf{p Q}$$ and money final demand $$f = \mathbf{vF} = \mathbf{pF}$$, then Equation \eqref{eqmult} can be expressed as a 'macro income multiplier':
 
 $$
 y = \frac{1}{e}f
@@ -222,7 +222,7 @@ $$
 
 So the concept of surplus value and the multiplier relationship between final demand and net money output can be related in a 2-sector model taking into account constant capital. Or, if you like, the concepts of classical political economy (such as surplus value) and those of 'Keynesian economics' can be related through the reproduction schemas.
 
-To me this relationship is an algebraic one between parts of the total output classified with respect to their use: the net output and the part that can be consumed by owners or take the form of *MoP* and *CoG* to *expand* the capital stock (over replacement) and the workforce. The second chunk ($$\mathbf{F}$$ in the above notation), that is the surplus part of the output, is in fact a part of the first ($$\mathbf{v Q}$$). In other words final demand is the part of the net output that represents surplus accumulation (=new workers + new constant capital) and consumption.
+To me this relationship is an algebraic one between parts of the total output classified with respect to their use: the net output and the part that can be consumed by owners or take the form of *MoP* and *CoG* to *expand* the capital stock (over replacement) and the workforce. The second chunk ($$\mathbf{F}$$ in the above notation), that is the surplus part of the output, is in fact a part of the first ($$\mathbf{v Q}$$). In other words final demand is the part of the net output that can be directed to accumulation (=new workers + new constant capital) or consumption from profit.
 This is not a causal relationship in my understanding, but an algebraic identity. In fact, these purchases from profit for consumption and accumulation occur at the end of a period of production, and first what we should explain is where the demand for these parts of the total output come from. It is this question that I want to address in my next post.
 
 ### Reference
