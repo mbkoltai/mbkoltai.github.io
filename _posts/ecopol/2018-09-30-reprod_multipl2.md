@@ -54,8 +54,8 @@ Let us normalize again:
 *Table 2: expanded reproduction (normalized)*
 
 It can be seen that more constant capital is produced ($$W_1 = 2/3 = 12/18$$) than consumed ($$C_1 + C_2 = 11/18 $$), ie. accumulation is now possible, 1/18 (~5.6%) more constant capital will be available in the next round of production.
-Correspondingly all income is now less than all consumption goods (*CoG*) produced:
-$$V_1 + V_2 + S_1 + S_2 = 7/18 < W_2 = 6/18 $$, as some of the profit, namely 1/18 will be directed to accumulation. It is not at all trivial how the incomes and the outputs match, and what is the temporal sequence, I'll return to this later.
+Correspondingly all income is now more than all consumption goods (*CoG*) produced:
+$$V_1 + V_2 + S_1 + S_2 = 7/18 > W_2 = 6/18 $$, as some of the profit, namely 1/18 will be directed to accumulation. It is not trivial how the incomes and the outputs (or supply and demand) match, and what is the temporal sequence, I'll return to this later.
 The (to-be-)accumulated capital $$\Delta W$$ is
 $$
 \Delta W = W_1 - (C_1+C_2) = V_1 + S_1 - C_2 = 1/18
@@ -149,7 +149,8 @@ Q = (I - A) X = \begin{bmatrix} 1 - a_{11} & - a_{12}\\ 0 & 1\\ \end{bmatrix} \b
 $$
 
  So '*net output*' means for $$D_1$$ its gross output minus the part that is to replace the constant capital used up in this period of production, and for $$D_2$$ its entire output.
- If we say *MoP* produced in the current period is also used up in this period (its part directed to replacement, $$I-A$$), whereas all *CoG* is used up after production, then it is maybe more intuitive why the net product is defined as $$\mathbf{h} [\mathbf{l X}] + \mathbf{F}$$, the second and third terms on the RHS of Equation \eqref{eq5} and \eqref{eq6}. There is here a temporal order of events, ie. movements of money and movements and use of physical goods that is not trivial and I want to reconstruct later on in detail.
+<!--- If we say *MoP* produced in the current period is also used up in this period (its part directed to replacement, $$I-A$$), whereas all *CoG* is used up after production, then it is maybe more intuitive why the net product is defined as $$\mathbf{h} [\mathbf{l X}] + \mathbf{F}$$.-->
+There is a temporal order of events, ie. movements of money (eg. when wages are paid out and spent etc.) and movements and use of physical goods that is not trivial and I want to reconstruct later on in detail.
 
 First though I will follow through with the derivation of Chapter 2. Using Equation \eqref{eq7} and $$\mathbf{v} = l (I-A)^{-1} $$, Equation \eqref{eq6} can be re-expressed as:  
 $$
