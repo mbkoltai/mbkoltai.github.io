@@ -7,9 +7,11 @@ secondary: ecopol
 mathjax: true
 ---
 
-In this post I follow up on [my previous post](https://mbkoltai.github.io/reprod_multipl/) where I discussed the idea of a 'multiplier' that relates total (net) income to net investment of a given economic system. Both there and here I  follow [a book](http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663) by Andrew Trigg. One problem with this approach is that it analyzes the system only in terms of net income (wages and profit) and does not include how the capital stock within the system also has to be reproduced.  
-A framework wherein the reproduction of all components of output can be analyzed is the so-called reproduction schema. The reproduction schema (developed in the 2nd Volume of Capital by Karl Marx) describes how in a given cycle of production the total social capital including both 'variable' (human labour) and 'constant' (machines) capital can be reproduced and potentially expanded by capital accumulation. While Marx used numerical examples, the schema can be better analyzed with the help of input-output tables and the tools of linear algebra.  
-Below in *Table 1* is a numerical example of *simple* reproduction, meaning that the amount of constant capital does not change from one period of production to the other. All the surplus value (profit) that is produced (or rather received for the surplus fraction of the output) is consumed by the owners of capital, and not reinvested (accumulated).  
+In this post I follow up on [the previous one](https://mbkoltai.github.io/reprod_multipl/) where I discussed the idea of a 'multiplier' that relates net income to net investment in an economic system. Both there and here I  follow [a book](http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663) by Andrew Trigg.
+The problem with the 'Keynesian' approach outlined in the previous post is that it analyzes the system only in terms of net income (wages and profit) and does not account for the capital stock that also has to be reproduced (and potentially expanded).  
+A framework wherein the reproduction of constant capital can be analyzed is the so-called reproduction schema. The reproduction schema, first consistently developed in (what we know as) Volume 2 of Capital by Karl Marx, describes how in a given period of production the total social capital including both 'variable' (human labour) and 'constant' (machines) capital can be reproduced and potentially expanded. Marx used numerical examples in his writings, but the schema can be analyzed in symbolic form with the help of input-output tables and the tools of linear algebra.  
+
+Below in *Table 1* is a numerical example of *simple* reproduction, meaning that the amount of constant capital does not change from one period of production to the other. All the surplus value (profit) that is produced (received for the surplus fraction of the output) is consumed by the owners of capital, and not reinvested (accumulated).  
 
 | Departments | Constant capital $$C_i$$ | Variable capital $$V_i$$  | Surplus value $$S_i$$ | Total output $$W_i$$ |
 | :-------------: |:------------------:| :---------------:|:----------:|:----------:|
@@ -19,7 +21,8 @@ Below in *Table 1* is a numerical example of *simple* reproduction, meaning that
 
 *Table 1: simple reproduction*
 
-Again, department 1 $$D_1$$ produces means of production (*MoP*), and $$D_2$$ *CoG*, each represented by a row, $$W_i$$ standing for the total output. I prefer to normalize this table by the total output of the economy (9000), to see quantities in fractional terms, getting:
+Again, department 1 $$D_1$$ produces means of production (*MoP*), whereas $$D_2$$ produces consumption goods (*CoG*).
+Each is represented by a row, with $$W_i$$ standing for the total output. I prefer to normalize this table by the total output of the economy (9000), to see quantities in fractional terms, getting:
 
 | Departments | Constant capital $$C_i$$ | Variable capital $$V_i$$  | Surplus value $$S_i$$ | Total output $$W_i$$ |
 | :-------------: |:------------------:| :---------------:|:----------:|:----------:|
@@ -29,7 +32,7 @@ Again, department 1 $$D_1$$ produces means of production (*MoP*), and $$D_2$$ *C
 
 *Table 1: simple reproduction* (normalized)
 
-As can be seen, constant capital produced ($$W_1=2/3$$) is equal to constant capital consumed (sum of the column $$C_i$$) in this cycle of production . The amount of *CoG* produced $$W_2 = V_1 + V_2 + S_1 + S_2 = 1/3$$, so all profits will be spent on buying consumer goods (throughout it is assumed there is no saving from wages either).
+Constant capital produced ($$W_1=2/3$$) is equal to constant capital consumed (sum of the column $$C_i$$) in this period of production. The amount of *CoG* produced $$W_2 = V_1 + V_2 + S_1 + S_2 = 1/3$$, so all profits will be spent on buying consumer goods (throughout it is assumed there is no saving from wages either).
 
 This would be unrealistic if it were meant as a model of a capitalist economy, since capitalism is about growth (accumulation), but it is useful analytically. For if there is expansion, simple reproduction is still embedded within the growing economic system, but now it adds new units to its capital stock and/or its workforce as well.
 
@@ -53,23 +56,27 @@ Let us normalize again:
 
 *Table 2: expanded reproduction (normalized)*
 
-It can be seen that more constant capital is produced ($$W_1 = 2/3 = 12/18$$) than consumed ($$C_1 + C_2 = 11/18 $$), ie. accumulation is now possible, 1/18 (~5.6%) more constant capital will be available in the next round of production.
-Correspondingly all income is now more than all consumption goods (*CoG*) produced:
-$$V_1 + V_2 + S_1 + S_2 = 7/18 > W_2 = 6/18 $$, as some of the profit, namely 1/18 will be directed to accumulation. It is not trivial how the incomes and the outputs (or supply and demand) match, and what is the temporal sequence, I'll return to this later.
+There is now more constant capital produced ($$W_1 = 2/3 = 12/18$$) than consumed ($$C_1+C_2=11/18$$), ie. accumulation is now possible, 1/18 (~5.6%) more constant capital will be available in the next round of production.
+Correspondingly, all income is now more than all consumption goods (*CoG*) produced:
+$$V_1 + V_2 + S_1 + S_2 = 7/18 > W_2 = 6/18 $$, as some of the profit, namely 1/18 will be directed to accumulation. It is not trivial how the incomes and the outputs (or supply and demand) match, and what is the temporal sequence. I'll return to this later.
+
 The (to-be-)accumulated capital $$\Delta W$$ is
 $$
 \Delta W = W_1 - (C_1+C_2) = V_1 + S_1 - C_2 = 1/18
 \tag{1}\label{eq1}
 $$
 
-ie. it is net income in $$D_1$$ minus the constant capital consumed in the *CoG* department $$D_2$$.  
-This matches the part of total net income $$Y$$ not spent on consumption, which is  
+ie. it is new value added (=net income) in $$D_1$$ minus the constant capital consumed in the *CoG* department $$D_2$$.  
+This matches the part of total net income ($$Y$$) *not* spent on consumption, which is  
 $$Y - W_2 = Y_1 + Y_2 - (Y_2 + C_2) = Y_1 - C_2 = V_1 + S_1 - C_2 = 1/18
 \tag{2}\label{eq2}$$
 
-Getting back to input-output analysis, we obviously have a case here of two sub-systems (departments) each using the other's output as an input, while - if there is expansion - some of the output is not used as an input in the present period. Consumption from profit ($$u$$) is one component of this final output and it is not redirected into the system as an input at all. The addition to the capital stock ($$dC$$) is not used as an input in the present cycle, although it will be in the next. Finally, there can be an addition to the labour force ($$dV$$) too in the next period matched by unconsumed *CoG*. This last category was not visible in *Table 2*, as the *use* of the outputs was not detailed there. It shows that capitalists can spend some of their profit not on personal consumption ($$u$$), but expanding the labour force ($$dV$$). Either way ($$dV$$ or $$u$$), this will go into buying up the output of $$D_2$$. Total surplus value will have to equal total final product, $$S_1 + S_2 = dC + dV + u$$.
+Getting back to input-output analysis, we have a case here of two sub-systems (departments) using the other's output as an input, while - if there is expansion - some of the output is not used as an input in the present period.
+Consumption from profit ($$u$$, *CoG* bought from profit) is one component of this final output and it is not redirected into the system as an input.
+The addition to the capital stock ($$dC$$) is not used as an input in the *present* cycle, although it will be in the next. Finally, there can be an addition to the labour force ($$dV$$) too in the next period matched by unconsumed *CoG*.
+This last category was not visible in *Table 2*, as the *use* of the outputs was not detailed there. It shows that capitalists can spend some of their profit on *CoG*, but not for their own personal consumption ($$u$$), but for expanding the labour force ($$dV$$). Either way ($$dV$$ or $$u$$), this will go into buying up the output of $$D_2$$. Since total surplus value will have to equal total final product, $$S_1 + S_2 = dC + dV + u$$.
 
-Now we can turn *Table 2* into an input-output (I/O) table. If we read the I/O table row-wise, we have the output of one department, arranged into columns by the *use* of that part of the output. If we read down a column, we have all the inputs for a given department (or for types of final product).
+Now we can turn *Table 2* into an input-output (I/O) table. If we read the I/O table row-wise, we have the output of one department, arranged into columns by the *use* of that part of the output. If we read down a column, we have all the inputs for a given department (or for a type of final product).
 
 |  | $$D_1$$ (inputs) | $$D_2$$ (inputs) | dC (new C) | dV (new V) | u (capitalist consum.) | $$ W_i$$ ($$\sum$$)|
 | :----: |:----:| :----:|:----:|:----:|:----:|:----:|
@@ -81,15 +88,15 @@ Now we can turn *Table 2* into an input-output (I/O) table. If we read the I/O t
 *Table 3: I/O table of expanded reproduction from Table 2*
 
 $$X_{ij}$$ stands for the amount of capital goods (*MoP*) produced by department *i* used as an input by department *j*. The gross (physical) output of department *i* is denoted as $$X_j$$. We can then define input coefficients $$a_{ij} = X_{ij}/X_j$$ as the ratio of the gross output of department *j* and the *MoP* it builds into this output from department *i*. This is the same as saying that $$a_{ij}$$ is the input coming from department $$D_i$$ into one unit of output of $$D_j$$. For instance $$a_{12} = X_{12}/X_2 = (1/6)/(1/3) = 1/2 $$, of the output of $$D_2$$ comes from the output (*MoP*) of $$D_1$$ used by $$D_2$$ as an input.
-Consumer goods are not industrial inputs, so these input coefficients refer only to the output of $$D_1$$. One could say that workers in both sectors consume consumer goods (output of $$D_2$$) in the same way, but this is rather after the production process than a part of it. At any rate I'll use the notation in Trigg's book to reproduce the derivation.  
+Consumer goods are not industrial inputs, so these input coefficients refer only to the output of $$D_1$$. One could say that workers in both sectors use consumer goods (output of $$D_2$$) in the same way, but this is rather after (and/or outside) the production process than a part of it. At any rate I'll use the notation in Trigg's book to reproduce the derivation.  
 
 For $$D_2$$ instead of $$a_{ij}$$, we have the product $$h_i l_j$$. $$l_j$$ is the labour coefficient $$l_j = L_j/X_j$$, where $$L_j$$ is the number of labour units employed in $$D_j$$ and $$X_j$$ (same as $$W_j$$ before) the gross output.
 $$h_i$$ (which is defined for $$h_2$$ only) is $$h_i = B_i/L$$, or concretely $$h_2 = B_2/L$$, the ratio of total consumption of the 2nd physical good (ie. *CoG*) to the total volume of labour units.
-Now the term $$B_2$$ I was first not sure how to interpret. Is it total consumption of *CoG*, ie. is it equal to $$X_2$$? In this case the equality would not work out, since $$M_{21} = 1/9 = h_2 l_1 X_1 = h_2 \frac{1}{3} \frac{2}{3} = h_2 \frac{2}{9}$$, therefore $$h_2=1/2$$ (by $$M_{21}$$ I mean 2nd row 1st column of matrix).
+The term $$B_2$$ I was first not sure how to interpret. Is it total consumption of *CoG*, ie. is it equal to $$X_2$$? In this case the equality would not work out, since $$M_{21} = 1/9 = h_2 l_1 X_1 = h_2 \frac{1}{3} \frac{2}{3} = h_2 \frac{2}{9}$$, therefore $$h_2=1/2$$ (by $$M_{21}$$ I mean 2nd row 1st column of matrix).
 Therefore $$B_2 = 7/36$$, which is equal to total wages (or consumption from wages since we assume all wages are spent), ie. $$B_2 = V_1 + V_2$$. Then $$h_2 = B_2/L = \frac{V_1+V_2}{L}$$ means the ratio of worker consumption to all labour performed, it is basically the labour share (again there is some issue here about money vs. physical units, but let us put that aside for the moment). There is also here the assumption that $$h_2$$, the labour share is the same in both sectors.
-The product $$l_1 h_2$$ then means the share of living labour in the gross output of $$D_1$$ times the *CoG* workers receive per unit of labour. In summary it is the amount of *CoG* to be 'inputted' (wage paid to workers that will be spent on *CoG*) to the department for a unit of its output, this is how it is equivalent to $$a_{ij}$$ in input-output terms.
+The product $$l_1 h_2$$ then means the share of living labour in the gross output of $$D_1$$ times the *CoG* workers receive per unit of labour. In summary it is the amount of *CoG* to be 'inputted' (wage paid to workers that will be spent on *CoG*) to the department for a unit of its output, this is how it plays the same role as $$a_{ij}$$ in input-output terms.
 
-Finally to go from physical/labour units to prices there is a price for units of *MoP* and *CoG*, $$p_1$$ and $$p_2$$. These I drop from the rest of the derivation by setting them to 1. Then we can write the entire I/O matrix symbolically:
+Finally to go from physical/labour units to prices there is a price for units of *MoP* and *CoG*, $$p_1$$ and $$p_2$$. I drop these from the rest of the derivation by setting them to 1. Then we can write the entire I/O matrix symbolically:
 
 
 |  | $$D_1$$ (inputs) | $$D_2$$ (inputs) | dC (new C) | dV (new V) | u (capitalist consum.) | $$ W_i$$ (total output)|
@@ -103,10 +110,10 @@ Finally to go from physical/labour units to prices there is a price for units of
 
 The term $$p_2 h_2 l_2 X_2$$ for instance means the amount of *CoG* to be used by the workers of $$D_2$$, equal to *(unit price) x (labour share in net income) x (share of net income (living labour) in gross output of $$D_2$$) x (gross output of $$D_2$$)*.
 
-The term $$p_1 a_{12} X_2$$ is the money output of $$D_1$$ required by $$D_2$$, and it is the *MoP* used up by $$D_2$$, equal to *(unit price) x (units of MoP used for one unit of gross output of $$D_2$$) x (gross output of $$D_2$$)*).
+The term $$p_1 a_{12} X_2$$ is the money output of $$D_1$$ required by $$D_2$$, and it is the *MoP* used up by $$D_2$$, equal to *(unit price) x (units of MoP used for one unit of gross output of $$D_2$$) x (gross output of $$D_2$$)*.
 
 
-The full system for expanded reproduction can be captured for both departments (after cancelling out the price terms), with inputs equaling outputs as:
+The full system for expanded reproduction can be captured for both departments (after cancelling out the price terms), with inputs equaling outputs, as:
 
 $$
 a_{11}X_1 + a_{12} X_2 + da = X_1
@@ -128,7 +135,7 @@ $$
 \tag{5}\label{eq5}
 $$
 
-The vector on the right represents 'final demand' (or final output), these parts of the output do not replace the capital stock and labour used up in this period of production, but can be used to expand the labour force and the capital stock, or spent on consumption by the owners who receive the profits. Final demand does not include consumption of workers from wages, as this is to reproduce the existing labour force.
+The vector on the right represents 'final demand' (or final output), these parts of the output can be used to expand the labour force and the capital stock, or spent on consumption by the owners who receive the profits. Final demand does not include consumption of workers from wages, as this is to reproduce the existing labour force.
 
 Using column vectors one can write Equation \eqref{eq5} as:
 
@@ -150,7 +157,7 @@ $$
 
  So '*net output*' means for $$D_1$$ its gross output minus the part that is to replace the constant capital used up in this period of production, and for $$D_2$$ its entire output.
 <!--- If we say *MoP* produced in the current period is also used up in this period (its part directed to replacement, $$I-A$$), whereas all *CoG* is used up after production, then it is maybe more intuitive why the net product is defined as $$\mathbf{h} [\mathbf{l X}] + \mathbf{F}$$.-->
-There is a temporal order of events, ie. movements of money (eg. when wages are paid out and spent etc.) and movements and use of physical goods that is not trivial and I want to reconstruct later on in detail.
+There is a temporal order of events here, ie. movements of money (eg. when wages are paid out and then spent etc.) and movements and use of physical goods that is not trivial and I want to reconstruct later on in detail.
 
 First though I will follow through with the derivation of Chapter 2. Using Equation \eqref{eq7} and $$\mathbf{v} = l (I-A)^{-1} $$, Equation \eqref{eq6} can be re-expressed as:  
 $$
@@ -195,14 +202,14 @@ $$
 
 Moving the first term on the LHS and factoring out $$\mathbf{v}Q$$, we finally arrive at  
 $$
-\mathbf{v}Q = \frac{1}{1 - \mathbf{v} h} \mathbf{v} F
+\boxed{ \mathbf{v}Q = \frac{1}{1 - \mathbf{v} h} \mathbf{v} F }
 \tag{11}\label{eqmult}
 $$
 
-which is again a multiplier relationship, very similar to Equation 9 in the [previous post](http://www.mbkoltai.github.io/reprod_multipl) where only net income was considered, but not constant capital. It is a relationship between final demand (net investment) $$\mathbf{v} F$$ and the net income (all new value added = wages + profits) $$vQ$$.
+which is again a multiplier relationship, very similar to Equation 9 in the [previous post](http://www.mbkoltai.github.io/reprod_multipl) where only net income was considered, but now constant capital has also been accounted for. It is a relationship between final demand $$\mathbf{v} F$$ and the net income (all new value added = wages + profits) $$vQ$$.
 $$\mathbf{v} h$$ is a scalar, as is $$\mathbf{v} F$$ and $$\mathbf{v} Q$$.
 
-$$vQ$$ is net income (= total employment of labour units = total new value added) because $$ \mathbf{v} = l (I - A)^{-1} $$ and $$Q = (I - A)X$$ (net product = to-be-accumulated capital $$dA$$ + all output of $$D_2$$, ie $$ X_2 = h_2 l_1 X_1 + h_2 l_2 X_2 + dh + C_k $$ ). Therefore
+$$vQ$$ is net income (= total employment of labour units = total new value added) because $$\mathbf{v} = l (I - A)^{-1} $$ and $$Q = (I - A)X$$ (net product = to-be-accumulated capital $$dA$$ + all output of $$D_2$$, ie $$ X_2$$ ). Therefore
 
 $$
 \mathbf{v}Q = \mathbf{l} \mathbf{X} = \begin{bmatrix} L_1/X_1 & L_2/X_2 \end{bmatrix} \begin{bmatrix} X_1 \\ X_2 \end{bmatrix} = L_1 + L_2
@@ -224,12 +231,13 @@ In summary, Equation \eqref{eqmult} expresses the relationship between net incom
 
 $$
 y = \frac{1}{e}f
+\tag{13}\label{eq13}
 $$
 
-So the concept of surplus value and the multiplier relationship between final demand and net money output can be related in a 2-sector model taking into account constant capital. Or, if you like, the concepts of classical political economy (such as surplus value) and those of 'Keynesian economics' can be related through the reproduction schemas.
+So the concept of surplus value ($$e$$) and the multiplier relationship between final demand ($$f$$) and net money output ($$y$$) can be related in a 2-sector model taking into account constant capital. Or, if you like, the concepts of classical political economy (such as surplus value) and those of 'Keynesian economics' can be related through the reproduction schemas.
 
-To me this relationship is an algebraic one between parts of the total output classified with respect to their use: the net output on the one hand and on the other the part that can be consumed by owners or take the form of *MoP* and *CoG* to *expand* the capital stock (over replacement) and the workforce. The second chunk ($$\mathbf{F}$$ in the above notation), that is the surplus part of the output, is a part of the first ($$\mathbf{v Q}$$). In other words, final demand is the part of the net output that can be directed to accumulation (=new workers + new constant capital) or consumption from profit.
-This is not a causal relationship in my understanding, but an algebraic identity. In fact, these purchases from profit for consumption and accumulation occur at the end of a period of production, and first what we should explain is where the demand for these parts of the total output come from. It is this question that I want to address in my next post.
+To me this relationship seems an algebraic one between parts of the total output classified with respect to their use: the net output on the one hand and on the other the part that can be consumed by owners or take the form of *MoP* and *CoG* to *expand* the capital stock (over replacement) and the workforce. The second chunk ($$\mathbf{F}$$ in the above notation), that is the surplus part of the output, is a part of the first ($$\mathbf{v Q}$$). In other words, final demand is the part of the net output that can be directed to accumulation (=new workers + new constant capital) or consumption from profit.
+This is not a causal relationship in my understanding, but an algebraic identity. In fact, these purchases from profit for consumption and accumulation occur at the end of a period of production, and first - it seems to me - what we should explain is where the demand for these parts of the total output comes from. It is this question that I want to address in my next post.
 
 ### Reference
 
