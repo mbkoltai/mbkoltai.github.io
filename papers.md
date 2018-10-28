@@ -19,9 +19,13 @@ S Bubendorfer\*, _M Koltai_\*, F Rossmann, V Sourjik, KM Thormann
 A Banderas\*, _M Koltai_\*, A Anders, V Sourjik  
 *Nature communications* 7, 12590 (2016)
 
-(*equal contributors)
+(\*equal contributors)
 
 ## Talks at conferences
+
+**Ensemble modeling for drug resistance and sensitivity in colon cancer cell lines**
+[*INCOME2018: Integrative pathway modeling in systems biology and systems medicine*](http://www.integrative-pathway-models.de/meetings/1st-income-conference-and-hackathon/program/index.html)  
+15/10/2018, Bernried am Starnberger See, Germany
 
 **Using perturbation data for ensemble modeling to infer vulnerabilities in colon cancer cells**  
 [*Mathematical Perspectives in the Biology and Therapeutics of Cancer*](https://conferences.cirm-math.fr/1752.html)  
