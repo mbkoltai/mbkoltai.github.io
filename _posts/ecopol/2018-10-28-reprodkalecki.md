@@ -34,7 +34,7 @@ If however we add to $$C_i$$ the additional units of constant capital ($$dC_i$$)
 
 *Table 2: 'ex post' three-sector reproduction schema (quantities at the end of period)*
 
-The columns $$C_i$$ and $$V_i$$ I would interpret as the inputs of *MoP* and labour (workforce/wages) in the *next* period, respectively, whereas $$u_i$$ is the part of the profit received in sector $$i$$ that is spent on consumption by owners, instead of accumulation. So $$C_i$$* and $$V_i$$ are mixed variables in the sense that some of it is the input in the current period and some the increment added in the next period.
+The columns $$C_i$$ and $$V_i$$ I would interpret as the inputs of *MoP* and labour (workforce/wages) in the *next* period, respectively, whereas $$u_i$$ is the part of the profit received in sector $$i$$ that is spent on consumption by owners, instead of accumulation. So $$C_i$$* and $$V_i$$ are mixed variables in the sense that some of it is the input in the current period and some the increment added in the current, but used in the next period.
 We have the equalities of outputs by sector to outputs grouped by use:  
 $$W_1 = C_1$$* $$ + C_2$$* $$+ C_3$$* $$ = C_1 + dC_1 + C_2 + dC_2 + C_3 + dC_3 $$  
 $$W_2 = u_1 + u_2 + u_3$$  
