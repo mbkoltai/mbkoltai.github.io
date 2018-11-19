@@ -2,7 +2,7 @@
 layout: post
 title: The monetary circuit, part 1 (realization of profits by a multiplier effect)
 tags: political-economy economic-models economic-reproduction classical-political-economy marxian-economics effective-demand investment-demand monetary monetary-circuit
-excerpt: Monetary realization of profits in an economy with accumulation
+excerpt: Monetary realization of profits by multiplier effects
 secondary: ecopol
 mathjax: true
 ---
@@ -13,7 +13,7 @@ spend; the question being how an injection of money can circulate around the eco
 
 In the [previous post](https://mbkoltai.github.io/reprodkalecki/) I discussed the so-called 'Kalecki' principle, which, in my understanding, is an equality between gross profits on the one side and spending on capital goods and capitalist consumption on the other, summarized in the phrase '*capitalists earn what they spend*'. This statement implies a causal relationship, which - it seems to me - is not demonstrated by these algebraic relationship. To show that this spending *creates* (enables/leads to) these profits, one needs a sequential (dynamic) description of how the initial amount spent circulates through the economic system.
 
-A framework to do this is the so-caled monetary circuit. The theory of the monetary circuit was developed by A. Graziani and others and shows how an initial injection of money circulates through the economy and return back to the owners of businesses and how much money is needed to close the circuit completely, with all output sold. In the model by Graziani there is a distinction between workers, capitalists and banks. Banks give credit to firms, so they can finance their outlays on wages, since this step has to precede production and sale. Money in this model is credit money, that has symbolic value, but no intrinsic value, ie. it is not a commodity.
+A framework to do this is the so-called monetary circuit. The theory of the monetary circuit was developed by A. Graziani and others and shows how an initial injection of money circulates through the economy and return back to the owners of businesses and how much money is needed to close the circuit completely, with all output sold. In the model by Graziani there is a distinction between workers, capitalists and banks. Banks give credit to firms, so they can finance their outlays on wages, since this step has to precede production and sale. Money in this model is credit money, that has symbolic value, but no intrinsic value, ie. it is not a commodity.
 The starting point of the circuit is banks giving credit to firms to hire workers, who then produce commodities. Assuming that workers don't save, wages are spent on consumer goods (*CoG*), returning the money to firms. As the last step of the circuit, firms can then repay their debts, destroying the credit money they originally borrowed and the circuit is closed.  
 So the circuit is simply: banks --> firms --> workers --> firms --> banks.
 
