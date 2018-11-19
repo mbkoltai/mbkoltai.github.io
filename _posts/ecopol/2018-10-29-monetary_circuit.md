@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The monetary circuit, part 1 (realization of profits by a multiplier effect)
+title: The monetary circuit, part 1
 tags: political-economy economic-models economic-reproduction classical-political-economy marxian-economics effective-demand investment-demand monetary monetary-circuit
 excerpt: Monetary realization of profits by multiplier effects
 secondary: ecopol
@@ -40,7 +40,7 @@ A simple answer to this is a 'single swap' approach ([Nell, 2004](https://academ
 
 **Nell's solution: realizing the total output through multiplier effects**
 
-The 'single swap' solution just mentioned leaves no place for transactions taking place sequentially, with a given amount of money that is smaller than $$M$$, circulating between households (workers and capitalists as consumers) and firms in the two sector.
+The 'single swap' solution just mentioned leaves no place for transactions taking place sequentially, with a given amount of money that is smaller than $$M$$, circulating between households (workers and capitalists as consumers) and firms in the two sectors.
 The 'mutual exchange' between sectors is key, as firms earn income by selling outputs to firms in the other (and in the same) sector.
 [EJ Nell (2004)](https://academic.oup.com/cje/article-abstract/28/2/173/1681265)'s solution based on mutual exchanges starts with the following assumptions:
 - Production is defined in distinct periods.
