@@ -11,7 +11,7 @@ permalink: /ecopol/
 <div class="blog-index">
 
 
-<p>Blog posts on economic and political topics.</p>
+<p>Blog posts on economic modeling and some related topics.</p>
 
 
 <ul style="list-style-type: none;">
@@ -28,7 +28,7 @@ permalink: /ecopol/
     <a href="{{ post.url }}" style="white-space: nowrap;"><b>{{ post.title }}</b></a>&nbsp;
       {{ post.excerpt | strip_html | truncatewords: 12 }}
       </li>
-      
+
             {% endif %}
 
       {% endfor %}
@@ -38,7 +38,7 @@ permalink: /ecopol/
 </div>
 
 <!-- Pager -->
-<!-- 
+<!--
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
     {% if paginator.previous_page %}
