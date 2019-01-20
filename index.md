@@ -4,15 +4,15 @@ layout: default
 ---
 
 ### About this site
-My name is Mihály (Bence) Koltai and this is a website on both my professional work in systems biology and my other interests.
+My name is Mihály (Bence) Koltai and this is a website on both my work in systems biology and my other interests, mainly in economic theory and modeling.
 
 ### Research interests
 
-Since 2010 I have been working on the quantitative analysis of biomolecular systems, specifically cellular signaling networks, in a field often referred to as 'systems biology'. In practice this means building mathematical models to gain mechanistic understanding of biomolecular systems and formulate experimentally testable predictions about them.
+Since 2010 I have been working on the quantitative analysis of biomolecular systems, in a field often referred to as 'systems biology'. In practice this means building mathematical models to gain mechanistic understanding of biological systems and ideally formulate experimentally testable predictions about them.
+I am currently a postdoctoral fellow in the [Computational Systems Biology of Cancer](https://sysbio.curie.fr) group at the [Institut Curie](https://institut-curie.org) (Paris), a cancer research center in France. The group uses mathematical models, data analysis and visualization to provide a quantitative framework to understand cancer.
+You can read about my published work in systems biology [here](https://mbkoltai.github.io/papers/) and blog posts on related topics [here](https://mbkoltai.github.io/blog/).
 
-I am a postdoctoral fellow in the [Computational Systems Biology of Cancer](https://sysbio.curie.fr) group at the [Institut Curie](https://institut-curie.org) (Paris), a major cancer research center in France. The group uses mathematical models, advanced data analysis and data visualization to provide a quantitative framework to understand cancer.
-
-I am currently uploading some of my work to this site and launching a [blog](https://mbkoltai.github.io/blog/), where I will review articles and topics that caught my interest. Besides systems biology and bioinformatics I also have a general interest in dynamical systems theory and its applications to [economic (and other social) phenomena](https://mbkoltai.github.io/ecopol).
+I also have a strong interest in the quantitative modeling of economic processes, especially using theories from classical economics, I post about these topics [here](https://mbkoltai.github.io/ecopol).
 
 ### CV
 

@@ -16,8 +16,9 @@ The model has the following assumptions and properties:
 6) the real wage is kept constant: the wage paid for workers enables them to buy the same amounts of consumption goods. The nominal wage can however change if the unit price of consumption goods change.  
 7) Profit rates are equalized
 
-Of course assumptions *2-4* can be (are) contested, and the idea that human labour is the only source of new value and therefore of profit can be rejected, but this - ie. the validity of the labour theory of value - is a topic for another post. Assumption *5* is just a convenient first assumption, but the system can be changed to expanded reproduction by altering its coefficients.
-My goal here is just to have a small mathematical model that is internally consistent and has a dynamics that can be made more realistic by introducing more detail. That the system is dynamic is important because then prices and profit rates can change, which is a precondition to incorporate crises in the model.
+Of course assumptions no. 2-4 can be (are) contested, and the idea that human labour is the only source of new value and therefore of profit can be rejected, but this - ie. the validity of the labour theory of value - is a topic for another post. Assumption no. *5-6* are just convenient first assumptions, but the system can be changed to expanded reproduction etc. by altering its coefficients.
+My goal here is just to have a small mathematical model that is internally consistent and has a dynamics that can later be made more realistic by introducing more detail. As the system is dynamic  prices and profit rates can change, which is a precondition to incorporate crises in the model.
+
 Like in the input-output models I [discussed previously](https://mbkoltai.github.io/reprod_multipl2/) we have two economic sectors (or departments), the first (*D1*) producing capital goods (this could be raw materials as well, any non-labour inputs used up in production), the second (*D2*) consumption goods (*CoG*). Since we are dealing with simple reproduction and we are abstracting from fixed capital, therefore all capital goods are used up in each period of production, the total use of capital goods has to equal the total output  ($$W_1$$) of *D1*.
 This gives us the equality
 $$ W_1 = C_1 + V_1 + S_1 = C_1 + C_2$$, or,  
@@ -76,8 +77,9 @@ This is the plot of the dynamics of unit prices and some of the variables of the
 
 The system satisfies the following equalities (these are all in price terms):
 - $$W_1(t) = C_1(t+1) + C_2(t+1) = p_1(t+1) X_1 $$, output of capital goods of the current period equals input of capital goods in next period
+- $$m_1(t) + V_1(t) = C_2(t)$$, exchanges between the sectors have to balance (capitalist consumption + wage outlays from $$D_1$$ equals outlays on capital goods from $$D_2$$, with the other transactions being within the two departments)  
 - $$W_2(t) = V_1(t+1) + V_2(t+1) + m(t+1) = p_2(t+1) X_2 $$, output of consumption goods in current period equals outlay on wages plus consumption from profit (revenue) in next period
-- $$ \sum m_i(t) = \sum W_i(t-1) - \sum K_i(t)$$, total revenue, ie. profit that can be spent on consumption equals the difference between the output of previous period minus outlays on wages and capital goods in the current period
+- $$ \sum m_i(t) = \sum W_i(t-1) - \sum K_i(t)$$, total revenue, ie. profit that can be spent on consumption equals the difference between the output of the previous period minus outlays on wages and capital goods in the current period
 
 Since unit prices are changing until we reach the stationary state, the amount of money needed for total outlays (wages + capital goods) is also changing, and since inputs (in this model) transfer their prices to the output, gross output in terms of price is also changing, though net value added does not. Once we reach the fixed point unit prices do not change anymore, therefore wages, profit, outlays on capital goods and gross output have also reached a stationary state. This state is identical to the equilibrium price (equal input and output prices) solution to the system. But the dynamical system converges to this stationary state *only* because the technical coefficients, the physical productivity and relative sizes of the departments do not change in this model.
 If the parameters would change before the system converges to the fixed point, then the pre-equilibrium behavior will continue.
