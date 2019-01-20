@@ -60,7 +60,7 @@ $$\tag{3}\label{v1_sequence}$$
 
 Now we can see a *causal* multiplier effect, as the initial injection of money as advanced wages by $$D_1$$, $$V_1$$, leads to the realization of commodities of a (multiple times) higher total value.
 $$V_1$$ *CoG* is sold in step (2), then again $$V_2$$ of *CoG* in step (4), and $$P_1$$ (?) of *MoP* sold in step (5), and more *MoP* in step (6) when firms in $$D_1$$ buy *MoP* from firms within their sector.
-The flow of money can be seen on the following figure I created:  
+The flow of money can be seen on this figure I created:  
 ![_config.yml]({{ site.baseurl }}/images/v1_moneyflow_circuit.PNG)
 
 **Figure 1: the flow of money through both departments**
@@ -124,12 +124,10 @@ The point of this model was to show that the initial outlay of $$V_1^* $$ *is* s
 To see how this happens exactly cries out for a dynamic model, probably using difference equations. (As a first approximation, we can just use a spreadsheet where rows stand for time points (stages) and columns the inventories of commodities and money held by the departments, workers and capitalists.)
 To be able to realize the full output $$W_T$$ the $$D_1$$ -> $$D_2$$ and $$D_2$$ -> $$D_1$$ transactions should occur only once, whereas for the two intra-department multiplier effects to converge these refluxes of money need to happen infinitely many times. Are these assumptions reasonable? This requirement could be relaxed by starting the circuit with a bigger initial outlay than $$V_1^* $$. A somewhat confusing aspect of this model is why *gross* wages are paid as the initial outlay, not just $$V_1$$, as the expansion of the workforce by $$dV_1$$ should happen only in the next period.
 
-The question that this model tries to answer is not identical with the 'Marxian' realization problem, although very similar to it. Here a production period starts with the two departments having inventories of *MoP* and *CoG* inherited from the previous period, but no money, and the question is whether all inventories can be sold, and if yes, what initial amount of money is required to do so. If inventories are sold, then production can take place and a supply of new commodities is produced, that will have to be realized in the *next* period of production, where the same realization problem has to be solved. Notice that in this description production and specifically the production of surplus value is not explicitly addressed, or it is obscured in the gross profit category.
+The question that this model tries to answer is not identical with the 'Marxian' realization problem, although very similar to it. Here a production period starts with the two departments having inventories of *MoP* and *CoG* inherited from the previous period, but no money, and the question is whether all inventories can be sold, and if yes, what initial amount of money is required to do so. If inventories are sold, then production can take place and a supply of new commodities is produced, that will have to be realized in the *next* period of production, where the same realization problem has to be solved. Notice that in this description production and specifically the production of surplus value is not explicitly addressed, or it is obscured in the gross profit category. Also, there is in fact many cycles of production and sale, but initially I wanted to have a model of a *single* cycle of production and sale that is closed (everything can be sold).
 
-This is one way to look at the problem. The other is rather to say that firms (and capitalists as consumers) have funds at the starting point, which they use to buy from the inventories of *MoP* (inherited from previous period) and on wages spent on the inventories of *CoG* that are also available at the start of production. Production takes place and the supply of new products have a higher value (surplus value added by labor over paid wages) than the initially spent amount on wages and capital goods - how can it be bought up? In this second formulation, the important concept of the production of surplus value is embedded.
+The other way to look at the problem is to say that firms (and owners as consumers) have funds at the starting point, which they use to buy from the inventories of *MoP* (inherited from previous period) and (through wages) the inventories of *CoG* that are available at the start of production. Production takes place and the supply of new products have a higher value (surplus value added by labor over paid wages) than the initially spent amount on wages and capital goods - how can it be bought up? In this second formulation, the concept of the production of surplus value is embedded.
 It is this formulation of the problem that I turn in the next post.
-
-
 
 
 ### Reference
