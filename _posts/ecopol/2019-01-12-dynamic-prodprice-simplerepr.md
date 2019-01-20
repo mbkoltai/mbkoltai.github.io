@@ -69,9 +69,9 @@ Dividing by $$X_i$$ and substituting the expressions listed above we have:
 $$\begin{bmatrix} p_1(t+1) \\ p_2(t+1 )\\ \end{bmatrix} = \begin{bmatrix} \alpha & \beta_1 X_2 / X_1\\ (1 - \alpha) X_1 / X_2 & \beta_2 \\ \end{bmatrix} \begin{bmatrix} p_1(t) \\ p_2(t)\\ \end{bmatrix} \frac{ p_1(t) + L_T/X_1 }{ p_1(t) + (\beta_1 + \beta_2) X_2/X_1 p_2(t) }
 \tag{6}\label{unit_price_dynam_explicit}$$
 
-This is a system of first-order, non-linear, autonomous difference equations, that - I think - cannot be solved analytically (so that $$p(t)$$ is a function of time and parameters only), but it is easy to simulate numerically, or solve for its fixed point (it is a quadratic equation, one positive solution).
+This is a system of first-order, non-linear, autonomous difference equations, that - I think - cannot be solved analytically (so that $$p(t)$$ is a function of time and parameters only), but it is easy to simulate numerically, or solve for its fixed point (in which case it becomes a quadratic equation, with one positive solution).
 
-I simulated the system in MATLAB with the following numerical values (also used in the article cited below as a reference): $$L_T = 300$$, $$ \alpha = 1/2 $$, $$ \beta_1 = 1/6 $$, $$ \beta_2 = 1/3$$, $$\mu = 1/2$$, $$ X_1 = 200$$, $$ X_2 = 300$$.
+I simulated the system in MATLAB with the following numerical values (also used in the article cited below as a reference): $$L_T = 300$$, $$ \alpha = 1/2 $$, $$ \beta_1 = 1/6 $$, $$ \beta_2 = 1/3$$, $$\mu = 1/2$$, $$ X_1 = 200$$, $$ X_2 = 300$$ and the initial values $$p_1(0)=p_2(0)=1$$.
 This is the plot of the dynamics of unit prices and some of the variables of the system:
 
 ![_config.yml]({{ site.baseurl }}/images/prices_prod_simple_reprod_sequential.png)
