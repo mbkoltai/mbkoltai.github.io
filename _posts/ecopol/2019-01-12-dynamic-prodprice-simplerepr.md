@@ -88,4 +88,4 @@ If we want to add additional detail to the model, the first thing to add should 
 ### Reference
 
 [Andrew Kliman, Ted McGlone: The transformation non-problem and the non-transformation problem, Capital & Class, Vol 12, Issue 2, 1988](https://journals.sagepub.com/doi/10.1177/030981688803500106)  
-[Andrew Kliman, Ted McGlone: A Temporal Single-system Interpretation of Marx's Value Theory, Review of Political Economy, Volume 11, Number 1, 1999](https://journals.sagepub.com/doi/10.1177/030981688803500106)
+[Andrew Kliman, Ted McGlone: A Temporal Single-system Interpretation of Marx's Value Theory, Review of Political Economy, Volume 11, Number 1, 1999](https://www.tandfonline.com/doi/pdf/10.1080/095382599107165)
