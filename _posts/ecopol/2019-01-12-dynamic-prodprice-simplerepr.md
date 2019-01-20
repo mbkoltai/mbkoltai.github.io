@@ -74,7 +74,7 @@ This is the plot of the dynamics of unit prices and some of the variables of the
 
 ![_config.yml]({{ site.baseurl }}/images/prices_prod_simple_reprod_sequential.png)
 
-The system satisfies the following equalities (all in price terms, *not* physical quantities):
+The system satisfies the following equalities (these are all in price terms):
 - $$W_1(t) = C_1(t+1) + C_2(t+1) = p_1(t+1) X_1 $$, output of capital goods of the current period equals input of capital goods in next period
 - $$W_2(t) = V_1(t+1) + V_2(t+1) + m(t+1) = p_2(t+1) X_2 $$, output of consumption goods in current period equals outlay on wages plus consumption from profit (revenue) in next period
 - $$ \sum m_i(t) = \sum W_i(t-1) - \sum K_i(t)$$, total revenue, ie. profit that can be spent on consumption equals the difference between the output of previous period minus outlays on wages and capital goods in the current period
