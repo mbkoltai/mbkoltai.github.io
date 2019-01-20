@@ -45,7 +45,7 @@ $$ r_{t,t+1} = (\mathbf{l}\mathbf{X} - \mathbf{p}_t w \mathbf{l} \mathbf{X})/
 \tag{4}\label{profit_rate_dynamic}$$
 
 Profit is the total amount of new value added minus the real wage of workers (quantity of consumption goods) times the input unit price of *CoG*.
-The rate of profit is then given by dividing the amount of profit by total input costs that are also defined by technical coefficients, the wage rate and the input unit prices. So the calculation of the profit rate only involves the input data of input prices and constants, and therefore comes first. The calculation of unit output prices follow after, since they are the function of both the profit rate and input prices as can be seen from Equation \eqref{dynamic unit prices}.
+The rate of profit is then given by dividing the amount of profit by total input costs that are also defined by technical coefficients, the wage rate and the input unit prices. It can be seen that the calculation of the profit rate only involves the input data of input prices and the coefficients and therefore comes first. The calculation of unit output prices follow after, since they are the function of both the profit rate and input prices as can be seen from Equation \eqref{dynamic unit prices}.
 
 Now let us go back to the equality of simple reproduction in Equation \eqref{balancing_cond}:  
 $$C_2 = V_1 + S_1 $$ (coming from $$W_1 = C_1 + C_2$$, $$W_i$$ being gross output of a sector)  
