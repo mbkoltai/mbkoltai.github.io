@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: prices-of_production"
-tag: political-economy
+title: "Tag: prices-of-production"
+tag: prices-of-production
 ---

@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: political-economy"
-tag: political-economy
+title: "Tag: economic-dynamics"
+tag: economic-dynamics
 ---
