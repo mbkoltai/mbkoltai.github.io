@@ -1,8 +1,8 @@
 ---
 layout: post
 title: A dynamic, labour-value (mini)model of prices of production
-tags: political-economy economic-models economic-reproduction classical-political-economy marxian-economics prices-of-production transformation-problem labor-values value-price-transformation
-excerpt: A two-sector dynamic model with labor-values, stationary physical output and market-clearing prices
+tags: political-economy economic-models economic-reproduction classical-political-economy marxian-economics prices-of-production transformation-problem nonlinear-dynamics economic-dynamics
+excerpt: A dynamical model with labor-values, stationary physical output and market-clearing prices
 secondary: ecopol
 mathjax: true
 ---
