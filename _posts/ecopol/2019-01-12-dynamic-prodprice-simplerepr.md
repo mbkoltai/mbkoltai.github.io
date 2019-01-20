@@ -12,7 +12,7 @@ The model has the following assumptions and properties:
 2) non-labor inputs transfer their value to the products they are used up for, but no more or less  
 3) a given amount of labor adds the same amount of value  
 4) profit can therefore only originate from unpaid labour: less is paid for wages than the amount of new value added by labour, the difference between the latter and the former appears as profit (for the entire economy, not for an individual sector)  
-5) the system shows [simple reproduction](https://mbkoltai.github.io/reprod_multipl2/) only: it is producing the same physical amounts of goods in each period, and the physical surplus (output minus inputs used up) takes the form of consumption goods only, and is consumed in each period instead of being redirected (accumulated) into the systems as new capital goods or new consumption goods for an expanding workforce. The amount of non-labour inputs (constant capital) and work performed do not change.  
+5) the system shows [simple reproduction](https://mbkoltai.github.io/reprod_multipl2/) only: it is producing the same physical amounts of goods in each period, and the physical surplus (output minus inputs used up) takes the form of consumption goods only and it is consumed in each period instead of being redirected (accumulated) into the system as new capital goods or new consumption goods for an expanding workforce. The amount of non-labour inputs (constant capital) and work performed do not change.  
 6) the real wage is kept constant: the wage paid for workers enables them to buy the same amounts of consumption goods. The nominal wage can however change if the unit price of consumption goods change.  
 7) Profit rates are equalized
 
