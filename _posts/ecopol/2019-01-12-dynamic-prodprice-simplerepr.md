@@ -57,8 +57,8 @@ $$W_1(t) = C_1(t+1) + C_2(t+1)$$.
 
 Let us write the dynamic equations for the unit prices in a form that they contain no other time-dependent variables, but only constants. All other variables of the system are governed by the unit prices as follows (from now on I put the time index in parenthesis instead of a subscript, as I use subscripts for department indices):
 - constant capital: $$C_1(t) = \alpha X_1 p_1(t)$$, $$C_2(t) = (1-\alpha) X_1 p_1(t)$$, since the total physical amount and sectoral distribution of capital goods do not change
-- wages: $$V_1(t) = \beta_1 X_2 p_2(t) $$, $$V_2(t) = \beta_2 X_2 p_2(t)$$, since the real wage is defined as a fixed amount of consumption goods ($$X_2$$) that the wages can buy, and distribution of the workforce does not change
-- revenue: $$m(t)=\mu X_2 p_2(t)$$, profit spent on consumption goods by capitalists, also kept constant in physical terms  
+- wages: $$V_1(t) = \beta_1 X_2 p_2(t) $$, $$V_2(t) = \beta_2 X_2 p_2(t)$$, since the real wage is defined as a fixed amount ($$\beta_1$$, $$\beta_2$$) of consumption goods ($$X_2$$) that the wages can buy, and distribution of the workforce does not change
+- revenue: $$m(t)=\mu X_2 p_2(t)$$, profit spent on consumption goods by capitalists, also kept constant in physical terms ($$\mu X_2$$, and $$\mu + \beta_1 + \beta_2 = 1$$)  
 - total (gross) output: $$W_i(t) = p_i(t) X_i$$
 - cost: $$K_1(t) = C_1(t) + V_1(t) = \alpha X_1 p_1(t) + \beta_1 X_2 p_2(t)$$, $$K_2(t) = (1-\alpha) X_1 p_1(t) + \beta_2 X_2 p_2(t)$$
 - profit rate: $$ r(t) = \frac{L_T - (V_1(t)+V_2(t)) }{ K_1(t) + K_2(T)} = \frac{L_T - (\beta_1 + \beta_2) X_2 p_2(t)}{ p_1(t) X_1 + (\beta_1 + \beta_2) X_2 p_2(t) } $$ ($$L_T$$ is total labour performed)
@@ -94,7 +94,7 @@ In summary, this simple dynamic model satisfies the requirements of a labour the
 
 If we want to add additional detail to the model, the first thing to add should probably be growing labour productivity that would also mean to expanded reproduction, so that some of the surplus is recycled to the system in the next period, not consumed in the current one. The other component to add for a bit more realistic model is fixed capital. If we add these, then it can start to make sense to ask questions on how productivity growth will affect profitability. It is in this direction I will extend the simple model summarized by Equation \eqref{unit_price_dynam_explicit} in the coming posts.
 
-There are some potential problems with this model, what first comes to mind is how can we know the amount of value that a unit of labour adds or represents. The second is that non-labour inputs (there is only one type in this model, 'capital goods' in general) transfer the value that they were bought at, but what happens if due to changes in productivity the inputs are worth less when the production period comes to its end, than at their time of purchase, what amount of value would they transfer? I will return to these problems as well in future posts. 
+There are some potential problems with this model, what first comes to mind is how can we know the amount of value that a unit of labour adds or represents. The second is that non-labour inputs (there is only one type in this model, 'capital goods' in general) transfer the value that they were bought at, but what happens if due to changes in productivity the inputs are worth less when the production period comes to its end, than at their time of purchase, what amount of value would they transfer? Finally, since the price of total output is growing, there needs to be more money in the system then in the first round (with the coefficients and the initial values used above), so the money supply would have to expand. I will return to these problems as well in future posts.
 
 ### Reference
 
