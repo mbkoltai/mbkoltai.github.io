@@ -94,6 +94,8 @@ In summary, this simple dynamic model satisfies the requirements of a labour the
 
 If we want to add additional detail to the model, the first thing to add should probably be growing labour productivity that would also mean to expanded reproduction, so that some of the surplus is recycled to the system in the next period, not consumed in the current one. The other component to add for a bit more realistic model is fixed capital. If we add these, then it can start to make sense to ask questions on how productivity growth will affect profitability. It is in this direction I will extend the simple model summarized by Equation \eqref{unit_price_dynam_explicit} in the coming posts.
 
+Also, there are some potential problems with this model, what first comes to mind is how can we know the amount of value that a unit of labour adds or represents. I will return to this problem as well in future posts.
+
 ### Reference
 
 [Andrew Kliman, Ted McGlone: The transformation non-problem and the non-transformation problem, Capital & Class, Vol 12, Issue 2, 1988](https://journals.sagepub.com/doi/10.1177/030981688803500106)  
