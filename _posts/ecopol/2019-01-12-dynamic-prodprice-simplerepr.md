@@ -89,7 +89,7 @@ Since unit prices are changing until we reach the stationary state, the amount o
 ![_config.yml]({{ site.baseurl }}/images/prices_prod_initval_sampling.png)
 
 But the dynamical system converges to this stationary state only because the technical coefficients, the physical productivity and relative sizes of the departments do not change in this model.
-If the parameters change before the system converges to the fixed point, then the pre-equilibrium behavior will continue.
+If the parameters change before the system converges to the fixed point, then the pre-equilibrium behavior will continue (see Giussani 1998).
 In summary, this simple dynamic model satisfies the requirements of a labour theory of value that total profit equals total surplus (unpaid) labour, total price equals total value, and the sectoral balances of simple reproduction are also respected. At the same time unit prices of the two goods are different from their values, so it is only through aggregate quantities that prices are determined by labour values.
 
 If we want to add additional detail to the model, the first thing to add should probably be growing labour productivity that would also mean to expanded reproduction, so that some of the surplus is recycled to the system in the next period, not consumed in the current one. The other component to add for a bit more realistic model is fixed capital. If we add these, then it can start to make sense to ask questions on how productivity growth will affect profitability. It is in this direction I will extend the simple model summarized by Equation \eqref{unit_price_dynam_explicit} in the coming posts.
@@ -98,5 +98,6 @@ There are some potential problems with this model, what first comes to mind is h
 
 ### Reference
 
-[Andrew Kliman, Ted McGlone: The transformation non-problem and the non-transformation problem, Capital & Class, Vol 12, Issue 2, 1988](https://journals.sagepub.com/doi/10.1177/030981688803500106)  
-[Andrew Kliman, Ted McGlone: A Temporal Single-system Interpretation of Marx's Value Theory, Review of Political Economy, Volume 11, Number 1, 1999](https://www.tandfonline.com/doi/pdf/10.1080/095382599107165)
+[Giussani: Orthodoxy in Marxian Price Theory, International Journal of Political Economy Volume 28, 1998](https://www.tandfonline.com/doi/abs/10.1080/08911916.1998.11643976)
+[Kliman, McGlone: The transformation non-problem and the non-transformation problem, Capital & Class, Vol 12, Issue 2, 1988](https://journals.sagepub.com/doi/10.1177/030981688803500106)  
+[Kliman, McGlone: A Temporal Single-system Interpretation of Marx's Value Theory, Review of Political Economy, Volume 11, Number 1, 1999](https://www.tandfonline.com/doi/pdf/10.1080/095382599107165)
