@@ -98,6 +98,6 @@ There are some potential problems with this model, what first comes to mind is h
 
 ### Reference
 
-[Giussani: Orthodoxy in Marxian Price Theory, International Journal of Political Economy Volume 28, 1998](https://www.tandfonline.com/doi/abs/10.1080/08911916.1998.11643976)
+[Giussani: Orthodoxy in Marxian Price Theory, International Journal of Political Economy, Volume 28, 1998](https://www.tandfonline.com/doi/abs/10.1080/08911916.1998.11643976)
 [Kliman, McGlone: The transformation non-problem and the non-transformation problem, Capital & Class, Vol 12, Issue 2, 1988](https://journals.sagepub.com/doi/10.1177/030981688803500106)  
 [Kliman, McGlone: A Temporal Single-system Interpretation of Marx's Value Theory, Review of Political Economy, Volume 11, Number 1, 1999](https://www.tandfonline.com/doi/pdf/10.1080/095382599107165)
