@@ -74,9 +74,9 @@ $$\begin{bmatrix} p_1(t+1) \\ p_2(t+1 )\\ \end{bmatrix} = \begin{bmatrix} \alpha
 This is a system of first-order, non-linear, autonomous difference equations, that - I think - cannot be solved analytically (so that $$p(t)$$ would be a function of time and parameters only), but it is easy to simulate numerically, or solve for its fixed point (in which case it becomes a quadratic equation, with one positive solution).
 
 I simulated the system in MATLAB with the following numerical values (also used in the article cited below as a reference): $$L_T = 300$$, $$ \alpha = 1/2 $$, $$ \beta_1 = 1/6 $$, $$ \beta_2 = 1/3$$, $$\mu = 1/2$$, $$ X_1 = 200$$, $$ X_2 = 300$$ and the initial values $$p_1(0)=p_2(0)=1$$.
-This is the plot of the dynamics of unit prices and some of the variables of the system:
+This is the plot of the dynamics of unit prices and some of the ratios of the system:
 
-![_config.yml]({{ site.baseurl }}/images/prices_prod_simple_reprod_sequential.png)
+![_config.yml]({{ site.baseurl }}/images/unitprices_ratios.png)
 
 The system satisfies the following equalities (these are all in price terms):
 - $$W_1(t) = C_1(t+1) + C_2(t+1) = p_1(t+1) X_1 $$, output of capital goods of the current period equals input of capital goods in next period
@@ -84,7 +84,7 @@ The system satisfies the following equalities (these are all in price terms):
 - $$W_2(t) = V_1(t+1) + V_2(t+1) + m(t+1) = p_2(t+1) X_2 $$, output of consumption goods in current period equals outlay on wages plus consumption from profit (revenue) in next period
 - $$ \sum m_i(t) = \sum W_i(t-1) - \sum K_i(t)$$, total revenue, ie. profit that can be spent on consumption equals the difference between the output of the previous period minus outlays on wages and capital goods in the current period
 
-Since unit prices are changing until we reach the stationary state, the amount of money needed for total outlays (wages + capital goods) is also changing, and since inputs (in this model) transfer their prices to the output, gross output in terms of price is also changing, though net value added does not. Once we reach the fixed point unit prices do not change anymore, therefore wages, profit, outlays on capital goods and gross output have also reached a stationary state. This final state is identical to the equilibrium price (equal input and output prices) solution to the system. The fixed point is obviously attracting, so sampling in initial values (for unit prices) will lead to the same stationary values, as shown in the plot below.
+Since unit prices are changing until we reach the stationary state, the amount of money needed for total outlays (wages + capital goods) is also changing (see on the plot above the ratio of costs), and since inputs (in this model) transfer their prices to the output, gross output in terms of price is also changing, though net value added does not. Once we reach the fixed point unit prices do not change anymore, therefore wages, profit, outlays on capital goods and gross output have also reached a stationary state. This final state is identical to the equilibrium price (equal input and output prices) solution to the system. The fixed point is obviously attracting, so sampling in initial values (for unit prices) will lead to the same stationary values, as shown in the plot below.
 
 ![_config.yml]({{ site.baseurl }}/images/prices_prod_initval_sampling.png)
 
