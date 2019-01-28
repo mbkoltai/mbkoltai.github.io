@@ -17,6 +17,7 @@ The model has the following assumptions and properties:
 6) Profit rates are equalized
 
 Of course assumptions no. 2-3 can be (are) contested, and the idea that human labour is the only source of new value and therefore of profit can be rejected, but this - ie. the validity of the labour theory of value - is a topic for another post. Assumption no. *4-5* are just convenient first assumptions, but the system can be changed to expanded reproduction etc. by altering its coefficients.
+Assumption *6* is reasonable as a tendency (capital flows in search of (sectors with) higher rates of return) but one should also have a mechanism implemented in a more serious model.
 My goal here is just to build a small mathematical model that is internally consistent and has a dynamics that can later be made more realistic by introducing more detail. As the system is dynamic  prices and profit rates can change, which is a precondition to incorporate crises in the model.
 
 Like in the input-output models I [discussed previously](https://mbkoltai.github.io/reprod_multipl2/) we have two economic sectors (or departments), the first ($$D_1$$) producing capital goods (this could be raw materials as well, any non-labour inputs used up in production), the second ($$D_2$$) consumption goods (*CoG*). Since we are dealing with simple reproduction and we will also abstract from fixed capital, therefore all capital goods are used up in each period of production, the total use of capital goods has to equal the total output ($$W_1$$) of $$D_1$$.
@@ -95,6 +96,10 @@ In summary, this simple dynamic model satisfies the requirements of a labour the
 If we want to add additional detail to the model, the first thing to add should probably be growing labour productivity that would also mean to expanded reproduction, so that some of the surplus is recycled to the system in the next period, not consumed in the current one. The other component to add for a bit more realistic model is fixed capital. If we add these, then it can start to make sense to ask questions on how productivity growth will affect profitability. It is in this direction I will extend the simple model summarized by Equation \eqref{unit_price_dynam_explicit} in the coming posts.
 
 There are some potential problems with this model, what first comes to mind is how can we know the amount of value a unit of labour adds or represents. The second is that non-labour inputs (there is only one type in this model, 'capital goods' in general) transfer the value that they were bought at, but what happens if due to changes in productivity the inputs are worth less when the production period comes to its end, than at their time of purchase, what amount of value would they transfer? Finally, since the price of total output is growing, there needs to be more money in the system then in the first round (with the coefficients and the initial values used above), so the money supply would have to expand. I will return to these problems as well in future posts.
+
+### Script
+
+[MATLAB script]({{ site.baseurl }}/images/sequential_prices.m)
 
 ### Reference
 
