@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A dynamic toy model of prices of production
+title: A toy model of dynamic prices of production
 tags: political-economy economic-models economic-reproduction classical-political-economy marxian-economics prices-of-production transformation-problem nonlinear-dynamics economic-dynamics
 excerpt: Dynamic model with labor-values, constant physical output and market-clearing prices
 secondary: ecopol
