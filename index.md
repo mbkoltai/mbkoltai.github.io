@@ -23,6 +23,4 @@ I also have a strong interest in the quantitative modeling of economic processes
 
 ### Contact
 
-Institut Curie<br>
-26 Rue d'Ulm, 75005 Paris, France<br>
-Email: mihaly(dot)koltai(at)curie(dot)fr
+Email: kolmisi(at)gmail(dot)com

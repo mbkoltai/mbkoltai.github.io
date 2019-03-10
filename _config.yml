@@ -74,13 +74,12 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-avatar
   - jekyll-seo-tag
-
-
+  - jekyll-scholar
 
 # Exclude these files from your production _site
 exclude:
@@ -89,3 +88,29 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# plugins: ['jekyll/scholar']
+
+scholar:
+  style: cell-numeric.csl # biophysical-journal # _bibliography/numeric.csl
+  locale: en
+
+  sort_by: none
+  order: ascending
+
+  group_by: none
+  group_order: ascending
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: ""
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+
+#  details_dir:    bibliography
+#  details_layout: bibtex.html
+#  details_link:   Details
+
+  query: "@*"
