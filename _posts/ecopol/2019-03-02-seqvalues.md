@@ -2,7 +2,7 @@
 layout: post
 title: Dynamic behavior of sequentially determined values
 tags: political-economy economic-models economic-reproduction classical-political-economy marxian-economics prices-of-production transformation-problem economic-dynamics
-excerpt: Sequentially defined values under changing technical conditions and/or labor productivity
+excerpt: Paradoxical (or not) dynamical properties of sequentially defined values
 secondary: ecopol
 mathjax: true
 ---
