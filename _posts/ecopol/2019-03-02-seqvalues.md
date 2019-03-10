@@ -83,8 +83,8 @@ The parameter set used was: $$ \mathbf{\alpha}= [0.2; 0.4], \mathbf{\beta}= [0.3
 ![_config.yml]({{ site.baseurl }}/images/unitprices_nonmonot_paradox.png)
 **Figure 1: Non-monotonic dynamics of sequential values with increasing productivity**
 
-This non-trivial and somewhat puzzling feature comes about because of two dynamical terms that can be seen in  equation \ref{dynamic_values_sol_L_t}: one coming from the input prices of the previous period and the other from labour productivity.
-If the initial input prices are far from the stationary value (of the *simultaneous equations* with that level of productivity) then it can take several iterations until the falling labour content becomes the dominant term, and this can result in non-monotonic behavior.
+This non-trivial and somewhat puzzling feature comes about because of two dynamical terms that can be seen in  equation \ref{dynamic_values_sol_L_t}: one coming from the input values of the previous period and the other from labour productivity.
+If the initial input values are far from the stationary value (of the *simultaneous equations* with that level of productivity) then it can take several iterations until the falling labour content becomes the dominant term, and this can result in non-monotonic behavior.
 
 For the one-good case, it is easier to see the conditions for this. In this case the difference $$\epsilon$$ between any two consecutive steps is:
 
