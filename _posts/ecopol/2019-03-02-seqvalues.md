@@ -109,7 +109,7 @@ Yet this can also be seen as an interesting feature of the sequential model, in 
 If we have only one circuit per sector like above, this assumes that all capitals in that sector are synchronized, which is clearly not the case in reality.
 But if they are not synchronized, the formalism would have to be more complex. When one circuit of capital is in the phase of production others are releasing new products to the market, which can devalue the inputs.
 Therefore the value of inputs would not equal their original value, but would be - based on intuition - some weighted average of past values of the inputs used by the individual circuits.
-In my next posts I want to address this question of connecting a model of the circuit of capital with these different forms of value calculations.
+In my next posts I want to address this question of connecting a model of the circuit of capital with these different methods of value calculation.
 
 
 ### Reference
