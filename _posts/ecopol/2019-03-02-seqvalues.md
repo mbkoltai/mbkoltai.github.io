@@ -111,6 +111,7 @@ But if they are not synchronized, the formalism would have to be more complex. W
 Therefore the value of inputs would not equal their original value, but would be - based on intuition - some weighted average of past values of the inputs used by the individual circuits.
 In my next posts I want to address this question of connecting a model of the circuit of capital with these different forms of value calculations.
 
+
 ### Reference
 
 {% bibliography --cited %}
