@@ -6,7 +6,7 @@ excerpt: Paradoxical (or not) dynamical properties of sequentially defined value
 secondary: ecopol
 mathjax: true
 ---
-In my [previous post](https://mbkoltai.github.io/dynamic-prodprice-simplerepr/) I discussed a simple model of dynamically/sequentially defined prices of production. These production prices for any good are defined as the good's input cost (wages + non-labour costs) plus a markup equal to the rate of profit/surplus labor in the entire (two department) economy.
+In my [previous post](https://mbkoltai.github.io/dynamic-prodprice-simplerepr/) I discussed a simple model of sequentially defined prices of production. These production prices for any good are defined as the good's input cost (wages + non-labour costs) plus a markup equal to the rate of profit/surplus labor in the entire (two department) economy.
 As I discussed this model eventually converges to a stationary solution that is identical of the algebraic system of equations with identical input and output prices, ie.
 $$ \mathbf{p} = \mathbf{p}(\mathbf{A} + w \mathbf{l})(1+r)
 \tag{1}\label{simul_val}$$
