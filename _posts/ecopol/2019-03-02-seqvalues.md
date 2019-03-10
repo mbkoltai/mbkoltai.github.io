@@ -24,7 +24,7 @@ $$ p_{t} = p_0 a^t + l \sum_{i=0}^{t-1} a^i = p_0 a^t  + \frac{l}{1-a} (1-a^t)$$
 
 which for $$a<1$$ (meaning there is a physical surplus) converges to $$p^* = \frac{l}{1-a}$$. In this case there is no redistribution of added value through prices of production, so value and price are the same, equaling to the price of inputs plus the incorporated labour.
 
-Since it is more interesting to work with the more general case of multiple goods/sectors, but without the non-linearity, I will look at the dynamic behavior of *values* instead of prices of production, following an exchange between Duménil&Lévy (D&L) and P. Giussani around 2000 {% cite giussani %} {% cite dumlevy %}.
+Since it is more interesting to work with the more general case of multiple goods/sectors, but without the non-linearity, I will look at the dynamic behavior of values instead of prices of production, following an exchange between Duménil&Lévy (D&L) and P. Giussani around 2000 {% cite giussani %} {% cite dumlevy %}.
 
 When I write the value of a particular good, I mean the value of its inputs plus the amount of (socially necessary) labour directly embodied in it, ie. using a sequential definition\\
 $$ \Lambda_t = \mathbf{A} \Lambda_{t-1} + \mathbf{L}_t
