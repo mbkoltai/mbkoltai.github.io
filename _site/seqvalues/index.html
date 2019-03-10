@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic behavior of sequentially determined values – mbkoltai.github.io – mb koltai</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Paradoxical (or not) dynamical properties of sequentially defined values" />
+    <meta property="og:description" content="Paradoxical (or not) dynamical properties of sequentially defined values" />
+    
+    <meta name="author" content="mbkoltai.github.io" />
+
+    
+        
+
+
+
+
+
+
+    
+
+
+    
+    <meta property="og:title" content="Dynamic behavior of sequentially determined values" />
+    <meta property="twitter:title" content="Dynamic behavior of sequentially determined values" />
+    
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="mbkoltai.github.io - mb koltai" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Dynamic behavior of sequentially determined values | mbkoltai.github.io</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Dynamic behavior of sequentially determined values" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Paradoxical (or not) dynamical properties of sequentially defined values" />
+<meta property="og:description" content="Paradoxical (or not) dynamical properties of sequentially defined values" />
+<link rel="canonical" href="http://localhost:4000/seqvalues/" />
+<meta property="og:url" content="http://localhost:4000/seqvalues/" />
+<meta property="og:site_name" content="mbkoltai.github.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-03-02T00:00:00+01:00" />
+<script type="application/ld+json">
+{"description":"Paradoxical (or not) dynamical properties of sequentially defined values","@type":"BlogPosting","url":"http://localhost:4000/seqvalues/","headline":"Dynamic behavior of sequentially determined values","dateModified":"2019-03-02T00:00:00+01:00","datePublished":"2019-03-02T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/seqvalues/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">mbkoltai.github.io</a></h1>
+         <!--    <p class="site-description">mb koltai</p> -->
+          </div>
+
+          <nav>
+            <a href="/">About me</a>
+            <a href="/papers">Publications</a>
+            <a href="/blog">sci-blog</a>
+            <a href="/ecopol">econmodel-blog</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Dynamic behavior of sequentially determined values</h1>
+
+  <div class="entry">
+    <p>In my <a href="https://mbkoltai.github.io/dynamic-prodprice-simplerepr/">previous post</a> I discussed a simple model of dynamically/sequentially defined prices of production. These production prices for any good are defined as the good’s input cost (wages + non-labour costs) plus a markup equal to the rate of profit/surplus labor in the entire (two department) economy.
+As I discussed this model eventually converges to a stationary solution that is identical of the algebraic system of equations with identical input and output prices, ie.
+<script type="math/tex">\mathbf{p} = \mathbf{p}(\mathbf{A} + w \mathbf{l})(1+r)
+\tag{1}\label{simul_val}</script></p>
+
+<p>The system of difference equations for (more than one) prices of production had a nonlinear term due to profit rate equalization, ie. redistribution of value produced in the different sectors:
+<script type="math/tex">\mathbf{p}_{t+1} = \mathbf{p}_t (\mathbf{A} + w \mathbf{l})
+(1 + \frac{ \mathbf{l} \mathbf{X} - \mathbf{p}_t w \mathbf{l} \mathbf{X} }{ \mathbf{p}_t (\mathbf{A} + w \mathbf{l}) \mathbf{X} } ) =
+\mathbf{p}_t (\mathbf{A} + w \mathbf{l}) \frac{ ( \mathbf{p}_t \mathbf{A} + \mathbf{l}) \mathbf{X} }{ \mathbf{p}_t (\mathbf{A} + w \mathbf{l}) \mathbf{X} }
+\tag{2}\label{unit_price_dynam_explicit}</script></p>
+
+<p>It is obvious that in the case of a model with only one good, so if <script type="math/tex">A</script>, <script type="math/tex">l</script>, <script type="math/tex">X</script> are scalars, not matrices/vectors, the nonlinearity drops out and the system simplifies to
+<script type="math/tex">p_{t+1} = p_t a + l</script>, that has an explicit solution, which is:</p>
+
+<p><script type="math/tex">p_{t} = p_0 a^t + l \sum_{i=0}^{t-1} a^i = p_0 a^t  + \frac{l}{1-a} (1-a^t)</script>,</p>
+
+<p>which for <script type="math/tex">% <![CDATA[
+a<1 %]]></script> (meaning there is a physical surplus) converges to <script type="math/tex">p^* = \frac{l}{1-a}</script>. In this case there is no redistribution of added value through prices of production, so value and price are the same, equaling to the price of inputs plus the incorporated labour.</p>
+
+<p>Since it is more interesting to work with the more general case of multiple goods/sectors, but without the non-linearity, I will look at the dynamic behavior of values instead of prices of production, following an exchange between Duménil&amp;Lévy (D&amp;L) and P. Giussani around 2000 <a href="#giussani">[1]</a> <a href="#dumlevy">[2]</a>.</p>
+
+<p>When I write the value of a particular good, I mean the value of its inputs plus the amount of (socially necessary) labour directly embodied in it, ie. using a sequential definition<br />
+<script type="math/tex">\Lambda_t = \mathbf{A} \Lambda_{t-1} + \mathbf{L}_t
+\tag{3}\label{dynamic_values}</script></p>
+
+<p>or in the simultaneous description (dropping time subscripts):</p>
+
+<script type="math/tex; mode=display">\Lambda = \mathbf{A} \Lambda + \mathbf{L}
+\tag{4}\label{simult_values}</script>
+
+<p>where again <script type="math/tex">L</script> is the column vector of labour values, <script type="math/tex">A</script> the input-output matrix, and <script type="math/tex">\Lambda</script> the column vector of unit values.</p>
+
+<p>The solutions for the unit values are then for simultaneous values:</p>
+
+<script type="math/tex; mode=display">\Lambda = (\mathbf{I} - \mathbf{A})^{-1} \mathbf{L}
+\tag{5}\label{simult_values_sol}</script>
+
+<p>and sequentially determined values:</p>
+
+<script type="math/tex; mode=display">\Lambda_t = \mathbf{A}^{t} \Lambda_0 + (\mathbf{I} - \mathbf{A})^{-1} (\mathbf{I} - \mathbf{A}^{t} ) \mathbf{L}
+\tag{6}\label{dynamic_values_sol}</script>
+
+<p>Since it is assumed (elements of) <script type="math/tex">% <![CDATA[
+A<1 %]]></script> (otherwise we would have shrinking reproduction), therefore <script type="math/tex">\lim\limits_{t \to \infty}\Lambda_t = \Lambda^{* } = (I-A)^{-1} L</script>, same as the simultaneous equation \ref{simult_values_sol}.
+For this reason it was argued by Stamatis <a href="#stamatisremarks">[3]</a> <a href="#stamatiscategories">[4]</a> that the sequential formalism is simply an iterative calculation procedure to solve the algebraic equation of  \ref{simult_values_sol}, and not a model of economic dynamics. I will address this question later, first I will explore some dynamic properties of this formalism, independent of its interpretation.</p>
+
+<p>It was pointed out by D&amp;L that in the sequential formalism it is possible to have growing labour productivity (falling labour inputs per unit of goods) with <em>growing</em> unit values.
+Specifically, if instead of a constant <script type="math/tex">L</script>, it is now a function of time:</p>
+
+<p><script type="math/tex">L_t = \alpha + \beta \gamma^t</script>,</p>
+
+<p>with <script type="math/tex">% <![CDATA[
+0<\gamma<1 %]]></script>, that is <script type="math/tex">L</script> will be monotonically decreasing with time, falling to <script type="math/tex">\alpha</script> eventually (the coefficients are column vectors).</p>
+
+<p>The explicit solution for sequential values is then:</p>
+
+<script type="math/tex; mode=display">\Lambda_t =
+A^t \Lambda_0 + (I - A)^{-1} (I-A^t) \mathbf{\alpha} + (A - \gamma I)^{-1} (A^t - \gamma^t I) \mathbf{\beta}
+\tag{7}\label{dynamic_values_sol_L_t}</script>
+
+<p>if <script type="math/tex">\gamma</script> is a scalar, otherwise the last term is <script type="math/tex">% <![CDATA[
+(A^t - \left< \gamma^t \right> I ) \beta %]]></script>, with <script type="math/tex">% <![CDATA[
+\left< \gamma \right> %]]></script> being the diagonal matrix from <script type="math/tex">\gamma</script>.
+Since the <script type="math/tex">A^t</script> and <script type="math/tex">\gamma^t</script> terms are shrinking to zero with time, the equlibrium solution is:</p>
+
+<p><script type="math/tex">\Lambda^{* } = (I-A)^{-1} \mathbf{\alpha}</script>,</p>
+
+<p>again the same as in the simultaneous description.</p>
+
+<p>D&amp;L point out that if the initial value <script type="math/tex">% <![CDATA[
+\Lambda_0 < \Lambda^{* } %]]></script>, then <script type="math/tex">\Lambda^{t}</script> will rise, converging to the equilibrium from below, even though the labour content is falling. D&amp;L refer to this as a ‘productivity paradox’.
+In fact, the behavior of sequential values is even more complex.
+In equation \ref{dynamic_values_sol_L_t} there are exponential terms both in <script type="math/tex">A</script> and <script type="math/tex">\gamma</script> with the coefficients <script type="math/tex">\alpha</script> and <script type="math/tex">\beta</script> respectively, which suggests that the behavior can be non-monotonic. This is in fact what happens with certain parameter sets as shown by the numerical examples below.</p>
+
+<p>The parameter set used was: <script type="math/tex">% <![CDATA[
+\mathbf{\alpha}= [0.2; 0.4], \mathbf{\beta}= [0.3; 0.1],
+\mathbf{\gamma}= [0.9; 0.8],
+\mathbf{A} = \begin{bmatrix} 2/3 & 1/3 \\ 1/6 & 1/2 \\ \end{bmatrix} %]]></script></p>
+
+<p><img src="/images/unitprices_nonmonot_paradox.png" alt="_config.yml" />
+<strong>Figure 1: Non-monotonic dynamics of sequential values with increasing productivity</strong></p>
+
+<p>This non-trivial and somewhat puzzling feature comes about because of two dynamical terms that can be seen in  equation \ref{dynamic_values_sol_L_t}: one coming from the input prices of the previous period and the other from labour productivity.
+If the initial input prices are far from the stationary value (of the <em>simultaneous equations</em> with that level of productivity) then it can take several iterations until the falling labour content becomes the dominant term, and this can result in non-monotonic behavior.</p>
+
+<p>For the one-good case, it is easier to see the conditions for this. In this case the difference <script type="math/tex">\epsilon</script> between any two consecutive steps is:</p>
+
+<script type="math/tex; mode=display">\epsilon = \left(\lambda_0 - \frac{\alpha}{1-a} + \frac{\beta}{a-\gamma} \right) a^t \left(1-\frac{1}{a} \right) +
+\left(- \frac{\beta}{a - \gamma} \right) \gamma^t \left(1-\frac{1}{\gamma} \right)</script>
+
+<p>Denoting the difference between the initial and stationary value <script type="math/tex">\Delta = \lambda_0 - \frac{\alpha}{1-a}</script>, and after some rearrangements, the condition for non-monotonic behavior is:</p>
+
+<ul>
+  <li>
+    <p><script type="math/tex">% <![CDATA[
+\Delta < \frac{\beta}{a-\gamma} \left( \frac{\gamma}{a}^{t-1} \frac{\gamma-1}{a-1} -1 \right) %]]></script>, if <script type="math/tex">\Delta >0</script> (increasing unit values for <script type="math/tex">\lambda_0 > \lambda^*</script>)</p>
+  </li>
+  <li>
+    <p><script type="math/tex">\Delta > \frac{\beta}{a-\gamma} \left( \frac{\gamma}{a}^{t-1} \frac{\gamma-1}{a-1} -1 \right)</script>, if <script type="math/tex">% <![CDATA[
+\Delta < 0 %]]></script> (decreasing unit values for <script type="math/tex">% <![CDATA[
+\lambda_0 < \lambda^* %]]></script>)</p>
+  </li>
+</ul>
+
+<p>As the numerical example above shows this can be satisfied in both cases.</p>
+
+<p>Is this behavior of sequential values «paradoxical»?
+No matter how we answer this question, it certainly would be an exaggeration to claim that what we see here is - even an extremely simplified - model of economic dynamics.
+The technical coefficients of the system are defined independently from values, there are no feedback effects, and yet the system shows relatively complicated dynamic behavior already, depending on its initial value. This is not due to endogenous technical change or of disequilibrium between supply and demand, but simply to the dependence on the preceding state.</p>
+
+<p>Yet this can also be seen as an interesting feature of the sequential model, in contrast to the simultaneous one, namely that the periods are connected: the output price/value of one period is the input of the next. This suggests that it can be used in a dynamical model of the circuit(s) of capital <a href="#FOLEY1982300">[5]</a>.
+If we have only one circuit per sector like above, this assumes that all capitals in that sector are synchronized, which is clearly not the case in reality.
+But if they are not synchronized, the formalism would have to be more complex. When one circuit of capital is in the phase of production others are releasing new products to the market, which can devalue the inputs.
+Therefore the value of inputs would not equal their original value, but would be - based on intuition - some weighted average of past values of the inputs used by the individual circuits.
+In my next posts I want to address this question of connecting a model of the circuit of capital with these different forms of value calculations.</p>
+
+<h3 id="reference">Reference</h3>
+
+<ol class="bibliography"><li><span id="giussani">1.Giussani, P. (1998). Dynamic and Static Marxian Values. Political Economy <i>3</i>, 5–19.</span></li>
+<li><span id="dumlevy">2.Dumenil, G., and Levy, D. (2000). The Conservation of Value: A Rejoinder to Alan Freeman. Review of Radical Political Economics <i>32</i>, 119–146.</span></li>
+<li><span id="stamatisremarks">3.Stamatis, G. (1998). Some remarks upon the article of Alan Freeman ’Marx without equilibrium.’ Political Economy <i>3</i>, 21–23.</span></li>
+<li><span id="stamatiscategories">4.Stamatis, G. (1999). The so-called Temporal Single System (TSS) the so-called
+Standard Simultaneous Methodology (SSM) and the correct definition of labour values. Political Economy <i>3</i>, 23–44.</span></li>
+<li><span id="FOLEY1982300">5.Foley, D.K. (1982). Realization and accumulation in a Marxian model of the circuit of capital. Journal of Economic Theory <i>28</i>, 300–319.</span></li></ol>
+
+  </div>
+
+  <div class="date">
+    Written on March  2, 2019
+  </div>
+
+  <span>[
+  
+    
+    <a href="/tag/political-economy"><code class="highligher-rouge"><nobr>political-economy</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/economic-models"><code class="highligher-rouge"><nobr>economic-models</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/economic-reproduction"><code class="highligher-rouge"><nobr>economic-reproduction</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/classical-political-economy"><code class="highligher-rouge"><nobr>classical-political-economy</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/marxian-economics"><code class="highligher-rouge"><nobr>marxian-economics</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/prices-of-production"><code class="highligher-rouge"><nobr>prices-of-production</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/transformation-problem"><code class="highligher-rouge"><nobr>transformation-problem</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/economic-dynamics"><code class="highligher-rouge"><nobr>economic-dynamics</nobr></code>&nbsp;</a>
+  
+]</span>
+
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+<script>
+       MathJax.Hub.Config({
+           config: ["MMLorHTML.js"],
+           extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+           jax: ["input/TeX"],
+           tex2jax: {
+               inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+               displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+               processEscapes: false
+           },
+           TeX: {
+               TagSide: "right",
+               TagIndent: ".8em",
+               MultLineWidth: "85%",
+               equationNumbers: {
+                  autoNumber: "AMS",
+               },
+               unicode: {
+                  fonts: "STIXGeneral,'Arial Unicode MS'"
+               }
+           },
+           showProcessingMessages: false
+       });
+</script>
+
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:mihaly.koltai@curie.fr"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/mbkoltai"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/mihaly-koltai"><i class="svg-icon linkedin"></i></a>
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

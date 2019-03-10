@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-10T20:21:19+01:00</updated><id>http://localhost:4000/</id><title type="html">mbkoltai.github.io</title><subtitle>[&quot;mb koltai&quot;]</subtitle><entry><title type="html">Dynamic behavior of sequentially determined values</title><link href="http://localhost:4000/seqvalues/" rel="alternate" type="text/html" title="Dynamic behavior of sequentially determined values" /><published>2019-03-02T00:00:00+01:00</published><updated>2019-03-02T00:00:00+01:00</updated><id>http://localhost:4000/seqvalues</id><content type="html" xml:base="http://localhost:4000/seqvalues/">&lt;p&gt;In my &lt;a href=&quot;https://mbkoltai.github.io/dynamic-prodprice-simplerepr/&quot;&gt;previous post&lt;/a&gt; I discussed a simple model of dynamically/sequentially defined prices of production. These production prices for any good are defined as the good’s input cost (wages + non-labour costs) plus a markup equal to the rate of profit/surplus labor in the entire (two department) economy.
+As I discussed this model eventually converges to a stationary solution that is identical of the algebraic system of equations with identical input and output prices, ie.
+&lt;script type=&quot;math/tex&quot;&gt;\mathbf{p} = \mathbf{p}(\mathbf{A} + w \mathbf{l})(1+r)
+\tag{1}\label{simul_val}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;The system of difference equations for (more than one) prices of production had a nonlinear term due to profit rate equalization, ie. redistribution of value produced in the different sectors:
+&lt;script type=&quot;math/tex&quot;&gt;\mathbf{p}_{t+1} = \mathbf{p}_t (\mathbf{A} + w \mathbf{l})
+(1 + \frac{ \mathbf{l} \mathbf{X} - \mathbf{p}_t w \mathbf{l} \mathbf{X} }{ \mathbf{p}_t (\mathbf{A} + w \mathbf{l}) \mathbf{X} } ) =
+\mathbf{p}_t (\mathbf{A} + w \mathbf{l}) \frac{ ( \mathbf{p}_t \mathbf{A} + \mathbf{l}) \mathbf{X} }{ \mathbf{p}_t (\mathbf{A} + w \mathbf{l}) \mathbf{X} }
+\tag{2}\label{unit_price_dynam_explicit}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;It is obvious that in the case of a model with only one good, so if &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;l&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt; are scalars, not matrices/vectors, the nonlinearity drops out and the system simplifies to
+&lt;script type=&quot;math/tex&quot;&gt;p_{t+1} = p_t a + l&lt;/script&gt;, that has an explicit solution, which is:&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;p_{t} = p_0 a^t + l \sum_{i=0}^{t-1} a^i = p_0 a^t  + \frac{l}{1-a} (1-a^t)&lt;/script&gt;,&lt;/p&gt;
+
+&lt;p&gt;which for &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+a&lt;1 %]]&gt;&lt;/script&gt; (meaning there is a physical surplus) converges to &lt;script type=&quot;math/tex&quot;&gt;p^* = \frac{l}{1-a}&lt;/script&gt;. In this case there is no redistribution of added value through prices of production, so value and price are the same, equaling to the price of inputs plus the incorporated labour.&lt;/p&gt;
+
+&lt;p&gt;Since it is more interesting to work with the more general case of multiple goods/sectors, but without the non-linearity, I will look at the dynamic behavior of values instead of prices of production, following an exchange between Duménil&amp;amp;Lévy (D&amp;amp;L) and P. Giussani around 2000 &lt;a href=&quot;#giussani&quot;&gt;[1]&lt;/a&gt; &lt;a href=&quot;#dumlevy&quot;&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When I write the value of a particular good, I mean the value of its inputs plus the amount of (socially necessary) labour directly embodied in it, ie. using a sequential definition&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\Lambda_t = \mathbf{A} \Lambda_{t-1} + \mathbf{L}_t
+\tag{3}\label{dynamic_values}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;or in the simultaneous description (dropping time subscripts):&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Lambda = \mathbf{A} \Lambda + \mathbf{L}
+\tag{4}\label{simult_values}&lt;/script&gt;
+
+&lt;p&gt;where again &lt;script type=&quot;math/tex&quot;&gt;L&lt;/script&gt; is the column vector of labour values, &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; the input-output matrix, and &lt;script type=&quot;math/tex&quot;&gt;\Lambda&lt;/script&gt; the column vector of unit values.&lt;/p&gt;
+
+&lt;p&gt;The solutions for the unit values are then for simultaneous values:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Lambda = (\mathbf{I} - \mathbf{A})^{-1} \mathbf{L}
+\tag{5}\label{simult_values_sol}&lt;/script&gt;
+
+&lt;p&gt;and sequentially determined values:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Lambda_t = \mathbf{A}^{t} \Lambda_0 + (\mathbf{I} - \mathbf{A})^{-1} (\mathbf{I} - \mathbf{A}^{t} ) \mathbf{L}
+\tag{6}\label{dynamic_values_sol}&lt;/script&gt;
+
+&lt;p&gt;Since it is assumed (elements of) &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+A&lt;1 %]]&gt;&lt;/script&gt; (otherwise we would have shrinking reproduction), therefore &lt;script type=&quot;math/tex&quot;&gt;\lim\limits_{t \to \infty}\Lambda_t = \Lambda^{* } = (I-A)^{-1} L&lt;/script&gt;, same as the simultaneous equation \ref{simult_values_sol}.
+For this reason it was argued by Stamatis &lt;a href=&quot;#stamatisremarks&quot;&gt;[3]&lt;/a&gt; &lt;a href=&quot;#stamatiscategories&quot;&gt;[4]&lt;/a&gt; that the sequential formalism is simply an iterative calculation procedure to solve the algebraic equation of  \ref{simult_values_sol}, and not a model of economic dynamics. I will address this question later, first I will explore some dynamic properties of this formalism, independent of its interpretation.&lt;/p&gt;
+
+&lt;p&gt;It was pointed out by D&amp;amp;L that in the sequential formalism it is possible to have growing labour productivity (falling labour inputs per unit of goods) with &lt;em&gt;growing&lt;/em&gt; unit values.
+Specifically, if instead of a constant &lt;script type=&quot;math/tex&quot;&gt;L&lt;/script&gt;, it is now a function of time:&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;L_t = \alpha + \beta \gamma^t&lt;/script&gt;,&lt;/p&gt;
+
+&lt;p&gt;with &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+0&lt;\gamma&lt;1 %]]&gt;&lt;/script&gt;, that is &lt;script type=&quot;math/tex&quot;&gt;L&lt;/script&gt; will be monotonically decreasing with time, falling to &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; eventually (the coefficients are column vectors).&lt;/p&gt;
+
+&lt;p&gt;The explicit solution for sequential values is then:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Lambda_t =
+A^t \Lambda_0 + (I - A)^{-1} (I-A^t) \mathbf{\alpha} + (A - \gamma I)^{-1} (A^t - \gamma^t I) \mathbf{\beta}
+\tag{7}\label{dynamic_values_sol_L_t}&lt;/script&gt;
+
+&lt;p&gt;if &lt;script type=&quot;math/tex&quot;&gt;\gamma&lt;/script&gt; is a scalar, otherwise the last term is &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+(A^t - \left&lt; \gamma^t \right&gt; I ) \beta %]]&gt;&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\left&lt; \gamma \right&gt; %]]&gt;&lt;/script&gt; being the diagonal matrix from &lt;script type=&quot;math/tex&quot;&gt;\gamma&lt;/script&gt;.
+Since the &lt;script type=&quot;math/tex&quot;&gt;A^t&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\gamma^t&lt;/script&gt; terms are shrinking to zero with time, the equlibrium solution is:&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\Lambda^{* } = (I-A)^{-1} \mathbf{\alpha}&lt;/script&gt;,&lt;/p&gt;
+
+&lt;p&gt;again the same as in the simultaneous description.&lt;/p&gt;
+
+&lt;p&gt;D&amp;amp;L point out that if the initial value &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\Lambda_0 &lt; \Lambda^{* } %]]&gt;&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;\Lambda^{t}&lt;/script&gt; will rise, converging to the equilibrium from below, even though the labour content is falling. D&amp;amp;L refer to this as a ‘productivity paradox’.
+In fact, the behavior of sequential values is even more complex.
+In equation \ref{dynamic_values_sol_L_t} there are exponential terms both in &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\gamma&lt;/script&gt; with the coefficients &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt; respectively, which suggests that the behavior can be non-monotonic. This is in fact what happens with certain parameter sets as shown by the numerical examples below.&lt;/p&gt;
+
+&lt;p&gt;The parameter set used was: &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\mathbf{\alpha}= [0.2; 0.4], \mathbf{\beta}= [0.3; 0.1],
+\mathbf{\gamma}= [0.9; 0.8],
+\mathbf{A} = \begin{bmatrix} 2/3 &amp; 1/3 \\ 1/6 &amp; 1/2 \\ \end{bmatrix} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/unitprices_nonmonot_paradox.png&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;strong&gt;Figure 1: Non-monotonic dynamics of sequential values with increasing productivity&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This non-trivial and somewhat puzzling feature comes about because of two dynamical terms that can be seen in  equation \ref{dynamic_values_sol_L_t}: one coming from the input prices of the previous period and the other from labour productivity.
+If the initial input prices are far from the stationary value (of the &lt;em&gt;simultaneous equations&lt;/em&gt; with that level of productivity) then it can take several iterations until the falling labour content becomes the dominant term, and this can result in non-monotonic behavior.&lt;/p&gt;
+
+&lt;p&gt;For the one-good case, it is easier to see the conditions for this. In this case the difference &lt;script type=&quot;math/tex&quot;&gt;\epsilon&lt;/script&gt; between any two consecutive steps is:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\epsilon = \left(\lambda_0 - \frac{\alpha}{1-a} + \frac{\beta}{a-\gamma} \right) a^t \left(1-\frac{1}{a} \right) +
+\left(- \frac{\beta}{a - \gamma} \right) \gamma^t \left(1-\frac{1}{\gamma} \right)&lt;/script&gt;
+
+&lt;p&gt;Denoting the difference between the initial and stationary value &lt;script type=&quot;math/tex&quot;&gt;\Delta = \lambda_0 - \frac{\alpha}{1-a}&lt;/script&gt;, and after some rearrangements, the condition for non-monotonic behavior is:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\Delta &lt; \frac{\beta}{a-\gamma} \left( \frac{\gamma}{a}^{t-1} \frac{\gamma-1}{a-1} -1 \right) %]]&gt;&lt;/script&gt;, if &lt;script type=&quot;math/tex&quot;&gt;\Delta &gt;0&lt;/script&gt; (increasing unit values for &lt;script type=&quot;math/tex&quot;&gt;\lambda_0 &gt; \lambda^*&lt;/script&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\Delta &gt; \frac{\beta}{a-\gamma} \left( \frac{\gamma}{a}^{t-1} \frac{\gamma-1}{a-1} -1 \right)&lt;/script&gt;, if &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\Delta &lt; 0 %]]&gt;&lt;/script&gt; (decreasing unit values for &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\lambda_0 &lt; \lambda^* %]]&gt;&lt;/script&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As the numerical example above shows this can be satisfied in both cases.&lt;/p&gt;
+
+&lt;p&gt;Is this behavior of sequential values «paradoxical»?
+No matter how we answer this question, it certainly would be an exaggeration to claim that what we see here is - even an extremely simplified - model of economic dynamics.
+The technical coefficients of the system are defined independently from values, there are no feedback effects, and yet the system shows relatively complicated dynamic behavior already, depending on its initial value. This is not due to endogenous technical change or of disequilibrium between supply and demand, but simply to the dependence on the preceding state.&lt;/p&gt;
+
+&lt;p&gt;Yet this can also be seen as an interesting feature of the sequential model, in contrast to the simultaneous one, namely that the periods are connected: the output price/value of one period is the input of the next. This suggests that it can be used in a dynamical model of the circuit(s) of capital &lt;a href=&quot;#FOLEY1982300&quot;&gt;[5]&lt;/a&gt;.
+If we have only one circuit per sector like above, this assumes that all capitals in that sector are synchronized, which is clearly not the case in reality.
+But if they are not synchronized, the formalism would have to be more complex. When one circuit of capital is in the phase of production others are releasing new products to the market, which can devalue the inputs.
+Therefore the value of inputs would not equal their original value, but would be - based on intuition - some weighted average of past values of the inputs used by the individual circuits.
+In my next posts I want to address this question of connecting a model of the circuit of capital with these different forms of value calculations.&lt;/p&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;giussani&quot;&gt;1.Giussani, P. (1998). Dynamic and Static Marxian Values. Political Economy &lt;i&gt;3&lt;/i&gt;, 5–19.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;dumlevy&quot;&gt;2.Dumenil, G., and Levy, D. (2000). The Conservation of Value: A Rejoinder to Alan Freeman. Review of Radical Political Economics &lt;i&gt;32&lt;/i&gt;, 119–146.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;stamatisremarks&quot;&gt;3.Stamatis, G. (1998). Some remarks upon the article of Alan Freeman ’Marx without equilibrium.’ Political Economy &lt;i&gt;3&lt;/i&gt;, 21–23.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;stamatiscategories&quot;&gt;4.Stamatis, G. (1999). The so-called Temporal Single System (TSS) the so-called
+Standard Simultaneous Methodology (SSM) and the correct definition of labour values. Political Economy &lt;i&gt;3&lt;/i&gt;, 23–44.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;FOLEY1982300&quot;&gt;5.Foley, D.K. (1982). Realization and accumulation in a Marxian model of the circuit of capital. Journal of Economic Theory &lt;i&gt;28&lt;/i&gt;, 300–319.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="economic-reproduction" /><category term="classical-political-economy" /><category term="marxian-economics" /><category term="prices-of-production" /><category term="transformation-problem" /><category term="economic-dynamics" /><summary type="html">Paradoxical (or not) dynamical properties of sequentially defined values</summary></entry><entry><title type="html">A toy model of dynamic prices of production</title><link href="http://localhost:4000/dynamic-prodprice-simplerepr/" rel="alternate" type="text/html" title="A toy model of dynamic prices of production" /><published>2019-01-12T00:00:00+01:00</published><updated>2019-01-12T00:00:00+01:00</updated><id>http://localhost:4000/dynamic-prodprice-simplerepr</id><content type="html" xml:base="http://localhost:4000/dynamic-prodprice-simplerepr/">&lt;p&gt;I have not posted lately on A. Trigg’s book on reproduction schemas as I got into reading on the (in)famous ‘transformation problem’ and could not resist playing with some models in the literature. In one sentence the transformation problem is about whether the claim that the value of commodities is indirectly or directly determined by the average labour time needed for their production (+ non-labour inputs) is compatible with the observation/expectation that profit rates across sectors with different labour/capital ratios would tend toward equalization. I will not discuss this problem per se in this post, there is a lot of literature available on that, although this model can be regarded as a solution to the ‘transformation problem’.
+I want to write down the equations of a dynamical model proposed in Kliman [1988] with numerical examples (but without the equations explicitly), of prices of production where the aggregate equalities (total price) = (total value) and (total surplus value) = (total profit) are satisfied, total supply can be sold in each period of production, and the balancing condition (see Eq. \eqref{balancing_cond}) between the two sectors of the economy is also met.
+The model has the following assumptions and properties:&lt;br /&gt;
+1) value is expressed in money, there is only one accounting system&lt;br /&gt;
+2) non-labor inputs transfer their value to the products they are used up for, but no more or less&lt;br /&gt;
+3) a given amount of labor adds the same amount of value, profit can therefore originate only from unpaid (surplus) labour: less is paid for wages than the amount of new value added by labour, the difference between the two appears as profit (for the entire economy, not for an individual sector)&lt;br /&gt;
+4) the system shows &lt;a href=&quot;https://mbkoltai.github.io/reprod_multipl2/&quot;&gt;simple reproduction&lt;/a&gt; only: it is producing the same physical amounts of goods in each period, and the physical surplus (output minus inputs used up) takes the form of consumption goods only and it is consumed in each period instead of being redirected (accumulated) into the system as new capital goods or new consumption goods for an expanding workforce. The amount of non-labour inputs (constant capital) and work performed do not change.&lt;br /&gt;
+5) the real wage is kept constant: the wage paid for workers enables them to buy the same amounts of consumption goods. The nominal wage can however change if the unit price of consumption goods change.&lt;br /&gt;
+6) Profit rates are equalized&lt;/p&gt;
+
+&lt;p&gt;Of course assumptions no. 2-3 can be (are) contested, and the idea that human labour is the only source of new value and therefore of profit can be rejected, but this - ie. the validity of the labour theory of value - is a topic for another post. Assumption no. &lt;em&gt;4-5&lt;/em&gt; are just convenient first assumptions, but the system can be changed to expanded reproduction etc. by altering its coefficients.
+Assumption &lt;em&gt;6&lt;/em&gt; is reasonable as a tendency (capital flows in search of (sectors with) higher rates of return) but one should also have a mechanism implemented in a more serious model.
+My goal here is just to build a small mathematical model that is internally consistent and has a dynamics that can later be made more realistic by introducing more detail. As the system is dynamic  prices and profit rates can change, which is a precondition to incorporate crises in the model.&lt;/p&gt;
+
+&lt;p&gt;Like in the input-output models I &lt;a href=&quot;https://mbkoltai.github.io/reprod_multipl2/&quot;&gt;discussed previously&lt;/a&gt; we have two economic sectors (or departments), the first (&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;) producing capital goods (this could be raw materials as well, any non-labour inputs used up in production), the second (&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;) consumption goods (&lt;em&gt;CoG&lt;/em&gt;). Since we are dealing with simple reproduction and we will also abstract from fixed capital, therefore all capital goods are used up in each period of production, the total use of capital goods has to equal the total output (&lt;script type=&quot;math/tex&quot;&gt;W_1&lt;/script&gt;) of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;.
+This gives us the equality
+&lt;script type=&quot;math/tex&quot;&gt;W_1 = C_1 + V_1 + S_1 = C_1 + C_2&lt;/script&gt;, or,&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;C_2 = V_1 + S_1
+\tag{1}\label{balancing_cond}&lt;/script&gt;
+In other words, the exchanges between the two departments (wages + profits in &lt;em&gt;D1&lt;/em&gt; = value of constant capital used up in &lt;em&gt;D2&lt;/em&gt;) have to be equal.&lt;/p&gt;
+
+&lt;p&gt;In one important respect the current model will be different from the one discussed in the case of input-output tables and this will change the meaning of the equality of Equation \eqref{balancing_cond}. In the input-output description it is assumed (this assumption can be called ‘simultaneous valuation’) that unit prices for the two goods have to be the same when they enter as inputs and when they emerge as outputs in a given period of production.
+Since unit prices cannot change what the system describes are the relative prices required to solve the system of algebraic equations that describe the input-output equalities. A uniform profit rate is normally assumed, which gives one more constraint for the price system, but since there is one more unknown than the number of equations, only relative prices can be calculated.
+The input-output model as usually understood is then a model of equilibrium prices for given technical (input-output) coefficients and a level of real wage (units of &lt;em&gt;CoG&lt;/em&gt; paid for a unit of labour performed). In fact, because of the fact that input and output prices are the same and that profit rates are equal across sectors, both prices and the rate of profit are determined by the technical coefficients and the real wage rate (which is also a physical quantity), and in a sense prices become irrelevant (see &lt;a href=&quot;https://www.tandfonline.com/doi/pdf/10.1080/095382599107165&quot;&gt;Kliman (1999)&lt;/a&gt;).&lt;br /&gt;
+In contrast, in the model I will discuss here this assumption of the equality of input and output unit prices is dropped: input prices determine output prices sequentially. Consequently, instead of a system of algebraic equations with the same unit prices on both the right and left side, we will have a system of difference equations, that we need to provide with initial values in the first period of reproduction. In periods &lt;em&gt;t&amp;gt;1&lt;/em&gt; the input prices are given by the output prices of the preceding period.&lt;/p&gt;
+
+&lt;p&gt;To summarise, in the simultaneous description we have unit prices as:
+&lt;script type=&quot;math/tex&quot;&gt;\mathbf{p} = \mathbf{p}(\mathbf{A} + w \mathbf{l})(1+r)
+\tag{2}\label{simul_val}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;\mathbf{p}&lt;/script&gt; is the row vector of unit prices, &lt;script type=&quot;math/tex&quot;&gt;\mathbf{A}&lt;/script&gt; the input-output matrix, &lt;script type=&quot;math/tex&quot;&gt;w&lt;/script&gt; is the wage rate, &lt;script type=&quot;math/tex&quot;&gt;\mathbf{l}&lt;/script&gt; is the row vector of labour inputs (quantities) per unit of output of each commodity and &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; is the profit rate. &lt;script type=&quot;math/tex&quot;&gt;\mathbf{A}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;w&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;l&lt;/script&gt; are given, whereas &lt;script type=&quot;math/tex&quot;&gt;\mathbf{p}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; are the unknowns.
+Defining the ‘augmented’ input matrix &lt;script type=&quot;math/tex&quot;&gt;\mathbf{M} = A + w l&lt;/script&gt;, we can write the profit rate &lt;script type=&quot;math/tex&quot;&gt;r = (pX - pMX)/pMX&lt;/script&gt;, where X is the column vector of gross outputs (physical quantities), but this is not an independent equation but rather comes from &lt;script type=&quot;math/tex&quot;&gt;\mathbf{p X} = (\mathbf{p} \mathbf{M} (1+r))\mathbf{X}&lt;/script&gt;, so although &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; can be calculated (given &lt;script type=&quot;math/tex&quot;&gt;\mathbf{M}&lt;/script&gt;), but for production prices &lt;script type=&quot;math/tex&quot;&gt;\mathbf{p}&lt;/script&gt; we will only have the relative prices, as any set of absolute prices with the same ratios will satisfy the equations.&lt;/p&gt;
+
+&lt;p&gt;In the dynamic description we have instead:
+&lt;script type=&quot;math/tex&quot;&gt;\mathbf{p}_{t+1} = \mathbf{p}_t(\mathbf{A} + w \mathbf{l})(1+r)
+\tag{3}\label{dynamic unit prices}&lt;/script&gt;
+which is a system of difference equations, not algebraic ones. Here, the input unit prices are a given, they are data, and they are mapped onto the output prices by the technical coefficients, the wage rate and the markup of the aggregate profit rate. Moreover, because of the third assumption above, the profit rate can now be independently determined from the input unit prices, technical coefficients, the wage rate and the amount of labour performed:
+&lt;script type=&quot;math/tex&quot;&gt;r_{t,t+1} = (\mathbf{l}\mathbf{X} - \mathbf{p}_t w \mathbf{l} \mathbf{X})/
+(\mathbf{p}_t (\mathbf{A} + w \mathbf{l}) \mathbf{X})
+\tag{4}\label{profit_rate_dynamic}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Profit is the total amount of new value added minus the real wage of workers (quantity of consumption goods times their input unit price).
+The rate of profit is given by dividing the amount of profit by total input costs that are also defined by technical coefficients, the wage rate and the input prices. It can be seen that the calculation of the profit rate only involves the input data of input prices and the coefficients, therefore it comes first. The calculation of unit output prices follows after, since they are the function of both the profit rate and input prices as can be seen from Equation \eqref{dynamic unit prices}.&lt;/p&gt;
+
+&lt;p&gt;Now let us go back to the equality of simple reproduction in Equation \eqref{balancing_cond}:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;C_2 = V_1 + S_1&lt;/script&gt; (coming from &lt;script type=&quot;math/tex&quot;&gt;W_1 = C_1 + C_2&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt; being gross output of a sector)&lt;br /&gt;
+In the equilibrium description of input-output tables, where input and output unit prices are equal, this equality is a relation between the inputs and outputs of the same period. As this is a description of equilibrium for a given set of technical and wage coefficients, there is in fact only one period, if we take another set of coefficients then we need to calculate another set of equilibrium prices.
+But in the dynamic description this balancing condition is across two periods: the output of one period is the input of the next. In price terms, the output of capital goods has to equal the input of capital goods in the &lt;em&gt;next&lt;/em&gt; period. In physical terms, since it is simple reproduction, it is also true that the inputs (of one good) used up in the current period has to equal the output (of the same good) of the current period. But in terms of money the current period’s output is the input of the &lt;em&gt;next&lt;/em&gt; one, and it does not need to equal the input of this period, &lt;em&gt;unless&lt;/em&gt; the difference equations for unit prices have reached their stationary value. So the equality in the dynamic setting will be:
+&lt;script type=&quot;math/tex&quot;&gt;W_1(t) = C_1(t+1) + C_2(t+1)&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let us write the dynamic equations for the unit prices in a form that they contain no other time-dependent variables, but only constants. All other variables of the system are governed by the unit prices as follows (from now on I put the time index in parenthesis instead of a subscript, as I use subscripts for department indices):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;constant capital: &lt;script type=&quot;math/tex&quot;&gt;C_1(t) = \alpha X_1 p_1(t)&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;C_2(t) = (1-\alpha) X_1 p_1(t)&lt;/script&gt;, since the total physical amount and sectoral distribution of capital goods do not change&lt;/li&gt;
+  &lt;li&gt;wages: &lt;script type=&quot;math/tex&quot;&gt;V_1(t) = \beta_1 X_2 p_2(t)&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;V_2(t) = \beta_2 X_2 p_2(t)&lt;/script&gt;, since the real wage is defined as a fixed amount (&lt;script type=&quot;math/tex&quot;&gt;\beta_1&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\beta_2&lt;/script&gt;) of consumption goods (&lt;script type=&quot;math/tex&quot;&gt;X_2&lt;/script&gt;) that the wages can buy, and distribution of the workforce does not change&lt;/li&gt;
+  &lt;li&gt;revenue: &lt;script type=&quot;math/tex&quot;&gt;m(t)=\mu X_2 p_2(t)&lt;/script&gt;, profit spent on consumption goods by capitalists, also kept constant in physical terms (&lt;script type=&quot;math/tex&quot;&gt;\mu X_2&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;\mu + \beta_1 + \beta_2 = 1&lt;/script&gt;)&lt;/li&gt;
+  &lt;li&gt;total (gross) output: &lt;script type=&quot;math/tex&quot;&gt;W_i(t) = p_i(t) X_i&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;cost: &lt;script type=&quot;math/tex&quot;&gt;K_1(t) = C_1(t) + V_1(t) = \alpha X_1 p_1(t) + \beta_1 X_2 p_2(t)&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;K_2(t) = (1-\alpha) X_1 p_1(t) + \beta_2 X_2 p_2(t)&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;profit rate: &lt;script type=&quot;math/tex&quot;&gt;r(t) = \frac{L_T - (V_1(t)+V_2(t)) }{ K_1(t) + K_2(T)} = \frac{L_T - (\beta_1 + \beta_2) X_2 p_2(t)}{ p_1(t) X_1 + (\beta_1 + \beta_2) X_2 p_2(t) }&lt;/script&gt; (&lt;script type=&quot;math/tex&quot;&gt;L_T&lt;/script&gt; is total labour performed)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since the output price of the current period is the input of the next period, and gross output is equal to input costs and a markup equal to the aggregate profit rate, we have:
+&lt;script type=&quot;math/tex&quot;&gt;p_i(t+1) X_i = W_i(t) = (C_i(t) + V_i(t)) (1 + r(t))
+\tag{5}\label{unit_price_dynam_implicit}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Dividing by &lt;script type=&quot;math/tex&quot;&gt;X_i&lt;/script&gt; and substituting the expressions listed above we have:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{bmatrix} p_1(t+1) \\ p_2(t+1 )\\ \end{bmatrix} = \begin{bmatrix} \alpha &amp; \beta_1 X_2 / X_1\\ (1 - \alpha) X_1 / X_2 &amp; \beta_2 \\ \end{bmatrix} \begin{bmatrix} p_1(t) \\ p_2(t)\\ \end{bmatrix} \frac{ p_1(t) + L_T/X_1 }{ p_1(t) + (\beta_1 + \beta_2) X_2/X_1 p_2(t) }
+\tag{6}\label{unit_price_dynam_explicit} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a system of first-order, non-linear, autonomous difference equations, that - I think - cannot be solved analytically (so that &lt;script type=&quot;math/tex&quot;&gt;p(t)&lt;/script&gt; would be a function of time and parameters only), but it is easy to simulate numerically, or solve for its fixed point (in which case it becomes a quadratic equation, with one positive solution).&lt;/p&gt;
+
+&lt;p&gt;I simulated the system in MATLAB with the following numerical values (also used in the article cited below as a reference): &lt;script type=&quot;math/tex&quot;&gt;L_T = 300&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\alpha = 1/2&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\beta_1 = 1/6&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\beta_2 = 1/3&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\mu = 1/2&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;X_1 = 200&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;X_2 = 300&lt;/script&gt; and the initial values &lt;script type=&quot;math/tex&quot;&gt;p_1(0)=p_2(0)=1&lt;/script&gt;.
+This is the plot of the dynamics of unit prices and some of the ratios of the system:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/unitprices_ratios.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The system satisfies the following equalities (these are all in price terms):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;W_1(t) = C_1(t+1) + C_2(t+1) = p_1(t+1) X_1&lt;/script&gt;, output of capital goods of the current period equals input of capital goods in next period&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;m_1(t) + V_1(t) = C_2(t)&lt;/script&gt;, exchanges between the sectors have to balance (capitalist consumption + wage outlays from &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; equals outlays on capital goods from &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, with the other transactions being within the two departments)&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;W_2(t) = V_1(t+1) + V_2(t+1) + m(t+1) = p_2(t+1) X_2&lt;/script&gt;, output of consumption goods in current period equals outlay on wages plus consumption from profit (revenue) in next period&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum m_i(t) = \sum W_i(t-1) - \sum K_i(t)&lt;/script&gt;, total revenue, ie. profit that can be spent on consumption equals the difference between the output of the previous period minus outlays on wages and capital goods in the current period&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since unit prices are changing until we reach the stationary state, the amount of money needed for total outlays (wages + capital goods) is also changing (see on the plot above the ratio of costs), and since inputs (in this model) transfer their prices to the output, gross output in terms of price is also changing, though net value added does not. Once we reach the fixed point unit prices do not change anymore, therefore wages, profit, outlays on capital goods and gross output have also reached a stationary state. This final state is identical to the equilibrium price (equal input and output prices) solution to the system. The fixed point is obviously attracting, so sampling in initial values (for unit prices) will lead to the same stationary values, as shown in the plot below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/prices_prod_initval_sampling.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But the dynamical system converges to this stationary state only because the technical coefficients, the physical productivity and relative sizes of the departments do not change in this model.
+If the parameters change before the system converges to the fixed point, then the pre-equilibrium behavior will continue (see Giussani 1991).
+This simple model satisfies the requirements of a labour theory of value that total profit equals total surplus (unpaid) labour, total price equals total value, and the sectoral balances of simple reproduction are also respected, although this is enforced by the assumptions of the model that I’ll mention below. The unit prices of the two goods are different from their values, so it is only through aggregate quantities that prices are determined by labour values.&lt;/p&gt;
+
+&lt;p&gt;If we want to add additional detail to the model, the first thing to add should probably be growing labour productivity that would also mean expanded reproduction, so that some of the surplus is recycled to the system and not consumed. The other component to add for a bit more realistic model is fixed capital. If we add these, then it can start to make sense to ask questions on how productivity growth will affect profitability.&lt;/p&gt;
+
+&lt;p&gt;There are several potential problems with this model. First is how can we know the amount of value a unit of labour adds or represents, and the assumption that this amount (the ‘monetary expression of labour time’) does not change.
+The second is that non-labour inputs (there is only one type in this model, ‘capital goods’ in general) transfer the value that they were bought at, but what happens if due to changes in productivity the inputs are worth less when the production period comes to its end, than at their time of purchase, what amount of value would they transfer?
+Third, nominal wages automatically adjust to the new price of wage goods, as wages are defined as a fixed physical amount of wage goods times the output price of the previous period, assuming perfect adjustment of wages to match the supply of wage goods.
+Finally, since the price of total output is growing, there needs to be more money in the system then in the first round (with the coefficients and the initial values used above), so the money supply would have to expand. I will return to these problems in future posts.&lt;/p&gt;
+
+&lt;h3 id=&quot;script&quot;&gt;Script&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/sequential_prices.m&quot;&gt;MATLAB script&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.jstor.org/stable/40470553&quot;&gt;Giussani: The Determination of Prices of Production, International Journal of Political Economy, Volume 21, 1991&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://journals.sagepub.com/doi/10.1177/030981688803500106&quot;&gt;Kliman, McGlone: The transformation non-problem and the non-transformation problem, Capital &amp;amp; Class, Vol 12, Issue 2, 1988&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.tandfonline.com/doi/pdf/10.1080/095382599107165&quot;&gt;Kliman, McGlone: A Temporal Single-system Interpretation of Marx’s Value Theory, Review of Political Economy, Volume 11, Number 1, 1999&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="economic-reproduction" /><category term="classical-political-economy" /><category term="marxian-economics" /><category term="prices-of-production" /><category term="transformation-problem" /><category term="nonlinear-dynamics" /><category term="economic-dynamics" /><summary type="html">Dynamic model with labor-values, constant physical output and market-clearing prices</summary></entry><entry><title type="html">The monetary circuit, part 1</title><link href="http://localhost:4000/monetary_circuit/" rel="alternate" type="text/html" title="The monetary circuit, part 1" /><published>2018-11-18T00:00:00+01:00</published><updated>2018-11-18T00:00:00+01:00</updated><id>http://localhost:4000/monetary_circuit</id><content type="html" xml:base="http://localhost:4000/monetary_circuit/">&lt;!---&quot;*Central to this approach is an  application  of  the  Kalecki  principle,  that capitalists  earn  what  they
+spend; the question being how an injection of money can circulate around the economy and return back to the capitalists.*&quot;
+(Trigg)---&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;https://mbkoltai.github.io/reprodkalecki/&quot;&gt;previous post&lt;/a&gt; I discussed the so-called ‘Kalecki’ principle, which, in my understanding, is an equality between gross profits on the one side and spending on capital goods and capitalist consumption on the other, summarized in the phrase ‘&lt;em&gt;capitalists earn what they spend&lt;/em&gt;’. This statement implies a causal relationship, which - it seems to me - is not demonstrated by these algebraic relationship. To show that this spending &lt;em&gt;creates&lt;/em&gt; (enables/leads to) these profits, one needs a sequential (dynamic) description of how the initial amount spent circulates through the economic system.&lt;/p&gt;
+
+&lt;p&gt;A framework to do this is the so-called monetary circuit. The theory of the monetary circuit was developed by A. Graziani and others and shows how an initial injection of money circulates through the economy and return back to the owners of businesses and how much money is needed to close the circuit completely, with all output sold. In the model by Graziani there is a distinction between workers, capitalists and banks. Banks give credit to firms, so they can finance their outlays on wages, since this step has to precede production and sale. Money in this model is credit money, that has symbolic value, but no intrinsic value, ie. it is not a commodity.
+The starting point of the circuit is banks giving credit to firms to hire workers, who then produce commodities. Assuming that workers don’t save, wages are spent on consumer goods (&lt;em&gt;CoG&lt;/em&gt;), returning the money to firms. As the last step of the circuit, firms can then repay their debts, destroying the credit money they originally borrowed and the circuit is closed.&lt;br /&gt;
+So the circuit is simply: banks –&amp;gt; firms –&amp;gt; workers –&amp;gt; firms –&amp;gt; banks.&lt;/p&gt;
+
+&lt;p&gt;In this description it is only wages that have to be advanced by companies, as it does not concern itself with the purchase of capital goods, that is considered to be internal to firms. For this reason I find this description too restrictive and almost tautological. For me, the main problem is to show how the entire output can be ‘realized’ (purchased by money), even if there is an increment of the capital stock and/or the labour force (extended reproduction) and not all surplus takes the form of &lt;em&gt;CoG&lt;/em&gt; (consumption goods) that are consumed by owners at the end of the period of production.
+Starting from a two-sector model and output grouped into gross wages and gross profit we can draw up the following table:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Wages (&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;*)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Profits (&lt;script type=&quot;math/tex&quot;&gt;P_i&lt;/script&gt;*)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (&lt;em&gt;MoP&lt;/em&gt;)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;V_1&lt;/script&gt;*&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;P_1&lt;/script&gt;*&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_1&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;  (&lt;em&gt;CoG&lt;/em&gt;)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;V_2&lt;/script&gt;*&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;P_2&lt;/script&gt;*&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_2&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;Table 1: Two sectors, gross profit&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If we subsume capitalist consumption under wages (and there is no government sector or foreign trade), then the surplus of the &lt;em&gt;CoG&lt;/em&gt; sector (&lt;script type=&quot;math/tex&quot;&gt;P_2&lt;/script&gt;) matches the wage bill of the capital goods sector, ie.&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;P_2^* = V_1^*
+\tag{1}\label{p2_equals_v1}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;If in this model only wages are advanced, then the sum of advanced money equals the output of the &lt;em&gt;CoG&lt;/em&gt; sector:
+&lt;script type=&quot;math/tex&quot;&gt;M = V_1^* + V_2^* = P_2^* + V_2^* = W_2
+\tag{2}\label{advanced_wages}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;But in this case it would seem there is not enough money to buy up the entire output, the capital goods sector does not have the funds to reimburse the banks and the circuit cannot be closed.
+A simple answer to this is a ‘single swap’ approach (&lt;a href=&quot;https://academic.oup.com/cje/article-abstract/28/2/173/1681265&quot;&gt;Nell, 2004&lt;/a&gt;), that a larger sum &lt;script type=&quot;math/tex&quot;&gt;M=W_1+W_2&lt;/script&gt; is advanced, so that all output can be bought up in a single monetary circuit. But this makes things too easy, resulting in the buildup of extra funds in the capital goods sector when it receives revenue from the consumer goods sector equal to its wage bill, but it also borrowed that amount from banks. Putting aside this too general assumption, &lt;a href=&quot;https://academic.oup.com/cje/article-abstract/28/2/173/1681265&quot;&gt;EJ Nell (2004)&lt;/a&gt; worked out one solution based on multiplier effects within departments, that I discuss next.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nell’s solution: realizing the total output through multiplier effects&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The ‘single swap’ solution just mentioned leaves no place for transactions taking place sequentially, with a given amount of money that is smaller than &lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt;, circulating between households (workers and capitalists as consumers) and firms in the two sectors.
+The ‘mutual exchange’ between sectors is key, as firms earn income by selling outputs to firms in the other (and in the same) sector.
+&lt;a href=&quot;https://academic.oup.com/cje/article-abstract/28/2/173/1681265&quot;&gt;EJ Nell (2004)&lt;/a&gt;’s solution based on mutual exchanges starts with the following assumptions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Production is defined in distinct periods.&lt;/li&gt;
+  &lt;li&gt;In each period of production all capital goods are completely used up (100% depreciation).&lt;/li&gt;
+  &lt;li&gt;Consumption and capital goods are both carried forward from the previous period, so that at the start of the period, there are inventories of capital and consumption goods ‘inherited’ from the previous period&lt;/li&gt;
+  &lt;li&gt;Production in the current period is to replace items (&lt;em&gt;CoG&lt;/em&gt; and &lt;em&gt;MoP&lt;/em&gt;) used up by firms and consumers in the current period&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The starting point in this model is the advance of wages in the capital goods sector (&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;), but it could be the consumer goods sector too, the point is just to initiate the process. This injection of money then circulates through the system in a sequence of stages, ‘realizing’ (enabling the purchase of) the output:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Stage 1&lt;/strong&gt;: &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; borrows money from banks, pays wage bill to workers of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;. Workers spend this money to purchase consumption goods from &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Stage 2&lt;/strong&gt;: After selling consumption goods to workers of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; pays wages to its own workers, who spend it on &lt;em&gt;CoG&lt;/em&gt;, so that the money returns back to &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, to be spent on capital goods from &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Stage 3&lt;/strong&gt;: From the sales of &lt;em&gt;MoP&lt;/em&gt; to &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; firms can advance wages and purchase their own capital goods.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Schematically, the sequence is:&lt;br /&gt;
+banks -(0)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; -(1)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; workers -(2)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; -(3)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; workers -(4)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; -(5)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; -(6)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; workers
+&lt;script type=&quot;math/tex&quot;&gt;\tag{3}\label{v1_sequence}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we can see a &lt;em&gt;causal&lt;/em&gt; multiplier effect, as the initial injection of money as advanced wages by &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;V_1&lt;/script&gt;, leads to the realization of commodities of a (multiple times) higher total value.
+&lt;script type=&quot;math/tex&quot;&gt;V_1&lt;/script&gt; &lt;em&gt;CoG&lt;/em&gt; is sold in step (2), then again &lt;script type=&quot;math/tex&quot;&gt;V_2&lt;/script&gt; of &lt;em&gt;CoG&lt;/em&gt; in step (4), and &lt;script type=&quot;math/tex&quot;&gt;P_1&lt;/script&gt; (?) of &lt;em&gt;MoP&lt;/em&gt; sold in step (5), and more &lt;em&gt;MoP&lt;/em&gt; in step (6) when firms in &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; buy &lt;em&gt;MoP&lt;/em&gt; from firms within their sector.
+The flow of money can be seen on this figure I created:&lt;br /&gt;
+&lt;img src=&quot;/images/v1_moneyflow_circuit.PNG&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Figure 1: the flow of money through both departments&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The red arrows are transactions where a part of the output is ‘realized’ (purchased).&lt;/p&gt;
+
+&lt;p&gt;Total money output is:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;W_T = V_1^* + V_2^* + P_1^* + P_2^* = 2 V_1^* + V_2^* + P_1^*
+\tag{4}\label{total_money_output}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://books.google.fr/books?id=T_Q8D-ewMkEC&quot;&gt;Nell (1998)&lt;/a&gt; describes a multiplier relationship of the wages paid out in &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; on the wages of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;: in the first round this effect is &lt;script type=&quot;math/tex&quot;&gt;V_1^*&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;w n_2 V1^*&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;(w n_2)^2 V1^*&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;n_2&lt;/script&gt; being the labour coefficient (share of labour in total output) and &lt;script type=&quot;math/tex&quot;&gt;w&lt;/script&gt; the wage rate, so that, as &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+w n_2 &lt; 1 %]]&gt;&lt;/script&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;V_2^* = V_1^* \sum_{i=0}^\infty (w n_2)^i = \frac{1}{1 - w n_2} V_1^*
+\tag{5}\label{v1_v2_multiplier}&lt;/script&gt;
+One thing not clear to me is why one would say that in the first round &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; pays out &lt;script type=&quot;math/tex&quot;&gt;V_1^*&lt;/script&gt; as wages, and only from the second &lt;script type=&quot;math/tex&quot;&gt;w n_2 V_1^*&lt;/script&gt;, and in later cycles &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; always &lt;script type=&quot;math/tex&quot;&gt;(w n_2)^i V_1^*&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nell also assumes two subsectors in &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (capital goods sector), the first selling &lt;em&gt;MoP&lt;/em&gt; to &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, the second to other firms in &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;, let us call these &lt;script type=&quot;math/tex&quot;&gt;D_{1,2}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt; (and assume equal labour coefficients and wage rates).
+A multiplier effect occurs in the exchanges between the subsectors and &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;.
+First, &lt;script type=&quot;math/tex&quot;&gt;D_{1,2}&lt;/script&gt; sells &lt;em&gt;MoP&lt;/em&gt; to &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, receiving &lt;script type=&quot;math/tex&quot;&gt;P_2^* (=V_1^* )&lt;/script&gt;. It uses &lt;script type=&quot;math/tex&quot;&gt;w n_1 P_2^*&lt;/script&gt; to pay back its loans (if this is not for wages, why the scaling with &lt;script type=&quot;math/tex&quot;&gt;w n_1&lt;/script&gt;?) and &lt;script type=&quot;math/tex&quot;&gt;(1-w n_1)P_2^*&lt;/script&gt; to buy &lt;em&gt;MoP&lt;/em&gt; from &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt; spends &lt;script type=&quot;math/tex&quot;&gt;(1-w n_1)(1-w n_1)P_2^*&lt;/script&gt;. But if this is sales within &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt;, then the cycle would stop here, whereas Trigg (summarizing Nell) writes that there is a multiplier effect here again, with the sum:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P_1^* = P_2^* \sum_{i=0}^\infty (1 - w n_1)^i = \frac{1}{w n_1} P_2^*
+\tag{6}\label{p1_p2_multiplier}&lt;/script&gt;
+
+&lt;p&gt;It seems to me, to have this multiplier effect, firms of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; should use their proceeds to pay back their loans only in the last cycle, before that the mutual exchanges within &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; need to repeat until convergence as in \eqref{p1_p2_multiplier}. In fact, we need to assume that &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt; receives back its own capital expenditure &lt;script type=&quot;math/tex&quot;&gt;(1-w n_1)(1-w n_1)P_2^*&lt;/script&gt;, repeating this cycle until convergence and only then spending it, together with &lt;script type=&quot;math/tex&quot;&gt;w n_1 (1-w n_1) P_2^*&lt;/script&gt; on wages, so in total we have &lt;script type=&quot;math/tex&quot;&gt;(1-w n_1) P_2^*&lt;/script&gt; of wage outlays from &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt;. I show the multiplier of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; in this model as I understand it on Figure 2 below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/D1_multiplier.png&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;strong&gt;Figure 2: the multiplier of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It is the two ‘auto-loops’ (to borrow a term from systems biology) within the sectors that generate the multiplier effect. One is the circulating of wages within &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; through its workers: in each round &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; pays wages to its workers that they repay for the same amount of consumption goods. In each round the revenue returned is scaled by &lt;script type=&quot;math/tex&quot;&gt;w n_2&lt;/script&gt; when paid out as wages, which means that the total amount paid out as &lt;script type=&quot;math/tex&quot;&gt;V_2^*&lt;/script&gt; wages (and total amount of consumption good sold within the sector) is &lt;script type=&quot;math/tex&quot;&gt;V_1^* \sum_{i=1}^\infty (w n_2)^i = \frac{w n_2}{1 - w n_2}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Similarly, within &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; there is first the payment from &lt;script type=&quot;math/tex&quot;&gt;D_{1,2}&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt; of &lt;script type=&quot;math/tex&quot;&gt;(1-w n_2) P_2^*&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;D_{1-1}&lt;/script&gt; buys &lt;em&gt;MoP&lt;/em&gt; from itself in a sequence, multiplying the initial amount with &lt;script type=&quot;math/tex&quot;&gt;(1-w n_2)&lt;/script&gt; in each step so in total &lt;script type=&quot;math/tex&quot;&gt;V_1^* \sum_{i=1}^\infty (1 - w n_1)^i = \frac{1 - w n_1}{w n_1} = \frac{1}{w n_1} - 1&lt;/script&gt;. So to me it seems the multiplier expressions should be slightly different.&lt;/p&gt;
+
+&lt;p&gt;If we substitute the multiplier expressions as in Equation \eqref{v1_v2_multiplier} and \eqref{p1_p2_multiplier} into Equation \eqref{total_money_output} we get an overall multiplier relationship:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;W_T = 2 V_1^* + \frac{1}{1-w n_2} V_1^* + \frac{1}{w n_1} V_1^* =
+V_1^* \left(2 + \frac{1}{1-w n_2} + \frac{1}{w n_1} \right)
+\tag{7}\label{total_money_output_multipl}&lt;/script&gt;
+
+&lt;p&gt;In my own calculation this should rather be:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;W_T = V_1^* \left(2 + \frac{w n_2}{1-w n_2} + \left(\frac{1}{w n_1}-1 \right) \right) =
+V_1^* \left(\frac{1}{1-w n_2} + \frac{1}{w n_1} \right)
+\tag{8}\label{total_money_output_multipl_corr}&lt;/script&gt;
+
+&lt;p&gt;I think this is the correct expression, because if we take equation \eqref{total_money_output_multipl}, and consider that &lt;script type=&quot;math/tex&quot;&gt;w n_i = V_i^* /(V_i^* + P_i^* )&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;V_1^* = P_2^*&lt;/script&gt; then we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;2 V_1^* + V_2^* + P_1^* = 2 V_1^* + \frac{1}{1-w n_2} V_1^* + \frac{1}{w n_1} V_1^*&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;V_2^* + P_1^* = \frac{1}{1 - V_2^* /(V_2^* + P_2^* ) } V_1^* + \frac{V_1^* + P_1^* }{V_1^* } V_1^*&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;V_2^* + P_1^* = \frac{V_2^* + P_2^* }{ P_2^* } V_1^* + V_1^* + P_1^*&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;0 = P_2^* + V_1^* ,&lt;/script&gt;
+
+&lt;p&gt;which cannot be true. Therefore I think the formula in \eqref{total_money_output_multipl_corr} is the correct one.&lt;/p&gt;
+
+&lt;p&gt;The point of this model was to show that the initial outlay of &lt;script type=&quot;math/tex&quot;&gt;V_1^*&lt;/script&gt; &lt;em&gt;is&lt;/em&gt; sufficient to fund a much larger total income (wages and profits) in both sectors. At last, we can see a chain of causation behind the algebraic relationship of a multiplier. The simple answer to how it is possible to realize the total output is by the circulation of money between and within sectors, including the circulation between firms and their workers. A substantially smaller monetary advance than the value of the total output circulates through the system multiple times, enabling the transactions through which the entire output can be sold.
+To see how this happens exactly cries out for a dynamic model, probably using difference equations. (As a first approximation, we can just use a spreadsheet where rows stand for time points (stages) and columns the inventories of commodities and money held by the departments, workers and capitalists.)
+To be able to realize the full output &lt;script type=&quot;math/tex&quot;&gt;W_T&lt;/script&gt; the &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; -&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; -&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; transactions should occur only once, whereas for the two intra-department multiplier effects to converge these refluxes of money need to happen infinitely many times. Are these assumptions reasonable? This requirement could be relaxed by starting the circuit with a bigger initial outlay than &lt;script type=&quot;math/tex&quot;&gt;V_1^*&lt;/script&gt;. A somewhat confusing aspect of this model is why &lt;em&gt;gross&lt;/em&gt; wages are paid as the initial outlay, not just &lt;script type=&quot;math/tex&quot;&gt;V_1&lt;/script&gt;, as the expansion of the workforce by &lt;script type=&quot;math/tex&quot;&gt;dV_1&lt;/script&gt; should happen only in the next period.&lt;/p&gt;
+
+&lt;p&gt;The question that this model tries to answer is not identical with the ‘Marxian’ realization problem, although very similar to it. Here a production period starts with the two departments having inventories of &lt;em&gt;MoP&lt;/em&gt; and &lt;em&gt;CoG&lt;/em&gt; inherited from the previous period, but no money, and the question is whether all inventories can be sold, and if yes, what initial amount of money is required to do so. If inventories are sold, then production can take place and a supply of new commodities is produced, that will have to be realized in the &lt;em&gt;next&lt;/em&gt; period of production, where the same realization problem has to be solved. Notice that in this description production and specifically the production of surplus value is not explicitly addressed, or it is obscured in the gross profit category. Also, there is in fact many cycles of production and sale, but initially I wanted to have a model of a &lt;em&gt;single&lt;/em&gt; cycle of production and sale that is closed (everything can be sold).&lt;/p&gt;
+
+&lt;p&gt;The other way to look at the problem is to say that firms (and owners as consumers) have funds at the starting point, which they use to buy from the inventories of &lt;em&gt;MoP&lt;/em&gt; (inherited from previous period) and (through wages) the inventories of &lt;em&gt;CoG&lt;/em&gt; that are available at the start of production. Production takes place and the supply of new products have a higher value (surplus value added by labor over paid wages) than the initially spent amount on wages and capital goods - how can it be bought up? In this second formulation, the concept of the production of surplus value is embedded.
+It is this formulation of the problem that I turn in the next post.&lt;/p&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;Andrew Trigg, Marxian reproduction schema: money and aggregate demand in a capitalist economy. Routledge, 2009&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="economic-reproduction" /><category term="classical-political-economy" /><category term="marxian-economics" /><category term="effective-demand" /><category term="investment-demand" /><category term="monetary" /><category term="monetary-circuit" /><summary type="html">Monetary realization of profits by a multiplier effect</summary></entry><entry><title type="html">Expanded reproduction and the Kalecki principle</title><link href="http://localhost:4000/reprodkalecki/" rel="alternate" type="text/html" title="Expanded reproduction and the Kalecki principle" /><published>2018-10-28T00:00:00+02:00</published><updated>2018-10-28T00:00:00+02:00</updated><id>http://localhost:4000/reprodkalecki</id><content type="html" xml:base="http://localhost:4000/reprodkalecki/">&lt;p&gt;In this post, following &lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;Trigg’s book&lt;/a&gt; on reproduction schemas, I will explore how the work of Michał Kalecki contributes to answering the question where the demand for the surplus part of total output comes from.
+One can explore in more detail how surplus value is allocated by its use: some of it is used for expanding the capital stock (&lt;script type=&quot;math/tex&quot;&gt;dC_i&lt;/script&gt;), some for expanding the workforce &lt;script type=&quot;math/tex&quot;&gt;dV_i&lt;/script&gt;) and some for capitalist consumption (&lt;script type=&quot;math/tex&quot;&gt;u_i&lt;/script&gt;), the subscript &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; referring to departments.
+Also, Department 2 can be disaggregated into two departments, &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; producing consumption goods (&lt;script type=&quot;math/tex&quot;&gt;CoG&lt;/script&gt;) for capitalists and &lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt; producing &lt;script type=&quot;math/tex&quot;&gt;CoG&lt;/script&gt; for workers.
+Using the same table as in the previous post, with &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; split into two and surplus value allocated by use, we have the table:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Constant capital &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Variable capital &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Surplus value &lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;~&lt;/th&gt;
+      &lt;th&gt;~&lt;/th&gt;
+      &lt;th&gt;Total output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;u_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;dC_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;script type=&quot;math/tex&quot;&gt;dV_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;400&lt;/td&gt;
+      &lt;td&gt;100&lt;/td&gt;
+      &lt;td&gt;6000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;550&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;275&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;220&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;36 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td&gt;18 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td&gt;1100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;950&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;475&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;380&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;63 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td&gt;31 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td&gt;1900&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5500&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1750&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
+      &lt;td&gt;150&lt;/td&gt;
+      &lt;td&gt;9000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Table 1: Three-sector (expanded) reproduction schema&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt; column is the amount of constant capital used up in the given period of production, in this case 5500. The columns that represent surplus value/product are different from the columns &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;, because the former are the final outputs from this period of production, and they are not used as inputs in this period. Since there is accumulation (the capital stock is incremented), the output of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (&lt;script type=&quot;math/tex&quot;&gt;W_1=6000&lt;/script&gt;) is more than the total input of &lt;em&gt;MoP&lt;/em&gt;, &lt;script type=&quot;math/tex&quot;&gt;C_1=5500&lt;/script&gt;.
+If however we add to &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt; the additional units of constant capital (&lt;script type=&quot;math/tex&quot;&gt;dC_i&lt;/script&gt;), and do the same with &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;dV_i&lt;/script&gt;, creating ‘&lt;em&gt;ex post&lt;/em&gt;’ variables &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;* and &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;*, then the row sums and columns match:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;*&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;*&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Capitalist consumption &lt;script type=&quot;math/tex&quot;&gt;u_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Total output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4400&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;586 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;293 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;220&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1013 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;506 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;380&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;9000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Table 2: ‘ex post’ three-sector reproduction schema (quantities at the end of period)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The columns &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt; I would interpret as the inputs of &lt;em&gt;MoP&lt;/em&gt; and labour (workforce/wages) in the &lt;em&gt;next&lt;/em&gt; period, respectively, whereas &lt;script type=&quot;math/tex&quot;&gt;u_i&lt;/script&gt; is the part of the profit received in sector &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; that is spent on consumption by owners, instead of accumulation. So &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;* and &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt; are mixed variables in the sense that some of it is the input in the current period and some the increment added in the current, but used in the next period.
+We have the equalities of outputs by sector to outputs grouped by use:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;W_1 = C_1&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ C_2&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ C_3&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;= C_1 + dC_1 + C_2 + dC_2 + C_3 + dC_3&lt;/script&gt;&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;W_2 = u_1 + u_2 + u_3&lt;/script&gt;&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;W_3 = V_1&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ V_2&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ V_3&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;= V_1 + dV_1 + V_2 + dV_2 + V_3 + dV_3&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\tag{1}\label{outputs_use}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Expressed in words:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;W_1&lt;/script&gt;, total output of &lt;em&gt;MoP&lt;/em&gt; (means of production) = &lt;em&gt;MoP&lt;/em&gt; needed for replacement and accumulation (&lt;script type=&quot;math/tex&quot;&gt;C_i + dC_i&lt;/script&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;W_2&lt;/script&gt;, total output of &lt;em&gt;CoG&lt;/em&gt; for capitalists = profit extracted by capitalists, spent on personal consumption.&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;W_3&lt;/script&gt;, total output of &lt;em&gt;CoG&lt;/em&gt; for workers (replacement and new workforce)’ = total wage bill (of workers in &lt;em&gt;new&lt;/em&gt; period, including newly hired workers)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--- It is the parts of the output used for accumulation, $$dC + dV$$ whose realization (source of demand) is not trivial. $$V$$ and $$C$$ are spent at the beginning of the period and the demand for $$u$$ comes from the private wealth of the owners (that they then receive as profits for their companies). If the entire surplus part is in the form of capitalist consumption $$u$$, then there is no demand problem: all the demand for $$u$$ comes from owners' private funds, which then they receive back as the profit of their companies in $$D_2$$. But how about expanded reproduction?   --&gt;
+
+&lt;p&gt;We also have the sectoral equalities:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;W_1 = (C_1 + dC_1) + (V_1 + dV_1) + u_1 \\
+W_2 = (C_2 + dC_2) + (V_2 + dV_2) + u_2  \\
+W_3 = (C_3 + dC_3) + (V_3 + dV_3) + u_3
+\tag{2}\label{sectoral_outputs}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;There is one more rearrangement (coming from Kalecki): defining gross profits &lt;script type=&quot;math/tex&quot;&gt;P_i&lt;/script&gt;* as total output minus &lt;em&gt;ex post&lt;/em&gt; variable capital, ie. &lt;script type=&quot;math/tex&quot;&gt;P_i&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;= W_i - V_i&lt;/script&gt;*. At this point it’s not yet clear how to interpret gross profits meaningfully. &lt;em&gt;Ex post&lt;/em&gt; variable capital will be spent in the next period of production from gross revenue, but this is also true for &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;*. At any rate, if we reorder terms this way, adding &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;* to &lt;script type=&quot;math/tex&quot;&gt;u_i&lt;/script&gt;, we get the table with gross profits:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;*&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;P_i&lt;/script&gt;*&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Total output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4900&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;293 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;806 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;506 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1393 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;7100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;9000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Table 3: Kalecki’s interpretation of the three-sector schema (ex post variable capital and gross profits)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the same as grouping the terms in the output as:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;W_i = (V_i + dV_i) + (C_i + dC_i + u_i)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;An equality becomes visible from this table, namely that the surplus of &lt;em&gt;CoG&lt;/em&gt; that &lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt; produces (surplus in the sense that it is in excess of the wage bill of its own workers) is equal to the wage bill of the other two sectors:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;P_3 = V_1&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ V_2&lt;/script&gt;*
+&lt;script type=&quot;math/tex&quot;&gt;\tag{3}\label{wage_goods_gross_profit}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;If we then add the gross profits of the other two sectors, &lt;script type=&quot;math/tex&quot;&gt;P_1&lt;/script&gt;* and &lt;script type=&quot;math/tex&quot;&gt;P_2&lt;/script&gt;*, we get:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;P_1 + P_2 + P_3 = V_1&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ P_1 + V_2&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ P_2&lt;/script&gt;&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;P = W_1 + W_2&lt;/script&gt;&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\tag{4}\label{total_gross_profit_outputs_equal}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;This means that total gross profit in the economy is equal to the (gross) output of the sector producing capital goods (&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;) and capitalist &lt;em&gt;CoG&lt;/em&gt; (&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;). Since gross profit is defined as all spending on capital goods (replacement + incremental) and capitalist consumption, and these are supplied by sectors 1 and 2.&lt;/p&gt;
+
+&lt;p&gt;Trigg writes that Kalecki interpreted this ‘&lt;em&gt;ex post&lt;/em&gt; identity’ as following: ‘&lt;em&gt;[T]he money expenditures by capitalists upon consumption and investment that generate the resultant volume of profits&lt;/em&gt;’, or shortly ‘&lt;em&gt;capitalists earn what they spend&lt;/em&gt;’.
+&lt;!---Again, on a first sight, to me this sounds like causation backwards in time, as those investments and consumption expenditures can only happen at the end of the current period or at the beginning of the next one, once the owners have already received these profits.--&gt;
+It is easy to see that ‘capitalists earn what they spend’ is true in the case of simple reproduction where the personal consumption of owners provides the demand for the surplus product, and returns to them as profit, but it less clear for expanded reproduction. In expanded reproduction some of the surplus product takes the form of new constant capital and new workers, so the demand must come from advanced amounts of money by the ‘departments’ (companies) themselves, not capitalists as consumers. To clearly see how this is possible, I need to write explicitly the sequence of payments/sales and production.&lt;/p&gt;
+
+&lt;p&gt;For now I’ll go on with the derivation as in the book. The three-sector schema can be represented in an input-output table as below:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (inputs)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; (inputs)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt; (inputs)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;dC&lt;/script&gt; (addit. constant)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;dV&lt;/script&gt; (addit. variable)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt; (capit. consumption)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt; (total output)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (outputs by use)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;550&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;950&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;275&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;475&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;150&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;275&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;475&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1750&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;9000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;As in the &lt;a href=&quot;https://mbkoltai.github.io/reprod_multipl2&quot;&gt;previous post&lt;/a&gt; (new/net) investment is classified here as final demand (it is not an input in this period of production), specifically as additional constant (&lt;script type=&quot;math/tex&quot;&gt;dC&lt;/script&gt;) and variable (&lt;script type=&quot;math/tex&quot;&gt;dV&lt;/script&gt;) capital. Total personal consumption of capitalists is in column &lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt;, under &lt;script type=&quot;math/tex&quot;&gt;S&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;The equality of Equation \eqref{wage_goods_gross_profit} reads in terms of the I/O table as:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;P_3 = W_3-(V_3+dV_3)=(V_1+dV_1)+(V_2 + dV_2)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;The wage terms are &lt;script type=&quot;math/tex&quot;&gt;V_i = X_{3i}&lt;/script&gt;, so then the equation is:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;W_3 - (X_{33} + dV_3) = (X_{31} + dV_1) + (X_{32} + dV_2)&lt;/script&gt;&lt;br /&gt;
+and since none of the output of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; can take the form of &lt;script type=&quot;math/tex&quot;&gt;dV&lt;/script&gt;, therefore &lt;script type=&quot;math/tex&quot;&gt;dV_1 = dV_2 = 0&lt;/script&gt;, then this simplifies to:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;W_3 - (X_{33} + dV_3) = X_{31} + X_{32}
+\tag{5}\label{use_output_3}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;In other words, all the output of &lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt; not used by itself for replacement and expansion of its workforce is, logically, used by the other two sectors.
+Also, it is more clearly visible that&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;S = u + dC + dV = u + I
+\tag{6}\label{surplus_investm_capcons}&lt;/script&gt;&lt;br /&gt;
+ie. surplus value (total profit) = capitalist consumption + investment (accumulation).
+This equation is not the same as \eqref{total_gross_profit_outputs_equal}, because there gross profit P* is defined as all spending on capital goods and capitalist consumption, whereas here it is only the part spent on accumulation (&lt;em&gt;new&lt;/em&gt; capital goods and labour) and capitalist consumption.
+This is interpreted by Trigg/Kalecki as ‘&lt;em&gt;capitalists cast money into circulation as aggregate demand on capitalist consumption and investment, which is realized as surplus value&lt;/em&gt;’ (p. 35). (There is again a nagging question of causality here left unanswered.)&lt;/p&gt;
+
+&lt;p&gt;This can be rendered as a ‘Kalecki multiplier’, by defining capitalist consumption &lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt; as made up of a constant part &lt;script type=&quot;math/tex&quot;&gt;B_0&lt;/script&gt; and a part dependent on profits as a fraction &lt;script type=&quot;math/tex&quot;&gt;\lambda&lt;/script&gt; of total profits &lt;script type=&quot;math/tex&quot;&gt;P&lt;/script&gt;:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;u = B_0 + \lambda P
+\tag{7}\label{kalecki_u_lambda}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;P&lt;/script&gt; is total profits. Since &lt;script type=&quot;math/tex&quot;&gt;P = u + I&lt;/script&gt;,&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;P = B_0 + \lambda P + I
+\tag{8}\label{eq8}&lt;/script&gt;&lt;br /&gt;
+and therefore
+&lt;script type=&quot;math/tex&quot;&gt;P = \frac{B_0 + I}{1-\lambda}
+\tag{9}\label{eq9}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Equation \eqref{eq9} represents a ‘multiplier’ relationship between total profits and total ‘exogenous’ expenditure by capitalists (&lt;script type=&quot;math/tex&quot;&gt;B_0 + I&lt;/script&gt;: constant capitalist consumption + new investment), with a multiplier effect of &lt;script type=&quot;math/tex&quot;&gt;1/(1-\lambda)&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since profits consist of capitalist consumption and investment, the components of the final demand &lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt; (&lt;a href=&quot;http://mbkoltai.github.io/reprod_multipl2/&quot;&gt;see previous post&lt;/a&gt;, Equations 5 and 13), this can be substituted into the macro-income (‘Keynesian’) multiplier &lt;script type=&quot;math/tex&quot;&gt;y = \frac{1}{e}f&lt;/script&gt;, yielding&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y = \frac{1}{e (1-\lambda)} (B_0 + I)
+\tag{10}\label{kalecki_multipl}&lt;/script&gt;
+
+&lt;p&gt;So that the ‘Keynesian’ multiplier now has the terms &lt;script type=&quot;math/tex&quot;&gt;e&lt;/script&gt;, the share of surplus value, and the ‘Kalecki multiplier’ &lt;script type=&quot;math/tex&quot;&gt;1/(1-\lambda)&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;\lambda&lt;/script&gt; being the fraction of profits spent on consumption.&lt;/p&gt;
+
+&lt;p&gt;Once more, we have a macro-identity here, but the question of whether the necessary amount of money is there to sell all outputs (and if yes where does it come from) in the case of expanded reproduction still hangs over these identities. This question can be addressed in the framework of the monetary circuit, which I will discuss in my next post.&lt;/p&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;Andrew Trigg, Marxian reproduction schema: money and aggregate demand in a capitalist economy. Routledge, 2009&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="economic-reproduction" /><category term="multiplier" /><category term="keynesian" /><category term="classical-political-economy" /><category term="marxian-economics" /><category term="kalecki" /><category term="effective-demand" /><category term="investment-demand" /><summary type="html">The identity between profits and spending on investment and out-of-profit consumption</summary></entry><entry><title type="html">The reproduction schema and the ‘Keynesian multiplier’, part 2</title><link href="http://localhost:4000/reprod_multipl2/" rel="alternate" type="text/html" title="The reproduction schema and the 'Keynesian multiplier', part 2" /><published>2018-09-30T00:00:00+02:00</published><updated>2018-09-30T00:00:00+02:00</updated><id>http://localhost:4000/reprod_multipl2</id><content type="html" xml:base="http://localhost:4000/reprod_multipl2/">&lt;p&gt;In this post I follow up on &lt;a href=&quot;https://mbkoltai.github.io/reprod_multipl/&quot;&gt;the previous one&lt;/a&gt; where I discussed the idea of a ‘multiplier’ that relates net income to net investment in an economic system. Both there and here I  follow &lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;a book&lt;/a&gt; by Andrew Trigg.
+The problem with the ‘Keynesian’ approach outlined in the previous post is that it analyzes the system only in terms of net income (wages and profit) and does not account for the capital stock that also has to be reproduced (and potentially expanded).&lt;br /&gt;
+A framework wherein the reproduction of constant capital can be analyzed is the so-called reproduction schema. The reproduction schema, first consistently developed in (what we know as) Volume 2 of Capital by Karl Marx, describes how in a given period of production the total social capital including both ‘variable’ (human labour) and ‘constant’ (machines) capital can be reproduced and potentially expanded. Marx used numerical examples in his writings, but the schema can be analyzed in symbolic form with the help of input-output tables and the tools of linear algebra.&lt;/p&gt;
+
+&lt;p&gt;Below in &lt;em&gt;Table 1&lt;/em&gt; is a numerical example of &lt;em&gt;simple&lt;/em&gt; reproduction, meaning that the amount of constant capital does not change from one period of production to the other. All the surplus value (profit) that is produced (received for the surplus fraction of the output) is consumed by the owners of capital, and not reinvested (accumulated).&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Constant capital &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Variable capital &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Surplus value &lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Total output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;D1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;D2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1500&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1500&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;9000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Table 1: simple reproduction&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Again, department 1 &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; produces means of production (&lt;em&gt;MoP&lt;/em&gt;), whereas &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; produces consumption goods (&lt;em&gt;CoG&lt;/em&gt;).
+Each is represented by a row, with &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt; standing for the total output. I prefer to normalize this table by the total output of the economy (9000), to see quantities in fractional terms, getting:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Constant capital &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Variable capital &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Surplus value &lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Total output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4/9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2/3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2/9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/18&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/18&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2/3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/6&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/6&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Table 1: simple reproduction&lt;/em&gt; (normalized)&lt;/p&gt;
+
+&lt;p&gt;Constant capital produced (&lt;script type=&quot;math/tex&quot;&gt;W_1=2/3&lt;/script&gt;) is equal to constant capital consumed (sum of the column &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;) in this period of production. The amount of &lt;em&gt;CoG&lt;/em&gt; produced &lt;script type=&quot;math/tex&quot;&gt;W_2 = V_1 + V_2 + S_1 + S_2 = 1/3&lt;/script&gt;, so all profits will be spent on buying consumer goods (throughout it is assumed there is no saving from wages either).&lt;/p&gt;
+
+&lt;p&gt;This would be unrealistic if it were meant as a model of a capitalist economy, since capitalism is about growth (accumulation), but it is useful analytically. For if there is expansion, simple reproduction is still embedded within the growing economic system, but now it adds new units to its capital stock and/or its workforce as well.&lt;/p&gt;
+
+&lt;p&gt;A model of a growing economy is what we call &lt;em&gt;expanded reproduction&lt;/em&gt;, a numerical example of which is in &lt;em&gt;Table 2&lt;/em&gt; below&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Constant capital &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Variable capital &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Surplus value &lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Total output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1500&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;750&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;750&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5500&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1750&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1750&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;9000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Table 2: expanded reproduction&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Let us normalize again:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Constant capital &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Variable capital &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Surplus value &lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Total output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4/9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2/3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/6&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/12&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/12&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;11/18&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;7/36&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;7/36&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Table 2: expanded reproduction (normalized)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;There is now more constant capital produced (&lt;script type=&quot;math/tex&quot;&gt;W_1 = 2/3 = 12/18&lt;/script&gt;) than consumed (&lt;script type=&quot;math/tex&quot;&gt;C_1+C_2=11/18&lt;/script&gt;), ie. accumulation is now possible, 1/18 (~5.6%) more constant capital will be available in the next round of production.
+Correspondingly, all income is now more than all consumption goods (&lt;em&gt;CoG&lt;/em&gt;) produced:
+&lt;script type=&quot;math/tex&quot;&gt;V_1 + V_2 + S_1 + S_2 = 7/18 &gt; W_2 = 6/18&lt;/script&gt;, as some of the profit, namely 1/18 will be directed to accumulation. It is not trivial how the incomes and the outputs (or supply and demand) match, and what is the temporal sequence. I’ll return to this later.&lt;/p&gt;
+
+&lt;p&gt;The (to-be-)accumulated capital &lt;script type=&quot;math/tex&quot;&gt;\Delta W&lt;/script&gt; is
+&lt;script type=&quot;math/tex&quot;&gt;\Delta W = W_1 - (C_1+C_2) = V_1 + S_1 - C_2 = 1/18
+\tag{1}\label{eq1}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;ie. it is new value added (=net income) in &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; minus the constant capital consumed in the &lt;em&gt;CoG&lt;/em&gt; department &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;.&lt;br /&gt;
+This matches the part of total net income (&lt;script type=&quot;math/tex&quot;&gt;Y&lt;/script&gt;) &lt;em&gt;not&lt;/em&gt; spent on consumption, which is&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;Y - W_2 = Y_1 + Y_2 - (Y_2 + C_2) = Y_1 - C_2 = V_1 + S_1 - C_2 = 1/18
+\tag{2}\label{eq2}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Getting back to input-output analysis, we have a case here of two sub-systems (departments) using the other’s output as an input, while - if there is expansion - some of the output is not used as an input in the present period.
+Consumption from profit (&lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt;, &lt;em&gt;CoG&lt;/em&gt; bought from profit) is one component of this final output and it is not redirected into the system as an input.
+The addition to the capital stock (&lt;script type=&quot;math/tex&quot;&gt;dC&lt;/script&gt;) is not used as an input in the &lt;em&gt;present&lt;/em&gt; cycle, although it will be in the next. Finally, there can be an addition to the labour force (&lt;script type=&quot;math/tex&quot;&gt;dV&lt;/script&gt;) too in the next period matched by unconsumed &lt;em&gt;CoG&lt;/em&gt;.
+This last category was not visible in &lt;em&gt;Table 2&lt;/em&gt;, as the &lt;em&gt;use&lt;/em&gt; of the outputs was not detailed there. It shows that capitalists can spend some of their profit on &lt;em&gt;CoG&lt;/em&gt;, but not for their own personal consumption (&lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt;), but for expanding the labour force (&lt;script type=&quot;math/tex&quot;&gt;dV&lt;/script&gt;). Either way (&lt;script type=&quot;math/tex&quot;&gt;dV&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt;), this will go into buying up the output of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;. Since total surplus value will have to equal total final product, &lt;script type=&quot;math/tex&quot;&gt;S_1 + S_2 = dC + dV + u&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now we can turn &lt;em&gt;Table 2&lt;/em&gt; into an input-output (I/O) table. If we read the I/O table row-wise, we have the output of one department, arranged into columns by the &lt;em&gt;use&lt;/em&gt; of that part of the output. If we read down a column, we have all the inputs for a given department (or for a type of final product).&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (inputs)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; (inputs)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;dC (new C)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;dV (new V)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;u (capitalist consum.)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt; (&lt;script type=&quot;math/tex&quot;&gt;\sum&lt;/script&gt;)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (outputs)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;X_{11}&lt;/script&gt;=4/9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;X_{12}&lt;/script&gt;=1/6&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/18&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2/3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; (outputs)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/12&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/60&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;11/90&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/12&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2/3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1/3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Table 3: I/O table of expanded reproduction from Table 2&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;X_{ij}&lt;/script&gt; stands for the amount of capital goods (&lt;em&gt;MoP&lt;/em&gt;) produced by department &lt;em&gt;i&lt;/em&gt; used as an input by department &lt;em&gt;j&lt;/em&gt;. The gross (physical) output of department &lt;em&gt;i&lt;/em&gt; is denoted as &lt;script type=&quot;math/tex&quot;&gt;X_j&lt;/script&gt;. We can then define input coefficients &lt;script type=&quot;math/tex&quot;&gt;a_{ij} = X_{ij}/X_j&lt;/script&gt; as the ratio of the gross output of department &lt;em&gt;j&lt;/em&gt; and the &lt;em&gt;MoP&lt;/em&gt; it builds into this output from department &lt;em&gt;i&lt;/em&gt;. This is the same as saying that &lt;script type=&quot;math/tex&quot;&gt;a_{ij}&lt;/script&gt; is the input coming from department &lt;script type=&quot;math/tex&quot;&gt;D_i&lt;/script&gt; into one unit of output of &lt;script type=&quot;math/tex&quot;&gt;D_j&lt;/script&gt;. For instance &lt;script type=&quot;math/tex&quot;&gt;a_{12} = X_{12}/X_2 = (1/6)/(1/3) = 1/2&lt;/script&gt;, of the output of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; comes from the output (&lt;em&gt;MoP&lt;/em&gt;) of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; used by &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; as an input.
+Consumer goods are not industrial inputs, so these input coefficients refer only to the output of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;. One could say that workers in both sectors use consumer goods (output of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;) in the same way, but this is rather after (and/or outside) the production process than a part of it. At any rate I’ll use the notation in Trigg’s book to reproduce the derivation.&lt;/p&gt;
+
+&lt;p&gt;For &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; instead of &lt;script type=&quot;math/tex&quot;&gt;a_{ij}&lt;/script&gt;, we have the product &lt;script type=&quot;math/tex&quot;&gt;h_i l_j&lt;/script&gt;. &lt;script type=&quot;math/tex&quot;&gt;l_j&lt;/script&gt; is the labour coefficient &lt;script type=&quot;math/tex&quot;&gt;l_j = L_j/X_j&lt;/script&gt;, where &lt;script type=&quot;math/tex&quot;&gt;L_j&lt;/script&gt; is the number of labour units employed in &lt;script type=&quot;math/tex&quot;&gt;D_j&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;X_j&lt;/script&gt; (same as &lt;script type=&quot;math/tex&quot;&gt;W_j&lt;/script&gt; before) the gross output.
+&lt;script type=&quot;math/tex&quot;&gt;h_i&lt;/script&gt; (which is defined for &lt;script type=&quot;math/tex&quot;&gt;h_2&lt;/script&gt; only) is &lt;script type=&quot;math/tex&quot;&gt;h_i = B_i/L&lt;/script&gt;, or concretely &lt;script type=&quot;math/tex&quot;&gt;h_2 = B_2/L&lt;/script&gt;, the ratio of total consumption of the 2nd physical good (ie. &lt;em&gt;CoG&lt;/em&gt;) to the total volume of labour units.
+The term &lt;script type=&quot;math/tex&quot;&gt;B_2&lt;/script&gt; I was first not sure how to interpret. Is it total consumption of &lt;em&gt;CoG&lt;/em&gt;, ie. is it equal to &lt;script type=&quot;math/tex&quot;&gt;X_2&lt;/script&gt;? In this case the equality would not work out, since &lt;script type=&quot;math/tex&quot;&gt;M_{21} = 1/9 = h_2 l_1 X_1 = h_2 \frac{1}{3} \frac{2}{3} = h_2 \frac{2}{9}&lt;/script&gt;, therefore &lt;script type=&quot;math/tex&quot;&gt;h_2=1/2&lt;/script&gt; (by &lt;script type=&quot;math/tex&quot;&gt;M_{21}&lt;/script&gt; I mean 2nd row 1st column of matrix).
+Therefore &lt;script type=&quot;math/tex&quot;&gt;B_2 = 7/36&lt;/script&gt;, which is equal to total wages (or consumption from wages since we assume all wages are spent), ie. &lt;script type=&quot;math/tex&quot;&gt;B_2 = V_1 + V_2&lt;/script&gt;. Then &lt;script type=&quot;math/tex&quot;&gt;h_2 = B_2/L = \frac{V_1+V_2}{L}&lt;/script&gt; means the ratio of worker consumption to all labour performed, it is basically the labour share (again there is some issue here about money vs. physical units, but let us put that aside for the moment). There is also here the assumption that &lt;script type=&quot;math/tex&quot;&gt;h_2&lt;/script&gt;, the labour share is the same in both sectors.
+The product &lt;script type=&quot;math/tex&quot;&gt;l_1 h_2&lt;/script&gt; then means the share of living labour in the gross output of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; times the &lt;em&gt;CoG&lt;/em&gt; workers receive per unit of labour. In summary it is the amount of &lt;em&gt;CoG&lt;/em&gt; to be ‘inputted’ (wage paid to workers that will be spent on &lt;em&gt;CoG&lt;/em&gt;) to the department for a unit of its output, this is how it plays the same role as &lt;script type=&quot;math/tex&quot;&gt;a_{ij}&lt;/script&gt; in input-output terms.&lt;/p&gt;
+
+&lt;p&gt;Finally to go from physical/labour units to prices there is a price for units of &lt;em&gt;MoP&lt;/em&gt; and &lt;em&gt;CoG&lt;/em&gt;, &lt;script type=&quot;math/tex&quot;&gt;p_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;p_2&lt;/script&gt;. I drop these from the rest of the derivation by setting them to 1. Then we can write the entire I/O matrix symbolically:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (inputs)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; (inputs)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;dC (new C)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;dV (new V)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;u (capitalist consum.)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt; (total output)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (outputs)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;p_1 a_{11} X_1 = p_1 X_{11}&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;p_1 a_{12} X_2 = p_1 X_{12}&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;p_1 dA&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;p_1 X_1&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; (outputs)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;p_2 h_2 l_1 X_1&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;p_2 h_2 l_2 X_2&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;p_2 dh&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;p_2 C_k&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;p_2 X_2&lt;/script&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_1&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_2&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;p_1 X_1&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;p_2 X_2&lt;/script&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Table 4: I/O table of expanded reproduction in Leontief categories&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The term &lt;script type=&quot;math/tex&quot;&gt;p_2 h_2 l_2 X_2&lt;/script&gt; for instance means the amount of &lt;em&gt;CoG&lt;/em&gt; to be used by the workers of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, equal to &lt;em&gt;(unit price) x (labour share in net income) x (share of net income (living labour) in gross output of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;) x (gross output of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The term &lt;script type=&quot;math/tex&quot;&gt;p_1 a_{12} X_2&lt;/script&gt; is the money output of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; required by &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, and it is the &lt;em&gt;MoP&lt;/em&gt; used up by &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, equal to &lt;em&gt;(unit price) x (units of MoP used for one unit of gross output of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;) x (gross output of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The full system for expanded reproduction can be captured for both departments (after cancelling out the price terms), with inputs equaling outputs, as:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_{11}X_1 + a_{12} X_2 + da = X_1
+\tag{3}\label{eq3}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h_2 l_1 X_1 + h_2 l_2 X_2 + dh + C_k = X_2
+\tag{4}\label{eq4}&lt;/script&gt;
+
+&lt;p&gt;Or in matrix notation:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \begin{bmatrix} a_{11} &amp; a_{12}\\ 0 &amp; 0\\ \end{bmatrix}
+\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} + \begin{bmatrix} 0\\ h_2\\ \end{bmatrix}
+\begin{bmatrix} l_1 &amp; l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
++ \begin{bmatrix} da\\ dh + C_k \end{bmatrix}
+\tag{5}\label{eq5} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;The vector on the right represents ‘final demand’ (or final output), these parts of the output can be used to expand the labour force and the capital stock, or spent on consumption by the owners who receive the profits. Final demand does not include consumption of workers from wages, as this is to reproduce the existing labour force.&lt;/p&gt;
+
+&lt;p&gt;Using column vectors one can write Equation \eqref{eq5} as:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbf{X} = \mathbf{A X} + \mathbf{h} [\mathbf{l X}] + \mathbf{F}
+\tag{6}\label{eq6}&lt;/script&gt;
+
+&lt;p&gt;with &lt;strong&gt;F&lt;/strong&gt; representing the column vector of final demand.&lt;/p&gt;
+
+&lt;p&gt;We want to recover the multiplier relationship of Equation 9 of the &lt;a href=&quot;http://www.mbkoltai.github.io/reprod_multipl&quot;&gt;previous post&lt;/a&gt;. To do that, the ‘&lt;em&gt;net output&lt;/em&gt;’ is first defined as &lt;script type=&quot;math/tex&quot;&gt;Q = (I - A)X&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;I&lt;/script&gt; the identity matrix. Writing it explicitly this is:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+Q = (I - A) X = \begin{bmatrix} 1 - a_{11} &amp; - a_{12}\\ 0 &amp; 1\\ \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \\ =
+\begin{bmatrix} X_1 - a_{11}X_1 - a_{12} X_2 \\ X_2\\ \end{bmatrix}
+= \mathbf{h} [\mathbf{l X}] + \mathbf{F}
+\tag{7}\label{eq7} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;So ‘&lt;em&gt;net output&lt;/em&gt;’ means for &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; its gross output minus the part that is to replace the constant capital used up in this period of production, and for &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; its entire output.
+&lt;!--- If we say *MoP* produced in the current period is also used up in this period (its part directed to replacement, $$I-A$$), whereas all *CoG* is used up after production, then it is maybe more intuitive why the net product is defined as $$\mathbf{h} [\mathbf{l X}] + \mathbf{F}$$.--&gt;
+There is a temporal order of events here, ie. movements of money (eg. when wages are paid out and then spent etc.) and movements and use of physical goods that is not trivial and I want to reconstruct later on in detail.&lt;/p&gt;
+
+&lt;p&gt;First though I will follow through with the derivation of Chapter 2. Using Equation \eqref{eq7} and &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} = l (I-A)^{-1}&lt;/script&gt;, Equation \eqref{eq6} can be re-expressed as:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;Q \frac{v}{l} = A Q \frac{v}{l} + h [l Q \frac{v}{l}] + F = A Q \frac{v}{l} + h [v Q ] + F&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Subtracting &lt;script type=&quot;math/tex&quot;&gt;A Q \frac{v}{l}&lt;/script&gt;, the left-side simplifies to  &lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\frac{v}{l}Q (I-A) = (I-A)^{-1} (I-A) Q = Q&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;So that we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Q = h [v Q ] + F
+\tag{8}\label{eq8}&lt;/script&gt;
+
+&lt;p&gt;This is a relationship between:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the net product &lt;script type=&quot;math/tex&quot;&gt;Q&lt;/script&gt; as defined in Eq. \eqref{eq7}&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{h}&lt;/script&gt; that is the column vector &lt;script type=&quot;math/tex&quot;&gt;\begin{bmatrix}  0 \\  h_2 \\ \end{bmatrix}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;h_2 = B_2/L = \frac{V_1+V_2}{L}&lt;/script&gt;, the ratio of worker consumption to all labour performed&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathbf{v}&lt;/script&gt;, which is the row vector of ‘vertically integrated labour coefficients’.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To understand &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v}&lt;/script&gt;, let us do the multiplication:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\mathbf{v} = l (I - A)^{-1} =
+\begin{bmatrix} l_1 &amp; l_2 \end{bmatrix} \begin{bmatrix} \frac{1}{1 - a_{11}} &amp; \frac{a_{12}}{1-a_{11}} \\ 0 &amp; 1\\ \end{bmatrix} =
+\begin{bmatrix} \frac{l_1}{1 - a_{11}} &amp; l_1 \frac{a_{12}}{1-a_{11}} + l_2 \end{bmatrix}
+\tag{9}\label{eq9} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;This is not very intuitive, but if we realize that &lt;script type=&quot;math/tex&quot;&gt;a_{11}X_1 = X_{11} = C_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;a_{12}X_2 = X_{12} = C_2&lt;/script&gt; (since &lt;script type=&quot;math/tex&quot;&gt;C_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;C_2&lt;/script&gt; are the amounts of constant capital transferred into the output, while &lt;script type=&quot;math/tex&quot;&gt;X_{11}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;X_{12}&lt;/script&gt; are parts of the output of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; that go into replacement) and that &lt;script type=&quot;math/tex&quot;&gt;X_i = L_i + C_i&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v}&lt;/script&gt; simplifies to &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\mathbf{v} = \begin{bmatrix} 1 &amp; 1 \end{bmatrix} %]]&gt;&lt;/script&gt;. This is partly because I previously dropped unit prices &lt;script type=&quot;math/tex&quot;&gt;p_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;p_2&lt;/script&gt; (by setting them to 1).&lt;/p&gt;
+
+&lt;p&gt;Continuing, let us note that &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} Q&lt;/script&gt; is a scalar, since &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v}&lt;/script&gt; is a 2-column row vector and &lt;script type=&quot;math/tex&quot;&gt;Q&lt;/script&gt; a 2-row column vector. Therefore if we multiply both sides of Equation \eqref{eq8} by &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v}&lt;/script&gt;, we get&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\mathbf{v}Q = \mathbf{v} h [v Q ] + \mathbf{v} F
+\tag{10}\label{eq10}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Moving the first term on the LHS and factoring out &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v}Q&lt;/script&gt;, we finally arrive at&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\boxed{ \mathbf{v}Q = \frac{1}{1 - \mathbf{v} h} \mathbf{v} F }
+\tag{11}\label{eqmult}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;which is again a multiplier relationship, very similar to Equation 9 in the &lt;a href=&quot;http://www.mbkoltai.github.io/reprod_multipl&quot;&gt;previous post&lt;/a&gt; where only net income was considered, but now constant capital has also been accounted for. It is a relationship between final demand &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} F&lt;/script&gt; and the net income (all new value added = wages + profits) &lt;script type=&quot;math/tex&quot;&gt;vQ&lt;/script&gt;.
+&lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} h&lt;/script&gt; is a scalar, as is &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} F&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} Q&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;vQ&lt;/script&gt; is net income (= total employment of labour units = total new value added) because &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} = l (I - A)^{-1}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;Q = (I - A)X&lt;/script&gt; (net product = to-be-accumulated capital &lt;script type=&quot;math/tex&quot;&gt;dA&lt;/script&gt; + all output of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, ie &lt;script type=&quot;math/tex&quot;&gt;X_2&lt;/script&gt; ). Therefore&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\mathbf{v}Q = \mathbf{l} \mathbf{X} = \begin{bmatrix} L_1/X_1 &amp; L_2/X_2 \end{bmatrix} \begin{bmatrix} X_1 \\ X_2 \end{bmatrix} = L_1 + L_2
+\tag{12}\label{eq12} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;so the meaning of this term is quite clear.&lt;/p&gt;
+
+&lt;p&gt;As for &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} h&lt;/script&gt; in the denominator, it is the &lt;em&gt;propensity to consume&lt;/em&gt;. As discussed above &lt;script type=&quot;math/tex&quot;&gt;h&lt;/script&gt; is the labour share (wages to net income/total labour) or in other words workers’ consumption divided by total labour performed (&lt;script type=&quot;math/tex&quot;&gt;h_2 = B_2/L&lt;/script&gt;).
+In the ‘net income’ (‘Keynesian’) analysis of the &lt;a href=&quot;https://mbkoltai.github.io/reprod_multipl/&quot;&gt;previous post&lt;/a&gt; (see Equation 1 and 9) &lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt; was &lt;em&gt;all&lt;/em&gt; consumption, whereas here &lt;script type=&quot;math/tex&quot;&gt;B_2&lt;/script&gt; is only consumption from wages, so the multiplier formulas are not identical. Since &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} = [1 \ 1]&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\mathbf{h} = \begin{bmatrix} 0 \\ h_2 \end{bmatrix}&lt;/script&gt;, then the product is
+&lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} h = h_2 = B_2 / L&lt;/script&gt;
+or wages paid out (and spent on consumption) per unit of labour performed.&lt;/p&gt;
+
+&lt;p&gt;Finally, the product &lt;script type=&quot;math/tex&quot;&gt;v F&lt;/script&gt; is the value of the products corresponding to final demand, and if &lt;script type=&quot;math/tex&quot;&gt;v = [1 \ 1]&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} \mathbf{F} = F_1 + F_2 = dA + dH + C_k&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;In summary, Equation \eqref{eqmult} expresses the relationship between net income, workers’ consumption (per unit of labour performed) and final demand (the surplus product). The multiplier relationship can be derived in the two-department model of the reproduction schema, that considers constant capital as well. A difference is that the ratio of net income to final demand here is &lt;script type=&quot;math/tex&quot;&gt;1/(1- vh)&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v h}&lt;/script&gt; is &lt;em&gt;workers’&lt;/em&gt; consumption per unit of labour, and not total consumption &lt;a href=&quot;https://mbkoltai.github.io/reprod_multipl/&quot;&gt;as previously&lt;/a&gt;. (Or: labour embodied (&lt;script type=&quot;math/tex&quot;&gt;\mathbf{v}&lt;/script&gt;) in the bundle consumed by workers per unit of labour (&lt;script type=&quot;math/tex&quot;&gt;\mathbf{h}&lt;/script&gt;).) Then &lt;script type=&quot;math/tex&quot;&gt;e = 1 - \mathbf{v h}&lt;/script&gt; is the share of surplus value extracted from each unit of labour. If we say that for simplicity &lt;script type=&quot;math/tex&quot;&gt;\mathbf{v} = \mathbf{p}&lt;/script&gt; (prices and values are the same), so that net money output is &lt;script type=&quot;math/tex&quot;&gt;y = \mathbf{v Q} = \mathbf{p Q}&lt;/script&gt; and money final demand &lt;script type=&quot;math/tex&quot;&gt;f = \mathbf{vF} = \mathbf{pF}&lt;/script&gt;, then Equation \eqref{eqmult} can be expressed as a ‘macro income multiplier’:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y = \frac{1}{e}f
+\tag{13}\label{eq13}&lt;/script&gt;
+
+&lt;p&gt;So the concept of surplus value (&lt;script type=&quot;math/tex&quot;&gt;e&lt;/script&gt;) and the multiplier relationship between final demand (&lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;) and net money output (&lt;script type=&quot;math/tex&quot;&gt;y&lt;/script&gt;) can be related in a 2-sector model taking into account constant capital. Or, if you like, the concepts of classical political economy (such as surplus value) and those of ‘Keynesian economics’ can be related through the reproduction schemas.&lt;/p&gt;
+
+&lt;p&gt;To me this relationship seems an algebraic one between parts of the total output classified with respect to their use: the net output on the one hand and on the other ‘final demand’ (or final output), which is the part that can be consumed by owners or take the form of &lt;em&gt;MoP&lt;/em&gt; and &lt;em&gt;CoG&lt;/em&gt; to &lt;em&gt;expand&lt;/em&gt; the capital stock (over replacement) and the workforce. The second chunk (&lt;script type=&quot;math/tex&quot;&gt;\mathbf{F}&lt;/script&gt; in the above notation), that is the surplus part of the output, is a part of the first (&lt;script type=&quot;math/tex&quot;&gt;\mathbf{v Q}&lt;/script&gt;). In other words, final demand is the part of the net output that can be directed to accumulation (=new workers + new constant capital) or consumption from profit.
+This is not a causal relationship in my understanding, but an algebraic identity. In fact, these purchases from profit for consumption and accumulation occur at the end of a period of production, and first - it seems to me - what we should explain is where the demand for these parts of the total output comes from. It is this question that I want to address in my next post.&lt;/p&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;Andrew Trigg, Marxian reproduction schema: money and aggregate demand in a capitalist economy. Routledge, 2009&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="economic-reproduction" /><category term="multiplier" /><category term="keynesian" /><category term="classical-political-economy" /><category term="marxian-economics" /><summary type="html">The reproduction schema and input-output analysis</summary></entry><entry><title type="html">Embedding equations in GitHub blog posts with MathJax</title><link href="http://localhost:4000/embed-equations/" rel="alternate" type="text/html" title="Embedding equations in GitHub blog posts with MathJax" /><published>2018-09-25T00:00:00+02:00</published><updated>2018-09-25T00:00:00+02:00</updated><id>http://localhost:4000/embed-equations</id><content type="html" xml:base="http://localhost:4000/embed-equations/">&lt;p&gt;One of the first things I wanted to do for this blog was to be able to write equations as in LaTeX. I thought this would be straightforward, but it took some searching to find a better solution than embedding images of the equations generated by an external tool.
+The simple answer is: use MathJax that has a syntax almost identical to LaTeX. More recent GitHub themes (I forked &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now&lt;/a&gt;) already have kramdown enabled in the &lt;em&gt;_config.yml&lt;/em&gt; file, supporting MathJax.&lt;/p&gt;
+
+&lt;p&gt;The steps are then the following:&lt;/p&gt;
+
+&lt;p&gt;1) If you want to use equations in your blog posts as I do, paste the following script into &lt;em&gt;post.html&lt;/em&gt; that should be in your &lt;em&gt;layouts&lt;/em&gt; folder&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+        MathJax.Hub.Config({
+            config: [&quot;MMLorHTML.js&quot;],
+            extensions: [&quot;tex2jax.js&quot;,&quot;TeX/AMSmath.js&quot;,&quot;TeX/AMSsymbols.js&quot;],
+            jax: [&quot;input/TeX&quot;],
+            tex2jax: {
+                inlineMath: [ ['$','$'], [&quot;\\(&quot;,&quot;\\)&quot;] ],
+                displayMath: [ ['$$','$$'], [&quot;\\[&quot;,&quot;\\]&quot;] ],
+                processEscapes: false
+            },
+            TeX: {
+                TagSide: &quot;right&quot;,
+                TagIndent: &quot;.8em&quot;,
+                MultLineWidth: &quot;85%&quot;,
+                equationNumbers: {
+                   autoNumber: &quot;AMS&quot;,
+                },
+                unicode: {
+                   fonts: &quot;STIXGeneral,'Arial Unicode MS'&quot;
+                }
+            },
+            showProcessingMessages: false
+        });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;within the block&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;{ % if page.mathjax % }&lt;br /&gt;
+(code comes here)&lt;br /&gt;
+{ % endif % }&lt;/p&gt;
+
+&lt;p&gt;This means that you can set up a &lt;em&gt;mathjax&lt;/em&gt; flag for those posts where you’ll have equations.&lt;/p&gt;
+
+&lt;p&gt;2) In the posts where you’ll have equations insert the flag&lt;br /&gt;
+&lt;strong&gt;mathjax: true&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;3) You can now write equations between double $ signs. For example,&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \begin{bmatrix} a_{11} &amp;amp; a_{12}\\ 0 &amp;amp; 0\\ \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
++ \begin{bmatrix} 0\\ h_2\\ \end{bmatrix} \begin{bmatrix} l_1 &amp;amp; l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
++ \begin{bmatrix} da\\ dh + C_k \end{bmatrix}  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;becomes&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \begin{bmatrix} a_{11} &amp; a_{12}\\ 0 &amp; 0\\ \end{bmatrix}
+    \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} + \begin{bmatrix} 0\\ h_2\\ \end{bmatrix}
+    \begin{bmatrix} l_1 &amp; l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
+    + \begin{bmatrix} da\\ dh + C_k \end{bmatrix} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;A good resource for different formulae &lt;a href=&quot;https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&quot;&gt;is here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="github-blog" /><summary type="html">easiest way to embed equations in posts</summary></entry><entry><title type="html">The reproduction schema and the ‘Keynesian multiplier’, part 1</title><link href="http://localhost:4000/reprod_multipl/" rel="alternate" type="text/html" title="The reproduction schema and the 'Keynesian multiplier', part 1" /><published>2018-09-20T00:00:00+02:00</published><updated>2018-09-20T00:00:00+02:00</updated><id>http://localhost:4000/reprod_multipl</id><content type="html" xml:base="http://localhost:4000/reprod_multipl/">&lt;p&gt;In his book &lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;&lt;em&gt;Marxian reproduction schema: money and aggregate demand in a capitalist economy&lt;/em&gt;&lt;/a&gt; Andrew Trigg mathematically formalizes models of (simple and expanded) reproduction of total social capital coming from classical political economy, and how they connect to the ‘Keynesian’ idea of the multiplier effect of investment demand. The reproduction schema was first proposed in a consistent form in Volume 2 of Marx’s Capital, and later put into a mathematical form by Sraffa, Leontieff and other authors.
+I have always been interested in these reproduction schemas and how supply (total output) and demand can be matched if the total output is increasing, that is if there is capital accumulation. I want to go step by step through the derivation in Trigg’s book, discussing the meaning of the terms introduced along the way. In this post I will discuss the derivation of the ‘Keynesian multiplier’ that relates investment demand to (total) net income.&lt;/p&gt;
+
+&lt;p&gt;The basic aim of this analysis is to connect the ‘multiplier’ relationship between investment and total income with a 2-sector (consumption goods and capital goods) model of economic reproduction, where all capital and labour is reproduced and the capital stock is potentially incremented.&lt;/p&gt;
+
+&lt;p&gt;In a one-sector model of the economy we have (money units in ‘$’)&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Periods&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Constant capital &lt;script type=&quot;math/tex&quot;&gt;C_1&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Variable capital &lt;script type=&quot;math/tex&quot;&gt;V_1&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Surplus value &lt;script type=&quot;math/tex&quot;&gt;S_1&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Net income &lt;script type=&quot;math/tex&quot;&gt;Y_1&lt;/script&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Net investment &lt;script type=&quot;math/tex&quot;&gt;I_1&lt;/script&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;At this point the reproduction of constant capital is not considered, only ‘net income’ (&lt;em&gt;Y&lt;/em&gt;, I will drop the subscripts here as there is only one department) and its relation to net investment (accumulation). Net income is all income paid in the economy, made up of wages (variable capital, &lt;em&gt;V&lt;/em&gt;) and profit (surplus value, &lt;em&gt;S&lt;/em&gt;). The ‘multiplier’ is the relationship of net investment that happens from the &lt;em&gt;next&lt;/em&gt; period of production. Then the ‘Keynesian income multiplier’ is:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;Y = \frac{1}{1-b}I
+\tag{1}\label{eq1}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;em&gt;Y&lt;/em&gt; is again net income (&lt;em&gt;Y=S+V&lt;/em&gt;), &lt;em&gt;I&lt;/em&gt; investment and &lt;em&gt;b&lt;/em&gt; is the ‘propensity to consume’. This last term was not very clear to me: does it mean the fraction of net income going to workers’ consumption or all consumption? For the identity to work out it has to be&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;b = \frac{V+S-I}{V+S} = \frac{Y-I}{Y} = 1 - I/Y
+\tag{2}\label{eq2}&lt;/script&gt;,&lt;br /&gt;
+so &lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt; takes into account &lt;em&gt;all&lt;/em&gt; income spent on consumption, or in other words the share of wages + profit spent on consumption, assuming all wages are spent on consumption.&lt;/p&gt;
+
+&lt;p&gt;This is a mathematical identity, since &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{1-(1 - I/Y)}I = Y&lt;/script&gt;. In other words, I don’t see a causal relationship here, in fact I would say the causality to be explained runs the other way: the investment in &lt;em&gt;Period 2&lt;/em&gt; is made possible by the realization of profits in &lt;em&gt;Period 1&lt;/em&gt;. I would say it has to be shown that everything can be sold with a profit in &lt;em&gt;Period 1&lt;/em&gt;, then some of this profit can be directed to new investment (and not to the consumption of owners who receive the profits) to increase the capital stock.
+Technically, we can say the ‘multiplier’ effect is 4-fold, 1/4 of the net income will be invested in the next period. However this is not a causal statement as far as I can see, but simply restating the fact that whatever fraction &lt;script type=&quot;math/tex&quot;&gt;\frac{I}{Y}&lt;/script&gt; is spent on investment out of total net income, the reciprocal ratio &lt;script type=&quot;math/tex&quot;&gt;\frac{Y}{I}&lt;/script&gt; will be - by definition - the reciprocal.&lt;/p&gt;
+
+&lt;p&gt;Now we can take the case of a 2-sector economy: the first ‘department’ &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; produces capital goods (means of production) and the second department &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; consumer goods.
+Then net income in the two departments are:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;Y_1 = V_1 + S_1 \tag{3}\label{eq3}&lt;/script&gt;&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;Y_2 = V_2 + S_2 \tag{4}\label{eq4}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Then if we apply the ‘propensity to consume’, &lt;em&gt;b&lt;/em&gt;, to total net income &lt;script type=&quot;math/tex&quot;&gt;Y=Y_1 + Y_2 = V_1 + S_1 + V_2 + S_2&lt;/script&gt;, the demand for the output of the two sectors &lt;script type=&quot;math/tex&quot;&gt;D(Y_i)&lt;/script&gt; can be expressed as fractions of net income as:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;D(Y_1) = (1-b)Y \tag{5}\label{eq5}&lt;/script&gt;&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;D(Y_2) = bY \tag{6}\label{eq6}&lt;/script&gt;&lt;br /&gt;
+The fraction of net income spent on consumption buys up the demand of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;, and the other part that of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;.
+Since the output here does not take into account the input from constant capital (machines, materials etc. that were built into the output), only the income components (&lt;script type=&quot;math/tex&quot;&gt;S+V&lt;/script&gt;), then the net income in the departments have to equal the demand for the output of the departments if the system is in equilibrium. This means that &lt;script type=&quot;math/tex&quot;&gt;Y_i=D(Y_i)&lt;/script&gt; and therefore&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\frac{Y_2}{Y_1} = \frac{b}{1-b}   
+\tag{7}\label{eq7}&lt;/script&gt;&lt;br /&gt;
+Since in this formulation the income (=output) of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; is the same as total consumption &lt;script type=&quot;math/tex&quot;&gt;B&lt;/script&gt;, and the income (=output) of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; is the same as net investment &lt;script type=&quot;math/tex&quot;&gt;I&lt;/script&gt;, this formula describes a ‘multiplier’ relationship again, namely:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;B = \frac{b}{1-b}I
+\tag{8}\label{eq8}&lt;/script&gt;&lt;br /&gt;
+Trigg writes that the ‘traditional Keynesian multiplier’ rather relates total net income to investment, which can be obtained from the previous formula by considering that &lt;script type=&quot;math/tex&quot;&gt;B = Y - I&lt;/script&gt;, which then gives&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;Y = \frac{b}{1-b}I + I = \frac{1}{1-b}I,
+\tag{9}\label{eq9}&lt;/script&gt;&lt;br /&gt;
+yielding the formula obtained from the one-sector model. In other words the ‘multiplier relationship’ (which as I said above seems to me more an identity than a causal relationship) can be derived in a two-sector model.&lt;/p&gt;
+
+&lt;p&gt;The main problem with this description is that it takes no account of the role of constant capital (machines, materials etc whose value is ‘transferred into’ the gross output), which has to be also reproduced in each cycle of production, and even expanded if there is accumulation. This is so although there is now a department producing capital goods. I want to address this problem in my next post, using the reproduction schemas and input-output analysis.&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="economic-reproduction" /><category term="multiplier" /><category term="keynesian" /><category term="classical-political-economy" /><category term="marxian-economics" /><summary type="html">The 'Keynesian multiplier' in a one-sector model</summary></entry><entry><title type="html">Misgivings about world-systems theory</title><link href="http://localhost:4000/wst/" rel="alternate" type="text/html" title="Misgivings about world-systems theory" /><published>2018-09-11T00:00:00+02:00</published><updated>2018-09-11T00:00:00+02:00</updated><id>http://localhost:4000/wst</id><content type="html" xml:base="http://localhost:4000/wst/">&lt;p&gt;I want to write down a few misgivings I have about world-systems theory/analysis (WST), some of them analytical and some about its (usual) political consequences. &lt;br /&gt;
+While I read some of the writings of Immanuel Wallerstein (in fact translated his &lt;a href=&quot;http://www.eszmelet.hu/wp-content/uploads/2014/05/Wallerstein-%C3%BAj.pdf&quot;&gt;textbook&lt;/a&gt; on world-systems analysis into Hungarian) and Samir Amin, my knowledge of WST is more based on the works and political attitudes of its followers.
+These are more a set of impressions to organize my own thoughts and (maybe) help to elaborate them in more detail later on, than an attempt to engage WST on the level of academic debates: I am not involved in this field professionally, nor do I plan to be in the future. In this form some of these remarks might not do justice to the original and most refined texts of WST. But in my experience this is how the theory functions in the hands of many of its followers, especially when it is politically instrumentalized - and that happens more often than not to social theories. Also, many interesting historical and empirical works have been written in the WST framework that have a lot of value, despite some conceptual problems. After these caveats, here we go.&lt;/p&gt;
+
+&lt;p&gt;The first problem in my view - from which perhaps all others flow - is the excessive focus on states and geopolitical ‘blocs’. WI Robinson refers to this as the ‘Reification of the State and the Methodology of State Centrism’ &lt;a href=&quot;https://www.tandfonline.com/doi/full/10.1080/21598282.2017.1316512&quot;&gt;in this paper&lt;/a&gt;. In WST and related/descendant theories states are discussed as agents, and international relations are described as antagonistic relations between these states. There are several assumptions made here that all seem dubious. By using the language of countries as unified entities battling each other for influence and resources a structure is already imposed on world events that tends to lead to certain conclusions.&lt;br /&gt;
+WI Robinson brings up the examples of NAFTA, conflicts over agricultural subsidies between Brazil and the US, and in general how the ‘BRICS’ phenomenon is often analyzed on much of the traditional ‘anti-imperialist’ left.
+NAFTA would sometimes be described as ‘the US’ exploiting or oppressing ‘Mexico’, but this is very misleading: some of the most intense lobbying for NAFTA came from Mexican corporations eager to form connections with American ones and to have access to US financial and product markets. No doubt, many large American companies stood to gain from the free trade agreement as well, but it was not at all a one-sided affair.
+Large parts of American society - think of industrial workers or smaller farms in the US - arguably suffered from the effects of the agreement, and so did small scale Mexican agriculture. Mexican workers - many of them former peasants probably - drawn into the sweatshop system building up by the inflow of American (and other) capital lost in many ways (uprooting of their previous environment, harshly exploitative new working conditions), although within some years probably saw rising incomes too. Some of the urban middle classes probably gained again as they could fill new IT/administrative positions due to the growing internationalization of the Mexican economy, while small business owners often lost out. The point is, trying to understand the process as the ‘core’ exploiting the ‘semi-periphery’ doesn’t really help. There are complex shifts going on within both the ‘core’ and the semi-peripheral country with some groups gaining in the latter and losing out in the former and vice versa. As there is excessive focus on states and the (real, expected or imagined) conflicts between them, the internal relationships within these states are neglected.&lt;/p&gt;
+
+&lt;p&gt;Which brings me to the second point, and that is the dividing up of the world economy into ‘core’, ‘semi-periphery’ and ‘periphery’. This classification has some merits as it points to some typical differences in the industrial and class structures of the countries assigned to these subgroups. My problem is how this classification then becomes an ontology and eventually the basis of a political credo. &lt;br /&gt;
+The modern world system developed with industrializing Europe and North America pillaging and thereby ‘peripheralizing’ much of the rest of the world, no doubt. But capital accumulation enforced by market competition is a universal ‘algorithm’ that has no nationality. While a hundred (and even fifty) years ago most international investment was within the capitalist core (Europe-North America, later joined by Japan), today we see a very different picture. Large parts of East Asia have become thoroughly industrialized. Some Chinese, Indian, South Korean or Brazilian companies are among the world’s largest, and capital is flowing in all directions: within the ‘core’, from the ‘core’ to ‘(semi)periphery’, but also from the former ‘periphery’ to the ‘core’. &lt;br /&gt;
+In absolute size the Chinese economy is now bigger than the American if we use ‘GDP (PPP)’ and around 2/3 of the American by nominal GDP. Per capita income level is obviously much lower, but there are growing urban areas in Asia where it is nearing Western levels. Meanwhile incomes for the lower 70-80-90% in ‘core’ countries in the last 30-40 years have, on average, grown much less than in the preceding decades, due to the slowdown of growth (it’s less clear &lt;a href=&quot;http://journals.sagepub.com/doi/abs/10.1177/0309816815587077&quot;&gt;on a closer look&lt;/a&gt;  to what extent distributional changes have contributed). These two facts were related by the famous &lt;a href=&quot;https://www.gc.cuny.edu/CUNY_GC/media/LISCenter/brankoData/wber_final.pdf&quot;&gt;‘Elephant chart’ of M. Brankovic&lt;/a&gt;.
+Much of Guangzhou or Shanghai is less ‘peripheral’ in terms of its infrastructure by now than Detroit, and income differences between coastal California and the depressed former mining towns of West Virginia are probably larger than between the American and Chinese average.&lt;br /&gt;
+Surely global capitalism is a hierarchical system historically as well as today, but these hierarchies are constantly shifting and rearranging and the status of a region as ‘core’ or ‘(semi)peripheral’ is not carved into stone. This should be trivial, but for much of the left by now the hierarchic nature of global capitalism seems to be their main argument against ‘the system’, along with the claim that ‘the (semi)periphery can never catch up to the core’.
+But this is not always true: South Korea, Japan, Singapore, Taiwan &lt;em&gt;did&lt;/em&gt; catch up (in most ways) and major regions of China are arguably on their way there. One can point to ‘special geopolitical circumstances’, but historical circumstances are always ‘special’ in one way or another.&lt;br /&gt;
+More generally, if opposition to capitalism is opposition to underdevelopment, ie. the &lt;em&gt;lack&lt;/em&gt; of capitalist development (along the lines of: the (semi)periphery does not get its ‘rightful lot’), this seems a very incoherent position, at least coming from socialists, which WST followers typically are. First, it idealizes capitalist development in the core, that is far more precarious than implied by this picture (cf. the fate of deindustrialized regions in Europe and North America) and second it seems to forget that its fabric is the same: wage labour in the service and as a function of profit-making.&lt;/p&gt;
+
+&lt;p&gt;That brings me to the political ramifications of WST typical on the (tiny) Eastern European academic/intellectual left, and in general the anti-imperialist left (in its more academic variants) that heavily leans on WST.
+As international developments are mostly read as conflicts between states belonging to either the core or the (semi)periphery, and globalization is seen to be dominated by the US or the core in general, then the growth of non-core national economies is automatically read as a challenge to American (Euro-American) hegemony. It is already doubtful to me if this is the best way to describe a process where the major development is the growing integration of markets by transnational corporations. But even worse, another step is often  taken and the growth of non-core national economies, eg. the ‘BRICS’ is now seen as an ‘alternative’ to ‘American globalization’. What is essentially global competition for market share between transnational companies, some of them headquartered in the BRICS (and other non-Western countries), is regarded as a replay of anti-imperial struggle. In fact, what is happening is the growing integration of these countries within one world market and the formation of global corporations, ie. the crystallization of a &lt;em&gt;truly global capitalist system&lt;/em&gt;, not its challenging by some sort of alternative. &lt;br /&gt;
+But as the rigid classification of the world from WST (into core and periphery) and its state-centric view of globalization comes together with older anti-imperialist sympathies and - in Eastern Europe - nostalgia for the Soviet Union, this leads to a projection of political desires of the left onto states - typically Russia (or sometimes China) - that are often conservative, nationalist and highly oligarchic. A rather bizarre combination.&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="world-systems-theory" /><summary type="html">Doubts on the validity of world systems theory today</summary></entry><entry><title type="html">test</title><link href="http://localhost:4000/test-post/" rel="alternate" type="text/html" title="test" /><published>2018-07-30T00:00:00+02:00</published><updated>2018-07-30T00:00:00+02:00</updated><id>http://localhost:4000/test-post</id><content type="html" xml:base="http://localhost:4000/test-post/">&lt;!---
+Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+--&gt;
+
+&lt;p&gt;Embed images. Editing from Github desktop.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/book_wordcloud.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;table testing&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tables&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Are&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Cool&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 3 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;right-aligned&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 2 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;zebra stripes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;!---
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+--&gt;</content><author><name></name></author><category term="cancer" /><category term="sysbio" /><category term="systems-biology" /><summary type="html">testing image embedding</summary></entry></feed>

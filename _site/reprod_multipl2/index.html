@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The reproduction schema and the 'Keynesian multiplier', part 2 – mbkoltai.github.io – mb koltai</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="The reproduction schema and input-output analysis" />
+    <meta property="og:description" content="The reproduction schema and input-output analysis" />
+    
+    <meta name="author" content="mbkoltai.github.io" />
+
+    
+        
+
+
+
+
+
+
+    
+
+
+    
+    <meta property="og:title" content="The reproduction schema and the 'Keynesian multiplier', part 2" />
+    <meta property="twitter:title" content="The reproduction schema and the 'Keynesian multiplier', part 2" />
+    
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="mbkoltai.github.io - mb koltai" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>The reproduction schema and the ‘Keynesian multiplier’, part 2 | mbkoltai.github.io</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="The reproduction schema and the ‘Keynesian multiplier’, part 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The reproduction schema and input-output analysis" />
+<meta property="og:description" content="The reproduction schema and input-output analysis" />
+<link rel="canonical" href="http://localhost:4000/reprod_multipl2/" />
+<meta property="og:url" content="http://localhost:4000/reprod_multipl2/" />
+<meta property="og:site_name" content="mbkoltai.github.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-30T00:00:00+02:00" />
+<script type="application/ld+json">
+{"description":"The reproduction schema and input-output analysis","@type":"BlogPosting","url":"http://localhost:4000/reprod_multipl2/","headline":"The reproduction schema and the ‘Keynesian multiplier’, part 2","dateModified":"2018-09-30T00:00:00+02:00","datePublished":"2018-09-30T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/reprod_multipl2/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">mbkoltai.github.io</a></h1>
+         <!--    <p class="site-description">mb koltai</p> -->
+          </div>
+
+          <nav>
+            <a href="/">About me</a>
+            <a href="/papers">Publications</a>
+            <a href="/blog">sci-blog</a>
+            <a href="/ecopol">econmodel-blog</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>The reproduction schema and the 'Keynesian multiplier', part 2</h1>
+
+  <div class="entry">
+    <p>In this post I follow up on <a href="https://mbkoltai.github.io/reprod_multipl/">the previous one</a> where I discussed the idea of a ‘multiplier’ that relates net income to net investment in an economic system. Both there and here I  follow <a href="http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663">a book</a> by Andrew Trigg.
+The problem with the ‘Keynesian’ approach outlined in the previous post is that it analyzes the system only in terms of net income (wages and profit) and does not account for the capital stock that also has to be reproduced (and potentially expanded).<br />
+A framework wherein the reproduction of constant capital can be analyzed is the so-called reproduction schema. The reproduction schema, first consistently developed in (what we know as) Volume 2 of Capital by Karl Marx, describes how in a given period of production the total social capital including both ‘variable’ (human labour) and ‘constant’ (machines) capital can be reproduced and potentially expanded. Marx used numerical examples in his writings, but the schema can be analyzed in symbolic form with the help of input-output tables and the tools of linear algebra.</p>
+
+<p>Below in <em>Table 1</em> is a numerical example of <em>simple</em> reproduction, meaning that the amount of constant capital does not change from one period of production to the other. All the surplus value (profit) that is produced (received for the surplus fraction of the output) is consumed by the owners of capital, and not reinvested (accumulated).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Departments</th>
+      <th style="text-align: center">Constant capital <script type="math/tex">C_i</script></th>
+      <th style="text-align: center">Variable capital <script type="math/tex">V_i</script></th>
+      <th style="text-align: center">Surplus value <script type="math/tex">S_i</script></th>
+      <th style="text-align: center">Total output <script type="math/tex">W_i</script></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">D1</td>
+      <td style="text-align: center">4000</td>
+      <td style="text-align: center">1000</td>
+      <td style="text-align: center">1000</td>
+      <td style="text-align: center">6000</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">D2</td>
+      <td style="text-align: center">2000</td>
+      <td style="text-align: center">500</td>
+      <td style="text-align: center">500</td>
+      <td style="text-align: center">3000</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\sum</script></td>
+      <td style="text-align: center">6000</td>
+      <td style="text-align: center">1500</td>
+      <td style="text-align: center">1500</td>
+      <td style="text-align: center">9000</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Table 1: simple reproduction</em></p>
+
+<p>Again, department 1 <script type="math/tex">D_1</script> produces means of production (<em>MoP</em>), whereas <script type="math/tex">D_2</script> produces consumption goods (<em>CoG</em>).
+Each is represented by a row, with <script type="math/tex">W_i</script> standing for the total output. I prefer to normalize this table by the total output of the economy (9000), to see quantities in fractional terms, getting:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Departments</th>
+      <th style="text-align: center">Constant capital <script type="math/tex">C_i</script></th>
+      <th style="text-align: center">Variable capital <script type="math/tex">V_i</script></th>
+      <th style="text-align: center">Surplus value <script type="math/tex">S_i</script></th>
+      <th style="text-align: center">Total output <script type="math/tex">W_i</script></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">D_1</script></td>
+      <td style="text-align: center">4/9</td>
+      <td style="text-align: center">1/9</td>
+      <td style="text-align: center">1/9</td>
+      <td style="text-align: center">2/3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">D_2</script></td>
+      <td style="text-align: center">2/9</td>
+      <td style="text-align: center">1/18</td>
+      <td style="text-align: center">1/18</td>
+      <td style="text-align: center">1/3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\sum</script></td>
+      <td style="text-align: center">2/3</td>
+      <td style="text-align: center">1/6</td>
+      <td style="text-align: center">1/6</td>
+      <td style="text-align: center">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Table 1: simple reproduction</em> (normalized)</p>
+
+<p>Constant capital produced (<script type="math/tex">W_1=2/3</script>) is equal to constant capital consumed (sum of the column <script type="math/tex">C_i</script>) in this period of production. The amount of <em>CoG</em> produced <script type="math/tex">W_2 = V_1 + V_2 + S_1 + S_2 = 1/3</script>, so all profits will be spent on buying consumer goods (throughout it is assumed there is no saving from wages either).</p>
+
+<p>This would be unrealistic if it were meant as a model of a capitalist economy, since capitalism is about growth (accumulation), but it is useful analytically. For if there is expansion, simple reproduction is still embedded within the growing economic system, but now it adds new units to its capital stock and/or its workforce as well.</p>
+
+<p>A model of a growing economy is what we call <em>expanded reproduction</em>, a numerical example of which is in <em>Table 2</em> below</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Departments</th>
+      <th style="text-align: center">Constant capital <script type="math/tex">C_i</script></th>
+      <th style="text-align: center">Variable capital <script type="math/tex">V_i</script></th>
+      <th style="text-align: center">Surplus value <script type="math/tex">S_i</script></th>
+      <th style="text-align: center">Total output <script type="math/tex">W_i</script></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">D_1</script></td>
+      <td style="text-align: center">4000</td>
+      <td style="text-align: center">1000</td>
+      <td style="text-align: center">1000</td>
+      <td style="text-align: center">6000</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">D_2</script></td>
+      <td style="text-align: center">1500</td>
+      <td style="text-align: center">750</td>
+      <td style="text-align: center">750</td>
+      <td style="text-align: center">3000</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\sum</script></td>
+      <td style="text-align: center">5500</td>
+      <td style="text-align: center">1750</td>
+      <td style="text-align: center">1750</td>
+      <td style="text-align: center">9000</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Table 2: expanded reproduction</em></p>
+
+<p>Let us normalize again:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Departments</th>
+      <th style="text-align: center">Constant capital <script type="math/tex">C_i</script></th>
+      <th style="text-align: center">Variable capital <script type="math/tex">V_i</script></th>
+      <th style="text-align: center">Surplus value <script type="math/tex">S_i</script></th>
+      <th style="text-align: center">Total output <script type="math/tex">W_i</script></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">D_1</script></td>
+      <td style="text-align: center">4/9</td>
+      <td style="text-align: center">1/9</td>
+      <td style="text-align: center">1/9</td>
+      <td style="text-align: center">2/3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">D_2</script></td>
+      <td style="text-align: center">1/6</td>
+      <td style="text-align: center">1/12</td>
+      <td style="text-align: center">1/12</td>
+      <td style="text-align: center">1/3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">\sum</script></td>
+      <td style="text-align: center">11/18</td>
+      <td style="text-align: center">7/36</td>
+      <td style="text-align: center">7/36</td>
+      <td style="text-align: center">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Table 2: expanded reproduction (normalized)</em></p>
+
+<p>There is now more constant capital produced (<script type="math/tex">W_1 = 2/3 = 12/18</script>) than consumed (<script type="math/tex">C_1+C_2=11/18</script>), ie. accumulation is now possible, 1/18 (~5.6%) more constant capital will be available in the next round of production.
+Correspondingly, all income is now more than all consumption goods (<em>CoG</em>) produced:
+<script type="math/tex">V_1 + V_2 + S_1 + S_2 = 7/18 > W_2 = 6/18</script>, as some of the profit, namely 1/18 will be directed to accumulation. It is not trivial how the incomes and the outputs (or supply and demand) match, and what is the temporal sequence. I’ll return to this later.</p>
+
+<p>The (to-be-)accumulated capital <script type="math/tex">\Delta W</script> is
+<script type="math/tex">\Delta W = W_1 - (C_1+C_2) = V_1 + S_1 - C_2 = 1/18
+\tag{1}\label{eq1}</script></p>
+
+<p>ie. it is new value added (=net income) in <script type="math/tex">D_1</script> minus the constant capital consumed in the <em>CoG</em> department <script type="math/tex">D_2</script>.<br />
+This matches the part of total net income (<script type="math/tex">Y</script>) <em>not</em> spent on consumption, which is<br />
+<script type="math/tex">Y - W_2 = Y_1 + Y_2 - (Y_2 + C_2) = Y_1 - C_2 = V_1 + S_1 - C_2 = 1/18
+\tag{2}\label{eq2}</script></p>
+
+<p>Getting back to input-output analysis, we have a case here of two sub-systems (departments) using the other’s output as an input, while - if there is expansion - some of the output is not used as an input in the present period.
+Consumption from profit (<script type="math/tex">u</script>, <em>CoG</em> bought from profit) is one component of this final output and it is not redirected into the system as an input.
+The addition to the capital stock (<script type="math/tex">dC</script>) is not used as an input in the <em>present</em> cycle, although it will be in the next. Finally, there can be an addition to the labour force (<script type="math/tex">dV</script>) too in the next period matched by unconsumed <em>CoG</em>.
+This last category was not visible in <em>Table 2</em>, as the <em>use</em> of the outputs was not detailed there. It shows that capitalists can spend some of their profit on <em>CoG</em>, but not for their own personal consumption (<script type="math/tex">u</script>), but for expanding the labour force (<script type="math/tex">dV</script>). Either way (<script type="math/tex">dV</script> or <script type="math/tex">u</script>), this will go into buying up the output of <script type="math/tex">D_2</script>. Since total surplus value will have to equal total final product, <script type="math/tex">S_1 + S_2 = dC + dV + u</script>.</p>
+
+<p>Now we can turn <em>Table 2</em> into an input-output (I/O) table. If we read the I/O table row-wise, we have the output of one department, arranged into columns by the <em>use</em> of that part of the output. If we read down a column, we have all the inputs for a given department (or for a type of final product).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"><script type="math/tex">D_1</script> (inputs)</th>
+      <th style="text-align: center"><script type="math/tex">D_2</script> (inputs)</th>
+      <th style="text-align: center">dC (new C)</th>
+      <th style="text-align: center">dV (new V)</th>
+      <th style="text-align: center">u (capitalist consum.)</th>
+      <th style="text-align: center"><script type="math/tex">W_i</script> (<script type="math/tex">\sum</script>)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">D_1</script> (outputs)</td>
+      <td style="text-align: center"><script type="math/tex">X_{11}</script>=4/9</td>
+      <td style="text-align: center"><script type="math/tex">X_{12}</script>=1/6</td>
+      <td style="text-align: center">1/18</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2/3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">D_2</script> (outputs)</td>
+      <td style="text-align: center">1/9</td>
+      <td style="text-align: center">1/12</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">1/60</td>
+      <td style="text-align: center">11/90</td>
+      <td style="text-align: center">1/3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">S_i</script></td>
+      <td style="text-align: center">1/9</td>
+      <td style="text-align: center">1/12</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">W_i</script></td>
+      <td style="text-align: center">2/3</td>
+      <td style="text-align: center">1/3</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Table 3: I/O table of expanded reproduction from Table 2</em></p>
+
+<p><script type="math/tex">X_{ij}</script> stands for the amount of capital goods (<em>MoP</em>) produced by department <em>i</em> used as an input by department <em>j</em>. The gross (physical) output of department <em>i</em> is denoted as <script type="math/tex">X_j</script>. We can then define input coefficients <script type="math/tex">a_{ij} = X_{ij}/X_j</script> as the ratio of the gross output of department <em>j</em> and the <em>MoP</em> it builds into this output from department <em>i</em>. This is the same as saying that <script type="math/tex">a_{ij}</script> is the input coming from department <script type="math/tex">D_i</script> into one unit of output of <script type="math/tex">D_j</script>. For instance <script type="math/tex">a_{12} = X_{12}/X_2 = (1/6)/(1/3) = 1/2</script>, of the output of <script type="math/tex">D_2</script> comes from the output (<em>MoP</em>) of <script type="math/tex">D_1</script> used by <script type="math/tex">D_2</script> as an input.
+Consumer goods are not industrial inputs, so these input coefficients refer only to the output of <script type="math/tex">D_1</script>. One could say that workers in both sectors use consumer goods (output of <script type="math/tex">D_2</script>) in the same way, but this is rather after (and/or outside) the production process than a part of it. At any rate I’ll use the notation in Trigg’s book to reproduce the derivation.</p>
+
+<p>For <script type="math/tex">D_2</script> instead of <script type="math/tex">a_{ij}</script>, we have the product <script type="math/tex">h_i l_j</script>. <script type="math/tex">l_j</script> is the labour coefficient <script type="math/tex">l_j = L_j/X_j</script>, where <script type="math/tex">L_j</script> is the number of labour units employed in <script type="math/tex">D_j</script> and <script type="math/tex">X_j</script> (same as <script type="math/tex">W_j</script> before) the gross output.
+<script type="math/tex">h_i</script> (which is defined for <script type="math/tex">h_2</script> only) is <script type="math/tex">h_i = B_i/L</script>, or concretely <script type="math/tex">h_2 = B_2/L</script>, the ratio of total consumption of the 2nd physical good (ie. <em>CoG</em>) to the total volume of labour units.
+The term <script type="math/tex">B_2</script> I was first not sure how to interpret. Is it total consumption of <em>CoG</em>, ie. is it equal to <script type="math/tex">X_2</script>? In this case the equality would not work out, since <script type="math/tex">M_{21} = 1/9 = h_2 l_1 X_1 = h_2 \frac{1}{3} \frac{2}{3} = h_2 \frac{2}{9}</script>, therefore <script type="math/tex">h_2=1/2</script> (by <script type="math/tex">M_{21}</script> I mean 2nd row 1st column of matrix).
+Therefore <script type="math/tex">B_2 = 7/36</script>, which is equal to total wages (or consumption from wages since we assume all wages are spent), ie. <script type="math/tex">B_2 = V_1 + V_2</script>. Then <script type="math/tex">h_2 = B_2/L = \frac{V_1+V_2}{L}</script> means the ratio of worker consumption to all labour performed, it is basically the labour share (again there is some issue here about money vs. physical units, but let us put that aside for the moment). There is also here the assumption that <script type="math/tex">h_2</script>, the labour share is the same in both sectors.
+The product <script type="math/tex">l_1 h_2</script> then means the share of living labour in the gross output of <script type="math/tex">D_1</script> times the <em>CoG</em> workers receive per unit of labour. In summary it is the amount of <em>CoG</em> to be ‘inputted’ (wage paid to workers that will be spent on <em>CoG</em>) to the department for a unit of its output, this is how it plays the same role as <script type="math/tex">a_{ij}</script> in input-output terms.</p>
+
+<p>Finally to go from physical/labour units to prices there is a price for units of <em>MoP</em> and <em>CoG</em>, <script type="math/tex">p_1</script> and <script type="math/tex">p_2</script>. I drop these from the rest of the derivation by setting them to 1. Then we can write the entire I/O matrix symbolically:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"><script type="math/tex">D_1</script> (inputs)</th>
+      <th style="text-align: center"><script type="math/tex">D_2</script> (inputs)</th>
+      <th style="text-align: center">dC (new C)</th>
+      <th style="text-align: center">dV (new V)</th>
+      <th style="text-align: center">u (capitalist consum.)</th>
+      <th style="text-align: center"><script type="math/tex">W_i</script> (total output)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">D_1</script> (outputs)</td>
+      <td style="text-align: center"><script type="math/tex">p_1 a_{11} X_1 = p_1 X_{11}</script></td>
+      <td style="text-align: center"><script type="math/tex">p_1 a_{12} X_2 = p_1 X_{12}</script></td>
+      <td style="text-align: center"><script type="math/tex">p_1 dA</script></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"><script type="math/tex">p_1 X_1</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">D_2</script> (outputs)</td>
+      <td style="text-align: center"><script type="math/tex">p_2 h_2 l_1 X_1</script></td>
+      <td style="text-align: center"><script type="math/tex">p_2 h_2 l_2 X_2</script></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"><script type="math/tex">p_2 dh</script></td>
+      <td style="text-align: center"><script type="math/tex">p_2 C_k</script></td>
+      <td style="text-align: center"><script type="math/tex">p_2 X_2</script></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">S_i</script></td>
+      <td style="text-align: center"><script type="math/tex">S_1</script></td>
+      <td style="text-align: center"><script type="math/tex">S_2</script></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><script type="math/tex">W_i</script></td>
+      <td style="text-align: center"><script type="math/tex">p_1 X_1</script></td>
+      <td style="text-align: center"><script type="math/tex">p_2 X_2</script></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Table 4: I/O table of expanded reproduction in Leontief categories</em></p>
+
+<p>The term <script type="math/tex">p_2 h_2 l_2 X_2</script> for instance means the amount of <em>CoG</em> to be used by the workers of <script type="math/tex">D_2</script>, equal to <em>(unit price) x (labour share in net income) x (share of net income (living labour) in gross output of <script type="math/tex">D_2</script>) x (gross output of <script type="math/tex">D_2</script>)</em>.</p>
+
+<p>The term <script type="math/tex">p_1 a_{12} X_2</script> is the money output of <script type="math/tex">D_1</script> required by <script type="math/tex">D_2</script>, and it is the <em>MoP</em> used up by <script type="math/tex">D_2</script>, equal to <em>(unit price) x (units of MoP used for one unit of gross output of <script type="math/tex">D_2</script>) x (gross output of <script type="math/tex">D_2</script>)</em>.</p>
+
+<p>The full system for expanded reproduction can be captured for both departments (after cancelling out the price terms), with inputs equaling outputs, as:</p>
+
+<script type="math/tex; mode=display">a_{11}X_1 + a_{12} X_2 + da = X_1
+\tag{3}\label{eq3}</script>
+
+<script type="math/tex; mode=display">h_2 l_1 X_1 + h_2 l_2 X_2 + dh + C_k = X_2
+\tag{4}\label{eq4}</script>
+
+<p>Or in matrix notation:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \begin{bmatrix} a_{11} & a_{12}\\ 0 & 0\\ \end{bmatrix}
+\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} + \begin{bmatrix} 0\\ h_2\\ \end{bmatrix}
+\begin{bmatrix} l_1 & l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
++ \begin{bmatrix} da\\ dh + C_k \end{bmatrix}
+\tag{5}\label{eq5} %]]></script>
+
+<p>The vector on the right represents ‘final demand’ (or final output), these parts of the output can be used to expand the labour force and the capital stock, or spent on consumption by the owners who receive the profits. Final demand does not include consumption of workers from wages, as this is to reproduce the existing labour force.</p>
+
+<p>Using column vectors one can write Equation \eqref{eq5} as:</p>
+
+<script type="math/tex; mode=display">\mathbf{X} = \mathbf{A X} + \mathbf{h} [\mathbf{l X}] + \mathbf{F}
+\tag{6}\label{eq6}</script>
+
+<p>with <strong>F</strong> representing the column vector of final demand.</p>
+
+<p>We want to recover the multiplier relationship of Equation 9 of the <a href="http://www.mbkoltai.github.io/reprod_multipl">previous post</a>. To do that, the ‘<em>net output</em>’ is first defined as <script type="math/tex">Q = (I - A)X</script>, with <script type="math/tex">I</script> the identity matrix. Writing it explicitly this is:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+Q = (I - A) X = \begin{bmatrix} 1 - a_{11} & - a_{12}\\ 0 & 1\\ \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \\ =
+\begin{bmatrix} X_1 - a_{11}X_1 - a_{12} X_2 \\ X_2\\ \end{bmatrix}
+= \mathbf{h} [\mathbf{l X}] + \mathbf{F}
+\tag{7}\label{eq7} %]]></script>
+
+<p>So ‘<em>net output</em>’ means for <script type="math/tex">D_1</script> its gross output minus the part that is to replace the constant capital used up in this period of production, and for <script type="math/tex">D_2</script> its entire output.
+<!--- If we say *MoP* produced in the current period is also used up in this period (its part directed to replacement, $$I-A$$), whereas all *CoG* is used up after production, then it is maybe more intuitive why the net product is defined as $$\mathbf{h} [\mathbf{l X}] + \mathbf{F}$$.-->
+There is a temporal order of events here, ie. movements of money (eg. when wages are paid out and then spent etc.) and movements and use of physical goods that is not trivial and I want to reconstruct later on in detail.</p>
+
+<p>First though I will follow through with the derivation of Chapter 2. Using Equation \eqref{eq7} and <script type="math/tex">\mathbf{v} = l (I-A)^{-1}</script>, Equation \eqref{eq6} can be re-expressed as:<br />
+<script type="math/tex">Q \frac{v}{l} = A Q \frac{v}{l} + h [l Q \frac{v}{l}] + F = A Q \frac{v}{l} + h [v Q ] + F</script></p>
+
+<p>Subtracting <script type="math/tex">A Q \frac{v}{l}</script>, the left-side simplifies to  <br />
+<script type="math/tex">\frac{v}{l}Q (I-A) = (I-A)^{-1} (I-A) Q = Q</script></p>
+
+<p>So that we have</p>
+
+<script type="math/tex; mode=display">Q = h [v Q ] + F
+\tag{8}\label{eq8}</script>
+
+<p>This is a relationship between:</p>
+
+<ul>
+  <li>the net product <script type="math/tex">Q</script> as defined in Eq. \eqref{eq7}</li>
+  <li><script type="math/tex">\mathbf{h}</script> that is the column vector <script type="math/tex">\begin{bmatrix}  0 \\  h_2 \\ \end{bmatrix}</script>, <script type="math/tex">h_2 = B_2/L = \frac{V_1+V_2}{L}</script>, the ratio of worker consumption to all labour performed</li>
+  <li><script type="math/tex">\mathbf{v}</script>, which is the row vector of ‘vertically integrated labour coefficients’.</li>
+</ul>
+
+<p>To understand <script type="math/tex">\mathbf{v}</script>, let us do the multiplication:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\mathbf{v} = l (I - A)^{-1} =
+\begin{bmatrix} l_1 & l_2 \end{bmatrix} \begin{bmatrix} \frac{1}{1 - a_{11}} & \frac{a_{12}}{1-a_{11}} \\ 0 & 1\\ \end{bmatrix} =
+\begin{bmatrix} \frac{l_1}{1 - a_{11}} & l_1 \frac{a_{12}}{1-a_{11}} + l_2 \end{bmatrix}
+\tag{9}\label{eq9} %]]></script>
+
+<p>This is not very intuitive, but if we realize that <script type="math/tex">a_{11}X_1 = X_{11} = C_1</script> and <script type="math/tex">a_{12}X_2 = X_{12} = C_2</script> (since <script type="math/tex">C_1</script> and <script type="math/tex">C_2</script> are the amounts of constant capital transferred into the output, while <script type="math/tex">X_{11}</script> and <script type="math/tex">X_{12}</script> are parts of the output of <script type="math/tex">D_1</script> that go into replacement) and that <script type="math/tex">X_i = L_i + C_i</script>, then <script type="math/tex">\mathbf{v}</script> simplifies to <script type="math/tex">% <![CDATA[
+\mathbf{v} = \begin{bmatrix} 1 & 1 \end{bmatrix} %]]></script>. This is partly because I previously dropped unit prices <script type="math/tex">p_1</script> and <script type="math/tex">p_2</script> (by setting them to 1).</p>
+
+<p>Continuing, let us note that <script type="math/tex">\mathbf{v} Q</script> is a scalar, since <script type="math/tex">\mathbf{v}</script> is a 2-column row vector and <script type="math/tex">Q</script> a 2-row column vector. Therefore if we multiply both sides of Equation \eqref{eq8} by <script type="math/tex">\mathbf{v}</script>, we get<br />
+<script type="math/tex">\mathbf{v}Q = \mathbf{v} h [v Q ] + \mathbf{v} F
+\tag{10}\label{eq10}</script></p>
+
+<p>Moving the first term on the LHS and factoring out <script type="math/tex">\mathbf{v}Q</script>, we finally arrive at<br />
+<script type="math/tex">\boxed{ \mathbf{v}Q = \frac{1}{1 - \mathbf{v} h} \mathbf{v} F }
+\tag{11}\label{eqmult}</script></p>
+
+<p>which is again a multiplier relationship, very similar to Equation 9 in the <a href="http://www.mbkoltai.github.io/reprod_multipl">previous post</a> where only net income was considered, but now constant capital has also been accounted for. It is a relationship between final demand <script type="math/tex">\mathbf{v} F</script> and the net income (all new value added = wages + profits) <script type="math/tex">vQ</script>.
+<script type="math/tex">\mathbf{v} h</script> is a scalar, as is <script type="math/tex">\mathbf{v} F</script> and <script type="math/tex">\mathbf{v} Q</script>.</p>
+
+<p><script type="math/tex">vQ</script> is net income (= total employment of labour units = total new value added) because <script type="math/tex">\mathbf{v} = l (I - A)^{-1}</script> and <script type="math/tex">Q = (I - A)X</script> (net product = to-be-accumulated capital <script type="math/tex">dA</script> + all output of <script type="math/tex">D_2</script>, ie <script type="math/tex">X_2</script> ). Therefore</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\mathbf{v}Q = \mathbf{l} \mathbf{X} = \begin{bmatrix} L_1/X_1 & L_2/X_2 \end{bmatrix} \begin{bmatrix} X_1 \\ X_2 \end{bmatrix} = L_1 + L_2
+\tag{12}\label{eq12} %]]></script>
+
+<p>so the meaning of this term is quite clear.</p>
+
+<p>As for <script type="math/tex">\mathbf{v} h</script> in the denominator, it is the <em>propensity to consume</em>. As discussed above <script type="math/tex">h</script> is the labour share (wages to net income/total labour) or in other words workers’ consumption divided by total labour performed (<script type="math/tex">h_2 = B_2/L</script>).
+In the ‘net income’ (‘Keynesian’) analysis of the <a href="https://mbkoltai.github.io/reprod_multipl/">previous post</a> (see Equation 1 and 9) <script type="math/tex">b</script> was <em>all</em> consumption, whereas here <script type="math/tex">B_2</script> is only consumption from wages, so the multiplier formulas are not identical. Since <script type="math/tex">\mathbf{v} = [1 \ 1]</script> and <script type="math/tex">\mathbf{h} = \begin{bmatrix} 0 \\ h_2 \end{bmatrix}</script>, then the product is
+<script type="math/tex">\mathbf{v} h = h_2 = B_2 / L</script>
+or wages paid out (and spent on consumption) per unit of labour performed.</p>
+
+<p>Finally, the product <script type="math/tex">v F</script> is the value of the products corresponding to final demand, and if <script type="math/tex">v = [1 \ 1]</script>, then <script type="math/tex">\mathbf{v} \mathbf{F} = F_1 + F_2 = dA + dH + C_k</script>.</p>
+
+<p>In summary, Equation \eqref{eqmult} expresses the relationship between net income, workers’ consumption (per unit of labour performed) and final demand (the surplus product). The multiplier relationship can be derived in the two-department model of the reproduction schema, that considers constant capital as well. A difference is that the ratio of net income to final demand here is <script type="math/tex">1/(1- vh)</script> where <script type="math/tex">\mathbf{v h}</script> is <em>workers’</em> consumption per unit of labour, and not total consumption <a href="https://mbkoltai.github.io/reprod_multipl/">as previously</a>. (Or: labour embodied (<script type="math/tex">\mathbf{v}</script>) in the bundle consumed by workers per unit of labour (<script type="math/tex">\mathbf{h}</script>).) Then <script type="math/tex">e = 1 - \mathbf{v h}</script> is the share of surplus value extracted from each unit of labour. If we say that for simplicity <script type="math/tex">\mathbf{v} = \mathbf{p}</script> (prices and values are the same), so that net money output is <script type="math/tex">y = \mathbf{v Q} = \mathbf{p Q}</script> and money final demand <script type="math/tex">f = \mathbf{vF} = \mathbf{pF}</script>, then Equation \eqref{eqmult} can be expressed as a ‘macro income multiplier’:</p>
+
+<script type="math/tex; mode=display">y = \frac{1}{e}f
+\tag{13}\label{eq13}</script>
+
+<p>So the concept of surplus value (<script type="math/tex">e</script>) and the multiplier relationship between final demand (<script type="math/tex">f</script>) and net money output (<script type="math/tex">y</script>) can be related in a 2-sector model taking into account constant capital. Or, if you like, the concepts of classical political economy (such as surplus value) and those of ‘Keynesian economics’ can be related through the reproduction schemas.</p>
+
+<p>To me this relationship seems an algebraic one between parts of the total output classified with respect to their use: the net output on the one hand and on the other ‘final demand’ (or final output), which is the part that can be consumed by owners or take the form of <em>MoP</em> and <em>CoG</em> to <em>expand</em> the capital stock (over replacement) and the workforce. The second chunk (<script type="math/tex">\mathbf{F}</script> in the above notation), that is the surplus part of the output, is a part of the first (<script type="math/tex">\mathbf{v Q}</script>). In other words, final demand is the part of the net output that can be directed to accumulation (=new workers + new constant capital) or consumption from profit.
+This is not a causal relationship in my understanding, but an algebraic identity. In fact, these purchases from profit for consumption and accumulation occur at the end of a period of production, and first - it seems to me - what we should explain is where the demand for these parts of the total output comes from. It is this question that I want to address in my next post.</p>
+
+<h3 id="reference">Reference</h3>
+
+<p><a href="http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663">Andrew Trigg, Marxian reproduction schema: money and aggregate demand in a capitalist economy. Routledge, 2009</a></p>
+
+  </div>
+
+  <div class="date">
+    Written on September 30, 2018
+  </div>
+
+  <span>[
+  
+    
+    <a href="/tag/political-economy"><code class="highligher-rouge"><nobr>political-economy</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/economic-models"><code class="highligher-rouge"><nobr>economic-models</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/economic-reproduction"><code class="highligher-rouge"><nobr>economic-reproduction</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/multiplier"><code class="highligher-rouge"><nobr>multiplier</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/keynesian"><code class="highligher-rouge"><nobr>keynesian</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/classical-political-economy"><code class="highligher-rouge"><nobr>classical-political-economy</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/marxian-economics"><code class="highligher-rouge"><nobr>marxian-economics</nobr></code>&nbsp;</a>
+  
+]</span>
+
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+<script>
+       MathJax.Hub.Config({
+           config: ["MMLorHTML.js"],
+           extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+           jax: ["input/TeX"],
+           tex2jax: {
+               inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+               displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+               processEscapes: false
+           },
+           TeX: {
+               TagSide: "right",
+               TagIndent: ".8em",
+               MultLineWidth: "85%",
+               equationNumbers: {
+                  autoNumber: "AMS",
+               },
+               unicode: {
+                  fonts: "STIXGeneral,'Arial Unicode MS'"
+               }
+           },
+           showProcessingMessages: false
+       });
+</script>
+
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:mihaly.koltai@curie.fr"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/mbkoltai"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/mihaly-koltai"><i class="svg-icon linkedin"></i></a>
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
