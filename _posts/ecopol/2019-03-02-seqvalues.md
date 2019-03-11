@@ -74,7 +74,7 @@ again the same as in the simultaneous description.
 
 D&L point out that if the initial value $$\Lambda_0 < \Lambda^{* } $$, then $$\Lambda^{t} $$ will rise, converging to the equilibrium from below, even though the labour content is falling. D&L refer to this as a 'productivity paradox'.
 In fact, the behavior of sequential values is even more complex.
-In equation \ref{dynamic_values_sol_L_t} there are exponential terms both in $$A$$ and $$\gamma$$ with the coefficients $$\alpha$$ and $$\beta$$ respectively, which suggests that the behavior can be non-monotonic. This is in fact what happens with certain parameter sets as shown by the numerical examples below.
+In equation \ref{dynamic_values_sol_L_t} there are exponential terms both in $$A$$ and $$\gamma$$ suggesting the behavior can be non-monotonic. This is in fact what happens with certain parameter sets as shown by the numerical examples below.
 
 The parameter set used was: $$ \mathbf{\alpha}= [0.2; 0.4], \mathbf{\beta}= [0.3; 0.1],
 \mathbf{\gamma}= [0.9; 0.8],
@@ -83,8 +83,8 @@ The parameter set used was: $$ \mathbf{\alpha}= [0.2; 0.4], \mathbf{\beta}= [0.3
 ![_config.yml]({{ site.baseurl }}/images/unitprices_nonmonot_paradox.png)
 **Figure 1: Non-monotonic dynamics of sequential values with increasing productivity**
 
-This non-trivial and somewhat puzzling feature comes about because of two dynamical terms that can be seen in  equation \ref{dynamic_values_sol_L_t}: one coming from the input values of the previous period and the other from labour productivity.
-If the initial input values are far from the stationary value (of the *simultaneous equations* with that level of productivity) then it can take several iterations until the falling labour content becomes the dominant term, and this can result in non-monotonic behavior.
+This non-trivial and somewhat puzzling feature comes about because of two dynamical terms that can be seen in  equation \ref{dynamic_values_sol_L_t}: one coming from the input values of the previous period and the other from labor productivity.
+If the initial input values are far from the stationary value (of the *simultaneous equations* with that level of productivity) then it can take several iterations until the falling labor content becomes the dominant term, and this can result in non-monotonic behavior.
 
 For the one-good case, it is easier to see the conditions for this. In this case the difference $$\epsilon$$ between any two consecutive steps is:
 
