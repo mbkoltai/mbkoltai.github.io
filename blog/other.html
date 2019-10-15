@@ -1,0 +1,37 @@
+---
+layout: page
+description: "other"
+# header-img: "img/blog-bg.jpg"
+tags: political-economy #list of tags that you want to show in description of blog
+permalink: /other/
+
+---
+
+<div class="blog-index">
+
+
+<p>Content on other interests.</p>
+
+
+<ul style="list-style-type: none;">
+      {%  assign p = '9999' %}
+      {%  for post in site.posts%}
+    {% if post.secondary == 'other' %}
+
+      {% assign n = post.date | date: "%Y" %}
+      {% if n != p %}
+      {%      assign p = n%}
+            <br /><h5>{{ n }}</h5>
+      {% endif %}
+  <li style="padding-bottom: 6px;"><code>[{{ post.date | date: "%d %b" }}]</code>&nbsp;
+    <a href="{{ post.url }}" style="white-space: nowrap;"><b>{{ post.title }}</b></a>&nbsp;
+      {{ post.excerpt | strip_html | truncatewords: 12 }}
+      </li>
+
+            {% endif %}
+
+      {% endfor %}
+</ul>
+
+
+</div>

@@ -7,4 +7,4 @@ secondary: ecopol
 mathjax: true
 ---
 
-There have been several empirical studies in the last two or three decades
+In the last three decades there have been several empirical studies that claimed to provide empirical evidence for the labour theory of value. 

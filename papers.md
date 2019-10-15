@@ -21,6 +21,12 @@ A Banderas\*, _M Koltai_\*, A Anders, V Sourjik
 
 (\*equal contributors)
 
+## Preprints
+
+**[Exact calculation of stationary solution and parameter sensitivity analysis of stochastic continuous time Boolean models](https://biorxiv.org/content/10.1101/794230v1)**  
+_M Koltai_, V Noel, A Zinovyev, L Calzone, E Barillot  
+*bioRxiv*, 2019, http://dx.doi.org/10.1101/794230  
+
 ## Talks at conferences
 
 **Ensemble modeling for drug resistance and sensitivity in colon cancer cell lines**
