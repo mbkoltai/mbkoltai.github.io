@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exact calculation of steady states for stochastic logical models. – mbkoltai.github.io – mb koltai</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Exact method to solve stochastic continuous-time logical models" />
+    <meta property="og:description" content="Exact method to solve stochastic continuous-time logical models" />
+    
+    <meta name="author" content="mbkoltai.github.io" />
+
+    
+        
+
+
+
+
+
+
+    
+
+
+    
+    <meta property="og:title" content="Exact calculation of steady states for stochastic logical models." />
+    <meta property="twitter:title" content="Exact calculation of steady states for stochastic logical models." />
+    
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="mbkoltai.github.io - mb koltai" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Exact calculation of steady states for stochastic logical models. | mbkoltai.github.io</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Exact calculation of steady states for stochastic logical models." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Exact method to solve stochastic continuous-time logical models" />
+<meta property="og:description" content="Exact method to solve stochastic continuous-time logical models" />
+<link rel="canonical" href="http://localhost:4000/exastolog/" />
+<meta property="og:url" content="http://localhost:4000/exastolog/" />
+<meta property="og:site_name" content="mbkoltai.github.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-16T00:00:00+02:00" />
+<script type="application/ld+json">
+{"description":"Exact method to solve stochastic continuous-time logical models","@type":"BlogPosting","url":"http://localhost:4000/exastolog/","headline":"Exact calculation of steady states for stochastic logical models.","dateModified":"2019-10-16T00:00:00+02:00","datePublished":"2019-10-16T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/exastolog/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">mbkoltai.github.io</a></h1>
+         <!--    <p class="site-description">mb koltai</p> -->
+          </div>
+
+          <nav>
+            <a href="/">About me</a>
+            <a href="/papers">Publications</a>
+            <a href="/blog">maths&bio</a>
+            <a href="/ecopol">economics</a>
+            <a href="/other">other</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Exact calculation of steady states for stochastic logical models.</h1>
+
+  <div class="entry">
+    <p>I recently submitted a manuscript that presents a calculation method to calculate the stationary solution of stochastic, continuous-time logical (Boolean) models.<br />
+I adopted the mathematical technique from the field of chemical kinetics, specifically a number of articles from Jeremy Gunawardena and coauthors.
+These articles started with a small essay on the thresholding and switching properties of multisite (protein) phosphorylation <a href="https://www.pnas.org/content/102/41/14617">in PNAS</a> back in 2005 and then with a beautiful paper in Nature on ‘<a href="http://vcp.med.harvard.edu/papers/multistability.pdf">unlimited multistability</a>’ in 2009. In these articles the results were still somewhat <em>ad hoc</em>, but they showed that the stationary solution of the kinetic equations describing post-translations modifications, which are nonlinear ordinary differential equations with bilinear terms complemented by some algebraic conservations, can be analytically obtained and that if we have multisite species there is no obvious limit to the number of stable steady states that these systems have.
+Later on the results in these papers were generalized, culminating in the paper ‘<a href="http://vcp.med.harvard.edu/papers/jg-lap-dyn.pdf">Laplacian dynamics on general graphs</a>’ (2013) where the results are most systematically summarized.</p>
+
+<p>I was fascinated by these papers during my PhD. When I started to work on stochastic Boolean models with continuous time, that we simulated with Monte Carlo simulations (same way as Gillespie algorithm is used for stochastic kinetics) it occurred to me only after some time that if we want to have the stationary solution only then this is in fact identical to the problem described by Gunawardena, so his method can be adopted for the state transition graph of a logical model.<br />
+The result from this work is now on <a href="https://www.biorxiv.org/content/10.1101/794230v1">biorXiv</a>.<br />
+I’ve also implemented the calculations as a MATLAB toolbox that can be downloaded and used with the help of <a href="https://github.com/mbkoltai/exact-stoch-log-mod/tree/master/doc">this tutorial</a>.</p>
+
+  </div>
+
+  <div class="date">
+    Written on October 16, 2019
+  </div>
+
+  <span>[
+  
+    
+    <a href="/tag/cancer"><code class="highligher-rouge"><nobr>cancer</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/sysbio"><code class="highligher-rouge"><nobr>sysbio</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/systems-biology"><code class="highligher-rouge"><nobr>systems-biology</nobr></code>&nbsp;</a>
+  
+]</span>
+
+
+<div
+class="just-comments"
+data-apikey="80178b42-e43c-4937-ac52-a2b4dc5b3ed1">
+</div>
+<script async src="https://just-comments.com/w.js"></script>
+
+
+
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:mihaly.koltai@curie.fr"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/mbkoltai"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/mihaly-koltai"><i class="svg-icon linkedin"></i></a>
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

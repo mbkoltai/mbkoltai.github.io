@@ -8,9 +8,7 @@ tags: science #list of tags that you want to show in description of blog
 
 <div class="blog-index">
 
-
 <p>Blog posts on scientific topics.</p>
-
 
 <ul style="list-style-type: none;">
       {%  assign p = '9999' %}
@@ -26,17 +24,14 @@ tags: science #list of tags that you want to show in description of blog
     <a href="{{ post.url }}" style="white-space: nowrap;"><b>{{ post.title }}</b></a>&nbsp;
       {{ post.excerpt | strip_html | truncatewords: 12 }}
       </li>
-      
             {% endif %}
-
       {% endfor %}
 </ul>
-
 
 </div>
 
 <!-- Pager -->
-<!-- 
+<!--
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
     {% if paginator.previous_page %}
