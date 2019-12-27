@@ -2,17 +2,15 @@
 layout: post
 title: Generating multistability by coupling self-activating genetic components
 comments: true
-excerpt: Fun with multistability (MATLAB script + plots)
+excerpt: Fun with multistability (explanation + MATLAB script + plots)
 tags: [cancer, sysbio, systems-biology]
 mathjax: true
 ---
 
-Creating multistability with 2/3/4 stable fixed points by connecting self-activating genes via double inhibition.
-
 <!--- comments like this --->
-This repository contains MATLAB scripts to model the stationary and dynamical behavior of a toggle switch {% cite gardner2000construction %} where the two genes (variables) inhibit each other but also have nonlinear self-activation. This is an abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.
+This [repository](https://github.com/mbkoltai/multistable_coupled_toggle) contains MATLAB scripts to model the stationary and dynamical behavior of a toggle switch {% cite gardner2000construction %} where the two genes (variables) inhibit each other but also have nonlinear self-activation. This is an abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.
 
-My idea (coming from this paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two 'S' letters, one aligned with the $$x$$ axis, the other with the $$y$$ axis - how many times can they intersect?
+My idea (coming from this {% cite lu2013tristability %} paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two 'S' letters, one aligned with the $$x$$ axis, the other with the $$y$$ axis - how many times can they intersect?
 
 In the main script [multistable.m](https://github.com/mbkoltai/multistable_coupled_toggle/blob/master/multistable.m) we can first experiment with the parameters of a single self-activating gene: the cooperativity parameter ($$n$$), the threshold of activation ($$K$$) and the rate of basal activation (transcription/translation) of the gene ($$\mathbf{\beta}$$). The ODE for a single gene is:  
 $$
@@ -153,7 +151,7 @@ In this case the overlapping section of the nullclines are all fixed points, so 
 
 An interesting question is what if we couple more than 2 bistable components. Would we get multistability with more than 4 fixed points? I might explore this question in a future post.
 
-The functions and the main script are available on [GitHub](https://github.com/mbkoltai/multistable_coupled_toggle) and they can be downloaded and used in MATLAB. 
+The functions and the main script are available on [GitHub](https://github.com/mbkoltai/multistable_coupled_toggle) and they can be downloaded and used in MATLAB.
 
 {% bibliography --cited %}
 
