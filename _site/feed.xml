@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-27T16:36:49+01:00</updated><id>http://localhost:4000/</id><title type="html">mbkoltai.github.io</title><subtitle>[&quot;mb koltai&quot;]</subtitle><entry><title type="html">Generating multistability by coupling self-activating genetic components</title><link href="http://localhost:4000/multistable/" rel="alternate" type="text/html" title="Generating multistability by coupling self-activating genetic components" /><published>2019-12-25T00:00:00+01:00</published><updated>2019-12-25T00:00:00+01:00</updated><id>http://localhost:4000/multistable</id><content type="html" xml:base="http://localhost:4000/multistable/">&lt;!--- comments like this ---&gt;
-&lt;p&gt;This &lt;a href=&quot;https://github.com/mbkoltai/multistable_coupled_toggle&quot;&gt;repository&lt;/a&gt; contains MATLAB scripts to model the stationary and dynamical behavior of a toggle switch &lt;a href=&quot;#gardner2000construction&quot;&gt;[1]&lt;/a&gt; where the two genes (variables) inhibit each other but also have nonlinear self-activation. This is an abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-27T22:16:22+01:00</updated><id>http://localhost:4000/</id><title type="html">mbkoltai.github.io</title><subtitle>[&quot;mb koltai&quot;]</subtitle><entry><title type="html">Generating multistability by coupling self-activating genes</title><link href="http://localhost:4000/multistable/" rel="alternate" type="text/html" title="Generating multistability by coupling self-activating genes" /><published>2019-12-25T00:00:00+01:00</published><updated>2019-12-25T00:00:00+01:00</updated><id>http://localhost:4000/multistable</id><content type="html" xml:base="http://localhost:4000/multistable/">&lt;!---This [repository](https://github.com/mbkoltai/multistable_coupled_toggle) contains MATLAB scripts to model the stationary and dynamical behavior of ---&gt;
+&lt;p&gt;In this post I want to explore how we can generate a regulatory system that has several (more than 2) fixed points by coupling self-activating genes. It is an expanded model of a toggle switch &lt;a href=&quot;#gardner2000construction&quot;&gt;[1]&lt;/a&gt;: two genes (variables) that inhibit each other but also have nonlinear self-activation.
+The &lt;a href=&quot;https://github.com/mbkoltai/multistable_coupled_toggle&quot;&gt;scripts I wrote in MATLAB&lt;/a&gt; define a highly abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.&lt;/p&gt;
 
 &lt;p&gt;My idea (coming from this &lt;a href=&quot;#lu2013tristability&quot;&gt;[2]&lt;/a&gt; paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two ‘S’ letters, one aligned with the &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; axis, the other with the &lt;script type=&quot;math/tex&quot;&gt;y&lt;/script&gt; axis - how many times can they intersect?&lt;/p&gt;
 
@@ -14,14 +15,13 @@ Then, strictly speaking the second term is dimensionless and would need to have 
 Since in practice these parameters only scale the production and degradation processes I am dropping them. This could be interpreted, if we are keen on dimensional consistency, as assuming their value is one, or that all other terms were divided by them.&lt;/p&gt;
 
 &lt;p&gt;We choose the values of these parameters as, for example:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;k_val=3/4; % threshold % 50% of maximal rate
+&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;k_val=3/4; % threshold (50% of maximal rate)
 beta_vals = [0 1e-3 linspace(0.01,k_val,100)]; % range of values for basal rate
 n_vals=[2:5 8 10]; % % range of values for cooperativity
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;We then run the calculation by calling the function &lt;em&gt;fcn_bistab_roots&lt;/em&gt;:
-[roots_real_nonnegat_matr,roots_all] = fcn_bistab_roots(beta_vals,n_vals,k_val);&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;
+&lt;p&gt;We then run the calculation by calling the function &lt;em&gt;fcn_bistab_roots&lt;/em&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;[roots_real_nonnegat_matr,roots_all] = fcn_bistab_roots(beta_vals,n_vals,k_val);
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Since I am solving here only for the stationary solution (steady state, fixed points) I am not numerically solving the ODE. Instead, within &lt;em&gt;fcn_bistab_roots&lt;/em&gt;, I solve eq. \ref{ode_autoact} by setting the left hand side to 0 and rearranging the equation into polynomial form, which is:
@@ -57,14 +57,14 @@ In this &lt;a href=&quot;#lu2013tristability&quot;&gt;[2]&lt;/a&gt; paper it was
 Note that as we analyze the system in 2D now the basal production rate is a single value, we are not scanning through a range of values.
 Where the two nullclines intersect we have a global fixed point: both variables have 0 time derivatives at these intersection points.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/drawing_nullclines.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/drawing_nullclines.png&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;strong&gt;Figure 3: Sketch of intersecting nullclines&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;We can have up to 9 intersection points and 4 of them can be intersectios of the stable branches of the nullclines, shown by the green circles, so these will be stable fixed points.&lt;/p&gt;
+&lt;p&gt;We can have up to 9 intersection points and 4 of them can be intersections of the stable branches of the nullclines, shown by the green circles, so these will be stable fixed points.&lt;/p&gt;
 
-&lt;p&gt;I implemented this two-dimensional system with adjustable parameters. I first calculate the nullclines by polynomial root-finding again.&lt;/p&gt;
+&lt;p&gt;I implemented this two-dimensional system with adjustable parameters in MATLAB. First, I calculate the nullclines by polynomial root-finding.&lt;/p&gt;
 
 &lt;p&gt;The equations for the two genes are:&lt;br /&gt;
-&lt;!--- dA/dt = beta_a + fA*(1+fBA) - A = beta_a + ( (A^n)/(A^n + kAA^n) )*( 1 + (kBA^n)/(kBA^n + B^n) ) - A ---&gt;
 &lt;script type=&quot;math/tex&quot;&gt;\frac{dA}{dt} = \beta_A + f_A (1 + f_{BA}) - A&lt;/script&gt;&lt;br /&gt;
 &lt;script type=&quot;math/tex&quot;&gt;\frac{dB}{dt} = \beta_B + f_B (1 + f_{AB}) - B&lt;/script&gt;&lt;/p&gt;
 
@@ -74,7 +74,7 @@ Where the two nullclines intersect we have a global fixed point: both variables 
 &lt;script type=&quot;math/tex&quot;&gt;\frac{dA}{dt} = \beta_A + \frac{A^n}{ A^n + k_{AA}^n } (1 + \frac{k_{BA}^n}{k_{BA}^n + B^n}) - A&lt;/script&gt;&lt;br /&gt;
 &lt;script type=&quot;math/tex&quot;&gt;\frac{dB}{dt} = \beta_B + \frac{B^n}{ B^n + k_{BB}^n } (1 + \frac{k_{AB}^n}{k_{AB}^n + A^n} ) - B&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Again, since we are (first) solving for the stationary solutions we can rearrange the equations to polynomial form and treat the other variable as a parameter to calculate the nullclines.
+&lt;p&gt;Again, since we are (first) solving for the stationary solutions we can rearrange the equations to polynomial form and for each equation treat the other variable as a parameter to calculate the nullclines.
 This is done by calling the function &lt;em&gt;fcn_nullclines_double_inhib&lt;/em&gt;. We need to specify the range of values for the two variables where the nullclines are calculated and also the six parameters &lt;script type=&quot;math/tex&quot;&gt;[n,k_{AA},k_{BA},\beta_a,k_{BB},k_{AB},\beta_b]&lt;/script&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;n=4;
@@ -100,9 +100,10 @@ fcn_plot_double_inhib(B_vals,real_nonnegroots_f1,A_vals,...
 
 &lt;p&gt;The flag ‘vectorfield’ tells the function to evaluate the algebraic equations that are the right-hand side of the differential equations showing the value of time-derivatives at that point of the coordinate system.&lt;/p&gt;
 
-&lt;p&gt;For a parameter set with basal production rates falling within the bistable region of the bifurcation plot on Figure 2 for &lt;script type=&quot;math/tex&quot;&gt;n=2&lt;/script&gt; both variables have nullclines with 3 branches across the entire range.&lt;/p&gt;
+&lt;p&gt;For a parameter set with basal production rates falling within the bistable region of the bifurcation plot on Figure 2 for &lt;script type=&quot;math/tex&quot;&gt;n=4&lt;/script&gt; both variables have nullclines with 3 branches across the entire range.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/double_inhib_bistable_symm_vectorfield_n4.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/double_inhib_bistable_symm_vectorfield_n4.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;strong&gt;Figure 4: Inhibition-coupled bistable genes, parameter set resulting in 4 stable fixed points. Green and blue lines showing the stable branches of the nullclines, dash-dotted thinner lines the unstable ones. Vector field showing the derivatives of the two state variables.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The stable branches are shown by thicker markers (green and blue) and the unstable ones by dashed-dotted thinner lines. The intersections of the stable branches have to be the fixed points of the system.&lt;br /&gt;
 It is interesting to visualize this as well and also the basins of attractions of the fixed points. To do this we numerically integrate the ODEs from a grid of initial conditions and store the solutions in the cell &lt;em&gt;trajectories&lt;/em&gt;:&lt;/p&gt;
@@ -120,13 +121,15 @@ end
 
 &lt;p&gt;For the parameter set above the trajectories look like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/double_inhib_bistable_symm_manytrajs_n4.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/double_inhib_bistable_symm_manytrajs_n4.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;strong&gt;Figure 5: Inhibition-coupled bistable genes, parameter set resulting in 4 stable fixed points. Trajectories from different initial conditions converging to one of the four fixed points.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;We can see how the unstable branches are the ‘frontiers’ of the basins of attraction.&lt;/p&gt;
 
 &lt;p&gt;An interesting case is a parameter set when the nullcline don’t just intersect at given points, but overlap along a whole section:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/double_inhib_bistable_symm_trajs_n3_vectorfield.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/double_inhib_bistable_symm_trajs_n3_vectorfield.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;strong&gt;Figure 6: Inhibition-coupled bistable genes, parameter set resulting in overlapping nullclines yielding fixed points along the overlapping section.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;In this case the overlapping section of the nullclines are all fixed points, so trajectories in the basin of attraction converge to different points of this line. This means (I think) there are infinitely many stable solutions that converge on the points of this line section in this region of the phase space. It would be interesting to explore what this means in terms of the polynomials.&lt;/p&gt;
 
@@ -140,7 +143,7 @@ end
 &lt;!--- References  
 [1] [Gardner, T.S., Cantor, C.R. and Collins, J.J., 2000. Construction of a genetic toggle switch in Escherichia coli. Nature, 403(6767), p.339.](https://www.nature.com/articles/35002131)  
 [2] [Lu, M., Jolly, M.K., Gomoto, R., Huang, B., Onuchic, J. and Ben-Jacob, E., 2013. Tristability in cancer-associated microRNA-TF chimera toggle switch. The journal of physical chemistry B, 117(42), pp.13164-13174](https://www.researchgate.net/publication/236913602_Tristability_in_Cancer_Associated_miRNA-TF_Chimera_Toggle_Switch)
----&gt;</content><author><name></name></author><category term="cancer" /><category term="sysbio" /><category term="systems-biology" /><summary type="html">Fun with multistability (explanation + MATLAB script + plots)</summary></entry><entry><title type="html">Visualizing defeat</title><link href="http://localhost:4000/uk-elect-2019/" rel="alternate" type="text/html" title="Visualizing defeat" /><published>2019-12-17T00:00:00+01:00</published><updated>2019-12-17T00:00:00+01:00</updated><id>http://localhost:4000/uk-elect-2019</id><content type="html" xml:base="http://localhost:4000/uk-elect-2019/">&lt;p&gt;I have created a number of plots with the aim of showing the most important trends in the defeat of Labour at the 2019 elections. This is not a political analysis yet: data visualization cannot (usually) provide causal explanations, but it can highlight what is it that needs to be explained.&lt;/p&gt;</content><author><name></name></author><category term="politics" /><category term="data-visualization" /><summary type="html">Trying to understand the the 2019 UK elections through data visualization</summary></entry><entry><title type="html">Exact calculation of steady states for stochastic logical models.</title><link href="http://localhost:4000/exastolog/" rel="alternate" type="text/html" title="Exact calculation of steady states for stochastic logical models." /><published>2019-10-16T00:00:00+02:00</published><updated>2019-10-16T00:00:00+02:00</updated><id>http://localhost:4000/exastolog</id><content type="html" xml:base="http://localhost:4000/exastolog/">&lt;p&gt;I recently submitted a manuscript that presents a calculation method to calculate the stationary solution of stochastic, continuous-time logical (Boolean) models.&lt;br /&gt;
+---&gt;</content><author><name></name></author><category term="cancer" /><category term="sysbio" /><category term="systems-biology" /><summary type="html">Fun with multistability (explanation + MATLAB scripts + plots)</summary></entry><entry><title type="html">Visualizing defeat</title><link href="http://localhost:4000/uk-elect-2019/" rel="alternate" type="text/html" title="Visualizing defeat" /><published>2019-12-17T00:00:00+01:00</published><updated>2019-12-17T00:00:00+01:00</updated><id>http://localhost:4000/uk-elect-2019</id><content type="html" xml:base="http://localhost:4000/uk-elect-2019/">&lt;p&gt;I have created a number of plots with the aim of showing the most important trends in the defeat of Labour at the 2019 elections. This is not a political analysis yet: data visualization cannot (usually) provide causal explanations, but it can highlight what is it that needs to be explained.&lt;/p&gt;</content><author><name></name></author><category term="politics" /><category term="data-visualization" /><summary type="html">Trying to understand the the 2019 UK elections through data visualization</summary></entry><entry><title type="html">Exact calculation of steady states for stochastic logical models.</title><link href="http://localhost:4000/exastolog/" rel="alternate" type="text/html" title="Exact calculation of steady states for stochastic logical models." /><published>2019-10-16T00:00:00+02:00</published><updated>2019-10-16T00:00:00+02:00</updated><id>http://localhost:4000/exastolog</id><content type="html" xml:base="http://localhost:4000/exastolog/">&lt;p&gt;I recently submitted a manuscript that presents a calculation method to calculate the stationary solution of stochastic, continuous-time logical (Boolean) models.&lt;br /&gt;
 I adopted the mathematical technique from the field of chemical kinetics, specifically a number of articles from Jeremy Gunawardena and coauthors.
 These articles started with a small essay on the thresholding and switching properties of multisite (protein) phosphorylation &lt;a href=&quot;https://www.pnas.org/content/102/41/14617&quot;&gt;in PNAS&lt;/a&gt; back in 2005 and then with a beautiful paper in Nature on ‘&lt;a href=&quot;http://vcp.med.harvard.edu/papers/multistability.pdf&quot;&gt;unlimited multistability&lt;/a&gt;’ in 2009. In these articles the results were still somewhat &lt;em&gt;ad hoc&lt;/em&gt;, but they showed that the stationary solution of the kinetic equations describing post-translations modifications, which are nonlinear ordinary differential equations with bilinear terms complemented by some algebraic conservations, can be analytically obtained and that if we have multisite species there is no obvious limit to the number of stable steady states that these systems have.
 Later on the results in these papers were generalized, culminating in the paper ‘&lt;a href=&quot;http://vcp.med.harvard.edu/papers/jg-lap-dyn.pdf&quot;&gt;Laplacian dynamics on general graphs&lt;/a&gt;’ (2013) where the results are most systematically summarized.&lt;/p&gt;

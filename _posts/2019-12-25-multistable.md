@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Generating multistability by coupling self-activating genetic components
+title: Generating multistability by coupling self-activating genes
 comments: true
-excerpt: Fun with multistability (explanation + MATLAB script + plots)
+excerpt: Fun with multistability (explanation + MATLAB scripts + plots)
 tags: [cancer, sysbio, systems-biology]
 mathjax: true
 ---
 
-<!--- comments like this --->
-This [repository](https://github.com/mbkoltai/multistable_coupled_toggle) contains MATLAB scripts to model the stationary and dynamical behavior of a toggle switch {% cite gardner2000construction %} where the two genes (variables) inhibit each other but also have nonlinear self-activation. This is an abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.
+<!---This [repository](https://github.com/mbkoltai/multistable_coupled_toggle) contains MATLAB scripts to model the stationary and dynamical behavior of --->
+In this post I want to explore how we can generate a regulatory system that has several (more than 2) fixed points by coupling self-activating genes. It is an expanded model of a toggle switch {% cite gardner2000construction %}: two genes (variables) that inhibit each other but also have nonlinear self-activation.
+The [scripts I wrote in MATLAB](https://github.com/mbkoltai/multistable_coupled_toggle) define a highly abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.
 
 My idea (coming from this {% cite lu2013tristability %} paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two 'S' letters, one aligned with the $$x$$ axis, the other with the $$y$$ axis - how many times can they intersect?
 
@@ -26,14 +27,14 @@ Since in practice these parameters only scale the production and degradation pro
 
 We choose the values of these parameters as, for example:
 ```MATLAB
-k_val=3/4; % threshold % 50% of maximal rate
+k_val=3/4; % threshold (50% of maximal rate)
 beta_vals = [0 1e-3 linspace(0.01,k_val,100)]; % range of values for basal rate
 n_vals=[2:5 8 10]; % % range of values for cooperativity
 ```
 
 We then run the calculation by calling the function *fcn\_bistab\_roots*:
-[roots_real_nonnegat_matr,roots_all] = fcn_bistab_roots(beta_vals,n_vals,k_val);
 ```MATLAB
+[roots_real_nonnegat_matr,roots_all] = fcn_bistab_roots(beta_vals,n_vals,k_val);
 ```
 
 Since I am solving here only for the stationary solution (steady state, fixed points) I am not numerically solving the ODE. Instead, within *fcn\_bistab\_roots*, I solve eq. \ref{ode_autoact} by setting the left hand side to 0 and rearranging the equation into polynomial form, which is:
@@ -74,13 +75,13 @@ Note that as we analyze the system in 2D now the basal production rate is a sing
 Where the two nullclines intersect we have a global fixed point: both variables have 0 time derivatives at these intersection points.
 
 ![_config.yml]({{ site.baseurl }}/images/drawing_nullclines.png)
+**Figure 3: Sketch of intersecting nullclines**
 
-We can have up to 9 intersection points and 4 of them can be intersectios of the stable branches of the nullclines, shown by the green circles, so these will be stable fixed points.
+We can have up to 9 intersection points and 4 of them can be intersections of the stable branches of the nullclines, shown by the green circles, so these will be stable fixed points.
 
-I implemented this two-dimensional system with adjustable parameters. I first calculate the nullclines by polynomial root-finding again.
+I implemented this two-dimensional system with adjustable parameters in MATLAB. First, I calculate the nullclines by polynomial root-finding.
 
 The equations for the two genes are:  
-<!--- dA/dt = beta_a + fA*(1+fBA) - A = beta_a + ( (A^n)/(A^n + kAA^n) )*( 1 + (kBA^n)/(kBA^n + B^n) ) - A --->
 $$ \frac{dA}{dt} = \beta_A + f_A (1 + f_{BA}) - A $$  
 $$ \frac{dB}{dt} = \beta_B + f_B (1 + f_{AB}) - B $$
 
@@ -90,7 +91,7 @@ Expanding the activation and inhibition functions the full equations are:
 $$ \frac{dA}{dt} = \beta_A + \frac{A^n}{ A^n + k_{AA}^n } (1 + \frac{k_{BA}^n}{k_{BA}^n + B^n}) - A $$  
 $$\frac{dB}{dt} = \beta_B + \frac{B^n}{ B^n + k_{BB}^n } (1 + \frac{k_{AB}^n}{k_{AB}^n + A^n} ) - B$$  
 
-Again, since we are (first) solving for the stationary solutions we can rearrange the equations to polynomial form and treat the other variable as a parameter to calculate the nullclines.
+Again, since we are (first) solving for the stationary solutions we can rearrange the equations to polynomial form and for each equation treat the other variable as a parameter to calculate the nullclines.
 This is done by calling the function *fcn\_nullclines\_double\_inhib*. We need to specify the range of values for the two variables where the nullclines are calculated and also the six parameters $$[n,k_{AA},k_{BA},\beta_a,k_{BB},k_{AB},\beta_b]$$.
 
 ```MATLAB
@@ -118,9 +119,10 @@ fcn_plot_double_inhib(B_vals,real_nonnegroots_f1,A_vals,...
 
 The flag 'vectorfield' tells the function to evaluate the algebraic equations that are the right-hand side of the differential equations showing the value of time-derivatives at that point of the coordinate system.
 
-For a parameter set with basal production rates falling within the bistable region of the bifurcation plot on Figure 2 for $$n=2$$ both variables have nullclines with 3 branches across the entire range.
+For a parameter set with basal production rates falling within the bistable region of the bifurcation plot on Figure 2 for $$n=4$$ both variables have nullclines with 3 branches across the entire range.
 
 ![_config.yml]({{ site.baseurl }}/images/double_inhib_bistable_symm_vectorfield_n4.jpg)
+**Figure 4: Inhibition-coupled bistable genes, parameter set resulting in 4 stable fixed points. Green and blue lines showing the stable branches of the nullclines, dash-dotted thinner lines the unstable ones. Vector field showing the derivatives of the two state variables.**
 
 The stable branches are shown by thicker markers (green and blue) and the unstable ones by dashed-dotted thinner lines. The intersections of the stable branches have to be the fixed points of the system.  
 It is interesting to visualize this as well and also the basins of attractions of the fixed points. To do this we numerically integrate the ODEs from a grid of initial conditions and store the solutions in the cell *trajectories*:
@@ -140,12 +142,14 @@ end
 For the parameter set above the trajectories look like this:  
 
 ![_config.yml]({{ site.baseurl }}/images/double_inhib_bistable_symm_manytrajs_n4.jpg)
+**Figure 5: Inhibition-coupled bistable genes, parameter set resulting in 4 stable fixed points. Trajectories from different initial conditions converging to one of the four fixed points.**
 
 We can see how the unstable branches are the 'frontiers' of the basins of attraction.
 
 An interesting case is a parameter set when the nullcline don't just intersect at given points, but overlap along a whole section:
 
 ![_config.yml]({{ site.baseurl }}/images/double_inhib_bistable_symm_trajs_n3_vectorfield.jpg)
+**Figure 6: Inhibition-coupled bistable genes, parameter set resulting in overlapping nullclines yielding fixed points along the overlapping section.**
 
 In this case the overlapping section of the nullclines are all fixed points, so trajectories in the basin of attraction converge to different points of this line. This means (I think) there are infinitely many stable solutions that converge on the points of this line section in this region of the phase space. It would be interesting to explore what this means in terms of the polynomials.
 
