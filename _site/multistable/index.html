@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generating multistability by coupling self-activating genetic components – mbkoltai.github.io – mb koltai</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Fun with multistability (MATLAB script + plots)" />
+    <meta property="og:description" content="Fun with multistability (MATLAB script + plots)" />
+    
+    <meta name="author" content="mbkoltai.github.io" />
+
+    
+        
+
+
+
+
+
+
+    
+
+
+    
+    <meta property="og:title" content="Generating multistability by coupling self-activating genetic components" />
+    <meta property="twitter:title" content="Generating multistability by coupling self-activating genetic components" />
+    
+
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="mbkoltai.github.io - mb koltai" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Generating multistability by coupling self-activating genetic components | mbkoltai.github.io</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Generating multistability by coupling self-activating genetic components" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fun with multistability (MATLAB script + plots)" />
+<meta property="og:description" content="Fun with multistability (MATLAB script + plots)" />
+<link rel="canonical" href="http://localhost:4000/multistable/" />
+<meta property="og:url" content="http://localhost:4000/multistable/" />
+<meta property="og:site_name" content="mbkoltai.github.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-25T00:00:00+01:00" />
+<script type="application/ld+json">
+{"description":"Fun with multistability (MATLAB script + plots)","@type":"BlogPosting","url":"http://localhost:4000/multistable/","headline":"Generating multistability by coupling self-activating genetic components","dateModified":"2019-12-25T00:00:00+01:00","datePublished":"2019-12-25T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/multistable/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">mbkoltai.github.io</a></h1>
+         <!--    <p class="site-description">mb koltai</p> -->
+          </div>
+
+          <nav>
+            <a href="/">About me</a>
+            <a href="/papers">Publications</a>
+            <a href="/blog">maths&bio</a>
+            <a href="/ecopol">economics</a>
+            <a href="/other">other</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Generating multistability by coupling self-activating genetic components</h1>
+
+  <div class="entry">
+    <p>Creating multistability with 2/3/4 stable fixed points by connecting self-activating genes via double inhibition.</p>
+
+<!--- comments like this --->
+<p>This repository contains MATLAB scripts to model the stationary and dynamical behavior of a toggle switch <a href="#gardner2000construction">[1]</a> where the two genes (variables) inhibit each other but also have nonlinear self-activation. This is an abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.</p>
+
+<p>My idea (coming from this paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two ‘S’ letters, one aligned with the <script type="math/tex">x</script> axis, the other with the <script type="math/tex">y</script> axis - how many times can they intersect?</p>
+
+<p>In the main script <a href="https://github.com/mbkoltai/multistable_coupled_toggle/blob/master/multistable.m">multistable.m</a> we can first experiment with the parameters of a single self-activating gene: the cooperativity parameter (<script type="math/tex">n</script>), the threshold of activation (<script type="math/tex">K</script>) and the rate of basal activation (transcription/translation) of the gene (<script type="math/tex">\mathbf{\beta}</script>). The ODE for a single gene is:<br />
+<script type="math/tex">\frac{dx(t)}{dt} = \beta + \frac{x(t)^n}{x(t)^n + K^n} - x(t)
+\tag{1}\label{ode_autoact}</script></p>
+
+<p>While I am not assigning specific units to the variables and parameters, it is interesting to note what their dimensions are.<br />
+The differential equation describes a <em>rate</em>, a change of concentration (mass per unit of volume) per unit of time, so it has to have a dimension of <script type="math/tex">CT^{-1}</script> (C: concentration, T: time).<br />
+<script type="math/tex">\beta</script> also has dimension of <script type="math/tex">CT^{-1}</script>. The state variable <script type="math/tex">x(t)</script> refers to the concentration of the gene product so its dimension is <script type="math/tex">C</script> (concentration) and <script type="math/tex">K</script> must have the same dimension.<br />
+Then, strictly speaking the second term is dimensionless and would need to have a rate constant with dimension of <script type="math/tex">CT^{-1}</script> and the last term a rate constant with dimension of <script type="math/tex">T^{-1}</script>.<br />
+Since in practice these parameters only scale the production and degradation processes I am dropping them. This could be interpreted, if we are keen on dimensional consistency, as assuming their value is one, or that all other terms were divided by them.</p>
+
+<p>We choose the values of these parameters as, for example:</p>
+<pre><code class="language-MATLAB">k_val=3/4; % threshold % 50% of maximal rate
+beta_vals = [0 1e-3 linspace(0.01,k_val,100)]; % range of values for basal rate
+n_vals=[2:5 8 10]; % % range of values for cooperativity
+</code></pre>
+
+<p>We then run the calculation by calling the function <em>fcn_bistab_roots</em>:
+[roots_real_nonnegat_matr,roots_all] = fcn_bistab_roots(beta_vals,n_vals,k_val);</p>
+<pre><code class="language-MATLAB">
+</code></pre>
+
+<p>Since I am solving here only for the stationary solution (steady state, fixed points) I am not numerically solving the ODE. Instead, within <em>fcn_bistab_roots</em>, I solve eq. \ref{ode_autoact} by setting the left hand side to 0 and rearranging the equation into polynomial form, which is:
+<script type="math/tex">x (x^n + K^n) - \beta (x^n + K^n) - x^n =  
+x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0</script></p>
+
+<p><script type="math/tex">x</script> here stands for the stationary value of <script type="math/tex">x(t)</script>.
+I solve this polynomial with MATLAB’s root-finding algorithm <script type="math/tex">root</script>.
+There cannot be more than 3 real and nonnegative roots of this polynomial, these physically relevant roots are contained in the matrix <em>roots_real_nonnegat_matr</em> for the  parameter sets we generated.</p>
+
+<p>I wrote two functions to visualize the solutions as a function of the basal production rate <script type="math/tex">\beta</script>.
+With <em>fcn_plot_bifurc_diff_n_heatmap</em> we can visualize the results as heatmaps on separate subplots for the different values of the nonlinearity (cooperativity) parameter <script type="math/tex">n</script>:</p>
+
+<pre><code class="language-MATLAB">fcn_plot_bifurc_diff_n_heatmap(beta_vals,n_vals,k_val,roots_real_nonnegat_matr)
+</code></pre>
+
+<p><img src="/images/bifurc_heatmaps_autostim.jpg" alt="_config.yml" />
+<strong>Figure 1. Heatmaps showing the fixed points of a self-activating gene at different values of the cooperativity parameter. There are three bands corresponding to the three possible fixed points.</strong></p>
+
+<p>Or as lineplots where the unstable fixed points are shown by the red dotted lines, called by the command:</p>
+<pre><code class="language-MATLAB">fcn_plot_bifurc_diff_n(roots_real_nonnegat_matr,beta_vals,n_vals,k_val,plot_pars)
+</code></pre>
+<p>and producing these plots:
+<img src="/images/bifurc_plots_autostim.jpg" alt="_config.yml" />
+<strong>Figure 2. Bifurcation plots for a self-activating gene at different values of the cooperativity parameter. Blue lines are stable fixed points, dashed red lines are unstable.</strong></p>
+
+<p>The lower threshold for the bistable range goes down while its extension grows with an increasing nonlinearity of the auto-activation.</p>
+
+<p>Now, as it was shown by one of the first landmark papers <a href="#gardner2000construction">[1]</a> of <a href="http://vcp.med.harvard.edu/timeline.html">modern</a> (&gt;2000) systems biology how two genes mutually inhibiting each other can lead to bistable behavior if the inhibition has a nonlinear (sigmoidal effect).
+In this <a href="#lu2013tristability">[2]</a> paper it was pointed out that if the auto-activation of these two genes already makes them bistable then coupling them can generate several stable fixed points.</p>
+
+<p>To intuitively illustrate this point, before setting up a model, let’s call the two genes A and B and we visualize their nullclines as a function of the value of the other gene.
+Note that as we analyze the system in 2D now the basal production rate is a single value, we are not scanning through a range of values.
+Where the two nullclines intersect we have a global fixed point: both variables have 0 time derivatives at these intersection points.</p>
+
+<p><img src="/images/drawing_nullclines.png" alt="_config.yml" /></p>
+
+<p>We can have up to 9 intersection points and 4 of them can be intersectios of the stable branches of the nullclines, shown by the green circles, so these will be stable fixed points.</p>
+
+<p>I implemented this two-dimensional system with adjustable parameters. I first calculate the nullclines by polynomial root-finding again.</p>
+
+<p>The equations for the two genes are:<br />
+<!--- dA/dt = beta_a + fA*(1+fBA) - A = beta_a + ( (A^n)/(A^n + kAA^n) )*( 1 + (kBA^n)/(kBA^n + B^n) ) - A --->
+<script type="math/tex">\frac{dA}{dt} = \beta_A + f_A (1 + f_{BA}) - A</script><br />
+<script type="math/tex">\frac{dB}{dt} = \beta_B + f_B (1 + f_{AB}) - B</script></p>
+
+<p><script type="math/tex">f_A</script> and <script type="math/tex">f_B</script> are the self-activation functions, <script type="math/tex">f_{BA}</script> is the inhibition mechanism from <script type="math/tex">B</script> to <script type="math/tex">A</script> and <script type="math/tex">f_{AB}</script> vice versa. The basal production terms and the decay terms are as in eq. \ref{ode_autoact}.</p>
+
+<p>Expanding the activation and inhibition functions the full equations are:
+<script type="math/tex">\frac{dA}{dt} = \beta_A + \frac{A^n}{ A^n + k_{AA}^n } (1 + \frac{k_{BA}^n}{k_{BA}^n + B^n}) - A</script><br />
+<script type="math/tex">\frac{dB}{dt} = \beta_B + \frac{B^n}{ B^n + k_{BB}^n } (1 + \frac{k_{AB}^n}{k_{AB}^n + A^n} ) - B</script></p>
+
+<p>Again, since we are (first) solving for the stationary solutions we can rearrange the equations to polynomial form and treat the other variable as a parameter to calculate the nullclines.
+This is done by calling the function <em>fcn_nullclines_double_inhib</em>. We need to specify the range of values for the two variables where the nullclines are calculated and also the six parameters <script type="math/tex">[n,k_{AA},k_{BA},\beta_a,k_{BB},k_{AB},\beta_b]</script>.</p>
+
+<pre><code class="language-MATLAB">n=4;
+kAA=3/4; kBB=3/4;
+beta_a=1/4; beta_b=1/4;
+kBA=1/2; kAB=1/2;
+params = [n,kAA,kBA,beta_a,kBB,kAB,beta_b];
+maxval_B=2.25; logvals=logspace(-2,log10(maxval_B),200);
+linvals=linspace(0.01,maxval_B,300);
+B_vals=[0 linvals]; A_vals=[0 linvals];
+[real_nonnegroots_f1,real_nonnegroots_f2]=fcn_nullclines_double_inhib(A_vals,B_vals,params);
+</code></pre>
+
+<p>Polynomial rootfinding is rather fast, for 200 input values, the calculation takes 35 seconds on my laptop (Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz, 2601 Mhz, 2 Core(s)).</p>
+
+<p>Next we can visualize the nullclines and their intersections that are the fixed points of the model by the function <em>fcn_plot_double_inhib</em>:</p>
+<pre><code class="language-MATLAB">parnames='$[n, k_{AA}, k_{BA},\beta_a, k_{BB},k_{AB},\beta_b]=$';
+legend_str={'dA/dt=0,stable','dA/dt=0,unstable','dA/dt=0,stable'};
+plot_pars={22,3,5,parnames,legend_str,0.02};
+fcn_plot_double_inhib(B_vals,real_nonnegroots_f1,A_vals,...
+    real_nonnegroots_f2,params,plot_pars,'vectorfield')
+</code></pre>
+
+<p>The flag ‘vectorfield’ tells the function to evaluate the algebraic equations that are the right-hand side of the differential equations showing the value of time-derivatives at that point of the coordinate system.</p>
+
+<p>For a parameter set with basal production rates falling within the bistable region of the bifurcation plot on Figure 2 for <script type="math/tex">n=2</script> both variables have nullclines with 3 branches across the entire range.</p>
+
+<p><img src="/images/double_inhib_bistable_symm_vectorfield_n4.jpg" alt="_config.yml" /></p>
+
+<p>The stable branches are shown by thicker markers (green and blue) and the unstable ones by dashed-dotted thinner lines. The intersections of the stable branches have to be the fixed points of the system.<br />
+It is interesting to visualize this as well and also the basins of attractions of the fixed points. To do this we numerically integrate the ODEs from a grid of initial conditions and store the solutions in the cell <em>trajectories</em>:</p>
+
+<pre><code class="language-MATLAB">initvals=linspace(0,2.25,16); tspan=0:0.01:20; initvals_perms=permn(initvals,2);
+options = odeset('RelTol',1e-4); % ,'AbsTol',at
+trajectories=cell(1,size(initvals_perms,1));
+
+for initv1=1:size(initvals_perms,1)
+    disp(initv1/size(initvals_perms,1)); x0=initvals_perms(initv1,:);
+    [t,x]=ode45(@(t,x)fcn_odes_double_inhib(t,x,params),tspan, x0);
+    trajectories{initv1}=x;
+end
+</code></pre>
+
+<p>For the parameter set above the trajectories look like this:</p>
+
+<p><img src="/images/double_inhib_bistable_symm_manytrajs_n4.jpg" alt="_config.yml" /></p>
+
+<p>We can see how the unstable branches are the ‘frontiers’ of the basins of attraction.</p>
+
+<p>An interesting case is a parameter set when the nullcline don’t just intersect at given points, but overlap along a whole section:</p>
+
+<p><img src="/images/double_inhib_bistable_symm_trajs_n3_vectorfield.jpg" alt="_config.yml" /></p>
+
+<p>In this case the overlapping section of the nullclines are all fixed points, so trajectories in the basin of attraction converge to different points of this line. This means (I think) there are infinitely many stable solutions that converge on the points of this line section in this region of the phase space. It would be interesting to explore what this means in terms of the polynomials.</p>
+
+<p>An interesting question is what if we couple more than 2 bistable components. Would we get multistability with more than 4 fixed points? I might explore this question in a future post.</p>
+
+<p>The functions and the main script are available on <a href="https://github.com/mbkoltai/multistable_coupled_toggle">GitHub</a> and they can be downloaded and used in MATLAB.</p>
+
+<ol class="bibliography"><li><span id="gardner2000construction">1.Gardner, T.S., Cantor, C.R., and Collins, J.J. (2000). Construction of a genetic toggle switch in Escherichia coli. Nature <i>403</i>, 339.</span></li>
+<li><span id="lu2013tristability">2.Lu, M., Jolly, M.K., Gomoto, R., Huang, B., Onuchic, J., and Ben-Jacob, E. (2013). Tristability in cancer-associated microRNA-TF chimera toggle switch. The journal of physical chemistry B <i>117</i>, 13164–13174.</span></li></ol>
+
+<!--- References  
+[1] [Gardner, T.S., Cantor, C.R. and Collins, J.J., 2000. Construction of a genetic toggle switch in Escherichia coli. Nature, 403(6767), p.339.](https://www.nature.com/articles/35002131)  
+[2] [Lu, M., Jolly, M.K., Gomoto, R., Huang, B., Onuchic, J. and Ben-Jacob, E., 2013. Tristability in cancer-associated microRNA-TF chimera toggle switch. The journal of physical chemistry B, 117(42), pp.13164-13174](https://www.researchgate.net/publication/236913602_Tristability_in_Cancer_Associated_miRNA-TF_Chimera_Toggle_Switch)
+--->
+
+  </div>
+
+  <div class="date">
+    Written on December 25, 2019
+  </div>
+
+  <span>[
+  
+    
+    <a href="/tag/cancer"><code class="highligher-rouge"><nobr>cancer</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/sysbio"><code class="highligher-rouge"><nobr>sysbio</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/systems-biology"><code class="highligher-rouge"><nobr>systems-biology</nobr></code>&nbsp;</a>
+  
+]</span>
+
+
+<div
+class="just-comments"
+data-apikey="80178b42-e43c-4937-ac52-a2b4dc5b3ed1">
+</div>
+<script async src="https://just-comments.com/w.js"></script>
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+<script>
+       MathJax.Hub.Config({
+           config: ["MMLorHTML.js"],
+           extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+           jax: ["input/TeX"],
+           tex2jax: {
+               inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+               displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+               processEscapes: false
+           },
+           TeX: {
+               TagSide: "right",
+               TagIndent: ".8em",
+               MultLineWidth: "85%",
+               equationNumbers: {
+                  autoNumber: "AMS",
+               },
+               unicode: {
+                  fonts: "STIXGeneral,'Arial Unicode MS'"
+               }
+           },
+           showProcessingMessages: false
+       });
+</script>
+
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:mihaly.koltai@curie.fr"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/mbkoltai"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/mihaly-koltai"><i class="svg-icon linkedin"></i></a>
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

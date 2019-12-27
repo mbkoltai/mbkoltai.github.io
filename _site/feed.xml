@@ -1,4 +1,148 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-17T00:01:17+02:00</updated><id>http://localhost:4000/</id><title type="html">mbkoltai.github.io</title><subtitle>[&quot;mb koltai&quot;]</subtitle><entry><title type="html">Exact calculation of steady states for stochastic logical models.</title><link href="http://localhost:4000/exastolog/" rel="alternate" type="text/html" title="Exact calculation of steady states for stochastic logical models." /><published>2019-10-16T00:00:00+02:00</published><updated>2019-10-16T00:00:00+02:00</updated><id>http://localhost:4000/exastolog</id><content type="html" xml:base="http://localhost:4000/exastolog/">&lt;p&gt;I recently submitted a manuscript that presents a calculation method to calculate the stationary solution of stochastic, continuous-time logical (Boolean) models.&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-27T16:21:58+01:00</updated><id>http://localhost:4000/</id><title type="html">mbkoltai.github.io</title><subtitle>[&quot;mb koltai&quot;]</subtitle><entry><title type="html">Generating multistability by coupling self-activating genetic components</title><link href="http://localhost:4000/multistable/" rel="alternate" type="text/html" title="Generating multistability by coupling self-activating genetic components" /><published>2019-12-25T00:00:00+01:00</published><updated>2019-12-25T00:00:00+01:00</updated><id>http://localhost:4000/multistable</id><content type="html" xml:base="http://localhost:4000/multistable/">&lt;p&gt;Creating multistability with 2/3/4 stable fixed points by connecting self-activating genes via double inhibition.&lt;/p&gt;
+
+&lt;!--- comments like this ---&gt;
+&lt;p&gt;This repository contains MATLAB scripts to model the stationary and dynamical behavior of a toggle switch &lt;a href=&quot;#gardner2000construction&quot;&gt;[1]&lt;/a&gt; where the two genes (variables) inhibit each other but also have nonlinear self-activation. This is an abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.&lt;/p&gt;
+
+&lt;p&gt;My idea (coming from this paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two ‘S’ letters, one aligned with the &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; axis, the other with the &lt;script type=&quot;math/tex&quot;&gt;y&lt;/script&gt; axis - how many times can they intersect?&lt;/p&gt;
+
+&lt;p&gt;In the main script &lt;a href=&quot;https://github.com/mbkoltai/multistable_coupled_toggle/blob/master/multistable.m&quot;&gt;multistable.m&lt;/a&gt; we can first experiment with the parameters of a single self-activating gene: the cooperativity parameter (&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;), the threshold of activation (&lt;script type=&quot;math/tex&quot;&gt;K&lt;/script&gt;) and the rate of basal activation (transcription/translation) of the gene (&lt;script type=&quot;math/tex&quot;&gt;\mathbf{\beta}&lt;/script&gt;). The ODE for a single gene is:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\frac{dx(t)}{dt} = \beta + \frac{x(t)^n}{x(t)^n + K^n} - x(t)
+\tag{1}\label{ode_autoact}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;While I am not assigning specific units to the variables and parameters, it is interesting to note what their dimensions are.&lt;br /&gt;
+The differential equation describes a &lt;em&gt;rate&lt;/em&gt;, a change of concentration (mass per unit of volume) per unit of time, so it has to have a dimension of &lt;script type=&quot;math/tex&quot;&gt;CT^{-1}&lt;/script&gt; (C: concentration, T: time).&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt; also has dimension of &lt;script type=&quot;math/tex&quot;&gt;CT^{-1}&lt;/script&gt;. The state variable &lt;script type=&quot;math/tex&quot;&gt;x(t)&lt;/script&gt; refers to the concentration of the gene product so its dimension is &lt;script type=&quot;math/tex&quot;&gt;C&lt;/script&gt; (concentration) and &lt;script type=&quot;math/tex&quot;&gt;K&lt;/script&gt; must have the same dimension.&lt;br /&gt;
+Then, strictly speaking the second term is dimensionless and would need to have a rate constant with dimension of &lt;script type=&quot;math/tex&quot;&gt;CT^{-1}&lt;/script&gt; and the last term a rate constant with dimension of &lt;script type=&quot;math/tex&quot;&gt;T^{-1}&lt;/script&gt;.&lt;br /&gt;
+Since in practice these parameters only scale the production and degradation processes I am dropping them. This could be interpreted, if we are keen on dimensional consistency, as assuming their value is one, or that all other terms were divided by them.&lt;/p&gt;
+
+&lt;p&gt;We choose the values of these parameters as, for example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;k_val=3/4; % threshold % 50% of maximal rate
+beta_vals = [0 1e-3 linspace(0.01,k_val,100)]; % range of values for basal rate
+n_vals=[2:5 8 10]; % % range of values for cooperativity
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We then run the calculation by calling the function &lt;em&gt;fcn_bistab_roots&lt;/em&gt;:
+[roots_real_nonnegat_matr,roots_all] = fcn_bistab_roots(beta_vals,n_vals,k_val);&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since I am solving here only for the stationary solution (steady state, fixed points) I am not numerically solving the ODE. Instead, within &lt;em&gt;fcn_bistab_roots&lt;/em&gt;, I solve eq. \ref{ode_autoact} by setting the left hand side to 0 and rearranging the equation into polynomial form, which is:
+&lt;script type=&quot;math/tex&quot;&gt;x (x^n + K^n) - \beta (x^n + K^n) - x^n =  
+x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; here stands for the stationary value of &lt;script type=&quot;math/tex&quot;&gt;x(t)&lt;/script&gt;.
+I solve this polynomial with MATLAB’s root-finding algorithm &lt;script type=&quot;math/tex&quot;&gt;root&lt;/script&gt;.
+There cannot be more than 3 real and nonnegative roots of this polynomial, these physically relevant roots are contained in the matrix &lt;em&gt;roots_real_nonnegat_matr&lt;/em&gt; for the  parameter sets we generated.&lt;/p&gt;
+
+&lt;p&gt;I wrote two functions to visualize the solutions as a function of the basal production rate &lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;.
+With &lt;em&gt;fcn_plot_bifurc_diff_n_heatmap&lt;/em&gt; we can visualize the results as heatmaps on separate subplots for the different values of the nonlinearity (cooperativity) parameter &lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;fcn_plot_bifurc_diff_n_heatmap(beta_vals,n_vals,k_val,roots_real_nonnegat_matr)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/bifurc_heatmaps_autostim.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;strong&gt;Figure 1. Heatmaps showing the fixed points of a self-activating gene at different values of the cooperativity parameter. There are three bands corresponding to the three possible fixed points.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Or as lineplots where the unstable fixed points are shown by the red dotted lines, called by the command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;fcn_plot_bifurc_diff_n(roots_real_nonnegat_matr,beta_vals,n_vals,k_val,plot_pars)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and producing these plots:
+&lt;img src=&quot;/images/bifurc_plots_autostim.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
+&lt;strong&gt;Figure 2. Bifurcation plots for a self-activating gene at different values of the cooperativity parameter. Blue lines are stable fixed points, dashed red lines are unstable.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The lower threshold for the bistable range goes down while its extension grows with an increasing nonlinearity of the auto-activation.&lt;/p&gt;
+
+&lt;p&gt;Now, as it was shown by one of the first landmark papers &lt;a href=&quot;#gardner2000construction&quot;&gt;[1]&lt;/a&gt; of &lt;a href=&quot;http://vcp.med.harvard.edu/timeline.html&quot;&gt;modern&lt;/a&gt; (&amp;gt;2000) systems biology how two genes mutually inhibiting each other can lead to bistable behavior if the inhibition has a nonlinear (sigmoidal effect).
+In this &lt;a href=&quot;#lu2013tristability&quot;&gt;[2]&lt;/a&gt; paper it was pointed out that if the auto-activation of these two genes already makes them bistable then coupling them can generate several stable fixed points.&lt;/p&gt;
+
+&lt;p&gt;To intuitively illustrate this point, before setting up a model, let’s call the two genes A and B and we visualize their nullclines as a function of the value of the other gene.
+Note that as we analyze the system in 2D now the basal production rate is a single value, we are not scanning through a range of values.
+Where the two nullclines intersect we have a global fixed point: both variables have 0 time derivatives at these intersection points.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/drawing_nullclines.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can have up to 9 intersection points and 4 of them can be intersectios of the stable branches of the nullclines, shown by the green circles, so these will be stable fixed points.&lt;/p&gt;
+
+&lt;p&gt;I implemented this two-dimensional system with adjustable parameters. I first calculate the nullclines by polynomial root-finding again.&lt;/p&gt;
+
+&lt;p&gt;The equations for the two genes are:&lt;br /&gt;
+&lt;!--- dA/dt = beta_a + fA*(1+fBA) - A = beta_a + ( (A^n)/(A^n + kAA^n) )*( 1 + (kBA^n)/(kBA^n + B^n) ) - A ---&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\frac{dA}{dt} = \beta_A + f_A (1 + f_{BA}) - A&lt;/script&gt;&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\frac{dB}{dt} = \beta_B + f_B (1 + f_{AB}) - B&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;f_A&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;f_B&lt;/script&gt; are the self-activation functions, &lt;script type=&quot;math/tex&quot;&gt;f_{BA}&lt;/script&gt; is the inhibition mechanism from &lt;script type=&quot;math/tex&quot;&gt;B&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;f_{AB}&lt;/script&gt; vice versa. The basal production terms and the decay terms are as in eq. \ref{ode_autoact}.&lt;/p&gt;
+
+&lt;p&gt;Expanding the activation and inhibition functions the full equations are:
+&lt;script type=&quot;math/tex&quot;&gt;\frac{dA}{dt} = \beta_A + \frac{A^n}{ A^n + k_{AA}^n } (1 + \frac{k_{BA}^n}{k_{BA}^n + B^n}) - A&lt;/script&gt;&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\frac{dB}{dt} = \beta_B + \frac{B^n}{ B^n + k_{BB}^n } (1 + \frac{k_{AB}^n}{k_{AB}^n + A^n} ) - B&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Again, since we are (first) solving for the stationary solutions we can rearrange the equations to polynomial form and treat the other variable as a parameter to calculate the nullclines.
+This is done by calling the function &lt;em&gt;fcn_nullclines_double_inhib&lt;/em&gt;. We need to specify the range of values for the two variables where the nullclines are calculated and also the six parameters &lt;script type=&quot;math/tex&quot;&gt;[n,k_{AA},k_{BA},\beta_a,k_{BB},k_{AB},\beta_b]&lt;/script&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;n=4;
+kAA=3/4; kBB=3/4;
+beta_a=1/4; beta_b=1/4;
+kBA=1/2; kAB=1/2;
+params = [n,kAA,kBA,beta_a,kBB,kAB,beta_b];
+maxval_B=2.25; logvals=logspace(-2,log10(maxval_B),200);
+linvals=linspace(0.01,maxval_B,300);
+B_vals=[0 linvals]; A_vals=[0 linvals];
+[real_nonnegroots_f1,real_nonnegroots_f2]=fcn_nullclines_double_inhib(A_vals,B_vals,params);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Polynomial rootfinding is rather fast, for 200 input values, the calculation takes 35 seconds on my laptop (Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz, 2601 Mhz, 2 Core(s)).&lt;/p&gt;
+
+&lt;p&gt;Next we can visualize the nullclines and their intersections that are the fixed points of the model by the function &lt;em&gt;fcn_plot_double_inhib&lt;/em&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;parnames='$[n, k_{AA}, k_{BA},\beta_a, k_{BB},k_{AB},\beta_b]=$';
+legend_str={'dA/dt=0,stable','dA/dt=0,unstable','dA/dt=0,stable'};
+plot_pars={22,3,5,parnames,legend_str,0.02};
+fcn_plot_double_inhib(B_vals,real_nonnegroots_f1,A_vals,...
+    real_nonnegroots_f2,params,plot_pars,'vectorfield')
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The flag ‘vectorfield’ tells the function to evaluate the algebraic equations that are the right-hand side of the differential equations showing the value of time-derivatives at that point of the coordinate system.&lt;/p&gt;
+
+&lt;p&gt;For a parameter set with basal production rates falling within the bistable region of the bifurcation plot on Figure 2 for &lt;script type=&quot;math/tex&quot;&gt;n=2&lt;/script&gt; both variables have nullclines with 3 branches across the entire range.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/double_inhib_bistable_symm_vectorfield_n4.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The stable branches are shown by thicker markers (green and blue) and the unstable ones by dashed-dotted thinner lines. The intersections of the stable branches have to be the fixed points of the system.&lt;br /&gt;
+It is interesting to visualize this as well and also the basins of attractions of the fixed points. To do this we numerically integrate the ODEs from a grid of initial conditions and store the solutions in the cell &lt;em&gt;trajectories&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;initvals=linspace(0,2.25,16); tspan=0:0.01:20; initvals_perms=permn(initvals,2);
+options = odeset('RelTol',1e-4); % ,'AbsTol',at
+trajectories=cell(1,size(initvals_perms,1));
+
+for initv1=1:size(initvals_perms,1)
+    disp(initv1/size(initvals_perms,1)); x0=initvals_perms(initv1,:);
+    [t,x]=ode45(@(t,x)fcn_odes_double_inhib(t,x,params),tspan, x0);
+    trajectories{initv1}=x;
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For the parameter set above the trajectories look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/double_inhib_bistable_symm_manytrajs_n4.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can see how the unstable branches are the ‘frontiers’ of the basins of attraction.&lt;/p&gt;
+
+&lt;p&gt;An interesting case is a parameter set when the nullcline don’t just intersect at given points, but overlap along a whole section:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/double_inhib_bistable_symm_trajs_n3_vectorfield.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this case the overlapping section of the nullclines are all fixed points, so trajectories in the basin of attraction converge to different points of this line. This means (I think) there are infinitely many stable solutions that converge on the points of this line section in this region of the phase space. It would be interesting to explore what this means in terms of the polynomials.&lt;/p&gt;
+
+&lt;p&gt;An interesting question is what if we couple more than 2 bistable components. Would we get multistability with more than 4 fixed points? I might explore this question in a future post.&lt;/p&gt;
+
+&lt;p&gt;The functions and the main script are available on &lt;a href=&quot;https://github.com/mbkoltai/multistable_coupled_toggle&quot;&gt;GitHub&lt;/a&gt; and they can be downloaded and used in MATLAB.&lt;/p&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;gardner2000construction&quot;&gt;1.Gardner, T.S., Cantor, C.R., and Collins, J.J. (2000). Construction of a genetic toggle switch in Escherichia coli. Nature &lt;i&gt;403&lt;/i&gt;, 339.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;lu2013tristability&quot;&gt;2.Lu, M., Jolly, M.K., Gomoto, R., Huang, B., Onuchic, J., and Ben-Jacob, E. (2013). Tristability in cancer-associated microRNA-TF chimera toggle switch. The journal of physical chemistry B &lt;i&gt;117&lt;/i&gt;, 13164–13174.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
+
+&lt;!--- References  
+[1] [Gardner, T.S., Cantor, C.R. and Collins, J.J., 2000. Construction of a genetic toggle switch in Escherichia coli. Nature, 403(6767), p.339.](https://www.nature.com/articles/35002131)  
+[2] [Lu, M., Jolly, M.K., Gomoto, R., Huang, B., Onuchic, J. and Ben-Jacob, E., 2013. Tristability in cancer-associated microRNA-TF chimera toggle switch. The journal of physical chemistry B, 117(42), pp.13164-13174](https://www.researchgate.net/publication/236913602_Tristability_in_Cancer_Associated_miRNA-TF_Chimera_Toggle_Switch)
+---&gt;</content><author><name></name></author><category term="cancer" /><category term="sysbio" /><category term="systems-biology" /><summary type="html">Fun with multistability (MATLAB script + plots)</summary></entry><entry><title type="html">Visualizing defeat</title><link href="http://localhost:4000/uk-elect-2019/" rel="alternate" type="text/html" title="Visualizing defeat" /><published>2019-12-17T00:00:00+01:00</published><updated>2019-12-17T00:00:00+01:00</updated><id>http://localhost:4000/uk-elect-2019</id><content type="html" xml:base="http://localhost:4000/uk-elect-2019/">&lt;p&gt;I have created a number of plots with the aim of showing the most important trends in the defeat of Labour at the 2019 elections. This is not a political analysis yet: data visualization cannot (usually) provide causal explanations, but it can highlight what is it that needs to be explained.&lt;/p&gt;</content><author><name></name></author><category term="politics" /><category term="data-visualization" /><summary type="html">Trying to understand the the 2019 UK elections through data visualization</summary></entry><entry><title type="html">Exact calculation of steady states for stochastic logical models.</title><link href="http://localhost:4000/exastolog/" rel="alternate" type="text/html" title="Exact calculation of steady states for stochastic logical models." /><published>2019-10-16T00:00:00+02:00</published><updated>2019-10-16T00:00:00+02:00</updated><id>http://localhost:4000/exastolog</id><content type="html" xml:base="http://localhost:4000/exastolog/">&lt;p&gt;I recently submitted a manuscript that presents a calculation method to calculate the stationary solution of stochastic, continuous-time logical (Boolean) models.&lt;br /&gt;
 I adopted the mathematical technique from the field of chemical kinetics, specifically a number of articles from Jeremy Gunawardena and coauthors.
 These articles started with a small essay on the thresholding and switching properties of multisite (protein) phosphorylation &lt;a href=&quot;https://www.pnas.org/content/102/41/14617&quot;&gt;in PNAS&lt;/a&gt; back in 2005 and then with a beautiful paper in Nature on ‘&lt;a href=&quot;http://vcp.med.harvard.edu/papers/multistability.pdf&quot;&gt;unlimited multistability&lt;/a&gt;’ in 2009. In these articles the results were still somewhat &lt;em&gt;ad hoc&lt;/em&gt;, but they showed that the stationary solution of the kinetic equations describing post-translations modifications, which are nonlinear ordinary differential equations with bilinear terms complemented by some algebraic conservations, can be analytically obtained and that if we have multisite species there is no obvious limit to the number of stable steady states that these systems have.
 Later on the results in these papers were generalized, culminating in the paper ‘&lt;a href=&quot;http://vcp.med.harvard.edu/papers/jg-lap-dyn.pdf&quot;&gt;Laplacian dynamics on general graphs&lt;/a&gt;’ (2013) where the results are most systematically summarized.&lt;/p&gt;
@@ -128,7 +272,7 @@ In my next posts I want to address this question of connecting a model of the ci
 &lt;li&gt;&lt;span id=&quot;stamatisremarks&quot;&gt;3.Stamatis, G. (1998). Some remarks upon the article of Alan Freeman ’Marx without equilibrium.’ Political Economy &lt;i&gt;3&lt;/i&gt;, 21–23.&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span id=&quot;stamatiscategories&quot;&gt;4.Stamatis, G. (1999). The so-called Temporal Single System (TSS) the so-called
 Standard Simultaneous Methodology (SSM) and the correct definition of labour values. Political Economy &lt;i&gt;3&lt;/i&gt;, 23–44.&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;FOLEY1982300&quot;&gt;5.Foley, D.K. (1982). Realization and accumulation in a Marxian model of the circuit of capital. Journal of Economic Theory &lt;i&gt;28&lt;/i&gt;, 300–319.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="economic-reproduction" /><category term="classical-political-economy" /><category term="marxian-economics" /><category term="prices-of-production" /><category term="transformation-problem" /><category term="economic-dynamics" /><summary type="html">Paradoxical (or not) dynamical properties of sequentially defined values</summary></entry><entry><title type="html">A toy model of dynamic prices of production</title><link href="http://localhost:4000/dynamic-prodprice-simplerepr/" rel="alternate" type="text/html" title="A toy model of dynamic prices of production" /><published>2019-01-12T00:00:00+01:00</published><updated>2019-01-12T00:00:00+01:00</updated><id>http://localhost:4000/dynamic-prodprice-simplerepr</id><content type="html" xml:base="http://localhost:4000/dynamic-prodprice-simplerepr/">&lt;p&gt;I have not posted lately on A. Trigg’s book on reproduction schemas as I got into reading on the (in)famous ‘transformation problem’ and could not resist playing with some models in the literature. In one sentence the transformation problem is about whether the claim that the value of commodities is indirectly or directly determined by the average labour time needed for their production (+ non-labour inputs) is compatible with the observation/expectation that profit rates across sectors with different labour/capital ratios would tend toward equalization. I will not discuss this problem per se in this post, there is a lot of literature available on that, although this model can be regarded as a solution to the ‘transformation problem’.
+&lt;li&gt;&lt;span id=&quot;FOLEY1982300&quot;&gt;5.Foley, D.K. (1982). Journal of Economic Theory &lt;i&gt;28&lt;/i&gt;, 300–319.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="economic-reproduction" /><category term="classical-political-economy" /><category term="marxian-economics" /><category term="prices-of-production" /><category term="transformation-problem" /><category term="economic-dynamics" /><summary type="html">Paradoxical (or not) dynamical properties of sequentially defined values</summary></entry><entry><title type="html">A toy model of dynamic prices of production</title><link href="http://localhost:4000/dynamic-prodprice-simplerepr/" rel="alternate" type="text/html" title="A toy model of dynamic prices of production" /><published>2019-01-12T00:00:00+01:00</published><updated>2019-01-12T00:00:00+01:00</updated><id>http://localhost:4000/dynamic-prodprice-simplerepr</id><content type="html" xml:base="http://localhost:4000/dynamic-prodprice-simplerepr/">&lt;p&gt;I have not posted lately on A. Trigg’s book on reproduction schemas as I got into reading on the (in)famous ‘transformation problem’ and could not resist playing with some models in the literature. In one sentence the transformation problem is about whether the claim that the value of commodities is indirectly or directly determined by the average labour time needed for their production (+ non-labour inputs) is compatible with the observation/expectation that profit rates across sectors with different labour/capital ratios would tend toward equalization. I will not discuss this problem per se in this post, there is a lot of literature available on that, although this model can be regarded as a solution to the ‘transformation problem’.
 I want to write down the equations of a dynamical model proposed in Kliman [1988] with numerical examples (but without the equations explicitly), of prices of production where the aggregate equalities (total price) = (total value) and (total surplus value) = (total profit) are satisfied, total supply can be sold in each period of production, and the balancing condition (see Eq. \eqref{balancing_cond}) between the two sectors of the economy is also met.
 The model has the following assumptions and properties:&lt;br /&gt;
 1) value is expressed in money, there is only one accounting system&lt;br /&gt;
@@ -1174,93 +1318,4 @@ The simple answer is: use MathJax that has a syntax almost identical to LaTeX. M
     \begin{bmatrix} l_1 &amp; l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
     + \begin{bmatrix} da\\ dh + C_k \end{bmatrix} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;A good resource for different formulae &lt;a href=&quot;https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&quot;&gt;is here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="github-blog" /><summary type="html">easiest way to embed equations in posts</summary></entry><entry><title type="html">The reproduction schema and the ‘Keynesian multiplier’, part 1</title><link href="http://localhost:4000/reprod_multipl/" rel="alternate" type="text/html" title="The reproduction schema and the 'Keynesian multiplier', part 1" /><published>2018-09-20T00:00:00+02:00</published><updated>2018-09-20T00:00:00+02:00</updated><id>http://localhost:4000/reprod_multipl</id><content type="html" xml:base="http://localhost:4000/reprod_multipl/">&lt;p&gt;In his book &lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;&lt;em&gt;Marxian reproduction schema: money and aggregate demand in a capitalist economy&lt;/em&gt;&lt;/a&gt; Andrew Trigg mathematically formalizes models of (simple and expanded) reproduction of total social capital coming from classical political economy, and how they connect to the ‘Keynesian’ idea of the multiplier effect of investment demand. The reproduction schema was first proposed in a consistent form in Volume 2 of Marx’s Capital, and later put into a mathematical form by Sraffa, Leontieff and other authors.
-I have always been interested in these reproduction schemas and how supply (total output) and demand can be matched if the total output is increasing, that is if there is capital accumulation. I want to go step by step through the derivation in Trigg’s book, discussing the meaning of the terms introduced along the way. In this post I will discuss the derivation of the ‘Keynesian multiplier’ that relates investment demand to (total) net income.&lt;/p&gt;
-
-&lt;p&gt;The basic aim of this analysis is to connect the ‘multiplier’ relationship between investment and total income with a 2-sector (consumption goods and capital goods) model of economic reproduction, where all capital and labour is reproduced and the capital stock is potentially incremented.&lt;/p&gt;
-
-&lt;p&gt;In a one-sector model of the economy we have (money units in ‘$’)&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Periods&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Constant capital &lt;script type=&quot;math/tex&quot;&gt;C_1&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Variable capital &lt;script type=&quot;math/tex&quot;&gt;V_1&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Surplus value &lt;script type=&quot;math/tex&quot;&gt;S_1&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Net income &lt;script type=&quot;math/tex&quot;&gt;Y_1&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Net investment &lt;script type=&quot;math/tex&quot;&gt;I_1&lt;/script&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;4000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;2000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;At this point the reproduction of constant capital is not considered, only ‘net income’ (&lt;em&gt;Y&lt;/em&gt;, I will drop the subscripts here as there is only one department) and its relation to net investment (accumulation). Net income is all income paid in the economy, made up of wages (variable capital, &lt;em&gt;V&lt;/em&gt;) and profit (surplus value, &lt;em&gt;S&lt;/em&gt;). The ‘multiplier’ is the relationship of net investment that happens from the &lt;em&gt;next&lt;/em&gt; period of production. Then the ‘Keynesian income multiplier’ is:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;Y = \frac{1}{1-b}I
-\tag{1}\label{eq1}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Where &lt;em&gt;Y&lt;/em&gt; is again net income (&lt;em&gt;Y=S+V&lt;/em&gt;), &lt;em&gt;I&lt;/em&gt; investment and &lt;em&gt;b&lt;/em&gt; is the ‘propensity to consume’. This last term was not very clear to me: does it mean the fraction of net income going to workers’ consumption or all consumption? For the identity to work out it has to be&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;b = \frac{V+S-I}{V+S} = \frac{Y-I}{Y} = 1 - I/Y
-\tag{2}\label{eq2}&lt;/script&gt;,&lt;br /&gt;
-so &lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt; takes into account &lt;em&gt;all&lt;/em&gt; income spent on consumption, or in other words the share of wages + profit spent on consumption, assuming all wages are spent on consumption.&lt;/p&gt;
-
-&lt;p&gt;This is a mathematical identity, since &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{1-(1 - I/Y)}I = Y&lt;/script&gt;. In other words, I don’t see a causal relationship here, in fact I would say the causality to be explained runs the other way: the investment in &lt;em&gt;Period 2&lt;/em&gt; is made possible by the realization of profits in &lt;em&gt;Period 1&lt;/em&gt;. I would say it has to be shown that everything can be sold with a profit in &lt;em&gt;Period 1&lt;/em&gt;, then some of this profit can be directed to new investment (and not to the consumption of owners who receive the profits) to increase the capital stock.
-Technically, we can say the ‘multiplier’ effect is 4-fold, 1/4 of the net income will be invested in the next period. However this is not a causal statement as far as I can see, but simply restating the fact that whatever fraction &lt;script type=&quot;math/tex&quot;&gt;\frac{I}{Y}&lt;/script&gt; is spent on investment out of total net income, the reciprocal ratio &lt;script type=&quot;math/tex&quot;&gt;\frac{Y}{I}&lt;/script&gt; will be - by definition - the reciprocal.&lt;/p&gt;
-
-&lt;p&gt;Now we can take the case of a 2-sector economy: the first ‘department’ &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; produces capital goods (means of production) and the second department &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; consumer goods.
-Then net income in the two departments are:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;Y_1 = V_1 + S_1 \tag{3}\label{eq3}&lt;/script&gt;&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;Y_2 = V_2 + S_2 \tag{4}\label{eq4}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Then if we apply the ‘propensity to consume’, &lt;em&gt;b&lt;/em&gt;, to total net income &lt;script type=&quot;math/tex&quot;&gt;Y=Y_1 + Y_2 = V_1 + S_1 + V_2 + S_2&lt;/script&gt;, the demand for the output of the two sectors &lt;script type=&quot;math/tex&quot;&gt;D(Y_i)&lt;/script&gt; can be expressed as fractions of net income as:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;D(Y_1) = (1-b)Y \tag{5}\label{eq5}&lt;/script&gt;&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;D(Y_2) = bY \tag{6}\label{eq6}&lt;/script&gt;&lt;br /&gt;
-The fraction of net income spent on consumption buys up the demand of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;, and the other part that of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;.
-Since the output here does not take into account the input from constant capital (machines, materials etc. that were built into the output), only the income components (&lt;script type=&quot;math/tex&quot;&gt;S+V&lt;/script&gt;), then the net income in the departments have to equal the demand for the output of the departments if the system is in equilibrium. This means that &lt;script type=&quot;math/tex&quot;&gt;Y_i=D(Y_i)&lt;/script&gt; and therefore&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;\frac{Y_2}{Y_1} = \frac{b}{1-b}   
-\tag{7}\label{eq7}&lt;/script&gt;&lt;br /&gt;
-Since in this formulation the income (=output) of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; is the same as total consumption &lt;script type=&quot;math/tex&quot;&gt;B&lt;/script&gt;, and the income (=output) of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; is the same as net investment &lt;script type=&quot;math/tex&quot;&gt;I&lt;/script&gt;, this formula describes a ‘multiplier’ relationship again, namely:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;B = \frac{b}{1-b}I
-\tag{8}\label{eq8}&lt;/script&gt;&lt;br /&gt;
-Trigg writes that the ‘traditional Keynesian multiplier’ rather relates total net income to investment, which can be obtained from the previous formula by considering that &lt;script type=&quot;math/tex&quot;&gt;B = Y - I&lt;/script&gt;, which then gives&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;Y = \frac{b}{1-b}I + I = \frac{1}{1-b}I,
-\tag{9}\label{eq9}&lt;/script&gt;&lt;br /&gt;
-yielding the formula obtained from the one-sector model. In other words the ‘multiplier relationship’ (which as I said above seems to me more an identity than a causal relationship) can be derived in a two-sector model.&lt;/p&gt;
-
-&lt;p&gt;The main problem with this description is that it takes no account of the role of constant capital (machines, materials etc whose value is ‘transferred into’ the gross output), which has to be also reproduced in each cycle of production, and even expanded if there is accumulation. This is so although there is now a department producing capital goods. I want to address this problem in my next post, using the reproduction schemas and input-output analysis.&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="economic-reproduction" /><category term="multiplier" /><category term="keynesian" /><category term="classical-political-economy" /><category term="marxian-economics" /><summary type="html">The 'Keynesian multiplier' in a one-sector model</summary></entry><entry><title type="html">Misgivings about world-systems theory</title><link href="http://localhost:4000/wst/" rel="alternate" type="text/html" title="Misgivings about world-systems theory" /><published>2018-09-11T00:00:00+02:00</published><updated>2018-09-11T00:00:00+02:00</updated><id>http://localhost:4000/wst</id><content type="html" xml:base="http://localhost:4000/wst/">&lt;p&gt;I want to write down a few misgivings I have about world-systems theory/analysis (WST), some of them analytical and some about its (usual) political consequences. &lt;br /&gt;
-While I read some of the writings of Immanuel Wallerstein (in fact translated his &lt;a href=&quot;http://www.eszmelet.hu/wp-content/uploads/2014/05/Wallerstein-%C3%BAj.pdf&quot;&gt;textbook&lt;/a&gt; on world-systems analysis into Hungarian) and Samir Amin, my knowledge of WST is more based on the works and political attitudes of its followers.
-These are more a set of impressions to organize my own thoughts and (maybe) help to elaborate them in more detail later on, than an attempt to engage WST on the level of academic debates: I am not involved in this field professionally, nor do I plan to be in the future. In this form some of these remarks might not do justice to the original and most refined texts of WST. But in my experience this is how the theory functions in the hands of many of its followers, especially when it is politically instrumentalized - and that happens more often than not to social theories. Also, many interesting historical and empirical works have been written in the WST framework that have a lot of value, despite some conceptual problems. After these caveats, here we go.&lt;/p&gt;
-
-&lt;p&gt;The first problem in my view - from which perhaps all others flow - is the excessive focus on states and geopolitical ‘blocs’. WI Robinson refers to this as the ‘Reification of the State and the Methodology of State Centrism’ &lt;a href=&quot;https://www.tandfonline.com/doi/full/10.1080/21598282.2017.1316512&quot;&gt;in this paper&lt;/a&gt;. In WST and related/descendant theories states are discussed as agents, and international relations are described as antagonistic relations between these states. There are several assumptions made here that all seem dubious. By using the language of countries as unified entities battling each other for influence and resources a structure is already imposed on world events that tends to lead to certain conclusions.&lt;br /&gt;
-WI Robinson brings up the examples of NAFTA, conflicts over agricultural subsidies between Brazil and the US, and in general how the ‘BRICS’ phenomenon is often analyzed on much of the traditional ‘anti-imperialist’ left.
-NAFTA would sometimes be described as ‘the US’ exploiting or oppressing ‘Mexico’, but this is very misleading: some of the most intense lobbying for NAFTA came from Mexican corporations eager to form connections with American ones and to have access to US financial and product markets. No doubt, many large American companies stood to gain from the free trade agreement as well, but it was not at all a one-sided affair.
-Large parts of American society - think of industrial workers or smaller farms in the US - arguably suffered from the effects of the agreement, and so did small scale Mexican agriculture. Mexican workers - many of them former peasants probably - drawn into the sweatshop system building up by the inflow of American (and other) capital lost in many ways (uprooting of their previous environment, harshly exploitative new working conditions), although within some years probably saw rising incomes too. Some of the urban middle classes probably gained again as they could fill new IT/administrative positions due to the growing internationalization of the Mexican economy, while small business owners often lost out. The point is, trying to understand the process as the ‘core’ exploiting the ‘semi-periphery’ doesn’t really help. There are complex shifts going on within both the ‘core’ and the semi-peripheral country with some groups gaining in the latter and losing out in the former and vice versa. As there is excessive focus on states and the (real, expected or imagined) conflicts between them, the internal relationships within these states are neglected.&lt;/p&gt;
-
-&lt;p&gt;Which brings me to the second point, and that is the dividing up of the world economy into ‘core’, ‘semi-periphery’ and ‘periphery’. This classification has some merits as it points to some typical differences in the industrial and class structures of the countries assigned to these subgroups. My problem is how this classification then becomes an ontology and eventually the basis of a political credo. &lt;br /&gt;
-The modern world system developed with industrializing Europe and North America pillaging and thereby ‘peripheralizing’ much of the rest of the world, no doubt. But capital accumulation enforced by market competition is a universal ‘algorithm’ that has no nationality. While a hundred (and even fifty) years ago most international investment was within the capitalist core (Europe-North America, later joined by Japan), today we see a very different picture. Large parts of East Asia have become thoroughly industrialized. Some Chinese, Indian, South Korean or Brazilian companies are among the world’s largest, and capital is flowing in all directions: within the ‘core’, from the ‘core’ to ‘(semi)periphery’, but also from the former ‘periphery’ to the ‘core’. &lt;br /&gt;
-In absolute size the Chinese economy is now bigger than the American if we use ‘GDP (PPP)’ and around 2/3 of the American by nominal GDP. Per capita income level is obviously much lower, but there are growing urban areas in Asia where it is nearing Western levels. Meanwhile incomes for the lower 70-80-90% in ‘core’ countries in the last 30-40 years have, on average, grown much less than in the preceding decades, due to the slowdown of growth (it’s less clear &lt;a href=&quot;http://journals.sagepub.com/doi/abs/10.1177/0309816815587077&quot;&gt;on a closer look&lt;/a&gt;  to what extent distributional changes have contributed). These two facts were related by the famous &lt;a href=&quot;https://www.gc.cuny.edu/CUNY_GC/media/LISCenter/brankoData/wber_final.pdf&quot;&gt;‘Elephant chart’ of M. Brankovic&lt;/a&gt;.
-Much of Guangzhou or Shanghai is less ‘peripheral’ in terms of its infrastructure by now than Detroit, and income differences between coastal California and the depressed former mining towns of West Virginia are probably larger than between the American and Chinese average.&lt;br /&gt;
-Surely global capitalism is a hierarchical system historically as well as today, but these hierarchies are constantly shifting and rearranging and the status of a region as ‘core’ or ‘(semi)peripheral’ is not carved into stone. This should be trivial, but for much of the left by now the hierarchic nature of global capitalism seems to be their main argument against ‘the system’, along with the claim that ‘the (semi)periphery can never catch up to the core’.
-But this is not always true: South Korea, Japan, Singapore, Taiwan &lt;em&gt;did&lt;/em&gt; catch up (in most ways) and major regions of China are arguably on their way there. One can point to ‘special geopolitical circumstances’, but historical circumstances are always ‘special’ in one way or another.&lt;br /&gt;
-More generally, if opposition to capitalism is opposition to underdevelopment, ie. the &lt;em&gt;lack&lt;/em&gt; of capitalist development (along the lines of: the (semi)periphery does not get its ‘rightful lot’), this seems a very incoherent position, at least coming from socialists, which WST followers typically are. First, it idealizes capitalist development in the core, that is far more precarious than implied by this picture (cf. the fate of deindustrialized regions in Europe and North America) and second it seems to forget that its fabric is the same: wage labour in the service and as a function of profit-making.&lt;/p&gt;
-
-&lt;p&gt;That brings me to the political ramifications of WST typical on the (tiny) Eastern European academic/intellectual left, and in general the anti-imperialist left (in its more academic variants) that heavily leans on WST.
-As international developments are mostly read as conflicts between states belonging to either the core or the (semi)periphery, and globalization is seen to be dominated by the US or the core in general, then the growth of non-core national economies is automatically read as a challenge to American (Euro-American) hegemony. It is already doubtful to me if this is the best way to describe a process where the major development is the growing integration of markets by transnational corporations. But even worse, another step is often  taken and the growth of non-core national economies, eg. the ‘BRICS’ is now seen as an ‘alternative’ to ‘American globalization’. What is essentially global competition for market share between transnational companies, some of them headquartered in the BRICS (and other non-Western countries), is regarded as a replay of anti-imperial struggle. In fact, what is happening is the growing integration of these countries within one world market and the formation of global corporations, ie. the crystallization of a &lt;em&gt;truly global capitalist system&lt;/em&gt;, not its challenging by some sort of alternative. &lt;br /&gt;
-But as the rigid classification of the world from WST (into core and periphery) and its state-centric view of globalization comes together with older anti-imperialist sympathies and - in Eastern Europe - nostalgia for the Soviet Union, this leads to a projection of political desires of the left onto states - typically Russia (or sometimes China) - that are often conservative, nationalist and highly oligarchic. A rather bizarre combination.&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="world-systems-theory" /><summary type="html">Doubts on the validity of world systems theory today</summary></entry></feed>
+&lt;p&gt;A good resource for different formulae &lt;a href=&quot;https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&quot;&gt;is here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="github-blog" /><summary type="html">easiest way to embed equations in posts</summary></entry></feed>
