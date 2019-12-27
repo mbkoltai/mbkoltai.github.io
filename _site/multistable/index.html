@@ -9,8 +9,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="Fun with multistability (MATLAB script + plots)" />
-    <meta property="og:description" content="Fun with multistability (MATLAB script + plots)" />
+    <meta name="description" content="Fun with multistability (explanation + MATLAB script + plots)" />
+    <meta property="og:description" content="Fun with multistability (explanation + MATLAB script + plots)" />
     
     <meta name="author" content="mbkoltai.github.io" />
 
@@ -44,15 +44,15 @@
 <meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="Generating multistability by coupling self-activating genetic components" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Fun with multistability (MATLAB script + plots)" />
-<meta property="og:description" content="Fun with multistability (MATLAB script + plots)" />
+<meta name="description" content="Fun with multistability (explanation + MATLAB script + plots)" />
+<meta property="og:description" content="Fun with multistability (explanation + MATLAB script + plots)" />
 <link rel="canonical" href="http://localhost:4000/multistable/" />
 <meta property="og:url" content="http://localhost:4000/multistable/" />
 <meta property="og:site_name" content="mbkoltai.github.io" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-12-25T00:00:00+01:00" />
 <script type="application/ld+json">
-{"description":"Fun with multistability (MATLAB script + plots)","@type":"BlogPosting","url":"http://localhost:4000/multistable/","headline":"Generating multistability by coupling self-activating genetic components","dateModified":"2019-12-25T00:00:00+01:00","datePublished":"2019-12-25T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/multistable/"},"@context":"http://schema.org"}</script>
+{"description":"Fun with multistability (explanation + MATLAB script + plots)","@type":"BlogPosting","url":"http://localhost:4000/multistable/","headline":"Generating multistability by coupling self-activating genetic components","dateModified":"2019-12-25T00:00:00+01:00","datePublished":"2019-12-25T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/multistable/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -85,12 +85,10 @@
   <h1>Generating multistability by coupling self-activating genetic components</h1>
 
   <div class="entry">
-    <p>Creating multistability with 2/3/4 stable fixed points by connecting self-activating genes via double inhibition.</p>
+    <!--- comments like this --->
+<p>This <a href="https://github.com/mbkoltai/multistable_coupled_toggle">repository</a> contains MATLAB scripts to model the stationary and dynamical behavior of a toggle switch <a href="#gardner2000construction">[1]</a> where the two genes (variables) inhibit each other but also have nonlinear self-activation. This is an abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.</p>
 
-<!--- comments like this --->
-<p>This repository contains MATLAB scripts to model the stationary and dynamical behavior of a toggle switch <a href="#gardner2000construction">[1]</a> where the two genes (variables) inhibit each other but also have nonlinear self-activation. This is an abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.</p>
-
-<p>My idea (coming from this paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two ‘S’ letters, one aligned with the <script type="math/tex">x</script> axis, the other with the <script type="math/tex">y</script> axis - how many times can they intersect?</p>
+<p>My idea (coming from this <a href="#lu2013tristability">[2]</a> paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two ‘S’ letters, one aligned with the <script type="math/tex">x</script> axis, the other with the <script type="math/tex">y</script> axis - how many times can they intersect?</p>
 
 <p>In the main script <a href="https://github.com/mbkoltai/multistable_coupled_toggle/blob/master/multistable.m">multistable.m</a> we can first experiment with the parameters of a single self-activating gene: the cooperativity parameter (<script type="math/tex">n</script>), the threshold of activation (<script type="math/tex">K</script>) and the rate of basal activation (transcription/translation) of the gene (<script type="math/tex">\mathbf{\beta}</script>). The ODE for a single gene is:<br />
 <script type="math/tex">\frac{dx(t)}{dt} = \beta + \frac{x(t)^n}{x(t)^n + K^n} - x(t)
