@@ -3,7 +3,7 @@ layout: post
 title: Generating multistability by coupling self-activating genes
 comments: true
 excerpt: Fun with multistability (explanation + MATLAB scripts + plots)
-tags: [cancer, sysbio, systems-biology]
+tags: [sysbio, systems-biology, nonlinear-dynamics, multistability, kinetics]
 mathjax: true
 ---
 
