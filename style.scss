@@ -18,21 +18,25 @@ html {
 }
 
 body {
-	background: $white;
-  font: 19px/1.4 $garamond;
+	background: #F2F4F4;
+  font: 20px/1.4 $garamond;
   color: $black;
+}
+
+.inner {
+  max-width: 75%;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 75%;
   padding: 0 10px;
-  width: 100%;
+  width: 75%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $garamond;
-  color: $darkGray;
+  color: $black;
   font-weight: bold;
 
   line-height: 1.7;
@@ -61,7 +65,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $blue;
 }
 
 p {

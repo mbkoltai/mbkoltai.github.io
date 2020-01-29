@@ -74,21 +74,25 @@ html {
 }
 
 body {
-  background: #fff;
-  font: 19px/1.4 Garamond, sans-serif;
+  background: #F2F4F4;
+  font: 20px/1.4 Garamond, sans-serif;
   color: #000;
+}
+
+.inner {
+  max-width: 75%;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 75%;
   padding: 0 10px;
-  width: 100%;
+  width: 75%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Garamond, sans-serif;
-  color: #333;
+  color: #000;
   font-weight: bold;
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -117,7 +121,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #666;
+  color: #4183C4;
 }
 
 p {
