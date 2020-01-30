@@ -3,7 +3,7 @@ layout: post
 title: Generating multistability by coupling self-activating genes
 comments: true
 excerpt: Fun with multistability (explanation + MATLAB scripts + plots)
-tags: [sysbio, systems-biology, nonlinear-dynamics, multistability, kinetics]
+tags: [systems-biology, nonlinear-dynamics, multistability, kinetics]
 mathjax: true
 ---
 
@@ -75,6 +75,7 @@ Note that as we analyze the system in 2D now the basal production rate is a sing
 Where the two nullclines intersect we have a global fixed point: both variables have 0 time derivatives at these intersection points.
 
 ![_config.yml]({{ site.baseurl }}/images/drawing_nullclines.png)
+
 **Figure 3: Sketch of intersecting nullclines**
 
 We can have up to 9 intersection points and 4 of them can be intersections of the stable branches of the nullclines, shown by the green circles, so these will be stable fixed points.

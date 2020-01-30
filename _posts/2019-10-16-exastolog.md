@@ -3,7 +3,7 @@ layout: post
 title: Exact calculation of steady states for stochastic logical models.
 comments: true
 excerpt: Exact method to solve stochastic continuous-time logical models
-tags: [cancer, sysbio, systems-biology]
+tags: [cancer, systems-biology, kinetics, tools]
 ---
 
 I recently submitted a manuscript that presents a calculation method to calculate the stationary solution of stochastic, continuous-time logical (Boolean) models.  

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expanded reproduction and the Kalecki principle
-tags: political-economy economic-models economic-reproduction multiplier keynesian classical-political-economy marxian-economics kalecki effective-demand investment-demand
+tags: political-economy economic-models classical-political-economy marxian-economics kalecki demand
 excerpt: The identity between profits and spending on investment and out-of-profit consumption
 secondary: ecopol
 mathjax: true
