@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dynamic behavior of sequentially determined values
-tags: political-economy economic-models economic-reproduction classical-political-economy marxian-economics transformation-problem
+tags: political-economy economic-models classical-political-economy marxian-economics transformation-problem
 excerpt: Paradoxical (or not) dynamical properties of sequentially defined values
 secondary: ecopol
 mathjax: true

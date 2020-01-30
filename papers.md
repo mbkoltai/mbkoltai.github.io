@@ -29,7 +29,7 @@ _M Koltai_, V Noel, A Zinovyev, L Calzone, E Barillot
 
 ## Talks at conferences
 
-**Ensemble modeling for drug resistance and sensitivity in colon cancer cell lines**
+**Ensemble modeling for drug resistance and sensitivity in colon cancer cell lines**  
 [*INCOME2018: Integrative pathway modeling in systems biology and systems medicine*](http://www.integrative-pathway-models.de/meetings/1st-income-conference-and-hackathon/program/index.html)  
 15/10/2018, Bernried am Starnberger See, Germany
 
