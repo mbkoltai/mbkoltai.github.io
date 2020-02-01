@@ -1,8 +1,8 @@
 /***************/
 /* MEYER RESET */
 /***************/
-@import url(http://fonts.googleapis.com/css?family=Oswald);
-@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+@import url("http://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -77,8 +77,8 @@ html {
 
 body {
   background: #F2F4F4;
-  font-family: 'EB+Garamond';
-  font: 20px/1.4 Garamond, sans-serif;
+  font-family: 'EB Garamond', serif;
+  font: 21px/1.4 EB Garamond;
   color: #000;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   color: #000;
   font-weight: bold;
   line-height: 1.7;
