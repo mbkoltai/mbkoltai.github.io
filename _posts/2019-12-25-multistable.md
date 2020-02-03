@@ -107,7 +107,7 @@ B_vals=[0 linvals]; A_vals=[0 linvals];
 [real_nonnegroots_f1,real_nonnegroots_f2]=fcn_nullclines_double_inhib(A_vals,B_vals,params);
 ```
 
-Polynomial rootfinding is rather fast, for 200 input values, the calculation takes 35 seconds on my laptop (Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz, 2601 Mhz, 2 Core(s)).
+Polynomial rootfinding is rather fast, for 200 input values, the calculation takes 35 seconds on my laptop (CPU @ 2.50GHz, 2601 Mhz, 2 Core(s)).
 
 Next we can visualize the nullclines and their intersections that are the fixed points of the model by the function *fcn\_plot\_double\_inhib*:
 ```MATLAB
@@ -122,8 +122,8 @@ The flag 'vectorfield' tells the function to evaluate the algebraic equations th
 
 For a parameter set with basal production rates falling within the bistable region of the bifurcation plot on Figure 2 for $$n=4$$ both variables have nullclines with 3 branches across the entire range.
 
-![_config.yml]({{ site.baseurl }}/images/double_inhib_bistable_symm_vectorfield_n4.jpg)
-**Figure 4: Inhibition-coupled bistable genes, parameter set resulting in 4 stable fixed points. Green and blue lines showing the stable branches of the nullclines, dash-dotted thinner lines the unstable ones. Vector field showing the derivatives of the two state variables.**
+<img src="https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/master/images/double_inhib_bistable_symm_vectorfield_n4.jpg" style="width:80%" alt="n4_vectorfield">
+**Figure 4: Inhibition-coupled bistable genes, parameter set resulting in 4 stable fixed points.** Green and blue lines showing the stable branches of the nullclines, dash-dotted thinner lines the unstable ones. Vector field showing the derivatives of the two state variables.
 
 The stable branches are shown by thicker markers (green and blue) and the unstable ones by dashed-dotted thinner lines. The intersections of the stable branches have to be the fixed points of the system.  
 It is interesting to visualize this as well and also the basins of attractions of the fixed points. To do this we numerically integrate the ODEs from a grid of initial conditions and store the solutions in the cell *trajectories*:
@@ -143,7 +143,7 @@ end
 For the parameter set above the trajectories look like this:  
 
 ![_config.yml]({{ site.baseurl }}/images/double_inhib_bistable_symm_manytrajs_n4.jpg)
-**Figure 5: Inhibition-coupled bistable genes, parameter set resulting in 4 stable fixed points. Trajectories from different initial conditions converging to one of the four fixed points.**
+**Figure 5: Inhibition-coupled bistable genes: parameter set resulting in 4 stable fixed points.**  Trajectories from different initial conditions converging to one of the four fixed points.
 
 We can see how the unstable branches are the 'frontiers' of the basins of attraction.
 

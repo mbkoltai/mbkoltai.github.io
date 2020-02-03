@@ -112,6 +112,6 @@ Therefore the value of inputs would not equal their original value, but would be
 In my next posts I want to address this question of connecting a model of the circuit of capital with these different methods of value calculation.
 
 
-### Reference
+### References
 
 {% bibliography --cited %}

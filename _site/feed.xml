@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-01T14:38:32+01:00</updated><id>http://localhost:4000/</id><title type="html">MIHÁLY KOLTAI</title><subtitle>[&quot;about&quot;]</subtitle><entry><title type="html">Generating multistability by coupling self-activating genes</title><link href="http://localhost:4000/multistable/" rel="alternate" type="text/html" title="Generating multistability by coupling self-activating genes" /><published>2019-12-25T00:00:00+01:00</published><updated>2019-12-25T00:00:00+01:00</updated><id>http://localhost:4000/multistable</id><content type="html" xml:base="http://localhost:4000/multistable/">&lt;!---This [repository](https://github.com/mbkoltai/multistable_coupled_toggle) contains MATLAB scripts to model the stationary and dynamical behavior of ---&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-04T00:24:20+01:00</updated><id>http://localhost:4000/</id><title type="html">MIHÁLY KOLTAI</title><subtitle>[&quot;about&quot;]</subtitle><entry><title type="html">Generating multistability by coupling self-activating genes</title><link href="http://localhost:4000/multistable/" rel="alternate" type="text/html" title="Generating multistability by coupling self-activating genes" /><published>2019-12-25T00:00:00+01:00</published><updated>2019-12-25T00:00:00+01:00</updated><id>http://localhost:4000/multistable</id><content type="html" xml:base="http://localhost:4000/multistable/">&lt;!---This [repository](https://github.com/mbkoltai/multistable_coupled_toggle) contains MATLAB scripts to model the stationary and dynamical behavior of ---&gt;
 &lt;p&gt;In this post I want to explore how we can generate a regulatory system that has several (more than 2) fixed points by coupling self-activating genes. It is an expanded model of a toggle switch &lt;a href=&quot;#gardner2000construction&quot;&gt;[1]&lt;/a&gt;: two genes (variables) that inhibit each other but also have nonlinear self-activation.
 The &lt;a href=&quot;https://github.com/mbkoltai/multistable_coupled_toggle&quot;&gt;scripts I wrote in MATLAB&lt;/a&gt; define a highly abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.&lt;/p&gt;
 
@@ -89,7 +89,7 @@ B_vals=[0 linvals]; A_vals=[0 linvals];
 [real_nonnegroots_f1,real_nonnegroots_f2]=fcn_nullclines_double_inhib(A_vals,B_vals,params);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Polynomial rootfinding is rather fast, for 200 input values, the calculation takes 35 seconds on my laptop (Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz, 2601 Mhz, 2 Core(s)).&lt;/p&gt;
+&lt;p&gt;Polynomial rootfinding is rather fast, for 200 input values, the calculation takes 35 seconds on my laptop (CPU @ 2.50GHz, 2601 Mhz, 2 Core(s)).&lt;/p&gt;
 
 &lt;p&gt;Next we can visualize the nullclines and their intersections that are the fixed points of the model by the function &lt;em&gt;fcn_plot_double_inhib&lt;/em&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;parnames='$[n, k_{AA}, k_{BA},\beta_a, k_{BB},k_{AB},\beta_b]=$';
@@ -103,8 +103,8 @@ fcn_plot_double_inhib(B_vals,real_nonnegroots_f1,A_vals,...
 
 &lt;p&gt;For a parameter set with basal production rates falling within the bistable region of the bifurcation plot on Figure 2 for &lt;script type=&quot;math/tex&quot;&gt;n=4&lt;/script&gt; both variables have nullclines with 3 branches across the entire range.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/double_inhib_bistable_symm_vectorfield_n4.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
-&lt;strong&gt;Figure 4: Inhibition-coupled bistable genes, parameter set resulting in 4 stable fixed points. Green and blue lines showing the stable branches of the nullclines, dash-dotted thinner lines the unstable ones. Vector field showing the derivatives of the two state variables.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/master/images/double_inhib_bistable_symm_vectorfield_n4.jpg&quot; style=&quot;width:80%&quot; alt=&quot;n4_vectorfield&quot; /&gt;
+&lt;strong&gt;Figure 4: Inhibition-coupled bistable genes, parameter set resulting in 4 stable fixed points.&lt;/strong&gt; Green and blue lines showing the stable branches of the nullclines, dash-dotted thinner lines the unstable ones. Vector field showing the derivatives of the two state variables.&lt;/p&gt;
 
 &lt;p&gt;The stable branches are shown by thicker markers (green and blue) and the unstable ones by dashed-dotted thinner lines. The intersections of the stable branches have to be the fixed points of the system.&lt;br /&gt;
 It is interesting to visualize this as well and also the basins of attractions of the fixed points. To do this we numerically integrate the ODEs from a grid of initial conditions and store the solutions in the cell &lt;em&gt;trajectories&lt;/em&gt;:&lt;/p&gt;
@@ -123,7 +123,7 @@ end
 &lt;p&gt;For the parameter set above the trajectories look like this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/double_inhib_bistable_symm_manytrajs_n4.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
-&lt;strong&gt;Figure 5: Inhibition-coupled bistable genes, parameter set resulting in 4 stable fixed points. Trajectories from different initial conditions converging to one of the four fixed points.&lt;/strong&gt;&lt;/p&gt;
+&lt;strong&gt;Figure 5: Inhibition-coupled bistable genes: parameter set resulting in 4 stable fixed points.&lt;/strong&gt;  Trajectories from different initial conditions converging to one of the four fixed points.&lt;/p&gt;
 
 &lt;p&gt;We can see how the unstable branches are the ‘frontiers’ of the basins of attraction.&lt;/p&gt;
 
@@ -267,7 +267,7 @@ But if they are not synchronized, the formalism would have to be more complex. W
 Therefore the value of inputs would not equal their original value, but would be - intuitively - some weighted average of past values of the inputs used by the individual circuits.
 In my next posts I want to address this question of connecting a model of the circuit of capital with these different methods of value calculation.&lt;/p&gt;
 
-&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
 
 &lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;giussani&quot;&gt;1.Giussani, P. (1998). Dynamic and Static Marxian Values. Political Economy &lt;i&gt;3&lt;/i&gt;, 5–19.&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span id=&quot;dumlevy&quot;&gt;2.Dumenil, G., and Levy, D. (2000). The Conservation of Value: A Rejoinder to Alan Freeman. Review of Radical Political Economics &lt;i&gt;32&lt;/i&gt;, 119–146.&lt;/span&gt;&lt;/li&gt;
@@ -375,9 +375,9 @@ Finally, since the price of total output is growing, there needs to be more mone
 
 &lt;h3 id=&quot;script&quot;&gt;Script&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/sequential_prices.m&quot;&gt;MATLAB script&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/sequential_prices.m&quot;&gt;MATLAB script&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.jstor.org/stable/40470553&quot;&gt;Giussani: The Determination of Prices of Production, International Journal of Political Economy, Volume 21, 1991&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://journals.sagepub.com/doi/10.1177/030981688803500106&quot;&gt;Kliman, McGlone: The transformation non-problem and the non-transformation problem, Capital &amp;amp; Class, Vol 12, Issue 2, 1988&lt;/a&gt;&lt;br /&gt;

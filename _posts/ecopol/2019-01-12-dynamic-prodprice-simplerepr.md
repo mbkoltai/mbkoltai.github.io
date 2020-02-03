@@ -102,9 +102,9 @@ Finally, since the price of total output is growing, there needs to be more mone
 
 ### Script
 
-[MATLAB script]({{ site.baseurl }}/images/sequential_prices.m)
+[MATLAB script](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/sequential_prices.m)
 
-### Reference
+### References
 
 [Giussani: The Determination of Prices of Production, International Journal of Political Economy, Volume 21, 1991](https://www.jstor.org/stable/40470553)  
 [Kliman, McGlone: The transformation non-problem and the non-transformation problem, Capital & Class, Vol 12, Issue 2, 1988](https://journals.sagepub.com/doi/10.1177/030981688803500106)  
