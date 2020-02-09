@@ -10,8 +10,11 @@ No plugins required.
 
 import glob
 import os
+import sys
 
-post_dir = '_posts/'
+# print(sys.argv[1])
+
+post_dir = sys.argv[1] # '_posts/' # '_posts/ecopol/'
 tag_dir = 'tag/'
 
 filenames = glob.glob(post_dir + '*md')
@@ -37,9 +40,9 @@ for filename in filenames:
 total_tags = set(total_tags)
 
 old_tags = glob.glob(tag_dir + '*.md')
-for tag in old_tags:
-    os.remove(tag)
-    
+#for tag in old_tags:
+#    os.remove(tag)
+
 if not os.path.exists(tag_dir):
     os.makedirs(tag_dir)
 

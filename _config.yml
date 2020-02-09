@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: MIHÁLY KOLTAI
+name: Mihály Koltai
 
 # Short bio or description (displayed in the header)
-description: [about]
+description: [personal website]
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: # https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/master/images/book_wordcloud.png
@@ -92,7 +92,7 @@ exclude:
 # plugins: ['jekyll/scholar']
 
 scholar:
-  style: cell-numeric.csl # biophysical-journal # _bibliography/numeric.csl
+  style: cell.csl # biophysical-journal # _bibliography/numeric.csl
   locale: en
 
   sort_by: none
@@ -103,7 +103,7 @@ scholar:
 
   source: ./_bibliography
   bibliography: references.bib
-  bibliography_template: ""
+  bibliography_template: " "
   replace_strings: true
   join_strings:    true
 

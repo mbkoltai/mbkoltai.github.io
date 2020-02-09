@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Generating multistability by coupling self-activating genes – MIHÁLY KOLTAI – about</title>
+    <title>Generating multistability by coupling self-activating genes – Mihály Koltai – personal website</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -12,7 +12,7 @@
     <meta name="description" content="Fun with multistability (explanation + MATLAB scripts + plots)" />
     <meta property="og:description" content="Fun with multistability (explanation + MATLAB scripts + plots)" />
     
-    <meta name="author" content="MIHÁLY KOLTAI" />
+    <meta name="author" content="Mihály Koltai" />
 
     
         
@@ -36,11 +36,11 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="MIHÁLY KOLTAI - about" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Mihály Koltai - personal website" href="/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Generating multistability by coupling self-activating genes | MIHÁLY KOLTAI</title>
+<title>Generating multistability by coupling self-activating genes | Mihály Koltai</title>
 <meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="Generating multistability by coupling self-activating genes" />
 <meta property="og:locale" content="en_US" />
@@ -48,11 +48,11 @@
 <meta property="og:description" content="Fun with multistability (explanation + MATLAB scripts + plots)" />
 <link rel="canonical" href="http://localhost:4000/multistable/" />
 <meta property="og:url" content="http://localhost:4000/multistable/" />
-<meta property="og:site_name" content="MIHÁLY KOLTAI" />
+<meta property="og:site_name" content="Mihály Koltai" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-25T00:00:00+01:00" />
+<meta property="article:published_time" content="2019-12-25T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"Fun with multistability (explanation + MATLAB scripts + plots)","@type":"BlogPosting","url":"http://localhost:4000/multistable/","headline":"Generating multistability by coupling self-activating genes","dateModified":"2019-12-25T00:00:00+01:00","datePublished":"2019-12-25T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/multistable/"},"@context":"http://schema.org"}</script>
+{"description":"Fun with multistability (explanation + MATLAB scripts + plots)","@type":"BlogPosting","url":"http://localhost:4000/multistable/","headline":"Generating multistability by coupling self-activating genes","dateModified":"2019-12-25T00:00:00+00:00","datePublished":"2019-12-25T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/multistable/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -65,8 +65,8 @@
           <a href="/" class="site-avatar"><img src="" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="/">MIHÁLY KOLTAI</a></h1>
-         <!--    <p class="site-description">about</p> -->
+            <h1 class="site-name"><a href="/">Mihály Koltai</a></h1>
+         <!--    <p class="site-description">personal website</p> -->
           </div>
 
           <nav>
@@ -86,10 +86,10 @@
 
   <div class="entry">
     <!---This [repository](https://github.com/mbkoltai/multistable_coupled_toggle) contains MATLAB scripts to model the stationary and dynamical behavior of --->
-<p>In this post I want to explore how we can generate a regulatory system that has several (more than 2) fixed points by coupling self-activating genes. It is an expanded model of a toggle switch <a href="#gardner2000construction">[1]</a>: two genes (variables) that inhibit each other but also have nonlinear self-activation.
+<p>In this post I want to explore how we can generate a regulatory system that has several (more than 2) fixed points by coupling self-activating genes. It is an expanded model of a toggle switch <a href="#gardner2000construction">(Gardner et al., 2000)</a>: two genes (variables) that inhibit each other but also have nonlinear self-activation.
 The <a href="https://github.com/mbkoltai/multistable_coupled_toggle">scripts I wrote in MATLAB</a> define a highly abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.</p>
 
-<p>My idea (coming from this <a href="#lu2013tristability">[2]</a> paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two ‘S’ letters, one aligned with the <script type="math/tex">x</script> axis, the other with the <script type="math/tex">y</script> axis - how many times can they intersect?</p>
+<p>My idea (coming from this <a href="#lu2013tristability">(Lu et al., 2013)</a> paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two ‘S’ letters, one aligned with the <script type="math/tex">x</script> axis, the other with the <script type="math/tex">y</script> axis - how many times can they intersect?</p>
 
 <p>In the main script <a href="https://github.com/mbkoltai/multistable_coupled_toggle/blob/master/multistable.m">multistable.m</a> we can first experiment with the parameters of a single self-activating gene: the cooperativity parameter (<script type="math/tex">n</script>), the threshold of activation (<script type="math/tex">K</script>) and the rate of basal activation (transcription/translation) of the gene (<script type="math/tex">\mathbf{\beta}</script>). The ODE for a single gene is:<br />
 <script type="math/tex">\frac{dx(t)}{dt} = \beta + \frac{x(t)^n}{x(t)^n + K^n} - x(t)
@@ -111,9 +111,9 @@ n_vals=[2:5 8 10]; % % range of values for cooperativity
 <pre><code class="language-MATLAB">[roots_real_nonnegat_matr,roots_all] = fcn_bistab_roots(beta_vals,n_vals,k_val);
 </code></pre>
 
-<p>Since I am solving here only for the stationary solution (steady state, fixed points) I am not numerically solving the ODE. Instead, within <em>fcn_bistab_roots</em>, I solve eq. \ref{ode_autoact} by setting the left hand side to 0 and rearranging the equation into polynomial form, which is:
-<script type="math/tex">x (x^n + K^n) - \beta (x^n + K^n) - x^n =  
-x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0</script></p>
+<p>Since I am solving here only for the stationary solution (steady state, fixed points) I am not numerically solving the ODE. Instead, within <em>fcn_bistab_roots</em>, I solve eq. \ref{ode_autoact} by setting the left hand side to 0 and rearranging the equation into polynomial form, which is:<br />
+<script type="math/tex">x (x^n + K^n) - \beta (x^n + K^n) - x^n =</script><br />
+<script type="math/tex">x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0</script></p>
 
 <p><script type="math/tex">x</script> here stands for the stationary value of <script type="math/tex">x(t)</script>.
 I solve this polynomial with MATLAB’s root-finding algorithm <script type="math/tex">root</script>.
@@ -137,8 +137,8 @@ With <em>fcn_plot_bifurc_diff_n_heatmap</em> we can visualize the results as hea
 
 <p>The lower threshold for the bistable range goes down while its extension grows with an increasing nonlinearity of the auto-activation.</p>
 
-<p>Now, as it was shown by one of the first landmark papers <a href="#gardner2000construction">[1]</a> of <a href="http://vcp.med.harvard.edu/timeline.html">modern</a> (&gt;2000) systems biology how two genes mutually inhibiting each other can lead to bistable behavior if the inhibition has a nonlinear (sigmoidal effect).
-In this <a href="#lu2013tristability">[2]</a> paper it was pointed out that if the auto-activation of these two genes already makes them bistable then coupling them can generate several stable fixed points.</p>
+<p>Now, as it was shown by one of the first landmark papers <a href="#gardner2000construction">(Gardner et al., 2000)</a> of <a href="http://vcp.med.harvard.edu/timeline.html">modern</a> (&gt;2000) systems biology how two genes mutually inhibiting each other can lead to bistable behavior if the inhibition has a nonlinear (sigmoidal effect).
+In this <a href="#lu2013tristability">(Lu et al., 2013)</a> paper it was pointed out that if the auto-activation of these two genes already makes them bistable then coupling them can generate several stable fixed points.</p>
 
 <p>To intuitively illustrate this point, before setting up a model, let’s call the two genes A and B and we visualize their nullclines as a function of the value of the other gene.
 Note that as we analyze the system in 2D now the basal production rate is a single value, we are not scanning through a range of values.
@@ -158,7 +158,7 @@ Where the two nullclines intersect we have a global fixed point: both variables 
 
 <p><script type="math/tex">f_A</script> and <script type="math/tex">f_B</script> are the self-activation functions, <script type="math/tex">f_{BA}</script> is the inhibition mechanism from <script type="math/tex">B</script> to <script type="math/tex">A</script> and <script type="math/tex">f_{AB}</script> vice versa. The basal production terms and the decay terms are as in eq. \ref{ode_autoact}.</p>
 
-<p>Expanding the activation and inhibition functions the full equations are:
+<p>Expanding the activation and inhibition functions the full equations are:<br />
 <script type="math/tex">\frac{dA}{dt} = \beta_A + \frac{A^n}{ A^n + k_{AA}^n } (1 + \frac{k_{BA}^n}{k_{BA}^n + B^n}) - A</script><br />
 <script type="math/tex">\frac{dB}{dt} = \beta_B + \frac{B^n}{ B^n + k_{BB}^n } (1 + \frac{k_{AB}^n}{k_{AB}^n + A^n} ) - B</script></p>
 
@@ -225,8 +225,8 @@ end
 
 <p>The functions and the main script are available on <a href="https://github.com/mbkoltai/multistable_coupled_toggle">GitHub</a> and they can be downloaded and used in MATLAB.</p>
 
-<ol class="bibliography"><li><span id="gardner2000construction">1.Gardner, T.S., Cantor, C.R., and Collins, J.J. (2000). Construction of a genetic toggle switch in Escherichia coli. Nature <i>403</i>, 339.</span></li>
-<li><span id="lu2013tristability">2.Lu, M., Jolly, M.K., Gomoto, R., Huang, B., Onuchic, J., and Ben-Jacob, E. (2013). Tristability in cancer-associated microRNA-TF chimera toggle switch. The journal of physical chemistry B <i>117</i>, 13164–13174.</span></li></ol>
+<ol class="bibliography"><li> </li>
+<li> </li></ol>
 
 <!--- References  
 [1] [Gardner, T.S., Cantor, C.R. and Collins, J.J., 2000. Construction of a genetic toggle switch in Escherichia coli. Nature, 403(6767), p.339.](https://www.nature.com/articles/35002131)  
@@ -252,6 +252,9 @@ end
   
     
     <a href="/tag/kinetics"><code class="highligher-rouge"><nobr>kinetics</nobr></code>&nbsp;</a>
+  
+    
+    <a href="/tag/complex-systems"><code class="highligher-rouge"><nobr>complex-systems</nobr></code>&nbsp;</a>
   
 ]</span>
 

@@ -1,12 +1,12 @@
 ---
 layout: tagpage
-title: "Tag: demand"
-tag: demand
+title: "Tag: ecology"
+tag: ecology
 robots: noindex
 ---
 ---
 layout: tagpage
-title: "Tag: demand"
-tag: demand
+title: "Tag: ecology"
+tag: ecology
 robots: noindex
 ---

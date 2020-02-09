@@ -3,7 +3,7 @@ layout: post
 title: Generating multistability by coupling self-activating genes
 comments: true
 excerpt: Fun with multistability (explanation + MATLAB scripts + plots)
-tags: [systems-biology, nonlinear-dynamics, multistability, kinetics]
+tags: systems-biology nonlinear-dynamics multistability kinetics complex-systems
 mathjax: true
 ---
 
@@ -37,11 +37,9 @@ We then run the calculation by calling the function *fcn\_bistab\_roots*:
 [roots_real_nonnegat_matr,roots_all] = fcn_bistab_roots(beta_vals,n_vals,k_val);
 ```
 
-Since I am solving here only for the stationary solution (steady state, fixed points) I am not numerically solving the ODE. Instead, within *fcn\_bistab\_roots*, I solve eq. \ref{ode_autoact} by setting the left hand side to 0 and rearranging the equation into polynomial form, which is:
-$$
-x (x^n + K^n) - \beta (x^n + K^n) - x^n =  
-x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0
-$$
+Since I am solving here only for the stationary solution (steady state, fixed points) I am not numerically solving the ODE. Instead, within *fcn\_bistab\_roots*, I solve eq. \ref{ode_autoact} by setting the left hand side to 0 and rearranging the equation into polynomial form, which is:  
+$$x (x^n + K^n) - \beta (x^n + K^n) - x^n =$$  
+$$x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0$$
 
 $$x$$ here stands for the stationary value of $$x(t)$$.
 I solve this polynomial with MATLAB's root-finding algorithm $$root$$.
@@ -88,7 +86,7 @@ $$ \frac{dB}{dt} = \beta_B + f_B (1 + f_{AB}) - B $$
 
 $$f_A$$ and $$f_B$$ are the self-activation functions, $$f_{BA}$$ is the inhibition mechanism from $$B$$ to $$A$$ and $$f_{AB}$$ vice versa. The basal production terms and the decay terms are as in eq. \ref{ode_autoact}.
 
-Expanding the activation and inhibition functions the full equations are:
+Expanding the activation and inhibition functions the full equations are:  
 $$ \frac{dA}{dt} = \beta_A + \frac{A^n}{ A^n + k_{AA}^n } (1 + \frac{k_{BA}^n}{k_{BA}^n + B^n}) - A $$  
 $$\frac{dB}{dt} = \beta_B + \frac{B^n}{ B^n + k_{BB}^n } (1 + \frac{k_{AB}^n}{k_{AB}^n + A^n} ) - B$$  
 

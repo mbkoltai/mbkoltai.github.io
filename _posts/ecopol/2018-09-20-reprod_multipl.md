@@ -1,13 +1,13 @@
 ---
 layout: post
-title: The reproduction schema and the 'Keynesian multiplier', part 1
+title: The reproduction schema and the 'Keynesian multiplier' (I)
 tags: political-economy economic-models classical-political-economy marxian-economics
-excerpt: The 'Keynesian multiplier' in a one-sector model
+excerpt: Multiplier effect with one sector
 secondary: ecopol
 mathjax: true
 ---
 
-In his book [*Marxian reproduction schema: money and aggregate demand in a capitalist economy*](http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663) Andrew Trigg mathematically formalizes models of (simple and expanded) reproduction of total social capital coming from classical political economy, and how they connect to the 'Keynesian' idea of the multiplier effect of investment demand. The reproduction schema was first proposed in a consistent form in Volume 2 of Marx's Capital, and later put into a mathematical form by Sraffa, Leontieff and other authors.
+In the book [*Marxian reproduction schema: money and aggregate demand in a capitalist economy*](http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663) Andrew Trigg mathematically formalizes models of (simple and expanded) reproduction of total social capital coming from classical political economy, and how they connect to the 'Keynesian' idea of the multiplier effect of investment demand. The reproduction schema was first proposed in a consistent form in Volume 2 of Marx's Capital, and later put into a mathematical form by Sraffa, Leontieff and other authors.
 I have always been interested in these reproduction schemas and how supply (total output) and demand can be matched if the total output is increasing, that is if there is capital accumulation. I want to go step by step through the derivation in Trigg's book, discussing the meaning of the terms introduced along the way. In this post I will discuss the derivation of the 'Keynesian multiplier' that relates investment demand to (total) net income.
 
 The basic aim of this analysis is to connect the 'multiplier' relationship between investment and total income with a 2-sector (consumption goods and capital goods) model of economic reproduction, where all capital and labour is reproduced and the capital stock is potentially incremented.
