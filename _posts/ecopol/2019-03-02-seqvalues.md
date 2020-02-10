@@ -6,6 +6,7 @@ excerpt: Weird properties of dynamic labor values
 secondary: ecopol
 mathjax: true
 ---
+
 In my [previous post](https://mbkoltai.github.io/dynamic-prodprice-simplerepr/) I discussed a simple model of sequentially defined prices of production. These production prices for any good are defined as the good's input cost (wages + non-labour costs) plus a markup equal to the rate of profit/surplus labor in the entire (two department) economy.
 As I discussed this model eventually converges to a stationary solution that is identical of the algebraic system of equations with identical input and output prices, ie.
 $$ \mathbf{p} = \mathbf{p}(\mathbf{A} + w \mathbf{l})(1+r)
@@ -105,13 +106,10 @@ Is this behavior of sequential values <<paradoxical>>?
 No matter how we answer this question, it certainly would be an exaggeration to claim that what we see here is - even an extremely simplified - model of economic dynamics.
 The technical coefficients of the system are defined independently from values, there are no feedback effects, and yet the system shows relatively complicated dynamic behavior already, depending on its initial value. This is not due to endogenous technical change or of disequilibrium between supply and demand, but simply to the dependence on the preceding state.
 
-Yet this can also be seen as an interesting feature of the sequential model, in contrast to the simultaneous one, namely that the periods are connected: the output price/value of one period is the input of the next. This suggests that it can be used in a dynamical model of the circuit(s) of capital {% cite FOLEY1982300 %}.
+Yet this can also be seen as an interesting feature of the sequential model, in contrast to the simultaneous one, namely that the periods are connected: the output price/value of one period is the input of the next. This suggests that it can be used in a dynamical model of the circuit(s) of capital {% cite foley1982realization %}.
 If we have only one circuit per sector like above, this assumes that all capitals in that sector are synchronized, which is clearly not the case in reality.
 But if they are not synchronized, the formalism would have to be more complex. When one circuit of capital is in the phase of production others are releasing new products to the market, which can devalue the inputs.
 Therefore the value of inputs would not equal their original value, but would be - intuitively - some weighted average of past values of the inputs used by the individual circuits.
 In my next posts I want to address this question of connecting a model of the circuit of capital with these different methods of value calculation.
-
-
-### References
 
 {% bibliography --cited %}

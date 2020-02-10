@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Generating multistability by coupling self-activating genes
-comments: true
-excerpt: Fun with multistability (explanation + MATLAB scripts + plots)
+excerpt: Fun with multistability (scripts & plots)
 tags: systems-biology nonlinear-dynamics multistability kinetics complex-systems
 mathjax: true
 ---
@@ -154,7 +153,7 @@ In this case the overlapping section of the nullclines are all fixed points, so 
 
 An interesting question is what if we couple more than 2 bistable components. Would we get multistability with more than 4 fixed points? I might explore this question in a future post.
 
-The functions and the main script are available on [GitHub](https://github.com/mbkoltai/multistable_coupled_toggle) and they can be downloaded and used in MATLAB.
+The script with its functions are available on [GitHub](https://github.com/mbkoltai/multistable_coupled_toggle) and they can be downloaded and used in MATLAB.
 
 {% bibliography --cited %}
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Exact calculation of steady states for stochastic logical models.
-comments: true
-excerpt: Exact method to solve stochastic continuous-time logical models
+excerpt: Exact solving by matrix calculations
 tags: cancer systems-biology kinetics tools
 ---
 

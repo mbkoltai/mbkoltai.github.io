@@ -92,15 +92,12 @@ exclude:
 # plugins: ['jekyll/scholar']
 
 scholar:
-  style: cell.csl # biophysical-journal # _bibliography/numeric.csl
+  style: assets/bibliography/ieee-with-url.csl # biophysical-journal # _bibliography/numeric.csl cell.csl
   locale: en
-
   sort_by: none
   order: ascending
-
   group_by: none
   group_order: ascending
-
   source: ./_bibliography
   bibliography: references.bib
   bibliography_template: " "
