@@ -104,7 +104,7 @@ As the numerical example above shows this can be satisfied in both cases.
 
 Is this behavior of sequential values <<paradoxical>>?
 No matter how we answer this question, it certainly would be an exaggeration to claim that what we see here is - even an extremely simplified - model of economic dynamics.
-The technical coefficients of the system are defined independently from values, there are no feedback effects, and yet the system shows relatively complicated dynamic behavior already, depending on its initial value. This is not due to endogenous technical change or of disequilibrium between supply and demand, but simply to the dependence on the preceding state.
+The technical coefficients of the system are defined independently from values, there are no feedback effects, and yet the system shows relatively complicated dynamic behavior already, depending on its initial value. This is not due to endogenous technical change or of disequilibrium between supply and demand, but simply to the dependence on the previous state.
 
 Yet this can also be seen as an interesting feature of the sequential model, in contrast to the simultaneous one, namely that the periods are connected: the output price/value of one period is the input of the next. This suggests that it can be used in a dynamical model of the circuit(s) of capital {% cite foley1982realization %}.
 If we have only one circuit per sector like above, this assumes that all capitals in that sector are synchronized, which is clearly not the case in reality.
