@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exact calculation of steady states for stochastic logical models
-excerpt: Matrix calculations instead of Monte Carlo
+title: Exact solving of stochastic continuous-time logical models
+excerpt: By a matrix method from chemical kinetics
 tags: cancer systems-biology kinetics tools
 ---
 
