@@ -100,10 +100,6 @@ scholar:
   group_order: ascending
   source: ./_bibliography
   bibliography: references.bib
-  bibliography_template: " "
-  replace_strings: true
-  join_strings:    true
-
   use_raw_bibtex_entry: false
 
 #  details_dir:    bibliography

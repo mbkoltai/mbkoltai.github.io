@@ -14,7 +14,7 @@ I did [my PhD](https://archiv.ub.uni-heidelberg.de/volltextserver/20847/) in com
 
 You can read about my published work in systems biology [here](https://mbkoltai.github.io/papers/) and posts on related topics [here](https://mbkoltai.github.io/blog/).
 
-From time to time I also post on economic and political topics [here](https://mbkoltai.github.io/ecopol).
+From time to time I also write on economic and political topics [here](https://mbkoltai.github.io/ecopol), where I try to combine qualitative social theory with quantitative analysis.
 
 # CV
 
