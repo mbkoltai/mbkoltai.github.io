@@ -182,7 +182,8 @@ img {
 
 code {
   font-family: Calibri, Aria, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
+  white-space: pre-wrap;
 }
 
 .gmnoprint img {

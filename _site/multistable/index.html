@@ -112,8 +112,7 @@ n_vals=[2:5 8 10]; % % range of values for cooperativity
 </code></pre>
 
 <p>Since I am solving here only for the stationary solution (steady state, fixed points) I am not numerically solving the ODE. Instead, within <em>fcn_bistab_roots</em>, I solve eq. \ref{ode_autoact} by setting the left hand side to 0 and rearranging the equation into polynomial form, which is:<br />
-<script type="math/tex">x (x^n + K^n) - \beta (x^n + K^n) - x^n =</script><br />
-<script type="math/tex">x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0</script></p>
+<script type="math/tex">x (x^n + K^n) - \beta (x^n + K^n) - x^n = x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0</script></p>
 
 <p><script type="math/tex">x</script> here stands for the stationary value of <script type="math/tex">x(t)</script>.
 I solve this polynomial with MATLAB’s root-finding algorithm <script type="math/tex">root</script>.
@@ -122,14 +121,14 @@ There cannot be more than 3 real and nonnegative roots of this polynomial, these
 <p>I wrote two functions to visualize the solutions as a function of the basal production rate <script type="math/tex">\beta</script>.
 With <em>fcn_plot_bifurc_diff_n_heatmap</em> we can visualize the results as heatmaps on separate subplots for the different values of the nonlinearity (cooperativity) parameter <script type="math/tex">n</script>:</p>
 
-<pre><code class="language-MATLAB">fcn_plot_bifurc_diff_n_heatmap(beta_vals,n_vals,k_val,roots_real_nonnegat_matr)
+<pre><code class="language-MATLAB">fcn_plot_bifurc_diff_n_heatmap(beta_vals, n_vals, k_val, roots_real_nonnegat_matr)
 </code></pre>
 
 <p><img src="/images/bifurc_heatmaps_autostim.jpg" alt="_config.yml" />
 <strong>Figure 1. Heatmaps showing the fixed points of a self-activating gene at different values of the cooperativity parameter. There are three bands corresponding to the three possible fixed points.</strong></p>
 
 <p>Or as lineplots where the unstable fixed points are shown by the red dotted lines, called by the command:</p>
-<pre><code class="language-MATLAB">fcn_plot_bifurc_diff_n(roots_real_nonnegat_matr,beta_vals,n_vals,k_val,plot_pars)
+<pre><code class="language-MATLAB">fcn_plot_bifurc_diff_n(roots_real_nonnegat_matr, beta_vals, n_vals,k_val,plot_pars)
 </code></pre>
 <p>and producing these plots:
 <img src="/images/bifurc_plots_autostim.jpg" alt="_config.yml" />
@@ -173,7 +172,7 @@ params = [n,kAA,kBA,beta_a,kBB,kAB,beta_b];
 maxval_B=2.25; logvals=logspace(-2,log10(maxval_B),200);
 linvals=linspace(0.01,maxval_B,300);
 B_vals=[0 linvals]; A_vals=[0 linvals];
-[real_nonnegroots_f1,real_nonnegroots_f2]=fcn_nullclines_double_inhib(A_vals,B_vals,params);
+[real_nonnegroots_f1,real_nonnegroots_f2] = fcn_nullclines_double_inhib(A_vals,B_vals,params);
 </code></pre>
 
 <p>Polynomial rootfinding is rather fast, for 200 input values, the calculation takes 35 seconds on my laptop (CPU @ 2.50GHz, 2601 Mhz, 2 Core(s)).</p>

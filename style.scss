@@ -128,7 +128,8 @@ img {
 
 code {
   font-family: $calibri;
-  font-size: 18px;
+  font-size: 16px;
+  white-space: pre-wrap;
 }
 
 // Fixes images in popup boxes from Google Translate

@@ -37,8 +37,7 @@ We then run the calculation by calling the function *fcn\_bistab\_roots*:
 ```
 
 Since I am solving here only for the stationary solution (steady state, fixed points) I am not numerically solving the ODE. Instead, within *fcn\_bistab\_roots*, I solve eq. \ref{ode_autoact} by setting the left hand side to 0 and rearranging the equation into polynomial form, which is:  
-$$x (x^n + K^n) - \beta (x^n + K^n) - x^n =$$  
-$$x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0$$
+$$x (x^n + K^n) - \beta (x^n + K^n) - x^n = x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0$$
 
 $$x$$ here stands for the stationary value of $$x(t)$$.
 I solve this polynomial with MATLAB's root-finding algorithm $$root$$.
@@ -48,7 +47,7 @@ I wrote two functions to visualize the solutions as a function of the basal prod
 With *fcn\_plot_bifurc_diff_n_heatmap* we can visualize the results as heatmaps on separate subplots for the different values of the nonlinearity (cooperativity) parameter $$n$$:
 
 ```MATLAB
-fcn_plot_bifurc_diff_n_heatmap(beta_vals,n_vals,k_val,roots_real_nonnegat_matr)
+fcn_plot_bifurc_diff_n_heatmap(beta_vals, n_vals, k_val, roots_real_nonnegat_matr)
 ```
 
 ![_config.yml]({{ site.baseurl }}/images/bifurc_heatmaps_autostim.jpg)
@@ -56,7 +55,7 @@ fcn_plot_bifurc_diff_n_heatmap(beta_vals,n_vals,k_val,roots_real_nonnegat_matr)
 
 Or as lineplots where the unstable fixed points are shown by the red dotted lines, called by the command:
 ```MATLAB
-fcn_plot_bifurc_diff_n(roots_real_nonnegat_matr,beta_vals,n_vals,k_val,plot_pars)
+fcn_plot_bifurc_diff_n(roots_real_nonnegat_matr, beta_vals, n_vals,k_val,plot_pars)
 ```
 and producing these plots:
 ![_config.yml]({{ site.baseurl }}/images/bifurc_plots_autostim.jpg)
@@ -101,7 +100,7 @@ params = [n,kAA,kBA,beta_a,kBB,kAB,beta_b];
 maxval_B=2.25; logvals=logspace(-2,log10(maxval_B),200);
 linvals=linspace(0.01,maxval_B,300);
 B_vals=[0 linvals]; A_vals=[0 linvals];
-[real_nonnegroots_f1,real_nonnegroots_f2]=fcn_nullclines_double_inhib(A_vals,B_vals,params);
+[real_nonnegroots_f1,real_nonnegroots_f2] = fcn_nullclines_double_inhib(A_vals,B_vals,params);
 ```
 
 Polynomial rootfinding is rather fast, for 200 input values, the calculation takes 35 seconds on my laptop (CPU @ 2.50GHz, 2601 Mhz, 2 Core(s)).

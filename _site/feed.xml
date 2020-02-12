@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-12T23:06:25+01:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Generating multistability by coupling self-activating genes</title><link href="http://localhost:4000/multistable/" rel="alternate" type="text/html" title="Generating multistability by coupling self-activating genes" /><published>2019-12-25T00:00:00+01:00</published><updated>2019-12-25T00:00:00+01:00</updated><id>http://localhost:4000/multistable</id><content type="html" xml:base="http://localhost:4000/multistable/">&lt;!---This [repository](https://github.com/mbkoltai/multistable_coupled_toggle) contains MATLAB scripts to model the stationary and dynamical behavior of ---&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-13T00:19:40+01:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Generating multistability by coupling self-activating genes</title><link href="http://localhost:4000/multistable/" rel="alternate" type="text/html" title="Generating multistability by coupling self-activating genes" /><published>2019-12-25T00:00:00+01:00</published><updated>2019-12-25T00:00:00+01:00</updated><id>http://localhost:4000/multistable</id><content type="html" xml:base="http://localhost:4000/multistable/">&lt;!---This [repository](https://github.com/mbkoltai/multistable_coupled_toggle) contains MATLAB scripts to model the stationary and dynamical behavior of ---&gt;
 &lt;p&gt;In this post I want to explore how we can generate a regulatory system that has several (more than 2) fixed points by coupling self-activating genes. It is an expanded model of a toggle switch &lt;a href=&quot;#gardner2000construction&quot;&gt;[1]&lt;/a&gt;: two genes (variables) that inhibit each other but also have nonlinear self-activation.
 The &lt;a href=&quot;https://github.com/mbkoltai/multistable_coupled_toggle&quot;&gt;scripts I wrote in MATLAB&lt;/a&gt; define a highly abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.&lt;/p&gt;
 
@@ -25,8 +25,7 @@ n_vals=[2:5 8 10]; % % range of values for cooperativity
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Since I am solving here only for the stationary solution (steady state, fixed points) I am not numerically solving the ODE. Instead, within &lt;em&gt;fcn_bistab_roots&lt;/em&gt;, I solve eq. \ref{ode_autoact} by setting the left hand side to 0 and rearranging the equation into polynomial form, which is:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;x (x^n + K^n) - \beta (x^n + K^n) - x^n =&lt;/script&gt;&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0&lt;/script&gt;&lt;/p&gt;
+&lt;script type=&quot;math/tex&quot;&gt;x (x^n + K^n) - \beta (x^n + K^n) - x^n = x^{n+1} - (1 + \beta) x^n + K^n x - \beta K^n = 0&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; here stands for the stationary value of &lt;script type=&quot;math/tex&quot;&gt;x(t)&lt;/script&gt;.
 I solve this polynomial with MATLAB’s root-finding algorithm &lt;script type=&quot;math/tex&quot;&gt;root&lt;/script&gt;.
@@ -35,14 +34,14 @@ There cannot be more than 3 real and nonnegative roots of this polynomial, these
 &lt;p&gt;I wrote two functions to visualize the solutions as a function of the basal production rate &lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;.
 With &lt;em&gt;fcn_plot_bifurc_diff_n_heatmap&lt;/em&gt; we can visualize the results as heatmaps on separate subplots for the different values of the nonlinearity (cooperativity) parameter &lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;fcn_plot_bifurc_diff_n_heatmap(beta_vals,n_vals,k_val,roots_real_nonnegat_matr)
+&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;fcn_plot_bifurc_diff_n_heatmap(beta_vals, n_vals, k_val, roots_real_nonnegat_matr)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/bifurc_heatmaps_autostim.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
 &lt;strong&gt;Figure 1. Heatmaps showing the fixed points of a self-activating gene at different values of the cooperativity parameter. There are three bands corresponding to the three possible fixed points.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Or as lineplots where the unstable fixed points are shown by the red dotted lines, called by the command:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;fcn_plot_bifurc_diff_n(roots_real_nonnegat_matr,beta_vals,n_vals,k_val,plot_pars)
+&lt;pre&gt;&lt;code class=&quot;language-MATLAB&quot;&gt;fcn_plot_bifurc_diff_n(roots_real_nonnegat_matr, beta_vals, n_vals,k_val,plot_pars)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;and producing these plots:
 &lt;img src=&quot;/images/bifurc_plots_autostim.jpg&quot; alt=&quot;_config.yml&quot; /&gt;
@@ -86,7 +85,7 @@ params = [n,kAA,kBA,beta_a,kBB,kAB,beta_b];
 maxval_B=2.25; logvals=logspace(-2,log10(maxval_B),200);
 linvals=linspace(0.01,maxval_B,300);
 B_vals=[0 linvals]; A_vals=[0 linvals];
-[real_nonnegroots_f1,real_nonnegroots_f2]=fcn_nullclines_double_inhib(A_vals,B_vals,params);
+[real_nonnegroots_f1,real_nonnegroots_f2] = fcn_nullclines_double_inhib(A_vals,B_vals,params);
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Polynomial rootfinding is rather fast, for 200 input values, the calculation takes 35 seconds on my laptop (CPU @ 2.50GHz, 2601 Mhz, 2 Core(s)).&lt;/p&gt;
