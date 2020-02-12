@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exact solving of stochastic continuous-time logical models
-excerpt: By a matrix method from chemical kinetics
+excerpt: By matrix method from kinetics
 tags: cancer systems-biology kinetics tools
 ---
 

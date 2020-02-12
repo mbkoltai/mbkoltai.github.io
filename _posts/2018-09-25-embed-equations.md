@@ -2,7 +2,7 @@
 layout: post
 title: Embedding equations in GitHub blog posts with MathJax
 tags: tools github-blog
-excerpt: Two steps to enable inserting equations
+excerpt: Steps to enable inserting equations
 mathjax: true
 ---
 
