@@ -10,14 +10,20 @@ permalink: /other/
 <div class="blog-index">
 <p>Links to writings and translations that appeared elsewhere.
 <br><br>
-&#8226 <a href="http://www.criticatac.ro/lefteast/author/mihaly-koltai/">A few articles on LeftEast</a>
+&#8226 <a href="http://www.criticatac.ro/lefteast/author/mihaly-koltai/">Articles on LeftEast</a>
 <br>
 &#8226 Article in Jacobin (2017): <a href="https://www.jacobinmag.com/2017/05/hungary-central-european-university-george-soros-protests">Hungary: The End of Democratic Illusions?</a>
 <br>
-&#8226 <a href="https://merce.hu/author/koltai-mihaly-bence/">A few articles on Mérce (in Hungarian)</a>
+&#8226 <a href="https://merce.hu/author/koltai-mihaly-bence/">Articles on Mérce (in Hungarian)</a>
+<!---<br>
+&#8226 Between 2010 and 2019 I was an editor of the social theory
+journal <a href="https://www.facebook.com/eszmelet">Eszmélet</a> (Budapest) and wrote a number of
+<a href="http://www.eszmelet.hu/?s=%22koltai+mih%C3%A1ly%22">translations and articles</a>
+in the <a href="http://epa.oszk.hu/01700/01739">journal</a>.
+--->
 
 <br><br>
-Book translations:
+Book translations (from English to Hungarian):
 <br>
 &#8226 <a href="https://www.eszmelet.hu/immanuel-wallerstein-bevezetes-a-vilagrendszer-elmeletbe-2010/">Immanuel Wallerstein: Bevezetés a világrendszer-elméletbe</a> (2010, L'Harmattan kiadó)
 <br>
@@ -38,7 +44,7 @@ Book translations:
             <br /><h5>{{ n }}</h5>
       {% endif %}
   <li style="padding-bottom: 6px;"><code>[{{ post.date | date: "%d %b" }}]</code>&nbsp;
-    <a href="{{ post.url }}" style="white-space: nowrap;"><b>{{ post.title }}</b></a>&nbsp;
+    <a href="{{ post.url }}" style="white-space: normal;"><b>{{ post.title }}</b></a>&nbsp;
       {{ post.excerpt | strip_html | truncatewords: 12 }}
       </li>
 

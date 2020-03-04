@@ -65,7 +65,7 @@ A^t \Lambda_0 + (I - A)^{-1} (I-A^t) \mathbf{\alpha} + (A - \gamma I)^{-1} (A^t 
 \tag{7}\label{dynamic_values_sol_L_t}$$
 
 if $$\gamma$$ is a scalar, otherwise the last term is $$(A^t - \left< \gamma^t \right> I ) \beta$$, with $$\left< \gamma \right> $$ being the diagonal matrix from $$\gamma$$.
-Since the $$A^t$$ and $$ \gamma^t $$ terms are shrinking to zero with time, the equlibrium solution is:
+Since the $$A^t$$ and $$ \gamma^t $$ terms are shrinking to zero with time, the equilibrium solution is:
 
 $$
 \Lambda^{* } = (I-A)^{-1} \mathbf{\alpha}
