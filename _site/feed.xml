@@ -1,4 +1,353 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-14T22:19:49+01:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">1990-2020, the false dawn of globalization?</title><link href="http://localhost:4000/illusion-globalisation/" rel="alternate" type="text/html" title="1990-2020, the false dawn of globalization?" /><published>2020-02-29T00:00:00+01:00</published><updated>2020-02-29T00:00:00+01:00</updated><id>http://localhost:4000/illusion-globalisation</id><content type="html" xml:base="http://localhost:4000/illusion-globalisation/">&lt;p&gt;As the coronavirus is spreading through the world I have been gradually overcome by a feeling similar to the moment when an optical shift occurs. If you have looked at a &lt;a href=&quot;https://en.wikipedia.org/wiki/Random_dot_stereogram&quot;&gt;stereogram&lt;/a&gt;, you know what I mean: out of random dots a three dimensional pattern emerges.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-09T23:07:30+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Visualizing the pandemic</title><link href="http://localhost:4000/covid-visualization/" rel="alternate" type="text/html" title="Visualizing the pandemic" /><published>2020-04-09T00:00:00+02:00</published><updated>2020-04-09T00:00:00+02:00</updated><id>http://localhost:4000/covid-visualization</id><content type="html" xml:base="http://localhost:4000/covid-visualization/">&lt;p&gt;This post includes graphs of the dynamics of the COVID19 pandemic, as well as notes that I am making on the science (mostly epidemiologic modeling), economics and politics of the pandemics. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.
+There are two main interests that go through the notes.
+On the one hand I am interested in mathematical modeling of how the epidemic is spreading and the tentatives to slow it down or suppress it.
+On the other I am interested in structural analysis of how it might change society, especially on the medium/long-term.&lt;/p&gt;
+
+&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#1-data-visualization&quot;&gt;Data visualization&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#2-science-and-modeling&quot;&gt;Science and modeling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#3-economics-and-politics&quot;&gt;Economics and politics&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;1-data-visualization&quot;&gt;1. Data visualization&lt;/h2&gt;
+
+&lt;p&gt;The data source for all these plots is the central database by &lt;a href=&quot;https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series&quot;&gt;Johns Hopkins University&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;total--cases-by-date-logarithmic-y-axis&quot;&gt;Total # cases by date, logarithmic y-axis&lt;/h3&gt;
+
+&lt;p&gt;This is showing the cumulative number of confirmed COVID19 cases in the major European countries, the US and some of the major Asian countries. The numbers are plotted by date.
+The 5 biggest European countries by population (Germany, UK, France, Italy and Spain) have a combined population almost exactly equal to the US, so it is useful to plot them also as a group, this is shown by ‘&lt;em&gt;IT_ES_FR_DE_UK’&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/west_vs_asia_w_china.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;total--cases-y-logscale-aligned&quot;&gt;Total # cases, y logscale, aligned&lt;/h3&gt;
+
+&lt;p&gt;Same as the previous plot, but countries are aligned to start from the same number of cases as Italy had on the 26th of February, or the day they had the closest value.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/cases_cntrs_tracking_italy_log.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;total--deaths-aligned-from-same-starting-point-y-logscale&quot;&gt;Total # deaths, aligned from same starting point (y logscale)&lt;/h3&gt;
+
+&lt;p&gt;Same as the previous plot, but for cumulated number of fatalities.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/deaths_cntrs_tracking_italy_log.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;number-of-new-cases-in-europe-us-and-asia-logarithmic-y-axis&quot;&gt;Number of new cases in Europe, US and Asia (logarithmic y-axis)&lt;/h3&gt;
+
+&lt;p&gt;Plotting the number of new cases by date, for the same Western (+Russia) and Asian countries.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/newcases_west_vs_asia_w_china.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;number-of-new-cases-in-europe-us-and-asia-plotted-by-date&quot;&gt;Number of new cases in Europe, US and Asia, plotted by date&lt;/h3&gt;
+
+&lt;p&gt;This is showing the number of new confirmed cases by date, again comparing Western countries, Russia and Asian countries.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/newcases_west.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;number-of-daily-deaths-in-europe-and-the-us&quot;&gt;Number of daily deaths in Europe and the US&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/newdeaths_west.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;daily-growth-rate-of-cases-on-total--of-cases&quot;&gt;Daily growth rate of cases on total # of cases&lt;/h3&gt;
+
+&lt;p&gt;This plot shows the percentage (fractional) growth of the total number of cases, as a function of the total number, with time going from left to right. The growth rate is averaged over a sliding window of three days.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/growth_rate_cases_china_korea_west_cutoff2000.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;daily-growth-rate-of-deaths-on-total--of-deaths&quot;&gt;Daily growth rate of deaths on total # of deaths&lt;/h3&gt;
+
+&lt;p&gt;Same as previous plot, but for the number of fatalities.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/growth_rate_deaths_china_korea_west_cutoff60.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;why-italy-has-a-very-high-case-fatality-rate-cfr&quot;&gt;Why Italy has a very high case fatality rate (CFR)?&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@andreasbackhausab/coronavirus-why-its-so-deadly-in-italy-c4200a15a7bf&quot;&gt;% of old people/all cases much higher&lt;/a&gt;&lt;br /&gt;
+Reason for many older ppl infected: &lt;a href=&quot;https://twitter.com/kuhnmo/status/1238421146837684224&quot;&gt;20% of Italians 30-49 still live at home&lt;/a&gt;&lt;br /&gt;
++ they changed testing policy recently so now only testing severe cases, so the # of confirmed cases is smaller, so ratio of death/confirmed cases grows.&lt;/p&gt;
+
+&lt;div style=&quot;page-break-after: always;&quot;&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;2-science-and-modeling&quot;&gt;2. Science and modeling&lt;/h2&gt;
+
+&lt;h4 id=&quot;school-closures-event-cancellations-and-the-mesoscopic-localization-of-epidemics-in-networks-with-higher-order-structure&quot;&gt;&lt;a href=&quot;https://arxiv.org/pdf/2003.05924.pdf&quot;&gt;School closures, event cancellations, and the mesoscopic localization of epidemics in networks with higher-order structure&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;higher-order struct leads to mesoscopic localization (concentration into substructures)
+Individuals classified by # of contacts:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;S_k&lt;/script&gt;: % susceptible with k contacts&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;I_k&lt;/script&gt;: % infected with k contacts&lt;br /&gt;
+Clique prevalence: average fraction of nodes within cliques of size &lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/clique%20prevalence.PNG&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What does lower coupling mean?
+There are two distributions that characterize the network:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;g_m&lt;/script&gt;: membership of nodes. &lt;script type=&quot;math/tex&quot;&gt;S_m&lt;/script&gt; is % of &lt;em&gt;S&lt;/em&gt; with number &lt;em&gt;m&lt;/em&gt; of memberships in higher order structures.  &lt;script type=&quot;math/tex&quot;&gt;g_m \sim m^{-\gamma}&lt;/script&gt;&lt;br /&gt;
+p_n: distribution of clique size &lt;em&gt;n&lt;/em&gt;. &lt;script type=&quot;math/tex&quot;&gt;p_n \sim n^{-\gamma}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;If edges are removed, in the localized network there is a critical size n_c for cliques under which if enough edges are removed, then there are no infections anymore in these cliques.
+Also, in localized networks global prevalence falls off much more sharply with stronger intervention, whereas effect is linear in ‘delocalized’ networks.&lt;/p&gt;
+
+&lt;p&gt;Variables are defined by master equations. This goes down after a week.
+With active case finding the peak is lower and earlier.
+With higher transmission rate this gets higher, converging to ~0.9.
+But if structures are highly coupled (a), clique prevalence ~same for n [20,100].
+With lower coupling (b) there is &lt;em&gt;mesoscopic localization&lt;/em&gt;: global prevalence can be very low, but within cliques, much higher % of infection.&lt;/p&gt;
+
+&lt;h4 id=&quot;interactive-modeling-httpsalhillshinyappsiocovid19seir&quot;&gt;Interactive modeling: https://alhill.shinyapps.io/COVID19seir/&lt;/h4&gt;
+&lt;p&gt;This is an ODE model assuming complete homogeneity. Three &lt;strong&gt;I&lt;/strong&gt; populations with different rates of transmission.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-contribution-of-pre-symptomatic-transmission-to-the-covid-19-outbreak&quot;&gt;&lt;a href=&quot;https://cmmid.github.io/topics/covid19/control-measures/pre-symptomatic-transmission.html&quot;&gt;The Contribution of Pre-symptomatic Transmission to the COVID-19 Outbreak&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Estimates that ~25% of transmission in Shenzhen was asymptomatic.&lt;/p&gt;
+
+&lt;h4 id=&quot;temporal-variation-in-transmission-during-the-covid-19-outbreak-in-italy&quot;&gt;&lt;a href=&quot;https://cmmid.github.io/topics/covid19/current-patterns-transmission/italy-time-varying-transmission.html&quot;&gt;Temporal variation in transmission during the COVID-19 outbreak in Italy&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Estimates on reproduction numbers in regions of Italy. Started from 3-4, falling towards 2.&lt;/p&gt;
+
+&lt;h4 id=&quot;shiny-app-for-contact-tracing-httpsbdi-pathogensshinyappsiocovid-19-transmission-routes&quot;&gt;Shiny app for contact tracing: https://bdi-pathogens.shinyapps.io/covid-19-transmission-routes&lt;/h4&gt;
+
+&lt;h4 id=&quot;substantial-undocumented-infection-facilitates-the-rapid-dissemination-of-novel-coronavirus-sars-cov2&quot;&gt;&lt;a href=&quot;https://science.sciencemag.org/content/sci/early/2020/03/13/science.abb3221.full.pdf&quot;&gt;Substantial undocumented infection facilitates the rapid dissemination of novel coronavirus (SARS-CoV2)&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Estimates from a model + Bayesian inference.
+Main findings (these are max probability estimates):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;86% of infections were from undocumented cases in China &lt;em&gt;before travel ban of 23/january&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;undocumented cases had 55% (mu*beta) transmission rate of documented ones (beta)&lt;/li&gt;
+  &lt;li&gt;undocumented cases were the source of 79% of documented cases&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Model: dynamics of infections among 375 Chinese cities.
+Spatial dynamics captured by # of passengers from city &lt;em&gt;i&lt;/em&gt; to &lt;em&gt;j&lt;/em&gt;.
+Variables for each city: &lt;script type=&quot;math/tex&quot;&gt;S_i, E_i, I_i^r, I_i^u&lt;/script&gt; (undocumented).
+Simulations by ‘iterated filter-ensemble adjustment Kalman filter (IF-EAKF) framework’.&lt;br /&gt;
+Inferred parameters:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Z: average latent period&lt;/li&gt;
+  &lt;li&gt;D: average duration of infection&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\mu&lt;/script&gt;: transmission reduction factor for undocumented&lt;/li&gt;
+  &lt;li&gt;beta: transmission rate for documented&lt;/li&gt;
+  &lt;li&gt;alpha: fraction of documented infections&lt;/li&gt;
+  &lt;li&gt;theta: travel multiplicative factor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Reporting delay is included (from Gamma distribution).
+Best-fitting parameter values identified by maximum likelihood.
+They could distinguish between mu-alpha value pairs with different individual values but same product. They did simulations with all parameter value pairs (within certain range) and .
+Delay of reporting crucial, this needs to be speeded up to stop the spread.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/science_article_undocum_cases.PNG&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://science.sciencemag.org/content/sci/suppl/2020/03/13/science.abb3221.DC1/abb3221_Li_SM.pdf&quot;&gt;SI&lt;/a&gt; contains equations.
+System of coupled ODEs: S_i is susceptibles in city &lt;em&gt;i&lt;/em&gt;.
+All terms normalised by total population (in that city).
+D: &lt;duration infection=&quot;&quot;&gt;  
+Then effective reproduction number $$R_e=\alpha \beta D + (1-\alpha)\mu \beta\ D$$&lt;/duration&gt;&lt;/p&gt;
+
+&lt;p&gt;System of ODEs are then solved stochastically: each RHS term is sampled from a Poisson distribution. So we take the current value of the variable and then sample from a Poisson distribution (the deterministic value is the lambda of the Poisson). This is for each RHS term!
+Initial prior ranges for parameters are from Latin Hypercube Sampling.
+Initial values for populations similarly sampled (eg. initial exposed).&lt;/p&gt;
+
+&lt;p&gt;Then the simulation results are mapped into reported cases by a separate delay model.
+Delay is from a Gamma distribution approximated from data.
+Movements between cities estimated from mobile apps: Tencent, Mobility Index from Baidu.
+‘Iterated’ filtering to estimate model parameters.&lt;/p&gt;
+
+&lt;h4 id=&quot;wolfram-mathematica-notebook-on-epidemic-modeling&quot;&gt;&lt;a href=&quot;https://community.wolfram.com/groups/-/m/t/1896178&quot;&gt;Wolfram Mathematica notebook on epidemic modeling&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;https://www.twitch.tv/videos/569280246&lt;/p&gt;
+
+&lt;h4 id=&quot;necsi-slack-channel-for-modeling&quot;&gt;&lt;a href=&quot;https://app.slack.com/client/T2DRR8UNB/CV19X1PKJ/thread/CUTSF2Q6R-1584495843.398200&quot;&gt;NECSI Slack channel for modeling&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;imperial-impact-of-non-pharmaceutical-interventions-npis-to-reduce-covid19-mortality-and-healthcare-demand&quot;&gt;&lt;a href=&quot;https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf&quot;&gt;Imperial: Impact of non-pharmaceutical interventions (NPIs) to reduce COVID19 mortality and healthcare demand&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;2 strategies:
+1) mitigation: can reduce peak healthcare demand by 2/3 and deaths by 50%. Still 100s of 1000s of deaths
+2) Suppression: preferable for countries that can achieve. Means social distancing for &lt;em&gt;whole&lt;/em&gt; of the population. Need to be maintained until vaccine found, as there is rebound if interventions are targeted.&lt;/p&gt;
+
+&lt;p&gt;Individual-based simulation model. Mixing in different environments. Schools double per capita rate of contacts. Incubation time 5 days. Infectiousness starts before symptoms. R0: between 2 and 2.6. Individual infectiousness varies (gamma distribution).
+Symptomatic cases self-isolate w 1 day delay. 5 day delay to hospitalisation.&lt;/p&gt;
+
+&lt;p&gt;Results:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;no measures: peak after 3 months, 80% of US/UK population infected. 30-time more demand for critical care beds than available. 2.2M dead in US, 0.5M dead in UK.&lt;/li&gt;
+  &lt;li&gt;mitigation: for 7 different levels of mitigation they make estimates for the reduction in peak bed demand and total deaths. For two values of R0 (2.2, 2.4) and 4 values of ‘triggers’ (cumulative ICU cases). Trigger means when policies (home quarantine etc) are switched on/off.&lt;/li&gt;
+  &lt;li&gt;suppression: all measures combined can keep ICU bed demand below UK surge bed capacity (5K). Adaptive triggering of suppression: on-off with some thresholds for # of ICU cases.
+Even with most comprehensive suppression strategy in 2 yrs abt 30K deaths in UK.
+Higher ON trigger and/or lower OFF -&amp;gt; more deaths etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.pnas.org/content/pnas/105/12/4639.full.pdf&quot;&gt;Model used by Imperial from 2008&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;necsi-response-to-imperial-paper-ferguson-et-al-impact-of-non-pharmarceutical&quot;&gt;&lt;a href=&quot;https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e70eb32b16229792eb14836/1584458547530/ReviewOfFergusson.pdf&quot;&gt;NECSI response to Imperial paper (Ferguson et al) ‘Impact of non-pharmarceutical…’&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;They agree with Ferguson that suppression is needed to bring down R&lt;sub&gt;0&lt;/sub&gt; below 1.
+But they disagree w Ferguson claim that 2nd outbreak unavoidable. It’s not because, during lockdown infectious ppl are identified and their contacts isolated.
+Ferguson calculate new infections as fcn of infected % and immunity, but not the phase of trajectory (ergodicity).
+Not true that resurgence starts from even 1 case, China data showed &lt;em&gt;only 5% of close contacts of infected tested positive&lt;/em&gt;. Small outbreaks can be controlled by testing.
+Ferguson ignores super-spreader events by ignoring ‘fat tail distribution of contagion’.
+But cutting off fat tail by banning events reduced R0.
+Ferguson use SIR ODE-model, not appropriate bc they &lt;em&gt;ignore&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;local dynamics&lt;/li&gt;
+  &lt;li&gt;non-normal distrib. of infection events per person (superspreaders)&lt;/li&gt;
+  &lt;li&gt;dynamic or stochastic values for parameters (social response)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But Imperial model has different environments and it is agent-based, so maybe this is not fair.
+Debate: https://twitter.com/yaneerbaryam/status/1239936951823843328&lt;/p&gt;
+
+&lt;h4 id=&quot;beyond-contact-tracing-community-based-early-detection-for-ebola-response-plos-currents-outbreaks-may-19-2016&quot;&gt;&lt;a href=&quot;https://necsi.edu/beyond-contact-tracing&quot;&gt;Beyond contact tracing: Community-based early detection for Ebola response, PLoS Currents Outbreaks (May 19, 2016)&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Stochastic model by NECSI.&lt;/p&gt;
+
+&lt;h4 id=&quot;community-prevention&quot;&gt;&lt;a href=&quot;https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e737b95403f772d8ce0e04a/1584626591711/CommunityPrevention.pdf&quot;&gt;Community prevention&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;NECSI model. R&lt;sub&gt;*&lt;/sub&gt;: community transmission rate.
+i_0_c: stochastic factor of initial foothold the virus gains in a community
+i_c(t): # active infections in community &lt;em&gt;c&lt;/em&gt;&lt;br /&gt;
+If infection not contained, &lt;script type=&quot;math/tex&quot;&gt;exp(r_c t)&lt;/script&gt;&lt;br /&gt;
+After &lt;script type=&quot;math/tex&quot;&gt;T_c&lt;/script&gt; community implements aggressive suppression policies.
+Infections decay as &lt;script type=&quot;math/tex&quot;&gt;exp(-t/\tau_c)&lt;/script&gt;&lt;br /&gt;
+After intervention # of infections is:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;i_c(t)=( i_c^0 exp(r_c T_c) ) exp(-(t-T_c)/\tau_c)&lt;/script&gt;&lt;br /&gt;
+Community transmission &lt;script type=&quot;math/tex&quot;&gt;\sim i_c(t) p(travel)&lt;/script&gt;&lt;br /&gt;
+Poisson process, average number of infected communities can be estimated by integrating the two sub-processes (until and after &lt;script type=&quot;math/tex&quot;&gt;T_c&lt;/script&gt;).&lt;br /&gt;
+Calculate expected number of other communities infected by community &lt;script type=&quot;math/tex&quot;&gt;c&lt;/script&gt;.&lt;br /&gt;
+It’s assumed growth within one community is exponential until &lt;script type=&quot;math/tex&quot;&gt;T_c&lt;/script&gt; (intervention), then exponential decay after &lt;script type=&quot;math/tex&quot;&gt;T_c&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;social-contacts-and-mixing-patterns-relevant-to-the-spread-of-infectious-diseases&quot;&gt;&lt;a href=&quot;https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0050074&quot;&gt;Social Contacts and Mixing Patterns Relevant to the Spread of Infectious Diseases&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Estimates for mixing patterns.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-early-phase-of-the-covid-19-outbreak-in-lombardy-italy&quot;&gt;&lt;a href=&quot;https://arxiv.org/abs/2003.09320&quot;&gt;The early phase of the COVID-19 outbreak in Lombardy, Italy&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;secondary-attack-rate-and-superspreading-events-for-sars-cov-2&quot;&gt;&lt;a href=&quot;https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930462-1&quot;&gt;Secondary attack rate and superspreading events for SARS-CoV-2&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Estimates for some ‘super-spreader’ events in table.&lt;/p&gt;
+
+&lt;h4 id=&quot;predicting-collapse-of-adaptive-networked-systems-without-knowing-the-network&quot;&gt;&lt;a href=&quot;https://www.nature.com/articles/s41598-020-57751-y.pdf&quot;&gt;Predicting collapse of adaptive networked systems without knowing the network&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;General on network collapse.&lt;/p&gt;
+
+&lt;h4 id=&quot;epidemiological-data-from-the-covid-19-outbreak-real-time-case-information&quot;&gt;&lt;a href=&quot;https://www.nature.com/articles/s41597-020-0448-0.pdf&quot;&gt;Epidemiological data from the COVID-19 outbreak, real-time case information&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;fundamental-principles-of-epidemic-spread-highlight-the-immediate-need-for-large-scale-serological-surveys-to-assess-the-stage-of-the-sars-cov-2-epidemic&quot;&gt;&lt;a href=&quot;https://www.medrxiv.org/content/10.1101/2020.03.24.20042291v1&quot;&gt;Fundamental principles of epidemic spread highlight the immediate need for large-scale serological surveys to assess the stage of the SARS-CoV-2 epidemic&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;testing-everyone-instead-of-contact-tracing&quot;&gt;&lt;a href=&quot;https://medium.com/@sten.linnarsson/to-stop-covid-19-test-everyone-373fd80eb03b&quot;&gt;Testing everyone instead of contact tracing&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;if &lt;script type=&quot;math/tex&quot;&gt;c \ p &gt; (R_0-1)/(R_0-R_q)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Then exp decay of outbreak. &lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt; ~ 2.4, &lt;script type=&quot;math/tex&quot;&gt;R_q&lt;/script&gt; ~ 0.3 (Wuhan estimate).
+c: compliance to self-quarantine after testing positive&lt;br /&gt;
+p: true positive rate&lt;/p&gt;
+
+&lt;p&gt;Fastest test currently: RT-LAMP technology, 10-30 mins, based on RNA detection. Polymerase with reverse transcriptase activity amplifies viral RNA —&amp;gt; H+ release —&amp;gt; pH sensitive dye.
+But: it requires 65C incubation (tap water?).
+Alternatives:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;rolling circle replication&lt;/li&gt;
+  &lt;li&gt;in vitro viral replication assays&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lockdown cost dwarfs testing cost&lt;/p&gt;
+
+&lt;h4 id=&quot;imperial-study-on-global-effects&quot;&gt;&lt;a href=&quot;https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-Impact-26-03-2020.pdf&quot;&gt;Imperial study on global effects&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;More detail on model. Distributions used for time of next infection.&lt;/p&gt;
+
+&lt;h4 id=&quot;nn-taleb-tail-risk-of-contagious-diseases&quot;&gt;&lt;a href=&quot;https://www.researchers.one/media/documents/282-m-corona2.pdf&quot;&gt;NN Taleb: Tail Risk of Contagious Diseases&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;why-everyone-should-wear-a-mask&quot;&gt;&lt;a href=&quot;https://medium.com/@Cancerwarrior/covid-19-why-we-should-all-wear-masks-there-is-new-scientific-rationale-280e08ceee71&quot;&gt;Why everyone should wear a mask&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;estimates-of-the-severity-of-coronavirus-disease-2019-a-model-based-analysis&quot;&gt;&lt;a href=&quot;https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30243-7/fulltext&quot;&gt;Estimates of the severity of coronavirus disease 2019: a model-based analysis&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;an-investigation-of-transmission-control-measures-during-the-first-50-days-of-the-covid-19-epidemic-in-china&quot;&gt;&lt;a href=&quot;https://science.sciencemag.org/content/early/2020/03/30/science.abb6105&quot;&gt;An investigation of transmission control measures during the first 50 days of the COVID-19 epidemic in China&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Effect of Wuhan travel ban.&lt;/p&gt;
+
+&lt;h4 id=&quot;predictions-about-peaks&quot;&gt;&lt;a href=&quot;http://www.healthdata.org/covid/updates&quot;&gt;Predictions about peaks&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Preds made 05 April. France: 15K deaths by August, UK 66K (!).&lt;/p&gt;
+
+&lt;h4 id=&quot;preparedness-and-vulnerability-of-african-countries-against-importations-of-covid-19-a-modelling-study&quot;&gt;&lt;a href=&quot;https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930411-6&quot;&gt;Preparedness and vulnerability of African countries against importations of COVID-19: a modelling study&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Importation risk from China vs health care system capacity&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://elifesciences.org/articles/57309/&quot;&gt;Ron Milo: COVID by the numbers&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;estimates on size, mutation rate, genome of virus&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://biomedical-engineering-online.biomedcentral.com/track/pdf/10.1186/s12938-017-0370-7&quot;&gt;MERS basic reproduction number&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;fit SIR model to data, &lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt; around 8 (!).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@urialonw/adaptive-cyclic-exit-strategies-from-lockdown-to-suppress-covid-19-and-allow-economic-activity-4900a86b37c7&quot;&gt;Uri Alon: Adaptive cyclic-exit-strategies-from-lockdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;4 day work+10 day lockdown, antiphased for 2 groups of households.
+Review of deterministic, stochastic and also &lt;em&gt;network&lt;/em&gt; SEIR model, different cyclic lockdown strategies.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ryansmcgee/seirsplus&quot;&gt;SEIRSPLUS: Python package for stochastic and network based SEIR model&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&quot;page-break-after: always;&quot;&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;3-economics-and-politics&quot;&gt;3. Economics and politics&lt;/h2&gt;
+
+&lt;h4 id=&quot;james-meadway-on-novara-16march&quot;&gt;&lt;a href=&quot;https://novaramedia.com/2020/03/16/coronavirus-will-require-us-to-completely-reshape-the-economy&quot;&gt;James Meadway on Novara, 16/march&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;2008: crisis of banking system. QE prevented a crash
+COVID19 more fundamental as it threatens the basis of capitalism, the &lt;em&gt;labour market&lt;/em&gt;. Division of labour has to change.
+Already trillion USD intervention by Fed.
+Epidemics becoming worse bc of climate change.
+Sick leave, helicopter money, requisitioning.&lt;/p&gt;
+
+&lt;h4 id=&quot;jp-morgan-analysis-on-us-small-businesses&quot;&gt;&lt;a href=&quot;https://institute.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/institute/pdf/institute-growth-vitality-cash-flows.pdf&quot;&gt;JP Morgan analysis on US small businesses&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Most US small businesses have less than 1 month financial reserves if no revenue.&lt;/p&gt;
+
+&lt;h4 id=&quot;syllabus-of-political-economic-consequences-of-covid19&quot;&gt;&lt;a href=&quot;https://the-politics-of-covid-19.com/search/?size=n_30_n&quot;&gt;Syllabus of political-economic consequences of COVID19&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;effects-on-the-global-south&quot;&gt;&lt;a href=&quot;https://rpalat.wordpress.com/2020/03/27/coronavirus-and-the-world-economy-the-old-is-dead-the-new-cant-be-born/&quot;&gt;Effects on the global south&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;mike-davis-who-gets-forgotten-in-an-epidemic&quot;&gt;&lt;a href=&quot;https://www.thenation.com/article/politics/mike-davis-covid-19-essay/&quot;&gt;Mike Davis: Who gets forgotten in an epidemic&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;social-contagion-wuhan-story&quot;&gt;&lt;a href=&quot;http://chuangcn.org/2020/02/social-contagion/&quot;&gt;Social contagion (Wuhan story)&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;disease-x-who-scenario-2018&quot;&gt;&lt;a href=&quot;https://edition.cnn.com/2018/03/12/health/disease-x-blueprint-who/index.html&quot;&gt;Disease X WHO scenario 2018&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;m-roberts-war-economy&quot;&gt;&lt;a href=&quot;https://thenextrecession.wordpress.com/2020/03/30/a-war-economy/&quot;&gt;M Roberts: War economy?&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://thenextrecession.files.wordpress.com/2020/03/war-4.jpg&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;mike-davis-in-a-plague-year-jacobin-14march&quot;&gt;&lt;a href=&quot;https://jacobinmag.com/2020/03/mike-davis-coronavirus-outbreak-capitalism-left-international-solidarity&quot;&gt;Mike Davis: In a Plague Year (Jacobin 14/March)&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Ebola: 1994, African bat cave&lt;br /&gt;
+SARS: 2003, Guangdong (manufact.)
+1918 ‘Spanish flu’ outbreak was H1N1, most fatalities young ppl, maybe older ppl had immunity from flus of 1890s.&lt;/p&gt;
+&lt;h4 id=&quot;monthly-review-covid19-and-circuits-of-capital&quot;&gt;&lt;a href=&quot;https://monthlyreview.org/2020/04/01/covid-19-and-circuits-of-capital/&quot;&gt;Monthly Review: COVID19 and circuits-of-capital&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Trump dismantled his pandemic preparation team and left ~700 CDC positions unfilled.
+At least 60 percent of novel human pathogens emerge by spilling over from wild animals to local human communities
+&lt;a href=&quot;https://monthlyreview.org/product/big_farms_make_big_flu/&quot;&gt;Big Farms Make Big Flu: Dispatches on Infectious Disease, Agribusiness, and the Nature of Science&lt;/a&gt;
+&lt;a href=&quot;https://linkinghub.elsevier.com/retrieve/pii/S0140673612616845&quot;&gt;Colgate/Johnson&amp;amp;Johnson heatmap&lt;/a&gt; of where next pandemics might emerge.
+But they only talk abt the sources (‘exotic’ food), not demand driving it and networks.
+Also growth of slums and incorporating rural communities into urban networks, so forest disease dynamics show up in cities v fast (cf. Mike Davis Planet of Slums). ‘Post-agricultural’ regions.  Deforestation + periurban lack of health infrastructure.
+‘Sylvatic pathogens’ (wild animal pathogens) burned out in the forest before now entering susceptible human populations (no healthcare) —&amp;gt; networks of travel/trade.
+&lt;a href=&quot;https://doi.org/10.1177%2F0020731415611644&quot;&gt;Robert G. Wallace et al., Did Neoliberalizing West African Forests Produce a New Niche for Ebola? (2016)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;‘The lengthier the associated supply chains and the greater the extent of adjunct deforestation, the more diverse (and exotic) the zoonotic pathogens that enter the food chain.
+Among recent emergent and reemergent farm and foodborne pathogens, originating from across the anthropogenic domain, are African swine fever, Campylobacter, Cryptosporidium, Cyclospora, Ebola Reston, E. coli O157:H7, foot-and-mouth disease, hepatitis E, Listeria, Nipah virus, Q fever, Salmonella, Vibrio, Yersinia, and a variety of novel inﬂuenza variants, including H1N1 (2009), H1N2v, H3N2v, H5N1, H5N2, H5Nx, H6N1, H7N1, H7N3, H7N7, H7N9, and H9N2.’&lt;/p&gt;
+
+&lt;p&gt;Growing genetic monocultures, overcrowding leading to immune suppression.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://theasiadialogue.com/2020/03/12/the-covid-19-epidemic-and-chinas-wildlife-business-interest/&quot;&gt;The COVID-19 epidemic and China’s wildlife business interest&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1989, the Wildlife Protection Law (WPL)
+China’s wildlife farming has evolved into a gigantic business interest. In 2016, the industry produced 520.6 billion yuan (USD 81.3 billion) in revenue. The part of wildlife farming that supplied the exotic food market accounted for 24 per cent (125 billion yuan or USD 19.5 billion) of the total output.&lt;/p&gt;
+
+&lt;h4 id=&quot;reuters-detailed-account-of-uk-gov-response-timeline&quot;&gt;&lt;a href=&quot;https://www.reuters.com/article/us-health-coronavirus-britain-path-speci-idUSKBN21P1VF&quot;&gt;Reuters detailed account of UK gov response timeline&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;politicoeu-how-europe-failed-the-coronavirus-test&quot;&gt;&lt;a href=&quot;https://www.politico.eu/article/coronavirus-europe-failed-the-test/&quot;&gt;Politico.eu: How Europe failed the coronavirus test&lt;/a&gt;&lt;/h4&gt;
+
+&lt;!---![_config.yml](/images/covid/reaction_eur_states_14978916_1586353616114.png)---&gt;
+&lt;p&gt;This is a &lt;a href=&quot;https://images.jifo.co/14978916_1586353616114.png&quot;&gt;useful table&lt;/a&gt; on how many days it took European governments to apply restrictions after the 3rd death from COVID19.
+Greece, Eastern European states did it before 3rd death, Spain 9-10 days after, UK, France 2 weeks after.&lt;/p&gt;
+
+&lt;!---!
+&lt;div class=&quot;infogram-embed&quot; data-id=&quot;0991a8d7-ada2-4fc2-a351-f446081b8d95&quot; data-type=&quot;interactive&quot; data-title=&quot;3 — Comparing when coronavirus measures were implemented&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e,i,n,s){var t=&quot;InfogramEmbeds&quot;,d=e.getElementsByTagName(&quot;script&quot;)[0];if(window[t]&amp;&amp;window[t].initialized)window[t].process&amp;&amp;window[t].process();else if(!e.getElementById(n)){var o=e.createElement(&quot;script&quot;);o.async=1,o.id=n,o.src=&quot;https://e.infogram.com/js/dist/embed-loader-min.js&quot;,d.parentNode.insertBefore(o,d)}}(document,0,&quot;infogram-async&quot;);&lt;/script&gt;
+---&gt;</content><author><name></name></author><category term="political-economy" /><category term="globalization" /><category term="epidemics" /><category term="complex-systems" /><category term="ecology" /><category term="covid19" /><summary type="html">Graphs and notes on the COVID19 pandemic (updated regularly)</summary></entry><entry><title type="html">1990-2020, the false dawn of globalization?</title><link href="http://localhost:4000/illusion-globalisation/" rel="alternate" type="text/html" title="1990-2020, the false dawn of globalization?" /><published>2020-02-29T00:00:00+01:00</published><updated>2020-02-29T00:00:00+01:00</updated><id>http://localhost:4000/illusion-globalisation</id><content type="html" xml:base="http://localhost:4000/illusion-globalisation/">&lt;p&gt;As the coronavirus is spreading through the world I have been gradually overcome by a feeling similar to the moment when an optical shift occurs. If you have looked at a &lt;a href=&quot;https://en.wikipedia.org/wiki/Random_dot_stereogram&quot;&gt;stereogram&lt;/a&gt;, you know what I mean: out of random dots a three dimensional pattern emerges.&lt;/p&gt;
 
 &lt;p&gt;Almost irrespectively of political taste, most of us, at least in middle and high-income countries, have experienced these last decades of expanding world trade, cheapening travel, instantaneous communication and product availability as a never-ending ahistorical present, a normality taken for granted. In reality maybe it was a very fragile and unsustainable experiment, about to be swept away.&lt;/p&gt;
 
@@ -1429,74 +1778,4 @@ The simple answer is: use MathJax that has a syntax almost identical to LaTeX. M
     \begin{bmatrix} l_1 &amp; l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
     + \begin{bmatrix} da\\ dh + C_k \end{bmatrix} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;A good resource for different formulae &lt;a href=&quot;https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&quot;&gt;is here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="github-blog" /><summary type="html">Steps to enable inserting equations</summary></entry><entry><title type="html">The reproduction schema and the ‘Keynesian multiplier’ (I)</title><link href="http://localhost:4000/reprod_multipl/" rel="alternate" type="text/html" title="The reproduction schema and the 'Keynesian multiplier' (I)" /><published>2018-09-20T00:00:00+02:00</published><updated>2018-09-20T00:00:00+02:00</updated><id>http://localhost:4000/reprod_multipl</id><content type="html" xml:base="http://localhost:4000/reprod_multipl/">&lt;p&gt;In the book &lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;&lt;em&gt;Marxian reproduction schema: money and aggregate demand in a capitalist economy&lt;/em&gt;&lt;/a&gt; Andrew Trigg mathematically formalizes models of (simple and expanded) reproduction of total social capital coming from classical political economy, and how they connect to the ‘Keynesian’ idea of the multiplier effect of investment demand. The reproduction schema was first proposed in a consistent form in Volume 2 of Marx’s Capital, and later put into a mathematical form by Sraffa, Leontieff and other authors.
-I have always been interested in these reproduction schemas and how supply (total output) and demand can be matched if the total output is increasing, that is if there is capital accumulation. I want to go step by step through the derivation in Trigg’s book, discussing the meaning of the terms introduced along the way. In this post I will discuss the derivation of the ‘Keynesian multiplier’ that relates investment demand to (total) net income.&lt;/p&gt;
-
-&lt;p&gt;The basic aim of this analysis is to connect the ‘multiplier’ relationship between investment and total income with a 2-sector (consumption goods and capital goods) model of economic reproduction, where all capital and labour is reproduced and the capital stock is potentially incremented.&lt;/p&gt;
-
-&lt;p&gt;In a one-sector model of the economy we have (money units in ‘$’)&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Periods&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Constant capital &lt;script type=&quot;math/tex&quot;&gt;C_1&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Variable capital &lt;script type=&quot;math/tex&quot;&gt;V_1&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Surplus value &lt;script type=&quot;math/tex&quot;&gt;S_1&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Net income &lt;script type=&quot;math/tex&quot;&gt;Y_1&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Net investment &lt;script type=&quot;math/tex&quot;&gt;I_1&lt;/script&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;4000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;2000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;At this point the reproduction of constant capital is not considered, only ‘net income’ (&lt;em&gt;Y&lt;/em&gt;, I will drop the subscripts here as there is only one department) and its relation to net investment (accumulation). Net income is all income paid in the economy, made up of wages (variable capital, &lt;em&gt;V&lt;/em&gt;) and profit (surplus value, &lt;em&gt;S&lt;/em&gt;). The ‘multiplier’ is the relationship of net investment that happens from the &lt;em&gt;next&lt;/em&gt; period of production. Then the ‘Keynesian income multiplier’ is:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;Y = \frac{1}{1-b}I
-\tag{1}\label{eq1}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Where &lt;em&gt;Y&lt;/em&gt; is again net income (&lt;em&gt;Y=S+V&lt;/em&gt;), &lt;em&gt;I&lt;/em&gt; investment and &lt;em&gt;b&lt;/em&gt; is the ‘propensity to consume’. This last term was not very clear to me: does it mean the fraction of net income going to workers’ consumption or all consumption? For the identity to work out it has to be&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;b = \frac{V+S-I}{V+S} = \frac{Y-I}{Y} = 1 - I/Y
-\tag{2}\label{eq2}&lt;/script&gt;,&lt;br /&gt;
-so &lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt; takes into account &lt;em&gt;all&lt;/em&gt; income spent on consumption, or in other words the share of wages + profit spent on consumption, assuming all wages are spent on consumption.&lt;/p&gt;
-
-&lt;p&gt;This is a mathematical identity, since &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{1-(1 - I/Y)}I = Y&lt;/script&gt;. In other words, I don’t see a causal relationship here, in fact I would say the causality to be explained runs the other way: the investment in &lt;em&gt;Period 2&lt;/em&gt; is made possible by the realization of profits in &lt;em&gt;Period 1&lt;/em&gt;. I would say it has to be shown that everything can be sold with a profit in &lt;em&gt;Period 1&lt;/em&gt;, then some of this profit can be directed to new investment (and not to the consumption of owners who receive the profits) to increase the capital stock.
-Technically, we can say the ‘multiplier’ effect is 4-fold, 1/4 of the net income will be invested in the next period. However this is not a causal statement as far as I can see, but simply restating the fact that whatever fraction &lt;script type=&quot;math/tex&quot;&gt;\frac{I}{Y}&lt;/script&gt; is spent on investment out of total net income, the reciprocal ratio &lt;script type=&quot;math/tex&quot;&gt;\frac{Y}{I}&lt;/script&gt; will be - by definition - the reciprocal.&lt;/p&gt;
-
-&lt;p&gt;Now we can take the case of a 2-sector economy: the first ‘department’ &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; produces capital goods (means of production) and the second department &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; consumer goods.
-Then net income in the two departments are:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;Y_1 = V_1 + S_1 \tag{3}\label{eq3}&lt;/script&gt;&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;Y_2 = V_2 + S_2 \tag{4}\label{eq4}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Then if we apply the ‘propensity to consume’, &lt;em&gt;b&lt;/em&gt;, to total net income &lt;script type=&quot;math/tex&quot;&gt;Y=Y_1 + Y_2 = V_1 + S_1 + V_2 + S_2&lt;/script&gt;, the demand for the output of the two sectors &lt;script type=&quot;math/tex&quot;&gt;D(Y_i)&lt;/script&gt; can be expressed as fractions of net income as:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;D(Y_1) = (1-b)Y \tag{5}\label{eq5}&lt;/script&gt;&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;D(Y_2) = bY \tag{6}\label{eq6}&lt;/script&gt;&lt;br /&gt;
-The fraction of net income spent on consumption buys up the demand of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;, and the other part that of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;.
-Since the output here does not take into account the input from constant capital (machines, materials etc. that were built into the output), only the income components (&lt;script type=&quot;math/tex&quot;&gt;S+V&lt;/script&gt;), then the net income in the departments have to equal the demand for the output of the departments if the system is in equilibrium. This means that &lt;script type=&quot;math/tex&quot;&gt;Y_i=D(Y_i)&lt;/script&gt; and therefore&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;\frac{Y_2}{Y_1} = \frac{b}{1-b}   
-\tag{7}\label{eq7}&lt;/script&gt;&lt;br /&gt;
-Since in this formulation the income (=output) of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; is the same as total consumption &lt;script type=&quot;math/tex&quot;&gt;B&lt;/script&gt;, and the income (=output) of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; is the same as net investment &lt;script type=&quot;math/tex&quot;&gt;I&lt;/script&gt;, this formula describes a ‘multiplier’ relationship again, namely:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;B = \frac{b}{1-b}I
-\tag{8}\label{eq8}&lt;/script&gt;&lt;br /&gt;
-Trigg writes that the ‘traditional Keynesian multiplier’ rather relates total net income to investment, which can be obtained from the previous formula by considering that &lt;script type=&quot;math/tex&quot;&gt;B = Y - I&lt;/script&gt;, which then gives&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;Y = \frac{b}{1-b}I + I = \frac{1}{1-b}I,
-\tag{9}\label{eq9}&lt;/script&gt;&lt;br /&gt;
-yielding the formula obtained from the one-sector model. In other words the ‘multiplier relationship’ (which as I said above seems to me more an identity than a causal relationship) can be derived in a two-sector model.&lt;/p&gt;
-
-&lt;p&gt;The main problem with this description is that it takes no account of the role of constant capital (machines, materials etc whose value is ‘transferred into’ the gross output), which has to be also reproduced in each cycle of production, and even expanded if there is accumulation. This is so although there is now a department producing capital goods. I want to address this problem in my next post, using the reproduction schemas and input-output analysis.&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="classical-political-economy" /><category term="marxian-economics" /><summary type="html">Multiplier effect with one sector</summary></entry></feed>
+&lt;p&gt;A good resource for different formulae &lt;a href=&quot;https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&quot;&gt;is here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="github-blog" /><summary type="html">Steps to enable inserting equations</summary></entry></feed>
