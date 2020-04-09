@@ -8,9 +8,8 @@ mathjax: true
 ---
 
 This post includes graphs of the dynamics of the COVID19 pandemic, as well as notes that I am making on the science (mostly epidemiologic modeling), economics and politics of the pandemics. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.
-There are two main interests that go through the notes.
-On the one hand I am interested in mathematical modeling of how the epidemic is spreading and the tentatives to slow it down or suppress it.
-On the other I am interested in structural analysis of how it might change society, especially on the medium/long-term.
+
+There are two main interests that go through the notes. First, I am interested in mathematical modeling of how the epidemic is spreading and the efforts to slow it down or suppress it. Second, I am interested in structural analysis of how it might change society, especially on the medium/long-term.
 
 ## Table of contents
 
@@ -72,7 +71,7 @@ Same as previous plot, but for the number of fatalities.
 #### Why Italy has a very high case fatality rate (CFR)?
 [% of old people/all cases much higher](https://medium.com/@andreasbackhausab/coronavirus-why-its-so-deadly-in-italy-c4200a15a7bf)  
 Reason for many older ppl infected: [20% of Italians 30-49 still live at home](https://twitter.com/kuhnmo/status/1238421146837684224)  
-\+ they changed testing policy recently so now only testing severe cases, so the # of confirmed cases is smaller, so ratio of death/confirmed cases grows.
+\+ testing policy was changed late March bc of capacity limits, and only testing severe cases, so the number of confirmed cases is smaller, so ratio of death/confirmed cases grows.
 
 <div style="page-break-after: always;"></div>
 
@@ -230,9 +229,9 @@ General on network collapse.
 
 #### [Testing everyone instead of contact tracing](https://medium.com/@sten.linnarsson/to-stop-covid-19-test-everyone-373fd80eb03b)
 
-if $$c \ p > (R_0-1)/(R_0-R_q)$$
+if $$c\ p > (R_0-1)/(R_0-R_q)$$
 
-Then exp decay of outbreak. $$R_0$$ ~ 2.4, $$R_q$$ ~ 0.3 (Wuhan estimate).
+Then exponential decay of outbreak. $$R_0$$ ~ 2.4, $$R_q$$ ~ 0.3 (Wuhan estimate).
 c: compliance to self-quarantine after testing positive  
 p: true positive rate
 
@@ -242,7 +241,7 @@ Alternatives:
 - rolling circle replication
 - in vitro viral replication assays
 
-Lockdown cost dwarfs testing cost
+Lockdown cost dwarfs testing cost.
 
 #### [Imperial study on global effects](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-Impact-26-03-2020.pdf)
 
@@ -271,7 +270,8 @@ estimates on size, mutation rate, genome of virus
 
 [MERS basic reproduction number](https://biomedical-engineering-online.biomedcentral.com/track/pdf/10.1186/s12938-017-0370-7)
 
-fit SIR model to data, $$R_0$$ around 8 (!).
+Authors fit SIR model to data, least-square fit, they find a $$R_0$$ around 8 (!).
+How did they manage to suppress MERS?
 
 [Uri Alon: Adaptive cyclic-exit-strategies-from-lockdown](https://medium.com/@urialonw/adaptive-cyclic-exit-strategies-from-lockdown-to-suppress-covid-19-and-allow-economic-activity-4900a86b37c7)
 
@@ -294,9 +294,13 @@ Sick leave, helicopter money, requisitioning.
 #### [JP Morgan analysis on US small businesses](https://institute.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/institute/pdf/institute-growth-vitality-cash-flows.pdf)
 Most US small businesses have less than 1 month financial reserves if no revenue.
 
-#### [Syllabus of political-economic consequences of COVID19](https://the-politics-of-covid-19.com/search/?size=n_30_n)
+#### [Syllabus of political-economic consequences of COVID19 (Evgeny Morozov)](https://the-politics-of-covid-19.com/search/?size=n_30_n)
+
+Compilation of more in depth analysis of political and economic consequences of the pandemic.
 
 #### [Effects on the global south](https://rpalat.wordpress.com/2020/03/27/coronavirus-and-the-world-economy-the-old-is-dead-the-new-cant-be-born/)
+
+The lacking infrastructure of developing and poor countries to deal with a pandemic.
 
 #### [Mike Davis: Who gets forgotten in an epidemic](https://www.thenation.com/article/politics/mike-davis-covid-19-essay/)
 

@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-09T23:07:30+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Visualizing the pandemic</title><link href="http://localhost:4000/covid-visualization/" rel="alternate" type="text/html" title="Visualizing the pandemic" /><published>2020-04-09T00:00:00+02:00</published><updated>2020-04-09T00:00:00+02:00</updated><id>http://localhost:4000/covid-visualization</id><content type="html" xml:base="http://localhost:4000/covid-visualization/">&lt;p&gt;This post includes graphs of the dynamics of the COVID19 pandemic, as well as notes that I am making on the science (mostly epidemiologic modeling), economics and politics of the pandemics. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.
-There are two main interests that go through the notes.
-On the one hand I am interested in mathematical modeling of how the epidemic is spreading and the tentatives to slow it down or suppress it.
-On the other I am interested in structural analysis of how it might change society, especially on the medium/long-term.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-10T00:12:29+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Visualizing the pandemic</title><link href="http://localhost:4000/covid-visualization/" rel="alternate" type="text/html" title="Visualizing the pandemic" /><published>2020-04-09T00:00:00+02:00</published><updated>2020-04-09T00:00:00+02:00</updated><id>http://localhost:4000/covid-visualization</id><content type="html" xml:base="http://localhost:4000/covid-visualization/">&lt;p&gt;This post includes graphs of the dynamics of the COVID19 pandemic, as well as notes that I am making on the science (mostly epidemiologic modeling), economics and politics of the pandemics. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.&lt;/p&gt;
+
+&lt;p&gt;There are two main interests that go through the notes. First, I am interested in mathematical modeling of how the epidemic is spreading and the efforts to slow it down or suppress it. Second, I am interested in structural analysis of how it might change society, especially on the medium/long-term.&lt;/p&gt;
 
 &lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
 
@@ -65,7 +64,7 @@ The 5 biggest European countries by population (Germany, UK, France, Italy and S
 &lt;h4 id=&quot;why-italy-has-a-very-high-case-fatality-rate-cfr&quot;&gt;Why Italy has a very high case fatality rate (CFR)?&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://medium.com/@andreasbackhausab/coronavirus-why-its-so-deadly-in-italy-c4200a15a7bf&quot;&gt;% of old people/all cases much higher&lt;/a&gt;&lt;br /&gt;
 Reason for many older ppl infected: &lt;a href=&quot;https://twitter.com/kuhnmo/status/1238421146837684224&quot;&gt;20% of Italians 30-49 still live at home&lt;/a&gt;&lt;br /&gt;
-+ they changed testing policy recently so now only testing severe cases, so the # of confirmed cases is smaller, so ratio of death/confirmed cases grows.&lt;/p&gt;
++ testing policy was changed late March bc of capacity limits, and only testing severe cases, so the number of confirmed cases is smaller, so ratio of death/confirmed cases grows.&lt;/p&gt;
 
 &lt;div style=&quot;page-break-after: always;&quot;&gt;&lt;/div&gt;
 
@@ -231,9 +230,9 @@ It’s assumed growth within one community is exponential until &lt;script type=
 
 &lt;h4 id=&quot;testing-everyone-instead-of-contact-tracing&quot;&gt;&lt;a href=&quot;https://medium.com/@sten.linnarsson/to-stop-covid-19-test-everyone-373fd80eb03b&quot;&gt;Testing everyone instead of contact tracing&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;if &lt;script type=&quot;math/tex&quot;&gt;c \ p &gt; (R_0-1)/(R_0-R_q)&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;if &lt;script type=&quot;math/tex&quot;&gt;c\ p &gt; (R_0-1)/(R_0-R_q)&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Then exp decay of outbreak. &lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt; ~ 2.4, &lt;script type=&quot;math/tex&quot;&gt;R_q&lt;/script&gt; ~ 0.3 (Wuhan estimate).
+&lt;p&gt;Then exponential decay of outbreak. &lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt; ~ 2.4, &lt;script type=&quot;math/tex&quot;&gt;R_q&lt;/script&gt; ~ 0.3 (Wuhan estimate).
 c: compliance to self-quarantine after testing positive&lt;br /&gt;
 p: true positive rate&lt;/p&gt;
 
@@ -245,7 +244,7 @@ Alternatives:&lt;/p&gt;
   &lt;li&gt;in vitro viral replication assays&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Lockdown cost dwarfs testing cost&lt;/p&gt;
+&lt;p&gt;Lockdown cost dwarfs testing cost.&lt;/p&gt;
 
 &lt;h4 id=&quot;imperial-study-on-global-effects&quot;&gt;&lt;a href=&quot;https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-Impact-26-03-2020.pdf&quot;&gt;Imperial study on global effects&lt;/a&gt;&lt;/h4&gt;
 
@@ -274,7 +273,8 @@ Alternatives:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://biomedical-engineering-online.biomedcentral.com/track/pdf/10.1186/s12938-017-0370-7&quot;&gt;MERS basic reproduction number&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;fit SIR model to data, &lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt; around 8 (!).&lt;/p&gt;
+&lt;p&gt;Authors fit SIR model to data, least-square fit, they find a &lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt; around 8 (!).
+How did they manage to suppress MERS?&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://medium.com/@urialonw/adaptive-cyclic-exit-strategies-from-lockdown-to-suppress-covid-19-and-allow-economic-activity-4900a86b37c7&quot;&gt;Uri Alon: Adaptive cyclic-exit-strategies-from-lockdown&lt;/a&gt;&lt;/p&gt;
 
@@ -297,9 +297,13 @@ Sick leave, helicopter money, requisitioning.&lt;/p&gt;
 &lt;h4 id=&quot;jp-morgan-analysis-on-us-small-businesses&quot;&gt;&lt;a href=&quot;https://institute.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/institute/pdf/institute-growth-vitality-cash-flows.pdf&quot;&gt;JP Morgan analysis on US small businesses&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Most US small businesses have less than 1 month financial reserves if no revenue.&lt;/p&gt;
 
-&lt;h4 id=&quot;syllabus-of-political-economic-consequences-of-covid19&quot;&gt;&lt;a href=&quot;https://the-politics-of-covid-19.com/search/?size=n_30_n&quot;&gt;Syllabus of political-economic consequences of COVID19&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;syllabus-of-political-economic-consequences-of-covid19-evgeny-morozov&quot;&gt;&lt;a href=&quot;https://the-politics-of-covid-19.com/search/?size=n_30_n&quot;&gt;Syllabus of political-economic consequences of COVID19 (Evgeny Morozov)&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Compilation of more in depth analysis of political and economic consequences of the pandemic.&lt;/p&gt;
 
 &lt;h4 id=&quot;effects-on-the-global-south&quot;&gt;&lt;a href=&quot;https://rpalat.wordpress.com/2020/03/27/coronavirus-and-the-world-economy-the-old-is-dead-the-new-cant-be-born/&quot;&gt;Effects on the global south&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;The lacking infrastructure of developing and poor countries to deal with a pandemic.&lt;/p&gt;
 
 &lt;h4 id=&quot;mike-davis-who-gets-forgotten-in-an-epidemic&quot;&gt;&lt;a href=&quot;https://www.thenation.com/article/politics/mike-davis-covid-19-essay/&quot;&gt;Mike Davis: Who gets forgotten in an epidemic&lt;/a&gt;&lt;/h4&gt;
 
