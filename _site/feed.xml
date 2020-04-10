@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-10T00:12:29+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Visualizing the pandemic</title><link href="http://localhost:4000/covid-visualization/" rel="alternate" type="text/html" title="Visualizing the pandemic" /><published>2020-04-09T00:00:00+02:00</published><updated>2020-04-09T00:00:00+02:00</updated><id>http://localhost:4000/covid-visualization</id><content type="html" xml:base="http://localhost:4000/covid-visualization/">&lt;p&gt;This post includes graphs of the dynamics of the COVID19 pandemic, as well as notes that I am making on the science (mostly epidemiologic modeling), economics and politics of the pandemics. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-10T19:01:04+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Tracking the pandemic</title><link href="http://localhost:4000/covid-visualization/" rel="alternate" type="text/html" title="Tracking the pandemic" /><published>2020-04-09T00:00:00+02:00</published><updated>2020-04-09T00:00:00+02:00</updated><id>http://localhost:4000/covid-visualization</id><content type="html" xml:base="http://localhost:4000/covid-visualization/">&lt;p&gt;This post includes graphs of the dynamics of the COVID19 pandemic, as well as notes that I am making on the science (mostly epidemiologic modeling), economics and politics of the pandemics. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.&lt;/p&gt;
 
 &lt;p&gt;There are two main interests that go through the notes. First, I am interested in mathematical modeling of how the epidemic is spreading and the efforts to slow it down or suppress it. Second, I am interested in structural analysis of how it might change society, especially on the medium/long-term.&lt;/p&gt;
 
@@ -14,16 +14,16 @@
 
 &lt;p&gt;The data source for all these plots is the central database by &lt;a href=&quot;https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series&quot;&gt;Johns Hopkins University&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;total--cases-by-date-logarithmic-y-axis&quot;&gt;Total # cases by date, logarithmic y-axis&lt;/h3&gt;
+&lt;h3 id=&quot;total-number-of-cases-by-date-logarithmic-y-axis&quot;&gt;Total number of cases by date (logarithmic y-axis)&lt;/h3&gt;
 
 &lt;p&gt;This is showing the cumulative number of confirmed COVID19 cases in the major European countries, the US and some of the major Asian countries. The numbers are plotted by date.
 The 5 biggest European countries by population (Germany, UK, France, Italy and Spain) have a combined population almost exactly equal to the US, so it is useful to plot them also as a group, this is shown by ‘&lt;em&gt;IT_ES_FR_DE_UK’&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/covid/west_vs_asia_w_china.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;total--cases-y-logscale-aligned&quot;&gt;Total # cases, y logscale, aligned&lt;/h3&gt;
+&lt;h3 id=&quot;total-number-of-cases-aligned-logarithmic-y-axis&quot;&gt;Total number of cases, aligned (logarithmic y-axis)&lt;/h3&gt;
 
-&lt;p&gt;Same as the previous plot, but countries are aligned to start from the same number of cases as Italy had on the 26th of February, or the day they had the closest value.&lt;/p&gt;
+&lt;p&gt;Same as the previous plot, but countries are aligned to start from the same number of cases as Italy had on the 26th of February (or the day they had the closest value).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/covid/cases_cntrs_tracking_italy_log.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
 
@@ -41,23 +41,25 @@ The 5 biggest European countries by population (Germany, UK, France, Italy and S
 
 &lt;h3 id=&quot;number-of-new-cases-in-europe-us-and-asia-plotted-by-date&quot;&gt;Number of new cases in Europe, US and Asia, plotted by date&lt;/h3&gt;
 
-&lt;p&gt;This is showing the number of new confirmed cases by date, again comparing Western countries, Russia and Asian countries.&lt;/p&gt;
+&lt;p&gt;Number of new confirmed cases by date for Western countries and Russia only. The dashed blue lines show the imposition of the lockdowns in Italy (02/March, 09/March) and France (16/March).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/covid/newcases_west.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;number-of-daily-deaths-in-europe-and-the-us&quot;&gt;Number of daily deaths in Europe and the US&lt;/h3&gt;
 
+&lt;p&gt;The dashed blue lines show the imposition of the lockdowns in Italy (02/March, 09/March) and France (16/March).&lt;/p&gt;
+
 &lt;p&gt;&lt;img src=&quot;/images/covid/newdeaths_west.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;daily-growth-rate-of-cases-on-total--of-cases&quot;&gt;Daily growth rate of cases on total # of cases&lt;/h3&gt;
+&lt;h3 id=&quot;growth-rate-of-cases-on-total-number-of-cases&quot;&gt;Growth rate of cases on total number of cases&lt;/h3&gt;
 
 &lt;p&gt;This plot shows the percentage (fractional) growth of the total number of cases, as a function of the total number, with time going from left to right. The growth rate is averaged over a sliding window of three days.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/covid/growth_rate_cases_china_korea_west_cutoff2000.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;daily-growth-rate-of-deaths-on-total--of-deaths&quot;&gt;Daily growth rate of deaths on total # of deaths&lt;/h3&gt;
+&lt;h3 id=&quot;growth-rate-of-deaths-on-the-total-number&quot;&gt;Growth rate of deaths on the total number&lt;/h3&gt;
 
-&lt;p&gt;Same as previous plot, but for the number of fatalities.&lt;/p&gt;
+&lt;p&gt;As previous plot, but for the number of fatalities. The growth rate is averaged over a sliding window of three days.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/covid/growth_rate_deaths_china_korea_west_cutoff60.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
 
@@ -351,7 +353,7 @@ Greece, Eastern European states did it before 3rd death, Spain 9-10 days after, 
 
 &lt;!---!
 &lt;div class=&quot;infogram-embed&quot; data-id=&quot;0991a8d7-ada2-4fc2-a351-f446081b8d95&quot; data-type=&quot;interactive&quot; data-title=&quot;3 — Comparing when coronavirus measures were implemented&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e,i,n,s){var t=&quot;InfogramEmbeds&quot;,d=e.getElementsByTagName(&quot;script&quot;)[0];if(window[t]&amp;&amp;window[t].initialized)window[t].process&amp;&amp;window[t].process();else if(!e.getElementById(n)){var o=e.createElement(&quot;script&quot;);o.async=1,o.id=n,o.src=&quot;https://e.infogram.com/js/dist/embed-loader-min.js&quot;,d.parentNode.insertBefore(o,d)}}(document,0,&quot;infogram-async&quot;);&lt;/script&gt;
----&gt;</content><author><name></name></author><category term="political-economy" /><category term="globalization" /><category term="epidemics" /><category term="complex-systems" /><category term="ecology" /><category term="covid19" /><summary type="html">Graphs and notes on the COVID19 pandemic (updated regularly)</summary></entry><entry><title type="html">1990-2020, the false dawn of globalization?</title><link href="http://localhost:4000/illusion-globalisation/" rel="alternate" type="text/html" title="1990-2020, the false dawn of globalization?" /><published>2020-02-29T00:00:00+01:00</published><updated>2020-02-29T00:00:00+01:00</updated><id>http://localhost:4000/illusion-globalisation</id><content type="html" xml:base="http://localhost:4000/illusion-globalisation/">&lt;p&gt;As the coronavirus is spreading through the world I have been gradually overcome by a feeling similar to the moment when an optical shift occurs. If you have looked at a &lt;a href=&quot;https://en.wikipedia.org/wiki/Random_dot_stereogram&quot;&gt;stereogram&lt;/a&gt;, you know what I mean: out of random dots a three dimensional pattern emerges.&lt;/p&gt;
+---&gt;</content><author><name></name></author><category term="political-economy" /><category term="globalization" /><category term="epidemics" /><category term="complex-systems" /><category term="ecology" /><category term="covid19" /><summary type="html">Graphs and notes on the science and economics of COVID19</summary></entry><entry><title type="html">1990-2020, the false dawn of globalization?</title><link href="http://localhost:4000/illusion-globalisation/" rel="alternate" type="text/html" title="1990-2020, the false dawn of globalization?" /><published>2020-02-29T00:00:00+01:00</published><updated>2020-02-29T00:00:00+01:00</updated><id>http://localhost:4000/illusion-globalisation</id><content type="html" xml:base="http://localhost:4000/illusion-globalisation/">&lt;p&gt;As the coronavirus is spreading through the world I have been gradually overcome by a feeling similar to the moment when an optical shift occurs. If you have looked at a &lt;a href=&quot;https://en.wikipedia.org/wiki/Random_dot_stereogram&quot;&gt;stereogram&lt;/a&gt;, you know what I mean: out of random dots a three dimensional pattern emerges.&lt;/p&gt;
 
 &lt;p&gt;Almost irrespectively of political taste, most of us, at least in middle and high-income countries, have experienced these last decades of expanding world trade, cheapening travel, instantaneous communication and product availability as a never-ending ahistorical present, a normality taken for granted. In reality maybe it was a very fragile and unsustainable experiment, about to be swept away.&lt;/p&gt;
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visualizing the pandemic
+title: Tracking the pandemic
 tags: political-economy globalization epidemics complex-systems ecology covid19
-excerpt: Graphs and notes on the COVID19 pandemic (updated regularly)
+excerpt: Graphs and notes on the science and economics of COVID19
 secondary: ecopol
 mathjax: true
 ---
@@ -21,16 +21,16 @@ There are two main interests that go through the notes. First, I am interested i
 
 The data source for all these plots is the central database by [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series).
 
-### Total # cases by date, logarithmic y-axis
+### Total number of cases by date (logarithmic y-axis)
 
 This is showing the cumulative number of confirmed COVID19 cases in the major European countries, the US and some of the major Asian countries. The numbers are plotted by date.
 The 5 biggest European countries by population (Germany, UK, France, Italy and Spain) have a combined population almost exactly equal to the US, so it is useful to plot them also as a group, this is shown by '*IT_ES_FR_DE_UK'*.
 
 ![_config.yml]({{ site.baseurl }}/images/covid/west_vs_asia_w_china.png)
 
-### Total # cases, y logscale, aligned
+### Total number of cases, aligned (logarithmic y-axis)
 
-Same as the previous plot, but countries are aligned to start from the same number of cases as Italy had on the 26th of February, or the day they had the closest value.
+Same as the previous plot, but countries are aligned to start from the same number of cases as Italy had on the 26th of February (or the day they had the closest value).
 
 ![_config.yml]({{ site.baseurl }}/images/covid/cases_cntrs_tracking_italy_log.png)
 
@@ -48,23 +48,25 @@ Plotting the number of new cases by date, for the same Western (+Russia) and Asi
 
 ### Number of new cases in Europe, US and Asia, plotted by date
 
-This is showing the number of new confirmed cases by date, again comparing Western countries, Russia and Asian countries.
+Number of new confirmed cases by date for Western countries and Russia only. The dashed blue lines show the imposition of the lockdowns in Italy (02/March, 09/March) and France (16/March).
 
 ![_config.yml]({{ site.baseurl }}/images/covid/newcases_west.png)
 
 ### Number of daily deaths in Europe and the US
 
+The dashed blue lines show the imposition of the lockdowns in Italy (02/March, 09/March) and France (16/March).
+
 ![_config.yml]({{ site.baseurl }}/images/covid/newdeaths_west.png)
 
-### Daily growth rate of cases on total # of cases
+### Growth rate of cases on total number of cases
 
 This plot shows the percentage (fractional) growth of the total number of cases, as a function of the total number, with time going from left to right. The growth rate is averaged over a sliding window of three days.
 
 ![_config.yml]({{ site.baseurl }}/images/covid/growth_rate_cases_china_korea_west_cutoff2000.png)
 
-### Daily growth rate of deaths on total # of deaths
+### Growth rate of deaths on the total number
 
-Same as previous plot, but for the number of fatalities.
+As previous plot, but for the number of fatalities. The growth rate is averaged over a sliding window of three days.
 
 ![_config.yml]({{ site.baseurl }}/images/covid/growth_rate_deaths_china_korea_west_cutoff60.png)
 

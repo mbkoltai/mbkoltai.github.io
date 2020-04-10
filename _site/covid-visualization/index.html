@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Visualizing the pandemic – Mihály Koltai – personal website</title>
+    <title>Tracking the pandemic – Mihály Koltai – personal website</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -9,8 +9,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="Graphs and notes on the COVID19 pandemic (updated regularly)" />
-    <meta property="og:description" content="Graphs and notes on the COVID19 pandemic (updated regularly)" />
+    <meta name="description" content="Graphs and notes on the science and economics of COVID19" />
+    <meta property="og:description" content="Graphs and notes on the science and economics of COVID19" />
     
     <meta name="author" content="Mihály Koltai" />
 
@@ -26,8 +26,8 @@
 
 
     
-    <meta property="og:title" content="Visualizing the pandemic" />
-    <meta property="twitter:title" content="Visualizing the pandemic" />
+    <meta property="og:title" content="Tracking the pandemic" />
+    <meta property="twitter:title" content="Tracking the pandemic" />
     
 
 
@@ -40,19 +40,19 @@
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Visualizing the pandemic | Mihály Koltai</title>
+<title>Tracking the pandemic | Mihály Koltai</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Visualizing the pandemic" />
+<meta property="og:title" content="Tracking the pandemic" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Graphs and notes on the COVID19 pandemic (updated regularly)" />
-<meta property="og:description" content="Graphs and notes on the COVID19 pandemic (updated regularly)" />
+<meta name="description" content="Graphs and notes on the science and economics of COVID19" />
+<meta property="og:description" content="Graphs and notes on the science and economics of COVID19" />
 <link rel="canonical" href="http://localhost:4000/covid-visualization/" />
 <meta property="og:url" content="http://localhost:4000/covid-visualization/" />
 <meta property="og:site_name" content="Mihály Koltai" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-09T00:00:00+02:00" />
 <script type="application/ld+json">
-{"description":"Graphs and notes on the COVID19 pandemic (updated regularly)","@type":"BlogPosting","url":"http://localhost:4000/covid-visualization/","headline":"Visualizing the pandemic","dateModified":"2020-04-09T00:00:00+02:00","datePublished":"2020-04-09T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/covid-visualization/"},"@context":"http://schema.org"}</script>
+{"description":"Graphs and notes on the science and economics of COVID19","@type":"BlogPosting","url":"http://localhost:4000/covid-visualization/","headline":"Tracking the pandemic","dateModified":"2020-04-09T00:00:00+02:00","datePublished":"2020-04-09T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/covid-visualization/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -82,7 +82,7 @@
 
     <div id="main" role="main" class="container">
       <article class="post">
-  <h1>Visualizing the pandemic</h1>
+  <h1>Tracking the pandemic</h1>
 
   <div class="entry">
     <p>This post includes graphs of the dynamics of the COVID19 pandemic, as well as notes that I am making on the science (mostly epidemiologic modeling), economics and politics of the pandemics. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.</p>
@@ -101,16 +101,16 @@
 
 <p>The data source for all these plots is the central database by <a href="https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series">Johns Hopkins University</a>.</p>
 
-<h3 id="total--cases-by-date-logarithmic-y-axis">Total # cases by date, logarithmic y-axis</h3>
+<h3 id="total-number-of-cases-by-date-logarithmic-y-axis">Total number of cases by date (logarithmic y-axis)</h3>
 
 <p>This is showing the cumulative number of confirmed COVID19 cases in the major European countries, the US and some of the major Asian countries. The numbers are plotted by date.
 The 5 biggest European countries by population (Germany, UK, France, Italy and Spain) have a combined population almost exactly equal to the US, so it is useful to plot them also as a group, this is shown by ‘<em>IT_ES_FR_DE_UK’</em>.</p>
 
 <p><img src="/images/covid/west_vs_asia_w_china.png" alt="_config.yml" /></p>
 
-<h3 id="total--cases-y-logscale-aligned">Total # cases, y logscale, aligned</h3>
+<h3 id="total-number-of-cases-aligned-logarithmic-y-axis">Total number of cases, aligned (logarithmic y-axis)</h3>
 
-<p>Same as the previous plot, but countries are aligned to start from the same number of cases as Italy had on the 26th of February, or the day they had the closest value.</p>
+<p>Same as the previous plot, but countries are aligned to start from the same number of cases as Italy had on the 26th of February (or the day they had the closest value).</p>
 
 <p><img src="/images/covid/cases_cntrs_tracking_italy_log.png" alt="_config.yml" /></p>
 
@@ -128,23 +128,25 @@ The 5 biggest European countries by population (Germany, UK, France, Italy and S
 
 <h3 id="number-of-new-cases-in-europe-us-and-asia-plotted-by-date">Number of new cases in Europe, US and Asia, plotted by date</h3>
 
-<p>This is showing the number of new confirmed cases by date, again comparing Western countries, Russia and Asian countries.</p>
+<p>Number of new confirmed cases by date for Western countries and Russia only. The dashed blue lines show the imposition of the lockdowns in Italy (02/March, 09/March) and France (16/March).</p>
 
 <p><img src="/images/covid/newcases_west.png" alt="_config.yml" /></p>
 
 <h3 id="number-of-daily-deaths-in-europe-and-the-us">Number of daily deaths in Europe and the US</h3>
 
+<p>The dashed blue lines show the imposition of the lockdowns in Italy (02/March, 09/March) and France (16/March).</p>
+
 <p><img src="/images/covid/newdeaths_west.png" alt="_config.yml" /></p>
 
-<h3 id="daily-growth-rate-of-cases-on-total--of-cases">Daily growth rate of cases on total # of cases</h3>
+<h3 id="growth-rate-of-cases-on-total-number-of-cases">Growth rate of cases on total number of cases</h3>
 
 <p>This plot shows the percentage (fractional) growth of the total number of cases, as a function of the total number, with time going from left to right. The growth rate is averaged over a sliding window of three days.</p>
 
 <p><img src="/images/covid/growth_rate_cases_china_korea_west_cutoff2000.png" alt="_config.yml" /></p>
 
-<h3 id="daily-growth-rate-of-deaths-on-total--of-deaths">Daily growth rate of deaths on total # of deaths</h3>
+<h3 id="growth-rate-of-deaths-on-the-total-number">Growth rate of deaths on the total number</h3>
 
-<p>Same as previous plot, but for the number of fatalities.</p>
+<p>As previous plot, but for the number of fatalities. The growth rate is averaged over a sliding window of three days.</p>
 
 <p><img src="/images/covid/growth_rate_deaths_china_korea_west_cutoff60.png" alt="_config.yml" /></p>
 
