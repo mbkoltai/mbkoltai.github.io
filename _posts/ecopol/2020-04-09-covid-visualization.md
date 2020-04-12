@@ -25,6 +25,12 @@ The data source for all these plots is the central database by [Johns Hopkins Un
 
 This is showing the cumulative number of confirmed COVID19 cases in the major European countries, the US and some of the major Asian countries. The numbers are plotted by date.
 The 5 biggest European countries by population (Germany, UK, France, Italy and Spain) have a combined population almost exactly equal to the US, so it is useful to plot them also as a group, this is shown by '*IT_ES_FR_DE_UK'*.
+The insets show European countries plus the US and Asian countries, respectively.
+The dashed blue lines on the left inset show the dates:
+- 20/February: exponential increase of cases starts in Italy
+- 26/February: exponential increase of cases starts in France
+- 09/March: national lockdown in Italy
+- 09/March: national lockdown in France
 
 ![_config.yml]({{ site.baseurl }}/images/covid/west_vs_asia_w_china.png)
 
@@ -46,7 +52,7 @@ Plotting the number of new cases by date, for the same Western (+Russia) and Asi
 
 ![_config.yml]({{ site.baseurl }}/images/covid/newcases_west_vs_asia_w_china.png)
 
-### Number of new cases in Europe, US and Asia, plotted by date
+### Number of new cases in Europe and the US
 
 Number of new confirmed cases by date for Western countries and Russia only. The dashed blue lines show the imposition of the lockdowns in Italy (02/March, 09/March) and France (16/March).
 
@@ -342,12 +348,17 @@ China’s wildlife farming has evolved into a gigantic business interest. In 201
 
 #### [Reuters detailed account of UK gov response timeline](https://www.reuters.com/article/us-health-coronavirus-britain-path-speci-idUSKBN21P1VF)
 
-#### [Politico.eu: How Europe failed the coronavirus test](https://www.politico.eu/article/coronavirus-europe-failed-the-test/)
+####[COVID-19 and the Coming Corporate Debt Catastrophe (13, March)](https://sbhager.com/covid-19-and-the-coming-corporate-debt-catastrophe/)
 
+#### [Politico.eu: How Europe failed the coronavirus test](https://www.politico.eu/article/coronavirus-europe-failed-the-test/)
 <!---![_config.yml]({{ site.baseurl }}/images/covid/reaction_eur_states_14978916_1586353616114.png)--->
+
 This is a [useful table](https://images.jifo.co/14978916_1586353616114.png) on how many days it took European governments to apply restrictions after the 3rd death from COVID19.
 Greece, Eastern European states did it before 3rd death, Spain 9-10 days after, UK, France 2 weeks after.
 
 <!---!
 <div class="infogram-embed" data-id="0991a8d7-ada2-4fc2-a351-f446081b8d95" data-type="interactive" data-title="3 — Comparing when coronavirus measures were implemented"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>
 --->
+
+
+[Capitalist agriculture and Covid-19: A deadly combination (11 March)](https://climateandcapitalism.com/2020/03/11/capitalist-agriculture-and-covid-19-a-deadly-combination/)
