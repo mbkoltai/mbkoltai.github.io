@@ -29,8 +29,8 @@ The insets show European countries plus the US and Asian countries, respectively
 The dashed blue lines on the left inset show the dates:
 - 20/February: exponential increase of cases starts in Italy
 - 26/February: exponential increase of cases starts in France
-- 09/March: national lockdown in Italy
-- 09/March: national lockdown in France
+- 09/March: countrywide lockdown in Italy
+- 16/March: countrywide lockdown in France (announced, effective from 17th noon)
 
 ![_config.yml]({{ site.baseurl }}/images/covid/west_vs_asia_w_china.png)
 
@@ -362,13 +362,26 @@ China’s wildlife farming has evolved into a gigantic business interest. In 201
 
 #### [Reuters detailed account of UK gov response timeline](https://www.reuters.com/article/us-health-coronavirus-britain-path-speci-idUSKBN21P1VF)
 
-####[COVID-19 and the Coming Corporate Debt Catastrophe (13, March)](https://sbhager.com/covid-19-and-the-coming-corporate-debt-catastrophe/)
+#### [COVID-19 and the Coming Corporate Debt Catastrophe (13, March)](https://sbhager.com/covid-19-and-the-coming-corporate-debt-catastrophe/)
 
 #### [Politico.eu: How Europe failed the coronavirus test](https://www.politico.eu/article/coronavirus-europe-failed-the-test/)
 <!---![_config.yml]({{ site.baseurl }}/images/covid/reaction_eur_states_14978916_1586353616114.png)--->
 
 This is a [useful table](https://images.jifo.co/14978916_1586353616114.png) on how many days it took European governments to apply restrictions after the 3rd death from COVID19.
 Greece, Eastern European states did it before 3rd death, Spain 9-10 days after, UK, France 2 weeks after.
+
+[Can you put a price on COVID-19 options? Experts weigh lives versus economics](https://www.sciencemag.org/news/2020/03/modelers-weigh-value-lives-and-lockdown-costs-put-price-covid-19)
+
+Summary on modeling efforts to estimate costs of lockdowns vs letting the virus spread.
+Early estimates suggested even a year-long lockdown more economically viable.
+They made an estimate for economic loss due to deaths.
+Important finding: usually fatality rates *fall* during economic crises (less accidents etc), even if suicides might increase.
+
+[Data Gaps and the Policy Response to the Novel Coronavirus](https://drive.google.com/file/d/1Vu0wl-9K2dh8MpMqaO85MvE6UH7gcRLx/view)
+
+Macroeconomic model to estimate economic effects of lockdowns vs. release.
+
+[Martin S. Eichenbaum, Sergio Rebelo, Mathias Traband: The Macroeconomics of Epidemics (12 April)](https://www.kellogg.northwestern.edu/faculty/rebelo/htm/epidemics.pdf)
 
 <!---!
 <div class="infogram-embed" data-id="0991a8d7-ada2-4fc2-a351-f446081b8d95" data-type="interactive" data-title="3 — Comparing when coronavirus measures were implemented"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>

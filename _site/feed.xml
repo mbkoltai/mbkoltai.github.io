@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-14T12:23:45+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Tracking the pandemic</title><link href="http://localhost:4000/covid-visualization/" rel="alternate" type="text/html" title="Tracking the pandemic" /><published>2020-04-09T00:00:00+02:00</published><updated>2020-04-09T00:00:00+02:00</updated><id>http://localhost:4000/covid-visualization</id><content type="html" xml:base="http://localhost:4000/covid-visualization/">&lt;p&gt;This post includes graphs of the dynamics of the COVID19 pandemic, as well as notes that I am making on the science (mostly epidemiologic modeling), economics and politics of the pandemics. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-14T21:09:21+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Tracking the pandemic</title><link href="http://localhost:4000/covid-visualization/" rel="alternate" type="text/html" title="Tracking the pandemic" /><published>2020-04-09T00:00:00+02:00</published><updated>2020-04-09T00:00:00+02:00</updated><id>http://localhost:4000/covid-visualization</id><content type="html" xml:base="http://localhost:4000/covid-visualization/">&lt;p&gt;This post includes graphs of the dynamics of the COVID19 pandemic, as well as notes that I am making on the science (mostly epidemiologic modeling), economics and politics of the pandemics. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.&lt;/p&gt;
 
 &lt;p&gt;There are two main interests that go through the notes. First, I am interested in mathematical modeling of how the epidemic is spreading and the efforts to slow it down or suppress it. Second, I am interested in structural analysis of how it might change society, especially on the medium/long-term.&lt;/p&gt;
 
@@ -23,8 +23,8 @@ The dashed blue lines on the left inset show the dates:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;20/February: exponential increase of cases starts in Italy&lt;/li&gt;
   &lt;li&gt;26/February: exponential increase of cases starts in France&lt;/li&gt;
-  &lt;li&gt;09/March: national lockdown in Italy&lt;/li&gt;
-  &lt;li&gt;09/March: national lockdown in France&lt;/li&gt;
+  &lt;li&gt;09/March: countrywide lockdown in Italy&lt;/li&gt;
+  &lt;li&gt;16/March: countrywide lockdown in France (announced, effective from 17th noon)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/covid/west_vs_asia_w_china.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
@@ -369,13 +369,26 @@ China’s wildlife farming has evolved into a gigantic business interest. In 201
 
 &lt;h4 id=&quot;reuters-detailed-account-of-uk-gov-response-timeline&quot;&gt;&lt;a href=&quot;https://www.reuters.com/article/us-health-coronavirus-britain-path-speci-idUSKBN21P1VF&quot;&gt;Reuters detailed account of UK gov response timeline&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;####&lt;a href=&quot;https://sbhager.com/covid-19-and-the-coming-corporate-debt-catastrophe/&quot;&gt;COVID-19 and the Coming Corporate Debt Catastrophe (13, March)&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;covid-19-and-the-coming-corporate-debt-catastrophe-13-march&quot;&gt;&lt;a href=&quot;https://sbhager.com/covid-19-and-the-coming-corporate-debt-catastrophe/&quot;&gt;COVID-19 and the Coming Corporate Debt Catastrophe (13, March)&lt;/a&gt;&lt;/h4&gt;
 
 &lt;h4 id=&quot;politicoeu-how-europe-failed-the-coronavirus-test&quot;&gt;&lt;a href=&quot;https://www.politico.eu/article/coronavirus-europe-failed-the-test/&quot;&gt;Politico.eu: How Europe failed the coronavirus test&lt;/a&gt;&lt;/h4&gt;
 &lt;!---![_config.yml](/images/covid/reaction_eur_states_14978916_1586353616114.png)---&gt;
 
 &lt;p&gt;This is a &lt;a href=&quot;https://images.jifo.co/14978916_1586353616114.png&quot;&gt;useful table&lt;/a&gt; on how many days it took European governments to apply restrictions after the 3rd death from COVID19.
 Greece, Eastern European states did it before 3rd death, Spain 9-10 days after, UK, France 2 weeks after.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.sciencemag.org/news/2020/03/modelers-weigh-value-lives-and-lockdown-costs-put-price-covid-19&quot;&gt;Can you put a price on COVID-19 options? Experts weigh lives versus economics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Summary on modeling efforts to estimate costs of lockdowns vs letting the virus spread.
+Early estimates suggested even a year-long lockdown more economically viable.
+They made an estimate for economic loss due to deaths.
+Important finding: usually fatality rates &lt;em&gt;fall&lt;/em&gt; during economic crises (less accidents etc), even if suicides might increase.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/1Vu0wl-9K2dh8MpMqaO85MvE6UH7gcRLx/view&quot;&gt;Data Gaps and the Policy Response to the Novel Coronavirus&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Macroeconomic model to estimate economic effects of lockdowns vs. release.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.kellogg.northwestern.edu/faculty/rebelo/htm/epidemics.pdf&quot;&gt;Martin S. Eichenbaum, Sergio Rebelo, Mathias Traband: The Macroeconomics of Epidemics (12 April)&lt;/a&gt;&lt;/p&gt;
 
 &lt;!---!
 &lt;div class=&quot;infogram-embed&quot; data-id=&quot;0991a8d7-ada2-4fc2-a351-f446081b8d95&quot; data-type=&quot;interactive&quot; data-title=&quot;3 — Comparing when coronavirus measures were implemented&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e,i,n,s){var t=&quot;InfogramEmbeds&quot;,d=e.getElementsByTagName(&quot;script&quot;)[0];if(window[t]&amp;&amp;window[t].initialized)window[t].process&amp;&amp;window[t].process();else if(!e.getElementById(n)){var o=e.createElement(&quot;script&quot;);o.async=1,o.id=n,o.src=&quot;https://e.infogram.com/js/dist/embed-loader-min.js&quot;,d.parentNode.insertBefore(o,d)}}(document,0,&quot;infogram-async&quot;);&lt;/script&gt;
