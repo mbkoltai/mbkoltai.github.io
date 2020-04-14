@@ -200,6 +200,11 @@ Ferguson use SIR ODE-model, not appropriate bc they *ignore*:
 But Imperial model has different environments and it is agent-based, so maybe this is not fair.
 Debate: https://twitter.com/yaneerbaryam/status/1239936951823843328
 
+#### [The hammer and the dance](https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56)
+
+Uses simple SIR model to argue why suppression is needed, as mitigation leads to enormous death toll (some estimates on side-effects).
+Suppression buys time for producing equipment, maybe drugs.
+
 #### [Beyond contact tracing: Community-based early detection for Ebola response, PLoS Currents Outbreaks (May 19, 2016)](https://necsi.edu/beyond-contact-tracing)
 
 Stochastic model by NECSI.
@@ -272,9 +277,15 @@ Preds made 05 April. France: 15K deaths by August, UK 66K (!).
 
 Importation risk from China vs health care system capacity
 
-[Ron Milo: COVID by the numbers](https://elifesciences.org/articles/57309/)
+#### [Ron Milo: COVID by the numbers](https://elifesciences.org/articles/57309/)
 
-estimates on size, mutation rate, genome of virus
+Estimates on size, mutation rate, genome of virus.
+Nucleotide identity with other coronaviruses:
+- bat CoV: 96%
+- pangolin CoV: 91%
+- SARS-CoV-1: 80%
+- MERS: 55%
+- common cold CoV: 50%
 
 [MERS basic reproduction number](https://biomedical-engineering-online.biomedcentral.com/track/pdf/10.1186/s12938-017-0370-7)
 
@@ -286,9 +297,12 @@ How did they manage to suppress MERS?
 4 day work+10 day lockdown, antiphased for 2 groups of households.
 Review of deterministic, stochastic and also *network* SEIR model, different cyclic lockdown strategies.
 
+Antiphasing (staggering) uses the timeline of the disease and infectiousness:
+![_config.yml](https://miro.medium.com/max/770/0*MWxESwBV56QMF9rc)
+
 [SEIRSPLUS: Python package for stochastic and network based SEIR model](https://github.com/ryansmcgee/seirsplus)
 
-<div style="page-break-after: always;"></div>
+Python package to set up epidemiologic models easily, used in Uri Alon study.
 
 ## 3. Economics and politics
 
@@ -316,7 +330,7 @@ The lacking infrastructure of developing and poor countries to deal with a pande
 
 #### [Disease X WHO scenario 2018](https://edition.cnn.com/2018/03/12/health/disease-x-blueprint-who/index.html)
 
-#### [M Roberts: War economy?](https://thenextrecession.wordpress.com/2020/03/30/a-war-economy/)
+#### [M Roberts: War economy?](https://thenextrecession.wordpress.com/2020/03/30/a-war-economy)
 
 ![_config.yml](https://thenextrecession.files.wordpress.com/2020/03/war-4.jpg)
 
