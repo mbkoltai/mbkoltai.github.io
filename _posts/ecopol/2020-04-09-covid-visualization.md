@@ -40,7 +40,7 @@ Same as the previous plot, but countries are aligned to start from the same numb
 
 ![_config.yml]({{ site.baseurl }}/images/covid/cases_cntrs_tracking_italy_log.png)
 
-### Total # deaths, aligned from same starting point (y logscale)
+### Total number of deaths, aligned from same starting point (y logscale)
 
 Same as the previous plot, but for cumulated number of fatalities.
 
@@ -54,13 +54,13 @@ Plotting the number of new cases by date, for the same Western (+Russia) and Asi
 
 ### Number of new cases in Europe and the US
 
-Number of new confirmed cases by date for Western countries and Russia only. The dashed blue lines show the imposition of the lockdowns in Italy (02/March, 09/March) and France (16/March).
+Number of new confirmed cases by date for Western countries and Russia only. The dashed blue lines show the start of the lockdowns in Italy (02/March, 09/March) and France (16/March).
 
 ![_config.yml]({{ site.baseurl }}/images/covid/newcases_west.png)
 
 ### Number of daily deaths in Europe and the US
 
-The dashed blue lines show the imposition of the lockdowns in Italy (02/March, 09/March) and France (16/March).
+The dashed blue lines show the lockdowns of Italy (02/March, 09/March) and France (16/March).
 
 ![_config.yml]({{ site.baseurl }}/images/covid/newdeaths_west.png)
 
@@ -386,6 +386,5 @@ Macroeconomic model to estimate economic effects of lockdowns vs. release.
 <!---!
 <div class="infogram-embed" data-id="0991a8d7-ada2-4fc2-a351-f446081b8d95" data-type="interactive" data-title="3 — Comparing when coronavirus measures were implemented"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>
 --->
-
 
 [Capitalist agriculture and Covid-19: A deadly combination (11 March)](https://climateandcapitalism.com/2020/03/11/capitalist-agriculture-and-covid-19-a-deadly-combination/)
