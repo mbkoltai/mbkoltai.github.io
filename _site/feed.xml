@@ -1,84 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-17T11:40:12+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Tracking the pandemic</title><link href="http://localhost:4000/covid-visualization/" rel="alternate" type="text/html" title="Tracking the pandemic" /><published>2020-04-09T00:00:00+02:00</published><updated>2020-04-09T00:00:00+02:00</updated><id>http://localhost:4000/covid-visualization</id><content type="html" xml:base="http://localhost:4000/covid-visualization/">&lt;p&gt;This post includes graphs of the dynamics of the COVID19 pandemic, as well as notes that I am making on the science (mostly epidemiologic modeling), economics and politics of the pandemics. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.&lt;/p&gt;
-
-&lt;p&gt;There are two main interests that go through the notes. First, I am interested in mathematical modeling of how the epidemic is spreading and the efforts to slow it down or suppress it. Second, I am interested in structural analysis of how it might change society, especially on the medium/long-term.&lt;/p&gt;
-
-&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-data-visualization&quot;&gt;Data visualization&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-science-and-modeling&quot;&gt;Science and modeling&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-economics-and-politics&quot;&gt;Economics and politics&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;1-data-visualization&quot;&gt;1. Data visualization&lt;/h2&gt;
-
-&lt;p&gt;The data source for all these plots is the central database by &lt;a href=&quot;https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series&quot;&gt;Johns Hopkins University&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;total-number-of-cases-by-date-logarithmic-y-axis&quot;&gt;Total number of cases by date (logarithmic y-axis)&lt;/h3&gt;
-
-&lt;p&gt;This is showing the cumulative number of confirmed COVID19 cases in the major European countries, the US and some of the major Asian countries. The numbers are plotted by date.
-The 5 biggest European countries by population (Germany, UK, France, Italy and Spain) have a combined population almost exactly equal to the US, so it is useful to plot them also as a group, this is shown by ‘&lt;em&gt;IT_ES_FR_DE_UK’&lt;/em&gt;.
-The insets show European countries plus the US and Asian countries, respectively.
-The dashed blue lines on the left inset show the dates:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;20/February: exponential increase of cases starts in Italy&lt;/li&gt;
-  &lt;li&gt;26/February: exponential increase of cases starts in France&lt;/li&gt;
-  &lt;li&gt;09/March: countrywide lockdown in Italy&lt;/li&gt;
-  &lt;li&gt;16/March: countrywide lockdown in France (announced, effective from 17th noon)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/covid/west_vs_asia_w_china.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;total-number-of-cases-aligned-logarithmic-y-axis&quot;&gt;Total number of cases, aligned (logarithmic y-axis)&lt;/h3&gt;
-
-&lt;p&gt;Same as the previous plot, but countries are aligned to start from the same number of cases as Italy had on the 26th of February (or the day they had the closest value).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/covid/cases_cntrs_tracking_italy_log.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;total-number-of-deaths-aligned-from-same-starting-point-y-logscale&quot;&gt;Total number of deaths, aligned from same starting point (y logscale)&lt;/h3&gt;
-
-&lt;p&gt;Same as the previous plot, but for cumulated number of fatalities.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/covid/deaths_cntrs_tracking_italy_log.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;number-of-new-cases-in-europe-us-and-asia-logarithmic-y-axis&quot;&gt;Number of new cases in Europe, US and Asia (logarithmic y-axis)&lt;/h3&gt;
-
-&lt;p&gt;Plotting the number of new cases by date, for the same Western (+Russia) and Asian countries.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/covid/newcases_west_vs_asia_w_china.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;number-of-new-cases-in-europe-and-the-us&quot;&gt;Number of new cases in Europe and the US&lt;/h3&gt;
-
-&lt;p&gt;Number of new confirmed cases by date for Western countries and Russia only. The dashed blue lines show the start of the lockdowns in Italy (02/March, 09/March) and France (16/March).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/covid/newcases_west.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;number-of-daily-deaths-in-europe-and-the-us&quot;&gt;Number of daily deaths in Europe and the US&lt;/h3&gt;
-
-&lt;p&gt;The dashed blue lines show the lockdowns of Italy (02/March, 09/March) and France (16/March).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/covid/newdeaths_west.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;growth-rate-of-cases-on-total-number-of-cases&quot;&gt;Growth rate of cases on total number of cases&lt;/h3&gt;
-
-&lt;p&gt;This plot shows the percentage (fractional) growth of the total number of cases, as a function of the total number, with time going from left to right. The growth rate is averaged over a sliding window of three days.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/covid/growth_rate_cases_china_korea_west_cutoff2000.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;growth-rate-of-deaths-on-the-total-number&quot;&gt;Growth rate of deaths on the total number&lt;/h3&gt;
-
-&lt;p&gt;As previous plot, but for the number of fatalities. The growth rate is averaged over a sliding window of three days.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/covid/growth_rate_deaths_china_korea_west_cutoff60.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;why-italy-has-a-very-high-case-fatality-rate-cfr&quot;&gt;Why Italy has a very high case fatality rate (CFR)?&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@andreasbackhausab/coronavirus-why-its-so-deadly-in-italy-c4200a15a7bf&quot;&gt;% of old people/all cases much higher&lt;/a&gt;&lt;br /&gt;
-Reason for many older ppl infected: &lt;a href=&quot;https://twitter.com/kuhnmo/status/1238421146837684224&quot;&gt;20% of Italians 30-49 still live at home&lt;/a&gt;&lt;br /&gt;
-+ testing policy was changed late March bc of capacity limits, and only testing severe cases, so the number of confirmed cases is smaller, so ratio of death/confirmed cases grows.&lt;/p&gt;
-
-&lt;div style=&quot;page-break-after: always;&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;2-science-and-modeling&quot;&gt;2. Science and modeling&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-18T13:56:41+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Notes on modeling the COVID19 pandemic</title><link href="http://localhost:4000/covid-modeling/" rel="alternate" type="text/html" title="Notes on modeling the COVID19 pandemic" /><published>2020-04-18T00:00:00+02:00</published><updated>2020-04-18T00:00:00+02:00</updated><id>http://localhost:4000/covid-modeling</id><content type="html" xml:base="http://localhost:4000/covid-modeling/">&lt;p&gt;These are notes on the science (mostly epidemiological modeling) of the COVID19 pandemic. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.&lt;/p&gt;
 
 &lt;h4 id=&quot;school-closures-event-cancellations-and-the-mesoscopic-localization-of-epidemics-in-networks-with-higher-order-structure&quot;&gt;&lt;a href=&quot;https://arxiv.org/pdf/2003.05924.pdf&quot;&gt;School closures, event cancellations, and the mesoscopic localization of epidemics in networks with higher-order structure&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;higher-order struct leads to mesoscopic localization (concentration into substructures)
@@ -309,9 +229,86 @@ Review of deterministic, stochastic and also &lt;em&gt;network&lt;/em&gt; SEIR m
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/ryansmcgee/seirsplus&quot;&gt;SEIRSPLUS: Python package for stochastic and network based SEIR model&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Python package to set up epidemiologic models easily, used in Uri Alon study.&lt;/p&gt;
+&lt;p&gt;Python package to set up epidemiologic models easily, used in Uri Alon study.&lt;/p&gt;</content><author><name></name></author><category term="epidemics" /><category term="complex-systems" /><category term="covid19" /><summary type="html">Math modeling the pandemic</summary></entry><entry><title type="html">Tracking the pandemic</title><link href="http://localhost:4000/covid-visualization/" rel="alternate" type="text/html" title="Tracking the pandemic" /><published>2020-04-09T00:00:00+02:00</published><updated>2020-04-09T00:00:00+02:00</updated><id>http://localhost:4000/covid-visualization</id><content type="html" xml:base="http://localhost:4000/covid-visualization/">&lt;p&gt;This post includes graphs of the dynamics of the COVID19 pandemic, as well as notes that I am making on the economics and politics of the pandemic. Notes on mathematical modeling of the epidemic &lt;a href=&quot;https://mbkoltai.github.io/covid-modeling/&quot;&gt;are in the science section&lt;/a&gt;. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.&lt;/p&gt;
 
-&lt;h2 id=&quot;3-economics-and-politics&quot;&gt;3. Economics and politics&lt;/h2&gt;
+&lt;p&gt;I am mainly interested in structural analysis of how the pandemic will change society, especially on the medium/long-term.&lt;/p&gt;
+
+&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#1-data-visualization&quot;&gt;Data visualization&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#2-economics-and-politics&quot;&gt;Economics and politics&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;1-data-visualization&quot;&gt;1. Data visualization&lt;/h2&gt;
+
+&lt;p&gt;The data source for all these plots is the central database by &lt;a href=&quot;https://github.com/CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series&quot;&gt;Johns Hopkins University&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;total-number-of-cases-by-date-logarithmic-y-axis&quot;&gt;Total number of cases by date (logarithmic y-axis)&lt;/h3&gt;
+
+&lt;p&gt;This is showing the cumulative number of confirmed COVID19 cases in the major European countries, the US and some of the major Asian countries. The numbers are plotted by date.
+The 5 biggest European countries by population (Germany, UK, France, Italy and Spain) have a combined population almost exactly equal to the US, so it is useful to plot them also as a group, this is shown by ‘&lt;em&gt;IT_ES_FR_DE_UK’&lt;/em&gt;.
+The insets show European countries plus the US and Asian countries, respectively.
+The dashed blue lines on the left inset show the dates:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;20/February: exponential increase of cases starts in Italy&lt;/li&gt;
+  &lt;li&gt;26/February: exponential increase of cases starts in France&lt;/li&gt;
+  &lt;li&gt;09/March: countrywide lockdown in Italy&lt;/li&gt;
+  &lt;li&gt;16/March: countrywide lockdown in France (announced, effective from 17th noon)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/west_vs_asia_w_china.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;total-number-of-cases-aligned-logarithmic-y-axis&quot;&gt;Total number of cases, aligned (logarithmic y-axis)&lt;/h3&gt;
+
+&lt;p&gt;Same as the previous plot, but countries are aligned to start from the same number of cases as Italy had on the 26th of February (or the day they had the closest value).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/cases_cntrs_tracking_italy_log.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;total-number-of-deaths-aligned-from-same-starting-point-y-logscale&quot;&gt;Total number of deaths, aligned from same starting point (y logscale)&lt;/h3&gt;
+
+&lt;p&gt;Same as the previous plot, but for cumulated number of fatalities.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/deaths_cntrs_tracking_italy_log.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;number-of-new-cases-in-europe-us-and-asia-logarithmic-y-axis&quot;&gt;Number of new cases in Europe, US and Asia (logarithmic y-axis)&lt;/h3&gt;
+
+&lt;p&gt;Plotting the number of new cases by date, for the same Western (+Russia) and Asian countries.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/newcases_west_vs_asia_w_china.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;number-of-new-cases-in-europe-and-the-us&quot;&gt;Number of new cases in Europe and the US&lt;/h3&gt;
+
+&lt;p&gt;Number of new confirmed cases by date for Western countries and Russia only. The dashed blue lines show the start of the lockdowns in Italy (02/March, 09/March) and France (16/March).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/newcases_west.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;number-of-daily-deaths-in-europe-and-the-us&quot;&gt;Number of daily deaths in Europe and the US&lt;/h3&gt;
+
+&lt;p&gt;The dashed blue lines show the lockdowns of Italy (02/March, 09/March) and France (16/March).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/newdeaths_west.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;growth-rate-of-cases-on-total-number-of-cases&quot;&gt;Growth rate of cases on total number of cases&lt;/h3&gt;
+
+&lt;p&gt;This plot shows the percentage (fractional) growth of the total number of cases, as a function of the total number, with time going from left to right. The growth rate is averaged over a sliding window of three days.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/growth_rate_cases_china_korea_west_cutoff2000.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;growth-rate-of-deaths-on-the-total-number&quot;&gt;Growth rate of deaths on the total number&lt;/h3&gt;
+
+&lt;p&gt;As previous plot, but for the number of fatalities. The growth rate is averaged over a sliding window of three days.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/growth_rate_deaths_china_korea_west_cutoff60.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;why-italy-has-a-very-high-case-fatality-rate-cfr&quot;&gt;Why Italy has a very high case fatality rate (CFR)?&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@andreasbackhausab/coronavirus-why-its-so-deadly-in-italy-c4200a15a7bf&quot;&gt;% of old people/all cases much higher&lt;/a&gt;&lt;br /&gt;
+Reason for many older ppl infected: &lt;a href=&quot;https://twitter.com/kuhnmo/status/1238421146837684224&quot;&gt;20% of Italians 30-49 still live at home&lt;/a&gt;&lt;br /&gt;
++ testing policy was changed late March bc of capacity limits, and only testing severe cases, so the number of confirmed cases is smaller, so ratio of death/confirmed cases grows.&lt;/p&gt;
+
+&lt;div style=&quot;page-break-after: always;&quot;&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;2-economics-and-politics&quot;&gt;2. Economics and politics&lt;/h2&gt;
 
 &lt;h4 id=&quot;james-meadway-on-novara-16march&quot;&gt;&lt;a href=&quot;https://novaramedia.com/2020/03/16/coronavirus-will-require-us-to-completely-reshape-the-economy&quot;&gt;James Meadway on Novara, 16/march&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;2008: crisis of banking system. QE prevented a crash
@@ -394,7 +391,7 @@ Important finding: usually fatality rates &lt;em&gt;fall&lt;/em&gt; during econo
 &lt;div class=&quot;infogram-embed&quot; data-id=&quot;0991a8d7-ada2-4fc2-a351-f446081b8d95&quot; data-type=&quot;interactive&quot; data-title=&quot;3 — Comparing when coronavirus measures were implemented&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e,i,n,s){var t=&quot;InfogramEmbeds&quot;,d=e.getElementsByTagName(&quot;script&quot;)[0];if(window[t]&amp;&amp;window[t].initialized)window[t].process&amp;&amp;window[t].process();else if(!e.getElementById(n)){var o=e.createElement(&quot;script&quot;);o.async=1,o.id=n,o.src=&quot;https://e.infogram.com/js/dist/embed-loader-min.js&quot;,d.parentNode.insertBefore(o,d)}}(document,0,&quot;infogram-async&quot;);&lt;/script&gt;
 ---&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://climateandcapitalism.com/2020/03/11/capitalist-agriculture-and-covid-19-a-deadly-combination/&quot;&gt;Capitalist agriculture and Covid-19: A deadly combination (11 March)&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="globalization" /><category term="epidemics" /><category term="complex-systems" /><category term="ecology" /><category term="covid19" /><summary type="html">Graphs and notes on the science and economics of COVID19</summary></entry><entry><title type="html">1990-2020, the false dawn of globalization?</title><link href="http://localhost:4000/illusion-globalisation/" rel="alternate" type="text/html" title="1990-2020, the false dawn of globalization?" /><published>2020-02-29T00:00:00+01:00</published><updated>2020-02-29T00:00:00+01:00</updated><id>http://localhost:4000/illusion-globalisation</id><content type="html" xml:base="http://localhost:4000/illusion-globalisation/">&lt;p&gt;As the coronavirus is spreading through the world I have been gradually overcome by a feeling similar to the moment when an optical shift occurs. If you have looked at a &lt;a href=&quot;https://en.wikipedia.org/wiki/Random_dot_stereogram&quot;&gt;stereogram&lt;/a&gt;, you know what I mean: out of random dots a three dimensional pattern emerges.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://climateandcapitalism.com/2020/03/11/capitalist-agriculture-and-covid-19-a-deadly-combination/&quot;&gt;Capitalist agriculture and Covid-19: A deadly combination (11 March)&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="globalization" /><category term="epidemics" /><category term="complex-systems" /><category term="ecology" /><category term="covid19" /><summary type="html">Graphs of the data and notes on the politics/economics of COVID19</summary></entry><entry><title type="html">1990-2020, the false dawn of globalization?</title><link href="http://localhost:4000/illusion-globalisation/" rel="alternate" type="text/html" title="1990-2020, the false dawn of globalization?" /><published>2020-02-29T00:00:00+01:00</published><updated>2020-02-29T00:00:00+01:00</updated><id>http://localhost:4000/illusion-globalisation</id><content type="html" xml:base="http://localhost:4000/illusion-globalisation/">&lt;p&gt;As the coronavirus is spreading through the world I have been gradually overcome by a feeling similar to the moment when an optical shift occurs. If you have looked at a &lt;a href=&quot;https://en.wikipedia.org/wiki/Random_dot_stereogram&quot;&gt;stereogram&lt;/a&gt;, you know what I mean: out of random dots a three dimensional pattern emerges.&lt;/p&gt;
 
 &lt;p&gt;Almost irrespectively of political taste, most of us, at least in middle and high-income countries, have experienced these last decades of expanding world trade, cheapening travel, instantaneous communication and product availability as a never-ending ahistorical present, a normality taken for granted. In reality maybe it was a very fragile and unsustainable experiment, about to be swept away.&lt;/p&gt;
 
@@ -1766,63 +1763,4 @@ This is not a causal relationship in my understanding, but an algebraic identity
 
 &lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;Andrew Trigg, Marxian reproduction schema: money and aggregate demand in a capitalist economy. Routledge, 2009&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="classical-political-economy" /><category term="marxian-economics" /><summary type="html">Reproduction and input-output analysis</summary></entry><entry><title type="html">Embedding equations in GitHub blog posts with MathJax</title><link href="http://localhost:4000/embed-equations/" rel="alternate" type="text/html" title="Embedding equations in GitHub blog posts with MathJax" /><published>2018-09-25T00:00:00+02:00</published><updated>2018-09-25T00:00:00+02:00</updated><id>http://localhost:4000/embed-equations</id><content type="html" xml:base="http://localhost:4000/embed-equations/">&lt;p&gt;One of the first things I wanted to do for this blog was to be able to write equations as in LaTeX. I thought this would be straightforward, but it took some searching to find a better solution than embedding images of the equations generated by an external tool.
-The simple answer is: use MathJax that has a syntax almost identical to LaTeX. More recent GitHub themes (I forked &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now&lt;/a&gt;) already have kramdown enabled in the &lt;em&gt;_config.yml&lt;/em&gt; file, supporting MathJax.&lt;/p&gt;
-
-&lt;p&gt;The steps are then the following:&lt;/p&gt;
-
-&lt;p&gt;1) If you want to use equations in your blog posts as I do, paste the following script into &lt;em&gt;post.html&lt;/em&gt; that should be in your &lt;em&gt;layouts&lt;/em&gt; folder&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script&amp;gt;
-        MathJax.Hub.Config({
-            config: [&quot;MMLorHTML.js&quot;],
-            extensions: [&quot;tex2jax.js&quot;,&quot;TeX/AMSmath.js&quot;,&quot;TeX/AMSsymbols.js&quot;],
-            jax: [&quot;input/TeX&quot;],
-            tex2jax: {
-                inlineMath: [ ['$','$'], [&quot;\\(&quot;,&quot;\\)&quot;] ],
-                displayMath: [ ['$$','$$'], [&quot;\\[&quot;,&quot;\\]&quot;] ],
-                processEscapes: false
-            },
-            TeX: {
-                TagSide: &quot;right&quot;,
-                TagIndent: &quot;.8em&quot;,
-                MultLineWidth: &quot;85%&quot;,
-                equationNumbers: {
-                   autoNumber: &quot;AMS&quot;,
-                },
-                unicode: {
-                   fonts: &quot;STIXGeneral,'Arial Unicode MS'&quot;
-                }
-            },
-            showProcessingMessages: false
-        });
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;within the block&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;{ % if page.mathjax % }&lt;br /&gt;
-(code comes here)&lt;br /&gt;
-{ % endif % }&lt;/p&gt;
-
-&lt;p&gt;This means that you can set up a &lt;em&gt;mathjax&lt;/em&gt; flag for those posts where you’ll have equations.&lt;/p&gt;
-
-&lt;p&gt;2) In the posts where you’ll have equations insert the flag&lt;br /&gt;
-&lt;strong&gt;mathjax: true&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;3) You can now write equations between double $ signs. For example,&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \begin{bmatrix} a_{11} &amp;amp; a_{12}\\ 0 &amp;amp; 0\\ \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
-+ \begin{bmatrix} 0\\ h_2\\ \end{bmatrix} \begin{bmatrix} l_1 &amp;amp; l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
-+ \begin{bmatrix} da\\ dh + C_k \end{bmatrix}  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;becomes&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \begin{bmatrix} a_{11} &amp; a_{12}\\ 0 &amp; 0\\ \end{bmatrix}
-    \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} + \begin{bmatrix} 0\\ h_2\\ \end{bmatrix}
-    \begin{bmatrix} l_1 &amp; l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
-    + \begin{bmatrix} da\\ dh + C_k \end{bmatrix} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;A good resource for different formulae &lt;a href=&quot;https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&quot;&gt;is here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="tools" /><category term="github-blog" /><summary type="html">Steps to enable inserting equations</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;Andrew Trigg, Marxian reproduction schema: money and aggregate demand in a capitalist economy. Routledge, 2009&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="classical-political-economy" /><category term="marxian-economics" /><summary type="html">Reproduction and input-output analysis</summary></entry></feed>
