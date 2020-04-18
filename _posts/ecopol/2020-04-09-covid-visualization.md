@@ -167,3 +167,10 @@ Macroeconomic model to estimate economic effects of lockdowns vs. release.
 --->
 
 [Capitalist agriculture and Covid-19: A deadly combination (11 March)](https://climateandcapitalism.com/2020/03/11/capitalist-agriculture-and-covid-19-a-deadly-combination/)
+
+
+[LR Wray in Guardian: Coronavirus has destroyed the myth of the deficit](https://www.theguardian.com/commentisfree/2020/apr/17/coronavirus-deficit-american-economy)
+
+1-sentence summary of MMT (cf Keynes: if we can do it we can afford it):
+'*provisioning society (..) is not a financial issue. If we can’t produce enough masks, ventilators or food, finance will not help. Society’s capacity to produce real output is what limits its ability to provision itself. And this is precisely what the virus threatens, as workers stay home, supply chains break down and businesses shut their doors.*'
+Advocates Green New Deal, resisting deficit hawks after pandemic.

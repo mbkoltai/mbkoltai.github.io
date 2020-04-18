@@ -88,7 +88,7 @@
     <p>These are notes on the science (mostly epidemiological modeling) of the COVID19 pandemic. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.</p>
 
 <h4 id="school-closures-event-cancellations-and-the-mesoscopic-localization-of-epidemics-in-networks-with-higher-order-structure"><a href="https://arxiv.org/pdf/2003.05924.pdf">School closures, event cancellations, and the mesoscopic localization of epidemics in networks with higher-order structure</a></h4>
-<p>higher-order struct leads to mesoscopic localization (concentration into substructures)
+<p>Higher-order struct leads to mesoscopic localization (concentration into substructures).<br />
 Individuals classified by # of contacts:<br />
 <script type="math/tex">S_k</script>: % susceptible with k contacts<br />
 <script type="math/tex">I_k</script>: % infected with k contacts<br />
@@ -119,9 +119,11 @@ With lower coupling (b) there is <em>mesoscopic localization</em>: global preval
 <h4 id="temporal-variation-in-transmission-during-the-covid-19-outbreak-in-italy"><a href="https://cmmid.github.io/topics/covid19/current-patterns-transmission/italy-time-varying-transmission.html">Temporal variation in transmission during the COVID-19 outbreak in Italy</a></h4>
 <p>Estimates on reproduction numbers in regions of Italy. Started from 3-4, falling towards 2.</p>
 
-<h4 id="shiny-app-for-contact-tracing-httpsbdi-pathogensshinyappsiocovid-19-transmission-routes">Shiny app for contact tracing: https://bdi-pathogens.shinyapps.io/covid-19-transmission-routes</h4>
+<h4 id="shiny-app-of-sir-model-digital-contact-tracing-for-sars-cov-2"><a href="https://bdi-pathogens.shinyapps.io/covid-19-transmission-routes">Shiny app of SIR model (Digital contact tracing for SARS-CoV-2)</a></h4>
 
-<h4 id="substantial-undocumented-infection-facilitates-the-rapid-dissemination-of-novel-coronavirus-sars-cov2"><a href="https://science.sciencemag.org/content/sci/early/2020/03/13/science.abb3221.full.pdf">Substantial undocumented infection facilitates the rapid dissemination of novel coronavirus (SARS-CoV2)</a></h4>
+<p>Adjustable parameters, generates graphs interactively.</p>
+
+<h4 id="substantial-undocumented-infection-facilitates-the-rapid-dissemination-of-novel-coronavirus-science-16-march"><a href="https://science.sciencemag.org/content/sci/early/2020/03/13/science.abb3221.full.pdf">Substantial undocumented infection facilitates the rapid dissemination of novel coronavirus (SCIENCE, 16 March)</a></h4>
 
 <p>Estimates from a model + Bayesian inference.
 Main findings (these are max probability estimates):</p>
@@ -172,7 +174,7 @@ Movements between cities estimated from mobile apps: Tencent, Mobility Index fro
 
 <h4 id="necsi-slack-channel-for-modeling"><a href="https://app.slack.com/client/T2DRR8UNB/CV19X1PKJ/thread/CUTSF2Q6R-1584495843.398200">NECSI Slack channel for modeling</a></h4>
 
-<h4 id="imperial-impact-of-non-pharmaceutical-interventions-npis-to-reduce-covid19-mortality-and-healthcare-demand"><a href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf">Imperial: Impact of non-pharmaceutical interventions (NPIs) to reduce COVID19 mortality and healthcare demand</a></h4>
+<h4 id="imperial-impact-of-non-pharmaceutical-interventions-npis-to-reduce-covid19-mortality-and-healthcare-demand-16-march"><a href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf">Imperial: Impact of non-pharmaceutical interventions (NPIs) to reduce COVID19 mortality and healthcare demand (16 March)</a></h4>
 
 <p>2 strategies:
 1) mitigation: can reduce peak healthcare demand by 2/3 and deaths by 50%. Still 100s of 1000s of deaths
@@ -195,12 +197,12 @@ Higher ON trigger and/or lower OFF -&gt; more deaths etc.</li>
 <h4 id="necsi-response-to-imperial-paper-ferguson-et-al-impact-of-non-pharmarceutical"><a href="https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e70eb32b16229792eb14836/1584458547530/ReviewOfFergusson.pdf">NECSI response to Imperial paper (Ferguson et al) ‘Impact of non-pharmarceutical…’</a></h4>
 
 <p>They agree with Ferguson that suppression is needed to bring down R<sub>0</sub> below 1.
-But they disagree w Ferguson claim that 2nd outbreak unavoidable. It’s not because, during lockdown infectious ppl are identified and their contacts isolated.
+But they disagree w Ferguson claim that 2nd outbreak unavoidable, because according to NECSI during lockdown infectious ppl are identified and their contacts isolated.
 Ferguson calculate new infections as fcn of infected % and immunity, but not the phase of trajectory (ergodicity).
 Not true that resurgence starts from even 1 case, China data showed <em>only 5% of close contacts of infected tested positive</em>. Small outbreaks can be controlled by testing.
 Ferguson ignores super-spreader events by ignoring ‘fat tail distribution of contagion’.
-But cutting off fat tail by banning events reduced R0.
-Ferguson use SIR ODE-model, not appropriate bc they <em>ignore</em>:</p>
+But cutting off fat tail by banning events reduced <script type="math/tex">R_0</script>.
+Ferguson use SIR ODE-model, not appropriate bc it ignores:</p>
 <ul>
   <li>local dynamics</li>
   <li>non-normal distrib. of infection events per person (superspreaders)</li>
@@ -208,20 +210,21 @@ Ferguson use SIR ODE-model, not appropriate bc they <em>ignore</em>:</p>
 </ul>
 
 <p>But Imperial model has different environments and it is agent-based, so maybe this is not fair.
-Debate: https://twitter.com/yaneerbaryam/status/1239936951823843328</p>
+Debate on this on <a href="https://twitter.com/yaneerbaryam/status/1239936951823843328">Twitter</a>.</p>
 
-<h4 id="the-hammer-and-the-dance"><a href="https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56">The hammer and the dance</a></h4>
+<h4 id="tomas-pueyo-the-hammer-and-the-dance-medium-19-march"><a href="https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56">Tomas Pueyo: The hammer and the dance (Medium, 19 March)</a></h4>
 
 <p>Uses simple SIR model to argue why suppression is needed, as mitigation leads to enormous death toll (some estimates on side-effects).
-Suppression buys time for producing equipment, maybe drugs.</p>
+Suppression buys time for producing equipment, maybe drugs.
+Not original research, but summarizes Imperial’s 16 March study.</p>
 
-<h4 id="beyond-contact-tracing-community-based-early-detection-for-ebola-response-plos-currents-outbreaks-may-19-2016"><a href="https://necsi.edu/beyond-contact-tracing">Beyond contact tracing: Community-based early detection for Ebola response, PLoS Currents Outbreaks (May 19, 2016)</a></h4>
+<h4 id="beyond-contact-tracing-community-based-early-detection-for-ebola-response-plos-currents-outbreaks-2016"><a href="https://necsi.edu/beyond-contact-tracing">Beyond contact tracing: Community-based early detection for Ebola response, PLoS Currents Outbreaks (2016)</a></h4>
 
 <p>Stochastic model by NECSI.</p>
 
-<h4 id="community-prevention"><a href="https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e737b95403f772d8ce0e04a/1584626591711/CommunityPrevention.pdf">Community prevention</a></h4>
+<h4 id="necsi-working-paper-eliminating-covid-19-a-community-based-analysis-19-march"><a href="https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e737b95403f772d8ce0e04a/1584626591711/CommunityPrevention.pdf">NECSI Working Paper: Eliminating COVID-19. A Community-based Analysis (19 March)</a></h4>
 
-<p>NECSI model. R<sub>*</sub>: community transmission rate.
+<p>NECSI probabilistic model. <script type="math/tex">R_*</script>: community transmission rate.
 i_0_c: stochastic factor of initial foothold the virus gains in a community
 i_c(t): # active infections in community <em>c</em><br />
 If infection not contained, <script type="math/tex">exp(r_c t)</script><br />
@@ -234,13 +237,15 @@ Poisson process, average number of infected communities can be estimated by inte
 Calculate expected number of other communities infected by community <script type="math/tex">c</script>.<br />
 It’s assumed growth within one community is exponential until <script type="math/tex">T_c</script> (intervention), then exponential decay after <script type="math/tex">T_c</script>.</p>
 
-<h4 id="social-contacts-and-mixing-patterns-relevant-to-the-spread-of-infectious-diseases"><a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0050074">Social Contacts and Mixing Patterns Relevant to the Spread of Infectious Diseases</a></h4>
+<h4 id="social-contacts-and-mixing-patterns-relevant-to-the-spread-of-infectious-diseases-plos-medicine-2008"><a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0050074">Social Contacts and Mixing Patterns Relevant to the Spread of Infectious Diseases (PLoS Medicine, 2008)</a></h4>
 
 <p>Estimates for mixing patterns.</p>
 
-<h4 id="the-early-phase-of-the-covid-19-outbreak-in-lombardy-italy"><a href="https://arxiv.org/abs/2003.09320">The early phase of the COVID-19 outbreak in Lombardy, Italy</a></h4>
+<h4 id="the-early-phase-of-the-covid-19-outbreak-in-lombardy-italy-20-mar-arxiv"><a href="https://arxiv.org/abs/2003.09320">The early phase of the COVID-19 outbreak in Lombardy, Italy (20 Mar, arXiv)</a></h4>
 
-<h4 id="secondary-attack-rate-and-superspreading-events-for-sars-cov-2"><a href="https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930462-1">Secondary attack rate and superspreading events for SARS-CoV-2</a></h4>
+<p>Early estimates on epidemic in Lombardy (hospitalisation, intensive care, deaths), arguing for aggressive containment strategies.</p>
+
+<h4 id="secondary-attack-rate-and-super-spreading-events-for-sars-cov-2-lancet-27-febr"><a href="https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930462-1">Secondary attack rate and super-spreading events for SARS-CoV-2 (Lancet, 27 Febr)</a></h4>
 <p>Estimates for some ‘super-spreader’ events in table.</p>
 
 <h4 id="predicting-collapse-of-adaptive-networked-systems-without-knowing-the-network"><a href="https://www.nature.com/articles/s41598-020-57751-y.pdf">Predicting collapse of adaptive networked systems without knowing the network</a></h4>
@@ -250,11 +255,10 @@ It’s assumed growth within one community is exponential until <script type="ma
 
 <h4 id="fundamental-principles-of-epidemic-spread-highlight-the-immediate-need-for-large-scale-serological-surveys-to-assess-the-stage-of-the-sars-cov-2-epidemic"><a href="https://www.medrxiv.org/content/10.1101/2020.03.24.20042291v1">Fundamental principles of epidemic spread highlight the immediate need for large-scale serological surveys to assess the stage of the SARS-CoV-2 epidemic</a></h4>
 
-<h4 id="testing-everyone-instead-of-contact-tracing"><a href="https://medium.com/@sten.linnarsson/to-stop-covid-19-test-everyone-373fd80eb03b">Testing everyone instead of contact tracing</a></h4>
+<h4 id="testing-everyone-instead-of-contact-tracing-sten-linnarsson-karolinska"><a href="https://medium.com/@sten.linnarsson/to-stop-covid-19-test-everyone-373fd80eb03b">Testing everyone instead of contact tracing (Sten Linnarsson, Karolinska)</a></h4>
 
-<p>if <script type="math/tex">c\ p > (R_0-1)/(R_0-R_q)</script></p>
-
-<p>Then exponential decay of outbreak. <script type="math/tex">R_0</script> ~ 2.4, <script type="math/tex">R_q</script> ~ 0.3 (Wuhan estimate).
+<p>Medium note on a preprint.
+If <script type="math/tex">c\ p > (R_0-1)/(R_0-R_q)</script>, then exponential decay of outbreak. <script type="math/tex">R_0</script> ~ 2.4, <script type="math/tex">R_q</script> ~ 0.3 (Wuhan estimate).
 c: compliance to self-quarantine after testing positive<br />
 p: true positive rate</p>
 
@@ -268,28 +272,27 @@ Alternatives:</p>
 
 <p>Lockdown cost dwarfs testing cost.</p>
 
-<h4 id="imperial-study-on-global-effects"><a href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-Impact-26-03-2020.pdf">Imperial study on global effects</a></h4>
-
-<p>More detail on model. Distributions used for time of next infection.</p>
-
 <h4 id="nn-taleb-tail-risk-of-contagious-diseases"><a href="https://www.researchers.one/media/documents/282-m-corona2.pdf">NN Taleb: Tail Risk of Contagious Diseases</a></h4>
 
 <h4 id="why-everyone-should-wear-a-mask"><a href="https://medium.com/@Cancerwarrior/covid-19-why-we-should-all-wear-masks-there-is-new-scientific-rationale-280e08ceee71">Why everyone should wear a mask</a></h4>
 
-<h4 id="estimates-of-the-severity-of-coronavirus-disease-2019-a-model-based-analysis"><a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30243-7/fulltext">Estimates of the severity of coronavirus disease 2019: a model-based analysis</a></h4>
+<h4 id="estimates-of-the-severity-of-coronavirus-disease-2019-a-model-based-analysis-lancet-30-march"><a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30243-7/fulltext">Estimates of the severity of coronavirus disease 2019: a model-based analysis (Lancet, 30 March)</a></h4>
 
-<h4 id="an-investigation-of-transmission-control-measures-during-the-first-50-days-of-the-covid-19-epidemic-in-china"><a href="https://science.sciencemag.org/content/early/2020/03/30/science.abb6105">An investigation of transmission control measures during the first 50 days of the COVID-19 epidemic in China</a></h4>
+<p>Estimates on CFR and IFR from Hubei and China in general.</p>
 
-<p>Effect of Wuhan travel ban.</p>
+<h4 id="an-investigation-of-transmission-control-measures-during-the-first-50-days-of-the-covid-19-epidemic-in-china-science-31-mar"><a href="https://science.sciencemag.org/content/early/2020/03/30/science.abb6105">An investigation of transmission control measures during the first 50 days of the COVID-19 epidemic in China (Science, 31 Mar)</a></h4>
 
-<h4 id="predictions-about-peaks"><a href="http://www.healthdata.org/covid/updates">Predictions about peaks</a></h4>
-<p>Preds made 05 April. France: 15K deaths by August, UK 66K (!).</p>
+<p>Effect of Wuhan travel ban. Cities as variables in a SIR-like model, estimates on travel flows.</p>
+
+<h4 id="ihme-institute-for-health-metrics-and-evaluation-predictions-about-peaks"><a href="http://www.healthdata.org/covid/updates">IHME (Institute for Health Metrics and Evaluation) predictions about peaks</a></h4>
+<p>Preds made 05 April are for France 15K deaths by August, UK 66K.
+This was revised upwards to France (22.5K) and downwards for UK (37.5K).</p>
 
 <h4 id="preparedness-and-vulnerability-of-african-countries-against-importations-of-covid-19-a-modelling-study"><a href="https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930411-6">Preparedness and vulnerability of African countries against importations of COVID-19: a modelling study</a></h4>
 
 <p>Importation risk from China vs health care system capacity</p>
 
-<h4 id="ron-milo-covid-by-the-numbers"><a href="https://elifesciences.org/articles/57309/">Ron Milo: COVID by the numbers</a></h4>
+<h4 id="ron-milo-covid-by-the-numbers-elife-updated-paper"><a href="https://elifesciences.org/articles/57309/">Ron Milo: COVID by the numbers (eLife, updated paper)</a></h4>
 
 <p>Estimates on size, mutation rate, genome of virus.
 Nucleotide identity with other coronaviruses:</p>
@@ -301,12 +304,12 @@ Nucleotide identity with other coronaviruses:</p>
   <li>common cold CoV: 50%</li>
 </ul>
 
-<p><a href="https://biomedical-engineering-online.biomedcentral.com/track/pdf/10.1186/s12938-017-0370-7">MERS basic reproduction number</a></p>
+<h4 id="mers-basic-reproduction-number-biomed-eng-online-2017-1679"><a href="https://biomedical-engineering-online.biomedcentral.com/track/pdf/10.1186/s12938-017-0370-7">MERS basic reproduction number (BioMed Eng OnLine (2017) 16:79)</a></h4>
 
 <p>Authors fit SIR model to data, least-square fit, they find a <script type="math/tex">R_0</script> around 8 (!).
 How did they manage to suppress MERS?</p>
 
-<p><a href="https://medium.com/@urialonw/adaptive-cyclic-exit-strategies-from-lockdown-to-suppress-covid-19-and-allow-economic-activity-4900a86b37c7">Uri Alon: Adaptive cyclic-exit-strategies-from-lockdown</a></p>
+<h4 id="uri-alon-adaptive-cyclic-exit-strategies-from-lockdown-medium-post-on-preprint-7-april"><a href="https://medium.com/@urialonw/adaptive-cyclic-exit-strategies-from-lockdown-to-suppress-covid-19-and-allow-economic-activity-4900a86b37c7">Uri Alon: Adaptive cyclic exit strategies from lockdown (Medium post on preprint, 7 April)</a></h4>
 
 <p>4 day work+10 day lockdown, antiphased for 2 groups of households.
 Review of deterministic, stochastic and also <em>network</em> SEIR model, different cyclic lockdown strategies.</p>
@@ -314,9 +317,41 @@ Review of deterministic, stochastic and also <em>network</em> SEIR model, differ
 <p>Antiphasing (staggering) uses the timeline of the disease and infectiousness:
 <img src="https://miro.medium.com/max/770/0*MWxESwBV56QMF9rc" alt="_config.yml" /></p>
 
-<p><a href="https://github.com/ryansmcgee/seirsplus">SEIRSPLUS: Python package for stochastic and network based SEIR model</a></p>
+<h4 id="seirsplus-python-package-for-stochastic-and-network-based-seir-model"><a href="https://github.com/ryansmcgee/seirsplus">SEIRSPLUS: Python package for stochastic and network based SEIR model</a></h4>
 
-<p>Python package to set up epidemiologic models easily, used in Uri Alon study.</p>
+<p>Python package to set up epidemiological models easily, used in Uri Alon study.</p>
+
+<h4 id="imperial-report-12-the-global-impact-of-covid-19-and-strategies-for-mitigation-and-suppression-26-march-2020"><a href="https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-26-COVID19-Report-12.pdf">Imperial: Report 12: The Global Impact of COVID-19 and Strategies for Mitigation and Suppression (26 March 2020)</a></h4>
+
+<p>Global estimates:</p>
+<ul>
+  <li><em>without intervention</em>: 7 billion infections and 40 millon deaths in 2020</li>
+  <li><em>mitigation</em>: with 60% reduction of social contacts, 20 million deaths, all health care systems overwhelmed, in low income setting by factor of 25.</li>
+  <li><em>suppression</em>: 30-39 million deaths can be avoided (compared to no intervention strategy), depending on timing</li>
+</ul>
+
+<p>Household size/structure is critical, differences result in different <em>attack rates</em> by age groups. Number of hospital beds/1000 population from <a href="https://data.worldbank.org/indicator?tab=all">World Bank</a>.
+Estimates for 3 strategies of unmitigated, mitigation, mitigation+enhanced social distancing for elderly:</p>
+<ul>
+  <li>hospitalisation rate: <script type="math/tex">\sim</script> 3%, 2%, 2% (esimates for difference world regions on Fig 4).</li>
+  <li>critical care: 1%, 0.5%, 0.2%</li>
+  <li>deaths: 0.6-0.8%, 0.4%, 0.2%</li>
+</ul>
+
+<p>‘Despite higher rates of contact across older age-groups, we predict a lower incidence of severe
+disease, hospitalisation and deaths in lower income settings. This is driven by the younger average age
+of these populations.’ (Figure 5)</p>
+
+<p>Simulations for countries in different income groups: how ICU capacity would be exceeded under different suppression strategies and mitigation (Figure 6).
+Table 1 summarizes estimates by regions. Two suppression scenarios with 0.2 and 1.6 deaths/100K population/week.
+Unmitigated (world, total): 40M deaths, 1.9M deaths with suppression with trigger 0.2/100K pop/week, 10.4M with suppression with trigger 1.6/100K pop/week. Difference <script type="math/tex">\sim</script> 5-fold between two suppression strategies in most regions.</p>
+
+<p><a href="https://github.com/sbfnk/socialmixr">SocialmixR R package has survey data on mixing patterns</a>. Survey on France mixing patterns in <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203">PloS ONE 2015</a>.</p>
+
+<p>Model is age-structured SIR-model incorporating demographic structure and rates of contact. Comorbidities not taken into account. Full model stochastic age-structured SEIR model.</p>
+
+<p>Excel spreadsheet with results <a href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-unmitigated-mitigated-suppression-scenarios.xlsx">available online</a>.
+<a href="https://zenodo.org/record/3730771#.XptEtZ9fir4">Covid-data used by Imperial models (cited by other publication)</a></p>
 
   </div>
 
