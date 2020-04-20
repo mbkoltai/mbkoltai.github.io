@@ -174,3 +174,10 @@ Macroeconomic model to estimate economic effects of lockdowns vs. release.
 1-sentence summary of MMT (cf Keynes: if we can do it we can afford it):
 '*provisioning society (..) is not a financial issue. If we can’t produce enough masks, ventilators or food, finance will not help. Society’s capacity to produce real output is what limits its ability to provision itself. And this is precisely what the virus threatens, as workers stay home, supply chains break down and businesses shut their doors.*'
 Advocates Green New Deal, resisting deficit hawks after pandemic.
+
+
+[Shutting down PREDICT program, Oct 2019](https://www.nytimes.com/2019/10/25/health/predict-usaid-viruses.html)
+
+October 2019: 'In a move that worries many public health experts, the federal government is quietly shutting down a surveillance program for dangerous animal viruses that someday may infect humans.'
+Total budget since 2009 $$\sim$$ 0.2 billion USD.
+Over 1000 new viruses identified, including new Ebola strain.
