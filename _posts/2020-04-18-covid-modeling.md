@@ -235,7 +235,7 @@ Python package to set up epidemiological models easily, used in Uri Alon study.
 
 Global estimates:
 - *without intervention*: 7 billion infections and 40 millon deaths in 2020
-- *mitigation*: with 60% reduction of social contacts, 20 million deaths, all health care systems overwhelmed, in low income setting by factor of 25.
+- *mitigation*: with 60% reduction of social contacts, 20 million deaths avoided, all health care systems overwhelmed, in low income setting by factor of 25.
 - *suppression*: 30-39 million deaths can be avoided (compared to no intervention strategy), depending on timing
 
 Household size/structure is critical, differences result in different *attack rates* by age groups. Number of hospital beds/1000 population from [World Bank](https://data.worldbank.org/indicator?tab=all).
@@ -258,3 +258,14 @@ Model is age-structured SIR-model incorporating demographic structure and rates 
 
 Excel spreadsheet with results [available online](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-unmitigated-mitigated-suppression-scenarios.xlsx).
 [Covid-data used by Imperial models (cited by other publication)](https://zenodo.org/record/3730771#.XptEtZ9fir4)
+
+
+[Cluster of COVID-19 in northern France: A retrospective closed cohort study](https://www.medrxiv.org/content/10.1101/2020.04.18.20071134v1.full.pdf)
+
+Oise heavily exposed to SARS-CoV-2. Infection attack rate (IAR) from antibody detection.
+171/661 had antibodies, **26% IAR**, 0% IFR (fatality). Hospitalisation rate 5%.
+Anosmia (smell blindness) and ageusia (loss of taste) good predictors of infection.
+IAR for smokers 7% vs. 28% (smoking: 75% decrease in risk of infection). Asymptomatic infections 17%.
+High school: 41% IAR, among parents only 10%. 661 participants in total. Median age 37, 38% male. 40% age 15-17, only 2 people over 65. Secondary IAR in households 10-11% (both for parents and siblings). In Shenzhen similar study found 15%.
+ELISA antibody tests were also made on blood samples of blood donors in the area, 3% IAR.
+Oise was one of the early epicenters of the epidemic in France and these numbers are results of period before lockdown. Low prevalence numbers suggest herd immunity cannot be quickly established.
