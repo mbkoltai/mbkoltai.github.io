@@ -6,17 +6,40 @@ excerpt: Math modeling the pandemic
 mathjax: true
 ---
 
-These are notes on the science (mostly epidemiological modeling) of the COVID19 pandemic. As of early April (9th of April) the notes are rather disorganized, I plan to clean them up with time.
+These are notes on the science, mostly epidemiological modeling, of the COVID19 pandemic.
+It includes some of my own data visualization on the pandemic and I plan to add SEIR modeling as well.
+The models are not to be understood as predictions, I am pursuing it only as a private interest.
 
 ## Table of contents
 
-1. [Own modeling](#1-own-modeling)
+1. [Own work](#1-own-work)
+      1. [Data visualization](#data-visualization)
+      1. [Modeling](#modeling)
 1. [Notes on the literature](#2-notes-on-the-literature)
       1. [Dynamical models](#dynamical-models)
       1. [Data and reports](#data-and-reports)
       1. [Tools](#tools)
 
-## <ins>1. Own modeling</ins>
+## <ins>1. Own work</ins>
+
+### <ins>Data visualization</ins>
+
+On the plots below the x-axis shows the number of cumulative reported COVID19 cases and fatalities relative to a country's population (cases/deaths per million inhabitants).  
+The y-axis shows the 3-day average of the number of new cases or fatalities per one million inhabitants.
+Time is implicit on these graphs, moving from left to right, and each data point is one day.  
+This way one can see how much of the population is known to have contracted the virus and what is the current rate of growth per one million people. This makes the situation in different countries visually comparable.  
+All data downloaded from the [Johns Hopkins University database](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series) and the graphs were made in a [Jupyter notebook](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/covid_data.ipynb).
+
+<ins>Dynamics of the number of reported cases</ins>
+
+![_config.yml]({{ site.baseurl }}/images/covid/multiplot_growth_rate_cases_popul_cutoff100_loglog.png)
+
+<ins>Dynamics of the number of reported fatalities</ins>
+
+![_config.yml]({{ site.baseurl }}/images/covid/multiplot_growth_rate_deaths_popul_cutoff100_loglog.png)
+
+
+### <ins>Modeling</ins>
 
 Jupyter notebook under development...
 

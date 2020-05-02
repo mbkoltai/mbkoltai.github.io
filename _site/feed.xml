@@ -1,9 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-02T21:28:09+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Notes on modeling the COVID19 pandemic</title><link href="http://localhost:4000/covid-modeling/" rel="alternate" type="text/html" title="Notes on modeling the COVID19 pandemic" /><published>2020-04-18T00:00:00+02:00</published><updated>2020-04-18T00:00:00+02:00</updated><id>http://localhost:4000/covid-modeling</id><content type="html" xml:base="http://localhost:4000/covid-modeling/">&lt;p&gt;These are notes on the science (mostly epidemiological modeling) of the COVID19 pandemic. As of early April (9th of April) the notes are rather disorganized, I plan to clean them up with time.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-02T23:34:52+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Notes on modeling the COVID19 pandemic</title><link href="http://localhost:4000/covid-modeling/" rel="alternate" type="text/html" title="Notes on modeling the COVID19 pandemic" /><published>2020-04-18T00:00:00+02:00</published><updated>2020-04-18T00:00:00+02:00</updated><id>http://localhost:4000/covid-modeling</id><content type="html" xml:base="http://localhost:4000/covid-modeling/">&lt;p&gt;These are notes on the science, mostly epidemiological modeling, of the COVID19 pandemic.
+It includes some of my own data visualization on the pandemic and I plan to add SEIR modeling as well.
+The models are not to be understood as predictions, I am pursuing it only as a private interest.&lt;/p&gt;
 
 &lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-own-modeling&quot;&gt;Own modeling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#1-own-work&quot;&gt;Own work&lt;/a&gt;
+    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;#data-visualization&quot;&gt;Data visualization&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#modeling&quot;&gt;Modeling&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#2-notes-on-the-literature&quot;&gt;Notes on the literature&lt;/a&gt;
     &lt;ol&gt;
       &lt;li&gt;&lt;a href=&quot;#dynamical-models&quot;&gt;Dynamical models&lt;/a&gt;&lt;/li&gt;
@@ -13,7 +20,25 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;1-own-modeling&quot;&gt;&lt;ins&gt;1. Own modeling&lt;/ins&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;1-own-work&quot;&gt;&lt;ins&gt;1. Own work&lt;/ins&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;data-visualization&quot;&gt;&lt;ins&gt;Data visualization&lt;/ins&gt;&lt;/h3&gt;
+
+&lt;p&gt;On the plots below the x-axis shows the number of cumulative reported COVID19 cases and fatalities relative to a country’s population (cases/deaths per million inhabitants).&lt;br /&gt;
+The y-axis shows the 3-day average of the number of new cases or fatalities per one million inhabitants.
+Time is implicit on these graphs, moving from left to right, and each data point is one day.&lt;br /&gt;
+This way one can see how much of the population is known to have contracted the virus and what is the current rate of growth per one million people. This makes the situation in different countries visually comparable.&lt;br /&gt;
+All data downloaded from the &lt;a href=&quot;https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series&quot;&gt;Johns Hopkins University database&lt;/a&gt; and the graphs were made in a &lt;a href=&quot;https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/covid_data.ipynb&quot;&gt;Jupyter notebook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;ins&gt;Dynamics of the number of reported cases&lt;/ins&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/multiplot_growth_rate_cases_popul_cutoff100_loglog.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ins&gt;Dynamics of the number of reported fatalities&lt;/ins&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/multiplot_growth_rate_deaths_popul_cutoff100_loglog.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;modeling&quot;&gt;&lt;ins&gt;Modeling&lt;/ins&gt;&lt;/h3&gt;
 
 &lt;p&gt;Jupyter notebook under development…&lt;/p&gt;
 

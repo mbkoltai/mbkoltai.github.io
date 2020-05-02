@@ -85,12 +85,19 @@
   <h1>Notes on modeling the COVID19 pandemic</h1>
 
   <div class="entry">
-    <p>These are notes on the science (mostly epidemiological modeling) of the COVID19 pandemic. As of early April (9th of April) the notes are rather disorganized, I plan to clean them up with time.</p>
+    <p>These are notes on the science, mostly epidemiological modeling, of the COVID19 pandemic.
+It includes some of my own data visualization on the pandemic and I plan to add SEIR modeling as well.
+The models are not to be understood as predictions, I am pursuing it only as a private interest.</p>
 
 <h2 id="table-of-contents">Table of contents</h2>
 
 <ol>
-  <li><a href="#1-own-modeling">Own modeling</a></li>
+  <li><a href="#1-own-work">Own work</a>
+    <ol>
+      <li><a href="#data-visualization">Data visualization</a></li>
+      <li><a href="#modeling">Modeling</a></li>
+    </ol>
+  </li>
   <li><a href="#2-notes-on-the-literature">Notes on the literature</a>
     <ol>
       <li><a href="#dynamical-models">Dynamical models</a></li>
@@ -100,7 +107,25 @@
   </li>
 </ol>
 
-<h2 id="1-own-modeling"><ins>1. Own modeling</ins></h2>
+<h2 id="1-own-work"><ins>1. Own work</ins></h2>
+
+<h3 id="data-visualization"><ins>Data visualization</ins></h3>
+
+<p>On the plots below the x-axis shows the number of cumulative reported COVID19 cases and fatalities relative to a country’s population (cases/deaths per million inhabitants).<br />
+The y-axis shows the 3-day average of the number of new cases or fatalities per one million inhabitants.
+Time is implicit on these graphs, moving from left to right, and each data point is one day.<br />
+This way one can see how much of the population is known to have contracted the virus and what is the current rate of growth per one million people. This makes the situation in different countries visually comparable.<br />
+All data downloaded from the <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series">Johns Hopkins University database</a> and the graphs were made in a <a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/covid_data.ipynb">Jupyter notebook</a>.</p>
+
+<p><ins>Dynamics of the number of reported cases</ins></p>
+
+<p><img src="/images/covid/multiplot_growth_rate_cases_popul_cutoff100_loglog.png" alt="_config.yml" /></p>
+
+<p><ins>Dynamics of the number of reported fatalities</ins></p>
+
+<p><img src="/images/covid/multiplot_growth_rate_deaths_popul_cutoff100_loglog.png" alt="_config.yml" /></p>
+
+<h3 id="modeling"><ins>Modeling</ins></h3>
 
 <p>Jupyter notebook under development…</p>
 
