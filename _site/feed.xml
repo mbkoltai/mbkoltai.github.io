@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-02T23:47:14+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Notes on modeling the COVID19 pandemic</title><link href="http://localhost:4000/covid-modeling/" rel="alternate" type="text/html" title="Notes on modeling the COVID19 pandemic" /><published>2020-04-18T00:00:00+02:00</published><updated>2020-04-18T00:00:00+02:00</updated><id>http://localhost:4000/covid-modeling</id><content type="html" xml:base="http://localhost:4000/covid-modeling/">&lt;p&gt;These are notes on the science, mostly epidemiological modeling, of the COVID19 pandemic.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-02T23:57:25+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Notes on modeling the COVID19 pandemic</title><link href="http://localhost:4000/covid-modeling/" rel="alternate" type="text/html" title="Notes on modeling the COVID19 pandemic" /><published>2020-04-18T00:00:00+02:00</published><updated>2020-04-18T00:00:00+02:00</updated><id>http://localhost:4000/covid-modeling</id><content type="html" xml:base="http://localhost:4000/covid-modeling/">&lt;p&gt;These are notes on the science, mostly epidemiological modeling, of the COVID19 pandemic.
 It includes some of my own data visualization on the pandemic and I plan to add SEIR modeling as well.
 The models are not to be understood as predictions, I am pursuing it only as a private interest.&lt;/p&gt;
 
@@ -151,7 +151,7 @@ Higher ON trigger and/or lower OFF -&amp;gt; more deaths etc.&lt;/li&gt;
 &lt;h4 id=&quot;necsi-response-to-imperial-paper-ferguson-et-al-impact-of-non-pharmarceutical&quot;&gt;&lt;a href=&quot;https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e70eb32b16229792eb14836/1584458547530/ReviewOfFergusson.pdf&quot;&gt;NECSI response to Imperial paper (Ferguson et al) ‘Impact of non-pharmarceutical…’&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;They agree with Ferguson that suppression is needed to bring down R&lt;sub&gt;0&lt;/sub&gt; below 1.
-But they disagree w Ferguson claim that 2nd outbreak unavoidable, because according to NECSI during lockdown infectious ppl are identified and their contacts isolated.
+They disagree w Ferguson claim that 2nd outbreak unavoidable, because (according to NECSI) during lockdown infectious ppl can be identified and their contacts isolated.
 Ferguson calculate new infections as fcn of infected % and immunity, but not the phase of trajectory (ergodicity).
 Not true that resurgence starts from even 1 case, China data showed &lt;em&gt;only 5% of close contacts of infected tested positive&lt;/em&gt;. Small outbreaks can be controlled by testing.
 Ferguson ignores super-spreader events by ignoring ‘fat tail distribution of contagion’.
@@ -231,6 +231,11 @@ of these populations.’ (Figure 5)&lt;/p&gt;
 Table 1 summarizes estimates by regions. Two suppression scenarios with 0.2 and 1.6 deaths/100K population/week.
 Unmitigated (world, total): 40M deaths, 1.9M deaths with suppression with trigger 0.2/100K pop/week, 10.4M with suppression with trigger 1.6/100K pop/week. Difference &lt;script type=&quot;math/tex&quot;&gt;\sim&lt;/script&gt; 5-fold between two suppression strategies in most regions.&lt;/p&gt;
 
+&lt;p&gt;Model is age-structured SIR-model incorporating demographic structure and rates of contact. Comorbidities not taken into account. Full model stochastic age-structured SEIR model.&lt;/p&gt;
+
+&lt;p&gt;Excel spreadsheet with results &lt;a href=&quot;https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-unmitigated-mitigated-suppression-scenarios.xlsx&quot;&gt;available online&lt;/a&gt;.
+&lt;a href=&quot;https://zenodo.org/record/3730771#.XptEtZ9fir4&quot;&gt;Covid-data used by Imperial models (cited by other publication)&lt;/a&gt;&lt;/p&gt;
+
 &lt;!---
 ```python
 from scipy.integrate import odeint
@@ -307,12 +312,9 @@ The model assumes that infections cannot be completely suppressed if no vaccine,
 
 &lt;p&gt;Python package to set up epidemiological models easily, used in Uri Alon study.&lt;/p&gt;
 
-&lt;h4 id=&quot;socialmixr-r-package-has-survey-data-on-mixing-patterns-survey-on-france-mixing-patterns-in-plos-one-2015&quot;&gt;&lt;a href=&quot;https://github.com/sbfnk/socialmixr&quot;&gt;SocialmixR R package has survey data on mixing patterns&lt;/a&gt;. Survey on France mixing patterns in &lt;a href=&quot;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203&quot;&gt;PloS ONE 2015&lt;/a&gt;.&lt;/h4&gt;
+&lt;h4 id=&quot;socialmixr-r-package-has-survey-data-on-mixing-patterns&quot;&gt;&lt;a href=&quot;https://github.com/sbfnk/socialmixr&quot;&gt;SocialmixR R package has survey data on mixing patterns&lt;/a&gt;.&lt;/h4&gt;
 
-&lt;p&gt;Model is age-structured SIR-model incorporating demographic structure and rates of contact. Comorbidities not taken into account. Full model stochastic age-structured SEIR model.&lt;/p&gt;
-
-&lt;p&gt;Excel spreadsheet with results &lt;a href=&quot;https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-unmitigated-mitigated-suppression-scenarios.xlsx&quot;&gt;available online&lt;/a&gt;.
-&lt;a href=&quot;https://zenodo.org/record/3730771#.XptEtZ9fir4&quot;&gt;Covid-data used by Imperial models (cited by other publication)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Survey on France mixing patterns in &lt;a href=&quot;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203&quot;&gt;PloS ONE 2015&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!---##############################################################################################################################---&gt;
 &lt;!---##############################################################################################################################---&gt;

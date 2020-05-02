@@ -238,7 +238,7 @@ Higher ON trigger and/or lower OFF -&gt; more deaths etc.</li>
 <h4 id="necsi-response-to-imperial-paper-ferguson-et-al-impact-of-non-pharmarceutical"><a href="https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e70eb32b16229792eb14836/1584458547530/ReviewOfFergusson.pdf">NECSI response to Imperial paper (Ferguson et al) ‘Impact of non-pharmarceutical…’</a></h4>
 
 <p>They agree with Ferguson that suppression is needed to bring down R<sub>0</sub> below 1.
-But they disagree w Ferguson claim that 2nd outbreak unavoidable, because according to NECSI during lockdown infectious ppl are identified and their contacts isolated.
+They disagree w Ferguson claim that 2nd outbreak unavoidable, because (according to NECSI) during lockdown infectious ppl can be identified and their contacts isolated.
 Ferguson calculate new infections as fcn of infected % and immunity, but not the phase of trajectory (ergodicity).
 Not true that resurgence starts from even 1 case, China data showed <em>only 5% of close contacts of infected tested positive</em>. Small outbreaks can be controlled by testing.
 Ferguson ignores super-spreader events by ignoring ‘fat tail distribution of contagion’.
@@ -318,6 +318,11 @@ of these populations.’ (Figure 5)</p>
 Table 1 summarizes estimates by regions. Two suppression scenarios with 0.2 and 1.6 deaths/100K population/week.
 Unmitigated (world, total): 40M deaths, 1.9M deaths with suppression with trigger 0.2/100K pop/week, 10.4M with suppression with trigger 1.6/100K pop/week. Difference <script type="math/tex">\sim</script> 5-fold between two suppression strategies in most regions.</p>
 
+<p>Model is age-structured SIR-model incorporating demographic structure and rates of contact. Comorbidities not taken into account. Full model stochastic age-structured SEIR model.</p>
+
+<p>Excel spreadsheet with results <a href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-unmitigated-mitigated-suppression-scenarios.xlsx">available online</a>.
+<a href="https://zenodo.org/record/3730771#.XptEtZ9fir4">Covid-data used by Imperial models (cited by other publication)</a></p>
+
 <!---
 ```python
 from scipy.integrate import odeint
@@ -394,12 +399,9 @@ The model assumes that infections cannot be completely suppressed if no vaccine,
 
 <p>Python package to set up epidemiological models easily, used in Uri Alon study.</p>
 
-<h4 id="socialmixr-r-package-has-survey-data-on-mixing-patterns-survey-on-france-mixing-patterns-in-plos-one-2015"><a href="https://github.com/sbfnk/socialmixr">SocialmixR R package has survey data on mixing patterns</a>. Survey on France mixing patterns in <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203">PloS ONE 2015</a>.</h4>
+<h4 id="socialmixr-r-package-has-survey-data-on-mixing-patterns"><a href="https://github.com/sbfnk/socialmixr">SocialmixR R package has survey data on mixing patterns</a>.</h4>
 
-<p>Model is age-structured SIR-model incorporating demographic structure and rates of contact. Comorbidities not taken into account. Full model stochastic age-structured SEIR model.</p>
-
-<p>Excel spreadsheet with results <a href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-unmitigated-mitigated-suppression-scenarios.xlsx">available online</a>.
-<a href="https://zenodo.org/record/3730771#.XptEtZ9fir4">Covid-data used by Imperial models (cited by other publication)</a></p>
+<p>Survey on France mixing patterns in <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203">PloS ONE 2015</a>.</p>
 
 <!---##############################################################################################################################--->
 <!---##############################################################################################################################--->
