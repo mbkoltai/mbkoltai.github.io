@@ -57,9 +57,9 @@ But the bulk of the globalization process only starts from the early 1980s. Ther
 In absolute terms, [global merchandise exports](https://data.worldbank.org/topic/trade) have grown about 60-fold since 1970, 10-fold since 1980 and 5-fold since 1990. As expected, this is even faster than the growth of global GDP (25-, 8- and 4-fold since the same dates, respectively).
 Looking at sub-processes such as [international tourism](https://data.worldbank.org/indicator/ST.INT.XPND.CD) (expenditures, 1995-2018: 4-fold increase), total volume of [foreign direct investment](https://unctad.org/en/Pages/DIAE/World%20Investment%20Report/Annex-Tables.aspx) (1990-2018: 6-fold increase), [the stock of foreign direct investment (FDI)](https://unctad.org/Sections/dite_dir/docs/WIR2019/WIR19_tab04.xlsx) (1990-2018: 14-fold increase), cross-border acquisitions ([cross border M&A purchases](https://unctad.org/Sections/dite_dir/docs/WIR2019/WIR19_tab10.xlsx), 1990-2018: 9-fold increase) the growth is even more massive.
 
-The main plot below summarizes the concentration of the three exponential waves of population growth, economic growth and globalization into the last two hundred years. To see the lags between economic growth and globalization we need to zoom in on these last two centuries, shown by the two insets.
+The plot below highlights this concentration of the three exponential waves of population growth, economic growth and globalization into the last two centuries. To see the lags between economic growth and globalization we need to zoom in on these last two centuries, shown by the two insets.
 
-![_config.yml]({{ site.baseurl }}/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets.png)
+![_config.yml]({{ site.baseurl }}/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets_textboxes.png)
 
 In short, the last 30-40 years saw the volume of most kinds of international transactions multiply several fold.
 But I feel these numbers still understate the actual impact on everyday life. Lifestyle has changed fundamentally too.  

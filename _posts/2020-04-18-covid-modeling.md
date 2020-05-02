@@ -6,8 +6,23 @@ excerpt: Math modeling the pandemic
 mathjax: true
 ---
 
-These are notes on the science (mostly epidemiological modeling) of the COVID19 pandemic. As of early April (9th of April) the notes are rather messy, I plan to clean them up with time.
+These are notes on the science (mostly epidemiological modeling) of the COVID19 pandemic. As of early April (9th of April) the notes are rather disorganized, I plan to clean them up with time.
 
+## Table of contents
+
+1. [Own modeling](#1-own-modeling)
+1. [Notes on the literature](#2-notes-on-the-literature)
+      1. [Dynamical models](#dynamical-models)
+      1. [Data and reports](#data-and-reports)
+      1. [Tools](#tools)
+
+## <ins>1. Own modeling</ins>
+
+Jupyter notebook under development...
+
+## <ins>2. Notes on the literature</ins>
+
+### <ins>Dynamical models</ins>
 
 #### [School closures, event cancellations, and the mesoscopic localization of epidemics in networks with higher-order structure](https://arxiv.org/pdf/2003.05924.pdf)
 Higher-order struct leads to mesoscopic localization (concentration into substructures).  
@@ -32,18 +47,11 @@ With higher transmission rate this gets higher, converging to ~0.9.
 But if structures are highly coupled (a), clique prevalence ~same for n [20,100].
 With lower coupling (b) there is *mesoscopic localization*: global prevalence can be very low, but within cliques, much higher % of infection.  
 
-#### Interactive modeling: https://alhill.shinyapps.io/COVID19seir/  
-This is an ODE model assuming complete homogeneity. Three **I** populations with different rates of transmission.
-
 #### [The Contribution of Pre-symptomatic Transmission to the COVID-19 Outbreak](https://cmmid.github.io/topics/covid19/control-measures/pre-symptomatic-transmission.html)  
 Estimates that ~25% of transmission in Shenzhen was asymptomatic.
 
 #### [Temporal variation in transmission during the COVID-19 outbreak in Italy](https://cmmid.github.io/topics/covid19/current-patterns-transmission/italy-time-varying-transmission.html)
 Estimates on reproduction numbers in regions of Italy. Started from 3-4, falling towards 2.
-
-#### [Shiny app of SIR model (Digital contact tracing for SARS-CoV-2)](https://bdi-pathogens.shinyapps.io/covid-19-transmission-routes)
-
-Adjustable parameters, generates graphs interactively.
 
 #### [Substantial undocumented infection facilitates the rapid dissemination of novel coronavirus (SCIENCE, 16 March)](https://science.sciencemag.org/content/sci/early/2020/03/13/science.abb3221.full.pdf)
 
@@ -87,10 +95,13 @@ Delay is from a Gamma distribution approximated from data.
 Movements between cities estimated from mobile apps: Tencent, Mobility Index from Baidu.
 'Iterated' filtering to estimate model parameters.
 
+<!---
 #### [Wolfram Mathematica notebook on epidemic modeling](https://community.wolfram.com/groups/-/m/t/1896178)
 https://www.twitch.tv/videos/569280246
 
 #### [NECSI Slack channel for modeling](https://app.slack.com/client/T2DRR8UNB/CV19X1PKJ/thread/CUTSF2Q6R-1584495843.398200)
+--->
+
 
 #### [Imperial: Impact of non-pharmaceutical interventions (NPIs) to reduce COVID19 mortality and healthcare demand (16 March)](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf)
 
@@ -126,12 +137,6 @@ Ferguson use SIR ODE-model, not appropriate bc it ignores:
 But Imperial model has different environments and it is agent-based, so maybe this is not fair.
 Debate on this on [Twitter](https://twitter.com/yaneerbaryam/status/1239936951823843328).
 
-#### [Tomas Pueyo: The hammer and the dance (Medium, 19 March)](https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56)
-
-Uses simple SIR model to argue why suppression is needed, as mitigation leads to enormous death toll (some estimates on side-effects).
-Suppression buys time for producing equipment, maybe drugs.
-Not original research, but summarizes Imperial's 16 March study.
-
 #### [Beyond contact tracing: Community-based early detection for Ebola response, PLoS Currents Outbreaks (2016)](https://necsi.edu/beyond-contact-tracing)
 
 Stochastic model by NECSI.
@@ -155,15 +160,145 @@ It's assumed growth within one community is exponential until $$T_c$$ (intervent
 
 Estimates for mixing patterns.
 
-#### [The early phase of the COVID-19 outbreak in Lombardy, Italy (20 Mar, arXiv)](https://arxiv.org/abs/2003.09320)
+#### [An investigation of transmission control measures during the first 50 days of the COVID-19 epidemic in China (Science, 31 Mar)](https://science.sciencemag.org/content/early/2020/03/30/science.abb6105)
 
-Early estimates on epidemic in Lombardy (hospitalisation, intensive care, deaths), arguing for aggressive containment strategies.
+Effect of Wuhan travel ban. Cities as variables in a SIR-like model, estimates on travel flows.
+
+#### [MERS basic reproduction number (BioMed Eng OnLine (2017) 16:79)](https://biomedical-engineering-online.biomedcentral.com/track/pdf/10.1186/s12938-017-0370-7)
+
+Authors fit SIR model to data, least-square fit, they find a $$R_0$$ around 8 (!).
+How did they manage to suppress MERS?
+
+#### [Uri Alon: Adaptive cyclic exit strategies from lockdown (Medium post on preprint, 7 April)](https://medium.com/@urialonw/adaptive-cyclic-exit-strategies-from-lockdown-to-suppress-covid-19-and-allow-economic-activity-4900a86b37c7)
+
+4 day work+10 day lockdown, antiphased for 2 groups of households.
+Review of deterministic, stochastic and also *network* SEIR model, different cyclic lockdown strategies.
+
+Antiphasing (staggering) uses the timeline of the disease and infectiousness:
+![_config.yml](https://miro.medium.com/max/770/0*MWxESwBV56QMF9rc)
+
+#### [Imperial: Report 12: The Global Impact of COVID-19 and Strategies for Mitigation and Suppression (26 March 2020)](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-26-COVID19-Report-12.pdf)
+
+Global estimates:
+- *without intervention*: 7 billion infections and 40 millon deaths in 2020
+- *mitigation*: with 60% reduction of social contacts, 20 million deaths avoided, all health care systems overwhelmed, in low income setting by factor of 25.
+- *suppression*: 30-39 million deaths can be avoided (compared to no intervention strategy), depending on timing
+
+Household size/structure is critical, differences result in different *attack rates* by age groups. Number of hospital beds/1000 population from [World Bank](https://data.worldbank.org/indicator?tab=all).
+Estimates for 3 strategies of unmitigated, mitigation, mitigation+enhanced social distancing for elderly:
+- hospitalisation rate: $$\sim$$ 3%, 2%, 2% (esimates for difference world regions on Fig 4).
+- critical care: 1%, 0.5%, 0.2%
+- deaths: 0.6-0.8%, 0.4%, 0.2%
+
+'Despite higher rates of contact across older age-groups, we predict a lower incidence of severe
+disease, hospitalisation and deaths in lower income settings. This is driven by the younger average age
+of these populations.' (Figure 5)
+
+Simulations for countries in different income groups: how ICU capacity would be exceeded under different suppression strategies and mitigation (Figure 6).
+Table 1 summarizes estimates by regions. Two suppression scenarios with 0.2 and 1.6 deaths/100K population/week.
+Unmitigated (world, total): 40M deaths, 1.9M deaths with suppression with trigger 0.2/100K pop/week, 10.4M with suppression with trigger 1.6/100K pop/week. Difference $$\sim$$ 5-fold between two suppression strategies in most regions.
+
+
+<!---
+```python
+from scipy.integrate import odeint
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+!pip install mpld3
+import mpld3
+mpld3.enable_notebook()
+```
+--->
+
+[Macroeconomics of epidemics](https://www.kellogg.northwestern.edu/faculty/rebelo/htm/epidemics.pdf)
+
+Interaction terms between economic variables and epidemiological ones are via consumption and work hour variables:
+- consumption: $$\pi_1(S_t C_t^S) (I_t C_t^I)$$, $$C_t$$ consumption spending
+- work: $$\pi_2(S_t N_t^S) (I_t N_t^I)$$, $$N_t$$ is work hours
+and a general term $$\pi_3 S_t I_t$$
+
+Newly infected: $$T_t$$, therefore susceptibles: $$S_{t+1}=S_t - T_t$$.  
+Number of infected: $$I_{t+1}=I_t + T_t - (\pi_r + \pi_d) I_t $$  
+Zoonotic introduction of virus into population: $$I_0{=}\epsilon,\ S_0{=}1{-}\epsilon$$  
+
+How do the epidemiological variables affect the economic ones?
+Pre-epidemic, the population is made up of identical agents optimizing the utility function:
+$$u(c_t,n_t)=ln(c_t) - \frac{\phi}{2} n_t^2$$  
+
+Following the outbreak we have the modified version of this utility function per compartments:
+$$U_t^j$$: 'lifetime utility' of agent $$j$$ ($$j=s,i,r$$).
+
+Agents have the budget constraint: $$(1+\mu_t)c_t^j=w_t \phi^j n_t^j + \Gamma_t$$
+with $$\mu_t$$ tax on consumption, $$w_t$$ real wage, $$\phi^j$$ labour productivity, $$\phi^j=1$$ for $$j=s,r$$ and $$\phi^j{=}1$$ for $$j{=}I$$.
+
+'Lifetime utility' functions for compartments (subpopulations):
+- S (susceptible): $$U^s_t=u(c_t,n_t) + \beta [(1-\tau_t)U^s_{t+1} + \tau_t U^i_{t+1} ]$$, where $$\tau_t$$ is the probability that a susceptible person gets infected. This probability linearly increases with consumption and work, and the utilities of being susceptible or infected in next time step are inversely and proportionally scaled with $$\tau_t$$.
+- $$U^i_t$$: Similar lifetime utility function for infected people, but dependence only on recovery and death rates.
+
+First order conditions (first derivative equals 0) for consumption, work hours, $$\tau_t$$ calculated with Lagrange multipliers. Market clearing equilibrium for goods and labor, balanced gov. budget assumed (clearly not technically true, is this important?).  
+
+To model healthcare collapse, quadratic dependence of mortality rate on total number of infected.
+Treatment option introduces another parameter ($$\delta_c$$) from infected to recovered, this is probability of a cure discovered in a time period.
+Vaccine similarly modeled in utility function of susceptibles.
+
+Mapping epidem. parameters from Ferguson (2006) onto model parameters: approx. 1/3, 1/3, 1/3 transmission in household, general community, schools and workplaces. From BLS Time Use Survey authors estimate % of time in buying things, eating outside, this gives estimate for consumption-related transmission.  
+Number of students and workers multiplied by estimates of contacts in those environments. This gives estimate for workplace transmission.
+Labor productivity for infected people set to 80%, assuming 80% is asymptomatic (?) and those with symptoms do not work.  
+Peak of newly infected fraction of the population approximately 7% in the SIR (no utility functions) model.  
+In the SIR-Macro model infection impacts the economy by 1) reducing size of workforce 2) through the utility functions, households reduce their consumption and work hours. In turn, their reduced consumption/work decreases the probability of getting infected. Peak of infected lower (5%) at occurs later. Recession is much more severe due to reduced consumption/work. If mortality rate depends on healthcare being overwhelmed, households absorb this effect via utility function by reducing their economic activity, exacerbating recession.
+Vaccine or effective drugs have opposite effect, households cut back less.
+
+Containment measures are modeled as a tax on consumption. Optimization is done on how containment measures are introduced in time.
+The model assumes that infections cannot be completely suppressed if no vaccine, until population immunity achieved. Therefore early strong containment has high economic cost but followed still by an outbreak. In this framework containment should be escalated gradually as $$I$$ grows. But China, Korea seems to show that suppression is possible. Costs of containment policies referred to as 'Ramsey problem': costs vs. maximizing social welfare.
+
+A 'smart containment' scenario is also modeled where it is assumed that planners know the health status of everyone and can maximimize overall social utility by blocking all infected from working. In this case there is no cost to containment, but this requires perfect knowledge. Ie. huge social returns on testing.
+
+<!---######################################################################################################--->
+
+### <ins>Tools</ins>
+
+#### [Interactive modeling (Shiny app)](https://alhill.shinyapps.io/COVID19seir/)  
+This is an ODE model assuming complete homogeneity. Three **I** populations with different rates of transmission.
+
+#### [Shiny app of SIR model (Digital contact tracing for SARS-CoV-2)](https://bdi-pathogens.shinyapps.io/covid-19-transmission-routes)
+
+Adjustable parameters, generates graphs interactively.
+
+#### [SEIRSPLUS: Python package for stochastic and network based SEIR model](https://github.com/ryansmcgee/seirsplus)
+
+Python package to set up epidemiological models easily, used in Uri Alon study.
+
+
+[SocialmixR R package has survey data on mixing patterns](https://github.com/sbfnk/socialmixr). Survey on France mixing patterns in [PloS ONE 2015](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203).
+
+Model is age-structured SIR-model incorporating demographic structure and rates of contact. Comorbidities not taken into account. Full model stochastic age-structured SEIR model.
+
+Excel spreadsheet with results [available online](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-unmitigated-mitigated-suppression-scenarios.xlsx).
+[Covid-data used by Imperial models (cited by other publication)](https://zenodo.org/record/3730771#.XptEtZ9fir4)
+
+
+<!---#####################################################################################################################################################################################################################--->
+
+### <ins>Data and reports</ins>
+
+[Cluster of COVID-19 in northern France: A retrospective closed cohort study](https://www.medrxiv.org/content/10.1101/2020.04.18.20071134v1.full.pdf)
+
+Oise heavily exposed to SARS-CoV-2. Infection attack rate (IAR) from antibody detection.
+171/661 had antibodies, **26% IAR**, 0% IFR (fatality). Hospitalisation rate 5%.
+Anosmia (smell blindness) and ageusia (loss of taste) good predictors of infection.
+IAR for smokers 7% vs. 28% (smoking: 75% decrease in risk of infection). Asymptomatic infections 17%.
+High school: 41% IAR, among parents only 10%. 661 participants in total. Median age 37, 38% male. 40% age 15-17, only 2 people over 65. Secondary IAR in households 10-11% (both for parents and siblings). In Shenzhen similar study found 15%.
+ELISA antibody tests were also made on blood samples of blood donors in the area, 3% IAR.
+Oise was one of the early epicenters of the epidemic in France and these numbers are results of period before lockdown. Low prevalence numbers suggest herd immunity cannot be quickly established.
+
+[Animal passage experiments and possibility of accidental escape](https://www.newsweek.com/controversial-wuhan-lab-experiments-that-may-have-started-coronavirus-pandemic-1500503)
+
+Description of animal passage experiments (with ferrets) since 2011. PREDICT program. No evidence of such experiments in Wuhan lab.
+
 
 #### [Secondary attack rate and super-spreading events for SARS-CoV-2 (Lancet, 27 Febr)](https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930462-1)
 Estimates for some 'super-spreader' events in table.
-
-#### [Predicting collapse of adaptive networked systems without knowing the network](https://www.nature.com/articles/s41598-020-57751-y.pdf)
-General on network collapse.
 
 #### [Epidemiological data from the COVID-19 outbreak, real-time case information](https://www.nature.com/articles/s41597-020-0448-0.pdf)
 
@@ -192,10 +327,6 @@ Lockdown cost dwarfs testing cost.
 
 Estimates on CFR and IFR from Hubei and China in general.
 
-#### [An investigation of transmission control measures during the first 50 days of the COVID-19 epidemic in China (Science, 31 Mar)](https://science.sciencemag.org/content/early/2020/03/30/science.abb6105)
-
-Effect of Wuhan travel ban. Cities as variables in a SIR-like model, estimates on travel flows.
-
 #### [IHME (Institute for Health Metrics and Evaluation) predictions about peaks](http://www.healthdata.org/covid/updates)
 Preds made 05 April are for France 15K deaths by August, UK 66K.
 This was revised upwards to France (22.5K) and downwards for UK (37.5K).
@@ -214,58 +345,13 @@ Nucleotide identity with other coronaviruses:
 - MERS: 55%
 - common cold CoV: 50%
 
-#### [MERS basic reproduction number (BioMed Eng OnLine (2017) 16:79)](https://biomedical-engineering-online.biomedcentral.com/track/pdf/10.1186/s12938-017-0370-7)
+#### [The early phase of the COVID-19 outbreak in Lombardy, Italy (20 Mar, arXiv)](https://arxiv.org/abs/2003.09320)
 
-Authors fit SIR model to data, least-square fit, they find a $$R_0$$ around 8 (!).
-How did they manage to suppress MERS?
-
-#### [Uri Alon: Adaptive cyclic exit strategies from lockdown (Medium post on preprint, 7 April)](https://medium.com/@urialonw/adaptive-cyclic-exit-strategies-from-lockdown-to-suppress-covid-19-and-allow-economic-activity-4900a86b37c7)
-
-4 day work+10 day lockdown, antiphased for 2 groups of households.
-Review of deterministic, stochastic and also *network* SEIR model, different cyclic lockdown strategies.
-
-Antiphasing (staggering) uses the timeline of the disease and infectiousness:
-![_config.yml](https://miro.medium.com/max/770/0*MWxESwBV56QMF9rc)
-
-#### [SEIRSPLUS: Python package for stochastic and network based SEIR model](https://github.com/ryansmcgee/seirsplus)
-
-Python package to set up epidemiological models easily, used in Uri Alon study.
-
-#### [Imperial: Report 12: The Global Impact of COVID-19 and Strategies for Mitigation and Suppression (26 March 2020)](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-26-COVID19-Report-12.pdf)
-
-Global estimates:
-- *without intervention*: 7 billion infections and 40 millon deaths in 2020
-- *mitigation*: with 60% reduction of social contacts, 20 million deaths avoided, all health care systems overwhelmed, in low income setting by factor of 25.
-- *suppression*: 30-39 million deaths can be avoided (compared to no intervention strategy), depending on timing
-
-Household size/structure is critical, differences result in different *attack rates* by age groups. Number of hospital beds/1000 population from [World Bank](https://data.worldbank.org/indicator?tab=all).
-Estimates for 3 strategies of unmitigated, mitigation, mitigation+enhanced social distancing for elderly:
-- hospitalisation rate: $$\sim$$ 3%, 2%, 2% (esimates for difference world regions on Fig 4).
-- critical care: 1%, 0.5%, 0.2%
-- deaths: 0.6-0.8%, 0.4%, 0.2%
-
-'Despite higher rates of contact across older age-groups, we predict a lower incidence of severe
-disease, hospitalisation and deaths in lower income settings. This is driven by the younger average age
-of these populations.' (Figure 5)
-
-Simulations for countries in different income groups: how ICU capacity would be exceeded under different suppression strategies and mitigation (Figure 6).
-Table 1 summarizes estimates by regions. Two suppression scenarios with 0.2 and 1.6 deaths/100K population/week.
-Unmitigated (world, total): 40M deaths, 1.9M deaths with suppression with trigger 0.2/100K pop/week, 10.4M with suppression with trigger 1.6/100K pop/week. Difference $$\sim$$ 5-fold between two suppression strategies in most regions.
-
-[SocialmixR R package has survey data on mixing patterns](https://github.com/sbfnk/socialmixr). Survey on France mixing patterns in [PloS ONE 2015](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203).
-
-Model is age-structured SIR-model incorporating demographic structure and rates of contact. Comorbidities not taken into account. Full model stochastic age-structured SEIR model.
-
-Excel spreadsheet with results [available online](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-unmitigated-mitigated-suppression-scenarios.xlsx).
-[Covid-data used by Imperial models (cited by other publication)](https://zenodo.org/record/3730771#.XptEtZ9fir4)
+Early estimates on epidemic in Lombardy (hospitalisation, intensive care, deaths), arguing for aggressive containment strategies.
 
 
-[Cluster of COVID-19 in northern France: A retrospective closed cohort study](https://www.medrxiv.org/content/10.1101/2020.04.18.20071134v1.full.pdf)
+#### [Tomas Pueyo: The hammer and the dance (Medium, 19 March)](https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56)
 
-Oise heavily exposed to SARS-CoV-2. Infection attack rate (IAR) from antibody detection.
-171/661 had antibodies, **26% IAR**, 0% IFR (fatality). Hospitalisation rate 5%.
-Anosmia (smell blindness) and ageusia (loss of taste) good predictors of infection.
-IAR for smokers 7% vs. 28% (smoking: 75% decrease in risk of infection). Asymptomatic infections 17%.
-High school: 41% IAR, among parents only 10%. 661 participants in total. Median age 37, 38% male. 40% age 15-17, only 2 people over 65. Secondary IAR in households 10-11% (both for parents and siblings). In Shenzhen similar study found 15%.
-ELISA antibody tests were also made on blood samples of blood donors in the area, 3% IAR.
-Oise was one of the early epicenters of the epidemic in France and these numbers are results of period before lockdown. Low prevalence numbers suggest herd immunity cannot be quickly established.
+Uses simple SIR model to argue why suppression is needed, as mitigation leads to enormous death toll (some estimates on side-effects).
+Suppression buys time for producing equipment, maybe drugs.
+Not original research, but summarizes Imperial's 16 March study.
