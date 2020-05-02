@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-02T23:34:52+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Notes on modeling the COVID19 pandemic</title><link href="http://localhost:4000/covid-modeling/" rel="alternate" type="text/html" title="Notes on modeling the COVID19 pandemic" /><published>2020-04-18T00:00:00+02:00</published><updated>2020-04-18T00:00:00+02:00</updated><id>http://localhost:4000/covid-modeling</id><content type="html" xml:base="http://localhost:4000/covid-modeling/">&lt;p&gt;These are notes on the science, mostly epidemiological modeling, of the COVID19 pandemic.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-02T23:47:14+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Notes on modeling the COVID19 pandemic</title><link href="http://localhost:4000/covid-modeling/" rel="alternate" type="text/html" title="Notes on modeling the COVID19 pandemic" /><published>2020-04-18T00:00:00+02:00</published><updated>2020-04-18T00:00:00+02:00</updated><id>http://localhost:4000/covid-modeling</id><content type="html" xml:base="http://localhost:4000/covid-modeling/">&lt;p&gt;These are notes on the science, mostly epidemiological modeling, of the COVID19 pandemic.
 It includes some of my own data visualization on the pandemic and I plan to add SEIR modeling as well.
 The models are not to be understood as predictions, I am pursuing it only as a private interest.&lt;/p&gt;
 
@@ -243,7 +243,7 @@ mpld3.enable_notebook()
 ```
 ---&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.kellogg.northwestern.edu/faculty/rebelo/htm/epidemics.pdf&quot;&gt;Macroeconomics of epidemics&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;macroeconomics-of-epidemics&quot;&gt;&lt;a href=&quot;https://www.kellogg.northwestern.edu/faculty/rebelo/htm/epidemics.pdf&quot;&gt;Macroeconomics of epidemics&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;Interaction terms between economic variables and epidemiological ones are via consumption and work hour variables:&lt;/p&gt;
 &lt;ul&gt;
@@ -282,7 +282,8 @@ Vaccine similarly modeled in utility function of susceptibles.&lt;/p&gt;
 Number of students and workers multiplied by estimates of contacts in those environments. This gives estimate for workplace transmission.
 Labor productivity for infected people set to 80%, assuming 80% is asymptomatic (?) and those with symptoms do not work.&lt;br /&gt;
 Peak of newly infected fraction of the population approximately 7% in the SIR (no utility functions) model.&lt;br /&gt;
-In the SIR-Macro model infection impacts the economy by 1) reducing size of workforce 2) through the utility functions, households reduce their consumption and work hours. In turn, their reduced consumption/work decreases the probability of getting infected. Peak of infected lower (5%) at occurs later. Recession is much more severe due to reduced consumption/work. If mortality rate depends on healthcare being overwhelmed, households absorb this effect via utility function by reducing their economic activity, exacerbating recession.
+In the SIR-Macro model infection impacts the economy by 1) reducing size of workforce 2) through the utility functions, households reduce their consumption and work hours. In turn, their reduced consumption/work decreases the probability of getting infected. Peak of infected lower (5%) at occurs later.
+Recession is much more severe due to reduced consumption/work. If mortality rate depends on healthcare being overwhelmed, households absorb this effect via utility function by reducing their economic activity, exacerbating recession.
 Vaccine or effective drugs have opposite effect, households cut back less.&lt;/p&gt;
 
 &lt;p&gt;Containment measures are modeled as a tax on consumption. Optimization is done on how containment measures are introduced in time.
@@ -290,7 +291,8 @@ The model assumes that infections cannot be completely suppressed if no vaccine,
 
 &lt;p&gt;A ‘smart containment’ scenario is also modeled where it is assumed that planners know the health status of everyone and can maximimize overall social utility by blocking all infected from working. In this case there is no cost to containment, but this requires perfect knowledge. Ie. huge social returns on testing.&lt;/p&gt;
 
-&lt;!---######################################################################################################---&gt;
+&lt;!---###############################################################################################################################---&gt;
+&lt;!---###############################################################################################################################---&gt;
 
 &lt;h3 id=&quot;tools&quot;&gt;&lt;ins&gt;Tools&lt;/ins&gt;&lt;/h3&gt;
 
@@ -305,30 +307,18 @@ The model assumes that infections cannot be completely suppressed if no vaccine,
 
 &lt;p&gt;Python package to set up epidemiological models easily, used in Uri Alon study.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/sbfnk/socialmixr&quot;&gt;SocialmixR R package has survey data on mixing patterns&lt;/a&gt;. Survey on France mixing patterns in &lt;a href=&quot;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203&quot;&gt;PloS ONE 2015&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;socialmixr-r-package-has-survey-data-on-mixing-patterns-survey-on-france-mixing-patterns-in-plos-one-2015&quot;&gt;&lt;a href=&quot;https://github.com/sbfnk/socialmixr&quot;&gt;SocialmixR R package has survey data on mixing patterns&lt;/a&gt;. Survey on France mixing patterns in &lt;a href=&quot;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203&quot;&gt;PloS ONE 2015&lt;/a&gt;.&lt;/h4&gt;
 
 &lt;p&gt;Model is age-structured SIR-model incorporating demographic structure and rates of contact. Comorbidities not taken into account. Full model stochastic age-structured SEIR model.&lt;/p&gt;
 
 &lt;p&gt;Excel spreadsheet with results &lt;a href=&quot;https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-unmitigated-mitigated-suppression-scenarios.xlsx&quot;&gt;available online&lt;/a&gt;.
 &lt;a href=&quot;https://zenodo.org/record/3730771#.XptEtZ9fir4&quot;&gt;Covid-data used by Imperial models (cited by other publication)&lt;/a&gt;&lt;/p&gt;
 
-&lt;!---#####################################################################################################################################################################################################################---&gt;
+&lt;!---##############################################################################################################################---&gt;
+&lt;!---##############################################################################################################################---&gt;
+&lt;!---##############################################################################################################################---&gt;
 
 &lt;h3 id=&quot;data-and-reports&quot;&gt;&lt;ins&gt;Data and reports&lt;/ins&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.medrxiv.org/content/10.1101/2020.04.18.20071134v1.full.pdf&quot;&gt;Cluster of COVID-19 in northern France: A retrospective closed cohort study&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Oise heavily exposed to SARS-CoV-2. Infection attack rate (IAR) from antibody detection.
-171/661 had antibodies, &lt;strong&gt;26% IAR&lt;/strong&gt;, 0% IFR (fatality). Hospitalisation rate 5%.
-Anosmia (smell blindness) and ageusia (loss of taste) good predictors of infection.
-IAR for smokers 7% vs. 28% (smoking: 75% decrease in risk of infection). Asymptomatic infections 17%.
-High school: 41% IAR, among parents only 10%. 661 participants in total. Median age 37, 38% male. 40% age 15-17, only 2 people over 65. Secondary IAR in households 10-11% (both for parents and siblings). In Shenzhen similar study found 15%.
-ELISA antibody tests were also made on blood samples of blood donors in the area, 3% IAR.
-Oise was one of the early epicenters of the epidemic in France and these numbers are results of period before lockdown. Low prevalence numbers suggest herd immunity cannot be quickly established.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.newsweek.com/controversial-wuhan-lab-experiments-that-may-have-started-coronavirus-pandemic-1500503&quot;&gt;Animal passage experiments and possibility of accidental escape&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Description of animal passage experiments (with ferrets) since 2011. PREDICT program. No evidence of such experiments in Wuhan lab.&lt;/p&gt;
 
 &lt;h4 id=&quot;secondary-attack-rate-and-super-spreading-events-for-sars-cov-2-lancet-27-febr&quot;&gt;&lt;a href=&quot;https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930462-1&quot;&gt;Secondary attack rate and super-spreading events for SARS-CoV-2 (Lancet, 27 Febr)&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Estimates for some ‘super-spreader’ events in table.&lt;/p&gt;
@@ -390,7 +380,21 @@ Nucleotide identity with other coronaviruses:&lt;/p&gt;
 
 &lt;p&gt;Uses simple SIR model to argue why suppression is needed, as mitigation leads to enormous death toll (some estimates on side-effects).
 Suppression buys time for producing equipment, maybe drugs.
-Not original research, but summarizes Imperial’s 16 March study.&lt;/p&gt;</content><author><name></name></author><category term="epidemics" /><category term="complex-systems" /><category term="covid19" /><summary type="html">Math modeling the pandemic</summary></entry><entry><title type="html">1990-2020, the false dawn of globalization?</title><link href="http://localhost:4000/illusion-globalisation/" rel="alternate" type="text/html" title="1990-2020, the false dawn of globalization?" /><published>2020-02-29T00:00:00+01:00</published><updated>2020-02-29T00:00:00+01:00</updated><id>http://localhost:4000/illusion-globalisation</id><content type="html" xml:base="http://localhost:4000/illusion-globalisation/">&lt;p&gt;As the coronavirus is spreading through the world I have been gradually overcome by a feeling similar to the moment when an optical shift occurs. If you have looked at a &lt;a href=&quot;https://en.wikipedia.org/wiki/Random_dot_stereogram&quot;&gt;stereogram&lt;/a&gt;, you know what I mean: out of random dots a three dimensional pattern emerges.&lt;/p&gt;
+Not original research, but summarizes Imperial’s 16 March study.&lt;/p&gt;
+
+&lt;h4 id=&quot;cluster-of-covid-19-in-northern-france-a-retrospective-closed-cohort-study&quot;&gt;&lt;a href=&quot;https://www.medrxiv.org/content/10.1101/2020.04.18.20071134v1.full.pdf&quot;&gt;Cluster of COVID-19 in northern France: A retrospective closed cohort study&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Oise heavily exposed to SARS-CoV-2. Infection attack rate (IAR) from antibody detection.
+171/661 had antibodies, &lt;strong&gt;26% IAR&lt;/strong&gt;, 0% IFR (fatality). Hospitalisation rate 5%.
+Anosmia (smell blindness) and ageusia (loss of taste) good predictors of infection.
+IAR for smokers 7% vs. 28% (smoking: 75% decrease in risk of infection). Asymptomatic infections 17%.
+High school: 41% IAR, among parents only 10%. 661 participants in total. Median age 37, 38% male. 40% age 15-17, only 2 people over 65. Secondary IAR in households 10-11% (both for parents and siblings). In Shenzhen similar study found 15%.
+ELISA antibody tests were also made on blood samples of blood donors in the area, 3% IAR.
+Oise was one of the early epicenters of the epidemic in France and these numbers are results of period before lockdown. Low prevalence numbers suggest herd immunity cannot be quickly established.&lt;/p&gt;
+
+&lt;h4 id=&quot;animal-passage-experiments-and-possibility-of-accidental-escape&quot;&gt;&lt;a href=&quot;https://www.newsweek.com/controversial-wuhan-lab-experiments-that-may-have-started-coronavirus-pandemic-1500503&quot;&gt;Animal passage experiments and possibility of accidental escape&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Description of animal passage experiments (with ferrets) since 2011. PREDICT program. No evidence of such experiments in Wuhan lab.&lt;/p&gt;</content><author><name></name></author><category term="epidemics" /><category term="complex-systems" /><category term="covid19" /><summary type="html">Math modeling the pandemic</summary></entry><entry><title type="html">1990-2020, the false dawn of globalization?</title><link href="http://localhost:4000/illusion-globalisation/" rel="alternate" type="text/html" title="1990-2020, the false dawn of globalization?" /><published>2020-02-29T00:00:00+01:00</published><updated>2020-02-29T00:00:00+01:00</updated><id>http://localhost:4000/illusion-globalisation</id><content type="html" xml:base="http://localhost:4000/illusion-globalisation/">&lt;p&gt;As the coronavirus is spreading through the world I have been gradually overcome by a feeling similar to the moment when an optical shift occurs. If you have looked at a &lt;a href=&quot;https://en.wikipedia.org/wiki/Random_dot_stereogram&quot;&gt;stereogram&lt;/a&gt;, you know what I mean: out of random dots a three dimensional pattern emerges.&lt;/p&gt;
 
 &lt;p&gt;Almost irrespectively of political taste, most of us, at least in middle and high-income countries, have experienced these last decades of expanding world trade, cheapening travel, instantaneous communication and product availability as a never-ending ahistorical present, a normality taken for granted. In reality maybe it was a very fragile and unsustainable experiment, about to be swept away.&lt;/p&gt;
 

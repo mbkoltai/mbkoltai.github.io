@@ -234,7 +234,7 @@ mpld3.enable_notebook()
 ```
 --->
 
-[Macroeconomics of epidemics](https://www.kellogg.northwestern.edu/faculty/rebelo/htm/epidemics.pdf)
+#### [Macroeconomics of epidemics](https://www.kellogg.northwestern.edu/faculty/rebelo/htm/epidemics.pdf)
 
 Interaction terms between economic variables and epidemiological ones are via consumption and work hour variables:
 - consumption: $$\pi_1(S_t C_t^S) (I_t C_t^I)$$, $$C_t$$ consumption spending
@@ -269,7 +269,8 @@ Mapping epidem. parameters from Ferguson (2006) onto model parameters: approx. 1
 Number of students and workers multiplied by estimates of contacts in those environments. This gives estimate for workplace transmission.
 Labor productivity for infected people set to 80%, assuming 80% is asymptomatic (?) and those with symptoms do not work.  
 Peak of newly infected fraction of the population approximately 7% in the SIR (no utility functions) model.  
-In the SIR-Macro model infection impacts the economy by 1) reducing size of workforce 2) through the utility functions, households reduce their consumption and work hours. In turn, their reduced consumption/work decreases the probability of getting infected. Peak of infected lower (5%) at occurs later. Recession is much more severe due to reduced consumption/work. If mortality rate depends on healthcare being overwhelmed, households absorb this effect via utility function by reducing their economic activity, exacerbating recession.
+In the SIR-Macro model infection impacts the economy by 1) reducing size of workforce 2) through the utility functions, households reduce their consumption and work hours. In turn, their reduced consumption/work decreases the probability of getting infected. Peak of infected lower (5%) at occurs later.
+Recession is much more severe due to reduced consumption/work. If mortality rate depends on healthcare being overwhelmed, households absorb this effect via utility function by reducing their economic activity, exacerbating recession.
 Vaccine or effective drugs have opposite effect, households cut back less.
 
 Containment measures are modeled as a tax on consumption. Optimization is done on how containment measures are introduced in time.
@@ -277,7 +278,8 @@ The model assumes that infections cannot be completely suppressed if no vaccine,
 
 A 'smart containment' scenario is also modeled where it is assumed that planners know the health status of everyone and can maximimize overall social utility by blocking all infected from working. In this case there is no cost to containment, but this requires perfect knowledge. Ie. huge social returns on testing.
 
-<!---######################################################################################################--->
+<!---###############################################################################################################################--->
+<!---###############################################################################################################################--->
 
 ### <ins>Tools</ins>
 
@@ -292,33 +294,18 @@ Adjustable parameters, generates graphs interactively.
 
 Python package to set up epidemiological models easily, used in Uri Alon study.
 
-
-[SocialmixR R package has survey data on mixing patterns](https://github.com/sbfnk/socialmixr). Survey on France mixing patterns in [PloS ONE 2015](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203).
+#### [SocialmixR R package has survey data on mixing patterns](https://github.com/sbfnk/socialmixr). Survey on France mixing patterns in [PloS ONE 2015](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203).
 
 Model is age-structured SIR-model incorporating demographic structure and rates of contact. Comorbidities not taken into account. Full model stochastic age-structured SEIR model.
 
 Excel spreadsheet with results [available online](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-unmitigated-mitigated-suppression-scenarios.xlsx).
 [Covid-data used by Imperial models (cited by other publication)](https://zenodo.org/record/3730771#.XptEtZ9fir4)
 
-
-<!---#####################################################################################################################################################################################################################--->
+<!---##############################################################################################################################--->
+<!---##############################################################################################################################--->
+<!---##############################################################################################################################--->
 
 ### <ins>Data and reports</ins>
-
-[Cluster of COVID-19 in northern France: A retrospective closed cohort study](https://www.medrxiv.org/content/10.1101/2020.04.18.20071134v1.full.pdf)
-
-Oise heavily exposed to SARS-CoV-2. Infection attack rate (IAR) from antibody detection.
-171/661 had antibodies, **26% IAR**, 0% IFR (fatality). Hospitalisation rate 5%.
-Anosmia (smell blindness) and ageusia (loss of taste) good predictors of infection.
-IAR for smokers 7% vs. 28% (smoking: 75% decrease in risk of infection). Asymptomatic infections 17%.
-High school: 41% IAR, among parents only 10%. 661 participants in total. Median age 37, 38% male. 40% age 15-17, only 2 people over 65. Secondary IAR in households 10-11% (both for parents and siblings). In Shenzhen similar study found 15%.
-ELISA antibody tests were also made on blood samples of blood donors in the area, 3% IAR.
-Oise was one of the early epicenters of the epidemic in France and these numbers are results of period before lockdown. Low prevalence numbers suggest herd immunity cannot be quickly established.
-
-[Animal passage experiments and possibility of accidental escape](https://www.newsweek.com/controversial-wuhan-lab-experiments-that-may-have-started-coronavirus-pandemic-1500503)
-
-Description of animal passage experiments (with ferrets) since 2011. PREDICT program. No evidence of such experiments in Wuhan lab.
-
 
 #### [Secondary attack rate and super-spreading events for SARS-CoV-2 (Lancet, 27 Febr)](https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930462-1)
 Estimates for some 'super-spreader' events in table.
@@ -372,9 +359,22 @@ Nucleotide identity with other coronaviruses:
 
 Early estimates on epidemic in Lombardy (hospitalisation, intensive care, deaths), arguing for aggressive containment strategies.
 
-
 #### [Tomas Pueyo: The hammer and the dance (Medium, 19 March)](https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56)
 
 Uses simple SIR model to argue why suppression is needed, as mitigation leads to enormous death toll (some estimates on side-effects).
 Suppression buys time for producing equipment, maybe drugs.
 Not original research, but summarizes Imperial's 16 March study.
+
+#### [Cluster of COVID-19 in northern France: A retrospective closed cohort study](https://www.medrxiv.org/content/10.1101/2020.04.18.20071134v1.full.pdf)
+
+Oise heavily exposed to SARS-CoV-2. Infection attack rate (IAR) from antibody detection.
+171/661 had antibodies, **26% IAR**, 0% IFR (fatality). Hospitalisation rate 5%.
+Anosmia (smell blindness) and ageusia (loss of taste) good predictors of infection.
+IAR for smokers 7% vs. 28% (smoking: 75% decrease in risk of infection). Asymptomatic infections 17%.
+High school: 41% IAR, among parents only 10%. 661 participants in total. Median age 37, 38% male. 40% age 15-17, only 2 people over 65. Secondary IAR in households 10-11% (both for parents and siblings). In Shenzhen similar study found 15%.
+ELISA antibody tests were also made on blood samples of blood donors in the area, 3% IAR.
+Oise was one of the early epicenters of the epidemic in France and these numbers are results of period before lockdown. Low prevalence numbers suggest herd immunity cannot be quickly established.
+
+#### [Animal passage experiments and possibility of accidental escape](https://www.newsweek.com/controversial-wuhan-lab-experiments-that-may-have-started-coronavirus-pandemic-1500503)
+
+Description of animal passage experiments (with ferrets) since 2011. PREDICT program. No evidence of such experiments in Wuhan lab.
