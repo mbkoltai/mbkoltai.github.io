@@ -115,7 +115,7 @@ The models are not to be understood as predictions, I am pursuing it only as a p
 The y-axis shows the 3-day average of the number of new cases or fatalities per one million inhabitants.
 Time is implicit on these graphs, moving from left to right, and each data point is one day.<br />
 This way one can see how much of the population is known to have contracted the virus and what is the current rate of growth per one million people. This makes the situation in different countries visually comparable.<br />
-All data downloaded from the <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series">Johns Hopkins University database</a> and the graphs were made in a <a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/covid_data.ipynb">Jupyter notebook</a>.</p>
+All data downloaded from the <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series">Johns Hopkins University database</a> and the graphs were made in a <a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/covid_data.ipynb">Jupyter notebook</a>. For higher resolution see the <a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/multiplot_growth_rate_deaths_popul_cutoff100_loglog.pdf">pdf</a> <a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/multiplot_growth_rate_cases_popul_cutoff100_loglog.pdf">files</a>.</p>
 
 <p><ins>Dynamics of the number of reported cases</ins></p>
 
@@ -382,6 +382,15 @@ Vaccine or effective drugs have opposite effect, households cut back less.</p>
 The model assumes that infections cannot be completely suppressed if no vaccine, until population immunity achieved. Therefore early strong containment has high economic cost but followed still by an outbreak. In this framework containment should be escalated gradually as <script type="math/tex">I</script> grows. But China, Korea seems to show that suppression is possible. Costs of containment policies referred to as ‘Ramsey problem’: costs vs. maximizing social welfare.</p>
 
 <p>A ‘smart containment’ scenario is also modeled where it is assumed that planners know the health status of everyone and can maximimize overall social utility by blocking all infected from working. In this case there is no cost to containment, but this requires perfect knowledge. Ie. huge social returns on testing.</p>
+
+<h4 id="modeling-the-impact-of-social-distancing-testing-contact-tracing-and-household-quarantine-on-second-wave-scenarios-of-the-covid-19-epidemic-vespignani"><a href="https://cosnet.bifi.es/wp-content/uploads/2020/05/main.pdf">Modeling the impact of social distancing, testing, contact tracing and household quarantine on second-wave scenarios of the COVID-19 epidemic (Vespignani)</a></h4>
+
+<p>Agent based model of Boston area, 85K agents (64K adults, 21K children). Compartments distinguish between asymptomatic and symptomatic.
+Different reopening scenarios varying in testing and tracing efficiency, calculating peak incidences.
+Data is from 6 months of anonymized survey.
+Interactions modeled as a contact network with weights proportional to amount of time (normalised by total observation time) two agents spent in same location. 83K locations are defined (from Foursquare).
+Weights within households (inversely) proportional to size of household.
+Public space, schools, households three layers.</p>
 
 <!---###############################################################################################################################--->
 <!---###############################################################################################################################--->
