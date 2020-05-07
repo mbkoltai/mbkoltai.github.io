@@ -28,7 +28,10 @@ On the plots below the x-axis shows the number of cumulative reported COVID19 ca
 The y-axis shows the 3-day average of the number of new cases or fatalities per one million inhabitants.
 Time is implicit on these graphs, moving from left to right, and each data point is one day.  
 This way one can see how much of the population is known to have contracted the virus and what is the current rate of growth per one million people. This makes the situation in different countries visually comparable.  
-All data downloaded from the [Johns Hopkins University database](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series) and the graphs were made in a [Jupyter notebook](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/covid_data.ipynb). For higher resolution see the [pdf](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/multiplot_growth_rate_deaths_popul_cutoff100_loglog.pdf) [files](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/multiplot_growth_rate_cases_popul_cutoff100_loglog.pdf).
+All data downloaded from the [Johns Hopkins University database](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series) and the graphs were made in a [Jupyter notebook](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/covid_data.ipynb).
+For higher resolution see the <ins>[pdf](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/multiplot_growth_rate_deaths_popul_cutoff100_loglog.pdf)</ins> <ins>[files](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/multiplot_growth_rate_cases_popul_cutoff100_loglog.pdf)</ins>.  
+I also regularly update <ins>[two](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_cases_daily_incr.pdf)</ins> <ins>[plots](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_deaths_daily_incr.pdf)</ins> where the daily increase in cases and fatalities are separately shown for each country in the same six world regions.
+
 
 <ins>Dynamics of the number of reported cases</ins>
 
