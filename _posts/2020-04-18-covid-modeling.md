@@ -42,7 +42,9 @@ I also regularly update <ins>[two](https://github.com/mbkoltai/mbkoltai.github.i
 ![_config.yml]({{ site.baseurl }}/images/covid/multiplot_growth_rate_deaths_popul_cutoff100_loglog.png)
 
 It is also interesting to plot the time evolution of the (population normalized) number of fatalities and cases against each other and visualize the distance of the trajectory from the estimated case fatality ratio (I use 1%).
-This suggests the scale of underestimation of case numbers, although the relationship is not straightforward as the demographics of infections, timing and quality of health care also affect the CFR. I track this <ins>[on these plots](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_cases_deaths.pdf)</ins>.
+This suggests the scale of underestimation of case numbers, although the relationship is not straightforward as the demographics of infections, timing and quality of health care also affect the CFR; I track this <ins>[on these plots](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_cases_deaths.pdf)</ins>.
+With more testing the CFR could be converging the (forming) consensus estimate, I am plotting this process <ins>[here](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_tests_cfr.pdf)</ins>.
+
 
 ### <ins>Modeling</ins>
 
