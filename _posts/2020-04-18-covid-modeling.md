@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes on modeling the COVID19 pandemic
+title: Notes and data visualization on the COVID19 pandemic
 tags: epidemics complex-systems covid19
 excerpt: Math modeling the pandemic
 mathjax: true
