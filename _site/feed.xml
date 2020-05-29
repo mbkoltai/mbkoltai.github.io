@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-28T11:02:37+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Notes and data visualization on the COVID19 pandemic</title><link href="http://localhost:4000/covid-modeling/" rel="alternate" type="text/html" title="Notes and data visualization on the COVID19 pandemic" /><published>2020-04-18T00:00:00+02:00</published><updated>2020-04-18T00:00:00+02:00</updated><id>http://localhost:4000/covid-modeling</id><content type="html" xml:base="http://localhost:4000/covid-modeling/">&lt;p&gt;These are notes on the science, mostly epidemiological modeling, of the COVID19 pandemic.
-It includes some of my own data visualization on the pandemic and I plan to add SEIR modeling as well.
-The models are not to be understood as predictions, I am pursuing it only as a private interest.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-29T13:01:36+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Notes and data visualization on the COVID19 pandemic</title><link href="http://localhost:4000/covid-modeling/" rel="alternate" type="text/html" title="Notes and data visualization on the COVID19 pandemic" /><published>2020-04-18T00:00:00+02:00</published><updated>2020-04-18T00:00:00+02:00</updated><id>http://localhost:4000/covid-modeling</id><content type="html" xml:base="http://localhost:4000/covid-modeling/">&lt;p&gt;These are some notes on the COVID19 pandemic.
+They include data visualization on the pandemic comparing its evolution in different world regions, as well as exploring some general properties of compartmental dynamic transmission models.
+The models are &lt;em&gt;not&lt;/em&gt; to be understood as predictions, I am only looking at their general mathematical properties (at this point).&lt;br /&gt;
+Finally, I have made notes of scientific papers and preprints that caught my attention.&lt;/p&gt;
 
 &lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;#1-own-work&quot;&gt;Own work&lt;/a&gt;
+  &lt;li&gt;&lt;a href=&quot;#1-own-work&quot;&gt;Own stuff&lt;/a&gt;
     &lt;ol&gt;
       &lt;li&gt;&lt;a href=&quot;#data-visualization&quot;&gt;Data visualization&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#modeling&quot;&gt;Modeling&lt;/a&gt;&lt;/li&gt;
@@ -46,7 +47,30 @@ With more testing the CFR could be converging the (forming) consensus estimate, 
 
 &lt;h3 id=&quot;modeling&quot;&gt;&lt;ins&gt;Modeling&lt;/ins&gt;&lt;/h3&gt;
 
-&lt;p&gt;Jupyter notebook under development…&lt;/p&gt;
+&lt;p&gt;Let us start with the simplest epidemic model, ie. the SIR compartmental model, where we have:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\frac{dS(t)}{dt}{=}{-}\alpha S(t) I(t) \\
+\frac{dI(t)}{dt}{=}\alpha S(t) I(t)-\beta I(t) \\
+\frac{dR(t)}{dt}{=}\beta I(t)
+\tag{1}\label{SIR_odes}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;It is more convenient and meaningful to work with fractions of a population (and not absolute numbers), so that we have the conservation &lt;script type=&quot;math/tex&quot;&gt;S(t){+}I(t){+}R(t){=}1&lt;/script&gt;. Clearly, &lt;script type=&quot;math/tex&quot;&gt;I(\infty){=}0&lt;/script&gt;, since this variable has first-order (linear) decay, so any nonzero value in this compartment eventually ‘leaks out’ into &lt;script type=&quot;math/tex&quot;&gt;R&lt;/script&gt;.
+Therefore the equilibrium of the system is &lt;script type=&quot;math/tex&quot;&gt;(\overline{S},0,\overline{R})&lt;/script&gt; and due to the conservation &lt;script type=&quot;math/tex&quot;&gt;\overline{R}{=}1{-}\overline{S}&lt;/script&gt;. So to characterize the stationary behavior of the system all we need to calculate is
+&lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt;. Of course this can be done by numerically integrating the ODEs in \ref{SIR_odes}, but how about an exact solution?&lt;br /&gt;
+I didn’t have to do this, as in this very clear &lt;a href=&quot;https://www.nature.com/articles/s41591-020-0883-7&quot;&gt;paper in Nature Medicine&lt;/a&gt; (and probably others before) the authors explicitly derive the stationary solution for a more complicated model of 8 variables they abbreviate as the ‘SIDARTHE’ model.
+Despite the apparent complexity this model is basically identical to the simple SIR model. The only difference is that 1) the &lt;script type=&quot;math/tex&quot;&gt;I&lt;/script&gt; variable is split into several sub-variables (&lt;strong&gt;I&lt;/strong&gt;: infected, a-/presymptomatic, undetected, &lt;strong&gt;D&lt;/strong&gt;: diagnosed (asymptomatic infected, detected); &lt;strong&gt;A&lt;/strong&gt;: ailing (symptomatic infected, undetected); &lt;strong&gt;R&lt;/strong&gt;: recognized (symptomatic infected, detected); &lt;strong&gt;T&lt;/strong&gt;: threatened (infected with life-threatening symptoms, detected)) 2) the sink variable &lt;strong&gt;R&lt;/strong&gt; of the SIR model is split into two sinks (&lt;strong&gt;H&lt;/strong&gt;: healed (recovered); &lt;strong&gt;E&lt;/strong&gt;: extinct (dead)). However the &lt;script type=&quot;math/tex&quot;&gt;IDART&lt;/script&gt; ‘module’ (the five state variables representing different stages of infection) has the same basic property as &lt;strong&gt;I&lt;/strong&gt;, namely that in &lt;script type=&quot;math/tex&quot;&gt;t{\rightarrow}\infty&lt;/script&gt; they decay to 0, and only &lt;strong&gt;S&lt;/strong&gt;, &lt;strong&gt;H&lt;/strong&gt;, &lt;strong&gt;E&lt;/strong&gt; can have nonzero values.&lt;/p&gt;
+
+&lt;p&gt;For the simple SIR model defined of \ref{SIR_odes} the solution for the stationary value of &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt; is less complicated that in the latter model, ie. it is given by the implicit expression:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\frac{\alpha}{\beta} \overline{S} - log\overline{S} = \frac{\alpha}{\beta} - logS(0)
+\tag{2}\label{SIR_S_stationary}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;This can be solved by an efficient algebraic solver such as &lt;script type=&quot;math/tex&quot;&gt;fsolve&lt;/script&gt; in MATLAB.
+Let us do a parameter sweep in the &lt;script type=&quot;math/tex&quot;&gt;\frac{\alpha}{\beta}&lt;/script&gt; ratio and the initial value of &lt;script type=&quot;math/tex&quot;&gt;S(0)&lt;/script&gt;, and look at the stationary solution of &lt;strong&gt;R&lt;/strong&gt;, ie. the fraction of the population that went through infection (ie. is now immune, if there is long-term immunity). Let us also check if the algebraic formula is the same as integrating the ODEs of \ref{SIR_odes} for a long time span:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/covid/SIR_immune_pop_algebr_ode_sol.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fortunately the analytical solutions from \ref{SIR_S_stationary} are identical with the numerical solutions of the ODEs, so we didn’t make a mistake in \ref{SIR_S_stationary}.&lt;/p&gt;
+
+&lt;p&gt;(to be continued…in progress)&lt;/p&gt;
 
 &lt;h2 id=&quot;2-notes-on-the-literature&quot;&gt;&lt;ins&gt;2. Notes on the literature&lt;/ins&gt;&lt;/h2&gt;
 
