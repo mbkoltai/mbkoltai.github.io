@@ -1,27 +1,27 @@
 ---
 layout: post
-title: Notes and data visualization on the COVID19 pandemic
+title: Notes, thoughts and data visualization on/around the COVID19 pandemic
 tags: epidemics complex-systems covid19
-excerpt: Math modeling the pandemic
+excerpt: General properties, not predictions
 mathjax: true
 ---
 
 These are some notes on the COVID19 pandemic.
-They include data visualization on the pandemic comparing its evolution in different world regions, as well as exploring some general properties of compartmental dynamic transmission models.
-The models are *not* to be understood as predictions, I am only looking at their general mathematical properties (at this point).  
+They include data visualization on the pandemic, comparing its evolution in different world regions, as well as exploring some general properties of compartmental dynamic transmission (SIR-type) models.
+These models are *not* predictions in any was, instead I am only looking at their general mathematical properties.  
 Finally, I have made notes of scientific papers and preprints that caught my attention.
 
 ## Table of contents
 
-1. [Own stuff](#1-own-work)
+1. [Own stuff](#1-own-stuff)
       1. [Data visualization](#data-visualization)
-      1. [Modeling](#modeling)
+      1. [SIR models](#sir-models)
 1. [Notes on the literature](#2-notes-on-the-literature)
       1. [Dynamical models](#dynamical-models)
       1. [Data and reports](#data-and-reports)
       1. [Tools](#tools)
 
-## <ins>1. Own work</ins>
+## <ins>1. Own stuff</ins>
 
 ### <ins>Data visualization</ins>
 
@@ -47,33 +47,7 @@ This suggests the scale of underestimation of case numbers, although the relatio
 With more testing the CFR could be converging the (forming) consensus estimate, I am plotting this process <ins>[here](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_tests_cfr.pdf)</ins>.
 
 
-### <ins>Modeling</ins>
-
-Let us start with the simplest epidemic model, ie. the SIR compartmental model, where we have:  
-$$ \frac{dS(t)}{dt}{=}{-}\alpha S(t) I(t) \\
-\frac{dI(t)}{dt}{=}\alpha S(t) I(t)-\beta I(t) \\
-\frac{dR(t)}{dt}{=}\beta I(t)
-\tag{1}\label{SIR_odes}
-$$
-
-It is more convenient and meaningful to work with fractions of a population (and not absolute numbers), so that we have the conservation $$S(t){+}I(t){+}R(t){=}1$$. Clearly, $$I(\infty){=}0$$, since this variable has first-order (linear) decay, so any nonzero value in this compartment eventually 'leaks out' into $$R$$.
-Therefore the equilibrium of the system is $$(\overline{S},0,\overline{R})$$ and due to the conservation $$\overline{R}{=}1{-}\overline{S}$$. So to characterize the stationary behavior of the system all we need to calculate is
-$$\overline{S}$$. Of course this can be done by numerically integrating the ODEs in \ref{SIR_odes}, but how about an exact solution?  
-I didn't have to do this, as in this very clear [paper in Nature Medicine](https://www.nature.com/articles/s41591-020-0883-7) (and probably others before) the authors explicitly derive the stationary solution for a more complicated model of 8 variables they abbreviate as the 'SIDARTHE' model.
-Despite the apparent complexity this model is basically identical to the simple SIR model. The only difference is that 1) the $$I$$ variable is split into several sub-variables (**I**: infected, a-/presymptomatic, undetected, **D**: diagnosed (asymptomatic infected, detected); __A__: ailing (symptomatic infected, undetected); __R__: recognized (symptomatic infected, detected); __T__: threatened (infected with life-threatening symptoms, detected)) 2) the sink variable __R__ of the SIR model is split into two sinks (__H__: healed (recovered); __E__: extinct (dead)). However the $$IDART$$ 'module' (the five state variables representing different stages of infection) has the same basic property as __I__, namely that in $$t{\rightarrow}\infty$$ they decay to 0, and only __S__, __H__, __E__ can have nonzero values.
-
-For the simple SIR model defined of \ref{SIR_odes} the solution for the stationary value of $$\overline{S}$$ is less complicated that in the latter model, ie. it is given by the implicit expression:  
-$$
-\frac{\alpha}{\beta} \overline{S} - log\overline{S} = \frac{\alpha}{\beta} - logS(0)
-\tag{2}\label{SIR_S_stationary}
-$$
-
-This can be solved by an efficient algebraic solver such as $$fsolve$$ in MATLAB.
-Let us do a parameter sweep in the $$\frac{\alpha}{\beta}$$ ratio and the initial value of $$S(0)$$, and look at the stationary solution of __R__, ie. the fraction of the population that went through infection (ie. is now immune, if there is long-term immunity). Let us also check if the algebraic formula is the same as integrating the ODEs of \ref{SIR_odes} for a long time span:
-
-![_config.yml]({{ site.baseurl }}/images/covid/SIR_immune_pop_algebr_ode_sol.png)
-
-Fortunately the analytical solutions from \ref{SIR_S_stationary} are identical with the numerical solutions of the ODEs, so we didn't make a mistake in \ref{SIR_S_stationary}.
+### <ins>SIR models</ins>
 
 (to be continued...in progress)
 

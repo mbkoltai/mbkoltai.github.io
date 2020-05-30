@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Notes and data visualization on the COVID19 pandemic – Mihály Koltai – personal website</title>
+    <title>Notes, thoughts and data visualization on/around the COVID19 pandemic – Mihály Koltai – personal website</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -9,8 +9,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="Math modeling the pandemic" />
-    <meta property="og:description" content="Math modeling the pandemic" />
+    <meta name="description" content="General properties, not predictions" />
+    <meta property="og:description" content="General properties, not predictions" />
     
     <meta name="author" content="Mihály Koltai" />
 
@@ -26,8 +26,8 @@
 
 
     
-    <meta property="og:title" content="Notes and data visualization on the COVID19 pandemic" />
-    <meta property="twitter:title" content="Notes and data visualization on the COVID19 pandemic" />
+    <meta property="og:title" content="Notes, thoughts and data visualization on/around the COVID19 pandemic" />
+    <meta property="twitter:title" content="Notes, thoughts and data visualization on/around the COVID19 pandemic" />
     
 
 
@@ -40,19 +40,19 @@
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Notes and data visualization on the COVID19 pandemic | Mihály Koltai</title>
+<title>Notes, thoughts and data visualization on/around the COVID19 pandemic | Mihály Koltai</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Notes and data visualization on the COVID19 pandemic" />
+<meta property="og:title" content="Notes, thoughts and data visualization on/around the COVID19 pandemic" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Math modeling the pandemic" />
-<meta property="og:description" content="Math modeling the pandemic" />
+<meta name="description" content="General properties, not predictions" />
+<meta property="og:description" content="General properties, not predictions" />
 <link rel="canonical" href="http://localhost:4000/covid-modeling/" />
 <meta property="og:url" content="http://localhost:4000/covid-modeling/" />
 <meta property="og:site_name" content="Mihály Koltai" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-18T00:00:00+02:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/covid-modeling/","@type":"BlogPosting","headline":"Notes and data visualization on the COVID19 pandemic","dateModified":"2020-04-18T00:00:00+02:00","datePublished":"2020-04-18T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/covid-modeling/"},"description":"Math modeling the pandemic","@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/covid-modeling/","@type":"BlogPosting","headline":"Notes, thoughts and data visualization on/around the COVID19 pandemic","dateModified":"2020-04-18T00:00:00+02:00","datePublished":"2020-04-18T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/covid-modeling/"},"description":"General properties, not predictions","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -82,21 +82,21 @@
 
     <div id="main" role="main" class="container">
       <article class="post">
-  <h1>Notes and data visualization on the COVID19 pandemic</h1>
+  <h1>Notes, thoughts and data visualization on/around the COVID19 pandemic</h1>
 
   <div class="entry">
     <p>These are some notes on the COVID19 pandemic.
-They include data visualization on the pandemic comparing its evolution in different world regions, as well as exploring some general properties of compartmental dynamic transmission models.
-The models are <em>not</em> to be understood as predictions, I am only looking at their general mathematical properties (at this point).<br />
+They include data visualization on the pandemic, comparing its evolution in different world regions, as well as exploring some general properties of compartmental dynamic transmission (SIR-type) models.
+These models are <em>not</em> predictions in any was, instead I am only looking at their general mathematical properties.<br />
 Finally, I have made notes of scientific papers and preprints that caught my attention.</p>
 
 <h2 id="table-of-contents">Table of contents</h2>
 
 <ol>
-  <li><a href="#1-own-work">Own stuff</a>
+  <li><a href="#1-own-stuff">Own stuff</a>
     <ol>
       <li><a href="#data-visualization">Data visualization</a></li>
-      <li><a href="#modeling">Modeling</a></li>
+      <li><a href="#sir-models">SIR models</a></li>
     </ol>
   </li>
   <li><a href="#2-notes-on-the-literature">Notes on the literature</a>
@@ -108,7 +108,7 @@ Finally, I have made notes of scientific papers and preprints that caught my att
   </li>
 </ol>
 
-<h2 id="1-own-work"><ins>1. Own work</ins></h2>
+<h2 id="1-own-stuff"><ins>1. Own stuff</ins></h2>
 
 <h3 id="data-visualization"><ins>Data visualization</ins></h3>
 
@@ -132,30 +132,7 @@ I also regularly update <ins><a href="https://github.com/mbkoltai/mbkoltai.githu
 This suggests the scale of underestimation of case numbers, although the relationship is not straightforward as the demographics of infections, timing and quality of health care also affect the CFR; I track this <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_cases_deaths.pdf">on these plots</a></ins>.
 With more testing the CFR could be converging the (forming) consensus estimate, I am plotting this process <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_tests_cfr.pdf">here</a></ins>.</p>
 
-<h3 id="modeling"><ins>Modeling</ins></h3>
-
-<p>Let us start with the simplest epidemic model, ie. the SIR compartmental model, where we have:<br />
-<script type="math/tex">\frac{dS(t)}{dt}{=}{-}\alpha S(t) I(t) \\
-\frac{dI(t)}{dt}{=}\alpha S(t) I(t)-\beta I(t) \\
-\frac{dR(t)}{dt}{=}\beta I(t)
-\tag{1}\label{SIR_odes}</script></p>
-
-<p>It is more convenient and meaningful to work with fractions of a population (and not absolute numbers), so that we have the conservation <script type="math/tex">S(t){+}I(t){+}R(t){=}1</script>. Clearly, <script type="math/tex">I(\infty){=}0</script>, since this variable has first-order (linear) decay, so any nonzero value in this compartment eventually ‘leaks out’ into <script type="math/tex">R</script>.
-Therefore the equilibrium of the system is <script type="math/tex">(\overline{S},0,\overline{R})</script> and due to the conservation <script type="math/tex">\overline{R}{=}1{-}\overline{S}</script>. So to characterize the stationary behavior of the system all we need to calculate is
-<script type="math/tex">\overline{S}</script>. Of course this can be done by numerically integrating the ODEs in \ref{SIR_odes}, but how about an exact solution?<br />
-I didn’t have to do this, as in this very clear <a href="https://www.nature.com/articles/s41591-020-0883-7">paper in Nature Medicine</a> (and probably others before) the authors explicitly derive the stationary solution for a more complicated model of 8 variables they abbreviate as the ‘SIDARTHE’ model.
-Despite the apparent complexity this model is basically identical to the simple SIR model. The only difference is that 1) the <script type="math/tex">I</script> variable is split into several sub-variables (<strong>I</strong>: infected, a-/presymptomatic, undetected, <strong>D</strong>: diagnosed (asymptomatic infected, detected); <strong>A</strong>: ailing (symptomatic infected, undetected); <strong>R</strong>: recognized (symptomatic infected, detected); <strong>T</strong>: threatened (infected with life-threatening symptoms, detected)) 2) the sink variable <strong>R</strong> of the SIR model is split into two sinks (<strong>H</strong>: healed (recovered); <strong>E</strong>: extinct (dead)). However the <script type="math/tex">IDART</script> ‘module’ (the five state variables representing different stages of infection) has the same basic property as <strong>I</strong>, namely that in <script type="math/tex">t{\rightarrow}\infty</script> they decay to 0, and only <strong>S</strong>, <strong>H</strong>, <strong>E</strong> can have nonzero values.</p>
-
-<p>For the simple SIR model defined of \ref{SIR_odes} the solution for the stationary value of <script type="math/tex">\overline{S}</script> is less complicated that in the latter model, ie. it is given by the implicit expression:<br />
-<script type="math/tex">\frac{\alpha}{\beta} \overline{S} - log\overline{S} = \frac{\alpha}{\beta} - logS(0)
-\tag{2}\label{SIR_S_stationary}</script></p>
-
-<p>This can be solved by an efficient algebraic solver such as <script type="math/tex">fsolve</script> in MATLAB.
-Let us do a parameter sweep in the <script type="math/tex">\frac{\alpha}{\beta}</script> ratio and the initial value of <script type="math/tex">S(0)</script>, and look at the stationary solution of <strong>R</strong>, ie. the fraction of the population that went through infection (ie. is now immune, if there is long-term immunity). Let us also check if the algebraic formula is the same as integrating the ODEs of \ref{SIR_odes} for a long time span:</p>
-
-<p><img src="/images/covid/SIR_immune_pop_algebr_ode_sol.png" alt="_config.yml" /></p>
-
-<p>Fortunately the analytical solutions from \ref{SIR_S_stationary} are identical with the numerical solutions of the ODEs, so we didn’t make a mistake in \ref{SIR_S_stationary}.</p>
+<h3 id="sir-models"><ins>SIR models</ins></h3>
 
 <p>(to be continued…in progress)</p>
 
