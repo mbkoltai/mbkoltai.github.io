@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes, thoughts and data visualization on/around the COVID19 pandemic
+title: Notes, thoughts, graphs on the COVID19 pandemic
 tags: epidemics complex-systems covid19
 excerpt: General properties, not predictions
 mathjax: true
@@ -8,8 +8,8 @@ mathjax: true
 
 These are some notes on the COVID19 pandemic.
 They include data visualization on the pandemic, comparing its evolution in different world regions, as well as exploring some general properties of compartmental dynamic transmission (SIR-type) models.
-These models are *not* predictions in any was, instead I am only looking at their general mathematical properties.  
-Finally, I have made notes of scientific papers and preprints that caught my attention.
+These models are *not* predictions, instead I am only looking at their general mathematical properties.  
+Finally, I have been making notes of scientific papers and preprints that caught my attention.
 
 ## Table of contents
 
@@ -48,6 +48,64 @@ With more testing the CFR could be converging the (forming) consensus estimate, 
 
 
 ### <ins>SIR models</ins>
+
+
+Let us start with the simplest epidemic model, ie. the SIR compartmental model, where we have:  
+$$ \frac{dS(t)}{dt}{=}{-}\alpha S(t) I(t) \\
+\frac{dI(t)}{dt}{=}\alpha S(t) I(t)-\beta I(t) \\
+\frac{dR(t)}{dt}{=}\beta I(t)
+\tag{1}\label{SIR_odes}
+$$
+
+It is more convenient and meaningful to work with fractions of a population (and not absolute numbers), so that we have the conservation $$S(t){+}I(t){+}R(t){=}1$$. Clearly, $$I(\infty){=}0$$, since this variable has first-order (linear) decay, so any nonzero value in this compartment eventually 'leaks out' into $$R$$.
+Therefore the equilibrium of the system is $$(\overline{S},0,\overline{R})$$ and due to the conservation $$\overline{R}{=}1{-}\overline{S}$$. So to characterize the stationary behavior of the system all we need to calculate is
+$$\overline{S}$$.
+
+Of course this can be done by numerically integrating the ODEs in \ref{SIR_odes} and indeed the internet is full of SIR-models now - but how about an [exact solution](http://http://mbkoltai.github.io/exastolog/)?  
+I didn't have to derive it, as in this very clear [paper in Nature Medicine](https://www.nature.com/articles/s41591-020-0883-7) (and probably others before) the authors explicitly derive the stationary solution for a more complicated model of 8 variables they abbreviate as the 'SIDARTHE' model.
+Despite the apparent complexity this model is basically identical to the simple SIR model. The only difference is that 1) the $$I$$ variable is split into several sub-variables (**I**: infected, a-/presymptomatic, undetected, **D**: diagnosed (asymptomatic infected, detected); __A__: ailing (symptomatic infected, undetected); __R__: recognized (symptomatic infected, detected); __T__: threatened (infected with life-threatening symptoms, detected)) 2) the sink variable __R__ of the SIR model is split into two sinks (__H__: healed (recovered); __E__: extinct (dead)). However the $$IDART$$ 'module' (the five state variables representing different stages of infection) has the same basic property as __I__, namely that in $$t{\rightarrow}\infty$$ they decay to 0, and only __S__, __H__, __E__ can have nonzero values.
+
+For the simple SIR model defined of \ref{SIR_odes} the solution for the stationary value of $$\overline{S}$$ is less complicated than in the latter model, ie. it is given by the implicit expression:  
+$$
+\frac{\alpha}{\beta} \overline{S} - log\overline{S} = \frac{\alpha}{\beta} - logS(0)
+\tag{2}\label{SIR_S_stationary}
+$$
+
+This can be solved by an efficient algebraic solver such as $$fsolve$$ in MATLAB.
+Let us do a parameter sweep in the $$\frac{\alpha}{\beta}$$ ratio and the initial value of $$S(0)$$, and look at the stationary solution of __R__, ie. the fraction of the population that went through infection (ie. is now immune, if there is long-term immunity). Let us also check if the algebraic formula is the same as integrating the ODEs of \ref{SIR_odes} for a long time span:
+![_config.yml]({{ site.baseurl }}/images/covid/SIR_immune_pop_algebr_ode_sol_res.png)
+
+Fortunately the analytical solutions from \ref{SIR_S_stationary} are identical with the numerical solutions of the ODEs, so we didn't make a mistake in \ref{SIR_S_stationary}.  
+What do we see from this plot? The $$\frac{\alpha}{\beta}$$ ratio is the famous $$R_0$$, the basic reproduction parameter, and logically, the larger this ratio is, more of the population will go through infection (again, in the framework of this extremely simplified model not meant to be realistic).
+It is also intuitive that if $$S(t=0)$$ is smaller since there is a larger initial infected population, then $$\overline{R}$$ is larger, as the initial infection rate will be larger, since the infected population is the small term that dominates this flow ($$\alpha I(t) S(t)$$) initially.
+
+Now, let us make the model one step more refined, and split __R__ into two variables, __H__(ealed) and __E__(xtinct , ie. deceased), as:
+
+![_config.yml]({{ site.baseurl }}/images/covid/SIHE_cropped_resiz.png)
+
+The __I__(nfected) variable now has two outcomes. It is clear intuitively that this will not change how the stationary solution can be calculated, except that now __I__ has two outgoing flows, so it is the ratio $$\frac{\alpha}{\lambda+\tau}$$ that will define $$\overline{S}$$ as:
+$$
+\frac{\alpha}{\lambda+\tau} \overline{S} - log\overline{S} = \frac{\alpha}{\lambda+\tau} - logS(0)
+\tag{3}\label{SIHE_statsol_S}
+$$
+
+Moreover we can give the formulas for $$\overline{H}, \overline{E}$$ as a function of $$\overline{S}$$ and the initial infected population $$I(0)$$. It is logical to assume $$H(0), E(0)$$ are 0.
+Downstream of __I__ the dynamics is completely linear: what flows out from __S__ into __I__ (ie. $$\Delta{S}{=}S(0){-}\overline{S}$$), as well as the initial concentration of $$I(0)$$ will be partitioned into the sink variables proportionally to the rate constants $$\lambda$$ and $$\tau$$. Specifically, we'll have:  
+$$
+\overline{H} = [(S(0) - \overline{S}) + I(0)] \frac{\lambda}{\lambda+\tau}\\
+\overline{E} = [(S(0) - \overline{S}) + I(0)] \frac{\tau}{\lambda+\tau}  
+\tag{4}\label{SIHE_statsol_H_E}
+$$   
+
+The ratio $$\frac{\tau}{\lambda+\tau}$$ is the infection fatality (IFR) rate.
+It is clear from \ref{SIHE_statsol_S} that the IFR does not affect $$\overline{S}$$ if the sum $$\lambda+\tau$$ is kept constant, it is instead the ratio of $$\alpha$$ (rate constant of new infections) to these two parameters that determine at what level of total infections the epidemic stops.
+To check if the formulas are correct, let us again compare the exact solution to the numerical solution of the ODEs, and plot the stationary solutions of $$\overline{S}, $$ at different IFR values:
+![_config.yml]({{ site.baseurl }}/images/covid/SIHE_algebr_ode_IFRscan.png)
+
+Circles show the results from numerical integration of the ODEs, confirming they are identical with the analytical solutions (lines). The fraction of the population that has not been infected throughout the epidemic ($$\overline{S}$$) goes down with $$\frac{\alpha}{\lambda+\tau}$$, but is independent of the IFR as the sum $${\lambda+\tau}$$ was kept constant here. The ratio $$\frac{\alpha}{\lambda+\tau}$$ expresses how fast subjects exit the infectious state relative to the rate constant of generating new infections. A higher ratio means more of the population is infected, which is $$\overline{H}+\overline{E}=(S(0){-}\overline{S}){+}I(0)$$.
+In contrast, if both $$\alpha$$ and $$\lambda+\tau$$ are equally scaled then this quantity does not change.  
+How the infected fraction of the population is partitioned between the two sink states ($$\overline{H}, \overline{E}$$) obviously depends on the IFR (note the logarithmic scale), as stated in \ref{SIHE_statsol_S}.
+
 
 (to be continued...in progress)
 

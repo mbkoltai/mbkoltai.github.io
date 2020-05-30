@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Notes, thoughts and data visualization on/around the COVID19 pandemic – Mihály Koltai – personal website</title>
+    <title>Notes, thoughts, graphs on the COVID19 pandemic – Mihály Koltai – personal website</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -26,8 +26,8 @@
 
 
     
-    <meta property="og:title" content="Notes, thoughts and data visualization on/around the COVID19 pandemic" />
-    <meta property="twitter:title" content="Notes, thoughts and data visualization on/around the COVID19 pandemic" />
+    <meta property="og:title" content="Notes, thoughts, graphs on the COVID19 pandemic" />
+    <meta property="twitter:title" content="Notes, thoughts, graphs on the COVID19 pandemic" />
     
 
 
@@ -40,9 +40,9 @@
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Notes, thoughts and data visualization on/around the COVID19 pandemic | Mihály Koltai</title>
+<title>Notes, thoughts, graphs on the COVID19 pandemic | Mihály Koltai</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Notes, thoughts and data visualization on/around the COVID19 pandemic" />
+<meta property="og:title" content="Notes, thoughts, graphs on the COVID19 pandemic" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="General properties, not predictions" />
 <meta property="og:description" content="General properties, not predictions" />
@@ -52,7 +52,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-18T00:00:00+02:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/covid-modeling/","@type":"BlogPosting","headline":"Notes, thoughts and data visualization on/around the COVID19 pandemic","dateModified":"2020-04-18T00:00:00+02:00","datePublished":"2020-04-18T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/covid-modeling/"},"description":"General properties, not predictions","@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/covid-modeling/","@type":"BlogPosting","headline":"Notes, thoughts, graphs on the COVID19 pandemic","dateModified":"2020-04-18T00:00:00+02:00","datePublished":"2020-04-18T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/covid-modeling/"},"description":"General properties, not predictions","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -82,13 +82,13 @@
 
     <div id="main" role="main" class="container">
       <article class="post">
-  <h1>Notes, thoughts and data visualization on/around the COVID19 pandemic</h1>
+  <h1>Notes, thoughts, graphs on the COVID19 pandemic</h1>
 
   <div class="entry">
     <p>These are some notes on the COVID19 pandemic.
 They include data visualization on the pandemic, comparing its evolution in different world regions, as well as exploring some general properties of compartmental dynamic transmission (SIR-type) models.
-These models are <em>not</em> predictions in any was, instead I am only looking at their general mathematical properties.<br />
-Finally, I have made notes of scientific papers and preprints that caught my attention.</p>
+These models are <em>not</em> predictions, instead I am only looking at their general mathematical properties.<br />
+Finally, I have been making notes of scientific papers and preprints that caught my attention.</p>
 
 <h2 id="table-of-contents">Table of contents</h2>
 
@@ -133,6 +133,55 @@ This suggests the scale of underestimation of case numbers, although the relatio
 With more testing the CFR could be converging the (forming) consensus estimate, I am plotting this process <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_tests_cfr.pdf">here</a></ins>.</p>
 
 <h3 id="sir-models"><ins>SIR models</ins></h3>
+
+<p>Let us start with the simplest epidemic model, ie. the SIR compartmental model, where we have:<br />
+<script type="math/tex">\frac{dS(t)}{dt}{=}{-}\alpha S(t) I(t) \\
+\frac{dI(t)}{dt}{=}\alpha S(t) I(t)-\beta I(t) \\
+\frac{dR(t)}{dt}{=}\beta I(t)
+\tag{1}\label{SIR_odes}</script></p>
+
+<p>It is more convenient and meaningful to work with fractions of a population (and not absolute numbers), so that we have the conservation <script type="math/tex">S(t){+}I(t){+}R(t){=}1</script>. Clearly, <script type="math/tex">I(\infty){=}0</script>, since this variable has first-order (linear) decay, so any nonzero value in this compartment eventually ‘leaks out’ into <script type="math/tex">R</script>.
+Therefore the equilibrium of the system is <script type="math/tex">(\overline{S},0,\overline{R})</script> and due to the conservation <script type="math/tex">\overline{R}{=}1{-}\overline{S}</script>. So to characterize the stationary behavior of the system all we need to calculate is
+<script type="math/tex">\overline{S}</script>.</p>
+
+<p>Of course this can be done by numerically integrating the ODEs in \ref{SIR_odes} and indeed the internet is full of SIR-models now - but how about an <a href="http://http://mbkoltai.github.io/exastolog/">exact solution</a>?<br />
+I didn’t have to derive it, as in this very clear <a href="https://www.nature.com/articles/s41591-020-0883-7">paper in Nature Medicine</a> (and probably others before) the authors explicitly derive the stationary solution for a more complicated model of 8 variables they abbreviate as the ‘SIDARTHE’ model.
+Despite the apparent complexity this model is basically identical to the simple SIR model. The only difference is that 1) the <script type="math/tex">I</script> variable is split into several sub-variables (<strong>I</strong>: infected, a-/presymptomatic, undetected, <strong>D</strong>: diagnosed (asymptomatic infected, detected); <strong>A</strong>: ailing (symptomatic infected, undetected); <strong>R</strong>: recognized (symptomatic infected, detected); <strong>T</strong>: threatened (infected with life-threatening symptoms, detected)) 2) the sink variable <strong>R</strong> of the SIR model is split into two sinks (<strong>H</strong>: healed (recovered); <strong>E</strong>: extinct (dead)). However the <script type="math/tex">IDART</script> ‘module’ (the five state variables representing different stages of infection) has the same basic property as <strong>I</strong>, namely that in <script type="math/tex">t{\rightarrow}\infty</script> they decay to 0, and only <strong>S</strong>, <strong>H</strong>, <strong>E</strong> can have nonzero values.</p>
+
+<p>For the simple SIR model defined of \ref{SIR_odes} the solution for the stationary value of <script type="math/tex">\overline{S}</script> is less complicated than in the latter model, ie. it is given by the implicit expression:<br />
+<script type="math/tex">\frac{\alpha}{\beta} \overline{S} - log\overline{S} = \frac{\alpha}{\beta} - logS(0)
+\tag{2}\label{SIR_S_stationary}</script></p>
+
+<p>This can be solved by an efficient algebraic solver such as <script type="math/tex">fsolve</script> in MATLAB.
+Let us do a parameter sweep in the <script type="math/tex">\frac{\alpha}{\beta}</script> ratio and the initial value of <script type="math/tex">S(0)</script>, and look at the stationary solution of <strong>R</strong>, ie. the fraction of the population that went through infection (ie. is now immune, if there is long-term immunity). Let us also check if the algebraic formula is the same as integrating the ODEs of \ref{SIR_odes} for a long time span:
+<img src="/images/covid/SIR_immune_pop_algebr_ode_sol_res.png" alt="_config.yml" /></p>
+
+<p>Fortunately the analytical solutions from \ref{SIR_S_stationary} are identical with the numerical solutions of the ODEs, so we didn’t make a mistake in \ref{SIR_S_stationary}.<br />
+What do we see from this plot? The <script type="math/tex">\frac{\alpha}{\beta}</script> ratio is the famous <script type="math/tex">R_0</script>, the basic reproduction parameter, and logically, the larger this ratio is, more of the population will go through infection (again, in the framework of this extremely simplified model not meant to be realistic).
+It is also intuitive that if <script type="math/tex">S(t=0)</script> is smaller since there is a larger initial infected population, then <script type="math/tex">\overline{R}</script> is larger, as the initial infection rate will be larger, since the infected population is the small term that dominates this flow (<script type="math/tex">\alpha I(t) S(t)</script>) initially.</p>
+
+<p>Now, let us make the model one step more refined, and split <strong>R</strong> into two variables, <strong>H</strong>(ealed) and <strong>E</strong>(xtinct , ie. deceased), as:</p>
+
+<p><img src="/images/covid/SIHE_cropped_resiz.png" alt="_config.yml" /></p>
+
+<p>The <strong>I</strong>(nfected) variable now has two outcomes. It is clear intuitively that this will not change how the stationary solution can be calculated, except that now <strong>I</strong> has two outgoing flows, so it is the ratio <script type="math/tex">\frac{\alpha}{\lambda+\tau}</script> that will define <script type="math/tex">\overline{S}</script> as:
+<script type="math/tex">\frac{\alpha}{\lambda+\tau} \overline{S} - log\overline{S} = \frac{\alpha}{\lambda+\tau} - logS(0)
+\tag{3}\label{SIHE_statsol_S}</script></p>
+
+<p>Moreover we can give the formulas for <script type="math/tex">\overline{H}, \overline{E}</script> as a function of <script type="math/tex">\overline{S}</script> and the initial infected population <script type="math/tex">I(0)</script>. It is logical to assume <script type="math/tex">H(0), E(0)</script> are 0.
+Downstream of <strong>I</strong> the dynamics is completely linear: what flows out from <strong>S</strong> into <strong>I</strong> (ie. <script type="math/tex">\Delta{S}{=}S(0){-}\overline{S}</script>), as well as the initial concentration of <script type="math/tex">I(0)</script> will be partitioned into the sink variables proportionally to the rate constants <script type="math/tex">\lambda</script> and <script type="math/tex">\tau</script>. Specifically, we’ll have:<br />
+<script type="math/tex">\overline{H} = [(S(0) - \overline{S}) + I(0)] \frac{\lambda}{\lambda+\tau}\\
+\overline{E} = [(S(0) - \overline{S}) + I(0)] \frac{\tau}{\lambda+\tau}  
+\tag{4}\label{SIHE_statsol_H_E}</script></p>
+
+<p>The ratio <script type="math/tex">\frac{\tau}{\lambda+\tau}</script> is the infection fatality (IFR) rate.
+It is clear from \ref{SIHE_statsol_S} that the IFR does not affect <script type="math/tex">\overline{S}</script> if the sum <script type="math/tex">\lambda+\tau</script> is kept constant, it is instead the ratio of <script type="math/tex">\alpha</script> (rate constant of new infections) to these two parameters that determine at what level of total infections the epidemic stops.
+To check if the formulas are correct, let us again compare the exact solution to the numerical solution of the ODEs, and plot the stationary solutions of <script type="math/tex">\overline{S},</script> at different IFR values:
+<img src="/images/covid/SIHE_algebr_ode_IFRscan.png" alt="_config.yml" /></p>
+
+<p>Circles show the results from numerical integration of the ODEs, confirming they are identical with the analytical solutions (lines). The fraction of the population that has not been infected throughout the epidemic (<script type="math/tex">\overline{S}</script>) goes down with <script type="math/tex">\frac{\alpha}{\lambda+\tau}</script>, but is independent of the IFR as the sum <script type="math/tex">{\lambda+\tau}</script> was kept constant here. The ratio <script type="math/tex">\frac{\alpha}{\lambda+\tau}</script> expresses how fast subjects exit the infectious state relative to the rate constant of generating new infections. A higher ratio means more of the population is infected, which is <script type="math/tex">\overline{H}+\overline{E}=(S(0){-}\overline{S}){+}I(0)</script>.
+In contrast, if both <script type="math/tex">\alpha</script> and <script type="math/tex">\lambda+\tau</script> are equally scaled then this quantity does not change.<br />
+How the infected fraction of the population is partitioned between the two sink states (<script type="math/tex">\overline{H}, \overline{E}</script>) obviously depends on the IFR (note the logarithmic scale), as stated in \ref{SIHE_statsol_S}.</p>
 
 <p>(to be continued…in progress)</p>
 
