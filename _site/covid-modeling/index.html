@@ -86,8 +86,8 @@
 
   <div class="entry">
     <p>These are some notes on the COVID19 pandemic.
-They include data visualization on the pandemic, comparing its evolution in different world regions, as well as exploring some general properties of compartmental dynamic transmission (SIR-type) models.
-These models are <em>not</em> predictions, instead I am only looking at their general mathematical properties.<br />
+They include data visualization on the pandemic, comparing its evolution in different world regions, as well as exploring some general properties of compartmental dynamic transmission (SIR-type) models.<br />
+The models below make no specific predictions, instead I am only looking at their general mathematical properties.<br />
 Finally, I have been making notes of scientific papers and preprints that caught my attention.</p>
 
 <h2 id="table-of-contents">Table of contents</h2>
@@ -154,34 +154,51 @@ Despite the apparent complexity this model is basically identical to the simple 
 
 <p>This can be solved by an efficient algebraic solver such as <script type="math/tex">fsolve</script> in MATLAB.
 Let us do a parameter sweep in the <script type="math/tex">\frac{\alpha}{\beta}</script> ratio and the initial value of <script type="math/tex">S(0)</script>, and look at the stationary solution of <strong>R</strong>, ie. the fraction of the population that went through infection (ie. is now immune, if there is long-term immunity). Let us also check if the algebraic formula is the same as integrating the ODEs of \ref{SIR_odes} for a long time span:
-<img src="/images/covid/SIR_immune_pop_algebr_ode_sol_res.png" alt="_config.yml" /></p>
+<img src="/images/covid/SIR_immune_pop_algebr_ode_sol.png" alt="_config.yml" />
+<em>Figure 1: Stationary solutions of SIR model calculated by simulations (left) and exact calculations (right)</em></p>
 
 <p>Fortunately the analytical solutions from \ref{SIR_S_stationary} are identical with the numerical solutions of the ODEs, so we didn’t make a mistake in \ref{SIR_S_stationary}.<br />
 What do we see from this plot? The <script type="math/tex">\frac{\alpha}{\beta}</script> ratio is the famous <script type="math/tex">R_0</script>, the basic reproduction parameter, and logically, the larger this ratio is, more of the population will go through infection (again, in the framework of this extremely simplified model not meant to be realistic).
-It is also intuitive that if <script type="math/tex">S(t=0)</script> is smaller since there is a larger initial infected population, then <script type="math/tex">\overline{R}</script> is larger, as the initial infection rate will be larger, since the infected population is the small term that dominates this flow (<script type="math/tex">\alpha I(t) S(t)</script>) initially.</p>
+It is also intuitive that if <script type="math/tex">S(t{=}0)</script> is smaller because of a larger initial infected population <script type="math/tex">I(0)</script>, then <script type="math/tex">\overline{H}{+}\overline{E}</script> will be larger.</p>
 
 <p>Now, let us make the model one step more refined, and split <strong>R</strong> into two variables, <strong>H</strong>(ealed) and <strong>E</strong>(xtinct , ie. deceased), as:</p>
 
-<p><img src="/images/covid/SIHE_cropped_resiz.png" alt="_config.yml" /></p>
+<p><img src="/images/covid/SIHE_cropped_resiz.png" alt="_config.yml" />
+<em>Figure 2: ‘SIHE’ version of the SIR model where <strong>R</strong>(recovered) is split into <strong>H</strong> and <strong>E</strong></em></p>
 
-<p>The <strong>I</strong>(nfected) variable now has two outcomes. It is clear intuitively that this will not change how the stationary solution can be calculated, except that now <strong>I</strong> has two outgoing flows, so it is the ratio <script type="math/tex">\frac{\alpha}{\lambda+\tau}</script> that will define <script type="math/tex">\overline{S}</script> as:
-<script type="math/tex">\frac{\alpha}{\lambda+\tau} \overline{S} - log\overline{S} = \frac{\alpha}{\lambda+\tau} - logS(0)
+<p>The <strong>I</strong>(nfected) variable now has two outcomes. It is clear intuitively that this will not change how the stationary solution can be calculated, except that now <strong>I</strong> has two outgoing flows, so it is the ratio <script type="math/tex">\frac{\alpha}{\lambda{+}\tau}</script> that will define <script type="math/tex">\overline{S}</script> as:
+<script type="math/tex">\frac{\alpha}{\lambda{+}\tau} \overline{S} - log\overline{S} = \frac{\alpha}{\lambda{+}\tau} - logS(0)
 \tag{3}\label{SIHE_statsol_S}</script></p>
 
 <p>Moreover we can give the formulas for <script type="math/tex">\overline{H}, \overline{E}</script> as a function of <script type="math/tex">\overline{S}</script> and the initial infected population <script type="math/tex">I(0)</script>. It is logical to assume <script type="math/tex">H(0), E(0)</script> are 0.
 Downstream of <strong>I</strong> the dynamics is completely linear: what flows out from <strong>S</strong> into <strong>I</strong> (ie. <script type="math/tex">\Delta{S}{=}S(0){-}\overline{S}</script>), as well as the initial concentration of <script type="math/tex">I(0)</script> will be partitioned into the sink variables proportionally to the rate constants <script type="math/tex">\lambda</script> and <script type="math/tex">\tau</script>. Specifically, we’ll have:<br />
-<script type="math/tex">\overline{H} = [(S(0) - \overline{S}) + I(0)] \frac{\lambda}{\lambda+\tau}\\
-\overline{E} = [(S(0) - \overline{S}) + I(0)] \frac{\tau}{\lambda+\tau}  
+<script type="math/tex">\overline{H} = [(S(0) - \overline{S}) + I(0)] \frac{\lambda}{\lambda{+}\tau}\\
+\overline{E} = [(S(0) - \overline{S}) + I(0)] \frac{\tau}{\lambda{+}\tau}  
 \tag{4}\label{SIHE_statsol_H_E}</script></p>
 
-<p>The ratio <script type="math/tex">\frac{\tau}{\lambda+\tau}</script> is the infection fatality (IFR) rate.
-It is clear from \ref{SIHE_statsol_S} that the IFR does not affect <script type="math/tex">\overline{S}</script> if the sum <script type="math/tex">\lambda+\tau</script> is kept constant, it is instead the ratio of <script type="math/tex">\alpha</script> (rate constant of new infections) to these two parameters that determine at what level of total infections the epidemic stops.
+<p>The ratio <script type="math/tex">\frac{\tau}{\lambda{+}\tau}</script> is the infection fatality (IFR) rate.
+It is clear from \ref{SIHE_statsol_S} that the IFR does not affect <script type="math/tex">\overline{S}</script> if the sum <script type="math/tex">\lambda{+}\tau</script> is kept constant, it is instead the ratio of <script type="math/tex">\alpha</script> (rate constant of new infections) to these two parameters that determine at what level of total infections the epidemic stops.
 To check if the formulas are correct, let us again compare the exact solution to the numerical solution of the ODEs, and plot the stationary solutions of <script type="math/tex">\overline{S},</script> at different IFR values:
-<img src="/images/covid/SIHE_algebr_ode_IFRscan.png" alt="_config.yml" /></p>
+<img src="/images/covid/SIHE_algebr_ode_IFRscan.png" alt="_config.yml" />
+<em>Figure 3: stationary solutions of SIHE model at S(0)=0.99 and four different values of the IFR</em></p>
 
-<p>Circles show the results from numerical integration of the ODEs, confirming they are identical with the analytical solutions (lines). The fraction of the population that has not been infected throughout the epidemic (<script type="math/tex">\overline{S}</script>) goes down with <script type="math/tex">\frac{\alpha}{\lambda+\tau}</script>, but is independent of the IFR as the sum <script type="math/tex">{\lambda+\tau}</script> was kept constant here. The ratio <script type="math/tex">\frac{\alpha}{\lambda+\tau}</script> expresses how fast subjects exit the infectious state relative to the rate constant of generating new infections. A higher ratio means more of the population is infected, which is <script type="math/tex">\overline{H}+\overline{E}=(S(0){-}\overline{S}){+}I(0)</script>.
-In contrast, if both <script type="math/tex">\alpha</script> and <script type="math/tex">\lambda+\tau</script> are equally scaled then this quantity does not change.<br />
-How the infected fraction of the population is partitioned between the two sink states (<script type="math/tex">\overline{H}, \overline{E}</script>) obviously depends on the IFR (note the logarithmic scale), as stated in \ref{SIHE_statsol_S}.</p>
+<p>Circles show the results from numerical integration of the ODEs, confirming they are identical with the analytical solutions (lines). The fraction of the population that has not been infected throughout the epidemic (<script type="math/tex">\overline{S}</script>) goes down with <script type="math/tex">\frac{\alpha}{\lambda{+}\tau}</script>, but is independent of the IFR as the sum <script type="math/tex">{\lambda{+}\tau}</script> was kept constant here. The ratio <script type="math/tex">\frac{\alpha}{\lambda{+}\tau}</script> expresses how fast subjects exit the infectious state relative to the rate constant of generating new infections. A higher ratio means more of the population is infected, which is <script type="math/tex">\overline{H}+\overline{E}=(S(0){-}\overline{S}){+}I(0)</script>.
+In contrast, if both <script type="math/tex">\alpha</script> and <script type="math/tex">\lambda{+}\tau</script> are equally scaled then this quantity does not change.<br />
+How the infected fraction of the population is partitioned between the two sink states (<script type="math/tex">\overline{H}, \overline{E}</script>) obviously depends on the IFR (note the logarithmic scale), as stated in \ref{SIHE_statsol_S}.
+Note that while the IFR is ‘hard-wired’ in the parameter ratio <script type="math/tex">\frac{\tau}{\tau+\lambda}</script>, how much of the population gets infected and dies depends on <script type="math/tex">\overline{S}</script> and therefore <script type="math/tex">\alpha</script>, the rate constant for transmission. This is where physical distancing measures would intervene to choke off the flow <script type="math/tex">{S}\rightarrow{I}</script>.</p>
+
+<p>Let us go now one step further and allow for a pre-symptomatic state, in fact let us define <strong>I</strong> as a variable of infectious but pre-symptomatic state and add a variable <strong>A</strong>(iling) that is the infectious and symptomatic state. So now, the compartments of this <em>SIAHE</em> model and the flows between them are:</p>
+
+<p><img src="/images/covid/SIAHE_res.jpeg" alt="_config.yml" />
+<em>Figure 4: ‘SIAHE’ SIR model with presymptomatic (<strong>I</strong>) and symptomatic (<strong>A</strong>) infectious state and two outcomes</em></p>
+
+<p>By highlighting the <script type="math/tex">{S}\rightarrow{I}</script> flow in red I want to indicate that this is the (only) nonlinear term, and now this flow has two parameters as the ODE for <strong>S</strong> is:<br />
+<script type="math/tex">\frac{dS(t)}{dt} = -S(t)(\alpha I(t) + \gamma A(t))</script></p>
+
+<p>These two bilinear terms are positive feedbacks on the otherwise linear system. If it wasn’t for these terms the system would have an equilibrium where only the <a href="http://vcp.med.harvard.edu/papers/jg-lap-dyn.pdf">terminal vertices</a> (<script type="math/tex">H, E</script>) of its graph can have nonzero value, just like with the equilibrium we have for the <a href="https://mbkoltai.github.io/exastolog">state transition graph of a stochastic Boolean model</a>.
+Because of this nonlinear feedback however <strong>S</strong> can (and usually does) also have a nonzero value in steady state, so the equilibrium of SIAHE is <script type="math/tex">(\overline{S},0,0,\overline{H},\overline{E})</script>.</p>
+
+<p>Let us again get the formula for <script type="math/tex">\overline{S}</script> - if we have this, the rest of the system has linear kinetics, so the stationary values of <strong>H</strong> and <strong>E</strong> will follow easily from the kinetic matrix of the IAHE variables.</p>
 
 <p>(to be continued…in progress)</p>
 
