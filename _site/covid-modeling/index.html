@@ -130,7 +130,8 @@ I also regularly update <ins><a href="https://github.com/mbkoltai/mbkoltai.githu
 
 <p>It is also interesting to plot the time evolution of the (population normalized) number of fatalities and cases against each other and visualize the distance of the trajectory from the estimated case fatality ratio (I use 1%).
 This suggests the scale of underestimation of case numbers, although the relationship is not straightforward as the demographics of infections, timing and quality of health care also affect the CFR; I track this <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_cases_deaths.pdf">on these plots</a></ins>.
-With more testing the CFR could be converging the (forming) consensus estimate, I am plotting this process <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_tests_cfr.pdf">here</a></ins>.</p>
+With more testing the CFR could be converging the (forming) consensus estimate, I am plotting this process <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_tests_cfr.pdf">here</a></ins>.
+Looking at the <a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/cases_deaths_permillion_last_date.pdf">cases/million-deaths/million scatterplot</a> of countries at the most recent date we can see what countries seem to be outliers.</p>
 
 <h3 id="sir-models"><ins>SIR models</ins></h3>
 
@@ -144,8 +145,8 @@ With more testing the CFR could be converging the (forming) consensus estimate, 
 Therefore the equilibrium of the system is <script type="math/tex">(\overline{S},0,\overline{R})</script> and due to the conservation <script type="math/tex">\overline{R}{=}1{-}\overline{S}</script>. So to characterize the stationary behavior of the system all we need to calculate is
 <script type="math/tex">\overline{S}</script>.</p>
 
-<p>Of course this can be done by numerically integrating the ODEs in \ref{SIR_odes} and indeed the internet is full of SIR-models now - but how about an <a href="http://http://mbkoltai.github.io/exastolog/">exact solution</a>?<br />
-I didn’t have to derive it, as in this very clear <a href="https://www.nature.com/articles/s41591-020-0883-7">paper in Nature Medicine</a> (and probably others before) the authors explicitly derive the stationary solution for a more complicated model of 8 variables they abbreviate as the ‘SIDARTHE’ model.
+<p>Of course this can be done by numerically integrating the ODEs in \ref{SIR_odes} and indeed half the internet is full of SIR-models now. But how about an <a href="http://http://mbkoltai.github.io/exastolog/">exact solution</a>?<br />
+In this very clear <a href="https://www.nature.com/articles/s41591-020-0883-7">paper in Nature Medicine</a> (and probably others before) the authors explicitly derive the stationary solution for a more complicated model of 8 variables they abbreviate as the ‘SIDARTHE’ model.
 Despite the apparent complexity this model is basically identical to the simple SIR model. The only difference is that 1) the <script type="math/tex">I</script> variable is split into several sub-variables (<strong>I</strong>: infected, a-/presymptomatic, undetected, <strong>D</strong>: diagnosed (asymptomatic infected, detected); <strong>A</strong>: ailing (symptomatic infected, undetected); <strong>R</strong>: recognized (symptomatic infected, detected); <strong>T</strong>: threatened (infected with life-threatening symptoms, detected)) 2) the sink variable <strong>R</strong> of the SIR model is split into two sinks (<strong>H</strong>: healed (recovered); <strong>E</strong>: extinct (dead)). However the <script type="math/tex">IDART</script> ‘module’ (the five state variables representing different stages of infection) has the same basic property as <strong>I</strong>, namely that in <script type="math/tex">t{\rightarrow}\infty</script> they decay to 0, and only <strong>S</strong>, <strong>H</strong>, <strong>E</strong> can have nonzero values.</p>
 
 <p>For the simple SIR model defined of \ref{SIR_odes} the solution for the stationary value of <script type="math/tex">\overline{S}</script> is less complicated than in the latter model, ie. it is given by the implicit expression:<br />
@@ -158,7 +159,7 @@ Let us do a parameter sweep in the <script type="math/tex">\frac{\alpha}{\beta}<
 <em>Figure 1: Stationary solutions of SIR model calculated by simulations (left) and exact calculations (right)</em></p>
 
 <p>Fortunately the analytical solutions from \ref{SIR_S_stationary} are identical with the numerical solutions of the ODEs, so we didn’t make a mistake in \ref{SIR_S_stationary}.<br />
-What do we see from this plot? The <script type="math/tex">\frac{\alpha}{\beta}</script> ratio is the famous <script type="math/tex">R_0</script>, the basic reproduction parameter, and logically, the larger this ratio is, more of the population will go through infection (again, in the framework of this extremely simplified model not meant to be realistic).
+What do we see from this plot? The <script type="math/tex">\frac{\alpha}{\beta}</script> ratio is the famous <script type="math/tex">R_0</script>, the basic reproduction parameter, and logically, the larger this ratio is, the more of the population will go through infection (again, in the framework of this extremely simplified model not meant to be realistic).
 It is also intuitive that if <script type="math/tex">S(t{=}0)</script> is smaller because of a larger initial infected population <script type="math/tex">I(0)</script>, then <script type="math/tex">\overline{H}{+}\overline{E}</script> will be larger.</p>
 
 <p>Now, let us make the model one step more refined, and split <strong>R</strong> into two variables, <strong>H</strong>(ealed) and <strong>E</strong>(xtinct , ie. deceased), as:</p>
@@ -166,14 +167,15 @@ It is also intuitive that if <script type="math/tex">S(t{=}0)</script> is smalle
 <p><img src="/images/covid/SIHE_cropped_resiz.png" alt="_config.yml" />
 <em>Figure 2: ‘SIHE’ version of the SIR model where <strong>R</strong>(recovered) is split into <strong>H</strong> and <strong>E</strong></em></p>
 
-<p>The <strong>I</strong>(nfected) variable now has two outcomes. It is clear intuitively that this will not change how the stationary solution can be calculated, except that now <strong>I</strong> has two outgoing flows, so it is the ratio <script type="math/tex">\frac{\alpha}{\lambda{+}\tau}</script> that will define <script type="math/tex">\overline{S}</script> as:
+<p>The <strong>I</strong>(nfected) variable now has two outcomes. It is clear intuitively that this will not change how the stationary solution of <script type="math/tex">\overline{S}</script> is calculated, as the sink nodes do not interact with <strong>S</strong>, except that now <strong>I</strong> has two outgoing flows, so it is the ratio <script type="math/tex">\frac{\alpha}{\lambda{+}\tau}</script> that will define <script type="math/tex">\overline{S}</script> as:
 <script type="math/tex">\frac{\alpha}{\lambda{+}\tau} \overline{S} - log\overline{S} = \frac{\alpha}{\lambda{+}\tau} - logS(0)
 \tag{3}\label{SIHE_statsol_S}</script></p>
 
-<p>Moreover we can give the formulas for <script type="math/tex">\overline{H}, \overline{E}</script> as a function of <script type="math/tex">\overline{S}</script> and the initial infected population <script type="math/tex">I(0)</script>. It is logical to assume <script type="math/tex">H(0), E(0)</script> are 0.
+<p>Moreover we can give the formulas for <script type="math/tex">\overline{H}, \overline{E}</script> as a function of <script type="math/tex">\overline{S}</script> and the initial infected population <script type="math/tex">I(0)</script>.
+It is reasonable to assume <script type="math/tex">H(0), E(0)</script> are 0.
 Downstream of <strong>I</strong> the dynamics is completely linear: what flows out from <strong>S</strong> into <strong>I</strong> (ie. <script type="math/tex">\Delta{S}{=}S(0){-}\overline{S}</script>), as well as the initial concentration of <script type="math/tex">I(0)</script> will be partitioned into the sink variables proportionally to the rate constants <script type="math/tex">\lambda</script> and <script type="math/tex">\tau</script>. Specifically, we’ll have:<br />
-<script type="math/tex">\overline{H} = [(S(0) - \overline{S}) + I(0)] \frac{\lambda}{\lambda{+}\tau}\\
-\overline{E} = [(S(0) - \overline{S}) + I(0)] \frac{\tau}{\lambda{+}\tau}  
+<script type="math/tex">\overline{H} = [(S(0)-\overline{S}) + I(0)] \frac{\lambda}{\lambda{+}\tau}\\
+\overline{E} = [(S(0)-\overline{S}) + I(0)] \frac{\tau}{\lambda{+}\tau}  
 \tag{4}\label{SIHE_statsol_H_E}</script></p>
 
 <p>The ratio <script type="math/tex">\frac{\tau}{\lambda{+}\tau}</script> is the infection fatality (IFR) rate.
@@ -187,7 +189,7 @@ In contrast, if both <script type="math/tex">\alpha</script> and <script type="m
 How the infected fraction of the population is partitioned between the two sink states (<script type="math/tex">\overline{H}, \overline{E}</script>) obviously depends on the IFR (note the logarithmic scale), as stated in \ref{SIHE_statsol_S}.
 Note that while the IFR is ‘hard-wired’ in the parameter ratio <script type="math/tex">\frac{\tau}{\tau+\lambda}</script>, how much of the population gets infected and dies depends on <script type="math/tex">\overline{S}</script> and therefore <script type="math/tex">\alpha</script>, the rate constant for transmission. This is where physical distancing measures would intervene to choke off the flow <script type="math/tex">{S}\rightarrow{I}</script>.</p>
 
-<p>Let us go now one step further and allow for a pre-symptomatic state, in fact let us define <strong>I</strong> as a variable of infectious but pre-symptomatic state and add a variable <strong>A</strong>(iling) that is the infectious and symptomatic state. So now, the compartments of this <em>SIAHE</em> model and the flows between them are:</p>
+<p>Let us go now one step further and allow for a pre-symptomatic state, defining <strong>I</strong> as a variable of the infectious but pre-symptomatic state and adding a variable <strong>A</strong>(iling) that is the infectious and symptomatic state. Now the compartments of this ‘<em>SIAHE</em>’ model and the flows between them are:</p>
 
 <p><img src="/images/covid/SIAHE_res.jpeg" alt="_config.yml" />
 <em>Figure 4: ‘SIAHE’ SIR model with presymptomatic (<strong>I</strong>) and symptomatic (<strong>A</strong>) infectious state and two outcomes</em></p>
@@ -198,7 +200,50 @@ Note that while the IFR is ‘hard-wired’ in the parameter ratio <script type=
 <p>These two bilinear terms are positive feedbacks on the otherwise linear system. If it wasn’t for these terms the system would have an equilibrium where only the <a href="http://vcp.med.harvard.edu/papers/jg-lap-dyn.pdf">terminal vertices</a> (<script type="math/tex">H, E</script>) of its graph can have nonzero value, just like with the equilibrium we have for the <a href="https://mbkoltai.github.io/exastolog">state transition graph of a stochastic Boolean model</a>.
 Because of this nonlinear feedback however <strong>S</strong> can (and usually does) also have a nonzero value in steady state, so the equilibrium of SIAHE is <script type="math/tex">(\overline{S},0,0,\overline{H},\overline{E})</script>.</p>
 
-<p>Let us again get the formula for <script type="math/tex">\overline{S}</script> - if we have this, the rest of the system has linear kinetics, so the stationary values of <strong>H</strong> and <strong>E</strong> will follow easily from the kinetic matrix of the IAHE variables.</p>
+<p>Let us again get the formula for <script type="math/tex">\overline{S}</script>. Ff we have this, the rest of the system has linear kinetics, so the stationary values of <strong>H</strong> and <strong>E</strong> will follow easily from the kinetic matrix of the IAHE variables. I follow here the derivation from the Nature Medicine article, except that it is for a simpler (5 variables) model.</p>
+
+<p>We need to introduce some notation:<br />
+<script type="math/tex">% <![CDATA[
+x(t){=}\begin{bmatrix} I(t) \\ A(t) \end{bmatrix},
+c{=}\begin{bmatrix} \alpha \\ \gamma \\ \end{bmatrix},
+b{=}\begin{bmatrix} 1 \\ 0 \end{bmatrix},
+F{=}\begin{bmatrix} -(\lambda{+}\zeta)&{0}\\{\zeta}& -(\kappa{+}\tau) \end{bmatrix} %]]></script></p>
+
+<p>Then the ODE for <script type="math/tex">I(t)</script> and <script type="math/tex">A(t)</script> is:<br />
+<script type="math/tex">\dot{x(t)}{=}F x(t) + b c^T x(t) S(t)</script></p>
+
+<p>Since <script type="math/tex">\dot{S}(t){=}-c^T x(t) S(t)</script> we can substitute this in and get:  <br />
+<script type="math/tex">\dot{x(t)}{=}F x(t) - b  \dot{S}(t)</script></p>
+
+<p>Then integrating (and changing <script type="math/tex">t</script> to <script type="math/tex">\phi</script>), for the left side:<br />
+<script type="math/tex">\int_0^\infty \dot{x}(\phi) d\phi = x(\infty){-}x(0){=}-x(0)</script></p>
+
+<p>…and on the right hand side we have:<br />
+<script type="math/tex">F\int_0^\infty x(\phi) d\phi - b \int_0^\infty \dot{S}(\phi) =
+F\int_0^\infty x(\phi) d\phi - b(\overline{S}-S(0))</script></p>
+
+<p>so then we have:<br />
+<script type="math/tex">-x(0){=}F\int_0^\infty x(\phi) d\phi - b(\overline{S}-S(0))</script></p>
+
+<p>Now if we pre-multiply by <script type="math/tex">c^T F^{-1}</script> (a [1x2] vector) to get rid of F and to turn both sides into scalars we get:<br />
+<script type="math/tex">-c^T F^{-1} x(0) =\int_0^\infty c^T x(\phi) d\phi - c^T F^{-1} b(\overline{S}-S(0))</script></p>
+
+<p>From the ODE of <script type="math/tex">\dot{S}</script> we can substitute <script type="math/tex">\frac{\dot{S(t)}}{S(t)}</script> into <script type="math/tex">c^T x(t)</script>:<br />
+<script type="math/tex">-c^T F^{-1} x(0){=} - \int_0^\infty \frac{\dot{S}(\phi)}{S(\phi)} d\phi - c^T F^{-1} b(\overline{S}-S(0)) = log \frac{S(0)}{\overline{S}} - c^T F^{-1} b(\overline{S}-S(0))</script></p>
+
+<p>Then after a rearrangement we have the solution for <script type="math/tex">\overline{S}</script> in the same form as for the ‘<em>SIHE</em>’ model in \ref{SIHE_statsol_S}:<br />
+<script type="math/tex">-c^T F^{-1}b \overline{S} - log \overline{S} = -c^T F^{-1}b S(0) - log S(0) + c^T F^{-1} x(0)</script></p>
+
+<p><script type="math/tex">-c^T F^{-1} b</script> is the <script type="math/tex">R_0</script> of this version of the model, so rewriting with <script type="math/tex">R_0</script>:<br />
+<script type="math/tex">R_0 \overline{S}- log \overline{S} = R_0 S(0) - log S(0) + c^T F^{-1} x(0)
+\tag{5}
+\label{SIAHE_S_statsol_R0}</script></p>
+
+<p>Explicitly, <script type="math/tex">R_0</script> is:<br />
+<script type="math/tex">R_0{=}\frac{\alpha}{\lambda+\zeta}{+}\frac{\zeta \gamma}{(\kappa+\tau)(\lambda+\zeta)}</script></p>
+
+<p><script type="math/tex">R_0</script> is linearly increasing in the contagion rates <script type="math/tex">\alpha</script> and <script type="math/tex">\gamma</script>, while decreasing in the rate constants of the outgoing flows of <strong>I</strong> and <strong>A</strong>, ie. <script type="math/tex">\kappa, \tau, \lambda</script>.
+<script type="math/tex">\zeta</script> has a more complicated effect as it decreases the first term, but increases the second. This makes sense too, since this is the rate constant <em>between</em> the two contagious states <strong>I</strong> and <strong>A</strong>.</p>
 
 <p>(to be continued…in progress)</p>
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-31T22:24:14+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Notes, thoughts, graphs on the COVID19 pandemic</title><link href="http://localhost:4000/covid-modeling/" rel="alternate" type="text/html" title="Notes, thoughts, graphs on the COVID19 pandemic" /><published>2020-04-18T00:00:00+02:00</published><updated>2020-04-18T00:00:00+02:00</updated><id>http://localhost:4000/covid-modeling</id><content type="html" xml:base="http://localhost:4000/covid-modeling/">&lt;p&gt;These are some notes on the COVID19 pandemic.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-01T12:14:54+02:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Notes, thoughts, graphs on the COVID19 pandemic</title><link href="http://localhost:4000/covid-modeling/" rel="alternate" type="text/html" title="Notes, thoughts, graphs on the COVID19 pandemic" /><published>2020-04-18T00:00:00+02:00</published><updated>2020-04-18T00:00:00+02:00</updated><id>http://localhost:4000/covid-modeling</id><content type="html" xml:base="http://localhost:4000/covid-modeling/">&lt;p&gt;These are some notes on the COVID19 pandemic.
 They include data visualization on the pandemic, comparing its evolution in different world regions, as well as exploring some general properties of compartmental dynamic transmission (SIR-type) models.&lt;br /&gt;
 The models below make no specific predictions, instead I am only looking at their general mathematical properties.&lt;br /&gt;
 Finally, I have been making notes of scientific papers and preprints that caught my attention.&lt;/p&gt;
@@ -43,7 +43,8 @@ I also regularly update &lt;ins&gt;&lt;a href=&quot;https://github.com/mbkoltai/
 
 &lt;p&gt;It is also interesting to plot the time evolution of the (population normalized) number of fatalities and cases against each other and visualize the distance of the trajectory from the estimated case fatality ratio (I use 1%).
 This suggests the scale of underestimation of case numbers, although the relationship is not straightforward as the demographics of infections, timing and quality of health care also affect the CFR; I track this &lt;ins&gt;&lt;a href=&quot;https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_cases_deaths.pdf&quot;&gt;on these plots&lt;/a&gt;&lt;/ins&gt;.
-With more testing the CFR could be converging the (forming) consensus estimate, I am plotting this process &lt;ins&gt;&lt;a href=&quot;https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_tests_cfr.pdf&quot;&gt;here&lt;/a&gt;&lt;/ins&gt;.&lt;/p&gt;
+With more testing the CFR could be converging the (forming) consensus estimate, I am plotting this process &lt;ins&gt;&lt;a href=&quot;https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_tests_cfr.pdf&quot;&gt;here&lt;/a&gt;&lt;/ins&gt;.
+Looking at the &lt;a href=&quot;https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/cases_deaths_permillion_last_date.pdf&quot;&gt;cases/million-deaths/million scatterplot&lt;/a&gt; of countries at the most recent date we can see what countries seem to be outliers.&lt;/p&gt;
 
 &lt;h3 id=&quot;sir-models&quot;&gt;&lt;ins&gt;SIR models&lt;/ins&gt;&lt;/h3&gt;
 
@@ -57,8 +58,8 @@ With more testing the CFR could be converging the (forming) consensus estimate, 
 Therefore the equilibrium of the system is &lt;script type=&quot;math/tex&quot;&gt;(\overline{S},0,\overline{R})&lt;/script&gt; and due to the conservation &lt;script type=&quot;math/tex&quot;&gt;\overline{R}{=}1{-}\overline{S}&lt;/script&gt;. So to characterize the stationary behavior of the system all we need to calculate is
 &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;p&gt;Of course this can be done by numerically integrating the ODEs in \ref{SIR_odes} and indeed the internet is full of SIR-models now - but how about an &lt;a href=&quot;http://http://mbkoltai.github.io/exastolog/&quot;&gt;exact solution&lt;/a&gt;?&lt;br /&gt;
-I didn’t have to derive it, as in this very clear &lt;a href=&quot;https://www.nature.com/articles/s41591-020-0883-7&quot;&gt;paper in Nature Medicine&lt;/a&gt; (and probably others before) the authors explicitly derive the stationary solution for a more complicated model of 8 variables they abbreviate as the ‘SIDARTHE’ model.
+&lt;p&gt;Of course this can be done by numerically integrating the ODEs in \ref{SIR_odes} and indeed half the internet is full of SIR-models now. But how about an &lt;a href=&quot;http://http://mbkoltai.github.io/exastolog/&quot;&gt;exact solution&lt;/a&gt;?&lt;br /&gt;
+In this very clear &lt;a href=&quot;https://www.nature.com/articles/s41591-020-0883-7&quot;&gt;paper in Nature Medicine&lt;/a&gt; (and probably others before) the authors explicitly derive the stationary solution for a more complicated model of 8 variables they abbreviate as the ‘SIDARTHE’ model.
 Despite the apparent complexity this model is basically identical to the simple SIR model. The only difference is that 1) the &lt;script type=&quot;math/tex&quot;&gt;I&lt;/script&gt; variable is split into several sub-variables (&lt;strong&gt;I&lt;/strong&gt;: infected, a-/presymptomatic, undetected, &lt;strong&gt;D&lt;/strong&gt;: diagnosed (asymptomatic infected, detected); &lt;strong&gt;A&lt;/strong&gt;: ailing (symptomatic infected, undetected); &lt;strong&gt;R&lt;/strong&gt;: recognized (symptomatic infected, detected); &lt;strong&gt;T&lt;/strong&gt;: threatened (infected with life-threatening symptoms, detected)) 2) the sink variable &lt;strong&gt;R&lt;/strong&gt; of the SIR model is split into two sinks (&lt;strong&gt;H&lt;/strong&gt;: healed (recovered); &lt;strong&gt;E&lt;/strong&gt;: extinct (dead)). However the &lt;script type=&quot;math/tex&quot;&gt;IDART&lt;/script&gt; ‘module’ (the five state variables representing different stages of infection) has the same basic property as &lt;strong&gt;I&lt;/strong&gt;, namely that in &lt;script type=&quot;math/tex&quot;&gt;t{\rightarrow}\infty&lt;/script&gt; they decay to 0, and only &lt;strong&gt;S&lt;/strong&gt;, &lt;strong&gt;H&lt;/strong&gt;, &lt;strong&gt;E&lt;/strong&gt; can have nonzero values.&lt;/p&gt;
 
 &lt;p&gt;For the simple SIR model defined of \ref{SIR_odes} the solution for the stationary value of &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt; is less complicated than in the latter model, ie. it is given by the implicit expression:&lt;br /&gt;
@@ -71,7 +72,7 @@ Let us do a parameter sweep in the &lt;script type=&quot;math/tex&quot;&gt;\frac
 &lt;em&gt;Figure 1: Stationary solutions of SIR model calculated by simulations (left) and exact calculations (right)&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Fortunately the analytical solutions from \ref{SIR_S_stationary} are identical with the numerical solutions of the ODEs, so we didn’t make a mistake in \ref{SIR_S_stationary}.&lt;br /&gt;
-What do we see from this plot? The &lt;script type=&quot;math/tex&quot;&gt;\frac{\alpha}{\beta}&lt;/script&gt; ratio is the famous &lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt;, the basic reproduction parameter, and logically, the larger this ratio is, more of the population will go through infection (again, in the framework of this extremely simplified model not meant to be realistic).
+What do we see from this plot? The &lt;script type=&quot;math/tex&quot;&gt;\frac{\alpha}{\beta}&lt;/script&gt; ratio is the famous &lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt;, the basic reproduction parameter, and logically, the larger this ratio is, the more of the population will go through infection (again, in the framework of this extremely simplified model not meant to be realistic).
 It is also intuitive that if &lt;script type=&quot;math/tex&quot;&gt;S(t{=}0)&lt;/script&gt; is smaller because of a larger initial infected population &lt;script type=&quot;math/tex&quot;&gt;I(0)&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;\overline{H}{+}\overline{E}&lt;/script&gt; will be larger.&lt;/p&gt;
 
 &lt;p&gt;Now, let us make the model one step more refined, and split &lt;strong&gt;R&lt;/strong&gt; into two variables, &lt;strong&gt;H&lt;/strong&gt;(ealed) and &lt;strong&gt;E&lt;/strong&gt;(xtinct , ie. deceased), as:&lt;/p&gt;
@@ -79,14 +80,15 @@ It is also intuitive that if &lt;script type=&quot;math/tex&quot;&gt;S(t{=}0)&lt
 &lt;p&gt;&lt;img src=&quot;/images/covid/SIHE_cropped_resiz.png&quot; alt=&quot;_config.yml&quot; /&gt;
 &lt;em&gt;Figure 2: ‘SIHE’ version of the SIR model where &lt;strong&gt;R&lt;/strong&gt;(recovered) is split into &lt;strong&gt;H&lt;/strong&gt; and &lt;strong&gt;E&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;The &lt;strong&gt;I&lt;/strong&gt;(nfected) variable now has two outcomes. It is clear intuitively that this will not change how the stationary solution can be calculated, except that now &lt;strong&gt;I&lt;/strong&gt; has two outgoing flows, so it is the ratio &lt;script type=&quot;math/tex&quot;&gt;\frac{\alpha}{\lambda{+}\tau}&lt;/script&gt; that will define &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt; as:
+&lt;p&gt;The &lt;strong&gt;I&lt;/strong&gt;(nfected) variable now has two outcomes. It is clear intuitively that this will not change how the stationary solution of &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt; is calculated, as the sink nodes do not interact with &lt;strong&gt;S&lt;/strong&gt;, except that now &lt;strong&gt;I&lt;/strong&gt; has two outgoing flows, so it is the ratio &lt;script type=&quot;math/tex&quot;&gt;\frac{\alpha}{\lambda{+}\tau}&lt;/script&gt; that will define &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt; as:
 &lt;script type=&quot;math/tex&quot;&gt;\frac{\alpha}{\lambda{+}\tau} \overline{S} - log\overline{S} = \frac{\alpha}{\lambda{+}\tau} - logS(0)
 \tag{3}\label{SIHE_statsol_S}&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Moreover we can give the formulas for &lt;script type=&quot;math/tex&quot;&gt;\overline{H}, \overline{E}&lt;/script&gt; as a function of &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt; and the initial infected population &lt;script type=&quot;math/tex&quot;&gt;I(0)&lt;/script&gt;. It is logical to assume &lt;script type=&quot;math/tex&quot;&gt;H(0), E(0)&lt;/script&gt; are 0.
+&lt;p&gt;Moreover we can give the formulas for &lt;script type=&quot;math/tex&quot;&gt;\overline{H}, \overline{E}&lt;/script&gt; as a function of &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt; and the initial infected population &lt;script type=&quot;math/tex&quot;&gt;I(0)&lt;/script&gt;.
+It is reasonable to assume &lt;script type=&quot;math/tex&quot;&gt;H(0), E(0)&lt;/script&gt; are 0.
 Downstream of &lt;strong&gt;I&lt;/strong&gt; the dynamics is completely linear: what flows out from &lt;strong&gt;S&lt;/strong&gt; into &lt;strong&gt;I&lt;/strong&gt; (ie. &lt;script type=&quot;math/tex&quot;&gt;\Delta{S}{=}S(0){-}\overline{S}&lt;/script&gt;), as well as the initial concentration of &lt;script type=&quot;math/tex&quot;&gt;I(0)&lt;/script&gt; will be partitioned into the sink variables proportionally to the rate constants &lt;script type=&quot;math/tex&quot;&gt;\lambda&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\tau&lt;/script&gt;. Specifically, we’ll have:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;\overline{H} = [(S(0) - \overline{S}) + I(0)] \frac{\lambda}{\lambda{+}\tau}\\
-\overline{E} = [(S(0) - \overline{S}) + I(0)] \frac{\tau}{\lambda{+}\tau}  
+&lt;script type=&quot;math/tex&quot;&gt;\overline{H} = [(S(0)-\overline{S}) + I(0)] \frac{\lambda}{\lambda{+}\tau}\\
+\overline{E} = [(S(0)-\overline{S}) + I(0)] \frac{\tau}{\lambda{+}\tau}  
 \tag{4}\label{SIHE_statsol_H_E}&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;The ratio &lt;script type=&quot;math/tex&quot;&gt;\frac{\tau}{\lambda{+}\tau}&lt;/script&gt; is the infection fatality (IFR) rate.
@@ -100,7 +102,7 @@ In contrast, if both &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&g
 How the infected fraction of the population is partitioned between the two sink states (&lt;script type=&quot;math/tex&quot;&gt;\overline{H}, \overline{E}&lt;/script&gt;) obviously depends on the IFR (note the logarithmic scale), as stated in \ref{SIHE_statsol_S}.
 Note that while the IFR is ‘hard-wired’ in the parameter ratio &lt;script type=&quot;math/tex&quot;&gt;\frac{\tau}{\tau+\lambda}&lt;/script&gt;, how much of the population gets infected and dies depends on &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt; and therefore &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt;, the rate constant for transmission. This is where physical distancing measures would intervene to choke off the flow &lt;script type=&quot;math/tex&quot;&gt;{S}\rightarrow{I}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;p&gt;Let us go now one step further and allow for a pre-symptomatic state, in fact let us define &lt;strong&gt;I&lt;/strong&gt; as a variable of infectious but pre-symptomatic state and add a variable &lt;strong&gt;A&lt;/strong&gt;(iling) that is the infectious and symptomatic state. So now, the compartments of this &lt;em&gt;SIAHE&lt;/em&gt; model and the flows between them are:&lt;/p&gt;
+&lt;p&gt;Let us go now one step further and allow for a pre-symptomatic state, defining &lt;strong&gt;I&lt;/strong&gt; as a variable of the infectious but pre-symptomatic state and adding a variable &lt;strong&gt;A&lt;/strong&gt;(iling) that is the infectious and symptomatic state. Now the compartments of this ‘&lt;em&gt;SIAHE&lt;/em&gt;’ model and the flows between them are:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/covid/SIAHE_res.jpeg&quot; alt=&quot;_config.yml&quot; /&gt;
 &lt;em&gt;Figure 4: ‘SIAHE’ SIR model with presymptomatic (&lt;strong&gt;I&lt;/strong&gt;) and symptomatic (&lt;strong&gt;A&lt;/strong&gt;) infectious state and two outcomes&lt;/em&gt;&lt;/p&gt;
@@ -111,7 +113,50 @@ Note that while the IFR is ‘hard-wired’ in the parameter ratio &lt;script ty
 &lt;p&gt;These two bilinear terms are positive feedbacks on the otherwise linear system. If it wasn’t for these terms the system would have an equilibrium where only the &lt;a href=&quot;http://vcp.med.harvard.edu/papers/jg-lap-dyn.pdf&quot;&gt;terminal vertices&lt;/a&gt; (&lt;script type=&quot;math/tex&quot;&gt;H, E&lt;/script&gt;) of its graph can have nonzero value, just like with the equilibrium we have for the &lt;a href=&quot;https://mbkoltai.github.io/exastolog&quot;&gt;state transition graph of a stochastic Boolean model&lt;/a&gt;.
 Because of this nonlinear feedback however &lt;strong&gt;S&lt;/strong&gt; can (and usually does) also have a nonzero value in steady state, so the equilibrium of SIAHE is &lt;script type=&quot;math/tex&quot;&gt;(\overline{S},0,0,\overline{H},\overline{E})&lt;/script&gt;.&lt;/p&gt;
 
-&lt;p&gt;Let us again get the formula for &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt; - if we have this, the rest of the system has linear kinetics, so the stationary values of &lt;strong&gt;H&lt;/strong&gt; and &lt;strong&gt;E&lt;/strong&gt; will follow easily from the kinetic matrix of the IAHE variables.&lt;/p&gt;
+&lt;p&gt;Let us again get the formula for &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt;. Ff we have this, the rest of the system has linear kinetics, so the stationary values of &lt;strong&gt;H&lt;/strong&gt; and &lt;strong&gt;E&lt;/strong&gt; will follow easily from the kinetic matrix of the IAHE variables. I follow here the derivation from the Nature Medicine article, except that it is for a simpler (5 variables) model.&lt;/p&gt;
+
+&lt;p&gt;We need to introduce some notation:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+x(t){=}\begin{bmatrix} I(t) \\ A(t) \end{bmatrix},
+c{=}\begin{bmatrix} \alpha \\ \gamma \\ \end{bmatrix},
+b{=}\begin{bmatrix} 1 \\ 0 \end{bmatrix},
+F{=}\begin{bmatrix} -(\lambda{+}\zeta)&amp;{0}\\{\zeta}&amp; -(\kappa{+}\tau) \end{bmatrix} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Then the ODE for &lt;script type=&quot;math/tex&quot;&gt;I(t)&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;A(t)&lt;/script&gt; is:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\dot{x(t)}{=}F x(t) + b c^T x(t) S(t)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Since &lt;script type=&quot;math/tex&quot;&gt;\dot{S}(t){=}-c^T x(t) S(t)&lt;/script&gt; we can substitute this in and get:  &lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\dot{x(t)}{=}F x(t) - b  \dot{S}(t)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Then integrating (and changing &lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;\phi&lt;/script&gt;), for the left side:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\int_0^\infty \dot{x}(\phi) d\phi = x(\infty){-}x(0){=}-x(0)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;…and on the right hand side we have:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;F\int_0^\infty x(\phi) d\phi - b \int_0^\infty \dot{S}(\phi) =
+F\int_0^\infty x(\phi) d\phi - b(\overline{S}-S(0))&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;so then we have:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;-x(0){=}F\int_0^\infty x(\phi) d\phi - b(\overline{S}-S(0))&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Now if we pre-multiply by &lt;script type=&quot;math/tex&quot;&gt;c^T F^{-1}&lt;/script&gt; (a [1x2] vector) to get rid of F and to turn both sides into scalars we get:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;-c^T F^{-1} x(0) =\int_0^\infty c^T x(\phi) d\phi - c^T F^{-1} b(\overline{S}-S(0))&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;From the ODE of &lt;script type=&quot;math/tex&quot;&gt;\dot{S}&lt;/script&gt; we can substitute &lt;script type=&quot;math/tex&quot;&gt;\frac{\dot{S(t)}}{S(t)}&lt;/script&gt; into &lt;script type=&quot;math/tex&quot;&gt;c^T x(t)&lt;/script&gt;:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;-c^T F^{-1} x(0){=} - \int_0^\infty \frac{\dot{S}(\phi)}{S(\phi)} d\phi - c^T F^{-1} b(\overline{S}-S(0)) = log \frac{S(0)}{\overline{S}} - c^T F^{-1} b(\overline{S}-S(0))&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Then after a rearrangement we have the solution for &lt;script type=&quot;math/tex&quot;&gt;\overline{S}&lt;/script&gt; in the same form as for the ‘&lt;em&gt;SIHE&lt;/em&gt;’ model in \ref{SIHE_statsol_S}:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;-c^T F^{-1}b \overline{S} - log \overline{S} = -c^T F^{-1}b S(0) - log S(0) + c^T F^{-1} x(0)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;-c^T F^{-1} b&lt;/script&gt; is the &lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt; of this version of the model, so rewriting with &lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt;:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;R_0 \overline{S}- log \overline{S} = R_0 S(0) - log S(0) + c^T F^{-1} x(0)
+\tag{5}
+\label{SIAHE_S_statsol_R0}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Explicitly, &lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt; is:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;R_0{=}\frac{\alpha}{\lambda+\zeta}{+}\frac{\zeta \gamma}{(\kappa+\tau)(\lambda+\zeta)}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;R_0&lt;/script&gt; is linearly increasing in the contagion rates &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\gamma&lt;/script&gt;, while decreasing in the rate constants of the outgoing flows of &lt;strong&gt;I&lt;/strong&gt; and &lt;strong&gt;A&lt;/strong&gt;, ie. &lt;script type=&quot;math/tex&quot;&gt;\kappa, \tau, \lambda&lt;/script&gt;.
+&lt;script type=&quot;math/tex&quot;&gt;\zeta&lt;/script&gt; has a more complicated effect as it decreases the first term, but increases the second. This makes sense too, since this is the rate constant &lt;em&gt;between&lt;/em&gt; the two contagious states &lt;strong&gt;I&lt;/strong&gt; and &lt;strong&gt;A&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;(to be continued…in progress)&lt;/p&gt;
 
