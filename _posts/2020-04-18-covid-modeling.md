@@ -49,7 +49,6 @@ Looking at the [cases/million-deaths/million scatterplot](https://github.com/mbk
 
 ### <ins>SIR models</ins>
 
-
 Let us start with the simplest epidemic model, ie. the SIR compartmental model, where we have:  
 $$ \frac{dS(t)}{dt}{=}{-}\alpha S(t) I(t) \\
 \frac{dI(t)}{dt}{=}\alpha S(t) I(t)-\beta I(t) \\
@@ -57,7 +56,13 @@ $$ \frac{dS(t)}{dt}{=}{-}\alpha S(t) I(t) \\
 \tag{1}\label{SIR_odes}
 $$
 
-It is more convenient and meaningful to work with fractions of a population (and not absolute numbers), so that we have the conservation $$S(t){+}I(t){+}R(t){=}1$$. Clearly, $$I(\infty){=}0$$, since this variable has first-order (linear) decay, so any nonzero value in this compartment eventually 'leaks out' into $$R$$.
+It is more convenient to work with fractions of a population (and not absolute numbers), so that we have the conservation $$S(t){+}I(t){+}R(t){=}1$$.
+We need to keep in mind that this is a mean field ODE model and __has many limitations__. It assumes complete homogeneity of transmission events, ie. that they depend only on the _fraction_ of the population susceptible and infected and that for given values of these fractions we have the same rate of transmissions.
+This also means that any small nonzero values for the infected population will lead to transmissions, whereas in reality a very small fraction can mean so few infected individuals that the epidemic can just die out. Also, in reality transmission events (very probably) do _not_ occur homogeneously, proportionally to the infected (and susceptible) fraction of the entire population, but are much more clustered, local and occurring in certain environments, in burst-like ('superspreader') events.
+For these reasons it is important to stress that these SIR models should be interpreted very cautiously and we must keep in mind their assumptions that are not entirely correct.
+Nevertheless, they can give us a first idea of some general properties of epidemic dynamics and that's what I want to do here. For predictions and planning more advanced models that take into account local environments, stochasticity, rare spreading events etc should be used, and it can also be useful to use [very simple but probabilistic models](https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e8e5ac9e696ba4b972093fa/1586387658680/Modeling2.pdf).   
+
+In the SIR framework it is clear that $$I(\infty){=}0$$, since this variable has first-order (linear) decay, so any nonzero value in this compartment eventually 'leaks out' into $$R$$.
 Therefore the equilibrium of the system is $$(\overline{S},0,\overline{R})$$ and due to the conservation $$\overline{R}{=}1{-}\overline{S}$$. So to characterize the stationary behavior of the system all we need to calculate is
 $$\overline{S}$$.
 

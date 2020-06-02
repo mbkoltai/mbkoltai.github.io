@@ -141,7 +141,13 @@ Looking at the <a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/mast
 \frac{dR(t)}{dt}{=}\beta I(t)
 \tag{1}\label{SIR_odes}</script></p>
 
-<p>It is more convenient and meaningful to work with fractions of a population (and not absolute numbers), so that we have the conservation <script type="math/tex">S(t){+}I(t){+}R(t){=}1</script>. Clearly, <script type="math/tex">I(\infty){=}0</script>, since this variable has first-order (linear) decay, so any nonzero value in this compartment eventually ‘leaks out’ into <script type="math/tex">R</script>.
+<p>It is more convenient to work with fractions of a population (and not absolute numbers), so that we have the conservation <script type="math/tex">S(t){+}I(t){+}R(t){=}1</script>.
+We need to keep in mind that this is a mean field ODE model and <strong>has many limitations</strong>. It assumes complete homogeneity of transmission events, ie. that they depend only on the <em>fraction</em> of the population susceptible and infected and that for given values of these fractions we have the same rate of transmissions.
+This also means that any small nonzero values for the infected population will lead to transmissions, whereas in reality a very small fraction can mean so few infected individuals that the epidemic can just die out. Also, in reality transmission events (very probably) do <em>not</em> occur homogeneously, proportionally to the infected (and susceptible) fraction of the entire population, but are much more clustered, local and occurring in certain environments, in burst-like (‘superspreader’) events.
+For these reasons it is important to stress that these SIR models should be interpreted very cautiously and we must keep in mind their assumptions that are not entirely correct.
+Nevertheless, they can give us a first idea of some general properties of epidemic dynamics and that’s what I want to do here. For predictions and planning more advanced models that take into account local environments, stochasticity, rare spreading events etc should be used, and it can also be useful to use <a href="https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e8e5ac9e696ba4b972093fa/1586387658680/Modeling2.pdf">very simple but probabilistic models</a>.</p>
+
+<p>In the SIR framework it is clear that <script type="math/tex">I(\infty){=}0</script>, since this variable has first-order (linear) decay, so any nonzero value in this compartment eventually ‘leaks out’ into <script type="math/tex">R</script>.
 Therefore the equilibrium of the system is <script type="math/tex">(\overline{S},0,\overline{R})</script> and due to the conservation <script type="math/tex">\overline{R}{=}1{-}\overline{S}</script>. So to characterize the stationary behavior of the system all we need to calculate is
 <script type="math/tex">\overline{S}</script>.</p>
 
