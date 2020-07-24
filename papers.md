@@ -19,13 +19,11 @@ S Bubendorfer\*, _M Koltai_\*, F Rossmann, V Sourjik, KM Thormann
 A Banderas\*, _M Koltai_\*, A Anders, V Sourjik  
 *Nature communications* 7, 12590 (2016)
 
-(\*equal contributors)
-
-## Preprints
-
-**[Exact calculation of stationary solution and parameter sensitivity analysis of stochastic continuous time Boolean models](https://biorxiv.org/content/10.1101/794230v1)**  
+**[Exact solving and sensitivity analysis of stochastic continuous time Boolean models](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03548-9)**  
 _M Koltai_, V Noel, A Zinovyev, L Calzone, E Barillot  
-*bioRxiv*, 2019, http://dx.doi.org/10.1101/794230  
+*BMC Bioinformatics* 21, 241 (2020)
+
+(\*equal contributors)
 
 ## Talks at conferences
 
