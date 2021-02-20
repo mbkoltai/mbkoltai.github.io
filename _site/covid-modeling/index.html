@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Notes, thoughts, graphs on the COVID19 pandemic – Mihály Koltai – personal website</title>
+    <title>Analytical solutions of SIR models – Mihály Koltai – personal website</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -9,8 +9,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="General properties, not predictions" />
-    <meta property="og:description" content="General properties, not predictions" />
+    <meta name="description" content="Stationary behavior of compartmental epidemic models" />
+    <meta property="og:description" content="Stationary behavior of compartmental epidemic models" />
     
     <meta name="author" content="Mihály Koltai" />
 
@@ -26,8 +26,8 @@
 
 
     
-    <meta property="og:title" content="Notes, thoughts, graphs on the COVID19 pandemic" />
-    <meta property="twitter:title" content="Notes, thoughts, graphs on the COVID19 pandemic" />
+    <meta property="og:title" content="Analytical solutions of SIR models" />
+    <meta property="twitter:title" content="Analytical solutions of SIR models" />
     
 
 
@@ -40,19 +40,19 @@
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Notes, thoughts, graphs on the COVID19 pandemic | Mihály Koltai</title>
+<title>Analytical solutions of SIR models | Mihály Koltai</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Notes, thoughts, graphs on the COVID19 pandemic" />
+<meta property="og:title" content="Analytical solutions of SIR models" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="General properties, not predictions" />
-<meta property="og:description" content="General properties, not predictions" />
+<meta name="description" content="Stationary behavior of compartmental epidemic models" />
+<meta property="og:description" content="Stationary behavior of compartmental epidemic models" />
 <link rel="canonical" href="http://localhost:4000/covid-modeling/" />
 <meta property="og:url" content="http://localhost:4000/covid-modeling/" />
 <meta property="og:site_name" content="Mihály Koltai" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-18T00:00:00+01:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/covid-modeling/","@type":"BlogPosting","headline":"Notes, thoughts, graphs on the COVID19 pandemic","dateModified":"2020-04-18T00:00:00+01:00","datePublished":"2020-04-18T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/covid-modeling/"},"description":"General properties, not predictions","@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/covid-modeling/","@type":"BlogPosting","headline":"Analytical solutions of SIR models","dateModified":"2020-04-18T00:00:00+01:00","datePublished":"2020-04-18T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/covid-modeling/"},"description":"Stationary behavior of compartmental epidemic models","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -82,60 +82,15 @@
 
     <div id="main" role="main" class="container">
       <article class="post">
-  <h1>Notes, thoughts, graphs on the COVID19 pandemic</h1>
+  <h1>Analytical solutions of SIR models</h1>
 
   <div class="entry">
-    <p>These are some notes on the COVID19 pandemic.
-They include data visualization on the pandemic, comparing its evolution in different world regions, as well as exploring some general properties of compartmental dynamic transmission (SIR-type) models.<br />
-The models below make no specific predictions, instead I am only looking at their general mathematical properties.<br />
-Finally, I have been making notes of scientific papers and preprints that caught my attention.</p>
-
-<h2 id="table-of-contents">Table of contents</h2>
-
-<ol>
-  <li><a href="#1-own-stuff">Own stuff</a>
-    <ol>
-      <li><a href="#data-visualization">Data visualization</a></li>
-      <li><a href="#sir-models">SIR models</a></li>
-    </ol>
-  </li>
-  <li><a href="#2-notes-on-the-literature">Notes on the literature</a>
-    <ol>
-      <li><a href="#dynamical-models">Dynamical models</a></li>
-      <li><a href="#data-and-reports">Data and reports</a></li>
-      <li><a href="#tools">Tools</a></li>
-    </ol>
-  </li>
-</ol>
-
-<h2 id="1-own-stuff"><ins>1. Own stuff</ins></h2>
-
-<h3 id="data-visualization"><ins>Data visualization</ins></h3>
-
-<p>On the plots below the x-axis shows the number of cumulative reported COVID19 cases and fatalities relative to a country’s population (cases/deaths per million inhabitants).<br />
-The y-axis shows the 3-day average of the number of new cases or fatalities per one million inhabitants.
-Time is implicit on these graphs, moving from left to right, and each data point is one day.<br />
-This way one can see how much of the population is known to have contracted the virus and what is the current rate of growth per one million people. This makes the situation in different countries visually comparable.<br />
-All data downloaded from the <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series">Johns Hopkins University database</a> and the graphs were made in a <a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/covid_data.ipynb">Jupyter notebook</a>.
-For higher resolution see the <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/multiplot_growth_rate_deaths_popul_cutoff100_loglog.pdf">pdf</a></ins> <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/multiplot_growth_rate_cases_popul_cutoff100_loglog.pdf">files</a></ins>.<br />
-I also regularly update <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_cases_daily_incr.pdf">two</a></ins> <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_deaths_daily_incr.pdf">plots</a></ins> where the daily increase in cases and fatalities are separately shown for each country in the same six world regions.</p>
-
-<p><ins>Dynamics of the number of reported cases</ins></p>
-
-<p><img src="/images/covid/multiplot_growth_rate_cases_popul_cutoff100_loglog.png" alt="_config.yml" /></p>
-
-<p><ins>Dynamics of the number of reported fatalities</ins></p>
-
-<p><img src="/images/covid/multiplot_growth_rate_deaths_popul_cutoff100_loglog.png" alt="_config.yml" /></p>
-
-<p>It is also interesting to plot the time evolution of the (population normalized) number of fatalities and cases against each other and visualize the distance of the trajectory from the estimated case fatality ratio (I use 1%).
-This suggests the scale of underestimation of case numbers, although the relationship is not straightforward as the demographics of infections, timing and quality of health care also affect the CFR; I track this <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_cases_deaths.pdf">on these plots</a></ins>.
-With more testing the CFR could be converging the (forming) consensus estimate, I am plotting this process <ins><a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/merged_tests_cfr.pdf">here</a></ins>.
-Looking at the <a href="https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/covid/cases_deaths_permillion_last_date.pdf">cases/million-deaths/million scatterplot</a> of countries at the most recent date we can see what countries seem to be outliers.</p>
+    <p>These notes were written in the early stage of the COVID19 pandemic and they explore general properties of compartmental transmission (SIR-type) models.<br />
+The models below make no specific predictions, instead I am only looking at their general mathematical properties.</p>
 
 <h3 id="sir-models"><ins>SIR models</ins></h3>
 
-<p>Let us start with the simplest epidemic model, ie. the SIR compartmental model, where we have:<br />
+<p>Let’s start with the simplest epidemic model, ie. the SIR compartmental model, where we have:<br />
 <script type="math/tex">\frac{dS(t)}{dt}{=}{-}\alpha S(t) I(t) \\
 \frac{dI(t)}{dt}{=}\alpha S(t) I(t)-\beta I(t) \\
 \frac{dR(t)}{dt}{=}\beta I(t)
@@ -251,372 +206,6 @@ F\int_0^\infty x(\phi) d\phi - b(\overline{S}-S(0))</script></p>
 <p><script type="math/tex">R_0</script> is linearly increasing in the contagion rates <script type="math/tex">\alpha</script> and <script type="math/tex">\gamma</script>, while decreasing in the rate constants of the outgoing flows of <strong>I</strong> and <strong>A</strong>, ie. <script type="math/tex">\kappa, \tau, \lambda</script>.
 <script type="math/tex">\zeta</script> has a more complicated effect as it decreases the first term, but increases the second. This makes sense too, since this is the rate constant <em>between</em> the two contagious states <strong>I</strong> and <strong>A</strong>.</p>
 
-<p>(to be continued…in progress)</p>
-
-<h2 id="2-notes-on-the-literature"><ins>2. Notes on the literature</ins></h2>
-
-<h3 id="dynamical-models"><ins>Dynamical models</ins></h3>
-
-<h4 id="school-closures-event-cancellations-and-the-mesoscopic-localization-of-epidemics-in-networks-with-higher-order-structure"><a href="https://arxiv.org/pdf/2003.05924.pdf">School closures, event cancellations, and the mesoscopic localization of epidemics in networks with higher-order structure</a></h4>
-<p>Higher-order struct leads to mesoscopic localization (concentration into substructures).<br />
-Individuals classified by # of contacts:<br />
-<script type="math/tex">S_k</script>: % susceptible with k contacts<br />
-<script type="math/tex">I_k</script>: % infected with k contacts<br />
-Clique prevalence: average fraction of nodes within cliques of size <em>n</em>.</p>
-
-<p><img src="/images/covid/clique%20prevalence.PNG" alt="_config.yml" /></p>
-
-<p>What does lower coupling mean?
-There are two distributions that characterize the network:<br />
-<script type="math/tex">g_m</script>: membership of nodes. <script type="math/tex">S_m</script> is % of <em>S</em> with number <em>m</em> of memberships in higher order structures.  <script type="math/tex">g_m \sim m^{-\gamma}</script><br />
-p_n: distribution of clique size <em>n</em>. <script type="math/tex">p_n \sim n^{-\gamma}</script></p>
-
-<p>If edges are removed, in the localized network there is a critical size n_c for cliques under which if enough edges are removed, then there are no infections anymore in these cliques.
-Also, in localized networks global prevalence falls off much more sharply with stronger intervention, whereas effect is linear in ‘delocalized’ networks.</p>
-
-<p>Variables are defined by master equations. This goes down after a week.
-With active case finding the peak is lower and earlier.
-With higher transmission rate this gets higher, converging to ~0.9.
-But if structures are highly coupled (a), clique prevalence ~same for n [20,100].
-With lower coupling (b) there is <em>mesoscopic localization</em>: global prevalence can be very low, but within cliques, much higher % of infection.</p>
-
-<h4 id="the-contribution-of-pre-symptomatic-transmission-to-the-covid-19-outbreak"><a href="https://cmmid.github.io/topics/covid19/control-measures/pre-symptomatic-transmission.html">The Contribution of Pre-symptomatic Transmission to the COVID-19 Outbreak</a></h4>
-<p>Estimates that ~25% of transmission in Shenzhen was asymptomatic.</p>
-
-<h4 id="temporal-variation-in-transmission-during-the-covid-19-outbreak-in-italy"><a href="https://cmmid.github.io/topics/covid19/current-patterns-transmission/italy-time-varying-transmission.html">Temporal variation in transmission during the COVID-19 outbreak in Italy</a></h4>
-<p>Estimates on reproduction numbers in regions of Italy. Started from 3-4, falling towards 2.</p>
-
-<h4 id="substantial-undocumented-infection-facilitates-the-rapid-dissemination-of-novel-coronavirus-science-16-march"><a href="https://science.sciencemag.org/content/sci/early/2020/03/13/science.abb3221.full.pdf">Substantial undocumented infection facilitates the rapid dissemination of novel coronavirus (SCIENCE, 16 March)</a></h4>
-
-<p>Estimates from a model + Bayesian inference.
-Main findings (these are max probability estimates):</p>
-<ul>
-  <li>86% of infections were from undocumented cases in China <em>before travel ban of 23/january</em>.</li>
-  <li>undocumented cases had 55% (mu*beta) transmission rate of documented ones (beta)</li>
-  <li>undocumented cases were the source of 79% of documented cases</li>
-</ul>
-
-<p>Model: dynamics of infections among 375 Chinese cities.
-Spatial dynamics captured by # of passengers from city <em>i</em> to <em>j</em>.
-Variables for each city: <script type="math/tex">S_i, E_i, I_i^r, I_i^u</script> (undocumented).
-Simulations by ‘iterated filter-ensemble adjustment Kalman filter (IF-EAKF) framework’.<br />
-Inferred parameters:</p>
-<ul>
-  <li>Z: average latent period</li>
-  <li>D: average duration of infection</li>
-  <li><script type="math/tex">\mu</script>: transmission reduction factor for undocumented</li>
-  <li>beta: transmission rate for documented</li>
-  <li>alpha: fraction of documented infections</li>
-  <li>theta: travel multiplicative factor</li>
-</ul>
-
-<p>Reporting delay is included (from Gamma distribution).
-Best-fitting parameter values identified by maximum likelihood.
-They could distinguish between mu-alpha value pairs with different individual values but same product. They did simulations with all parameter value pairs (within certain range) and .
-Delay of reporting crucial, this needs to be speeded up to stop the spread.</p>
-
-<p><img src="/images/covid/science_article_undocum_cases.PNG" alt="_config.yml" /></p>
-
-<p><a href="https://science.sciencemag.org/content/sci/suppl/2020/03/13/science.abb3221.DC1/abb3221_Li_SM.pdf">SI</a> contains equations.
-System of coupled ODEs: S_i is susceptibles in city <em>i</em>.
-All terms normalised by total population (in that city).
-D: <duration infection="">  
-Then effective reproduction number $$R_e=\alpha \beta D + (1-\alpha)\mu \beta\ D$$</duration></p>
-
-<p>System of ODEs are then solved stochastically: each RHS term is sampled from a Poisson distribution. So we take the current value of the variable and then sample from a Poisson distribution (the deterministic value is the lambda of the Poisson). This is for each RHS term!
-Initial prior ranges for parameters are from Latin Hypercube Sampling.
-Initial values for populations similarly sampled (eg. initial exposed).</p>
-
-<p>Then the simulation results are mapped into reported cases by a separate delay model.
-Delay is from a Gamma distribution approximated from data.
-Movements between cities estimated from mobile apps: Tencent, Mobility Index from Baidu.
-‘Iterated’ filtering to estimate model parameters.</p>
-
-<!---
-#### [Wolfram Mathematica notebook on epidemic modeling](https://community.wolfram.com/groups/-/m/t/1896178)
-https://www.twitch.tv/videos/569280246
-
-#### [NECSI Slack channel for modeling](https://app.slack.com/client/T2DRR8UNB/CV19X1PKJ/thread/CUTSF2Q6R-1584495843.398200)
---->
-
-<h4 id="imperial-impact-of-non-pharmaceutical-interventions-npis-to-reduce-covid19-mortality-and-healthcare-demand-16-march"><a href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf">Imperial: Impact of non-pharmaceutical interventions (NPIs) to reduce COVID19 mortality and healthcare demand (16 March)</a></h4>
-
-<p>2 strategies:
-1) mitigation: can reduce peak healthcare demand by 2/3 and deaths by 50%. Still 100s of 1000s of deaths
-2) Suppression: preferable for countries that can achieve. Means social distancing for <em>whole</em> of the population. Need to be maintained until vaccine found, as there is rebound if interventions are targeted.</p>
-
-<p>Individual-based simulation model. Mixing in different environments. Schools double per capita rate of contacts. Incubation time 5 days. Infectiousness starts before symptoms. R0: between 2 and 2.6. Individual infectiousness varies (gamma distribution).
-Symptomatic cases self-isolate w 1 day delay. 5 day delay to hospitalisation.</p>
-
-<p>Results:</p>
-<ul>
-  <li>no measures: peak after 3 months, 80% of US/UK population infected. 30-time more demand for critical care beds than available. 2.2M dead in US, 0.5M dead in UK.</li>
-  <li>mitigation: for 7 different levels of mitigation they make estimates for the reduction in peak bed demand and total deaths. For two values of R0 (2.2, 2.4) and 4 values of ‘triggers’ (cumulative ICU cases). Trigger means when policies (home quarantine etc) are switched on/off.</li>
-  <li>suppression: all measures combined can keep ICU bed demand below UK surge bed capacity (5K). Adaptive triggering of suppression: on-off with some thresholds for # of ICU cases.
-Even with most comprehensive suppression strategy in 2 yrs abt 30K deaths in UK.
-Higher ON trigger and/or lower OFF -&gt; more deaths etc.</li>
-</ul>
-
-<p><a href="https://www.pnas.org/content/pnas/105/12/4639.full.pdf">Model used by Imperial from 2008</a></p>
-
-<h4 id="necsi-response-to-imperial-paper-ferguson-et-al-impact-of-non-pharmarceutical"><a href="https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e70eb32b16229792eb14836/1584458547530/ReviewOfFergusson.pdf">NECSI response to Imperial paper (Ferguson et al) ‘Impact of non-pharmarceutical…’</a></h4>
-
-<p>They agree with Ferguson that suppression is needed to bring down R<sub>0</sub> below 1.
-They disagree w Ferguson claim that 2nd outbreak unavoidable, because (according to NECSI) during lockdown infectious ppl can be identified and their contacts isolated.
-Ferguson calculate new infections as fcn of infected % and immunity, but not the phase of trajectory (ergodicity).
-Not true that resurgence starts from even 1 case, China data showed <em>only 5% of close contacts of infected tested positive</em>. Small outbreaks can be controlled by testing.
-Ferguson ignores super-spreader events by ignoring ‘fat tail distribution of contagion’.
-But cutting off fat tail by banning events reduced <script type="math/tex">R_0</script>.
-Ferguson use SIR ODE-model, not appropriate bc it ignores:</p>
-<ul>
-  <li>local dynamics</li>
-  <li>non-normal distrib. of infection events per person (superspreaders)</li>
-  <li>dynamic or stochastic values for parameters (social response)</li>
-</ul>
-
-<p>But Imperial model has different environments and it is agent-based, so maybe this is not fair.
-Debate on this on <a href="https://twitter.com/yaneerbaryam/status/1239936951823843328">Twitter</a>.</p>
-
-<h4 id="beyond-contact-tracing-community-based-early-detection-for-ebola-response-plos-currents-outbreaks-2016"><a href="https://necsi.edu/beyond-contact-tracing">Beyond contact tracing: Community-based early detection for Ebola response, PLoS Currents Outbreaks (2016)</a></h4>
-
-<p>Stochastic model by NECSI.</p>
-
-<h4 id="necsi-working-paper-eliminating-covid-19-a-community-based-analysis-19-march"><a href="https://static1.squarespace.com/static/5b68a4e4a2772c2a206180a1/t/5e737b95403f772d8ce0e04a/1584626591711/CommunityPrevention.pdf">NECSI Working Paper: Eliminating COVID-19. A Community-based Analysis (19 March)</a></h4>
-
-<p>NECSI probabilistic model. <script type="math/tex">R_*</script>: community transmission rate.
-i_0_c: stochastic factor of initial foothold the virus gains in a community
-i_c(t): # active infections in community <em>c</em><br />
-If infection not contained, <script type="math/tex">exp(r_c t)</script><br />
-After <script type="math/tex">T_c</script> community implements aggressive suppression policies.
-Infections decay as <script type="math/tex">exp(-t/\tau_c)</script><br />
-After intervention # of infections is:<br />
-<script type="math/tex">i_c(t)=( i_c^0 exp(r_c T_c) ) exp(-(t-T_c)/\tau_c)</script><br />
-Community transmission <script type="math/tex">\sim i_c(t) p(travel)</script><br />
-Poisson process, average number of infected communities can be estimated by integrating the two sub-processes (until and after <script type="math/tex">T_c</script>).<br />
-Calculate expected number of other communities infected by community <script type="math/tex">c</script>.<br />
-It’s assumed growth within one community is exponential until <script type="math/tex">T_c</script> (intervention), then exponential decay after <script type="math/tex">T_c</script>.</p>
-
-<h4 id="social-contacts-and-mixing-patterns-relevant-to-the-spread-of-infectious-diseases-plos-medicine-2008"><a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0050074">Social Contacts and Mixing Patterns Relevant to the Spread of Infectious Diseases (PLoS Medicine, 2008)</a></h4>
-
-<p>Estimates for mixing patterns.</p>
-
-<h4 id="an-investigation-of-transmission-control-measures-during-the-first-50-days-of-the-covid-19-epidemic-in-china-science-31-mar"><a href="https://science.sciencemag.org/content/early/2020/03/30/science.abb6105">An investigation of transmission control measures during the first 50 days of the COVID-19 epidemic in China (Science, 31 Mar)</a></h4>
-
-<p>Effect of Wuhan travel ban. Cities as variables in a SIR-like model, estimates on travel flows.</p>
-
-<h4 id="mers-basic-reproduction-number-biomed-eng-online-2017-1679"><a href="https://biomedical-engineering-online.biomedcentral.com/track/pdf/10.1186/s12938-017-0370-7">MERS basic reproduction number (BioMed Eng OnLine (2017) 16:79)</a></h4>
-
-<p>Authors fit SIR model to data, least-square fit, they find a <script type="math/tex">R_0</script> around 8 (!).
-How did they manage to suppress MERS?</p>
-
-<h4 id="uri-alon-adaptive-cyclic-exit-strategies-from-lockdown-medium-post-on-preprint-7-april"><a href="https://medium.com/@urialonw/adaptive-cyclic-exit-strategies-from-lockdown-to-suppress-covid-19-and-allow-economic-activity-4900a86b37c7">Uri Alon: Adaptive cyclic exit strategies from lockdown (Medium post on preprint, 7 April)</a></h4>
-
-<p>4 day work+10 day lockdown, antiphased for 2 groups of households.
-Review of deterministic, stochastic and also <em>network</em> SEIR model, different cyclic lockdown strategies.</p>
-
-<p>Antiphasing (staggering) uses the timeline of the disease and infectiousness:
-<img src="https://miro.medium.com/max/770/0*MWxESwBV56QMF9rc" alt="_config.yml" /></p>
-
-<h4 id="imperial-report-12-the-global-impact-of-covid-19-and-strategies-for-mitigation-and-suppression-26-march-2020"><a href="https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-26-COVID19-Report-12.pdf">Imperial: Report 12: The Global Impact of COVID-19 and Strategies for Mitigation and Suppression (26 March 2020)</a></h4>
-
-<p>Global estimates:</p>
-<ul>
-  <li><em>without intervention</em>: 7 billion infections and 40 millon deaths in 2020</li>
-  <li><em>mitigation</em>: with 60% reduction of social contacts, 20 million deaths avoided, all health care systems overwhelmed, in low income setting by factor of 25.</li>
-  <li><em>suppression</em>: 30-39 million deaths can be avoided (compared to no intervention strategy), depending on timing</li>
-</ul>
-
-<p>Household size/structure is critical, differences result in different <em>attack rates</em> by age groups. Number of hospital beds/1000 population from <a href="https://data.worldbank.org/indicator?tab=all">World Bank</a>.
-Estimates for 3 strategies of unmitigated, mitigation, mitigation+enhanced social distancing for elderly:</p>
-<ul>
-  <li>hospitalisation rate: <script type="math/tex">\sim</script> 3%, 2%, 2% (esimates for difference world regions on Fig 4).</li>
-  <li>critical care: 1%, 0.5%, 0.2%</li>
-  <li>deaths: 0.6-0.8%, 0.4%, 0.2%</li>
-</ul>
-
-<p>‘Despite higher rates of contact across older age-groups, we predict a lower incidence of severe
-disease, hospitalisation and deaths in lower income settings. This is driven by the younger average age
-of these populations.’ (Figure 5)</p>
-
-<p>Simulations for countries in different income groups: how ICU capacity would be exceeded under different suppression strategies and mitigation (Figure 6).
-Table 1 summarizes estimates by regions. Two suppression scenarios with 0.2 and 1.6 deaths/100K population/week.
-Unmitigated (world, total): 40M deaths, 1.9M deaths with suppression with trigger 0.2/100K pop/week, 10.4M with suppression with trigger 1.6/100K pop/week. Difference <script type="math/tex">\sim</script> 5-fold between two suppression strategies in most regions.</p>
-
-<p>Model is age-structured SIR-model incorporating demographic structure and rates of contact. Comorbidities not taken into account. Full model stochastic age-structured SEIR model.</p>
-
-<p>Excel spreadsheet with results <a href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Global-unmitigated-mitigated-suppression-scenarios.xlsx">available online</a>.
-<a href="https://zenodo.org/record/3730771#.XptEtZ9fir4">Covid-data used by Imperial models (cited by other publication)</a></p>
-
-<!---
-```python
-from scipy.integrate import odeint
-import numpy as np
-import matplotlib.pyplot as plt
-%matplotlib inline
-!pip install mpld3
-import mpld3
-mpld3.enable_notebook()
-```
---->
-
-<h4 id="macroeconomics-of-epidemics"><a href="https://www.kellogg.northwestern.edu/faculty/rebelo/htm/epidemics.pdf">Macroeconomics of epidemics</a></h4>
-
-<p>Interaction terms between economic variables and epidemiological ones are via consumption and work hour variables:</p>
-<ul>
-  <li>consumption: <script type="math/tex">\pi_1(S_t C_t^S) (I_t C_t^I)</script>, <script type="math/tex">C_t</script> consumption spending</li>
-  <li>work: <script type="math/tex">\pi_2(S_t N_t^S) (I_t N_t^I)</script>, <script type="math/tex">N_t</script> is work hours
-and a general term <script type="math/tex">\pi_3 S_t I_t</script></li>
-</ul>
-
-<p>Newly infected: <script type="math/tex">T_t</script>, therefore susceptibles: <script type="math/tex">S_{t+1}=S_t - T_t</script>.<br />
-Number of infected: <script type="math/tex">I_{t+1}=I_t + T_t - (\pi_r + \pi_d) I_t</script><br />
-Zoonotic introduction of virus into population: <script type="math/tex">I_0{=}\epsilon,\ S_0{=}1{-}\epsilon</script></p>
-
-<p>How do the epidemiological variables affect the economic ones?
-Pre-epidemic, the population is made up of identical agents optimizing the utility function:
-<script type="math/tex">u(c_t,n_t)=ln(c_t) - \frac{\phi}{2} n_t^2</script></p>
-
-<p>Following the outbreak we have the modified version of this utility function per compartments:
-<script type="math/tex">U_t^j</script>: ‘lifetime utility’ of agent <script type="math/tex">j</script> (<script type="math/tex">j=s,i,r</script>).</p>
-
-<p>Agents have the budget constraint: <script type="math/tex">(1+\mu_t)c_t^j=w_t \phi^j n_t^j + \Gamma_t</script>
-with <script type="math/tex">\mu_t</script> tax on consumption, <script type="math/tex">w_t</script> real wage, <script type="math/tex">\phi^j</script> labour productivity, <script type="math/tex">\phi^j=1</script> for <script type="math/tex">j=s,r</script> and <script type="math/tex">\phi^j{=}1</script> for <script type="math/tex">j{=}I</script>.</p>
-
-<p>‘Lifetime utility’ functions for compartments (subpopulations):</p>
-<ul>
-  <li>S (susceptible): <script type="math/tex">U^s_t=u(c_t,n_t) + \beta [(1-\tau_t)U^s_{t+1} + \tau_t U^i_{t+1} ]</script>, where <script type="math/tex">\tau_t</script> is the probability that a susceptible person gets infected. This probability linearly increases with consumption and work, and the utilities of being susceptible or infected in next time step are inversely and proportionally scaled with <script type="math/tex">\tau_t</script>.</li>
-  <li><script type="math/tex">U^i_t</script>: Similar lifetime utility function for infected people, but dependence only on recovery and death rates.</li>
-</ul>
-
-<p>First order conditions (first derivative equals 0) for consumption, work hours, <script type="math/tex">\tau_t</script> calculated with Lagrange multipliers. Market clearing equilibrium for goods and labor, balanced gov. budget assumed (clearly not technically true, is this important?).</p>
-
-<p>To model healthcare collapse, quadratic dependence of mortality rate on total number of infected.
-Treatment option introduces another parameter (<script type="math/tex">\delta_c</script>) from infected to recovered, this is probability of a cure discovered in a time period.
-Vaccine similarly modeled in utility function of susceptibles.</p>
-
-<p>Mapping epidem. parameters from Ferguson (2006) onto model parameters: approx. 1/3, 1/3, 1/3 transmission in household, general community, schools and workplaces. From BLS Time Use Survey authors estimate % of time in buying things, eating outside, this gives estimate for consumption-related transmission.<br />
-Number of students and workers multiplied by estimates of contacts in those environments. This gives estimate for workplace transmission.
-Labor productivity for infected people set to 80%, assuming 80% is asymptomatic (?) and those with symptoms do not work.<br />
-Peak of newly infected fraction of the population approximately 7% in the SIR (no utility functions) model.<br />
-In the SIR-Macro model infection impacts the economy by 1) reducing size of workforce 2) through the utility functions, households reduce their consumption and work hours. In turn, their reduced consumption/work decreases the probability of getting infected. Peak of infected lower (5%) at occurs later.
-Recession is much more severe due to reduced consumption/work. If mortality rate depends on healthcare being overwhelmed, households absorb this effect via utility function by reducing their economic activity, exacerbating recession.
-Vaccine or effective drugs have opposite effect, households cut back less.</p>
-
-<p>Containment measures are modeled as a tax on consumption. Optimization is done on how containment measures are introduced in time.
-The model assumes that infections cannot be completely suppressed if no vaccine, until population immunity achieved. Therefore early strong containment has high economic cost but followed still by an outbreak. In this framework containment should be escalated gradually as <script type="math/tex">I</script> grows. But China, Korea seems to show that suppression is possible. Costs of containment policies referred to as ‘Ramsey problem’: costs vs. maximizing social welfare.</p>
-
-<p>A ‘smart containment’ scenario is also modeled where it is assumed that planners know the health status of everyone and can maximimize overall social utility by blocking all infected from working. In this case there is no cost to containment, but this requires perfect knowledge. Ie. huge social returns on testing.</p>
-
-<h4 id="modeling-the-impact-of-social-distancing-testing-contact-tracing-and-household-quarantine-on-second-wave-scenarios-of-the-covid-19-epidemic-vespignani"><a href="https://cosnet.bifi.es/wp-content/uploads/2020/05/main.pdf">Modeling the impact of social distancing, testing, contact tracing and household quarantine on second-wave scenarios of the COVID-19 epidemic (Vespignani)</a></h4>
-
-<p>Agent based model of Boston area, 85K agents (64K adults, 21K children). Compartments distinguish between asymptomatic and symptomatic.
-Different reopening scenarios varying in testing and tracing efficiency, calculating peak incidences.
-Data is from 6 months of anonymized survey.
-Interactions modeled as a contact network with weights proportional to amount of time (normalised by total observation time) two agents spent in same location. 83K locations are defined (from Foursquare).
-Weights within households (inversely) proportional to size of household.
-Public space, schools, households three layers.</p>
-
-<!---###############################################################################################################################--->
-<!---###############################################################################################################################--->
-
-<h3 id="tools"><ins>Tools</ins></h3>
-
-<h4 id="interactive-modeling-shiny-app"><a href="https://alhill.shinyapps.io/COVID19seir/">Interactive modeling (Shiny app)</a></h4>
-<p>This is an ODE model assuming complete homogeneity. Three <strong>I</strong> populations with different rates of transmission.</p>
-
-<h4 id="shiny-app-of-sir-model-digital-contact-tracing-for-sars-cov-2"><a href="https://bdi-pathogens.shinyapps.io/covid-19-transmission-routes">Shiny app of SIR model (Digital contact tracing for SARS-CoV-2)</a></h4>
-
-<p>Adjustable parameters, generates graphs interactively.</p>
-
-<h4 id="seirsplus-python-package-for-stochastic-and-network-based-seir-model"><a href="https://github.com/ryansmcgee/seirsplus">SEIRSPLUS: Python package for stochastic and network based SEIR model</a></h4>
-
-<p>Python package to set up epidemiological models easily, used in Uri Alon study.</p>
-
-<h4 id="socialmixr-r-package-has-survey-data-on-mixing-patterns"><a href="https://github.com/sbfnk/socialmixr">SocialmixR R package has survey data on mixing patterns</a>.</h4>
-
-<p>Survey on France mixing patterns in <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133203">PloS ONE 2015</a>.</p>
-
-<!---##############################################################################################################################--->
-<!---##############################################################################################################################--->
-<!---##############################################################################################################################--->
-
-<h3 id="data-and-reports"><ins>Data and reports</ins></h3>
-
-<h4 id="secondary-attack-rate-and-super-spreading-events-for-sars-cov-2-lancet-27-febr"><a href="https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930462-1">Secondary attack rate and super-spreading events for SARS-CoV-2 (Lancet, 27 Febr)</a></h4>
-<p>Estimates for some ‘super-spreader’ events in table.</p>
-
-<h4 id="epidemiological-data-from-the-covid-19-outbreak-real-time-case-information"><a href="https://www.nature.com/articles/s41597-020-0448-0.pdf">Epidemiological data from the COVID-19 outbreak, real-time case information</a></h4>
-
-<h4 id="fundamental-principles-of-epidemic-spread-highlight-the-immediate-need-for-large-scale-serological-surveys-to-assess-the-stage-of-the-sars-cov-2-epidemic"><a href="https://www.medrxiv.org/content/10.1101/2020.03.24.20042291v1">Fundamental principles of epidemic spread highlight the immediate need for large-scale serological surveys to assess the stage of the SARS-CoV-2 epidemic</a></h4>
-
-<h4 id="testing-everyone-instead-of-contact-tracing-sten-linnarsson-karolinska"><a href="https://medium.com/@sten.linnarsson/to-stop-covid-19-test-everyone-373fd80eb03b">Testing everyone instead of contact tracing (Sten Linnarsson, Karolinska)</a></h4>
-
-<p>Medium note on a preprint.
-If <script type="math/tex">c\ p > (R_0-1)/(R_0-R_q)</script>, then exponential decay of outbreak. <script type="math/tex">R_0</script> ~ 2.4, <script type="math/tex">R_q</script> ~ 0.3 (Wuhan estimate).
-c: compliance to self-quarantine after testing positive<br />
-p: true positive rate</p>
-
-<p>Fastest test currently: RT-LAMP technology, 10-30 mins, based on RNA detection. Polymerase with reverse transcriptase activity amplifies viral RNA —&gt; H+ release —&gt; pH sensitive dye.
-But: it requires 65C incubation (tap water?).
-Alternatives:</p>
-<ul>
-  <li>rolling circle replication</li>
-  <li>in vitro viral replication assays</li>
-</ul>
-
-<p>Lockdown cost dwarfs testing cost.</p>
-
-<h4 id="nn-taleb-tail-risk-of-contagious-diseases"><a href="https://www.researchers.one/media/documents/282-m-corona2.pdf">NN Taleb: Tail Risk of Contagious Diseases</a></h4>
-
-<h4 id="why-everyone-should-wear-a-mask"><a href="https://medium.com/@Cancerwarrior/covid-19-why-we-should-all-wear-masks-there-is-new-scientific-rationale-280e08ceee71">Why everyone should wear a mask</a></h4>
-
-<h4 id="estimates-of-the-severity-of-coronavirus-disease-2019-a-model-based-analysis-lancet-30-march"><a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30243-7/fulltext">Estimates of the severity of coronavirus disease 2019: a model-based analysis (Lancet, 30 March)</a></h4>
-
-<p>Estimates on CFR and IFR from Hubei and China in general.</p>
-
-<h4 id="ihme-institute-for-health-metrics-and-evaluation-predictions-about-peaks"><a href="http://www.healthdata.org/covid/updates">IHME (Institute for Health Metrics and Evaluation) predictions about peaks</a></h4>
-<p>Preds made 05 April are for France 15K deaths by August, UK 66K.
-This was revised upwards to France (22.5K) and downwards for UK (37.5K).</p>
-
-<h4 id="preparedness-and-vulnerability-of-african-countries-against-importations-of-covid-19-a-modelling-study"><a href="https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930411-6">Preparedness and vulnerability of African countries against importations of COVID-19: a modelling study</a></h4>
-
-<p>Importation risk from China vs health care system capacity</p>
-
-<h4 id="ron-milo-covid-by-the-numbers-elife-updated-paper"><a href="https://elifesciences.org/articles/57309/">Ron Milo: COVID by the numbers (eLife, updated paper)</a></h4>
-
-<p>Estimates on size, mutation rate, genome of virus.
-Nucleotide identity with other coronaviruses:</p>
-<ul>
-  <li>bat CoV: 96%</li>
-  <li>pangolin CoV: 91%</li>
-  <li>SARS-CoV-1: 80%</li>
-  <li>MERS: 55%</li>
-  <li>common cold CoV: 50%</li>
-</ul>
-
-<h4 id="the-early-phase-of-the-covid-19-outbreak-in-lombardy-italy-20-mar-arxiv"><a href="https://arxiv.org/abs/2003.09320">The early phase of the COVID-19 outbreak in Lombardy, Italy (20 Mar, arXiv)</a></h4>
-
-<p>Early estimates on epidemic in Lombardy (hospitalisation, intensive care, deaths), arguing for aggressive containment strategies.</p>
-
-<h4 id="tomas-pueyo-the-hammer-and-the-dance-medium-19-march"><a href="https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56">Tomas Pueyo: The hammer and the dance (Medium, 19 March)</a></h4>
-
-<p>Uses simple SIR model to argue why suppression is needed, as mitigation leads to enormous death toll (some estimates on side-effects).
-Suppression buys time for producing equipment, maybe drugs.
-Not original research, but summarizes Imperial’s 16 March study.</p>
-
-<h4 id="cluster-of-covid-19-in-northern-france-a-retrospective-closed-cohort-study"><a href="https://www.medrxiv.org/content/10.1101/2020.04.18.20071134v1.full.pdf">Cluster of COVID-19 in northern France: A retrospective closed cohort study</a></h4>
-
-<p>Oise heavily exposed to SARS-CoV-2. Infection attack rate (IAR) from antibody detection.
-171/661 had antibodies, <strong>26% IAR</strong>, 0% IFR (fatality). Hospitalisation rate 5%.
-Anosmia (smell blindness) and ageusia (loss of taste) good predictors of infection.
-IAR for smokers 7% vs. 28% (smoking: 75% decrease in risk of infection). Asymptomatic infections 17%.
-High school: 41% IAR, among parents only 10%. 661 participants in total. Median age 37, 38% male. 40% age 15-17, only 2 people over 65. Secondary IAR in households 10-11% (both for parents and siblings). In Shenzhen similar study found 15%.
-ELISA antibody tests were also made on blood samples of blood donors in the area, 3% IAR.
-Oise was one of the early epicenters of the epidemic in France and these numbers are results of period before lockdown. Low prevalence numbers suggest herd immunity cannot be quickly established.</p>
-
-<h4 id="animal-passage-experiments-and-possibility-of-accidental-escape"><a href="https://www.newsweek.com/controversial-wuhan-lab-experiments-that-may-have-started-coronavirus-pandemic-1500503">Animal passage experiments and possibility of accidental escape</a></h4>
-
-<p>Description of animal passage experiments (with ferrets) since 2011. PREDICT program. No evidence of such experiments in Wuhan lab.</p>
 
   </div>
 
