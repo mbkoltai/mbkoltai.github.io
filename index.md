@@ -8,18 +8,15 @@ My name is Mihály B. Koltai and this is my website on my work in mathematical b
 
 # Interests
 
-Since 2010 I have been doing mathematical modelling in systems biology and infectious disease epidemiology.
+Since 2010 I have worked on mathematical modelling in systems biology and more recently infectious disease epidemiology.
 
-I did [my PhD](https://archiv.ub.uni-heidelberg.de/volltextserver/20847/) in computational/mathematical biology in Heidelberg (Germany), and I am currently a research fellow in the [Centre for the Mathematical Modelling of Infectious Diseases (CMMID)](https://www.lshtm.ac.uk/research/centres/centre-mathematical-modelling-infectious-diseases) at the London School of Hygiene & Tropical Medicine.
+I did [my PhD](https://archiv.ub.uni-heidelberg.de/volltextserver/20847/) in mathematical biology in Heidelberg, Germany.
+I am currently a research fellow in the [Centre for the Mathematical Modelling of Infectious Diseases (CMMID)](https://www.lshtm.ac.uk/research/centres/centre-mathematical-modelling-infectious-diseases) at the London School of Hygiene and Tropical Medicine.
 
-To read about my published work in systems biology [here](https://mbkoltai.github.io/papers/) and posts on related topics [here](https://mbkoltai.github.io/blog/).
+To see my published work in mathematical biology [click here](https://mbkoltai.github.io/papers/) and for posts on related topics [here](https://mbkoltai.github.io/blog/).
 
-From time to time I also write on economic and political topics [here](https://mbkoltai.github.io/ecopol), where I try to combine qualitative social theory with quantitative analysis.
+Occasionally I also write about economic and political topics [here](https://mbkoltai.github.io/ecopol) where I try to combine qualitative social theory with quantitative analysis.
 
 # CV
 
 Here is a recent [CV](images/CV.pdf).
-
-# Contact
-
-Contact me by email at kolmisi(at)gmail(dot)com
