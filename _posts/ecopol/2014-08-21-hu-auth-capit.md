@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hungary's authoritarian capitalism - a harbinger of the EU's future?
-tags: political-economy globalization climate-change complex-systems ecology epidemics covid19
+tags: political-economy globalization hungary
 excerpt: Hungary might show what's coming in the 'West'
 secondary: ecopol
 ---
