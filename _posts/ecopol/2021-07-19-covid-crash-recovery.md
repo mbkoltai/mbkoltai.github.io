@@ -7,16 +7,14 @@ secondary: ecopol
 mathjax: true
 ---
 
-1. [Introduction](#1-introduction)
-2. [The crash and the response](#2-the-crash-and-the-response)
+1. [The crash and the response](#2-the-crash-and-the-response)
       1. [Crash](#crash)
       1. [Response](#response)
-3. [What now?](#3-what-now)
+2. [What now?](#3-what-now)
       1. [Pandemic prospects](#pandemic-prospects)
       1. [Recovery](#recovery)
       1. [What about globalisation?](#what-about-globalisation)
 
-## <ins>1. Introduction</ins>
 
 Last February I wrote an [article](https://mbkoltai.github.io/illusion-globalisation/) on whether the shock of the pandemic could unravel the global economy and perhaps the whole system of globalisation. From long-term estimates of economic growth I tried to show that the globalisation of the last 30-40 years was on a different scale than previous cycles of expansion of global trade and finance.
 Since this huge and burst-like expansion of global trade and finance coincided with a similar expansion of private and public debt, I speculated if the system was more fragile than we might expect and might start to disintegrate as the pandemic hits it on a systemic level, not isolated to certain sectors or regions like in previous crises of the last decades. This disintegration has so far not happened. Before going into the reasons why, let us look at the scale of economic fallout from the pandemic and how governments have reacted in response.
@@ -100,7 +98,7 @@ So the likeliest scenario would be the climate crisis getting worse: more extrem
 The pandemic might be a dressing rehearsal in this sense as well: the precedent is now set for the state to drastically intervene and close down cities or even countries and ramp up surveillance. In the climate crisis moving populations and (probably quite violent) forms of migration control will likely become part of the normal functioning of the state. The climate emergency, higher fuel costs and more home-working might result in somewhat less travel and perhaps more regionalisation of the world economy.
 But travel and migration for highly qualified professionals and of course for the rich are unlikely to be controlled or reduced.  
 More broadly, cultural globalisation based on universal internet and smartphone use will likely continue, along with the spread of English. The secular decline in political participation (turnout at elections, party and union membership) will also likely proceed, further hollowing out Western liberal democracies, where the state will become more and more a technocratic and regulatory apparatus and the general population caring less about such things while an apolitical, individualistic and hedonistic consumer attitude becomes ever more deeply entrenched. This does not mean there will not be flare-ups of potentially violent forms of political protest, but these will likely be short-lived single-issue protest movements along the 'Gilets Jaunes' model:  ideologically heterogeneous and confused, operating by memes and generally anti-political ('they are all bastards' etc) without creating organisational structures - and therefore likely to be short-lived.  
-In countries where political pluralism has only weak roots in society there will likely be a move towards 'managed democracies' along the lines of Russia or Hungary, with a hegemonic government party adeptly using broadcast media and the internet as well as surveillance to keep opposition groups marginal enough so that open forms of repression is only occasionally needed. While one of these parties might fall, it is unlikely this will lead to a general upsurge of political participation, instead they will be replaced by another oligarchic group. Consent is bought by the state providing some level of stability and support for the least well-off outside the metropolitan centres along with cultural wars against the woke West and metropolitan liberals, while those within the city gates are allowed to pursue a lifestyle of Westernised consumption patterns or opt for emigration.
+In countries where political pluralism has only weak roots in society there will likely be a move towards 'managed democracies' along the lines of Russia or Hungary, with a hegemonic government party adeptly using broadcast media and the internet as well as surveillance to keep opposition groups marginal enough so that open forms of repression is only occasionally needed. While one of these parties might fall, it is unlikely this will lead to a general upsurge of political participation, instead they will be replaced by another oligarchic group. Consent is bought by the state providing some level of stability and support for the least well-off outside the metropolitan centres along with culture wars against the 'woke' West and metropolitan liberals, while those within the city gates are allowed to pursue a lifestyle of Westernised consumption patterns or opt for emigration.
 
 In the global South climate change might be truly catastrophic because of the effects of rising temperatures on both human physiology and agriculture. This will increase migratory pressure on the West, and in the intermediate zones around Europe especially (North Africa, Middle East). Repressive states in this buffer zone will likely get more funding from the West in exchange for holding back migrants by force.
 
