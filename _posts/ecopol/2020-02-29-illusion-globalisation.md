@@ -7,7 +7,7 @@ secondary: ecopol
 mathjax: true
 ---
 
-As the coronavirus is spreading through the world I have been gradually overcome by a feeling similar to the moment when an optical shift occurs. If you have looked at a [stereogram](https://en.wikipedia.org/wiki/Random_dot_stereogram), you know what I mean: out of random dots a three dimensional pattern emerges.
+As the coronavirus is spreading through the world I have been overcome by a feeling similar to an optical shift. If you have looked at a [stereogram](https://en.wikipedia.org/wiki/Random_dot_stereogram), you know what I mean: out of random dots a three dimensional pattern emerges.
 
 Almost irrespectively of political taste, most of us, at least in middle and high-income countries, have experienced these last decades of expanding world trade, cheapening travel, instantaneous communication and product availability as a never-ending ahistorical present, a normality taken for granted. In reality maybe it was a very fragile and unsustainable experiment, about to be swept away.
 
