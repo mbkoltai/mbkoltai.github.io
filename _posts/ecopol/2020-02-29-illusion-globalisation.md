@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 1990-2020, the false dawn of globalization?
-tags: political-economy globalization climate-change complex-systems ecology epidemics covid19
+tags: political-economy globalization climate-change complex-systems ecology epidemics covid19 growth
 excerpt: Climate change, epidemics and political chaos might end globalization
 secondary: ecopol
 mathjax: true
