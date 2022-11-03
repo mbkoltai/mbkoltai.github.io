@@ -8,7 +8,7 @@ My name is Mihaly Koltai, I am a research scientist and this is a website on my 
 
 # Interests
 
-Since 2010 I have worked on mathematical modelling of biological systems, applied to cell/molecular biology (systems biology) and to infectious diseases (infectious disease modelling).
+Since 2010 I have worked on mathematical modelling of biological systems, applied to molecular biology (systems biology) and to infectious diseases (infectious disease modelling).
 
 I obtained a PhD from Ruprecht-Karls-Universität Heidelberg (Germany) in 2012 with [a thesis on](https://archiv.ub.uni-heidelberg.de/volltextserver/20847/) mathematical modelling of microbial signalling pathways.
 I am currently a research fellow in the [Centre for the Mathematical Modelling of Infectious Diseases (CMMID)](https://www.lshtm.ac.uk/research/centres/centre-mathematical-modelling-infectious-diseases) at the London School of Hygiene and Tropical Medicine, working on transmission modelling of infectious diseases.
