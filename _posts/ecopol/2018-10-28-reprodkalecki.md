@@ -55,7 +55,7 @@ W_2 = (C_2 + dC_2) + (V_2 + dV_2) + u_2  \\
 W_3 = (C_3 + dC_3) + (V_3 + dV_3) + u_3
 \tag{2}\label{sectoral_outputs}$$  
 
-There is one more rearrangement (coming from Kalecki): defining gross profits $$P_i$$* as total output minus *ex post* variable capital, ie. $$P_i$$* $$= W_i - V_i$$\*. At this point it's not yet clear how to interpret gross profits meaningfully. *Ex post* variable capital will be spent in the next period of production from gross revenue, but this is also true for $$C_i$$\*. At any rate, if we reorder terms this way, adding $$C_i$$\* to $$u_i$$, we get the table with gross profits:
+There is one more rearrangement: defining gross profits $$P_i$$* as total output minus *ex post* variable capital, ie. $$P_i$$* $$= W_i - V_i$$\*. At this point it's not yet clear how to interpret gross profits meaningfully. *Ex post* variable capital will be spent in the next period of production from gross revenue, but this is also true for $$C_i$$\*. At any rate, if we reorder terms this way, adding $$C_i$$\* to $$u_i$$, we get the table with gross profits:
 
 
 | Departments | $$V_i$$*  | $$P_i$$* | Total output $$W_i$$ |
