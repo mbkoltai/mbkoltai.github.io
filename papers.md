@@ -10,7 +10,7 @@ See my [Google Scholar profile](https://scholar.google.com/citations?user=ykWF9b
 
 ## Talks at conferences
 
-**Exact solving of stochastic-continuous boolean models of biological networks (poster)**
+**Exact solving of stochastic-continuous Boolean models of biological networks (poster)**
 
 [*INCOME2019: Integrative pathway modeling in systems biology and systems medicine*](https://www.integrative-pathway-models.de/meetings/former-meetings/income-hackathon-2019/program/index.html)  
 18/03/2019, Berlin, Germany

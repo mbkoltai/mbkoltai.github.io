@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Economic growth 1990-2019 in the US, UK, Germany & Japan
+title: Sources of economic growth in the US, UK, Germany & Japan, 1990-2019
 tags: political-economy globalization growth gdp
-excerpt: Separating growth of population and productivity
+excerpt: Separating productivity from labour force expansion
 secondary: ecopol
 mathjax: true
 ---
 
-There has been much talk recently about the low growth rate in the UK economy since 2008 and how it must be increased. Often the discussion is about GDP growth, although some commentators and even politicians also referred to the underlying measure of GDP _per capita_ (or output per capita) as the more relevant metric to look at.
+There has been much talk recently about the low growth rate in the UK economy since 2008 and how it must be increased. Often the discussion is about GDP growth, although some commentators also referred to the underlying measure of GDP _per capita_ (or output per capita) as the more relevant metric to look at.
 GDP and its growth is a composite measure, because it is an outcome of (growth in) the size of the population, the number of people at work and labour productivity (output per hour).
 GDP growth can be decomposed to its components by a linear approximation. We can look at GDP growth as a result of GDP/capita and population growth or decompose it further into employment growth, growth in the annual workload and labour productivity. To make a comparison, I did this decomposition for four major high-income econonomies below, the US, UK, Germany and Japan.  
 
@@ -96,8 +96,8 @@ Let's again plot the relative share of these components in GDP growth as well:
 
 ![_config.yml]({{ site.baseurl }}/images/growth_comps/DEU_GBR_USA_JPN_growth_comps_mean_share_gdp.png)
 
-In summary, approximately 60% economic growth in the UK following the financial crisis was due to more people at work and not because of output per worker increasing which is arguably a better measure of wealth and technological progress. This is more demographic growth than economic growth per se.
-In discussions of how to increase the rate of economic growth - if that is desirable and possible at all, something I did not discuss here - it would be better to separate out these components of economic growth, not to mix up demographic growth (mainly due to immigration), more people at work and work actually becoming more productive.   
+In summary, approximately 60% of economic growth in the UK post-2008 was due to more people at work, and not an increase in output per worker. The latter is arguably a better measure of wealth and technological progress.
+In discussions of how to increase the rate of economic growth - if that is desirable and possible at all, something I did not discuss here - it would be helpful to separate its components as analysed above, not to mix up the expansion of the labour force (mainly due to immigration) with work actually becoming more productive.   
 \\
 <ins>Source code</ins>  
 Source code and data files for plots at [Github repo](https://github.com/mbkoltai/gdp-growth-decomp).
