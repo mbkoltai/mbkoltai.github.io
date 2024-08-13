@@ -1,4 +1,158 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-10T18:03:46+00:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Sources of economic growth in the US, UK, Germany &amp;amp; Japan, 1990-2019</title><link href="http://localhost:4000/decomposing-gdp-growth/" rel="alternate" type="text/html" title="Sources of economic growth in the US, UK, Germany &amp; Japan, 1990-2019" /><published>2022-10-29T00:00:00+01:00</published><updated>2022-10-29T00:00:00+01:00</updated><id>http://localhost:4000/decomposing-gdp-growth</id><content type="html" xml:base="http://localhost:4000/decomposing-gdp-growth/">&lt;p&gt;There has been much talk recently about the low growth rate in the UK economy since 2008 and how it must be increased. Often the discussion is about GDP growth, although some commentators also referred to the underlying measure of GDP &lt;em&gt;per capita&lt;/em&gt; (or output per capita) as the more relevant metric to look at.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-14T00:19:58+01:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Erosion of the FIDESZ vote share at the EP2024 elections - on the brink?</title><link href="http://localhost:4000/ep2024-hungary-datavis/" rel="alternate" type="text/html" title="Erosion of the FIDESZ vote share at the EP2024 elections - on the brink?" /><published>2024-08-10T00:00:00+01:00</published><updated>2024-08-10T00:00:00+01:00</updated><id>http://localhost:4000/ep2024-hungary-datavis</id><content type="html" xml:base="http://localhost:4000/ep2024-hungary-datavis/">&lt;p&gt;For the first time in a decade the governing FIDESZ-KDNP party (from here: FIDESZ/the government) saw its vote share fall substantially in the 2024 European Parliament elections (EP2024). There were a range of opinions how bad the results were for FIDESZ, if at all, and what the results portend for the 2026 national elections.
+Below, I present a number of graphs exploring how much the share and number of votes for FIDESZ changed compared to the last European elections, across different geographies in the country. Finally, I map the results onto parliamentary constituencies and analyse what they could mean in a national election&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#results-national level&quot;&gt;Results at the national level&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#results-by-individual-towns-and-cities&quot;&gt;Results by individual towns and cities&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#results-by-settlement-types&quot;&gt;Results aggregated by settlement types&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#results-by-parliamentary-constituencies&quot;&gt;Results by parliamentary constituencies&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;results-at-the-national-level&quot;&gt;&lt;ins&gt;Results at the national level&lt;/ins&gt;&lt;/h3&gt;
+
+&lt;p&gt;How did the government party perform on the elections on the national level?
+Figure 1 shows both the share and number of votes cast for FIDESZ, the (non-far-right) opposition bloc and the far-right Mi Hazánk party. I included in the opposition all parties that are explicitly or plausibly in favour of a change of government and that are not to the right of FIDESZ. I also removed business parties and some minor party only running in 2019 (Munkaspart).
+This then includes within the opposition the following parties EP2019 and EP2024:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;DK/MSZP/Parbeszed (either separate or in coalition)&lt;/li&gt;
+  &lt;li&gt;Jobbik&lt;/li&gt;
+  &lt;li&gt;LMP&lt;/li&gt;
+  &lt;li&gt;MMN (Mindenki Magyarországa Néppárt; only running in 2024)&lt;/li&gt;
+  &lt;li&gt;Momentum&lt;/li&gt;
+  &lt;li&gt;TISZA Part (only running in 2024)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The results are summarised in Figure 1 below.&lt;/p&gt;
+
+&lt;!--- $$ \delta GDP =  \delta pop + \delta GDPpp + \delta pop \times \delta GDPpp \approx \delta pop + \delta GDPpp
+\tag{3}\label{eq3}$$ --&gt;
+&lt;!--- REFERENCE. \ref{eq3}  --&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ep2024/FIDESZ_ellenzek_Mihaz_EP_2019_2024_orsz.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;figure-1-national-level-results-of-the-2019-and-2024-ep-elections-in-absolute-numbers-thousands-and-percentages-all-non-far-right-opposition-parties-were-grouped-in-one-column&quot;&gt;Figure 1: National level results of the 2019 and 2024 EP elections, in absolute numbers (thousands) and percentages. All non-far-right opposition parties were grouped in one column&lt;/h4&gt;
+
+&lt;p&gt;In 2019 FIDESZ had an absolute majority nationally at 52.6% of the vote, which fell to below 45% (44.8%) in the EP2024. Some commentators argued that these are still good results for the government because in absolute terms they went up, not down.
+This is true, in that the FIDESZ voting bloc expanded from 1.82 million to 2.05 million. However, this increase of approximately 200 thousand votes was outdone by the opposition’s 680 thousand vote bump, an almost 3.5x larger increase.&lt;br /&gt;
+This resulted in the combined opposition vote reaching 48.1% nationally, exceeding FIDESZ by about 150 thousand votes, or 3.3% of (valid) ballots cast. That the &lt;em&gt;non-far-right&lt;/em&gt; opposition’s (defining Jobbik as far-right 2008-2018 and Mi Hazánk since its inception) vote share were larger than (or equal to) FIDESZ’s last happened in the 2006 general elections. In fact, in all three EP elections since 2009 FIDESZ had more than half of the national vote, just as it did in all general elections since 2010, except in 2014 (technically 49.3% in 2018).&lt;br /&gt;
+Another notable development from 2019 to 2024 are the gains by the Mi Hazánk party, doubling their vote share to 6.7%, by 192 thousand votes.&lt;/p&gt;
+
+&lt;p&gt;How did this &lt;script type=&quot;math/tex&quot;&gt;\approx&lt;/script&gt;8% slump in the Fidesz vote share come about geographically?&lt;/p&gt;
+
+&lt;h3 id=&quot;results-by-individual-towns-and-cities&quot;&gt;&lt;ins&gt;Results by individual towns and cities&lt;/ins&gt;&lt;/h3&gt;
+
+&lt;p&gt;To analyse changes of the electoral map, I grouped all settlements, towns and cities into the following groups, by the number of &lt;em&gt;eligible voters&lt;/em&gt; (ie. these numbers are adults only, which is &lt;script type=&quot;math/tex&quot;&gt;\approx&lt;/script&gt;80% of the total population):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;villages with less than 1000 voters&lt;/li&gt;
+  &lt;li&gt;villages/small towns with 1000 to 5000 voters&lt;/li&gt;
+  &lt;li&gt;small towns with 5000 to 10,000 voters&lt;/li&gt;
+  &lt;li&gt;towns/smaller cities with 10,000 to 20,000 voters&lt;/li&gt;
+  &lt;li&gt;smaller/medium cities with 20,000 to 40,000 voters&lt;/li&gt;
+  &lt;li&gt;cities with 40,000 to 70,000 voters&lt;/li&gt;
+  &lt;li&gt;large cities with more than 70,000 voters&lt;/li&gt;
+  &lt;li&gt;Budapest districts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Figure 2 shows how the vote share of FIDESZ changed from EP2019 to 2024 across all these geographies. The blue colour shows a &lt;em&gt;fall&lt;/em&gt; in the government vote share, whereas red (using red here instead of orange because of its better visibility) shows those settlements/towns/cities where its vote share went up.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ep2024/indiv_telep/FIDESZKDNP_szazalek_szint_2019_2024_indiv_telep.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;figure-2-fidesz-vote-share-in-2019-and-2024-arrowhead2024-base2019-in-all-settlements-of-hungary-blue-color-shows-a-fall-in-the-vote-share&quot;&gt;Figure 2: FIDESZ vote share in 2019 and 2024 (arrowhead=2024, base=2019) in all settlements of Hungary. Blue color shows a fall in the vote share&lt;/h4&gt;
+
+&lt;p&gt;The FIDESZ vote share went down in every town/city with more than 10 thousand voters, with the single exception of Ózd.
+To see the extent of the change in the vote share, Figure 3 shows only the percentage difference between EP2019 and 2024.
+Even among towns of 5 to 10 thousand voters there are only two where the government vote share increased (Nagyatád, Tiszavasvári); and not very many small towns of 1 to 5 thousand where it did either (93 out of 943 towns).
+The government vote share fell typically by 5-10% in larger towns and cities, but in smaller towns of 1 to 10 thousand voters often by even more.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ep2024/indiv_telep/FIDESZKDNP_szazalek_valtozas_2019_2024_indiv_telep.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;figure-3-fidesz-vote-share-in-2019-and-2024-in-all-settlements-of-hungary-02019-result-blue-color-shows-a-fall-in-the-vote-share&quot;&gt;Figure 3: FIDESZ vote share in 2019 and 2024 in all settlements of Hungary (0=2019 result). Blue color shows a fall in the vote share&lt;/h4&gt;
+
+&lt;p&gt;On Figure 2 it is also apparent that among towns with &amp;lt;20 thousand voters FIDESZ still had an absolute majority. The colour coding in Figure 4 shows the towns/cities where the government vote share was still above 50% in 2024 (shown in red).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ep2024/indiv_telep/FIDESZKDNP_szazalek_szint_2019_2024_indiv_telep_colorcode_absztobbs.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;figure-4-fidesz-vote-share-in-2019-to-2024-arrowhead2024-base2019-in-all-settlements-of-hungary-blue-color-shows-vote-share-in-2024-under-50-red-above-50&quot;&gt;Figure 4: FIDESZ vote share in 2019 to 2024 (arrowhead=2024, base=2019) in all settlements of Hungary. Blue color shows vote share in 2024 under 50%, red above 50%&lt;/h4&gt;
+
+&lt;p&gt;There were no towns/cities in EP2024 with more than 20 thousand voters where FIDESZ received more than 50% of the vote. The largest towns where they still have an absolute majority are ones with 10-20 thousand voters.&lt;/p&gt;
+
+&lt;p&gt;What will decide parliamentary constituencies is the &lt;em&gt;difference&lt;/em&gt; between the government and the opposition voting blocs. Figure 5 shows how the FIDESZ vs. opposition vote share &lt;em&gt;difference&lt;/em&gt; changed from 2019 to 2024 (positive values meaning a larger percentage of votes for FIDESZ). In red color are those settlements where FIDESZ still maintained an advantage over the opposition voting bloc. There were only three cities with 20+ thousand voters where this was the case (Ózd, Kiskunhalas, Zalagerszeg [with a tiny difference]). Major cities with previously large FIDESZ majorities such as Debrecen, Gyor, Kecskemet, Szombathely, Sopron, Kaposvar had in 2024 more people voting for (non-far-right) opposition parties than for the government. In already opposition-majority areas like Budapest, Szeged, Pecs the opposition bloc’s edge over the government increased further.&lt;br /&gt;
+On the other hand, in towns/villages with less than 5 thousand voters FIDESZ still mostly dominated, whereas in the medium range of towns with 5 to 20 thousand voters it is a mix.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ep2024/indiv_telep/fideszellenzek_2019_2024_valtozas_szazalekkulonb_indiv_telep_colorcode_fideszelony.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;figure-5-difference-between-the-fidesz-vote-share-and-that-of-the-opposition-in-2019-and-2024-arrowhead2024-base2019-blue-color-shows-the-opposition-getting-more-votes-in-2024-than-fidesz-negative-value-means-the-opposition-had-a-higher-vote-share-than-fidesz&quot;&gt;Figure 5: difference between the FIDESZ vote share and that of the opposition in 2019 and 2024 (arrowhead=2024, base=2019). Blue color shows the opposition getting more votes in 2024 than FIDESZ. Negative value means the opposition had a higher vote share than FIDESZ&lt;/h4&gt;
+
+&lt;p&gt;Even in smaller towns of 1 to 10 thousand voters most of the arrows seem to point leftward, meaning a shrinking FIDESZ advantage (red arrows in Figure 5) or towns tipping over to the opposition (blue arrows in Figure 5).&lt;/p&gt;
+
+&lt;p&gt;Figure 6 shows the same results by colour coding the results by the &lt;em&gt;direction&lt;/em&gt; of the change.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ep2024/indiv_telep/fideszellenzek_2019_2024_valtozas_szazalekkulonb_indiv_telep.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;figure-6-difference-between-the-fidesz-vote-share-and-that-of-the-opposition-in-2019-and-2024-arrowhead2024-base2019-blue-color-shows-the-opposition-improving-its-result-since-2019-against-fidesz-negative-value-means-the-opposition-had-a-higher-vote-share-than-fidesz&quot;&gt;Figure 6: difference between the FIDESZ vote share and that of the opposition in 2019 and 2024 (arrowhead=2024, base=2019). Blue color shows the opposition improving its result since 2019 against FIDESZ. Negative value means the opposition had a higher vote share than FIDESZ&lt;/h4&gt;
+
+&lt;p&gt;There are only three towns/cities over 10 thousand where FIDESZ improved its result &lt;em&gt;compared to the opposition&lt;/em&gt; (Ózd, Komlo, Oroszlany), and even in 5-10 thousand towns only four. There were numerous villages on the other hand where FIDESZ managed to do this.&lt;/p&gt;
+
+&lt;p&gt;Next I summarise these shifts by aggregating results of individual towns by these categories.&lt;/p&gt;
+
+&lt;!--hello $$\label{hellolabel}$$REF $$\ref{hellolabel}$$--&gt;
+
+&lt;h3 id=&quot;results-aggregated-by-settlement-types&quot;&gt;&lt;ins&gt;Results aggregated by settlement types&lt;/ins&gt;&lt;/h3&gt;
+
+&lt;p&gt;Figure 7 shows results if we aggregate them from individual settlements, again grouping them by number of voters. The total number of votes increased from 2019 to 2024, on the national level going from 3.41 to 4.57 million. Of this 1.16 million increase approximately 680 thousand went to the non-far-right opposition, 220 thousand to FIDESZ and 190 thousand to Mi Hazánk.&lt;/p&gt;
+
+&lt;p&gt;However, these shifts looked very different at the level of different geographies. In absolute number of votes FIDESZ stood still (or marginally went down) in Budapest, and towns/cities with more than 5000 voters. As the opposition managed to increase its vote numbers this meant falling vote shares for FIDESZ, now going below 50% in all categories above the 5000 voter threshold, and falling below 40% in the category of 40+ thousand cities, where the opposition voting bloc went over 50%.
+In the category of towns with 5 to 10 thousand voters FIDESZ still maintained a thin relative majority, while it still maintains an absolute majority in the category of &amp;lt;5 thousand towns and villages. The FIDESZ mobilisation seemed to have worked only in this latter small town/village category, though interestingly it coincided with a comparable mobilisation of opposition voters as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ep2024/aggreg_telep_tipus/fidesz_ellenzek_2019_2024_aggreg_nvalpolg_kateg.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;figure-7-vote-share-and-number-of-votes-for-fidesz-and-the-opposition-in-2019-and-2024-arrowhead2024-base2019-by-settlement-type-number-of-voters&quot;&gt;Figure 7: Vote share and number of votes for FIDESZ and the opposition in 2019 and 2024 (arrowhead=2024, base=2019), by settlement type (number of voters).&lt;/h4&gt;
+
+&lt;p&gt;Figure 8 shows only the &lt;em&gt;changes&lt;/em&gt; in the absolute and relative size of voting blocs, also showing the far-right Mi Hazánk increasing both its vote tally and vote share (+3-4%) across all categories.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ep2024/aggreg_telep_tipus/fidesz_ellenzek_mihazank_2019_2024_valtozas_aggreg_nvalpolg_kateg.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;figure-8&quot;&gt;Figure 8&lt;/h4&gt;
+
+&lt;p&gt;We can also observe that the FIDESZ vote share fell by 6 to 10% across the board, while the non-far-right opposition’s went up by 2 to 5%.&lt;/p&gt;
+
+&lt;p&gt;It is also interesting to look at the &lt;em&gt;number&lt;/em&gt; of settlements where there is a government or opposition majority, shown on Figure 9.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ep2024/aggreg_telep_tipus/fidesz_ellenzek_aggreg_nvalpolg_kateg_krit_ntelep.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;figure-9-change-in-the-vote-share-and-number-of-votes-for-fidesz-the-opposition-and-mi-hazánk-from-2019-to-2024-02019-result-by-settlement-type-number-of-voters&quot;&gt;Figure 9: Change in the vote share and number of votes for FIDESZ, the opposition and Mi Hazánk from 2019 to 2024 (0=2019 result), by settlement type (number of voters).&lt;/h4&gt;
+
+&lt;p&gt;Among settlements with more than 20 thousand voters (including Budapest districts), there were none in 2024 with a FIDESZ absolute majority and only three with a relative FIDESZ majority. In 17/59 towns with 10 to 20 thousand voters, FIDESZ still maintained a relative majority (8/59 absolute).
+Going down by population size we have a growing proportion of towns with a relative (absolute) FIDESZ majority, becoming overwhelming in villages:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;5 to 10 thousand voters: 64 out of 111 (38/111)&lt;/li&gt;
+  &lt;li&gt;1 to 5 thousand voters: 749 out of 943 (558/943)&lt;/li&gt;
+  &lt;li&gt;less than 1 thousand voters: 1787 out of 1995 (1570/1995)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The number of settlements with either a relative or absolute government majority went down in every category.&lt;/p&gt;
+
+&lt;p&gt;The main question is: how would these results convert into parliamentary constituencies?&lt;/p&gt;
+
+&lt;h3 id=&quot;results-by-parliamentary-constituencies&quot;&gt;&lt;ins&gt;Results by parliamentary constituencies&lt;/ins&gt;&lt;/h3&gt;
+
+&lt;p&gt;There are 106 parliamentary constituencies (OEVK) in Hungary. I mapped the above results from individual settlements onto these 106 electoral districts, shown on Figure 10.  I took the non-far-right opposition parties as one block and calculating the percentage &lt;em&gt;difference&lt;/em&gt; between the FIDESZ and opposition voting blocs, with the colour coding showing districts going for FIDESZ (orange) or the opposition (blue).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ep2024/OEVK_fidesz_ellenzek_szazalek kulonbs.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;figure-10-ep2024-results-mapped-onto-parliamentary-constituencies-oevk-showing-the-percentage-difference-numbers-in-parenthesis-positive-values-are-fidesz-majorities-between-fidesz-and-opposition-votes-orange-circles-show-fidesz-majorities-blue-ones-opposition&quot;&gt;Figure 10: EP2024 results mapped onto parliamentary constituencies (OEVK), showing the percentage difference (numbers in parenthesis, positive values are FIDESZ majorities) between FIDESZ and opposition votes. Orange circles show FIDESZ majorities, blue ones opposition.&lt;/h4&gt;
+
+&lt;p&gt;With the proportions of the EP2024 all Budapest parliamentary districts had opposition majorities, along with most of Pest. There is a varied picture for the other counties, with city-dominated districts having strong opposition majorities, and vice versa for village-dominated districts.&lt;/p&gt;
+
+&lt;p&gt;This is however assuming that the opposition block will indeed be one bloc, ie. the opposition will field a single candidate in every parliamentary constituency. Even if the FIDESZ vs opposition proportions of EP2024 were to hold, this is a (very) optimistic assumption from the point of view of the opposition, that might well not be true in 2026. So what level of integration would the opposition need to get this result, and what number of constituencies would they get at different levels of integration/splintering? This is what is shown on Figure 11, with the x-axis showing the percentage of EP2024 votes for the opposition going for a single candidate and the y-axis the resulting number of constituencies for the two blocs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ep2024/OEVK_fidesz_ellenzek_scan.png&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;figure-11-constituencies-gained-by-fidesz-vs-the-opposition-as-a-function-of-the--of-the-opposition-vote-in-ep2024-going-for-a-single-candidate&quot;&gt;Figure 11: constituencies gained by FIDESZ vs the opposition as a function of the % of the opposition vote in EP2024 going for a single candidate&lt;/h4&gt;
+
+&lt;p&gt;If the opposition were to field a single candidate everywhere &lt;em&gt;and&lt;/em&gt; retain all its EP2024 votes, it could win a slim majority of constituencies, 54 vs 52. The largest opposition party in the 2024 elections, TISZA, received &lt;script type=&quot;math/tex&quot;&gt;\approx&lt;/script&gt;65% of the opposition vote. With this level of integration FIDESZ could still win about 4/5th of constituencies, despite receiving 150 thousand (3.3% of the total) less votes than the non-far-right opposition.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;&lt;ins&gt;Conclusion&lt;/ins&gt;&lt;/h3&gt;
+
+&lt;p&gt;The above is only a numerical and visual analysis, not a political one. It analyses the results in 2024 and when it maps them onto parliamentary constituencies to make a projection (not a prediction) it assumes that the proportions of the EP2024 would hold.
+In reality, this latter assumption is unlikely to hold as the political situation in Hungary is very volatile and both the government and the main opposition party will try hard to change the situation. Nevertheless, what the analysis does show is that while FIDESZ suffered a substantial erosion of its voting bloc, even with this result, it would easily win a parliamentary election, if the opposition voting bloc is &lt;em&gt;at all&lt;/em&gt; splintered. Even if the main opposition party managed to absorb the entire non-far-right voting bloc &lt;em&gt;and&lt;/em&gt; the EP2024 proportions were to hold, it could get only a slim majority of parliamentary constituencies.&lt;br /&gt;
+The Hungarian electoral system is two-tier, so another 93 seats will be allocated through the national list, where FIDESZ usually gets another 200-250 thousand votes from Hungarians living in neighbouring countries, that could wipe out the 3% edge that the opposition had nationally at EP2024. This would mean a roughly equal number of seats from the national list for the two blocs, but also 5-8 seats for the Mi Hazánk party if they clear the 5% threshold, as they did in 2024. So the EP2024 results, even assuming &lt;em&gt;complete&lt;/em&gt; integration of the opposition voting bloc, could well end up in a hung parliament, with Mi Hazánk potentially in a kingmaker position.
+Since the numbers will likely change it makes no sense to dwell more on the numerical projections. The main unknown of the EP2024 election is where one million FIDESZ voters from 2022 disappeared: 3.06 million voted for FIDESZ in the 2022 general elections, but only 2.05 million in 2024, while the opposition managed to marginally increase its vote tally by 66 thousand, despite this being an EP election only.&lt;/p&gt;
+
+&lt;p&gt;The question will be if the one million ‘disappeared’ FIDESZ voters can be re-mobilised by the government. If to a large extent yes, then they would almost certainly win in 2026. If no, or only in smaller part, then the question would be if the opposition reached its upper limit in 2024 or there is a reservoir of voters who did not turn out in 2024 but could in 2026 &lt;em&gt;or&lt;/em&gt; - even better for the opposition - there are 2022 FIDESZ voters that it could win over. The analysis above suggests that for the opposition to win it would very likely need more voters than the 2.2 million it had in EP2024. The town- and constituency-level analysis above suggests what could be districts where FIDESZ is particularly vulnerable, having thin majorities and having suffered major losses compared to its previous results. Whether the opposition will be able to exploit that remains to be seen.&lt;/p&gt;
+
+&lt;p&gt;&lt;ins&gt;Source code&lt;/ins&gt;&lt;br /&gt;
+Source code and data files for plots at &lt;a href=&quot;https://github.com/mbkoltai/EP_valasztasok&quot;&gt;Github repo&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="politics" /><category term="hungary" /><category term="elections" /><category term="data-visualisation" /><summary type="html">Enough for a change of government?</summary></entry><entry><title type="html">Sources of economic growth in the US, UK, Germany &amp;amp; Japan, 1990-2019</title><link href="http://localhost:4000/decomposing-gdp-growth/" rel="alternate" type="text/html" title="Sources of economic growth in the US, UK, Germany &amp; Japan, 1990-2019" /><published>2022-10-29T00:00:00+01:00</published><updated>2022-10-29T00:00:00+01:00</updated><id>http://localhost:4000/decomposing-gdp-growth</id><content type="html" xml:base="http://localhost:4000/decomposing-gdp-growth/">&lt;p&gt;There has been much talk recently about the low growth rate in the UK economy since 2008 and how it must be increased. Often the discussion is about GDP growth, although some commentators also referred to the underlying measure of GDP &lt;em&gt;per capita&lt;/em&gt; (or output per capita) as the more relevant metric to look at.
 GDP and its growth is a composite measure, because it is an outcome of (growth in) the size of the population, the number of people at work and labour productivity (output per hour).
 GDP growth can be decomposed to its components by a linear approximation. We can look at GDP growth as a result of GDP/capita and population growth or decompose it further into employment growth, growth in the annual workload and labour productivity. To make a comparison, I did this decomposition for four major high-income econonomies below, the US, UK, Germany and Japan.&lt;/p&gt;
 
@@ -963,322 +1117,4 @@ It is this formulation of the problem that I turn in the next post.&lt;/p&gt;
 
 &lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;Andrew Trigg, Marxian reproduction schema: money and aggregate demand in a capitalist economy. Routledge, 2009&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="marxian-economics" /><category term="demand" /><category term="monetary-circuit" /><summary type="html">Monetary realization of profits by a multiplier effect</summary></entry><entry><title type="html">Expanded reproduction and the Kalecki principle</title><link href="http://localhost:4000/reprodkalecki/" rel="alternate" type="text/html" title="Expanded reproduction and the Kalecki principle" /><published>2018-10-28T00:00:00+01:00</published><updated>2018-10-28T00:00:00+01:00</updated><id>http://localhost:4000/reprodkalecki</id><content type="html" xml:base="http://localhost:4000/reprodkalecki/">&lt;p&gt;In this post, following &lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;Trigg’s book&lt;/a&gt; on reproduction schemas, I will explore how the work of Michał Kalecki contributes to answering the question where the demand for the surplus part of total output comes from.
-One can explore in more detail how surplus value is allocated by its use: some of it is used for expanding the capital stock (&lt;script type=&quot;math/tex&quot;&gt;dC_i&lt;/script&gt;), some for expanding the workforce &lt;script type=&quot;math/tex&quot;&gt;dV_i&lt;/script&gt;) and some for capitalist consumption (&lt;script type=&quot;math/tex&quot;&gt;u_i&lt;/script&gt;), the subscript &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; referring to departments.
-Also, Department 2 can be disaggregated into two departments, &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; producing consumption goods (&lt;script type=&quot;math/tex&quot;&gt;CoG&lt;/script&gt;) for capitalists and &lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt; producing &lt;script type=&quot;math/tex&quot;&gt;CoG&lt;/script&gt; for workers.
-Using the same table as in the previous post, with &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; split into two and surplus value allocated by use, we have the table:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Constant capital &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Variable capital &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Surplus value &lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;~&lt;/th&gt;
-      &lt;th&gt;~&lt;/th&gt;
-      &lt;th&gt;Total output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;u_i&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;dC_i&lt;/script&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;script type=&quot;math/tex&quot;&gt;dV_i&lt;/script&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;4000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;400&lt;/td&gt;
-      &lt;td&gt;100&lt;/td&gt;
-      &lt;td&gt;6000&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;550&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;275&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;220&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;36 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td&gt;18 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td&gt;1100&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;950&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;475&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;380&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;63 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td&gt;31 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td&gt;1900&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;5500&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1750&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
-      &lt;td&gt;150&lt;/td&gt;
-      &lt;td&gt;9000&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;em&gt;Table 1: Three-sector (expanded) reproduction schema&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt; column is the amount of constant capital used up in the given period of production, in this case 5500. The columns that represent surplus value/product are different from the columns &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;, because the former are the final outputs from this period of production, and they are not used as inputs in this period. Since there is accumulation (the capital stock is incremented), the output of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (&lt;script type=&quot;math/tex&quot;&gt;W_1=6000&lt;/script&gt;) is more than the total input of &lt;em&gt;MoP&lt;/em&gt;, &lt;script type=&quot;math/tex&quot;&gt;C_1=5500&lt;/script&gt;.
-If however we add to &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt; the additional units of constant capital (&lt;script type=&quot;math/tex&quot;&gt;dC_i&lt;/script&gt;), and do the same with &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;dV_i&lt;/script&gt;, creating ‘&lt;em&gt;ex post&lt;/em&gt;’ variables &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;* and &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;*, then the row sums and columns match:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;*&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;*&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Capitalist consumption &lt;script type=&quot;math/tex&quot;&gt;u_i&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Total output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;4400&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;586 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;293 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;220&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1013 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;506 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;380&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;9000&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;em&gt;Table 2: ‘ex post’ three-sector reproduction schema (quantities at the end of period)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The columns &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt; I would interpret as the inputs of &lt;em&gt;MoP&lt;/em&gt; and labour (workforce/wages) in the &lt;em&gt;next&lt;/em&gt; period, respectively, whereas &lt;script type=&quot;math/tex&quot;&gt;u_i&lt;/script&gt; is the part of the profit received in sector &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; that is spent on consumption by owners, instead of accumulation. So &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;* and &lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt; are mixed variables in the sense that some of it is the input in the current period and some the increment added in the current, but used in the next period.
-We have the equalities of outputs by sector to outputs grouped by use:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;W_1 = C_1&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ C_2&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ C_3&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;= C_1 + dC_1 + C_2 + dC_2 + C_3 + dC_3&lt;/script&gt;&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;W_2 = u_1 + u_2 + u_3&lt;/script&gt;&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;W_3 = V_1&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ V_2&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ V_3&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;= V_1 + dV_1 + V_2 + dV_2 + V_3 + dV_3&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;\tag{1}\label{outputs_use}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Expressed in words:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;W_1&lt;/script&gt;, total output of &lt;em&gt;MoP&lt;/em&gt; (means of production) = &lt;em&gt;MoP&lt;/em&gt; needed for replacement and accumulation (&lt;script type=&quot;math/tex&quot;&gt;C_i + dC_i&lt;/script&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;W_2&lt;/script&gt;, total output of &lt;em&gt;CoG&lt;/em&gt; for capitalists = profit extracted by capitalists, spent on personal consumption.&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;W_3&lt;/script&gt;, total output of &lt;em&gt;CoG&lt;/em&gt; for workers (replacement and new workforce)’ = total wage bill (of workers in &lt;em&gt;new&lt;/em&gt; period, including newly hired workers)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!--- It is the parts of the output used for accumulation, $$dC + dV$$ whose realization (source of demand) is not trivial. $$V$$ and $$C$$ are spent at the beginning of the period and the demand for $$u$$ comes from the private wealth of the owners (that they then receive as profits for their companies). If the entire surplus part is in the form of capitalist consumption $$u$$, then there is no demand problem: all the demand for $$u$$ comes from owners' private funds, which then they receive back as the profit of their companies in $$D_2$$. But how about expanded reproduction?   --&gt;
-
-&lt;p&gt;We also have the sectoral equalities:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;W_1 = (C_1 + dC_1) + (V_1 + dV_1) + u_1 \\
-W_2 = (C_2 + dC_2) + (V_2 + dV_2) + u_2  \\
-W_3 = (C_3 + dC_3) + (V_3 + dV_3) + u_3
-\tag{2}\label{sectoral_outputs}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;There is one more rearrangement: defining gross profits &lt;script type=&quot;math/tex&quot;&gt;P_i&lt;/script&gt;* as total output minus &lt;em&gt;ex post&lt;/em&gt; variable capital, ie. &lt;script type=&quot;math/tex&quot;&gt;P_i&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;= W_i - V_i&lt;/script&gt;*. At this point it’s not yet clear how to interpret gross profits meaningfully. &lt;em&gt;Ex post&lt;/em&gt; variable capital will be spent in the next period of production from gross revenue, but this is also true for &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;*. At any rate, if we reorder terms this way, adding &lt;script type=&quot;math/tex&quot;&gt;C_i&lt;/script&gt;* to &lt;script type=&quot;math/tex&quot;&gt;u_i&lt;/script&gt;, we get the table with gross profits:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;*&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;P_i&lt;/script&gt;*&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Total output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;4900&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;293 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;806 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;506 &lt;script type=&quot;math/tex&quot;&gt;\frac{2}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1393 &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{3}&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;7100&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;9000&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;em&gt;Table 3: Kalecki’s interpretation of the three-sector schema (ex post variable capital and gross profits)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;This is the same as grouping the terms in the output as:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;W_i = (V_i + dV_i) + (C_i + dC_i + u_i)&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;An equality becomes visible from this table, namely that the surplus of &lt;em&gt;CoG&lt;/em&gt; that &lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt; produces (surplus in the sense that it is in excess of the wage bill of its own workers) is equal to the wage bill of the other two sectors:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;P_3 = V_1&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ V_2&lt;/script&gt;*
-&lt;script type=&quot;math/tex&quot;&gt;\tag{3}\label{wage_goods_gross_profit}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;If we then add the gross profits of the other two sectors, &lt;script type=&quot;math/tex&quot;&gt;P_1&lt;/script&gt;* and &lt;script type=&quot;math/tex&quot;&gt;P_2&lt;/script&gt;*, we get:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;P_1 + P_2 + P_3 = V_1&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ P_1 + V_2&lt;/script&gt;* &lt;script type=&quot;math/tex&quot;&gt;+ P_2&lt;/script&gt;&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;P = W_1 + W_2&lt;/script&gt;&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;\tag{4}\label{total_gross_profit_outputs_equal}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;This means that total gross profit in the economy is equal to the (gross) output of the sector producing capital goods (&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;) and capitalist &lt;em&gt;CoG&lt;/em&gt; (&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;). Since gross profit is defined as all spending on capital goods (replacement + incremental) and capitalist consumption, and these are supplied by sectors 1 and 2.&lt;/p&gt;
-
-&lt;p&gt;Trigg writes that Kalecki interpreted this ‘&lt;em&gt;ex post&lt;/em&gt; identity’ as following: ‘&lt;em&gt;[T]he money expenditures by capitalists upon consumption and investment that generate the resultant volume of profits&lt;/em&gt;’, or shortly ‘&lt;em&gt;capitalists earn what they spend&lt;/em&gt;’.
-&lt;!---Again, on a first sight, to me this sounds like causation backwards in time, as those investments and consumption expenditures can only happen at the end of the current period or at the beginning of the next one, once the owners have already received these profits.--&gt;
-It is easy to see that ‘capitalists earn what they spend’ is true in the case of simple reproduction where the personal consumption of owners provides the demand for the surplus product, and returns to them as profit, but it less clear for expanded reproduction. In expanded reproduction some of the surplus product takes the form of new constant capital and new workers, so the demand must come from advanced amounts of money by the ‘departments’ (companies) themselves, not capitalists as consumers. To clearly see how this is possible, I need to write explicitly the sequence of payments/sales and production.&lt;/p&gt;
-
-&lt;p&gt;For now I’ll go on with the derivation as in the book. The three-sector schema can be represented in an input-output table as below:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (inputs)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; (inputs)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt; (inputs)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;dC&lt;/script&gt; (addit. constant)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;dV&lt;/script&gt; (addit. variable)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt; (capit. consumption)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt; (total output)&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (outputs by use)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;4000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;550&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;950&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;500&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;275&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;475&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;150&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;S_i&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;275&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;475&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1750&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;6000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1100&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1900&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;9000&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;As in the &lt;a href=&quot;https://mbkoltai.github.io/reprod_multipl2&quot;&gt;previous post&lt;/a&gt; (new/net) investment is classified here as final demand (it is not an input in this period of production), specifically as additional constant (&lt;script type=&quot;math/tex&quot;&gt;dC&lt;/script&gt;) and variable (&lt;script type=&quot;math/tex&quot;&gt;dV&lt;/script&gt;) capital. Total personal consumption of capitalists is in column &lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt;, under &lt;script type=&quot;math/tex&quot;&gt;S&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;The equality of Equation \eqref{wage_goods_gross_profit} reads in terms of the I/O table as:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;P_3 = W_3-(V_3+dV_3)=(V_1+dV_1)+(V_2 + dV_2)&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;The wage terms are &lt;script type=&quot;math/tex&quot;&gt;V_i = X_{3i}&lt;/script&gt;, so then the equation is:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;W_3 - (X_{33} + dV_3) = (X_{31} + dV_1) + (X_{32} + dV_2)&lt;/script&gt;&lt;br /&gt;
-and since none of the output of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; can take the form of &lt;script type=&quot;math/tex&quot;&gt;dV&lt;/script&gt;, therefore &lt;script type=&quot;math/tex&quot;&gt;dV_1 = dV_2 = 0&lt;/script&gt;, then this simplifies to:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;W_3 - (X_{33} + dV_3) = X_{31} + X_{32}
-\tag{5}\label{use_output_3}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;In other words, all the output of &lt;script type=&quot;math/tex&quot;&gt;D_3&lt;/script&gt; not used by itself for replacement and expansion of its workforce is, logically, used by the other two sectors.
-Also, it is more clearly visible that&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;S = u + dC + dV = u + I
-\tag{6}\label{surplus_investm_capcons}&lt;/script&gt;&lt;br /&gt;
-ie. surplus value (total profit) = capitalist consumption + investment (accumulation).
-This equation is not the same as \eqref{total_gross_profit_outputs_equal}, because there gross profit P* is defined as all spending on capital goods and capitalist consumption, whereas here it is only the part spent on accumulation (&lt;em&gt;new&lt;/em&gt; capital goods and labour) and capitalist consumption.
-This is interpreted by Trigg/Kalecki as ‘&lt;em&gt;capitalists cast money into circulation as aggregate demand on capitalist consumption and investment, which is realized as surplus value&lt;/em&gt;’ (p. 35). (There is again a nagging question of causality here left unanswered.)&lt;/p&gt;
-
-&lt;p&gt;This can be rendered as a ‘Kalecki multiplier’, by defining capitalist consumption &lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt; as made up of a constant part &lt;script type=&quot;math/tex&quot;&gt;B_0&lt;/script&gt; and a part dependent on profits as a fraction &lt;script type=&quot;math/tex&quot;&gt;\lambda&lt;/script&gt; of total profits &lt;script type=&quot;math/tex&quot;&gt;P&lt;/script&gt;:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;u = B_0 + \lambda P
-\tag{7}\label{kalecki_u_lambda}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Where &lt;script type=&quot;math/tex&quot;&gt;P&lt;/script&gt; is total profits. Since &lt;script type=&quot;math/tex&quot;&gt;P = u + I&lt;/script&gt;,&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;P = B_0 + \lambda P + I
-\tag{8}\label{eq8}&lt;/script&gt;&lt;br /&gt;
-and therefore
-&lt;script type=&quot;math/tex&quot;&gt;P = \frac{B_0 + I}{1-\lambda}
-\tag{9}\label{eq9}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Equation \eqref{eq9} represents a ‘multiplier’ relationship between total profits and total ‘exogenous’ expenditure by capitalists (&lt;script type=&quot;math/tex&quot;&gt;B_0 + I&lt;/script&gt;: constant capitalist consumption + new investment), with a multiplier effect of &lt;script type=&quot;math/tex&quot;&gt;1/(1-\lambda)&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;Since profits consist of capitalist consumption and investment, the components of the final demand &lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt; (&lt;a href=&quot;http://mbkoltai.github.io/reprod_multipl2/&quot;&gt;see previous post&lt;/a&gt;, Equations 5 and 13), this can be substituted into the macro-income (‘Keynesian’) multiplier &lt;script type=&quot;math/tex&quot;&gt;y = \frac{1}{e}f&lt;/script&gt;, yielding&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;y = \frac{1}{e (1-\lambda)} (B_0 + I)
-\tag{10}\label{kalecki_multipl}&lt;/script&gt;
-
-&lt;p&gt;So that the ‘Keynesian’ multiplier now has the terms &lt;script type=&quot;math/tex&quot;&gt;e&lt;/script&gt;, the share of surplus value, and the ‘Kalecki multiplier’ &lt;script type=&quot;math/tex&quot;&gt;1/(1-\lambda)&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;\lambda&lt;/script&gt; being the fraction of profits spent on consumption.&lt;/p&gt;
-
-&lt;p&gt;Once more, we have a macro-identity here, but the question of whether the necessary amount of money is there to sell all outputs (and if yes where does it come from) in the case of expanded reproduction still hangs over these identities. This question can be addressed in the framework of the monetary circuit, which I will discuss in my next post.&lt;/p&gt;
-
-&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;Andrew Trigg, Marxian reproduction schema: money and aggregate demand in a capitalist economy. Routledge, 2009&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="classical-political-economy" /><category term="marxian-economics" /><category term="kalecki" /><category term="demand" /><summary type="html">Profits = investment + capitalist consumption?</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;Andrew Trigg, Marxian reproduction schema: money and aggregate demand in a capitalist economy. Routledge, 2009&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="marxian-economics" /><category term="demand" /><category term="monetary-circuit" /><summary type="html">Monetary realization of profits by a multiplier effect</summary></entry></feed>
