@@ -12,7 +12,7 @@ Below, I present a number of graphs exploring how much the share and number of v
 
 1. [Results at the national level](#results-national level)
 1. [Results by individual towns and cities](#results-by-individual-towns-and-cities)
-1. [Results aggregated by settlement types](#results-by-settlement-types)
+1. [Results aggregated by settlement types](#results-aggregated-by-settlement-types)
 1. [Results by parliamentary constituencies](#results-by-parliamentary-constituencies)
 1. [Conclusion](#conclusion)
 
@@ -78,7 +78,7 @@ On Figure 2 it is also apparent that among towns with <20 thousand voters FIDESZ
 
 There were no towns/cities in EP2024 with more than 20 thousand voters where FIDESZ received more than 50% of the vote. The largest towns where they still have an absolute majority are ones with 10-20 thousand voters.
 
-What will decide parliamentary constituencies is the _difference_ between the government and the opposition voting blocs. Figure 5 shows how the FIDESZ vs. opposition vote share _difference_ changed from 2019 to 2024 (positive values meaning a larger percentage of votes for FIDESZ). In red color are those settlements where FIDESZ still maintained an advantage over the opposition voting bloc. There were only three cities with 20+ thousand voters where this was the case (Ózd, Kiskunhalas, Zalagerszeg [with a tiny difference]). Major cities with previously large FIDESZ majorities such as Debrecen, Gyor, Kecskemet, Szombathely, Sopron, Kaposvar had in 2024 more people voting for (non-far-right) opposition parties than for the government. In already opposition-majority areas like Budapest, Szeged, Pecs the opposition bloc's edge over the government increased further.  
+What will decide parliamentary constituencies is the _difference_ between the government and the opposition voting blocs. Figure 5 shows how the FIDESZ vs. opposition vote share _difference_ changed from 2019 to 2024 (positive values meaning a larger percentage of votes for FIDESZ). In red color are those settlements where FIDESZ still maintained an advantage over the opposition voting bloc. There were only three cities with 20+ thousand voters where this was the case (Ózd, Kiskunhalas, Zalagerszeg [with a tiny difference]). Major cities with previously large FIDESZ majorities such as Debrecen, Győr, Kecskemét, Szombathely, Sopron, Kaposvár had in 2024 more people voting for (non-far-right) opposition parties than for the government. In already opposition-majority areas like Budapest, Szeged, Pécs the opposition bloc's edge over the government increased further.  
 On the other hand, in towns/villages with less than 5 thousand voters FIDESZ still mostly dominated, whereas in the medium range of towns with 5 to 20 thousand voters it is a mix.
 
 ![_config.yml]({{ site.baseurl }}/images/ep2024/indiv_telep/fideszellenzek_2019_2024_valtozas_szazalekkulonb_indiv_telep_colorcode_fideszelony.png)
@@ -110,7 +110,7 @@ In the category of towns with 5 to 10 thousand voters FIDESZ still maintained a 
 Figure 8 shows only the _changes_ in the absolute and relative size of voting blocs, also showing the far-right Mi Hazánk increasing both its vote tally and vote share (+3-4%) across all categories.
 
 ![_config.yml]({{ site.baseurl }}/images/ep2024/aggreg_telep_tipus/fidesz_ellenzek_mihazank_2019_2024_valtozas_aggreg_nvalpolg_kateg.png)
-#### Figure 8
+#### Figure 8: Change in the vote share and number of votes for FIDESZ and the opposition in 2019 and 2024 (0=2019 result), by settlement type (number of voters).  
 
 We can also observe that the FIDESZ vote share fell by 6 to 10% across the board, while the non-far-right opposition's went up by 2 to 5%.
 
@@ -152,7 +152,7 @@ In reality, this latter assumption is unlikely to hold as the political situatio
 The Hungarian electoral system is two-tier, so another 93 seats will be allocated through the national list, where FIDESZ usually gets another 200-250 thousand votes from Hungarians living in neighbouring countries, that could wipe out the 3% edge that the opposition had nationally at EP2024. This would mean a roughly equal number of seats from the national list for the two blocs, but also 5-8 seats for the Mi Hazánk party if they clear the 5% threshold, as they did in 2024. So the EP2024 results, even assuming _complete_ integration of the opposition voting bloc, could well end up in a hung parliament, with Mi Hazánk potentially in a kingmaker position.
 Since the numbers will likely change it makes no sense to dwell more on the numerical projections. The main unknown of the EP2024 election is where one million FIDESZ voters from 2022 disappeared: 3.06 million voted for FIDESZ in the 2022 general elections, but only 2.05 million in 2024, while the opposition managed to marginally increase its vote tally by 66 thousand, despite this being an EP election only.
 
-The question will be if the one million 'disappeared' FIDESZ voters can be re-mobilised by the government. If to a large extent yes, then they would almost certainly win in 2026. If no, or only in smaller part, then the question would be if the opposition reached its upper limit in 2024 or there is a reservoir of voters who did not turn out in 2024 but could in 2026 _or_ - even better for the opposition - there are 2022 FIDESZ voters that it could win over. The analysis above suggests that for the opposition to win it would very likely need more voters than the 2.2 million it had in EP2024. The town- and constituency-level analysis above suggests what could be districts where FIDESZ is particularly vulnerable, having thin majorities and having suffered major losses compared to its previous results. Whether the opposition will be able to exploit that remains to be seen.
+The question will be if the one million 'disappeared' FIDESZ voters can be re-mobilised by the government. If to a large extent yes, then they would almost certainly win in 2026. If no, or only in small part, then the question would be if the opposition reached its upper limit in 2024 or there is a reservoir of voters who did not turn out in 2024 but could in 2026 _or_ - even better for the opposition - there are 2022 FIDESZ voters that it could win over. The analysis above suggests that for the opposition to win it would very likely need more voters than the 2.2 million it had in EP2024. The town- and constituency-level analysis above suggests what could be districts where FIDESZ is particularly vulnerable, having thin majorities and having suffered major losses compared to its previous results. Whether the opposition will be able to exploit that remains to be seen.
 
 <ins>Source code</ins>  
 Source code and data files for plots at [Github repo](https://github.com/mbkoltai/EP_valasztasok).
