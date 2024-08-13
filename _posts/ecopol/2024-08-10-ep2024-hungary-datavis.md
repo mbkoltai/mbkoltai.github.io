@@ -117,7 +117,7 @@ We can also observe that the FIDESZ vote share fell by 6 to 10% across the board
 It is also interesting to look at the *number* of settlements where there is a government or opposition majority, shown on Figure 9.
 
 ![_config.yml]({{ site.baseurl }}/images/ep2024/aggreg_telep_tipus/fidesz_ellenzek_aggreg_nvalpolg_kateg_krit_ntelep.png)
-#### Figure 9: Number of settlements where 1) FIDESZ got more votes than the opposition in 2019 and 2024 (arrowhead) 2) FIDESZ received more than 50% of the vote in 2019 (arrow base) and 2024 (arrowhead) 3) the difference in vote share between FIDESZ and the opposition went down (opposition improved its result) from 2019 to 2024 4) FIDESZ vote share went down from 2019 to 2024
+#### Figure 9: Number of settlements where 1) FIDESZ got more votes than the opposition in 2019 and 2024 (arrowhead) 2) FIDESZ received more than 50% of the vote in 2019 (arrow base) and 2024 (arrowhead) 3) the difference in vote share between FIDESZ and the opposition went down (opposition improved its result) from 2019 to 2024 4) FIDESZ vote share went down from 2019 to 2024. Panels correspond to settlements within a given settlement category (number of voters)
 
 Among settlements with more than 20 thousand voters (including Budapest districts), there were none in 2024 with a FIDESZ absolute majority and only three with a relative FIDESZ majority. In 17/59 towns with 10 to 20 thousand voters, FIDESZ still maintained a relative majority (8/59 absolute).
 Going down by population size we have a growing proportion of towns with a relative (absolute) FIDESZ majority, becoming overwhelming in villages:
