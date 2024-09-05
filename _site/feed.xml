@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-05T23:51:56+01:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Erosion of the FIDESZ vote share in the EP2024 elections - on the brink?</title><link href="http://localhost:4000/ep2024-hungary-datavis/" rel="alternate" type="text/html" title="Erosion of the FIDESZ vote share in the EP2024 elections - on the brink?" /><published>2024-08-10T00:00:00+01:00</published><updated>2024-08-10T00:00:00+01:00</updated><id>http://localhost:4000/ep2024-hungary-datavis</id><content type="html" xml:base="http://localhost:4000/ep2024-hungary-datavis/">&lt;p&gt;For the first time in a decade the governing FIDESZ-KDNP party (from here: FIDESZ/the government) saw its vote share fall substantially in the 2024 European Parliament elections (EP2024). There were a range of opinions how bad the results were for FIDESZ, if at all, and what the results portend for the 2026 national elections.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-06T00:16:58+01:00</updated><id>http://localhost:4000/</id><title type="html">Mihály Koltai</title><subtitle>[&quot;personal website&quot;]</subtitle><entry><title type="html">Testing grids in Markdown</title><link href="http://localhost:4000/test/" rel="alternate" type="text/html" title="Testing grids in Markdown" /><published>2024-09-05T00:00:00+01:00</published><updated>2024-09-05T00:00:00+01:00</updated><id>http://localhost:4000/test</id><content type="html" xml:base="http://localhost:4000/test/">&lt;p&gt;this is a test&lt;/p&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .grid-item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class=&quot;grid-container&quot;&gt;
+    &lt;div class=&quot;grid-item&quot;&gt;
+        &lt;a href=&quot;https://your-link1.com&quot;&gt;Section 1&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-item&quot;&gt;
+        &lt;a href=&quot;https://your-link2.com&quot;&gt;Section 2&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-item&quot;&gt;
+        &lt;a href=&quot;https://your-link3.com&quot;&gt;Section 3&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-item&quot;&gt;
+        &lt;a href=&quot;https://your-link4.com&quot;&gt;Section 4&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="tools" /><category term="github-blog" /><summary type="html">no serious content here</summary></entry><entry><title type="html">Erosion of the FIDESZ vote share in the EP2024 elections - on the brink?</title><link href="http://localhost:4000/ep2024-hungary-datavis/" rel="alternate" type="text/html" title="Erosion of the FIDESZ vote share in the EP2024 elections - on the brink?" /><published>2024-08-10T00:00:00+01:00</published><updated>2024-08-10T00:00:00+01:00</updated><id>http://localhost:4000/ep2024-hungary-datavis</id><content type="html" xml:base="http://localhost:4000/ep2024-hungary-datavis/">&lt;p&gt;For the first time in a decade the governing FIDESZ-KDNP party (from here: FIDESZ/the government) saw its vote share fall substantially in the 2024 European Parliament elections (EP2024). There were a range of opinions how bad the results were for FIDESZ, if at all, and what the results portend for the 2026 national elections.
 Below, I present a number of graphs exploring how much the share and number of votes for FIDESZ changed compared to the last European elections, across different geographies in the country. Finally, I map the results onto parliamentary constituencies and analyse what they could mean in a national election&lt;/p&gt;
 
 &lt;ol&gt;
@@ -153,7 +198,7 @@ Since the numbers will likely change, it makes no sense to dwell more on the num
 The town- and constituency-level analysis above suggests what could be districts where FIDESZ is particularly vulnerable, having thin majorities and having suffered major losses compared to its previous results. Whether the opposition will be able to exploit that remains to be seen.&lt;/p&gt;
 
 &lt;p&gt;&lt;ins&gt;Source code&lt;/ins&gt;&lt;br /&gt;
-Source code and data files for plots at &lt;a href=&quot;https://github.com/mbkoltai/EP_valasztasok&quot;&gt;Github repo&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="politics" /><category term="hungary" /><category term="elections" /><category term="data-visualisation" /><summary type="html">Getting closer, but probably not yet enough</summary></entry><entry><title type="html">Sources of economic growth in the US, UK, Germany &amp;amp; Japan, 1990-2019</title><link href="http://localhost:4000/decomposing-gdp-growth/" rel="alternate" type="text/html" title="Sources of economic growth in the US, UK, Germany &amp; Japan, 1990-2019" /><published>2022-10-29T00:00:00+01:00</published><updated>2022-10-29T00:00:00+01:00</updated><id>http://localhost:4000/decomposing-gdp-growth</id><content type="html" xml:base="http://localhost:4000/decomposing-gdp-growth/">&lt;p&gt;There has been much talk recently about the low growth rate in the UK economy since 2008 and how it must be increased. Often the discussion is about GDP growth, although some commentators also referred to the underlying measure of GDP &lt;em&gt;per capita&lt;/em&gt; (or output per capita) as the more relevant metric to look at.
+Source code and data files for plots at &lt;a href=&quot;https://github.com/mbkoltai/EP_valasztasok&quot;&gt;Github repo&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="politics" /><category term="hungary" /><category term="elections" /><category term="data-visualisation" /><summary type="html">Getting closer, but not enough yet</summary></entry><entry><title type="html">Sources of economic growth in the US, UK, Germany &amp;amp; Japan, 1990-2019</title><link href="http://localhost:4000/decomposing-gdp-growth/" rel="alternate" type="text/html" title="Sources of economic growth in the US, UK, Germany &amp; Japan, 1990-2019" /><published>2022-10-29T00:00:00+01:00</published><updated>2022-10-29T00:00:00+01:00</updated><id>http://localhost:4000/decomposing-gdp-growth</id><content type="html" xml:base="http://localhost:4000/decomposing-gdp-growth/">&lt;p&gt;There has been much talk recently about the low growth rate in the UK economy since 2008 and how it must be increased. Often the discussion is about GDP growth, although some commentators also referred to the underlying measure of GDP &lt;em&gt;per capita&lt;/em&gt; (or output per capita) as the more relevant metric to look at.
 GDP and its growth is a composite measure, because it is an outcome of (growth in) the size of the population, the number of people at work and labour productivity (output per hour).
 GDP growth can be decomposed to its components by a linear approximation. We can look at GDP growth as a result of GDP/capita and population growth or decompose it further into employment growth, growth in the annual workload and labour productivity. To make a comparison, I did this decomposition for four major high-income econonomies below, the US, UK, Germany and Japan.&lt;/p&gt;
 
@@ -970,152 +1015,4 @@ Finally, since the price of total output is growing, there needs to be more mone
 
 &lt;p&gt;&lt;a href=&quot;https://www.jstor.org/stable/40470553&quot;&gt;Giussani: The Determination of Prices of Production, International Journal of Political Economy, Volume 21, 1991&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://journals.sagepub.com/doi/10.1177/030981688803500106&quot;&gt;Kliman, McGlone: The transformation non-problem and the non-transformation problem, Capital &amp;amp; Class, Vol 12, Issue 2, 1988&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://www.tandfonline.com/doi/pdf/10.1080/095382599107165&quot;&gt;Kliman, McGlone: A Temporal Single-system Interpretation of Marx’s Value Theory, Review of Political Economy, Volume 11, Number 1, 1999&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="classical-political-economy" /><category term="marxian-economics" /><category term="transformation-problem" /><category term="nonlinear-dynamics" /><summary type="html">With labor values and equilibrium</summary></entry><entry><title type="html">The monetary circuit (I)</title><link href="http://localhost:4000/monetary_circuit/" rel="alternate" type="text/html" title="The monetary circuit (I)" /><published>2018-11-18T00:00:00+00:00</published><updated>2018-11-18T00:00:00+00:00</updated><id>http://localhost:4000/monetary_circuit</id><content type="html" xml:base="http://localhost:4000/monetary_circuit/">&lt;!---&quot;*Central to this approach is an  application  of  the  Kalecki  principle,  that capitalists  earn  what  they
-spend; the question being how an injection of money can circulate around the economy and return back to the capitalists.*&quot;
-(Trigg)---&gt;
-
-&lt;p&gt;In the &lt;a href=&quot;https://mbkoltai.github.io/reprodkalecki/&quot;&gt;previous post&lt;/a&gt; I discussed the so-called ‘Kalecki’ principle, which, in my understanding, is an equality between gross profits on the one side and spending on capital goods and capitalist consumption on the other, summarized in the phrase ‘&lt;em&gt;capitalists earn what they spend&lt;/em&gt;’. This statement implies a causal relationship, which - it seems to me - is not demonstrated by these algebraic relationship. To show that this spending &lt;em&gt;creates&lt;/em&gt; (enables/leads to) these profits, one needs a sequential (dynamic) description of how the initial amount spent circulates through the economic system.&lt;/p&gt;
-
-&lt;p&gt;A framework to do this is the so-called monetary circuit. The theory of the monetary circuit was developed by A. Graziani and others and shows how an initial injection of money circulates through the economy and return back to the owners of businesses and how much money is needed to close the circuit completely, with all output sold. In the model by Graziani there is a distinction between workers, capitalists and banks. Banks give credit to firms, so they can finance their outlays on wages, since this step has to precede production and sale. Money in this model is credit money, that has symbolic value, but no intrinsic value, ie. it is not a commodity.
-The starting point of the circuit is banks giving credit to firms to hire workers, who then produce commodities. Assuming that workers don’t save, wages are spent on consumer goods (&lt;em&gt;CoG&lt;/em&gt;), returning the money to firms. As the last step of the circuit, firms can then repay their debts, destroying the credit money they originally borrowed and the circuit is closed.&lt;br /&gt;
-So the circuit is simply: banks –&amp;gt; firms –&amp;gt; workers –&amp;gt; firms –&amp;gt; banks.&lt;/p&gt;
-
-&lt;p&gt;In this description it is only wages that have to be advanced by companies, as it does not concern itself with the purchase of capital goods, that is considered to be internal to firms. For this reason I find this description too restrictive and almost tautological. For me, the main problem is to show how the entire output can be ‘realized’ (purchased by money), even if there is an increment of the capital stock and/or the labour force (extended reproduction) and not all surplus takes the form of &lt;em&gt;CoG&lt;/em&gt; (consumption goods) that are consumed by owners at the end of the period of production.
-Starting from a two-sector model and output grouped into gross wages and gross profit we can draw up the following table:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Departments&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Wages (&lt;script type=&quot;math/tex&quot;&gt;V_i&lt;/script&gt;*)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Profits (&lt;script type=&quot;math/tex&quot;&gt;P_i&lt;/script&gt;*)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Output &lt;script type=&quot;math/tex&quot;&gt;W_i&lt;/script&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (&lt;em&gt;MoP&lt;/em&gt;)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;V_1&lt;/script&gt;*&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;P_1&lt;/script&gt;*&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_1&lt;/script&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;  (&lt;em&gt;CoG&lt;/em&gt;)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;V_2&lt;/script&gt;*&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;P_2&lt;/script&gt;*&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;W_2&lt;/script&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;Table 1: Two sectors, gross profit&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;If we subsume capitalist consumption under wages (and there is no government sector or foreign trade), then the surplus of the &lt;em&gt;CoG&lt;/em&gt; sector (&lt;script type=&quot;math/tex&quot;&gt;P_2&lt;/script&gt;) matches the wage bill of the capital goods sector, ie.&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;P_2^* = V_1^*
-\tag{1}\label{p2_equals_v1}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;If in this model only wages are advanced, then the sum of advanced money equals the output of the &lt;em&gt;CoG&lt;/em&gt; sector:
-&lt;script type=&quot;math/tex&quot;&gt;M = V_1^* + V_2^* = P_2^* + V_2^* = W_2
-\tag{2}\label{advanced_wages}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;But in this case it would seem there is not enough money to buy up the entire output, the capital goods sector does not have the funds to reimburse the banks and the circuit cannot be closed.
-A simple answer to this is a ‘single swap’ approach (&lt;a href=&quot;https://academic.oup.com/cje/article-abstract/28/2/173/1681265&quot;&gt;Nell, 2004&lt;/a&gt;), that a larger sum &lt;script type=&quot;math/tex&quot;&gt;M=W_1+W_2&lt;/script&gt; is advanced, so that all output can be bought up in a single monetary circuit. But this makes things too easy, resulting in the buildup of extra funds in the capital goods sector when it receives revenue from the consumer goods sector equal to its wage bill, but it also borrowed that amount from banks. Putting aside this too general assumption, &lt;a href=&quot;https://academic.oup.com/cje/article-abstract/28/2/173/1681265&quot;&gt;EJ Nell (2004)&lt;/a&gt; worked out one solution based on multiplier effects within departments, that I discuss next.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Nell’s solution: realizing the total output through multiplier effects&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The ‘single swap’ solution just mentioned leaves no place for transactions taking place sequentially, with a given amount of money that is smaller than &lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt;, circulating between households (workers and capitalists as consumers) and firms in the two sectors.
-The ‘mutual exchange’ between sectors is key, as firms earn income by selling outputs to firms in the other (and in the same) sector.
-&lt;a href=&quot;https://academic.oup.com/cje/article-abstract/28/2/173/1681265&quot;&gt;EJ Nell (2004)&lt;/a&gt;’s solution based on mutual exchanges starts with the following assumptions:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Production is defined in distinct periods.&lt;/li&gt;
-  &lt;li&gt;In each period of production all capital goods are completely used up (100% depreciation).&lt;/li&gt;
-  &lt;li&gt;Consumption and capital goods are both carried forward from the previous period, so that at the start of the period, there are inventories of capital and consumption goods ‘inherited’ from the previous period&lt;/li&gt;
-  &lt;li&gt;Production in the current period is to replace items (&lt;em&gt;CoG&lt;/em&gt; and &lt;em&gt;MoP&lt;/em&gt;) used up by firms and consumers in the current period&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The starting point in this model is the advance of wages in the capital goods sector (&lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;), but it could be the consumer goods sector too, the point is just to initiate the process. This injection of money then circulates through the system in a sequence of stages, ‘realizing’ (enabling the purchase of) the output:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Stage 1&lt;/strong&gt;: &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; borrows money from banks, pays wage bill to workers of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;. Workers spend this money to purchase consumption goods from &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Stage 2&lt;/strong&gt;: After selling consumption goods to workers of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; pays wages to its own workers, who spend it on &lt;em&gt;CoG&lt;/em&gt;, so that the money returns back to &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, to be spent on capital goods from &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Stage 3&lt;/strong&gt;: From the sales of &lt;em&gt;MoP&lt;/em&gt; to &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; firms can advance wages and purchase their own capital goods.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Schematically, the sequence is:&lt;br /&gt;
-banks -(0)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; -(1)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; workers -(2)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; -(3)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; workers -(4)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; -(5)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; -(6)-&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; &amp;amp; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; workers
-&lt;script type=&quot;math/tex&quot;&gt;\tag{3}\label{v1_sequence}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Now we can see a &lt;em&gt;causal&lt;/em&gt; multiplier effect, as the initial injection of money as advanced wages by &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;V_1&lt;/script&gt;, leads to the realization of commodities of a (multiple times) higher total value.
-&lt;script type=&quot;math/tex&quot;&gt;V_1&lt;/script&gt; &lt;em&gt;CoG&lt;/em&gt; is sold in step (2), then again &lt;script type=&quot;math/tex&quot;&gt;V_2&lt;/script&gt; of &lt;em&gt;CoG&lt;/em&gt; in step (4), and &lt;script type=&quot;math/tex&quot;&gt;P_1&lt;/script&gt; (?) of &lt;em&gt;MoP&lt;/em&gt; sold in step (5), and more &lt;em&gt;MoP&lt;/em&gt; in step (6) when firms in &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; buy &lt;em&gt;MoP&lt;/em&gt; from firms within their sector.
-The flow of money can be seen on this figure I created:&lt;br /&gt;
-&lt;img src=&quot;/images/v1_moneyflow_circuit.PNG&quot; alt=&quot;_config.yml&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Figure 1: the flow of money through both departments&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The red arrows are transactions where a part of the output is ‘realized’ (purchased).&lt;/p&gt;
-
-&lt;p&gt;Total money output is:&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;W_T = V_1^* + V_2^* + P_1^* + P_2^* = 2 V_1^* + V_2^* + P_1^*
-\tag{4}\label{total_money_output}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://books.google.fr/books?id=T_Q8D-ewMkEC&quot;&gt;Nell (1998)&lt;/a&gt; describes a multiplier relationship of the wages paid out in &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; on the wages of &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;: in the first round this effect is &lt;script type=&quot;math/tex&quot;&gt;V_1^*&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;w n_2 V1^*&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;(w n_2)^2 V1^*&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;n_2&lt;/script&gt; being the labour coefficient (share of labour in total output) and &lt;script type=&quot;math/tex&quot;&gt;w&lt;/script&gt; the wage rate, so that, as &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-w n_2 &lt; 1 %]]&gt;&lt;/script&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;V_2^* = V_1^* \sum_{i=0}^\infty (w n_2)^i = \frac{1}{1 - w n_2} V_1^*
-\tag{5}\label{v1_v2_multiplier}&lt;/script&gt;
-One thing not clear to me is why one would say that in the first round &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; pays out &lt;script type=&quot;math/tex&quot;&gt;V_1^*&lt;/script&gt; as wages, and only from the second &lt;script type=&quot;math/tex&quot;&gt;w n_2 V_1^*&lt;/script&gt;, and in later cycles &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; always &lt;script type=&quot;math/tex&quot;&gt;(w n_2)^i V_1^*&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;Nell also assumes two subsectors in &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; (capital goods sector), the first selling &lt;em&gt;MoP&lt;/em&gt; to &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, the second to other firms in &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;, let us call these &lt;script type=&quot;math/tex&quot;&gt;D_{1,2}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt; (and assume equal labour coefficients and wage rates).
-A multiplier effect occurs in the exchanges between the subsectors and &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;.
-First, &lt;script type=&quot;math/tex&quot;&gt;D_{1,2}&lt;/script&gt; sells &lt;em&gt;MoP&lt;/em&gt; to &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt;, receiving &lt;script type=&quot;math/tex&quot;&gt;P_2^* (=V_1^* )&lt;/script&gt;. It uses &lt;script type=&quot;math/tex&quot;&gt;w n_1 P_2^*&lt;/script&gt; to pay back its loans (if this is not for wages, why the scaling with &lt;script type=&quot;math/tex&quot;&gt;w n_1&lt;/script&gt;?) and &lt;script type=&quot;math/tex&quot;&gt;(1-w n_1)P_2^*&lt;/script&gt; to buy &lt;em&gt;MoP&lt;/em&gt; from &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt; spends &lt;script type=&quot;math/tex&quot;&gt;(1-w n_1)(1-w n_1)P_2^*&lt;/script&gt;. But if this is sales within &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt;, then the cycle would stop here, whereas Trigg (summarizing Nell) writes that there is a multiplier effect here again, with the sum:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;P_1^* = P_2^* \sum_{i=0}^\infty (1 - w n_1)^i = \frac{1}{w n_1} P_2^*
-\tag{6}\label{p1_p2_multiplier}&lt;/script&gt;
-
-&lt;p&gt;It seems to me, to have this multiplier effect, firms of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; should use their proceeds to pay back their loans only in the last cycle, before that the mutual exchanges within &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; need to repeat until convergence as in \eqref{p1_p2_multiplier}. In fact, we need to assume that &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt; receives back its own capital expenditure &lt;script type=&quot;math/tex&quot;&gt;(1-w n_1)(1-w n_1)P_2^*&lt;/script&gt;, repeating this cycle until convergence and only then spending it, together with &lt;script type=&quot;math/tex&quot;&gt;w n_1 (1-w n_1) P_2^*&lt;/script&gt; on wages, so in total we have &lt;script type=&quot;math/tex&quot;&gt;(1-w n_1) P_2^*&lt;/script&gt; of wage outlays from &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt;. I show the multiplier of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; in this model as I understand it on Figure 2 below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/D1_multiplier.png&quot; alt=&quot;_config.yml&quot; /&gt;
-&lt;strong&gt;Figure 2: the multiplier of &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;It is the two ‘auto-loops’ (to borrow a term from systems biology) within the sectors that generate the multiplier effect. One is the circulating of wages within &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; through its workers: in each round &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; pays wages to its workers that they repay for the same amount of consumption goods. In each round the revenue returned is scaled by &lt;script type=&quot;math/tex&quot;&gt;w n_2&lt;/script&gt; when paid out as wages, which means that the total amount paid out as &lt;script type=&quot;math/tex&quot;&gt;V_2^*&lt;/script&gt; wages (and total amount of consumption good sold within the sector) is &lt;script type=&quot;math/tex&quot;&gt;V_1^* \sum_{i=1}^\infty (w n_2)^i = \frac{w n_2}{1 - w n_2}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;Similarly, within &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; there is first the payment from &lt;script type=&quot;math/tex&quot;&gt;D_{1,2}&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;D_{1,1}&lt;/script&gt; of &lt;script type=&quot;math/tex&quot;&gt;(1-w n_2) P_2^*&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;D_{1-1}&lt;/script&gt; buys &lt;em&gt;MoP&lt;/em&gt; from itself in a sequence, multiplying the initial amount with &lt;script type=&quot;math/tex&quot;&gt;(1-w n_2)&lt;/script&gt; in each step so in total &lt;script type=&quot;math/tex&quot;&gt;V_1^* \sum_{i=1}^\infty (1 - w n_1)^i = \frac{1 - w n_1}{w n_1} = \frac{1}{w n_1} - 1&lt;/script&gt;. So to me it seems the multiplier expressions should be slightly different.&lt;/p&gt;
-
-&lt;p&gt;If we substitute the multiplier expressions as in Equation \eqref{v1_v2_multiplier} and \eqref{p1_p2_multiplier} into Equation \eqref{total_money_output} we get an overall multiplier relationship:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;W_T = 2 V_1^* + \frac{1}{1-w n_2} V_1^* + \frac{1}{w n_1} V_1^* =
-V_1^* \left(2 + \frac{1}{1-w n_2} + \frac{1}{w n_1} \right)
-\tag{7}\label{total_money_output_multipl}&lt;/script&gt;
-
-&lt;p&gt;In my own calculation this should rather be:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;W_T = V_1^* \left(2 + \frac{w n_2}{1-w n_2} + \left(\frac{1}{w n_1}-1 \right) \right) =
-V_1^* \left(\frac{1}{1-w n_2} + \frac{1}{w n_1} \right)
-\tag{8}\label{total_money_output_multipl_corr}&lt;/script&gt;
-
-&lt;p&gt;I think this is the correct expression, because if we take equation \eqref{total_money_output_multipl}, and consider that &lt;script type=&quot;math/tex&quot;&gt;w n_i = V_i^* /(V_i^* + P_i^* )&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;V_1^* = P_2^*&lt;/script&gt; then we have&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;2 V_1^* + V_2^* + P_1^* = 2 V_1^* + \frac{1}{1-w n_2} V_1^* + \frac{1}{w n_1} V_1^*&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;V_2^* + P_1^* = \frac{1}{1 - V_2^* /(V_2^* + P_2^* ) } V_1^* + \frac{V_1^* + P_1^* }{V_1^* } V_1^*&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;V_2^* + P_1^* = \frac{V_2^* + P_2^* }{ P_2^* } V_1^* + V_1^* + P_1^*&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;0 = P_2^* + V_1^* ,&lt;/script&gt;
-
-&lt;p&gt;which cannot be true. Therefore I think the formula in \eqref{total_money_output_multipl_corr} is the correct one.&lt;/p&gt;
-
-&lt;p&gt;The point of this model was to show that the initial outlay of &lt;script type=&quot;math/tex&quot;&gt;V_1^*&lt;/script&gt; &lt;em&gt;is&lt;/em&gt; sufficient to fund a much larger total income (wages and profits) in both sectors. At last, we can see a chain of causation behind the algebraic relationship of a multiplier. The simple answer to how it is possible to realize the total output is by the circulation of money between and within sectors, including the circulation between firms and their workers. A substantially smaller monetary advance than the value of the total output circulates through the system multiple times, enabling the transactions through which the entire output can be sold.
-To see how this happens exactly cries out for a dynamic model, probably using difference equations. (As a first approximation, we can just use a spreadsheet where rows stand for time points (stages) and columns the inventories of commodities and money held by the departments, workers and capitalists.)
-To be able to realize the full output &lt;script type=&quot;math/tex&quot;&gt;W_T&lt;/script&gt; the &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; -&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;D_2&lt;/script&gt; -&amp;gt; &lt;script type=&quot;math/tex&quot;&gt;D_1&lt;/script&gt; transactions should occur only once, whereas for the two intra-department multiplier effects to converge these refluxes of money need to happen infinitely many times. Are these assumptions reasonable? This requirement could be relaxed by starting the circuit with a bigger initial outlay than &lt;script type=&quot;math/tex&quot;&gt;V_1^*&lt;/script&gt;. A somewhat confusing aspect of this model is why &lt;em&gt;gross&lt;/em&gt; wages are paid as the initial outlay, not just &lt;script type=&quot;math/tex&quot;&gt;V_1&lt;/script&gt;, as the expansion of the workforce by &lt;script type=&quot;math/tex&quot;&gt;dV_1&lt;/script&gt; should happen only in the next period.&lt;/p&gt;
-
-&lt;p&gt;The question that this model tries to answer is not identical with the ‘Marxian’ realization problem, although very similar to it. Here a production period starts with the two departments having inventories of &lt;em&gt;MoP&lt;/em&gt; and &lt;em&gt;CoG&lt;/em&gt; inherited from the previous period, but no money, and the question is whether all inventories can be sold, and if yes, what initial amount of money is required to do so. If inventories are sold, then production can take place and a supply of new commodities is produced, that will have to be realized in the &lt;em&gt;next&lt;/em&gt; period of production, where the same realization problem has to be solved. Notice that in this description production and specifically the production of surplus value is not explicitly addressed, or it is obscured in the gross profit category. Also, there is in fact many cycles of production and sale, but initially I wanted to have a model of a &lt;em&gt;single&lt;/em&gt; cycle of production and sale that is closed (everything can be sold).&lt;/p&gt;
-
-&lt;p&gt;The other way to look at the problem is to say that firms (and owners as consumers) have funds at the starting point, which they use to buy from the inventories of &lt;em&gt;MoP&lt;/em&gt; (inherited from previous period) and (through wages) the inventories of &lt;em&gt;CoG&lt;/em&gt; that are available at the start of production. Production takes place and the supply of new products have a higher value (surplus value added by labor over paid wages) than the initially spent amount on wages and capital goods - how can it be bought up? In this second formulation, the concept of the production of surplus value is embedded.
-It is this formulation of the problem that I turn in the next post.&lt;/p&gt;
-
-&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.worldcat.org/title/marxian-reproduction-schema-money-and-aggregate-demand-in-a-capitalist-economy/oclc/946076663&quot;&gt;Andrew Trigg, Marxian reproduction schema: money and aggregate demand in a capitalist economy. Routledge, 2009&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="marxian-economics" /><category term="demand" /><category term="monetary-circuit" /><summary type="html">Monetary realization of profits by a multiplier effect</summary></entry></feed>
+&lt;a href=&quot;https://www.tandfonline.com/doi/pdf/10.1080/095382599107165&quot;&gt;Kliman, McGlone: A Temporal Single-system Interpretation of Marx’s Value Theory, Review of Political Economy, Volume 11, Number 1, 1999&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="political-economy" /><category term="economic-models" /><category term="classical-political-economy" /><category term="marxian-economics" /><category term="transformation-problem" /><category term="nonlinear-dynamics" /><summary type="html">With labor values and equilibrium</summary></entry></feed>

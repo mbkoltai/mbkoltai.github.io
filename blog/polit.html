@@ -1,0 +1,62 @@
+---
+layout: page
+description: "polit"
+# header-img: "img/blog-bg.jpg"
+tags: other #list of tags that you want to show in description of blog
+permalink: /polit/
+
+---
+
+<div class="blog-index">
+
+<p>Posts on history and politics.</p>
+
+<ul style="list-style-type: none;">
+      {%  assign p = '9999' %}
+      {%  for post in site.posts%}
+    {% if post.secondary == 'polit' %}
+
+      {% assign n = post.date | date: "%Y" %}
+      {% if n != p %}
+      {%      assign p = n%}
+            <br /><h5>{{ n }}</h5>
+      {% endif %}
+  <li style="padding-bottom: 6px;"><code>[{{ post.date | date: "%d %b" }}]</code>&nbsp;
+    <a href="{{ post.url }}" style="white-space: normal;"><b>{{ post.title }}</b></a>&nbsp;
+      {{ post.excerpt | strip_html | truncatewords: 12 }}
+  </li>
+
+            {% endif %}
+      {% endfor %}
+</ul>
+
+
+</div>
+
+
+<!---<br>
+<p>Links to writings and translations that appeared elsewhere.
+<br><br>
+&#8226 <a href="http://www.criticatac.ro/lefteast/author/mihaly-koltai/">Articles on LeftEast</a>
+<br>
+&#8226 Article in Jacobin (2017): <a href="https://www.jacobinmag.com/2017/05/hungary-central-european-university-george-soros-protests">Hungary: The End of Democratic Illusions?</a>
+<br>
+&#8226 <a href="https://merce.hu/author/koltai-mihaly-bence/">Articles on Mérce (in Hungarian)</a>
+<!---<br>
+
+
+<!---<br>
+&#8226 Between 2010 and 2019 I was an editor of the social theory
+journal <a href="https://www.facebook.com/eszmelet">Eszmélet</a> (Budapest) and wrote a number of
+<a href="http://www.eszmelet.hu/?s=%22koltai+mih%C3%A1ly%22">translations and articles</a>
+in the <a href="http://epa.oszk.hu/01700/01739">journal</a>.
+--->
+
+<!---<br>
+<br><br>
+Book translations (from English to Hungarian):
+<br>
+&#8226 <a href="https://www.eszmelet.hu/immanuel-wallerstein-bevezetes-a-vilagrendszer-elmeletbe-2010/">Immanuel Wallerstein: Bevezetés a világrendszer-elméletbe</a> (2010, L'Harmattan kiadó)
+<br>
+&#8226 <a href="https://www.eszmelet.hu/slavoj-zizek-egyszer-mint-tragedia-masszor-mint-bohozat-szeptember-11-tragediajatol-a-penzugyi-osszeomlas-bohozataig/">Slavoj Žižek: Egyszer mint tragédia, másszor mint bohózat (Szeptember 11. tragédiájától a pénzügyi összeomlás bohózatáig)</a> (2009, Eszmélet)
+--->

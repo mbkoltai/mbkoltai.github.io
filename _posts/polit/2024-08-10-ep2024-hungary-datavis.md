@@ -2,8 +2,8 @@
 layout: post
 title: Erosion of the FIDESZ vote share in the EP2024 elections - on the brink?
 tags: politics hungary elections data-visualisation
-excerpt: Getting closer, but probably not yet enough
-secondary: ecopol
+excerpt: Getting closer, but not enough yet
+secondary: polit
 mathjax: true
 ---
 
