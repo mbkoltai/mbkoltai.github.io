@@ -7,8 +7,10 @@ secondary: polit
 mathjax: true
 ---
 
-For the first time in a decade the governing FIDESZ-KDNP party (from here: FIDESZ/the government) saw its vote share fall substantially in the 2024 European Parliament elections (EP2024). There were a range of opinions how bad the results were for FIDESZ, if at all, and what the results portend for the 2026 national elections.
-Below, I present a number of graphs exploring how much the share and number of votes for FIDESZ changed compared to the last European elections, across different geographies in the country. Finally, I map the results onto parliamentary constituencies and analyse what they could mean in a national election
+[This is a post about Hungarian politics.]
+
+For the first time in a decade in Hungary, the governing FIDESZ-KDNP party (from here: FIDESZ/the government) saw its vote share fall substantially in the 2024 European Parliament elections (EP2024). There were a range of opinions how bad the results were for FIDESZ, if at all, and what the results portend for the 2026 national elections.
+Below, I present a number of graphs exploring how much the share and number of votes for FIDESZ changed compared to the last European elections, across different geographies in the country. Finally, I map the results onto parliamentary constituencies and analyse what they could mean in a national election.
 
 1. [Results at the national level](#results-national level)
 1. [Results by individual towns and cities](#results-by-individual-towns-and-cities)
