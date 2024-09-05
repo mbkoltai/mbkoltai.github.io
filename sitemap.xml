@@ -61,6 +61,10 @@
 <lastmod>2024-08-10T00:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/test/</loc>
+<lastmod>2024-09-05T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/tag/cancer/</loc>
 </url>
 <url>
@@ -140,6 +144,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/papers/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/polit/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/tag/political-economy/</loc>
