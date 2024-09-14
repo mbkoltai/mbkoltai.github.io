@@ -39,9 +39,9 @@
     <link rel="alternate" type="application/rss+xml" title="Mihály Koltai - personal website" href="/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Embedding equations in GitHub blog posts with MathJax | Mihály Koltai</title>
-<meta name="generator" content="Jekyll v3.7.3" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Embedding equations in GitHub blog posts with MathJax" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Steps to enable inserting equations" />
@@ -51,8 +51,10 @@
 <meta property="og:site_name" content="Mihály Koltai" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-09-25T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Embedding equations in GitHub blog posts with MathJax" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/embed-equations/","@type":"BlogPosting","headline":"Embedding equations in GitHub blog posts with MathJax","dateModified":"2018-09-25T00:00:00+01:00","datePublished":"2018-09-25T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/embed-equations/"},"description":"Steps to enable inserting equations","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2018-09-25T00:00:00+01:00","datePublished":"2018-09-25T00:00:00+01:00","description":"Steps to enable inserting equations","headline":"Embedding equations in GitHub blog posts with MathJax","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/embed-equations/"},"url":"http://localhost:4000/embed-equations/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -93,7 +95,7 @@ The simple answer is: use MathJax that has a syntax almost identical to LaTeX. M
 
 <p>1) If you want to use equations in your blog posts as I do, paste the following script into <em>post.html</em> that should be in your <em>layouts</em> folder</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;&lt;/script&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;&lt;/script&gt;
 &lt;script&gt;
         MathJax.Hub.Config({
             config: ["MMLorHTML.js"],
@@ -132,18 +134,17 @@ The simple answer is: use MathJax that has a syntax almost identical to LaTeX. M
 
 <p>3) You can now write equations between double $ signs. For example,</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \begin{bmatrix} a_{11} &amp; a_{12}\\ 0 &amp; 0\\ \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \begin{bmatrix} a_{11} &amp; a_{12}\\ 0 &amp; 0\\ \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
 + \begin{bmatrix} 0\\ h_2\\ \end{bmatrix} \begin{bmatrix} l_1 &amp; l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
 + \begin{bmatrix} da\\ dh + C_k \end{bmatrix}  
 </code></pre></div></div>
 
 <p>becomes</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \begin{bmatrix} a_{11} & a_{12}\\ 0 & 0\\ \end{bmatrix}
+\[\begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} = \begin{bmatrix} a_{11} &amp; a_{12}\\ 0 &amp; 0\\ \end{bmatrix}
     \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix} + \begin{bmatrix} 0\\ h_2\\ \end{bmatrix}
-    \begin{bmatrix} l_1 & l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
-    + \begin{bmatrix} da\\ dh + C_k \end{bmatrix} %]]></script>
+    \begin{bmatrix} l_1 &amp; l_2 \end{bmatrix} \begin{bmatrix} X_1\\ X_2\\ \end{bmatrix}
+    + \begin{bmatrix} da\\ dh + C_k \end{bmatrix}\]
 
 <p>A good resource for different formulae <a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">is here</a>.</p>
 

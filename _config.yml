@@ -1,7 +1,7 @@
 #
 # This file contains configuration flags to customize your site
 #
-
+#
 # Name of your site (displayed in the header)
 title: Mihály Koltai
 
@@ -9,8 +9,8 @@ title: Mihály Koltai
 description: [personal website]
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: # https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/master/images/book_wordcloud.png
-
+# avatar: # https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/master/images/book_wordcloud.png
+#
 #
 # Flags below are optional
 #
@@ -29,16 +29,14 @@ footer-links:
   twitter: mbkoltai
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
-
+# disqus:
+#
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
+# google_analytics:
+#
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url:
@@ -52,8 +50,6 @@ baseurl: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
-
-
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
@@ -75,35 +71,36 @@ sass:
 
 # Use the following plug-ins
 plugins:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-sitemap
+  - jekyll-feed
   - jekyll-avatar
   - jekyll-seo-tag
-  - jekyll-scholar
+# Create a sitemap using the official Jekyll sitemap gem
+# Create an Atom feed using the official Jekyll feed gem
 
 # Exclude these files from your production _site
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - LICENSE
   - README.md
   - CNAME
+  - Gemfile
+  - Gemfile.lock
 
 # plugins: ['jekyll/scholar']
 
-scholar:
-  style: assets/bibliography/ieee-with-url.csl # biophysical-journal # _bibliography/numeric.csl cell.csl
-  locale: en
-  sort_by: none
-  order: ascending
-  group_by: none
-  group_order: ascending
-  source: ./_bibliography
-  bibliography: references.bib
-  use_raw_bibtex_entry: false
+# scholar:
+#   style: assets/bibliography/ieee-with-url.csl # biophysical-journal # _bibliography/numeric.csl cell.csl
+#   locale: en
+#   sort_by: none
+#   order: ascending
+#   group_by: none
+#   group_order: ascending
+#   source: ./_bibliography
+#   bibliography: references.bib
+#   use_raw_bibtex_entry: false
 
 #  details_dir:    bibliography
 #  details_layout: bibtex.html
 #  details_link:   Details
 
-  query: "@*"
+#  query: "@*"

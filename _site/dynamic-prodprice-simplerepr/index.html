@@ -39,9 +39,9 @@
     <link rel="alternate" type="application/rss+xml" title="Mihály Koltai - personal website" href="/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>A toy model of dynamic prices of production | Mihály Koltai</title>
-<meta name="generator" content="Jekyll v3.7.3" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="A toy model of dynamic prices of production" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="With labor values and equilibrium" />
@@ -51,8 +51,10 @@
 <meta property="og:site_name" content="Mihály Koltai" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-01-12T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="A toy model of dynamic prices of production" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/dynamic-prodprice-simplerepr/","@type":"BlogPosting","headline":"A toy model of dynamic prices of production","dateModified":"2019-01-12T00:00:00+00:00","datePublished":"2019-01-12T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dynamic-prodprice-simplerepr/"},"description":"With labor values and equilibrium","@context":"http://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2019-01-12T00:00:00+00:00","datePublished":"2019-01-12T00:00:00+00:00","description":"With labor values and equilibrium","headline":"A toy model of dynamic prices of production","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dynamic-prodprice-simplerepr/"},"url":"http://localhost:4000/dynamic-prodprice-simplerepr/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -100,11 +102,11 @@ The model has the following assumptions and properties:<br />
 Assumption <em>6</em> is reasonable as a tendency (capital flows in search of (sectors with) higher rates of return) but one should also have a mechanism implemented in a more serious model.
 My goal here is just to build a small mathematical model that is internally consistent and has a dynamics that can later be made more realistic by introducing more detail. As the system is dynamic  prices and profit rates can change, which is a precondition to incorporate crises in the model.</p>
 
-<p>Like in the input-output models I <a href="https://mbkoltai.github.io/reprod_multipl2/">discussed previously</a> we have two economic sectors (or departments), the first (<script type="math/tex">D_1</script>) producing capital goods (this could be raw materials as well, any non-labour inputs used up in production), the second (<script type="math/tex">D_2</script>) consumption goods (<em>CoG</em>). Since we are dealing with simple reproduction and we will also abstract from fixed capital, therefore all capital goods are used up in each period of production, the total use of capital goods has to equal the total output (<script type="math/tex">W_1</script>) of <script type="math/tex">D_1</script>.
+<p>Like in the input-output models I <a href="https://mbkoltai.github.io/reprod_multipl2/">discussed previously</a> we have two economic sectors (or departments), the first (\(D_1\)) producing capital goods (this could be raw materials as well, any non-labour inputs used up in production), the second (\(D_2\)) consumption goods (<em>CoG</em>). Since we are dealing with simple reproduction and we will also abstract from fixed capital, therefore all capital goods are used up in each period of production, the total use of capital goods has to equal the total output (\(W_1\)) of \(D_1\).
 This gives us the equality
-<script type="math/tex">W_1 = C_1 + V_1 + S_1 = C_1 + C_2</script>, or,<br />
-<script type="math/tex">C_2 = V_1 + S_1
-\tag{1}\label{balancing_cond}</script>
+\(W_1 = C_1 + V_1 + S_1 = C_1 + C_2\), or,<br />
+\(C_2 = V_1 + S_1
+\tag{1}\label{balancing_cond}\)
 In other words, the exchanges between the two departments (wages + profits in <em>D1</em> = value of constant capital used up in <em>D2</em>) have to be equal.</p>
 
 <p>In one important respect the current model will be different from the one discussed in the case of input-output tables and this will change the meaning of the equality of Equation \eqref{balancing_cond}. In the input-output description it is assumed (this assumption can be called ‘simultaneous valuation’) that unit prices for the two goods have to be the same when they enter as inputs and when they emerge as outputs in a given period of production.
@@ -113,61 +115,60 @@ The input-output model as usually understood is then a model of equilibrium pric
 In contrast, in the model I will discuss here this assumption of the equality of input and output unit prices is dropped: input prices determine output prices sequentially. Consequently, instead of a system of algebraic equations with the same unit prices on both the right and left side, we will have a system of difference equations, that we need to provide with initial values in the first period of reproduction. In periods <em>t&gt;1</em> the input prices are given by the output prices of the preceding period.</p>
 
 <p>To summarise, in the simultaneous description we have unit prices as:
-<script type="math/tex">\mathbf{p} = \mathbf{p}(\mathbf{A} + w \mathbf{l})(1+r)
-\tag{2}\label{simul_val}</script></p>
+\(\mathbf{p} = \mathbf{p}(\mathbf{A} + w \mathbf{l})(1+r)
+\tag{2}\label{simul_val}\)</p>
 
-<p>where <script type="math/tex">\mathbf{p}</script> is the row vector of unit prices, <script type="math/tex">\mathbf{A}</script> the input-output matrix, <script type="math/tex">w</script> is the wage rate, <script type="math/tex">\mathbf{l}</script> is the row vector of labour inputs (quantities) per unit of output of each commodity and <script type="math/tex">r</script> is the profit rate. <script type="math/tex">\mathbf{A}</script>, <script type="math/tex">w</script> and <script type="math/tex">l</script> are given, whereas <script type="math/tex">\mathbf{p}</script> and <script type="math/tex">r</script> are the unknowns.
-Defining the ‘augmented’ input matrix <script type="math/tex">\mathbf{M} = A + w l</script>, we can write the profit rate <script type="math/tex">r = (pX - pMX)/pMX</script>, where X is the column vector of gross outputs (physical quantities), but this is not an independent equation but rather comes from <script type="math/tex">\mathbf{p X} = (\mathbf{p} \mathbf{M} (1+r))\mathbf{X}</script>, so although <script type="math/tex">r</script> can be calculated (given <script type="math/tex">\mathbf{M}</script>), but for production prices <script type="math/tex">\mathbf{p}</script> we will only have the relative prices, as any set of absolute prices with the same ratios will satisfy the equations.</p>
+<p>where \(\mathbf{p}\) is the row vector of unit prices, \(\mathbf{A}\) the input-output matrix, \(w\) is the wage rate, \(\mathbf{l}\) is the row vector of labour inputs (quantities) per unit of output of each commodity and \(r\) is the profit rate. \(\mathbf{A}\), \(w\) and \(l\) are given, whereas \(\mathbf{p}\) and \(r\) are the unknowns.
+Defining the ‘augmented’ input matrix \(\mathbf{M} = A + w l\), we can write the profit rate \(r = (pX - pMX)/pMX\), where X is the column vector of gross outputs (physical quantities), but this is not an independent equation but rather comes from \(\mathbf{p X} = (\mathbf{p} \mathbf{M} (1+r))\mathbf{X}\), so although \(r\) can be calculated (given \(\mathbf{M}\)), but for production prices \(\mathbf{p}\) we will only have the relative prices, as any set of absolute prices with the same ratios will satisfy the equations.</p>
 
 <p>In the dynamic description we have instead:
-<script type="math/tex">\mathbf{p}_{t+1} = \mathbf{p}_t(\mathbf{A} + w \mathbf{l})(1+r)
-\tag{3}\label{dynamic unit prices}</script>
+\(\mathbf{p}_{t+1} = \mathbf{p}_t(\mathbf{A} + w \mathbf{l})(1+r)
+\tag{3}\label{dynamic unit prices}\)
 which is a system of difference equations, not algebraic ones. Here, the input unit prices are a given, they are data, and they are mapped onto the output prices by the technical coefficients, the wage rate and the markup of the aggregate profit rate. Moreover, because of the third assumption above, the profit rate can now be independently determined from the input unit prices, technical coefficients, the wage rate and the amount of labour performed:
-<script type="math/tex">r_{t,t+1} = (\mathbf{l}\mathbf{X} - \mathbf{p}_t w \mathbf{l} \mathbf{X})/
+\(r_{t,t+1} = (\mathbf{l}\mathbf{X} - \mathbf{p}_t w \mathbf{l} \mathbf{X})/
 (\mathbf{p}_t (\mathbf{A} + w \mathbf{l}) \mathbf{X})
-\tag{4}\label{profit_rate_dynamic}</script></p>
+\tag{4}\label{profit_rate_dynamic}\)</p>
 
 <p>Profit is the total amount of new value added minus the real wage of workers (quantity of consumption goods times their input unit price).
 The rate of profit is given by dividing the amount of profit by total input costs that are also defined by technical coefficients, the wage rate and the input prices. It can be seen that the calculation of the profit rate only involves the input data of input prices and the coefficients, therefore it comes first. The calculation of unit output prices follows after, since they are the function of both the profit rate and input prices as can be seen from Equation \eqref{dynamic unit prices}.</p>
 
 <p>Now let us go back to the equality of simple reproduction in Equation \eqref{balancing_cond}:<br />
-<script type="math/tex">C_2 = V_1 + S_1</script> (coming from <script type="math/tex">W_1 = C_1 + C_2</script>, <script type="math/tex">W_i</script> being gross output of a sector)<br />
+\(C_2 = V_1 + S_1\) (coming from \(W_1 = C_1 + C_2\), \(W_i\) being gross output of a sector)<br />
 In the equilibrium description of input-output tables, where input and output unit prices are equal, this equality is a relation between the inputs and outputs of the same period. As this is a description of equilibrium for a given set of technical and wage coefficients, there is in fact only one period, if we take another set of coefficients then we need to calculate another set of equilibrium prices.
 But in the dynamic description this balancing condition is across two periods: the output of one period is the input of the next. In price terms, the output of capital goods has to equal the input of capital goods in the <em>next</em> period. In physical terms, since it is simple reproduction, it is also true that the inputs (of one good) used up in the current period has to equal the output (of the same good) of the current period. But in terms of money the current period’s output is the input of the <em>next</em> one, and it does not need to equal the input of this period, <em>unless</em> the difference equations for unit prices have reached their stationary value. So the equality in the dynamic setting will be:
-<script type="math/tex">W_1(t) = C_1(t+1) + C_2(t+1)</script>.</p>
+\(W_1(t) = C_1(t+1) + C_2(t+1)\).</p>
 
 <p>Let us write the dynamic equations for the unit prices in a form that they contain no other time-dependent variables, but only constants. All other variables of the system are governed by the unit prices as follows (from now on I put the time index in parenthesis instead of a subscript, as I use subscripts for department indices):</p>
 <ul>
-  <li>constant capital: <script type="math/tex">C_1(t) = \alpha X_1 p_1(t)</script>, <script type="math/tex">C_2(t) = (1-\alpha) X_1 p_1(t)</script>, since the total physical amount and sectoral distribution of capital goods do not change</li>
-  <li>wages: <script type="math/tex">V_1(t) = \beta_1 X_2 p_2(t)</script>, <script type="math/tex">V_2(t) = \beta_2 X_2 p_2(t)</script>, since the real wage is defined as a fixed amount (<script type="math/tex">\beta_1</script>, <script type="math/tex">\beta_2</script>) of consumption goods (<script type="math/tex">X_2</script>) that the wages can buy, and distribution of the workforce does not change</li>
-  <li>revenue: <script type="math/tex">m(t)=\mu X_2 p_2(t)</script>, profit spent on consumption goods by capitalists, also kept constant in physical terms (<script type="math/tex">\mu X_2</script>, and <script type="math/tex">\mu + \beta_1 + \beta_2 = 1</script>)</li>
-  <li>total (gross) output: <script type="math/tex">W_i(t) = p_i(t) X_i</script></li>
-  <li>cost: <script type="math/tex">K_1(t) = C_1(t) + V_1(t) = \alpha X_1 p_1(t) + \beta_1 X_2 p_2(t)</script>, <script type="math/tex">K_2(t) = (1-\alpha) X_1 p_1(t) + \beta_2 X_2 p_2(t)</script></li>
-  <li>profit rate: <script type="math/tex">r(t) = \frac{L_T - (V_1(t)+V_2(t)) }{ K_1(t) + K_2(T)} = \frac{L_T - (\beta_1 + \beta_2) X_2 p_2(t)}{ p_1(t) X_1 + (\beta_1 + \beta_2) X_2 p_2(t) }</script> (<script type="math/tex">L_T</script> is total labour performed)</li>
+  <li>constant capital: \(C_1(t) = \alpha X_1 p_1(t)\), \(C_2(t) = (1-\alpha) X_1 p_1(t)\), since the total physical amount and sectoral distribution of capital goods do not change</li>
+  <li>wages: \(V_1(t) = \beta_1 X_2 p_2(t)\), \(V_2(t) = \beta_2 X_2 p_2(t)\), since the real wage is defined as a fixed amount (\(\beta_1\), \(\beta_2\)) of consumption goods (\(X_2\)) that the wages can buy, and distribution of the workforce does not change</li>
+  <li>revenue: \(m(t)=\mu X_2 p_2(t)\), profit spent on consumption goods by capitalists, also kept constant in physical terms (\(\mu X_2\), and \(\mu + \beta_1 + \beta_2 = 1\))</li>
+  <li>total (gross) output: \(W_i(t) = p_i(t) X_i\)</li>
+  <li>cost: \(K_1(t) = C_1(t) + V_1(t) = \alpha X_1 p_1(t) + \beta_1 X_2 p_2(t)\), \(K_2(t) = (1-\alpha) X_1 p_1(t) + \beta_2 X_2 p_2(t)\)</li>
+  <li>profit rate: \(r(t) = \frac{L_T - (V_1(t)+V_2(t)) }{ K_1(t) + K_2(T)} = \frac{L_T - (\beta_1 + \beta_2) X_2 p_2(t)}{ p_1(t) X_1 + (\beta_1 + \beta_2) X_2 p_2(t) }\) (\(L_T\) is total labour performed)</li>
 </ul>
 
 <p>Since the output price of the current period is the input of the next period, and gross output is equal to input costs and a markup equal to the aggregate profit rate, we have:
-<script type="math/tex">p_i(t+1) X_i = W_i(t) = (C_i(t) + V_i(t)) (1 + r(t))
-\tag{5}\label{unit_price_dynam_implicit}</script></p>
+\(p_i(t+1) X_i = W_i(t) = (C_i(t) + V_i(t)) (1 + r(t))
+\tag{5}\label{unit_price_dynam_implicit}\)</p>
 
-<p>Dividing by <script type="math/tex">X_i</script> and substituting the expressions listed above we have:<br />
-<script type="math/tex">% <![CDATA[
-\begin{bmatrix} p_1(t+1) \\ p_2(t+1 )\\ \end{bmatrix} = \begin{bmatrix} \alpha & \beta_1 X_2 / X_1\\ (1 - \alpha) X_1 / X_2 & \beta_2 \\ \end{bmatrix} \begin{bmatrix} p_1(t) \\ p_2(t)\\ \end{bmatrix} \frac{ p_1(t) + L_T/X_1 }{ p_1(t) + (\beta_1 + \beta_2) X_2/X_1 p_2(t) }
-\tag{6}\label{unit_price_dynam_explicit} %]]></script></p>
+<p>Dividing by \(X_i\) and substituting the expressions listed above we have:<br />
+\(\begin{bmatrix} p_1(t+1) \\ p_2(t+1 )\\ \end{bmatrix} = \begin{bmatrix} \alpha &amp; \beta_1 X_2 / X_1\\ (1 - \alpha) X_1 / X_2 &amp; \beta_2 \\ \end{bmatrix} \begin{bmatrix} p_1(t) \\ p_2(t)\\ \end{bmatrix} \frac{ p_1(t) + L_T/X_1 }{ p_1(t) + (\beta_1 + \beta_2) X_2/X_1 p_2(t) }
+\tag{6}\label{unit_price_dynam_explicit}\)</p>
 
-<p>This is a system of first-order, non-linear, autonomous difference equations, that - I think - cannot be solved analytically (so that <script type="math/tex">p(t)</script> would be a function of time and parameters only), but it is easy to simulate numerically, or solve for its fixed point (in which case it becomes a quadratic equation, with one positive solution).</p>
+<p>This is a system of first-order, non-linear, autonomous difference equations, that - I think - cannot be solved analytically (so that \(p(t)\) would be a function of time and parameters only), but it is easy to simulate numerically, or solve for its fixed point (in which case it becomes a quadratic equation, with one positive solution).</p>
 
-<p>I simulated the system in MATLAB with the following numerical values (also used in the article cited below as a reference): <script type="math/tex">L_T = 300</script>, <script type="math/tex">\alpha = 1/2</script>, <script type="math/tex">\beta_1 = 1/6</script>, <script type="math/tex">\beta_2 = 1/3</script>, <script type="math/tex">\mu = 1/2</script>, <script type="math/tex">X_1 = 200</script>, <script type="math/tex">X_2 = 300</script> and the initial values <script type="math/tex">p_1(0)=p_2(0)=1</script>.
+<p>I simulated the system in MATLAB with the following numerical values (also used in the article cited below as a reference): \(L_T = 300\), \(\alpha = 1/2\), \(\beta_1 = 1/6\), \(\beta_2 = 1/3\), \(\mu = 1/2\), \(X_1 = 200\), \(X_2 = 300\) and the initial values \(p_1(0)=p_2(0)=1\).
 This is the plot of the dynamics of unit prices and some of the ratios of the system:</p>
 
 <p><img src="/images/unitprices_ratios.png" alt="_config.yml" /></p>
 
 <p>The system satisfies the following equalities (these are all in price terms):</p>
 <ul>
-  <li><script type="math/tex">W_1(t) = C_1(t+1) + C_2(t+1) = p_1(t+1) X_1</script>, output of capital goods of the current period equals input of capital goods in next period</li>
-  <li><script type="math/tex">m_1(t) + V_1(t) = C_2(t)</script>, exchanges between the sectors have to balance (capitalist consumption + wage outlays from <script type="math/tex">D_1</script> equals outlays on capital goods from <script type="math/tex">D_2</script>, with the other transactions being within the two departments)</li>
-  <li><script type="math/tex">W_2(t) = V_1(t+1) + V_2(t+1) + m(t+1) = p_2(t+1) X_2</script>, output of consumption goods in current period equals outlay on wages plus consumption from profit (revenue) in next period</li>
-  <li><script type="math/tex">\sum m_i(t) = \sum W_i(t-1) - \sum K_i(t)</script>, total revenue, ie. profit that can be spent on consumption equals the difference between the output of the previous period minus outlays on wages and capital goods in the current period</li>
+  <li>\(W_1(t) = C_1(t+1) + C_2(t+1) = p_1(t+1) X_1\), output of capital goods of the current period equals input of capital goods in next period</li>
+  <li>\(m_1(t) + V_1(t) = C_2(t)\), exchanges between the sectors have to balance (capitalist consumption + wage outlays from \(D_1\) equals outlays on capital goods from \(D_2\), with the other transactions being within the two departments)</li>
+  <li>\(W_2(t) = V_1(t+1) + V_2(t+1) + m(t+1) = p_2(t+1) X_2\), output of consumption goods in current period equals outlay on wages plus consumption from profit (revenue) in next period</li>
+  <li>\(\sum m_i(t) = \sum W_i(t-1) - \sum K_i(t)\), total revenue, ie. profit that can be spent on consumption equals the difference between the output of the previous period minus outlays on wages and capital goods in the current period</li>
 </ul>
 
 <p>Since unit prices are changing until we reach the stationary state, the amount of money needed for total outlays (wages + capital goods) is also changing (see on the plot above the ratio of costs), and since inputs (in this model) transfer their prices to the output, gross output in terms of price is also changing, though net value added does not. Once we reach the fixed point unit prices do not change anymore, therefore wages, profit, outlays on capital goods and gross output have also reached a stationary state. This final state is identical to the equilibrium price (equal input and output prices) solution to the system. The fixed point is obviously attracting, so sampling in initial values (for unit prices) will lead to the same stationary values, as shown in the plot below.</p>

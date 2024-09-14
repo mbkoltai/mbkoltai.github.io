@@ -25,7 +25,7 @@ $$ p_{t} = p_0 a^t + l \sum_{i=0}^{t-1} a^i = p_0 a^t  + \frac{l}{1-a} (1-a^t)$$
 
 which for $$a<1$$ (meaning there is a physical surplus) converges to $$p^* = \frac{l}{1-a}$$. In this case there is no redistribution of added value through prices of production, so value and price are the same, equaling to the price of inputs plus the incorporated labour.
 
-Since it is more interesting to work with the more general case of multiple goods/sectors, but without the non-linearity, I will look at the dynamic behavior of values instead of prices of production, following an exchange between Duménil&Lévy (D&L) and P. Giussani around 2000 {% cite giussani %} {% cite dumlevy %}.
+Since it is more interesting to work with the more general case of multiple goods/sectors, but without the non-linearity, I will look at the dynamic behavior of values instead of prices of production, following an exchange between [Duménil&Lévy](http://digamo.free.fr/dl2freeman.pdf) (D&L) and [P. Giussani](https://copejournal.com/wp-content/uploads/2015/12/Giussani-Dynamic-and-Static-Marxian-Values-A-Partial-Rejoinder-To-A-Rejoinder.pdf) around 2000.
 
 When I write the value of a particular good, I mean the value of its inputs plus the amount of (socially necessary) labour directly embodied in it, ie. using a sequential definition\\
 $$ \Lambda_t = \mathbf{A} \Lambda_{t-1} + \mathbf{L}_t
@@ -49,7 +49,7 @@ $$ \Lambda_t = \mathbf{A}^{t} \Lambda_0 + (\mathbf{I} - \mathbf{A})^{-1} (\mathb
 \tag{6}\label{dynamic_values_sol}$$
 
 Since it is assumed (elements of) $$A<1$$ (otherwise we would have shrinking reproduction), therefore $$\lim\limits_{t \to \infty}\Lambda_t = \Lambda^{* } = (I-A)^{-1} L$$, same as the simultaneous equation \ref{simult_values_sol}.
-For this reason it was argued by Stamatis {% cite stamatisremarks %} {% cite stamatiscategories %} that the sequential formalism is simply an iterative calculation procedure to solve the algebraic equation of  \ref{simult_values_sol}, and not a model of economic dynamics. I will address this question later, first I will explore some dynamic properties of this formalism, independent of its interpretation.
+For this reason it was argued by [Stamatis 1999](http://www.countdownnet.net/Allegati/53%20The%20so-called%20Temporal%20Single%20System%20%28TSS%29%20the%20so-called%20Standard%20Simultaneous%20Methodology%20%28SSM%29%20and%20the%20correct%20definition%20of%20labour%20values.pdf) that the sequential formalism is simply an iterative calculation procedure to solve the algebraic equation of \ref{simult_values_sol}, and not a model of economic dynamics. I will address this question later, first I will explore some dynamic properties of this formalism, independent of its interpretation.
 
 It was pointed out by D&L that in the sequential formalism it is possible to have growing labour productivity (falling labour inputs per unit of goods) with *growing* unit values.
 Specifically, if instead of a constant $$L$$, it is now a function of time:
@@ -106,10 +106,10 @@ Is this behavior of sequential values <<paradoxical>>?
 No matter how we answer this question, it certainly would be an exaggeration to claim that what we see here is - even an extremely simplified - model of economic dynamics.
 The technical coefficients of the system are defined independently from values, there are no feedback effects, and yet the system shows relatively complicated dynamic behavior already, depending on its initial value. This is not due to endogenous technical change or of disequilibrium between supply and demand, but simply to the dependence on the previous state.
 
-Yet this can also be seen as an interesting feature of the sequential model, in contrast to the simultaneous one, namely that the periods are connected: the output price/value of one period is the input of the next. This suggests that it can be used in a dynamical model of the circuit(s) of capital {% cite foley1982realization %}.
+Yet this can also be seen as an interesting feature of the sequential model, in contrast to the simultaneous one, namely that the periods are connected: the output price/value of one period is the input of the next. This suggests that it can be used in a dynamical model of the [circuit(s) of capital](https://www.sciencedirect.com/science/article/pii/0022053182900631).
 If we have only one circuit per sector like above, this assumes that all capitals in that sector are synchronized, which is clearly not the case in reality.
 But if they are not synchronized, the formalism would have to be more complex. When one circuit of capital is in the phase of production others are releasing new products to the market, which can devalue the inputs.
 Therefore the value of inputs would not equal their original value, but would be - intuitively - some weighted average of past values of the inputs used by the individual circuits.
 In my next posts I want to address this question of connecting a model of the circuit of capital with these different methods of value calculation.
 
-{% bibliography --cited %}
+

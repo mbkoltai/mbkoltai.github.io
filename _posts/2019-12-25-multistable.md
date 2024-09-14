@@ -7,10 +7,10 @@ mathjax: true
 ---
 
 <!---This [repository](https://github.com/mbkoltai/multistable_coupled_toggle) contains MATLAB scripts to model the stationary and dynamical behavior of --->
-In this post I want to explore how we can generate a regulatory system that has several (more than 2) fixed points by coupling self-activating genes. It is an expanded model of a toggle switch {% cite gardner2000construction %}: two genes (variables) that inhibit each other but also have nonlinear self-activation.
+In this post I want to explore how we can generate a regulatory system that has several (more than 2) fixed points by coupling self-activating genes. It is an expanded model of a [toggle switch](https://www.nature.com/articles/35002131): two genes (variables) that inhibit each other but also have nonlinear self-activation.
 The [scripts I wrote in MATLAB](https://github.com/mbkoltai/multistable_coupled_toggle) define a highly abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.
 
-My idea (coming from this {% cite lu2013tristability %} paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two 'S' letters, one aligned with the $$x$$ axis, the other with the $$y$$ axis - how many times can they intersect?
+My idea (coming from [this](https://pubs.acs.org/doi/10.1021/jp403156m) paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two 'S' letters, one aligned with the $$x$$ axis, the other with the $$y$$ axis - how many times can they intersect?
 
 In the main script [multistable.m](https://github.com/mbkoltai/multistable_coupled_toggle/blob/master/multistable.m) we can first experiment with the parameters of a single self-activating gene: the cooperativity parameter ($$n$$), the threshold of activation ($$K$$) and the rate of basal activation (transcription/translation) of the gene ($$\mathbf{\beta}$$). The ODE for a single gene is:  
 $$
@@ -63,8 +63,8 @@ and producing these plots:
 
 The lower threshold for the bistable range goes down while its extension grows with an increasing nonlinearity of the auto-activation.
 
-Now, as it was shown by one of the first landmark papers {% cite gardner2000construction %} of [modern](http://vcp.med.harvard.edu/timeline.html) (>2000) systems biology how two genes mutually inhibiting each other can lead to bistable behavior if the inhibition has a nonlinear (sigmoidal effect).
-In this {% cite lu2013tristability %} paper it was pointed out that if the auto-activation of these two genes already makes them bistable then coupling them can generate several stable fixed points.
+Now, as it was shown by [one of the first](https://www.nature.com/articles/35002131) landmark papers of [modern](http://vcp.med.harvard.edu/timeline.html) (>2000) systems biology how two genes mutually inhibiting each other can lead to bistable behavior if the inhibition has a nonlinear (sigmoidal effect).
+In [this paper](https://pubs.acs.org/doi/10.1021/jp403156m) it was pointed out that if the auto-activation of these two genes already makes them bistable then coupling them can generate several stable fixed points.
 
 To intuitively illustrate this point, before setting up a model, let's call the two genes A and B and we visualize their nullclines as a function of the value of the other gene.
 Note that as we analyze the system in 2D now the basal production rate is a single value, we are not scanning through a range of values.
@@ -103,7 +103,7 @@ B_vals=[0 linvals]; A_vals=[0 linvals];
 [real_nonnegroots_f1,real_nonnegroots_f2] = fcn_nullclines_double_inhib(A_vals,B_vals,params);
 ```
 
-Polynomial rootfinding is rather fast, for 200 input values, the calculation takes 35 seconds on my laptop (CPU @ 2.50GHz, 2601 Mhz, 2 Core(s)).
+Polynomial rootfinding is rather fast, for 200 input values, the calculation takes 35 seconds on my laptop (CPU @ 2.50GHz, 2 Cores).
 
 Next we can visualize the nullclines and their intersections that are the fixed points of the model by the function *fcn\_plot\_double\_inhib*:
 ```MATLAB
@@ -154,9 +154,7 @@ An interesting question is what if we couple more than 2 bistable components. Wo
 
 The script with its functions are available on [GitHub](https://github.com/mbkoltai/multistable_coupled_toggle) and they can be downloaded and used in MATLAB.
 
-{% bibliography --cited %}
-
-<!--- References  
+<!--- References
 [1] [Gardner, T.S., Cantor, C.R. and Collins, J.J., 2000. Construction of a genetic toggle switch in Escherichia coli. Nature, 403(6767), p.339.](https://www.nature.com/articles/35002131)  
 [2] [Lu, M., Jolly, M.K., Gomoto, R., Huang, B., Onuchic, J. and Ben-Jacob, E., 2013. Tristability in cancer-associated microRNA-TF chimera toggle switch. The journal of physical chemistry B, 117(42), pp.13164-13174](https://www.researchgate.net/publication/236913602_Tristability_in_Cancer_Associated_miRNA-TF_Chimera_Toggle_Switch)
 --->
