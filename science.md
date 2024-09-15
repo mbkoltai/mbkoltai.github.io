@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 
 permalink: /science/
+title: ""
 ---
 
 ## Academic work
