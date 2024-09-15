@@ -3,6 +3,7 @@ layout: post
 title: Analytical solutions of SIR models
 tags: epidemics complex-systems covid19
 excerpt: Stationary behavior of compartmental epidemic models
+secondary: science
 mathjax: true
 ---
 

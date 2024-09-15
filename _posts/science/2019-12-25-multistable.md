@@ -3,6 +3,7 @@ layout: post
 title: Generating multistability by coupling self-activating genes
 excerpt: Fun with multistability (scripts+plots)
 tags: systems-biology nonlinear-dynamics multistability kinetics complex-systems
+secondary: science
 mathjax: true
 ---
 

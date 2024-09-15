@@ -1,14 +1,20 @@
 ---
 layout: page
-title: Publications
-permalink: /papers/
+title: 
+permalink: /science/
 ---
 
-## Peer-reviewed articles
+## Academic work
+
+### Current workplace
+
+[Academic profile at Imperial College London](https://profiles.imperial.ac.uk/m.koltai)
+
+### Peer-reviewed articles
 
 See my [Google Scholar profile](https://scholar.google.com/citations?user=ykWF9bgAAAAJ&hl=en).
 
-## Talks at conferences
+<!--## Talks at conferences
 
 **Exact solving of stochastic-continuous Boolean models of biological networks (poster)**
 
@@ -27,8 +33,34 @@ See my [Google Scholar profile](https://scholar.google.com/citations?user=ykWF9b
 **A data-driven logical model of colon cancer for biomarker and drug discovery (talk)**  
 [*Interdisciplinary Signalling Workshop*](http://m.signalingworkshop.org/19july/)  
 19/07/2017, Visegrád, Hungary
+-->
 
-## PhD dissertation
+### PhD dissertation
 
 [Quantitative analysis of microbial sensing and motility](https://archiv.ub.uni-heidelberg.de/volltextserver/20847/)  
 Ruprecht-Karls-Universität Heidelberg, 2016
+
+---
+## Blog posts on scientific topics
+
+<div class="blog-index">
+<ul style="list-style-type: none;">
+      {%  assign p = '9999' %}
+      {%  for post in site.posts%}
+    {% if post.secondary == 'science' %}
+
+      {% assign n = post.date | date: "%Y" %}
+      {% if n != p %}
+      {%      assign p = n%}
+            <br /><h5>{{ n }}</h5>
+      {% endif %}
+  <li style="padding-bottom: 6px;"><code>[{{ post.date | date: "%d %b" }}]</code>&nbsp;
+    <a href="{{ post.url }}" style="white-space: normal;"><b>{{ post.title }}</b></a>&nbsp;
+      {{ post.excerpt | strip_html | truncatewords: 12 }}
+  </li>
+
+            {% endif %}
+      {% endfor %}
+</ul>
+</div>
+
