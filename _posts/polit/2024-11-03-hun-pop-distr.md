@@ -33,10 +33,13 @@ az ország - teljes illetve választásra jogosult - lakossága hogyan oszlik el
 </style>
 
 \[A fenti verzió a shinyapps.io szerveren fut, amelynek havi felhasználási limitje van.
-Ha nem működik, <a href="https://mbkoltai.github.io/hun-pop-distr-shiny/" target="_blank" style="display: inline-block; padding: 0px 2px; border: 1px solid #007BFF; border-radius: 5px; color: #007BFF; text-decoration: none; cursor: pointer; transition: background-color 0.3s, color 0.3s;" 
-   onmouseover="this.style.backgroundColor='#0056b3'; this.style.color='#FFFFFF';" 
-   onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007BFF';">
-klikk az itt lokálisan futó statikus html változatra </a>. Ez utóbbi verzió igénybe vehet kb. 30 másodpercet míg betölt.\]
+Ha nem működik, 
+<a href="https://mbkoltai.github.io/hun-pop-distr-shiny" target="_blank" style="display: inline-block; 
+padding: 2px 6px; border: 2px solid #007BFF; border-radius: 5px; color: #007BFF; 
+text-decoration: none; cursor: pointer; transition: background-color 0.3s, color 0.3s;" 
+   onmouseover="this.style.backgroundColor='#007BFF'; this.style.color='black';" 
+   onmouseout="this.style.backgroundColor='#007BFF'; this.style.color='white';"> klikk a lokálisan futó (statikus html) változatra</a> . 
+Ez utóbbi verzió igénybe vehet kb. 30 másodpercet míg betölt.\]
 
 ## Interaktív opciók
 
