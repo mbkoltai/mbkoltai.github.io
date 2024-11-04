@@ -8,9 +8,10 @@ mathjax: true
 ---
 
 
-Az alábbi ShinyApp-pel tanulmányozható az ország teljes illetve választásra jogosult lakosságának mekkora része él adott méretű településeken. Az app betöltése igénybe vehet kb. 20-30 másodpercet.
+Az alábbi interaktív grafikon és kalkulátor azt mutatja meg, hogy 
+az ország - teljes illetve választásra jogosult - lakossága hogyan oszlik el településméret szerint. 
 
-<a href="https://mbkoltai.github.io/hun-pop-distr-shiny/" class="button">Magyarország település-szerkezete</a>
+<a href="https://mbkoltai.shinyapps.io/shinyapp_HU_pop_distr/" class="button">Magyarország település-szerkezete</a>
 
 <style>
 .button {
@@ -31,7 +32,13 @@ Az alábbi ShinyApp-pel tanulmányozható az ország teljes illetve választásr
 }
 </style>
 
-### Interaktív opciók
+\[A fenti verzió a shinyapps.io szerveren fut, amelynek havi felhasználási limitje van.
+Ha nem működik, <a href="https://mbkoltai.github.io/hun-pop-distr-shiny/" target="_blank" style="display: inline-block; padding: 0px 2px; border: 1px solid #007BFF; border-radius: 5px; color: #007BFF; text-decoration: none; cursor: pointer; transition: background-color 0.3s, color 0.3s;" 
+   onmouseover="this.style.backgroundColor='#0056b3'; this.style.color='#FFFFFF';" 
+   onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007BFF';">
+klikk az itt lokálisan futó statikus html változatra </a>. Ez utóbbi verzió igénybe vehet kb. 30 másodpercet míg betölt.\]
+
+## Interaktív opciók
 
 1) _Teljes illetve választásra jogosult lakosság eloszlásának vizualizációja_:  
 - x-tengely: településméret  
