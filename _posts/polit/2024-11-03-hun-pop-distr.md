@@ -19,7 +19,7 @@ az ország - teljes illetve választásra jogosult - lakossága hogyan oszlik el
     padding: 10px 20px;
     font-size: 22px;
     color: white;
-    background-color: #007bff; /* Button background color */
+    background-color: #0056b3; /* Button background color */
     border: 2px solid transparent; /* Transparent border by default */
     border-radius: 5px;
     text-align: center;
@@ -34,11 +34,19 @@ az ország - teljes illetve választásra jogosult - lakossága hogyan oszlik el
 
 \[A fenti verzió a shinyapps.io szerveren fut, amelynek havi felhasználási limitje van.
 Ha nem működik, 
-<a href="https://mbkoltai.github.io/hun-pop-distr-shiny" target="_blank" style="display: inline-block; 
-padding: 2px 6px; border: 2px solid #007BFF; border-radius: 5px; color: #007BFF; 
-text-decoration: none; cursor: pointer; transition: background-color 0.3s, color 0.3s;" 
-   onmouseover="this.style.backgroundColor='#007BFF'; this.style.color='black';" 
-   onmouseout="this.style.backgroundColor='#007BFF'; this.style.color='white';"> klikk a lokálisan futó (statikus html) változatra</a> . 
+<a href="https://mbkoltai.github.io/hun-pop-distr-shiny" target="_blank" 
+   style="display: inline-block; 
+          padding: 0px 2px; 
+          border: 2px solid #0056b3; 
+          border-radius: 3px; 
+          background-color: #0056b3; 
+          color: white; 
+          text-decoration: none; 
+          cursor: pointer; 
+          transition: color 0.3s, border-color 0.3s;"
+ onmouseover="this.style.color='red'; this.style.borderColor='red';"
+ onmouseout="this.style.color='white'; this.style.borderColor='#0056b3';">
+klikk a lokálisan futó (statikus html) változatra</a>.
 Ez utóbbi verzió igénybe vehet kb. 30 másodpercet míg betölt.\]
 
 ## Interaktív opciók
