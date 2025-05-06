@@ -75,6 +75,8 @@ plugins:
   - jekyll-feed
   - jekyll-avatar
   - jekyll-seo-tag
+  - jekyll-toc
+
 # Create a sitemap using the official Jekyll sitemap gem
 # Create an Atom feed using the official Jekyll feed gem
 
