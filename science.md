@@ -4,15 +4,15 @@ permalink: /science/
 title: ""
 ---
 
-## Academic work
-
-### Current workplace
+<!-- ## Academic work -->
 
 [Academic profile at Imperial College London](https://profiles.imperial.ac.uk/m.koltai)
 
+Recent [CV](https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/refs/heads/source/images/mihalykoltai_CV.pdf).
+
 ### Peer-reviewed articles
 
-See my [Google Scholar profile](https://scholar.google.com/citations?user=ykWF9bgAAAAJ&hl=en).
+[Google Scholar profile](https://scholar.google.com/citations?user=ykWF9bgAAAAJ&hl=en).
 
 <!--## Talks at conferences
 
