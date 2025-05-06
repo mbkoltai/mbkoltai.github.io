@@ -106,22 +106,22 @@ I also have an interest in economics, politics and some other topics, for posts 
 
 
   <a href="{{ site.baseurl }}/science/" class="image-wrapper">
-  <img src="https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/refs/heads/source/images/double_inhib_bistable_symm_manytrajs_n4.jpg" alt="science">
+  <img src="{{ site.baseurl }}/images/double_inhib_bistable_symm_manytrajs_n4.jpg" alt="science">
 <div class="img-label">science</div>
   </a>
 
   <a href="{{ site.baseurl }}/ecopol/" class="image-wrapper">
-  <img src="https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/refs/heads/source/images/D1_multiplier.png" alt="econ">
+  <img src="{{ site.baseurl }}/images/D1_multiplier.png" alt="econ">
   <div class="img-label">economics</div>
   </a>
 
   <a href="{{ site.baseurl }}/polit" class="image-wrapper">
-  <img src="https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/refs/heads/source/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets_textboxes.png" alt="history">
+  <img src="{{ site.baseurl }}/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets_textboxes.png" alt="history">
   <div class="img-label">history/politics</div>
   </a>
 
 <a href="{{ site.baseurl }}/blog/tags" class="image-wrapper">
-<img src="https://ramramaswamy.org/wp-content/uploads/2018/12/words1-768x491.png" alt="tags">
+<img src="{{ site.baseurl }}/images/website_basics/tags_white.png" alt="tags">
   <div class="img-label">tags</div>
   </a>
 
