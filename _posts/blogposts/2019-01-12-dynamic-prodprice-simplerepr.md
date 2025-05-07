@@ -82,7 +82,7 @@ This is a system of first-order, non-linear, autonomous difference equations, th
 I simulated the system in MATLAB with the following numerical values (also used in the article cited below as a reference): $$L_T = 300$$, $$ \alpha = 1/2 $$, $$ \beta_1 = 1/6 $$, $$ \beta_2 = 1/3$$, $$\mu = 1/2$$, $$ X_1 = 200$$, $$ X_2 = 300$$ and the initial values $$p_1(0)=p_2(0)=1$$.
 This is the plot of the dynamics of unit prices and some of the ratios of the system:
 
-![_config.yml]({{ site.baseurl }}/images/unitprices_ratios.png)
+![_config.yml]({{ site.baseurl }}/images/dynamic-prodprice-simplerepr/unitprices_ratios.png)
 
 The system satisfies the following equalities (these are all in price terms):
 - $$W_1(t) = C_1(t+1) + C_2(t+1) = p_1(t+1) X_1 $$, output of capital goods of the current period equals input of capital goods in next period
@@ -92,7 +92,7 @@ The system satisfies the following equalities (these are all in price terms):
 
 Since unit prices are changing until we reach the stationary state, the amount of money needed for total outlays (wages + capital goods) is also changing (see on the plot above the ratio of costs), and since inputs (in this model) transfer their prices to the output, gross output in terms of price is also changing, though net value added does not. Once we reach the fixed point unit prices do not change anymore, therefore wages, profit, outlays on capital goods and gross output have also reached a stationary state. This final state is identical to the equilibrium price (equal input and output prices) solution to the system. The fixed point is obviously attracting, so sampling in initial values (for unit prices) will lead to the same stationary values, as shown in the plot below.
 
-![_config.yml]({{ site.baseurl }}/images/prices_prod_initval_sampling.png)
+![_config.yml]({{ site.baseurl }}/images/dynamic-prodprice-simplerepr/prices_prod_initval_sampling.png)
 
 But the dynamical system converges to this stationary state only because the technical coefficients, the physical productivity and relative sizes of the departments do not change in this model.
 If the parameters change before the system converges to the fixed point, then the pre-equilibrium behavior will continue (see Giussani 1991).
@@ -107,7 +107,7 @@ Finally, since the price of total output is growing, there needs to be more mone
 
 ### Script
 
-[MATLAB script](https://github.com/mbkoltai/mbkoltai.github.io/blob/master/images/sequential_prices.m)
+[MATLAB script]({{site.baseurl}}/images/dynamic-prodprice-simplerepr/sequential_prices.m)
 
 ### References
 

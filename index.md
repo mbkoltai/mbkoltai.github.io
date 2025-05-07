@@ -76,8 +76,8 @@ layout: default
 .placeholder-box {
   width: 100%; /* Ensures it fills the container width */
   /* border: 1px solid black; */
-  /* height: 0; */
-  /*background: #eee; /* Light gray */
+  /* height: 100%; */
+  background: white; /* Light gray */
   /* opacity: 0.7;
 }
 </style>
@@ -91,7 +91,7 @@ layout: default
 
 
   <a href="{{ site.baseurl }}/science/" class="image-wrapper">
-  <img src="{{ site.baseurl }}/images/double_inhib_bistable_symm_manytrajs_n4.jpg" alt="science">
+  <img src="{{site.baseurl}}/images/multistable/double_inhib_bistable_symm_manytrajs_n4.jpg" alt="science">
 <div class="img-label">science</div>
   </a>
 

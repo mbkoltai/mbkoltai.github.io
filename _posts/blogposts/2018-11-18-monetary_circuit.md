@@ -61,7 +61,7 @@ $$\tag{3}\label{v1_sequence}$$
 Now we can see a *causal* multiplier effect, as the initial injection of money as advanced wages by $$D_1$$, $$V_1$$, leads to the realization of commodities of a (multiple times) higher total value.
 $$V_1$$ *CoG* is sold in step (2), then again $$V_2$$ of *CoG* in step (4), and $$P_1$$ (?) of *MoP* sold in step (5), and more *MoP* in step (6) when firms in $$D_1$$ buy *MoP* from firms within their sector.
 The flow of money can be seen on this figure I created:  
-![_config.yml]({{ site.baseurl }}/images/v1_moneyflow_circuit.PNG)
+![_config.yml]({{ site.baseurl }}/images/monetary_circuit/v1_moneyflow_circuit.PNG)
 
 **Figure 1: the flow of money through both departments**
 
@@ -89,7 +89,7 @@ $$P_1^* = P_2^* \sum_{i=0}^\infty (1 - w n_1)^i = \frac{1}{w n_1} P_2^*
 
 It seems to me, to have this multiplier effect, firms of $$D_1$$ should use their proceeds to pay back their loans only in the last cycle, before that the mutual exchanges within $$D_1$$ need to repeat until convergence as in \eqref{p1_p2_multiplier}. In fact, we need to assume that $$D_{1,1}$$ receives back its own capital expenditure $$(1-w n_1)(1-w n_1)P_2^* $$, repeating this cycle until convergence and only then spending it, together with $$w n_1 (1-w n_1) P_2^* $$ on wages, so in total we have $$(1-w n_1) P_2^* $$ of wage outlays from $$D_{1,1}$$. I show the multiplier of $$D_1$$ in this model as I understand it on Figure 2 below.
 
-![_config.yml]({{ site.baseurl }}/images/D1_multiplier.png)
+![_config.yml]({{ site.baseurl }}/images/monetary_circuit/D1_multiplier.png)
 **Figure 2: the multiplier of $$D_1$$**
 
 It is the two 'auto-loops' (to borrow a term from systems biology) within the sectors that generate the multiplier effect. One is the circulating of wages within $$D_2$$ through its workers: in each round $$D_2$$ pays wages to its workers that they repay for the same amount of consumption goods. In each round the revenue returned is scaled by $$w n_2$$ when paid out as wages, which means that the total amount paid out as $$V_2^* $$ wages (and total amount of consumption good sold within the sector) is $$V_1^* \sum_{i=1}^\infty (w n_2)^i = \frac{w n_2}{1 - w n_2}$$.

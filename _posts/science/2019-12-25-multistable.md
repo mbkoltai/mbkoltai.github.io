@@ -51,7 +51,7 @@ With *fcn\_plot_bifurc_diff_n_heatmap* we can visualize the results as heatmaps 
 fcn_plot_bifurc_diff_n_heatmap(beta_vals, n_vals, k_val, roots_real_nonnegat_matr)
 ```
 
-![_config.yml]({{ site.baseurl }}/images/bifurc_heatmaps_autostim.jpg)
+![_config.yml]({{site.baseurl}}/images/multistable/bifurc_heatmaps_autostim.jpg)
 **Figure 1. Heatmaps showing the fixed points of a self-activating gene at different values of the cooperativity parameter. There are three bands corresponding to the three possible fixed points.**
 
 Or as lineplots where the unstable fixed points are shown by the red dotted lines, called by the command:
@@ -59,7 +59,7 @@ Or as lineplots where the unstable fixed points are shown by the red dotted line
 fcn_plot_bifurc_diff_n(roots_real_nonnegat_matr, beta_vals, n_vals,k_val,plot_pars)
 ```
 and producing these plots:
-![_config.yml]({{ site.baseurl }}/images/bifurc_plots_autostim.jpg)
+![_config.yml]({{site.baseurl}}/images/multistable/bifurc_plots_autostim.jpg)
 **Figure 2. Bifurcation plots for a self-activating gene at different values of the cooperativity parameter. Blue lines are stable fixed points, dashed red lines are unstable.**
 
 The lower threshold for the bistable range goes down while its extension grows with an increasing nonlinearity of the auto-activation.
@@ -71,7 +71,7 @@ To intuitively illustrate this point, before setting up a model, let's call the 
 Note that as we analyze the system in 2D now the basal production rate is a single value, we are not scanning through a range of values.
 Where the two nullclines intersect we have a global fixed point: both variables have 0 time derivatives at these intersection points.
 
-![_config.yml]({{ site.baseurl }}/images/drawing_nullclines.png)
+![_config.yml]({{ site.baseurl }}/images/multistable/drawing_nullclines.png)
 
 **Figure 3: Sketch of intersecting nullclines**
 
@@ -119,7 +119,7 @@ The flag 'vectorfield' tells the function to evaluate the algebraic equations th
 
 For a parameter set with basal production rates falling within the bistable region of the bifurcation plot on Figure 2 for $$n=4$$ both variables have nullclines with 3 branches across the entire range.
 
-<img src="https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/master/images/double_inhib_bistable_symm_vectorfield_n4.jpg" style="width:80%" alt="n4_vectorfield">
+<img src="https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/master/images/multistable/double_inhib_bistable_symm_vectorfield_n4.jpg" style="width:80%" alt="n4_vectorfield">
 **Figure 4: Inhibition-coupled bistable genes, parameter set resulting in 4 stable fixed points.** Green and blue lines showing the stable branches of the nullclines, dash-dotted thinner lines the unstable ones. Vector field showing the derivatives of the two state variables.
 
 The stable branches are shown by thicker markers (green and blue) and the unstable ones by dashed-dotted thinner lines. The intersections of the stable branches have to be the fixed points of the system.  
@@ -139,14 +139,14 @@ end
 
 For the parameter set above the trajectories look like this:  
 
-![_config.yml]({{ site.baseurl }}/images/double_inhib_bistable_symm_manytrajs_n4.jpg)
+![_config.yml]({{ site.baseurl }}/images/multistable/double_inhib_bistable_symm_manytrajs_n4.jpg)
 **Figure 5: Inhibition-coupled bistable genes: parameter set resulting in 4 stable fixed points.**  Trajectories from different initial conditions converging to one of the four fixed points.
 
 We can see how the unstable branches are the 'frontiers' of the basins of attraction.
 
 An interesting case is a parameter set when the nullcline don't just intersect at given points, but overlap along a whole section:
 
-![_config.yml]({{ site.baseurl }}/images/double_inhib_bistable_symm_trajs_n3_vectorfield.jpg)
+![_config.yml]({{ site.baseurl }}/images/multistable/double_inhib_bistable_symm_trajs_n3_vectorfield.jpg)
 **Figure 6: Inhibition-coupled bistable genes, parameter set resulting in overlapping nullclines yielding fixed points along the overlapping section.**
 
 In this case the overlapping section of the nullclines are all fixed points, so trajectories in the basin of attraction converge to different points of this line. This means (I think) there are infinitely many stable solutions that converge on the points of this line section in this region of the phase space. It would be interesting to explore what this means in terms of the polynomials.

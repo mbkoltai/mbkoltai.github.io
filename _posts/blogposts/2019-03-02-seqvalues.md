@@ -81,7 +81,7 @@ The parameter set used was: $$ \mathbf{\alpha}= [0.2; 0.4], \mathbf{\beta}= [0.3
 \mathbf{\gamma}= [0.9; 0.8],
 \mathbf{A} = \begin{bmatrix} 2/3 & 1/3 \\ 1/6 & 1/2 \\ \end{bmatrix}$$
 
-![_config.yml]({{ site.baseurl }}/images/unitprices_nonmonot_paradox.png)
+![_config.yml]({{ site.baseurl }}/images/seqvalues/unitprices_nonmonot_paradox.png)
 **Figure 1: Non-monotonic dynamics of sequential values with increasing productivity**
 
 This non-trivial and somewhat puzzling feature comes about because of two dynamical terms that can be seen in  equation \ref{dynamic_values_sol_L_t}: one coming from the input values of the previous period and the other from labor productivity.
