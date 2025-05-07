@@ -116,7 +116,7 @@ I also have an interest in economics, politics and some other topics, for posts 
   </a>
 
   <a href="{{ site.baseurl }}/polit" class="image-wrapper">
-  <img src="{{ site.baseurl }}/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets_textboxes.png" alt="history">
+  <img src="{{site.baseurl}}/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets_textboxes.png" alt="history">
   <div class="img-label">history/politics</div>
   </a>
 

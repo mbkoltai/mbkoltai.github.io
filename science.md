@@ -8,7 +8,7 @@ title: ""
 
 [Academic profile at Imperial College London](https://profiles.imperial.ac.uk/m.koltai)
 
-Recent [CV](https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/refs/heads/source/images/mihalykoltai_CV.pdf).
+Here is a (relatively) recent [CV]({{site.baseurl}}/images/website_basics/mihalykoltai_CV.pdf).
 
 ### Peer-reviewed articles
 
