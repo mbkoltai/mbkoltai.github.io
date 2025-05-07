@@ -3,7 +3,7 @@ layout: post
 title: Sources of economic growth in the US, UK, Germany & Japan, 1990-2019
 tags: political-economy globalization growth gdp
 excerpt: Labour force expansion vs. productivity growth
-secondary: ecopol
+secondary: blogposts
 mathjax: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: The monetary circuit (I)
 tags: political-economy economic-models marxian-economics demand monetary-circuit
 excerpt: Monetary realization of profits by a multiplier effect
-secondary: ecopol
+secondary: blogposts
 mathjax: true
 ---
 

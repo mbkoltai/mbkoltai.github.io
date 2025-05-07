@@ -3,10 +3,15 @@ layout: post
 title: A toy model of dynamic prices of production
 tags: political-economy economic-models classical-political-economy marxian-economics transformation-problem nonlinear-dynamics
 excerpt: With labor values and equilibrium
-secondary: ecopol
+secondary: blogposts
 mathjax: true
 ---
-I have not posted lately on A. Trigg's book on reproduction schemas as I got into reading on the (in)famous 'transformation problem' and could not resist playing with some models in the literature. In one sentence the transformation problem is about whether the claim that the value of commodities is indirectly or directly determined by the average labour time needed for their production (+ non-labour inputs) is compatible with the observation/expectation that profit rates across sectors with different labour/capital ratios would tend toward equalization. I will not discuss this problem per se in this post, there is a lot of literature available on that, although this model can be regarded as a solution to the 'transformation problem'.
+
+I have not posted lately on A. Trigg's book on reproduction schemas as I got into reading on the (in)famous 'transformation problem' and could not resist playing with some models in the literature. The transformation problem is about whether the claim that:
+- the value of commodities is indirectly or directly determined by the average labour time needed for their production (+ non-labour inputs) is compatible with the observation/expectation that
+- profit rates across sectors with different labour/capital ratios would tend toward equalization. 
+
+I will not discuss this problem per se in this post, there is a lot of literature available on that, although this model can be regarded as a solution to the 'transformation problem'.
 I want to write down the equations of a dynamical model proposed in Kliman [1988] with numerical examples (but without the equations explicitly), of prices of production where the aggregate equalities (total price) = (total value) and (total surplus value) = (total profit) are satisfied, total supply can be sold in each period of production, and the balancing condition (see Eq. \eqref{balancing_cond}) between the two sectors of the economy is also met.
 The model has the following assumptions and properties:  
 1) value is expressed in money, there is only one accounting system  

@@ -3,21 +3,6 @@ title: home
 layout: default
 ---
 
-<!--
-# About
-My name is Mihaly Koltai, I am a research scientist and this is a website on my scientific work as well as some other interests I have.
-
-I have worked on mathematical modelling of biological systems since 2010, in the fields of systems biology and infectious disease modelling.
-
-I obtained a PhD from Ruprecht-Karls-Universität Heidelberg (Germany) in 2016 with a [thesis](https://archiv.ub.uni-heidelberg.de/volltextserver/20847/) on quantitative modelling of microbial signalling pathways.
-After my PhD I worked at Institut Curie (France), at LSHTM (UK) and currently at Imperial College London (UK).
-For an academic CV [click here](https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/refs/heads/source/images/mihalykoltai_CV.pdf).
-
-For published scientific work as well as some blog posts on scientific topics [click here](https://mbkoltai.github.io/science/).
-
-I also have an interest in economics, politics and some other topics, for posts on these click on one of the sub-pages in the header.
--->
-
 
 <style>
 .image-grid {
@@ -110,19 +95,22 @@ I also have an interest in economics, politics and some other topics, for posts 
 <div class="img-label">science</div>
   </a>
 
-  <a href="{{ site.baseurl }}/ecopol/" class="image-wrapper">
+<!--  <a href="{{ site.baseurl }}/ecopol/" class="image-wrapper">
   <img src="{{ site.baseurl }}/images/D1_multiplier.png" alt="econ">
   <div class="img-label">economics</div>
   </a>
-
-  <a href="{{ site.baseurl }}/polit" class="image-wrapper">
-  <img src="{{site.baseurl}}/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets_textboxes.png" alt="history">
-  <div class="img-label">history/politics</div>
-  </a>
+-->
 
 <a href="{{ site.baseurl }}/blog/tags" class="image-wrapper">
 <img src="{{ site.baseurl }}/images/website_basics/tags_white.png" alt="tags">
   <div class="img-label">tags</div>
-  </a>
+</a>
+
+<a href="{{ site.baseurl }}/blogposts" class="image-wrapper">
+  <img src="{{site.baseurl}}/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets_textboxes.png" alt="blog">
+  <div class="img-label">blog</div>
+</a>
+
+
 
 </div>

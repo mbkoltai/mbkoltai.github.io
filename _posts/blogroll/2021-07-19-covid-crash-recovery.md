@@ -1,9 +1,9 @@
 ---
 layout: post
 title: The COVID-19 crash and future scenarios
-tags: political-economy globalization climate-change complex-systems ecology epidemics covid19 growth
+tags: political-economy globalization climate-change complex-systems epidemics covid19 growth
 excerpt: Follow-up to 2020 article on globalisation
-secondary: polit
+secondary: blogposts
 mathjax: true
 ---
 

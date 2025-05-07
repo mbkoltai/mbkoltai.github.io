@@ -3,7 +3,7 @@ layout: post
 title: The reproduction schema and the 'Keynesian multiplier' (I)
 tags: political-economy economic-models classical-political-economy marxian-economics
 excerpt: Multiplier effect with one sector
-secondary: ecopol
+secondary: blogposts
 mathjax: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: The reproduction schema and the 'Keynesian multiplier' (II)
 tags: political-economy economic-models classical-political-economy marxian-economics
 excerpt: Reproduction and input-output analysis
-secondary: ecopol
+secondary: blogposts
 mathjax: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Magyarország lakosság-eloszlása településméret szerint 
 tags: politics demographics hungary elections data-visualisation
 excerpt: (in Hungarian)
-secondary: polit
+secondary: blogposts
 mathjax: true
 ---
 

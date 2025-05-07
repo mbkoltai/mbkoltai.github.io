@@ -1,19 +1,19 @@
 ---
 layout: page
 # title: "Science blogging"
-description: "Political economy"
+description: "blog posts"
 # header-img: "img/blog-bg.jpg"
-tags: political-economy #list of tags that you want to show in description of blog
-permalink: /ecopol/
+tags: blog blogroll #list of tags that you want to show in description of blog
+permalink: /blogposts/
 
 ---
 
 <div class="blog-index">
-<p>Posts on economics, economic theory and history.</p>
+<p>Blogging on various topics of economics, politics, history, degrowth...</p>
 <ul style="list-style-type: none;">
       {%  assign p = '9999' %}
       {%  for post in site.posts%}
-    {% if post.secondary == 'ecopol' %}
+    {% if post.secondary == 'blogposts' %}
 
       {% assign n = post.date | date: "%Y" %}
       {% if n != p %}

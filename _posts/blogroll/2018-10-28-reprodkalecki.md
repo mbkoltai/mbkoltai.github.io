@@ -3,7 +3,7 @@ layout: post
 title: Expanded reproduction and the Kalecki principle
 tags: political-economy economic-models classical-political-economy marxian-economics kalecki demand
 excerpt: Profits = investment + capitalist consumption?
-secondary: ecopol
+secondary: blogposts
 mathjax: true
 ---
 

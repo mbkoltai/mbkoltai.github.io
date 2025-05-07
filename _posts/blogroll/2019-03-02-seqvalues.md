@@ -3,7 +3,7 @@ layout: post
 title: Dynamic behavior of sequentially determined values
 tags: political-economy economic-models classical-political-economy marxian-economics transformation-problem
 excerpt: Weird properties of dynamic labor values
-secondary: ecopol
+secondary: blogposts
 mathjax: true
 ---
 
