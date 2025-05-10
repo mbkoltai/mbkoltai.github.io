@@ -33,6 +33,13 @@ layout: default
   border: 3px solid red;
 }
 
+ /* Make images responsive */
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
 .img-label {
   position: absolute;
   top: 0;
@@ -105,7 +112,7 @@ layout: default
 
 
   <a href="{{ site.baseurl }}/science/" class="image-wrapper">
-  <img src="{{site.baseurl}}/images/multistable/double_inhib_bistable_symm_manytrajs_n4.jpg" alt="science">
+<img src="{{site.baseurl}}/images/multistable/double_inhib_bistable_symm_manytrajs_n4.jpg" alt="science" class="responsive-image">
 <div class="img-label">science</div>
   </a>
 
@@ -116,12 +123,12 @@ layout: default
 -->
 
 <a href="{{ site.baseurl }}/blog/tags" class="image-wrapper">
-<img src="{{ site.baseurl }}/images/website_basics/tags_white.png" alt="tags">
+<img src="{{ site.baseurl }}/images/website_basics/tags_white.png" alt="tags" class="responsive-image">
   <div class="img-label">tags</div>
 </a>
 
 <a href="{{ site.baseurl }}/blogposts" class="image-wrapper">
-  <img src="{{site.baseurl}}/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets_textboxes.png" alt="blog">
+  <img src="{{site.baseurl}}/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets_textboxes.png" alt="blog" class="responsive-image">
   <div class="img-label">blog</div>
 </a>
 
