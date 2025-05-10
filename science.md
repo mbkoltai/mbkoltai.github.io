@@ -10,7 +10,6 @@ I have worked on mathematical modelling of biological systems since 2010, in the
 
 I obtained a PhD from Ruprecht-Karls-Universität Heidelberg (Germany) in 2016 with a [thesis](https://archiv.ub.uni-heidelberg.de/volltextserver/20847/) on quantitative modelling of microbial signalling pathways.
 After my PhD I worked at Institut Curie (France), at LSHTM (UK) and currently at Imperial College London (UK).
-For an academic CV [click here](https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/refs/heads/source/images/mihalykoltai_CV.pdf).
 
 Here is my current [academic profile](https://profiles.imperial.ac.uk/m.koltai) at Imperial College London.
 
