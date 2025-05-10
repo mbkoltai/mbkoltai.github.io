@@ -50,6 +50,20 @@ layout: default
   /* transition: color 0.3s ease; */
 }
 
+/* Media query for smaller screens (e.g., phones) */
+@media only screen and (max-width: 768px) {
+  .img-label {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Optionally, you can add more media queries for different screen sizes */
+@media only screen and (max-width: 480px) {
+  .img-label {
+    font-size: 0.8em; /* Further adjust font size for very small screens */
+  }
+}
+
 .grid {
   background: transparent; /* No background on the grid itself */
 }
