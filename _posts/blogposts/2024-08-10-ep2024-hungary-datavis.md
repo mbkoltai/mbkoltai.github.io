@@ -63,6 +63,7 @@ To analyse changes of the electoral map, I grouped all settlements, towns and ci
 Figure 2 shows how the vote share of FIDESZ changed from EP2019 to 2024 across all these geographies. The blue colour shows a _fall_ in the government vote share, whereas red (using red here instead of orange because of its better visibility) shows those settlements/towns/cities where its vote share went up.
 
 ![_config.yml]({{ site.baseurl }}/images/ep2024/indiv_telep/FIDESZKDNP_szazalek_szint_2019_2024_indiv_telep.png)
+
 #### Figure 2: FIDESZ vote share in 2019 and 2024 (arrowhead=2024, base=2019) in all settlements of Hungary. Blue color shows a fall in the vote share [\[<ins>full resol.</ins>\]](https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/master/images/ep2024/indiv_telep/FIDESZKDNP_szazalek_szint_2019_2024_indiv_telep.png)
 
 The FIDESZ vote share went down in every town/city with more than 10 thousand voters, with the single exception of Ózd.
