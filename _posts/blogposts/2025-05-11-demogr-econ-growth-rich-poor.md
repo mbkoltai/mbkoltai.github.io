@@ -156,6 +156,6 @@ Here, the goal has been to show to what extent these macro-trends differ across 
 
 
 **<u>Code base and data sources</u>**  
-[Code]({{ site.baseurl }}/images/demogr-econ-growth-rich-poor/plots.R)  
+[R code for graphs](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/demogr-econ-growth-rich-poor/plots.R)  
 [Data source: population](https://ourworldindata.org/grapher/population?v=1&csvType=full&useColumnShortNames=false)  
 [Data source: GDP-per-capita](https://ourworldindata.org/grapher/gdp-per-capita-maddison-project-database?v=1&csvType=full&useColumnShortNames=false)
