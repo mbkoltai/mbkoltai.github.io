@@ -105,31 +105,32 @@ layout: default
 
 <div class="image-grid">
 
-<a href="{{ site.baseurl }}/about" class="image-wrapper">
+<a href="{{site.baseurl}}/about" class="image-wrapper">
   <div class="placeholder-box"></div>
   <div class="img-label">about</div>
 </a>
 
 
-  <a href="{{ site.baseurl }}/science/" class="image-wrapper">
+  <a href="{{site.baseurl}}/science/" class="image-wrapper">
 <img src="{{site.baseurl}}/images/multistable/double_inhib_bistable_symm_manytrajs_n4.jpg" alt="science" class="responsive-image">
 <div class="img-label">science</div>
   </a>
 
-<!--  <a href="{{ site.baseurl }}/ecopol/" class="image-wrapper">
-  <img src="{{ site.baseurl }}/images/D1_multiplier.png" alt="econ">
+<!--  <a href="{{site.baseurl}}/ecopol/" class="image-wrapper">
+  <img src="{{site.baseurl}}/images/D1_multiplier.png" alt="econ">
   <div class="img-label">economics</div>
   </a>
 -->
 
-<a href="{{ site.baseurl }}/blog/tags" class="image-wrapper">
-<img src="{{ site.baseurl }}/images/website_basics/tags_white.png" alt="tags" class="responsive-image">
-  <div class="img-label">tags</div>
+
+<a href="{{site.baseurl}}/blogposts" class="image-wrapper">
+  <img src="{{site.baseurl}}/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets_textboxes.png" alt="blog" class="responsive-image"  style="width: 75%;">
+  <div class="img-label">blog</div>
 </a>
 
-<a href="{{ site.baseurl }}/blogposts" class="image-wrapper">
-  <img src="{{site.baseurl}}/images/illusionglob/world_pop_gdp_exports_log_yaxis_2insets_textboxes.png" alt="blog" class="responsive-image">
-  <div class="img-label">blog</div>
+<a href="{{site.baseurl}}/blog/tags" class="image-wrapper">
+<img src="{{site.baseurl}}/images/website_basics/tags_white.png" alt="tags" class="responsive-image">
+  <div class="img-label">tags</div>
 </a>
 
 

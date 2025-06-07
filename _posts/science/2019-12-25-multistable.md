@@ -71,9 +71,10 @@ To intuitively illustrate this point, before setting up a model, let's call the 
 Note that as we analyze the system in 2D now the basal production rate is a single value, we are not scanning through a range of values.
 Where the two nullclines intersect we have a global fixed point: both variables have 0 time derivatives at these intersection points.
 
-![_config.yml]({{ site.baseurl }}/images/multistable/drawing_nullclines.png)
-
-**Figure 3: Sketch of intersecting nullclines**
+<div style="width: 50%; margin: 0 auto; text-align: center;">
+  <img src="{{ site.baseurl }}/images/multistable/drawing_nullclines.png" alt="Example">
+  <p><strong>Figure 3: Sketch of intersecting nullclines</strong></p>
+</div>
 
 We can have up to 9 intersection points and 4 of them can be intersections of the stable branches of the nullclines, shown by the green circles, so these will be stable fixed points.
 
