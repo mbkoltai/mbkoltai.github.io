@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Savings Goal Time Calculator
-tags: politics demographics hungary elections data-visualisation
+tags: data-visualisation finance money
 excerpt: Years needed to reach target as a function of annual input and RoI
 secondary: blogposts
 mathjax: true
