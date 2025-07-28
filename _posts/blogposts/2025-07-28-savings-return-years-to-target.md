@@ -2,7 +2,7 @@
 layout: post
 title: Savings Goal Time Calculator
 tags: data-visualisation finance money
-excerpt: Years needed to reach target as a function of annual input and RoI
+excerpt: Years to goal as a function of annual saving and RoI
 secondary: blogposts
 mathjax: true
 ---
