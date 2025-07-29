@@ -18,11 +18,9 @@ The formula assumes that all savings from income are continuously reinvested, al
   </div>
 </div>
 
-
-
 Where:
 - *y*: amount saved per year  
-- *r*: annual return rate (as a decimal)  
+- *r*: annual return rate
 - *n*: number of years  
 
 Given a fixed target, the number of years required to reach it is:
