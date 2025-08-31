@@ -2,7 +2,7 @@
 layout: post
 title: Savings Goal Time Calculator
 tags: data-visualisation finance money savings
-excerpt: Years to goal as a function of annual saving and RoI
+excerpt: Years to goal by annual saving and RoI (Shiny app)
 secondary: blogposts
 mathjax: true
 ---

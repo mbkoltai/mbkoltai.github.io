@@ -1,0 +1,414 @@
+{
+  "chart": {
+    "title": "Annual death rate by age group",
+    "subtitle": "The annual death rate, per 1,000 people in a given age group.",
+    "citation": "Human Mortality Database (2024)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/annual-death-rate-by-age-group?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "United States"
+    ]
+  },
+  "columns": {
+    "Central death rate - Sex: total - Age: 0 - Type: period": {
+      "titleShort": "Central death rate at birth",
+      "titleLong": "Central death rate at birth - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001659,
+      "shortName": "central_death_rate__sex_total__age_0__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at birth – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001659.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 1-4 - Type: period": {
+      "titleShort": "Central death rate at 1-4",
+      "titleLong": "Central death rate at 1-4 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001675,
+      "shortName": "central_death_rate__sex_total__age_1_4__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 1-4 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001675.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 5-9 - Type: period": {
+      "titleShort": "Central death rate at 5-9",
+      "titleLong": "Central death rate at 5-9 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001931,
+      "shortName": "central_death_rate__sex_total__age_5_9__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 5-9 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001931.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 10-14 - Type: period": {
+      "titleShort": "Central death rate at 10-14",
+      "titleLong": "Central death rate at 10-14 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001707,
+      "shortName": "central_death_rate__sex_total__age_10_14__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 10-14 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001707.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 15-19 - Type: period": {
+      "titleShort": "Central death rate at 15-19",
+      "titleLong": "Central death rate at 15-19 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001787,
+      "shortName": "central_death_rate__sex_total__age_15_19__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 15-19 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001787.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 20-24 - Type: period": {
+      "titleShort": "Central death rate at 20-24",
+      "titleLong": "Central death rate at 20-24 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001803,
+      "shortName": "central_death_rate__sex_total__age_20_24__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 20-24 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001803.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 25-29 - Type: period": {
+      "titleShort": "Central death rate at 25-29",
+      "titleLong": "Central death rate at 25-29 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001835,
+      "shortName": "central_death_rate__sex_total__age_25_29__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 25-29 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001835.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 30-34 - Type: period": {
+      "titleShort": "Central death rate at 30-34",
+      "titleLong": "Central death rate at 30-34 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001851,
+      "shortName": "central_death_rate__sex_total__age_30_34__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 30-34 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001851.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 35-39 - Type: period": {
+      "titleShort": "Central death rate at 35-39",
+      "titleLong": "Central death rate at 35-39 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001867,
+      "shortName": "central_death_rate__sex_total__age_35_39__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 35-39 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001867.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 40-44 - Type: period": {
+      "titleShort": "Central death rate at 40-44",
+      "titleLong": "Central death rate at 40-44 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001883,
+      "shortName": "central_death_rate__sex_total__age_40_44__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 40-44 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001883.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 45-49 - Type: period": {
+      "titleShort": "Central death rate at 45-49",
+      "titleLong": "Central death rate at 45-49 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001915,
+      "shortName": "central_death_rate__sex_total__age_45_49__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 45-49 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001915.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 50-54 - Type: period": {
+      "titleShort": "Central death rate at 50-54",
+      "titleLong": "Central death rate at 50-54 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001947,
+      "shortName": "central_death_rate__sex_total__age_50_54__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 50-54 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001947.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 55-59 - Type: period": {
+      "titleShort": "Central death rate at 55-59",
+      "titleLong": "Central death rate at 55-59 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001963,
+      "shortName": "central_death_rate__sex_total__age_55_59__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 55-59 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001963.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 60-64 - Type: period": {
+      "titleShort": "Central death rate at 60-64",
+      "titleLong": "Central death rate at 60-64 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1001979,
+      "shortName": "central_death_rate__sex_total__age_60_64__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 60-64 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1001979.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 65-69 - Type: period": {
+      "titleShort": "Central death rate at 65-69",
+      "titleLong": "Central death rate at 65-69 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1002011,
+      "shortName": "central_death_rate__sex_total__age_65_69__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 65-69 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1002011.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 70-74 - Type: period": {
+      "titleShort": "Central death rate at 70-74",
+      "titleLong": "Central death rate at 70-74 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1002027,
+      "shortName": "central_death_rate__sex_total__age_70_74__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 70-74 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1002027.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 75-79 - Type: period": {
+      "titleShort": "Central death rate at 75-79",
+      "titleLong": "Central death rate at 75-79 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1002043,
+      "shortName": "central_death_rate__sex_total__age_75_79__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 75-79 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1002043.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 80-84 - Type: period": {
+      "titleShort": "Central death rate at 80-84",
+      "titleLong": "Central death rate at 80-84 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1002075,
+      "shortName": "central_death_rate__sex_total__age_80_84__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 80-84 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1002075.metadata.json"
+    },
+    "Central death rate - Sex: total - Age: 85-89 - Type: period": {
+      "titleShort": "Central death rate at 85-89",
+      "titleLong": "Central death rate at 85-89 - HMD – period tables",
+      "descriptionShort": "The death rate, calculated as the number of deaths divided by the average number of people alive during the interval.",
+      "descriptionKey": [
+        "The death rate is measured using the number of person-years lived during the interval.",
+        "Person-years refers to the combined total time that a group of people has lived. For example, if 10 people each live for 2 years, they collectively contribute 20 person-years.",
+        "The death rate is slightly different from the 'probability of death' during the interval, because the 'probability of death' metric uses a different denominator: the number of people alive at that age at the start of the interval, while this indicator uses the average number of people alive during the interval."
+      ],
+      "descriptionProcessing": "The original metric is given as a fraction between 0 and 1 (i.e. per-capita). We multiply this by 1,000 to get a per-1,000 people rate.",
+      "unit": "deaths per 1,000 people",
+      "timespan": "1751-2023",
+      "type": "Numeric",
+      "owidVariableId": 1002091,
+      "shortName": "central_death_rate__sex_total__age_85_89__type_period",
+      "lastUpdated": "2024-12-01",
+      "nextUpdate": "2025-12-01",
+      "citationShort": "Human Mortality Database (2024) – with minor processing by Our World in Data",
+      "citationLong": "Human Mortality Database (2024) – with minor processing by Our World in Data. “Central death rate at 85-89 – HMD – period tables” [dataset]. Human Mortality Database, “Human Mortality Database” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1002091.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-06-04",
+  "activeFilters": {}
+}
