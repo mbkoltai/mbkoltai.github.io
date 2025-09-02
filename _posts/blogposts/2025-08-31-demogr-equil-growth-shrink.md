@@ -33,7 +33,7 @@ In this scenario, the dynamics in yearly age brackets are described by the follo
 
 
 $$\vec{b}$$ is a column vector with the first entry the number of births per time unit (eg. year), and its other (n-1) entries 0s.  
-$$K_{age}$$ is the ageing matrix. Its diagonal entries (multiplied by −1) represent people leaving each age group, while the subdiagonal entries just below the diagonal represent people entering each group from the younger cohort. The ageing coefficient equals the inverse of the time unit used in the equations (here, simply 1/year).  
+$$K_{age}$$ is the ageing matrix. Its diagonal entries (multiplied by −1) represent people leaving each age group, while the sub-diagonal entries just below the diagonal represent people entering each group from the younger cohort. The ageing coefficient equals the inverse of the time unit used in the equations (here, simply 1/year).  
 $$K_{death}$$ is a diagonal matrix containing the mortality coefficients (deaths per capita per unit time). All coefficients must be positive to be physically meaningful, although in some age groups the death rate may be effectively zero.
 
 This is a first-order, nonhomogeneous linear system and it will always have a stable solution, which we can obtain after some basic rearrangements:
@@ -65,7 +65,7 @@ In reality, this is not exactly true, as the age-dependent mortality rates look 
 <a href="{{site.baseurl}}/images/demogr_stable_pop/mort_rate_approx.png">
 <img src="{{site.baseurl}}/images/demogr_stable_pop/mort_rate_approx.png" alt="_config.yml" style="width: 700px;" />
 </a>
-<figcaption style="font-size: 20px; margin-top: 6px; width: 700px;"> <strong>Figure 1</strong> Age-dependent mortality rates (data and inter- and extra-polation)</figcaption>
+<figcaption style="font-size: 20px; margin-top: 6px; width: 700px;"> <strong>Figure 1</strong> Age-dependent mortality rates (data and inter- and extrapolation)</figcaption>
   </figure>
 </div>
 
@@ -160,14 +160,14 @@ The first (newborn) age group is different from all others, because it has a net
   </div> <div style="background-color: #cccccc; padding: 6px 10px; border-radius: 4px; font-size: 0.9em;"> (10) </div>
 </div>
 
-In equilibrium, using the previous equation, expressing every ($j>1$) age group as a function of the first one we have:
+In equilibrium, using the previous equation, expressing every ($$j>1$$) age group as a function of the first one we have:
 <div style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 1em;">
   <div style="background-color: #e0e0e0; padding: 12px; border-radius: 6px;">
     \[ \bar{x}_1 = \sum_{j=k}^{l} r_j \frac{\bar{x}_{1}}{\prod_{i=1}^{j}(1+\delta_i)} \]
   </div> <div style="background-color: #cccccc; padding: 6px 10px; border-radius: 4px; font-size: 0.9em;"> (11) </div>
 </div>
 
-Since $$\bar{x}_1$$ is on both sides, it cancels out, and the equlibrium condition is defined as between parameters (not state variables) only:
+Since $$\bar{x}_1$$ is on both sides, it cancels out, and the equilibrium condition is defined as between parameters (not state variables) only:
 <div style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 1em;">
   <div style="background-color: #e0e0e0; padding: 12px; border-radius: 6px;">
     \[ 1 = \sum_{j=k}^{l} \frac{r_j}{\prod_{i=1}^{j}(1+\delta_i)} \]
@@ -298,7 +298,7 @@ There is of course a more basic issue with a below replacement fertility rate ap
 <figure style="display:inline-block;border:1px solid #888; padding:8px; border-radius:1px; width: 800px;text-align:center; background-color:#ddd;">
 <a href="{{site.baseurl}}/images/demogr_stable_pop/JAP_dyn_3_groups.png">
 <img src="{{site.baseurl}}/images/demogr_stable_pop/JAP_dyn_3_groups.png" alt="_config.yml"/></a>
-<figcaption style="font-size: 20px; margin-top: 6px;"> <strong>Figure 11</strong> Long-term dynmaics of 3 main age groups with current fertility and mortality rates of Japan. Left panel shows as % of total population, right panel shows population size in millions. </figcaption>
+<figcaption style="font-size: 20px; margin-top: 6px;"> <strong>Figure 11</strong> Long-term dynamics of 3 main age groups with current fertility and mortality rates of Japan. Left panel shows as % of total population, right panel shows population size in millions. </figcaption>
 </figure>
 </div>
 
