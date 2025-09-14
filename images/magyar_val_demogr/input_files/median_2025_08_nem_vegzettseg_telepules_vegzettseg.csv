@@ -1,0 +1,18 @@
+preferencia,Fidesz-KDNP,más pártok és pártnélküliek,Tisza Párt,filter
+teljes népesség,30,33,37,TELJES NÉPESSÉG
+Férfi,28,33,39,NEM
+Nő,31,33,36,NEM
+18-29,13,31,56,ÉLETKOR
+30-39,19,32,49,ÉLETKOR
+40-49,28,37,35,ÉLETKOR
+50-64,37,29,34,ÉLETKOR
+65+,43,34,23,ÉLETKOR
+Legfeljebb 8 általános,54,29,17,VÉGZETTSÉG
+Szakmunkásképző,35,35,30,VÉGZETTSÉG
+Érettségi/szakérettségi,24,33,43,VÉGZETTSÉG
+Felsőfokú,18,31,51,VÉGZETTSÉG
+Főváros,23,35,42,TELEPÜLÉS
+Megyei jogú város,25,26,49,TELEPÜLÉS
+Egyéb város,32,31,37,TELEPÜLÉS
+Község,35,37,28,TELEPÜLÉS
+
