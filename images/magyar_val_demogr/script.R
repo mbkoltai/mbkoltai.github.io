@@ -11,14 +11,16 @@ l_part_data <- list()
 # partpref
 
 # 21kut aug, vegzettseg
+# source: https://flo.uri.sh/visualisation/24922340/embed
 l_part_data[["21_kut"]][["2025_08"]][["vegzettseg"]] <- read_csv(
   "input_files/21kut_2025_08_vegzettseg_szerint.csv") %>%
   pivot_longer(!vegzettseg,names_to="part")  %>%
   mutate(arány=value/100) %>% select(!value)
 
-# 21kut, aug, telj nepesseg
+# 21kut, 2025/08, telj nepesseg
+# source: https://flo.uri.sh/visualisation/24921118/embed
 l_part_data$`21_kut`$`2025_08`$teljes_nepesseg <- read_csv(
-            "21kut_2025_08_teljes_nepesseg.csv") %>%
+            "input_files/21kut_2025_08_teljes_nepesseg.csv") %>%
   filter(grepl("teljes",kateg)) %>%
   pivot_longer(!c(kateg,part),names_to = "datum") %>%
   mutate(value=value/100,
@@ -30,6 +32,7 @@ l_part_data$`21_kut`$`2025_08`$teljes_nepesseg <- read_csv(
   rename(arány=value)
 
 # 21kut jun, telepules
+# source: https://flo.uri.sh/visualisation/23976053/embed
 l_part_data$`21_kut`$`2025_06`$telep_tipus <- read_delim(
   "input_files/21kut_2025_06_telepulestipus.csv",delim = ";") %>%
   pivot_longer(!telep_tipus,names_to = "part") %>%
@@ -39,7 +42,9 @@ l_part_data$`21_kut`$`2025_06`$telep_tipus <- read_delim(
 # unique(l_part_data$`21_kut`$`2025_06`$telep_tipus$telep_tipus)
 
 ### ### ### ### ### ### ### ### ### ### 
-# Median aug, tobb kateg
+# MEDIAN aug, tobb demogr kateg
+# source: https://flo.uri.sh/visualisation/25049528/embed?auto=1
+
 l_part_data[["median"]][["2025_08"]] <- list()
 l_part_data[["median"]][["2025_08"]] <- read_csv(
   "input_files/median_2025_08_nem_vegzettseg_telepules_vegzettseg.csv") %>%
@@ -55,6 +60,7 @@ l_part_data[["median"]][["2025_08"]] <- read_csv(
 # DEMOGRAFIA
 
 # KORSZERKEZET
+# source: https://www.ksh.hu/stadat_files/nep/en/nep0003.html
 l_dem$stadat_nep0003 <- read_delim("input_files/stadat-nep0003-22.1.1.3-hu.csv",
             skip=1,locale=locale(encoding="CP1250"),delim = ";",trim_ws=T) %>%
   pivot_longer(
@@ -112,7 +118,8 @@ l_dem$stadat_nep0003 %>% filter(ev==2025 & grepl("sszes",nem)) %>%
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 # teljes felnott nepesseg
 
-l_dem$teljes_felnott_nep_2025 <- as.numeric(l_dem$korszerk_csop %>% summarise(teljes_felnott_nepesseg=sum(szam)))
+l_dem$teljes_felnott_nep_2025 <- as.numeric(
+  l_dem$korszerk_csop %>% summarise(teljes_felnott_nepesseg=sum(szam)))
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
@@ -136,26 +143,20 @@ unique(l_part_data$median$`2025_08`$TELEPÜLÉS$kateg)
 # vmivel (kb 100e) kevesebb mint a KSH 18+ lakossagmeret... nem vagyok benne biztos ennek mi az oka
 l_dem$telep_lista_valpolg_tipus <- right_join(
   read_csv("input_files/Egyéni_szavazás_szkjkv.csv") %>% 
+  # source: https://www.valasztas.hu/ogy2022-letoltheto-es-tovabbfeldolgozhato-adatok
+  # Egyéni_szavazás_szkjkv.xls file-bol
   filter(!is.na(VÁLASZTÓPOLGÁR)) %>% 
   group_by(TELEPÜLÉS) %>% summarise(n_valpolg=sum(VÁLASZTÓPOLGÁR)) %>%
   mutate(telepules=ifelse(grepl("Budap",TELEPÜLÉS),"Budapest",TELEPÜLÉS)) %>%
   group_by(telepules) %>% summarise(n_valpolg=sum(n_valpolg)),
 # telep jogallasa
-  # readRDS("~/Desktop/mas/eco_soc/sajat/shinyapp_HU_pop_distr/l_telep_meret.RDS")$telepules_lista %>%
-  # innen: https://www.valasztas.hu/ogy2022-letoltheto-es-tovabbfeldolgozhato-adatok
   read_csv("input_files/l_telep_meret.csv") %>%
+    # forras: https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2024.xlsx
     select(c(`Helység megnevezése`,`Lakó-népesség`,`Helység jogállása` )) %>%
     mutate(telepules=ifelse(grepl("Budap",`Helység megnevezése`),"Budapest",`Helység megnevezése`)) %>%
     filter(!grepl("fővárosi kerület",`Helység jogállása`)) %>%
     group_by(telepules,`Helység jogállása`)
   )
-
-# read_csv("stadat_fol0007_filtered.csv") %>%
-#         pivot_longer(!c(`Területi egység szintje`,`Területi egység neve`),names_to="telep_tipus") %>%
-#         filter(!grepl("ország",`Területi egység szintje`)) %>%
-#         group_by(telep_tipus,`Területi egység szintje`) %>%
-#         summarise(value=sum(value,na.rm=T)) %>%
-#         filter(value>0) %>%
 
 # telep tipus, teljes lakossag
 l_dem$telep_tipus <- l_dem$telep_lista_valpolg_tipus %>% 
@@ -196,6 +197,7 @@ l_part_data$`21_kut`$`2025_06`$telep_tipus <- l_part_data$`21_kut`$`2025_06`$tel
 
 # demografia: 15-74 eves korosztaly
 l_dem$vegzettseg[["15_74_props"]] <- read_csv("input_files/stadat-okt0001-23_osszes.csv") %>%
+  # source: https://www.ksh.hu/stadat_files/mun/hu/mun0006.html
   pivot_longer(!Év,names_to="vegzettseg") %>%
   group_by(Év) %>%
   mutate(prop=value/sum(value[!grepl("Összesen",vegzettseg)]))
