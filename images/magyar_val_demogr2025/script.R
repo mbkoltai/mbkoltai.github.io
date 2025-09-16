@@ -41,8 +41,18 @@ l_part_data$`21_kut`$`2025_06`$telep_tipus <- read_delim(
   rename(kateg_eredeti=telep_tipus)
 # unique(l_part_data$`21_kut`$`2025_06`$telep_tipus$telep_tipus)
 
-### ### ### ### ### ### ### ### ### ### 
-# MEDIAN aug, tobb demogr kateg
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# MEDIAN 2025/06, tobb demogr kateg
+
+# teljes nepesseg
+# https://datawrapper.dwcdn.net/Ns8XR/10/
+
+# demogr kategoriak
+# https://datawrapper.dwcdn.net/Ns8XR/10/
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# MEDIAN 2025/08, tobb demogr kateg
 # source: https://flo.uri.sh/visualisation/25049528/embed?auto=1
 
 l_part_data[["median"]][["2025_08"]] <- list()
@@ -53,6 +63,10 @@ l_part_data[["median"]][["2025_08"]] <- read_csv(
   mutate(arány=value/100) %>% select(!value) %>%
   group_by(tipus) %>% { set_names(group_split(.,.keep=F), group_keys(.)$tipus) } %>%
   as.list()
+
+# teljes nepesseg partokra bontva
+# https://flo.uri.sh/visualisation/25049245/embed?auto=1
+
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
