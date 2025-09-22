@@ -393,13 +393,14 @@ ggplot(aes(x=partnev_kozos,y=valasztok_szama/1e3,fill=datum)) +
     position=position_dodge2(width=0.9,preserve="single"),vjust= -0.3,size=3) +
   scale_y_continuous(expand=expansion(mult=c(0.005,0.09)),
               limits=function(x) c(0,max(max(x),1.05e3)) ) +
-  ggtitle("Választók száma teljes népesség, végzettség és településtípus szerint - 21 Kutatóközpont") +
+  ggtitle("21 KUTATÓKÖZPONT: pártpreferenciák népesség, végzettség és településtípus szerint lebontva") +
   theme_bw() + l_plot$standard_theme +
   theme(axis.text.x=element_text(vjust=0.5,hjust=1),
         strip.text=element_text(size=18)) # ,legend.position="top"
 # save
 if (F) {
-  ggsave(filename="21kut_2025_04_06_08_telj_vegz_teleptipus.png",device="png",width=48,height=28,units="cm")
+  ggsave(filename="plots/21kut_2025_04_06_08_telj_vegz_teleptipus.png",
+          device="png",width=48,height=28,units="cm")
 }
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -510,7 +511,7 @@ ggplot(aes(x=partnev_kozos_aggr,y=valasztok_szama/1e3,
     position=position_dodge2(width=0.9),vjust= -0.3,size=4) + # ,preserve="single"
   scale_y_continuous(expand=expansion(mult=c(0.005,0.118)) ) + 
   expand_limits(y=c(0,1100)) +
-  ggtitle("MEDIÁN") +
+  ggtitle("MEDIÁN: pártpreferenciák népesség, végzettség és településtípus szerint lebontva") +
   theme_bw() + l_plot$standard_theme + # 
   theme(axis.text.x=element_text(angle=0),
         plot.caption=element_text(size=10), # ,vjust=0.5,hjust=1

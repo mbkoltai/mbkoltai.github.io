@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 2025. évi független közvéleménykutatások demográfiai projekciója
-tags: demographics data-visualisation ecology growth population
-excerpt: 2025-ös kutatások rávetítése a lakosság nem, kor, végzettség és településtípus szerinti megoszlására
+title: 2025. évi közvéleménykutatások abszolút számokra lefordítva
+tags: hungary politics elections demographics
+excerpt: Kutatások rávetítése a lakosság nem, kor, végzettség és településtípus szerinti megoszlására
 secondary: blogposts
 mathjax: true
 ---
@@ -12,18 +12,22 @@ Trallalala
 
 <div style="text-align: center;">
 <figure style="display:inline-block;border:1px solid #888; padding:8px; border-radius:1px; text-align:center; background-color:#ddd;">
-<a href="{{site.baseurl}}/images/demogr_stable_pop/const_birth_dyn_init_cond.png">
-<img src="{{site.baseurl}}/images/demogr_stable_pop/const_birth_dyn_init_cond.png" alt="_config.yml" style="width: 700px;" />
+<a href="{{site.baseurl}}/images/magyar_val_demogr2025/plots/Median_2025_06_08_telj_vegz_teleptipus.png">
+<img src="{{site.baseurl}}/images/magyar_val_demogr2025/plots/Median_2025_06_08_telj_vegz_teleptipus.png" alt="_config.yml" />
 </a>
-<figcaption style="font-size: 20px; margin-top: 6px; width: 700px;"> <strong>Figure 3</strong> Convergence to stable population size and age distribution from different initial conditions with <strong>constant</strong> birth level.</figcaption>
+<figcaption style="font-size: 20px; margin-top: 6px; width: 700px;"> <strong>MEDIÁN</strong> felmérés </figcaption>
 </figure>
 </div>
+
+some rows here
+
+herer
 
 
 <div style="text-align: center;">
 <figure style="display:inline-block;border:1px solid #888; padding:8px; border-radius:1px; text-align:center; background-color:#ddd;">
-<a href="{{site.baseurl}}/images/demogr_stable_pop/const_birth_dyn_init_cond.png">
-<img src="{{site.baseurl}}/images/demogr_stable_pop/const_birth_dyn_init_cond.png" alt="_config.yml" style="width: 700px;" />
+<a href="{{site.baseurl}}/images/magyar_val_demogr2025/plots/21kut_2025_04_06_08_telj_vegz_teleptipus.png">
+<img src="{{site.baseurl}}/images/magyar_val_demogr2025/plots/21kut_2025_04_06_08_telj_vegz_teleptipus.png" alt="_config.yml" />
 </a>
 <figcaption style="font-size: 20px; margin-top: 6px; width: 700px;"> <strong>Figure 3</strong> Convergence to stable population size and age distribution from different initial conditions with <strong>constant</strong> birth level.</figcaption>
 </figure>
