@@ -2,7 +2,7 @@
 layout: post
 title: 2025. évi pártpreferencia felmérések abszolút számokban
 tags: hungary politics elections demographics data-visualisation magyar
-excerpt: Kutatások rávetítése a lakosság nem, kor, végzettség és településtípus szerinti megoszlására
+excerpt: Kutatások rávetítése a nem/kor/végzettség/településtípus szerinti KSH adatokra
 secondary: blogposts
 mathjax: true
 ---
@@ -22,11 +22,9 @@ A statikus grafikonokat generáló [R kódban](https://github.com/mbkoltai/mbkol
 A 74 éven felüliek végzettség szerinti eloszlására nem találtam adatot a KSH-nál, csak a 15-74 közötti népességre. 
 Ezért itt (≥74) azt feltételeztem, hogy a végzettség szerinti megoszlás megfelel a legkorábbi adatpont (2009) <i>teljes</i> lakosságra vonatkozó adataival.
 Emellett, a KSH 2025-ös felnőtt népesség méret-adata kb. 120 ezerrel nagyobb, mint ami a 2022-es települési választási adatokból kivonható. 
-Ennek nem tudom, hogy mi az oka, talán a nem bejelentett külföldön élők.  
-Ez a két demográfiai pontatlanság nem változtat sokat (valószínűleg kb. néhány tízezret) a végzettség és településtípus szerinti demográfiai csoportok méretén. <br>
+Ennek nem tudom, hogy mi az oka, talán a nem bejelentett külföldön élők. Ez a két demográfiai pontatlanság nem változtat sokat (valószínűleg kb. néhány tízezret) a végzettség és településtípus szerinti demográfiai csoportok méretén. <br>
 
 A MEDIÁN 2002 óta készült választás előtti - az eredményekkel összehasonlított - előrejelzéseit <a href='https://docs.google.com/spreadsheets/d/1NUEgN7eV7MoZqi8dd9-xAzWxY_u2u_HYImV6l_U5qDE/' target='_blank'>itt gyűjtöttem össze</a>. <br>
-
 A 21Kutközpont 2024-es <a href='https://mbkoltai.com/ep2024-hungary-datavis/' target='_blank'>EP-választások</a> előtti (gyakorlatilag tökéletesre sikerült) <a href='https://24.hu/belfold/2024/06/09/ep-valasztas-2024-exit-poll-mandatumbecsles/' target='_blank'> előrejelzése itt</a>. <br>
 A többi közvéleménykutató demográfiai lebontást általában nem publikál, illetve a <i> record</i>-juk annyira ellentmodásos, hogy inkább nem használtam őket.
 
