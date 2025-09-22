@@ -6,34 +6,35 @@ l_plot <- readRDS("l_plot_21kut_median.RDS")
 
 ui <- fluidPage(
   
-  title = "2025 közvéleménykutatások + demográfia",   # <- this sets the browser tab title
+  title="2025 közvéleménykutatások + demográfia",   # <- this sets the browser tab title
   
   tags$head(
     tags$style(HTML("body, .shiny-text-output, .shiny-input-container {
         font-family: Calibri, Arial, sans-serif;} ")) ),
   
   tags$div(
-  style = "border: 2px solid #ccc; border-radius: 10px; padding: 10px;
+  style="border: 2px solid #ccc; border-radius: 10px; padding: 10px;
            width: 90%; margin: 10px auto; text-align: center; background-color: #f9f9f9;",
   tags$h1(
-  style = "font-family: Calibri; font-size: 30px; word-wrap: break-word; white-space: normal; line-height: 1.2;",
+  style="font-family: Calibri; font-size: 30px; word-wrap: break-word; white-space: normal; line-height: 1.2;",
   HTML("2025 magyarországi közvéleménykutatások rávetítése az országos demográfiára:<br>
        teljes népesség | nem | kor | végzettség | településméret") )
 ), 
   
   tags$div(
-  style = "border: 3px solid #ccc; padding: 10px 10px 0px 10px; margin-top: 10px; 
+  style="border: 3px solid #ccc; padding: 10px 10px 0px 10px; margin-top: 10px; 
     border-radius: 10px; width: 55%; font-size: 18px;",
   selectInput("dataset", "ADATFORRÁS:", 
-              choices = c("21 Kutatóközpont (2025/[04/06/08])" = "21_kut",
-                          "MEDIÁN (2025/08)" = "median"),
-            width = "80%" ) ),
+              choices=c("21 Kutatóközpont (2025/[04/06/08])"="21_kut",
+                          "MEDIÁN (2025/08)"="median"),
+            width="80%" ) ),
    # new input: label type
   wellPanel(
   style="border: 3px solid #ccc; padding: 10px 10px 10px 10px; margin-top: 10px; font-size: 16px; width: 60%;",  
   radioButtons("label_type", "Címkék típusa:",
-               choices = c("abszolút szám (ezer)"="abs", "százalék" = "pct"),
-               inline = T) ),
+               choices=c("abszolút szám (ezer)"="abs", 
+                        "százalék (adott kategórián belül)"="pct"),
+               inline=T) ),
   # text
   tags$div(
   HTML("MEGJEGYZÉSEK</b>: Az ábrák a 21Kutatóközpont és a Medián 2025 nyári 
@@ -74,58 +75,85 @@ ui <- fluidPage(
       A többi közvéleménykutató demográfiai lebontást általában nem publikál, 
       illetve a <i> record</i>-juk annyira ellentmodásos, hogy inkább nem használtam őket."
       ), 
-      style = "border: 3px solid #ccc; padding: 10px; margin-top: 10px; 
+      style="border: 3px solid #ccc; padding: 10px; margin-top: 10px; 
              font-size: 16px; width: 80%; margin-left: auto; 
               margin-right: auto; margin-bottom: 30px;"    ),
   # MAIN PLOT
-  plotOutput("mainplot", width="96%") # , height = "800px"
+  plotOutput("mainplot", width="96%") # , height="800px"
 )
 
 server <- function(input, output, session) {
   output$mainplot <- renderPlot({
       # choose dataset
-    dat <- if (input$dataset == "21_kut") {l_plot$`21_kut`} else {l_plot$median}
+    dat <- if (input$dataset == "21_kut") {
+      l_plot$`21_kut`} else {
+        l_plot$median
+        }
     
-    # compute percentages if needed
-    
-    # base plot
-    p <- dat %>%
-      mutate(kateg_nev_meret_str = factor(str_wrap(kateg_nev_meret_str, width=10)) ) %>%
-      ggplot(aes(x = partnev_kozos, y = valasztok_szama / 1e3, fill = datum)) +
-      facet_manual(vars(kateg_nev_meret_str), scales = "free", 
-                   design = if (input$dataset == "21_kut") {"AAAA \n BCDE \n FGHI"} else
-                             {"AA### \n BBCC# \n DEFGH \n IJKL# \n MNOP#"} ) +
-      geom_col(position = position_dodge2(), alpha = 0.5, color = "black", linewidth = 1/3) +
-      labs(x = "", y = "szavazók száma (ezer)", fill = "")
+    if (input$dataset == "21_kut") {
+      caption_str=""
+      geom_text_size <- 5; geom_text_angle <- 0
+      p <- dat %>%
+      mutate(kateg_nev_meret_str=factor(str_wrap(kateg_nev_meret_str, width=10)) ) %>%
+      ggplot(aes(x=partnev_kozos,y=valasztok_szama/1e3, fill=datum)) +
+      facet_manual(vars(kateg_nev_meret_str), scales="free", 
+                   design=if (input$dataset == "21_kut") {
+                     "AAAA \n BCDE \n FGHI"} else {
+                     "AAAA# \n BBCC# \n DEFGH \n IJKL# \n MNOP#"} ) +
+      geom_col(aes(alpha=0.8),position=position_dodge2(),color="black", linewidth=1/3) +
+      labs(x="", y="szavazók száma (ezer)", fill="",
+          caption = caption_str)
+      
+      } else {
+        geom_text_size <- 4; geom_text_angle <- 0
+        caption_str <- "2025/06: halványabb színű oszlopok=más párt, kevésbé halvány=pártnélküli.
+2025/08-tól ez a két csoport egy közös \"más párt/pártnélküli\" kategóriában van"
+        
+        p <- dat %>%
+      mutate(kateg_nev_meret_str=factor(str_wrap(kateg_nev_meret_str, width=10)) ) %>%
+      ggplot(aes(x=partnev_kozos_aggr,y=valasztok_szama/1e3, fill=datum)) +
+      facet_manual(vars(kateg_nev_meret_str), scales="free", 
+                   design=if (input$dataset == "21_kut") {
+                     "AAAA \n BCDE \n FGHI"} else {
+                     "AAAA# \n BBCC# \n DEFGH \n IJKL# \n MNOP#"} ) +
+      geom_col(aes(alpha=pattern_var),position=position_dodge2(),color="black", linewidth=1/3) +
+      labs(x="", y="szavazók száma (ezer)", fill="",
+          caption = caption_str)
+      }
     
     # conditional geom_text
     if (input$label_type == "abs") {
       p <- p + geom_text(aes(label=paste0(round(valasztok_szama/1e4)*10,"e")),
-                         position = position_dodge2(width=0.9, preserve = "single"),
-                         vjust = -0.3, size =4.5)
+                         position=position_dodge2(width=0.9, preserve="total"),
+                        hjust=if (geom_text_angle == 0) {0.5} else { 1 }, # hjust=0.5, # 
+                        vjust=if (geom_text_angle == 0) {-0.3} else { 1 }, #  -0.3, # 
+                         size=geom_text_size,angle=geom_text_angle) # ,angle=geom_text_angle
     } else {
-      p <- p + geom_text(aes(label = paste0(arány*100,"%")),
-                         position=position_dodge2(width=0.9,preserve="single"),
-                         vjust = -0.3, size=4.5)
+      p <- p + geom_text(aes(label=paste0(arány*100,"%")),
+                         position=position_dodge2(width=0.9,preserve="total"),
+                         hjust=if (geom_text_angle == 0) {0.5} else { 1 }, # -0.3
+                         vjust=if (geom_text_angle == 0) {-0.3} else { 1 },
+                         size=geom_text_size,angle=geom_text_angle) # 
     }
     
     # remaining plot elements
     p + # 
       scale_y_continuous(expand=expansion(mult=c(0.005,0.2))) +
-      expand_limits(y=c(0,1100)) +
+      expand_limits(y=c(0,1200)) +
       ggtitle(if (input$dataset == "21_kut") { "21 Kutatóközpont" } else { "MEDIÁN"} ) +
+      guides(alpha="none") +
       theme_bw() + l_plot$standard_theme +
-      theme(axis.text.x=element_text(vjust=0.5, hjust = 1),
+      theme(axis.text.x=element_text(vjust=0.5, hjust=1),
             strip.text=element_text(size=18),
-            legend.position="top")
+            legend.position="top",plot.caption=element_text(size=14))
     
   }
     , # render plot
-  # height = function() {
+  # height=function() {
   #   # adapt height to ~70% of browser window height
   #   session$clientData$output_mainplot_width
   # }
-  height = function() {
+  height=function() {
   if (input$dataset == "21_kut") {
     session$clientData$output_mainplot_width*1.2
   } else {
