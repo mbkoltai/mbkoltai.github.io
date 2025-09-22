@@ -393,7 +393,7 @@ ggplot(aes(x=partnev_kozos,y=valasztok_szama/1e3,fill=datum)) +
     position=position_dodge2(width=0.9,preserve="single"),vjust= -0.3,size=3) +
   scale_y_continuous(expand=expansion(mult=c(0.005,0.09)),
               limits=function(x) c(0,max(max(x),1.05e3)) ) +
-  ggtitle("21 KUTATÓKÖZPONT: pártpreferenciák népesség, végzettség és településtípus szerint lebontva") +
+  ggtitle("21 KUTATÓKÖZPONT: nem, végzettség és településtípus szerint lebontott pártpreferenciák a teljes népességben") +
   theme_bw() + l_plot$standard_theme +
   theme(axis.text.x=element_text(vjust=0.5,hjust=1),
         strip.text=element_text(size=18)) # ,legend.position="top"
@@ -511,7 +511,7 @@ ggplot(aes(x=partnev_kozos_aggr,y=valasztok_szama/1e3,
     position=position_dodge2(width=0.9),vjust= -0.3,size=4) + # ,preserve="single"
   scale_y_continuous(expand=expansion(mult=c(0.005,0.118)) ) + 
   expand_limits(y=c(0,1100)) +
-  ggtitle("MEDIÁN: pártpreferenciák népesség, végzettség és településtípus szerint lebontva") +
+  ggtitle("MEDIÁN: nem, végzettség és településtípus szerint lebontott pártpreferenciák a teljes népességben") +
   theme_bw() + l_plot$standard_theme + # 
   theme(axis.text.x=element_text(angle=0),
         plot.caption=element_text(size=10), # ,vjust=0.5,hjust=1
