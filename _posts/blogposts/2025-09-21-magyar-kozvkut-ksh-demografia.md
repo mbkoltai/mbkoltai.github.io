@@ -17,7 +17,7 @@ Ugyanakkor azt megmutatják, hogy az egyes demográfiai csoportokban (pl. szakmu
 
 <b>Adatokkal kapcsolatos megjegyzések</b>: 
 A demográfiai adatokat a KSH összefoglaló tábláiból, illetve a [2022-es országgyűlési választás honlapjáról](https://www.valasztas.hu/ogy2022-letoltheto-es-tovabbfeldolgozhato-adatok) vettem. Az adatfile-ok letölthetők a <a href='https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025' 
-target='_blank'> projekt Github folder-jéből</a>. 
+target='_blank'> projekt Github mappájából</a>. 
 A statikus grafikonokat generáló [R kódban](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025/script.R) a linkeket is megadtam, ahonnan az eredeti táblázatok letölthetők. 
 A 74 éven felüliek végzettség szerinti eloszlására nem találtam adatot a KSH-nál, csak a 15-74 közötti népességre. 
 Ezért itt (≥74) azt feltételeztem, hogy a végzettség szerinti megoszlás megfelel a legkorábbi adatpont (2009) <i>teljes</i> lakosságra vonatkozó adataival.
@@ -89,5 +89,4 @@ BOX FOR EQUATION
 
 ### Kód és adatforrások
 
-[GitHub folder](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/magyar_val_demogr2025)
-
+[GitHub mappa](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/magyar_val_demogr2025)
