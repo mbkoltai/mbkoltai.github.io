@@ -523,3 +523,22 @@ if (F) {
   ggsave(filename="plots/Median_2025_06_08_telj_vegz_teleptipus.png",
     device="png",width=48,height=35,units="cm")
 }
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ###
+### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# segment into sep datafrs for datawrapper
+
+lapply(unique(l_plot$median$kateg_tipus), \(x_nev)
+bind_rows(
+  l_plot$`21_kut` %>% mutate(cég="21kut"), 
+  l_plot$median %>% mutate(cég="MEDIÁN")) %>%
+  mutate(valasztok_szama=round(valasztok_szama),
+          partnev_kozos=ifelse(grepl("más|egyéb|pártnélk|bizonyt",partnev_kozos),
+            "más párt/bizonytalan/pártnélküli",as.character(partnev_kozos) )) %>% # datum=ym(datum)
+  filter(kateg_tipus %in% x_nev) %>%
+  group_by(kateg,partnev_kozos,datum,cég) %>%
+  summarise(valasztok_szama=sum(valasztok_szama)) %>%
+  select(c(kateg,partnev_kozos,datum,cég,valasztok_szama)) %>%
+  mutate(valasztok_szama=round(valasztok_szama/1e4)*1e4) %>%
+  pivot_wider(names_from=c(cég),values_from=valasztok_szama) %>%
+  write_csv(file = paste0("l_plot_",gsub(" ","",x_nev),".csv")) )

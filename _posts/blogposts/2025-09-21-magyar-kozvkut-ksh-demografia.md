@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 2025. évi pártpreferencia felmérések abszolút számokban
+title: Pártpreferencia felmérések abszolút számokban
 tags: hungary politics elections demographics data-visualisation magyar
-excerpt: Kutatások rávetítése a nem/kor/végzettség/településtípus szerinti KSH adatokra
+excerpt: Nem/kor/végzettség/településtípus szerinti KSH adatok alapján
 secondary: blogposts
 mathjax: true
 ---
@@ -27,7 +27,8 @@ Ennek nem tudom, hogy mi az oka, talán a nem bejelentett külföldön élők. E
 A MEDIÁN 2002 óta készült választás előtti - az eredményekkel összehasonlított - előrejelzéseit <a href='https://docs.google.com/spreadsheets/d/1NUEgN7eV7MoZqi8dd9-xAzWxY_u2u_HYImV6l_U5qDE/' target='_blank'>itt gyűjtöttem össze</a>. <br>
 A 21Kutközpont 2024-es <a href='https://mbkoltai.com/ep2024-hungary-datavis/' target='_blank'>EP-választások</a> előtti (gyakorlatilag tökéletesre sikerült) <a href='https://24.hu/belfold/2024/06/09/ep-valasztas-2024-exit-poll-mandatumbecsles/' target='_blank'> előrejelzése itt</a>. <br>
 A többi közvéleménykutató demográfiai lebontást általában nem publikál, illetve a <i> record</i>-juk annyira ellentmodásos, hogy inkább nem használtam őket.
-A választásokig megjelenő újabb Medián és 21Kut felmérésekkel frissíteni tervezem a grafikonokat, így remélhetőleg egyfajta hozzávetőleges idősort kaphatunk majd.
+ 
+A grafikonokat a választásokig megjelenő újabb Medián és 21Kutközponz mérésekkel frissíteni tervezem, így remélhetőleg egy hozzávetőleges idősort kaphatunk majd.
 
 
 <a href="https://mbkoltai.shinyapps.io/magyar_val_demogr_2025/" class="button">ShinyApp interaktív grafikonokkal</a>
@@ -50,6 +51,34 @@ A választásokig megjelenő újabb Medián és 21Kut felmérésekkel frissíten
     border-color: red; /* Change border color to red on hover */
 }
 </style>
+
+## Datawrapper
+
+<iframe title="Pártprefenciák TELJES NÉPESSÉGBEN" aria-label="Split Bars" id="datawrapper-chart-cfTyu" src="https://datawrapper.dwcdn.net/cfTyu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="922" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+
+<br>
+<br>
+
+<iframe title="Pártprefenciák NEM szerint" aria-label="Split Bars" id="datawrapper-chart-us87e" src="https://datawrapper.dwcdn.net/us87e/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="519" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+
+<br>
+<br>
+
+<iframe title="Pártprefenciák KOR szerint" aria-label="Split Bars" id="datawrapper-chart-4j1BB" src="https://datawrapper.dwcdn.net/4j1BB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1077" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();</script>
+
+<br>
+<br>
+
+<iframe title="Pártprefenciák VÉGZETTSÉG szerint" aria-label="Split Bars" id="datawrapper-chart-wHysZ" src="https://datawrapper.dwcdn.net/wHysZ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1431" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+
+<br>
+<br>
+
+<iframe title="Pártprefenciák TELEPÜLÉSTÍPUS szerint" aria-label="Split Bars" id="datawrapper-chart-QVOTR" src="https://datawrapper.dwcdn.net/QVOTR/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="960" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
 
 
 ## Statikus grafikonok, ahol az oszlopok fölötti számok a szavazók számát mutatják ezerben megadva:
