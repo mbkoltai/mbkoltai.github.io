@@ -1,279 +1,312 @@
-kateg_tipus,part,kateg,kateg_telj_nep,arány,valasztok_szama,datum,kateg_eredeti,partnev_kozos,kateg_nev_meret_str,cég,partnev_kozos_aggr,pattern_var,kateg_nev_arany_str
-végzettség,Fidesz,≤8 általános,1506228.5252572875,0.4,602491.410102915,2025/08,NA,Fidesz,≤8 általános (1.51m),21kut,NA,NA,NA
-végzettség,Tisza,≤8 általános,1506228.5252572875,0.15,225934.27878859313,2025/08,NA,TISZA,≤8 általános (1.51m),21kut,NA,NA,NA
-végzettség,DK,≤8 általános,1506228.5252572875,0.01,15062.285252572876,2025/08,NA,DK,≤8 általános (1.51m),21kut,NA,NA,NA
-végzettség,Mi Hazánk,≤8 általános,1506228.5252572875,0.11,165685.13777830164,2025/08,NA,MiHaz,≤8 általános (1.51m),21kut,NA,NA,NA
-végzettség,Kétfarkú Kutya Párt,≤8 általános,1506228.5252572875,0.01,15062.285252572876,2025/08,NA,MKKP,≤8 általános (1.51m),21kut,NA,NA,NA
-végzettség,egyéb párt,≤8 általános,1506228.5252572875,0.03,45186.85575771862,2025/08,NA,egyéb,≤8 általános (1.51m),21kut,NA,NA,NA
+kateg_tipus,part,kateg,kateg_telj_nep,arány,valasztok_szama,datum,kateg_eredeti,partnev_kozos,kateg_nev_meret_str,kateg_nev_arany_str,partnev_kozos_aggr,cég,pattern_var
+végzettség,Fidesz,≤8 általános,1506228.5252572875,0.4,602491.410102915,2025/08,NA,Fidesz,≤8 általános (1.51m),≤8 általános (40%),Fidesz,21kut,NA
+végzettség,Tisza,≤8 általános,1506228.5252572875,0.15,225934.27878859313,2025/08,NA,TISZA,≤8 általános (1.51m),≤8 általános (15%),TISZA,21kut,NA
+végzettség,DK,≤8 általános,1506228.5252572875,0.01,15062.285252572876,2025/08,NA,DK,≤8 általános (1.51m),≤8 általános (1%),DK,21kut,NA
+végzettség,Mi Hazánk,≤8 általános,1506228.5252572875,0.11,165685.13777830164,2025/08,NA,Mi Hazánk,≤8 általános (1.51m),≤8 általános (11%),Mi Hazánk,21kut,NA
+végzettség,Kétfarkú Kutya Párt,≤8 általános,1506228.5252572875,0.01,15062.285252572876,2025/08,NA,MKKP,≤8 általános (1.51m),≤8 általános (1%),MKKP,21kut,NA
+végzettség,egyéb párt,≤8 általános,1506228.5252572875,0.03,45186.85575771862,2025/08,NA,"más
+párt",≤8 általános (1.51m),≤8 általános (3%),"más
+párt",21kut,NA
 végzettség,bizonytalan,≤8 általános,1506228.5252572875,0.29,436806.27232461335,2025/08,NA,"pártnélk/
-bizonyt.",≤8 általános (1.51m),21kut,NA,NA,NA
-végzettség,Fidesz,szakmunkás,1762124.9595182636,0.29,511016.2382602964,2025/08,NA,Fidesz,szakmunkás (1.76m),21kut,NA,NA,NA
-végzettség,Tisza,szakmunkás,1762124.9595182636,0.28,493394.98866511387,2025/08,NA,TISZA,szakmunkás (1.76m),21kut,NA,NA,NA
-végzettség,DK,szakmunkás,1762124.9595182636,0.01,17621.249595182635,2025/08,NA,DK,szakmunkás (1.76m),21kut,NA,NA,NA
-végzettség,Mi Hazánk,szakmunkás,1762124.9595182636,0.05,88106.24797591318,2025/08,NA,MiHaz,szakmunkás (1.76m),21kut,NA,NA,NA
-végzettség,Kétfarkú Kutya Párt,szakmunkás,1762124.9595182636,0.01,17621.249595182635,2025/08,NA,MKKP,szakmunkás (1.76m),21kut,NA,NA,NA
-végzettség,egyéb párt,szakmunkás,1762124.9595182636,0,0,2025/08,NA,egyéb,szakmunkás (1.76m),21kut,NA,NA,NA
+bizonyt.",≤8 általános (1.51m),≤8 általános (29%),"pártnélk/
+bizonyt.",21kut,NA
+végzettség,Fidesz,szakmunkás,1762124.9595182636,0.29,511016.2382602964,2025/08,NA,Fidesz,szakmunkás (1.76m),szakmunkás (29%),Fidesz,21kut,NA
+végzettség,Tisza,szakmunkás,1762124.9595182636,0.28,493394.98866511387,2025/08,NA,TISZA,szakmunkás (1.76m),szakmunkás (28%),TISZA,21kut,NA
+végzettség,DK,szakmunkás,1762124.9595182636,0.01,17621.249595182635,2025/08,NA,DK,szakmunkás (1.76m),szakmunkás (1%),DK,21kut,NA
+végzettség,Mi Hazánk,szakmunkás,1762124.9595182636,0.05,88106.24797591318,2025/08,NA,Mi Hazánk,szakmunkás (1.76m),szakmunkás (5%),Mi Hazánk,21kut,NA
+végzettség,Kétfarkú Kutya Párt,szakmunkás,1762124.9595182636,0.01,17621.249595182635,2025/08,NA,MKKP,szakmunkás (1.76m),szakmunkás (1%),MKKP,21kut,NA
+végzettség,egyéb párt,szakmunkás,1762124.9595182636,0,0,2025/08,NA,"más
+párt",szakmunkás (1.76m),szakmunkás (0%),"más
+párt",21kut,NA
 végzettség,bizonytalan,szakmunkás,1762124.9595182636,0.36,634364.9854265748,2025/08,NA,"pártnélk/
-bizonyt.",szakmunkás (1.76m),21kut,NA,NA,NA
-végzettség,Fidesz,érettségi,2644400.5767303184,0.25,661100.1441825796,2025/08,NA,Fidesz,érettségi (2.64m),21kut,NA,NA,NA
-végzettség,Tisza,érettségi,2644400.5767303184,0.39,1031316.2249248242,2025/08,NA,TISZA,érettségi (2.64m),21kut,NA,NA,NA
-végzettség,DK,érettségi,2644400.5767303184,0.02,52888.01153460637,2025/08,NA,DK,érettségi (2.64m),21kut,NA,NA,NA
-végzettség,Mi Hazánk,érettségi,2644400.5767303184,0.04,105776.02306921274,2025/08,NA,MiHaz,érettségi (2.64m),21kut,NA,NA,NA
-végzettség,Kétfarkú Kutya Párt,érettségi,2644400.5767303184,0.02,52888.01153460637,2025/08,NA,MKKP,érettségi (2.64m),21kut,NA,NA,NA
-végzettség,egyéb párt,érettségi,2644400.5767303184,0.01,26444.005767303184,2025/08,NA,egyéb,érettségi (2.64m),21kut,NA,NA,NA
+bizonyt.",szakmunkás (1.76m),szakmunkás (36%),"pártnélk/
+bizonyt.",21kut,NA
+végzettség,Fidesz,érettségi,2644400.5767303184,0.25,661100.1441825796,2025/08,NA,Fidesz,érettségi (2.64m),érettségi (25%),Fidesz,21kut,NA
+végzettség,Tisza,érettségi,2644400.5767303184,0.39,1031316.2249248242,2025/08,NA,TISZA,érettségi (2.64m),érettségi (39%),TISZA,21kut,NA
+végzettség,DK,érettségi,2644400.5767303184,0.02,52888.01153460637,2025/08,NA,DK,érettségi (2.64m),érettségi (2%),DK,21kut,NA
+végzettség,Mi Hazánk,érettségi,2644400.5767303184,0.04,105776.02306921274,2025/08,NA,Mi Hazánk,érettségi (2.64m),érettségi (4%),Mi Hazánk,21kut,NA
+végzettség,Kétfarkú Kutya Párt,érettségi,2644400.5767303184,0.02,52888.01153460637,2025/08,NA,MKKP,érettségi (2.64m),érettségi (2%),MKKP,21kut,NA
+végzettség,egyéb párt,érettségi,2644400.5767303184,0.01,26444.005767303184,2025/08,NA,"más
+párt",érettségi (2.64m),érettségi (1%),"más
+párt",21kut,NA
 végzettség,bizonytalan,érettségi,2644400.5767303184,0.27,713988.155717186,2025/08,NA,"pártnélk/
-bizonyt.",érettségi (2.64m),21kut,NA,NA,NA
-végzettség,Fidesz,felsőfokú,1965466.9384941305,0.14,275165.37138917827,2025/08,NA,Fidesz,felsőfokú (1.97m),21kut,NA,NA,NA
-végzettség,Tisza,felsőfokú,1965466.9384941305,0.48,943424.1304771826,2025/08,NA,TISZA,felsőfokú (1.97m),21kut,NA,NA,NA
-végzettség,DK,felsőfokú,1965466.9384941305,0.02,39309.33876988261,2025/08,NA,DK,felsőfokú (1.97m),21kut,NA,NA,NA
-végzettség,Mi Hazánk,felsőfokú,1965466.9384941305,0.03,58964.00815482391,2025/08,NA,MiHaz,felsőfokú (1.97m),21kut,NA,NA,NA
-végzettség,Kétfarkú Kutya Párt,felsőfokú,1965466.9384941305,0.05,98273.34692470654,2025/08,NA,MKKP,felsőfokú (1.97m),21kut,NA,NA,NA
-végzettség,egyéb párt,felsőfokú,1965466.9384941305,0.01,19654.669384941306,2025/08,NA,egyéb,felsőfokú (1.97m),21kut,NA,NA,NA
+bizonyt.",érettségi (2.64m),érettségi (27%),"pártnélk/
+bizonyt.",21kut,NA
+végzettség,Fidesz,felsőfokú,1965466.9384941305,0.14,275165.37138917827,2025/08,NA,Fidesz,felsőfokú (1.97m),felsőfokú (14%),Fidesz,21kut,NA
+végzettség,Tisza,felsőfokú,1965466.9384941305,0.48,943424.1304771826,2025/08,NA,TISZA,felsőfokú (1.97m),felsőfokú (48%),TISZA,21kut,NA
+végzettség,DK,felsőfokú,1965466.9384941305,0.02,39309.33876988261,2025/08,NA,DK,felsőfokú (1.97m),felsőfokú (2%),DK,21kut,NA
+végzettség,Mi Hazánk,felsőfokú,1965466.9384941305,0.03,58964.00815482391,2025/08,NA,Mi Hazánk,felsőfokú (1.97m),felsőfokú (3%),Mi Hazánk,21kut,NA
+végzettség,Kétfarkú Kutya Párt,felsőfokú,1965466.9384941305,0.05,98273.34692470654,2025/08,NA,MKKP,felsőfokú (1.97m),felsőfokú (5%),MKKP,21kut,NA
+végzettség,egyéb párt,felsőfokú,1965466.9384941305,0.01,19654.669384941306,2025/08,NA,"más
+párt",felsőfokú (1.97m),felsőfokú (1%),"más
+párt",21kut,NA
 végzettség,bizonytalan,felsőfokú,1965466.9384941305,0.27,530676.0733934153,2025/08,NA,"pártnélk/
-bizonyt.",felsőfokú (1.97m),21kut,NA,NA,NA
-teljes népesség,Fidesz–KDNP,teljes népesség,7878221,0.28,2205901.8800000004,2025/04,NA,Fidesz,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,Fidesz–KDNP,teljes népesség,7878221,0.25,1969555.25,2025/06,NA,Fidesz,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,Fidesz–KDNP,teljes népesség,7878221,0.26,2048337.46,2025/08,NA,Fidesz,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,TISZA,teljes népesség,7878221,0.34,2678595.14,2025/04,NA,TISZA,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,TISZA,teljes népesség,7878221,0.32,2521030.72,2025/06,NA,TISZA,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,TISZA,teljes népesség,7878221,0.34,2678595.14,2025/08,NA,TISZA,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,Mi Hazánk,teljes népesség,7878221,0.04,315128.84,2025/04,NA,MiHaz,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,Mi Hazánk,teljes népesség,7878221,0.05,393911.05000000005,2025/06,NA,MiHaz,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,Mi Hazánk,teljes népesség,7878221,0.05,393911.05000000005,2025/08,NA,MiHaz,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,DK,teljes népesség,7878221,0.02,157564.42,2025/04,NA,DK,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,DK,teljes népesség,7878221,0.03,236346.63,2025/06,NA,DK,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,DK,teljes népesség,7878221,0.02,157564.42,2025/08,NA,DK,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,Magyar Kétfarkú Kutya Párt,teljes népesség,7878221,0.03,236346.63,2025/04,NA,MKKP,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,Magyar Kétfarkú Kutya Párt,teljes népesség,7878221,0.02,157564.42,2025/06,NA,MKKP,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,Magyar Kétfarkú Kutya Párt,teljes népesség,7878221,0.02,157564.42,2025/08,NA,MKKP,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,Egyéb,teljes népesség,7878221,0.04,315128.84,2025/04,NA,egyéb,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,Egyéb,teljes népesség,7878221,0.01,78782.21,2025/06,NA,egyéb,teljes népesség (7.88m),21kut,NA,NA,NA
-teljes népesség,Egyéb,teljes népesség,7878221,0.01,78782.21,2025/08,NA,egyéb,teljes népesség (7.88m),21kut,NA,NA,NA
+bizonyt.",felsőfokú (1.97m),felsőfokú (27%),"pártnélk/
+bizonyt.",21kut,NA
+teljes népesség,Fidesz–KDNP,teljes népesség,7878221,0.28,2205901.8800000004,2025/04,NA,Fidesz,teljes népesség (7.88m),teljes népesség (28%),Fidesz,21kut,NA
+teljes népesség,Fidesz–KDNP,teljes népesség,7878221,0.25,1969555.25,2025/06,NA,Fidesz,teljes népesség (7.88m),teljes népesség (25%),Fidesz,21kut,NA
+teljes népesség,Fidesz–KDNP,teljes népesség,7878221,0.26,2048337.46,2025/08,NA,Fidesz,teljes népesség (7.88m),teljes népesség (26%),Fidesz,21kut,NA
+teljes népesség,TISZA,teljes népesség,7878221,0.34,2678595.14,2025/04,NA,TISZA,teljes népesség (7.88m),teljes népesség (34%),TISZA,21kut,NA
+teljes népesség,TISZA,teljes népesség,7878221,0.32,2521030.72,2025/06,NA,TISZA,teljes népesség (7.88m),teljes népesség (32%),TISZA,21kut,NA
+teljes népesség,TISZA,teljes népesség,7878221,0.34,2678595.14,2025/08,NA,TISZA,teljes népesség (7.88m),teljes népesség (34%),TISZA,21kut,NA
+teljes népesség,Mi Hazánk,teljes népesség,7878221,0.04,315128.84,2025/04,NA,Mi Hazánk,teljes népesség (7.88m),teljes népesség (4%),Mi Hazánk,21kut,NA
+teljes népesség,Mi Hazánk,teljes népesség,7878221,0.05,393911.05000000005,2025/06,NA,Mi Hazánk,teljes népesség (7.88m),teljes népesség (5%),Mi Hazánk,21kut,NA
+teljes népesség,Mi Hazánk,teljes népesség,7878221,0.05,393911.05000000005,2025/08,NA,Mi Hazánk,teljes népesség (7.88m),teljes népesség (5%),Mi Hazánk,21kut,NA
+teljes népesség,DK,teljes népesség,7878221,0.02,157564.42,2025/04,NA,DK,teljes népesség (7.88m),teljes népesség (2%),DK,21kut,NA
+teljes népesség,DK,teljes népesség,7878221,0.03,236346.63,2025/06,NA,DK,teljes népesség (7.88m),teljes népesség (3%),DK,21kut,NA
+teljes népesség,DK,teljes népesség,7878221,0.02,157564.42,2025/08,NA,DK,teljes népesség (7.88m),teljes népesség (2%),DK,21kut,NA
+teljes népesség,Magyar Kétfarkú Kutya Párt,teljes népesség,7878221,0.03,236346.63,2025/04,NA,MKKP,teljes népesség (7.88m),teljes népesség (3%),MKKP,21kut,NA
+teljes népesség,Magyar Kétfarkú Kutya Párt,teljes népesség,7878221,0.02,157564.42,2025/06,NA,MKKP,teljes népesség (7.88m),teljes népesség (2%),MKKP,21kut,NA
+teljes népesség,Magyar Kétfarkú Kutya Párt,teljes népesség,7878221,0.02,157564.42,2025/08,NA,MKKP,teljes népesség (7.88m),teljes népesség (2%),MKKP,21kut,NA
+teljes népesség,Egyéb,teljes népesség,7878221,0.04,315128.84,2025/04,NA,"más
+párt",teljes népesség (7.88m),teljes népesség (4%),"más
+párt",21kut,NA
+teljes népesség,Egyéb,teljes népesség,7878221,0.01,78782.21,2025/06,NA,"más
+párt",teljes népesség (7.88m),teljes népesség (1%),"más
+párt",21kut,NA
+teljes népesség,Egyéb,teljes népesség,7878221,0.01,78782.21,2025/08,NA,"más
+párt",teljes népesség (7.88m),teljes népesség (1%),"más
+párt",21kut,NA
 teljes népesség,Pártnélküli,teljes népesség,7878221,0.25,1969555.25,2025/04,NA,"pártnélk/
-bizonyt.",teljes népesség (7.88m),21kut,NA,NA,NA
+bizonyt.",teljes népesség (7.88m),teljes népesség (25%),"pártnélk/
+bizonyt.",21kut,NA
 teljes népesség,Pártnélküli,teljes népesség,7878221,0.32,2521030.72,2025/06,NA,"pártnélk/
-bizonyt.",teljes népesség (7.88m),21kut,NA,NA,NA
+bizonyt.",teljes népesség (7.88m),teljes népesség (32%),"pártnélk/
+bizonyt.",21kut,NA
 teljes népesség,Pártnélküli,teljes népesség,7878221,0.3,2363466.3,2025/08,NA,"pártnélk/
-bizonyt.",teljes népesség (7.88m),21kut,NA,NA,NA
+bizonyt.",teljes népesség (7.88m),teljes népesség (30%),"pártnélk/
+bizonyt.",21kut,NA
 településtípus,bizonytalan,község,2300462,0.36,828166.32,2025/06,"Faluban, községben","pártnélk/
-bizonyt.",község (2.3m),21kut,NA,NA,NA
-településtípus,más párt,község,2300462,0.1,230046.2,2025/06,"Faluban, községben",egyéb,község (2.3m),21kut,NA,NA,NA
-településtípus,Tisza,község,2300462,0.25,575115.5,2025/06,"Faluban, községben",TISZA,község (2.3m),21kut,NA,NA,NA
-településtípus,Fidesz,község,2300462,0.29,667133.98,2025/06,"Faluban, községben",Fidesz,község (2.3m),21kut,NA,NA,NA
+bizonyt.",község (2.3m),község (36%),"pártnélk/
+bizonyt.",21kut,NA
+településtípus,más párt,község,2300462,0.1,230046.2,2025/06,"Faluban, községben","más
+párt",község (2.3m),község (10%),"más
+párt",21kut,NA
+településtípus,Tisza,község,2300462,0.25,575115.5,2025/06,"Faluban, községben",TISZA,község (2.3m),község (25%),TISZA,21kut,NA
+településtípus,Fidesz,község,2300462,0.29,667133.98,2025/06,"Faluban, községben",Fidesz,község (2.3m),község (29%),Fidesz,21kut,NA
 településtípus,bizonytalan,egyéb város,2575046,0.32,824014.72,2025/06,Egyéb városban,"pártnélk/
-bizonyt.",egyéb város (2.58m),21kut,NA,NA,NA
-településtípus,más párt,egyéb város,2575046,0.09,231754.13999999998,2025/06,Egyéb városban,egyéb,egyéb város (2.58m),21kut,NA,NA,NA
-településtípus,Tisza,egyéb város,2575046,0.32,824014.72,2025/06,Egyéb városban,TISZA,egyéb város (2.58m),21kut,NA,NA,NA
-településtípus,Fidesz,egyéb város,2575046,0.27,695262.42,2025/06,Egyéb városban,Fidesz,egyéb város (2.58m),21kut,NA,NA,NA
+bizonyt.",egyéb város (2.58m),egyéb város (32%),"pártnélk/
+bizonyt.",21kut,NA
+településtípus,más párt,egyéb város,2575046,0.09,231754.13999999998,2025/06,Egyéb városban,"más
+párt",egyéb város (2.58m),egyéb város (9%),"más
+párt",21kut,NA
+településtípus,Tisza,egyéb város,2575046,0.32,824014.72,2025/06,Egyéb városban,TISZA,egyéb város (2.58m),egyéb város (32%),TISZA,21kut,NA
+településtípus,Fidesz,egyéb város,2575046,0.27,695262.42,2025/06,Egyéb városban,Fidesz,egyéb város (2.58m),egyéb város (27%),Fidesz,21kut,NA
 településtípus,bizonytalan,megyei jogú város,1609438,0.35,563303.2999999999,2025/06,"Megyei jogú városban, vagy megyeszékhelyen","pártnélk/
-bizonyt.",megyei jogú város (1.61m),21kut,NA,NA,NA
-településtípus,más párt,megyei jogú város,1609438,0.08,128755.04000000001,2025/06,"Megyei jogú városban, vagy megyeszékhelyen",egyéb,megyei jogú város (1.61m),21kut,NA,NA,NA
-településtípus,Tisza,megyei jogú város,1609438,0.35,563303.2999999999,2025/06,"Megyei jogú városban, vagy megyeszékhelyen",TISZA,megyei jogú város (1.61m),21kut,NA,NA,NA
-településtípus,Fidesz,megyei jogú város,1609438,0.22,354076.36,2025/06,"Megyei jogú városban, vagy megyeszékhelyen",Fidesz,megyei jogú város (1.61m),21kut,NA,NA,NA
+bizonyt.",megyei jogú város (1.61m),megyei jogú város (35%),"pártnélk/
+bizonyt.",21kut,NA
+településtípus,más párt,megyei jogú város,1609438,0.08,128755.04000000001,2025/06,"Megyei jogú városban, vagy megyeszékhelyen","más
+párt",megyei jogú város (1.61m),megyei jogú város (8%),"más
+párt",21kut,NA
+településtípus,Tisza,megyei jogú város,1609438,0.35,563303.2999999999,2025/06,"Megyei jogú városban, vagy megyeszékhelyen",TISZA,megyei jogú város (1.61m),megyei jogú város (35%),TISZA,21kut,NA
+településtípus,Fidesz,megyei jogú város,1609438,0.22,354076.36,2025/06,"Megyei jogú városban, vagy megyeszékhelyen",Fidesz,megyei jogú város (1.61m),megyei jogú város (22%),Fidesz,21kut,NA
 településtípus,bizonytalan,főváros,1274391,0.25,318597.75,2025/06,Fővárosban,"pártnélk/
-bizonyt.",főváros (1.27m),21kut,NA,NA,NA
-településtípus,más párt,főváros,1274391,0.17,216646.47,2025/06,Fővárosban,egyéb,főváros (1.27m),21kut,NA,NA,NA
-településtípus,Tisza,főváros,1274391,0.41,522500.31,2025/06,Fővárosban,TISZA,főváros (1.27m),21kut,NA,NA,NA
-településtípus,Fidesz,főváros,1274391,0.17,216646.47,2025/06,Fővárosban,Fidesz,főváros (1.27m),21kut,NA,NA,NA
-teljes népesség,Tisza Párt,teljes népesség,7878221,0.38,2993723.98,2025/06,NA,TISZA,teljes népesség (7.88m),medián,TISZA,0.8,teljes népesség (38%)
-teljes népesség,Fidesz-KDNP,teljes népesség,7878221,0.28,2205901.8800000004,2025/06,NA,Fidesz,teljes népesség (7.88m),medián,Fidesz,0.8,teljes népesség (28%)
-teljes népesség,Mi Hazánk,teljes népesség,7878221,0.04,315128.84,2025/06,NA,Mi Hazánk,teljes népesség (7.88m),medián,Mi Hazánk,0.8,teljes népesség (4%)
-teljes népesség,Kétfarkú Kutya Párt,teljes népesség,7878221,0.03,236346.63,2025/06,NA,MKKP,teljes népesség (7.88m),medián,MKKP,0.8,teljes népesség (3%)
-teljes népesség,DK,teljes népesség,7878221,0.02,157564.42,2025/06,NA,DK,teljes népesség (7.88m),medián,DK,0.8,teljes népesség (2%)
-teljes népesség,Jobbik,teljes népesség,7878221,0.02,157564.42,2025/06,NA,Jobbik,teljes népesség (7.88m),medián,Jobbik,0.8,teljes népesség (2%)
+bizonyt.",főváros (1.27m),főváros (25%),"pártnélk/
+bizonyt.",21kut,NA
+településtípus,más párt,főváros,1274391,0.17,216646.47,2025/06,Fővárosban,"más
+párt",főváros (1.27m),főváros (17%),"más
+párt",21kut,NA
+településtípus,Tisza,főváros,1274391,0.41,522500.31,2025/06,Fővárosban,TISZA,főváros (1.27m),főváros (41%),TISZA,21kut,NA
+településtípus,Fidesz,főváros,1274391,0.17,216646.47,2025/06,Fővárosban,Fidesz,főváros (1.27m),főváros (17%),Fidesz,21kut,NA
+teljes népesség,Tisza Párt,teljes népesség,7878221,0.38,2993723.98,2025/06,NA,TISZA,teljes népesség (7.88m),teljes népesség (38%),TISZA,medián,0.8
+teljes népesség,Fidesz-KDNP,teljes népesség,7878221,0.28,2205901.8800000004,2025/06,NA,Fidesz,teljes népesség (7.88m),teljes népesség (28%),Fidesz,medián,0.8
+teljes népesség,Mi Hazánk,teljes népesség,7878221,0.04,315128.84,2025/06,NA,Mi Hazánk,teljes népesség (7.88m),teljes népesség (4%),Mi Hazánk,medián,0.8
+teljes népesség,Kétfarkú Kutya Párt,teljes népesség,7878221,0.03,236346.63,2025/06,NA,MKKP,teljes népesség (7.88m),teljes népesség (3%),MKKP,medián,0.8
+teljes népesség,DK,teljes népesség,7878221,0.02,157564.42,2025/06,NA,DK,teljes népesség (7.88m),teljes népesség (2%),DK,medián,0.8
+teljes népesség,Jobbik,teljes népesség,7878221,0.02,157564.42,2025/06,NA,Jobbik,teljes népesség (7.88m),teljes népesség (2%),Jobbik,medián,0.8
 teljes népesség,egyéb párt,teljes népesség,7878221,0.01,78782.21,2025/06,NA,"más
-párt",teljes népesség (7.88m),medián,"más párt/
-pártnélk.",0.79,teljes népesség (1%)
-teljes népesség,pártnélküli,teljes népesség,7878221,0.22,1733208.62,2025/06,NA,pártnélk.,teljes népesség (7.88m),medián,"más párt/
-pártnélk.",0.8,teljes népesség (22%)
-teljes népesség,TISZA,teljes népesség,7878221,0.37,2914941.77,2025/08,NA,TISZA,teljes népesség (7.88m),medián,TISZA,0.8,teljes népesség (37%)
-teljes népesség,Fidesz,teljes népesség,7878221,0.3,2363466.3,2025/08,NA,Fidesz,teljes népesség (7.88m),medián,Fidesz,0.8,teljes népesség (30%)
-teljes népesség,Mi Hazánk,teljes népesség,7878221,0.04,315128.84,2025/08,NA,Mi Hazánk,teljes népesség (7.88m),medián,Mi Hazánk,0.8,teljes népesség (4%)
-teljes népesség,Kétfarkú Kutya Párt,teljes népesség,7878221,0.03,236346.63,2025/08,NA,MKKP,teljes népesség (7.88m),medián,MKKP,0.8,teljes népesség (3%)
-teljes népesség,DK,teljes népesség,7878221,0.02,157564.42,2025/08,NA,DK,teljes népesség (7.88m),medián,DK,0.8,teljes népesség (2%)
+párt",teljes népesség (7.88m),teljes népesség (1%),"más párt/
+pártnélk.",medián,0.79
+teljes népesség,pártnélküli,teljes népesség,7878221,0.22,1733208.62,2025/06,NA,pártnélk.,teljes népesség (7.88m),teljes népesség (22%),"más párt/
+pártnélk.",medián,0.8
+teljes népesség,TISZA,teljes népesség,7878221,0.37,2914941.77,2025/08,NA,TISZA,teljes népesség (7.88m),teljes népesség (37%),TISZA,medián,0.8
+teljes népesség,Fidesz,teljes népesség,7878221,0.3,2363466.3,2025/08,NA,Fidesz,teljes népesség (7.88m),teljes népesség (30%),Fidesz,medián,0.8
+teljes népesség,Mi Hazánk,teljes népesség,7878221,0.04,315128.84,2025/08,NA,Mi Hazánk,teljes népesség (7.88m),teljes népesség (4%),Mi Hazánk,medián,0.8
+teljes népesség,Kétfarkú Kutya Párt,teljes népesség,7878221,0.03,236346.63,2025/08,NA,MKKP,teljes népesség (7.88m),teljes népesség (3%),MKKP,medián,0.8
+teljes népesség,DK,teljes népesség,7878221,0.02,157564.42,2025/08,NA,DK,teljes népesség (7.88m),teljes népesség (2%),DK,medián,0.8
 teljes népesség,Egyéb,teljes népesség,7878221,0.02,157564.42,2025/08,NA,"más
-párt",teljes népesség (7.88m),medián,"más párt/
-pártnélk.",0.79,teljes népesség (2%)
-teljes népesség,Pártnélküli,teljes népesség,7878221,0.22,1733208.62,2025/08,NA,pártnélk.,teljes népesség (7.88m),medián,"más párt/
-pártnélk.",0.8,teljes népesség (22%)
-teljes népesség,Jobbik,teljes népesség,7878221,NA,NA,2025/08,NA,Jobbik,teljes népesség (7.88m),medián,Jobbik,0.8,teljes népesség (NA%)
-nem,Tisza Párt,férfi,3751602,0.41,1538156.8199999998,2025/06,NA,TISZA,férfi (3.75m),medián,TISZA,0.8,férfi (41%)
+párt",teljes népesség (7.88m),teljes népesség (2%),"más párt/
+pártnélk.",medián,0.79
+teljes népesség,Pártnélküli,teljes népesség,7878221,0.22,1733208.62,2025/08,NA,pártnélk.,teljes népesség (7.88m),teljes népesség (22%),"más párt/
+pártnélk.",medián,0.8
+teljes népesség,Jobbik,teljes népesség,7878221,NA,NA,2025/08,NA,Jobbik,teljes népesség (7.88m),teljes népesség (NA%),Jobbik,medián,0.8
+nem,Tisza Párt,férfi,3751602,0.41,1538156.8199999998,2025/06,NA,TISZA,férfi (3.75m),férfi (41%),TISZA,medián,0.8
 nem,más párt,férfi,3751602,0.12,450192.24,2025/06,NA,"más
-párt",férfi (3.75m),medián,"más párt/
-pártnélk.",0.79,férfi (12%)
-nem,pártnélküli,férfi,3751602,0.18,675288.36,2025/06,NA,pártnélk.,férfi (3.75m),medián,"más párt/
-pártnélk.",0.8,férfi (18%)
-nem,Fidesz-KDNP,férfi,3751602,0.29,1087964.5799999998,2025/06,NA,Fidesz,férfi (3.75m),medián,Fidesz,0.8,férfi (29%)
-nem,Tisza Párt,nő,4126619,0.36,1485582.8399999999,2025/06,NA,TISZA,nő (4.13m),medián,TISZA,0.8,nő (36%)
+párt",férfi (3.75m),férfi (12%),"más párt/
+pártnélk.",medián,0.79
+nem,pártnélküli,férfi,3751602,0.18,675288.36,2025/06,NA,pártnélk.,férfi (3.75m),férfi (18%),"más párt/
+pártnélk.",medián,0.8
+nem,Fidesz-KDNP,férfi,3751602,0.29,1087964.5799999998,2025/06,NA,Fidesz,férfi (3.75m),férfi (29%),Fidesz,medián,0.8
+nem,Tisza Párt,nő,4126619,0.36,1485582.8399999999,2025/06,NA,TISZA,nő (4.13m),nő (36%),TISZA,medián,0.8
 nem,más párt,nő,4126619,0.11,453928.09,2025/06,NA,"más
-párt",nő (4.13m),medián,"más párt/
-pártnélk.",0.79,nő (11%)
-nem,pártnélküli,nő,4126619,0.26,1072920.94,2025/06,NA,pártnélk.,nő (4.13m),medián,"más párt/
-pártnélk.",0.8,nő (26%)
-nem,Fidesz-KDNP,nő,4126619,0.27,1114187.1300000001,2025/06,NA,Fidesz,nő (4.13m),medián,Fidesz,0.8,nő (27%)
-nem,Fidesz-KDNP,férfi,3751602,0.28,1050448.56,2025/08,NA,Fidesz,férfi (3.75m),medián,Fidesz,0.8,férfi (28%)
+párt",nő (4.13m),nő (11%),"más párt/
+pártnélk.",medián,0.79
+nem,pártnélküli,nő,4126619,0.26,1072920.94,2025/06,NA,pártnélk.,nő (4.13m),nő (26%),"más párt/
+pártnélk.",medián,0.8
+nem,Fidesz-KDNP,nő,4126619,0.27,1114187.1300000001,2025/06,NA,Fidesz,nő (4.13m),nő (27%),Fidesz,medián,0.8
+nem,Fidesz-KDNP,férfi,3751602,0.28,1050448.56,2025/08,NA,Fidesz,férfi (3.75m),férfi (28%),Fidesz,medián,0.8
 nem,más pártok és pártnélküliek,férfi,3751602,0.33,1238028.6600000001,2025/08,NA,"más párt/
-pártnélk.",férfi (3.75m),medián,"más párt/
-pártnélk.",0.8,férfi (33%)
-nem,Tisza Párt,férfi,3751602,0.39,1463124.78,2025/08,NA,TISZA,férfi (3.75m),medián,TISZA,0.8,férfi (39%)
-nem,Fidesz-KDNP,nő,4126619,0.31,1279251.89,2025/08,NA,Fidesz,nő (4.13m),medián,Fidesz,0.8,nő (31%)
+pártnélk.",férfi (3.75m),férfi (33%),"más párt/
+pártnélk.",medián,0.8
+nem,Tisza Párt,férfi,3751602,0.39,1463124.78,2025/08,NA,TISZA,férfi (3.75m),férfi (39%),TISZA,medián,0.8
+nem,Fidesz-KDNP,nő,4126619,0.31,1279251.89,2025/08,NA,Fidesz,nő (4.13m),nő (31%),Fidesz,medián,0.8
 nem,más pártok és pártnélküliek,nő,4126619,0.33,1361784.27,2025/08,NA,"más párt/
-pártnélk.",nő (4.13m),medián,"más párt/
-pártnélk.",0.8,nő (33%)
-nem,Tisza Párt,nő,4126619,0.36,1485582.8399999999,2025/08,NA,TISZA,nő (4.13m),medián,TISZA,0.8,nő (36%)
-ELETKOR,Tisza Párt,18-29,1250346,0.58,725200.6799999999,2025/06,NA,TISZA,18-29 (1.25m),medián,TISZA,0.8,18-29 (58%)
+pártnélk.",nő (4.13m),nő (33%),"más párt/
+pártnélk.",medián,0.8
+nem,Tisza Párt,nő,4126619,0.36,1485582.8399999999,2025/08,NA,TISZA,nő (4.13m),nő (36%),TISZA,medián,0.8
+ELETKOR,Tisza Párt,18-29,1250346,0.58,725200.6799999999,2025/06,NA,TISZA,18-29 (1.25m),18-29 (58%),TISZA,medián,0.8
 ELETKOR,más párt,18-29,1250346,0.13,162544.98,2025/06,NA,"más
-párt",18-29 (1.25m),medián,"más párt/
-pártnélk.",0.79,18-29 (13%)
-ELETKOR,pártnélküli,18-29,1250346,0.13,162544.98,2025/06,NA,pártnélk.,18-29 (1.25m),medián,"más párt/
-pártnélk.",0.8,18-29 (13%)
-ELETKOR,Fidesz-KDNP,18-29,1250346,0.16,200055.36000000002,2025/06,NA,Fidesz,18-29 (1.25m),medián,Fidesz,0.8,18-29 (16%)
-ELETKOR,Tisza Párt,30-39,1234593,0.58,716063.94,2025/06,NA,TISZA,30-39 (1.23m),medián,TISZA,0.8,30-39 (58%)
+párt",18-29 (1.25m),18-29 (13%),"más párt/
+pártnélk.",medián,0.79
+ELETKOR,pártnélküli,18-29,1250346,0.13,162544.98,2025/06,NA,pártnélk.,18-29 (1.25m),18-29 (13%),"más párt/
+pártnélk.",medián,0.8
+ELETKOR,Fidesz-KDNP,18-29,1250346,0.16,200055.36000000002,2025/06,NA,Fidesz,18-29 (1.25m),18-29 (16%),Fidesz,medián,0.8
+ELETKOR,Tisza Párt,30-39,1234593,0.58,716063.94,2025/06,NA,TISZA,30-39 (1.23m),30-39 (58%),TISZA,medián,0.8
 ELETKOR,más párt,30-39,1234593,0.04,49383.72,2025/06,NA,"más
-párt",30-39 (1.23m),medián,"más párt/
-pártnélk.",0.79,30-39 (4%)
-ELETKOR,pártnélküli,30-39,1234593,0.21,259264.53,2025/06,NA,pártnélk.,30-39 (1.23m),medián,"más párt/
-pártnélk.",0.8,30-39 (21%)
-ELETKOR,Fidesz-KDNP,30-39,1234593,0.17,209880.81000000003,2025/06,NA,Fidesz,30-39 (1.23m),medián,Fidesz,0.8,30-39 (17%)
-ELETKOR,Tisza Párt,40-49,1483950,0.35,519382.49999999994,2025/06,NA,TISZA,40-49 (1.48m),medián,TISZA,0.8,40-49 (35%)
+párt",30-39 (1.23m),30-39 (4%),"más párt/
+pártnélk.",medián,0.79
+ELETKOR,pártnélküli,30-39,1234593,0.21,259264.53,2025/06,NA,pártnélk.,30-39 (1.23m),30-39 (21%),"más párt/
+pártnélk.",medián,0.8
+ELETKOR,Fidesz-KDNP,30-39,1234593,0.17,209880.81000000003,2025/06,NA,Fidesz,30-39 (1.23m),30-39 (17%),Fidesz,medián,0.8
+ELETKOR,Tisza Párt,40-49,1483950,0.35,519382.49999999994,2025/06,NA,TISZA,40-49 (1.48m),40-49 (35%),TISZA,medián,0.8
 ELETKOR,más párt,40-49,1483950,0.17,252271.50000000003,2025/06,NA,"más
-párt",40-49 (1.48m),medián,"más párt/
-pártnélk.",0.79,40-49 (17%)
-ELETKOR,pártnélküli,40-49,1483950,0.29,430345.49999999994,2025/06,NA,pártnélk.,40-49 (1.48m),medián,"más párt/
-pártnélk.",0.8,40-49 (29%)
-ELETKOR,Fidesz-KDNP,40-49,1483950,0.19,281950.5,2025/06,NA,Fidesz,40-49 (1.48m),medián,Fidesz,0.8,40-49 (19%)
-ELETKOR,Tisza Párt,50-64,1918332,0.31,594682.92,2025/06,NA,TISZA,50-64 (1.92m),medián,TISZA,0.8,50-64 (31%)
+párt",40-49 (1.48m),40-49 (17%),"más párt/
+pártnélk.",medián,0.79
+ELETKOR,pártnélküli,40-49,1483950,0.29,430345.49999999994,2025/06,NA,pártnélk.,40-49 (1.48m),40-49 (29%),"más párt/
+pártnélk.",medián,0.8
+ELETKOR,Fidesz-KDNP,40-49,1483950,0.19,281950.5,2025/06,NA,Fidesz,40-49 (1.48m),40-49 (19%),Fidesz,medián,0.8
+ELETKOR,Tisza Párt,50-64,1918332,0.31,594682.92,2025/06,NA,TISZA,50-64 (1.92m),50-64 (31%),TISZA,medián,0.8
 ELETKOR,más párt,50-64,1918332,0.12,230199.84,2025/06,NA,"más
-párt",50-64 (1.92m),medián,"más párt/
-pártnélk.",0.79,50-64 (12%)
-ELETKOR,pártnélküli,50-64,1918332,0.22,422033.04,2025/06,NA,pártnélk.,50-64 (1.92m),medián,"más párt/
-pártnélk.",0.8,50-64 (22%)
-ELETKOR,Fidesz-KDNP,50-64,1918332,0.35,671416.2,2025/06,NA,Fidesz,50-64 (1.92m),medián,Fidesz,0.8,50-64 (35%)
-ELETKOR,Tisza Párt,65+,1991000,0.24,477840,2025/06,NA,TISZA,65+ (1.99m),medián,TISZA,0.8,65+ (24%)
+párt",50-64 (1.92m),50-64 (12%),"más párt/
+pártnélk.",medián,0.79
+ELETKOR,pártnélküli,50-64,1918332,0.22,422033.04,2025/06,NA,pártnélk.,50-64 (1.92m),50-64 (22%),"más párt/
+pártnélk.",medián,0.8
+ELETKOR,Fidesz-KDNP,50-64,1918332,0.35,671416.2,2025/06,NA,Fidesz,50-64 (1.92m),50-64 (35%),Fidesz,medián,0.8
+ELETKOR,Tisza Párt,65+,1991000,0.24,477840,2025/06,NA,TISZA,65+ (1.99m),65+ (24%),TISZA,medián,0.8
 ELETKOR,más párt,65+,1991000,0.1,199100,2025/06,NA,"más
-párt",65+ (1.99m),medián,"más párt/
-pártnélk.",0.79,65+ (10%)
-ELETKOR,pártnélküli,65+,1991000,0.23,457930,2025/06,NA,pártnélk.,65+ (1.99m),medián,"más párt/
-pártnélk.",0.8,65+ (23%)
-ELETKOR,Fidesz-KDNP,65+,1991000,0.43,856130,2025/06,NA,Fidesz,65+ (1.99m),medián,Fidesz,0.8,65+ (43%)
-ELETKOR,Fidesz-KDNP,18-29,1250346,0.13,162544.98,2025/08,NA,Fidesz,18-29 (1.25m),medián,Fidesz,0.8,18-29 (13%)
+párt",65+ (1.99m),65+ (10%),"más párt/
+pártnélk.",medián,0.79
+ELETKOR,pártnélküli,65+,1991000,0.23,457930,2025/06,NA,pártnélk.,65+ (1.99m),65+ (23%),"más párt/
+pártnélk.",medián,0.8
+ELETKOR,Fidesz-KDNP,65+,1991000,0.43,856130,2025/06,NA,Fidesz,65+ (1.99m),65+ (43%),Fidesz,medián,0.8
+ELETKOR,Fidesz-KDNP,18-29,1250346,0.13,162544.98,2025/08,NA,Fidesz,18-29 (1.25m),18-29 (13%),Fidesz,medián,0.8
 ELETKOR,más pártok és pártnélküliek,18-29,1250346,0.31,387607.26,2025/08,NA,"más párt/
-pártnélk.",18-29 (1.25m),medián,"más párt/
-pártnélk.",0.8,18-29 (31%)
-ELETKOR,Tisza Párt,18-29,1250346,0.56,700193.76,2025/08,NA,TISZA,18-29 (1.25m),medián,TISZA,0.8,18-29 (56%)
-ELETKOR,Fidesz-KDNP,30-39,1234593,0.19,234572.67,2025/08,NA,Fidesz,30-39 (1.23m),medián,Fidesz,0.8,30-39 (19%)
+pártnélk.",18-29 (1.25m),18-29 (31%),"más párt/
+pártnélk.",medián,0.8
+ELETKOR,Tisza Párt,18-29,1250346,0.56,700193.76,2025/08,NA,TISZA,18-29 (1.25m),18-29 (56%),TISZA,medián,0.8
+ELETKOR,Fidesz-KDNP,30-39,1234593,0.19,234572.67,2025/08,NA,Fidesz,30-39 (1.23m),30-39 (19%),Fidesz,medián,0.8
 ELETKOR,más pártok és pártnélküliek,30-39,1234593,0.32,395069.76,2025/08,NA,"más párt/
-pártnélk.",30-39 (1.23m),medián,"más párt/
-pártnélk.",0.8,30-39 (32%)
-ELETKOR,Tisza Párt,30-39,1234593,0.49,604950.57,2025/08,NA,TISZA,30-39 (1.23m),medián,TISZA,0.8,30-39 (49%)
-ELETKOR,Fidesz-KDNP,40-49,1483950,0.28,415506.00000000006,2025/08,NA,Fidesz,40-49 (1.48m),medián,Fidesz,0.8,40-49 (28%)
+pártnélk.",30-39 (1.23m),30-39 (32%),"más párt/
+pártnélk.",medián,0.8
+ELETKOR,Tisza Párt,30-39,1234593,0.49,604950.57,2025/08,NA,TISZA,30-39 (1.23m),30-39 (49%),TISZA,medián,0.8
+ELETKOR,Fidesz-KDNP,40-49,1483950,0.28,415506.00000000006,2025/08,NA,Fidesz,40-49 (1.48m),40-49 (28%),Fidesz,medián,0.8
 ELETKOR,más pártok és pártnélküliek,40-49,1483950,0.37,549061.5,2025/08,NA,"más párt/
-pártnélk.",40-49 (1.48m),medián,"más párt/
-pártnélk.",0.8,40-49 (37%)
-ELETKOR,Tisza Párt,40-49,1483950,0.35,519382.49999999994,2025/08,NA,TISZA,40-49 (1.48m),medián,TISZA,0.8,40-49 (35%)
-ELETKOR,Fidesz-KDNP,50-64,1918332,0.37,709782.84,2025/08,NA,Fidesz,50-64 (1.92m),medián,Fidesz,0.8,50-64 (37%)
+pártnélk.",40-49 (1.48m),40-49 (37%),"más párt/
+pártnélk.",medián,0.8
+ELETKOR,Tisza Párt,40-49,1483950,0.35,519382.49999999994,2025/08,NA,TISZA,40-49 (1.48m),40-49 (35%),TISZA,medián,0.8
+ELETKOR,Fidesz-KDNP,50-64,1918332,0.37,709782.84,2025/08,NA,Fidesz,50-64 (1.92m),50-64 (37%),Fidesz,medián,0.8
 ELETKOR,más pártok és pártnélküliek,50-64,1918332,0.29,556316.2799999999,2025/08,NA,"más párt/
-pártnélk.",50-64 (1.92m),medián,"más párt/
-pártnélk.",0.8,50-64 (29%)
-ELETKOR,Tisza Párt,50-64,1918332,0.34,652232.88,2025/08,NA,TISZA,50-64 (1.92m),medián,TISZA,0.8,50-64 (34%)
-ELETKOR,Fidesz-KDNP,65+,1991000,0.43,856130,2025/08,NA,Fidesz,65+ (1.99m),medián,Fidesz,0.8,65+ (43%)
+pártnélk.",50-64 (1.92m),50-64 (29%),"más párt/
+pártnélk.",medián,0.8
+ELETKOR,Tisza Párt,50-64,1918332,0.34,652232.88,2025/08,NA,TISZA,50-64 (1.92m),50-64 (34%),TISZA,medián,0.8
+ELETKOR,Fidesz-KDNP,65+,1991000,0.43,856130,2025/08,NA,Fidesz,65+ (1.99m),65+ (43%),Fidesz,medián,0.8
 ELETKOR,más pártok és pártnélküliek,65+,1991000,0.34,676940,2025/08,NA,"más párt/
-pártnélk.",65+ (1.99m),medián,"más párt/
-pártnélk.",0.8,65+ (34%)
-ELETKOR,Tisza Párt,65+,1991000,0.23,457930,2025/08,NA,TISZA,65+ (1.99m),medián,TISZA,0.8,65+ (23%)
-végzettség,Tisza Párt,≤8 általános,1506228.5252572875,0.17,256058.8492937389,2025/06,legfeljebb 8 általános,TISZA,≤8 általános (1.51m),medián,TISZA,0.8,≤8 általános (17%)
+pártnélk.",65+ (1.99m),65+ (34%),"más párt/
+pártnélk.",medián,0.8
+ELETKOR,Tisza Párt,65+,1991000,0.23,457930,2025/08,NA,TISZA,65+ (1.99m),65+ (23%),TISZA,medián,0.8
+végzettség,Tisza Párt,≤8 általános,1506228.5252572875,0.17,256058.8492937389,2025/06,legfeljebb 8 általános,TISZA,≤8 általános (1.51m),≤8 általános (17%),TISZA,medián,0.8
 végzettség,más párt,≤8 általános,1506228.5252572875,0.13,195809.7082834474,2025/06,legfeljebb 8 általános,"más
-párt",≤8 általános (1.51m),medián,"más párt/
-pártnélk.",0.79,≤8 általános (13%)
-végzettség,pártnélküli,≤8 általános,1506228.5252572875,0.22,331370.2755566033,2025/06,legfeljebb 8 általános,pártnélk.,≤8 általános (1.51m),medián,"más párt/
-pártnélk.",0.8,≤8 általános (22%)
-végzettség,Fidesz-KDNP,≤8 általános,1506228.5252572875,0.48,722989.692123498,2025/06,legfeljebb 8 általános,Fidesz,≤8 általános (1.51m),medián,Fidesz,0.8,≤8 általános (48%)
-végzettség,Tisza Párt,szakmunkás,1762124.9595182636,0.3,528637.487855479,2025/06,szakmunkásképző,TISZA,szakmunkás (1.76m),medián,TISZA,0.8,szakmunkás (30%)
+párt",≤8 általános (1.51m),≤8 általános (13%),"más párt/
+pártnélk.",medián,0.79
+végzettség,pártnélküli,≤8 általános,1506228.5252572875,0.22,331370.2755566033,2025/06,legfeljebb 8 általános,pártnélk.,≤8 általános (1.51m),≤8 általános (22%),"más párt/
+pártnélk.",medián,0.8
+végzettség,Fidesz-KDNP,≤8 általános,1506228.5252572875,0.48,722989.692123498,2025/06,legfeljebb 8 általános,Fidesz,≤8 általános (1.51m),≤8 általános (48%),Fidesz,medián,0.8
+végzettség,Tisza Párt,szakmunkás,1762124.9595182636,0.3,528637.487855479,2025/06,szakmunkásképző,TISZA,szakmunkás (1.76m),szakmunkás (30%),TISZA,medián,0.8
 végzettség,más párt,szakmunkás,1762124.9595182636,0.13,229076.24473737428,2025/06,szakmunkásképző,"más
-párt",szakmunkás (1.76m),medián,"más párt/
-pártnélk.",0.79,szakmunkás (13%)
-végzettség,pártnélküli,szakmunkás,1762124.9595182636,0.26,458152.48947474855,2025/06,szakmunkásképző,pártnélk.,szakmunkás (1.76m),medián,"más párt/
-pártnélk.",0.8,szakmunkás (26%)
-végzettség,Fidesz-KDNP,szakmunkás,1762124.9595182636,0.31,546258.7374506617,2025/06,szakmunkásképző,Fidesz,szakmunkás (1.76m),medián,Fidesz,0.8,szakmunkás (31%)
-végzettség,Tisza Párt,érettségi,2644400.5767303184,0.47,1242868.2710632496,2025/06,érettségi/szakérettségi,TISZA,érettségi (2.64m),medián,TISZA,0.8,érettségi (47%)
+párt",szakmunkás (1.76m),szakmunkás (13%),"más párt/
+pártnélk.",medián,0.79
+végzettség,pártnélküli,szakmunkás,1762124.9595182636,0.26,458152.48947474855,2025/06,szakmunkásképző,pártnélk.,szakmunkás (1.76m),szakmunkás (26%),"más párt/
+pártnélk.",medián,0.8
+végzettség,Fidesz-KDNP,szakmunkás,1762124.9595182636,0.31,546258.7374506617,2025/06,szakmunkásképző,Fidesz,szakmunkás (1.76m),szakmunkás (31%),Fidesz,medián,0.8
+végzettség,Tisza Párt,érettségi,2644400.5767303184,0.47,1242868.2710632496,2025/06,érettségi/szakérettségi,TISZA,érettségi (2.64m),érettségi (47%),TISZA,medián,0.8
 végzettség,más párt,érettségi,2644400.5767303184,0.12,317328.0692076382,2025/06,érettségi/szakérettségi,"más
-párt",érettségi (2.64m),medián,"más párt/
-pártnélk.",0.79,érettségi (12%)
-végzettség,pártnélküli,érettségi,2644400.5767303184,0.21,555324.1211133668,2025/06,érettségi/szakérettségi,pártnélk.,érettségi (2.64m),medián,"más párt/
-pártnélk.",0.8,érettségi (21%)
-végzettség,Fidesz-KDNP,érettségi,2644400.5767303184,0.2,528880.1153460637,2025/06,érettségi/szakérettségi,Fidesz,érettségi (2.64m),medián,Fidesz,0.8,érettségi (20%)
-végzettség,Tisza Párt,felsőfokú,1965466.9384941305,0.49,963078.7998621239,2025/06,felsőfokú,TISZA,felsőfokú (1.97m),medián,TISZA,0.8,felsőfokú (49%)
+párt",érettségi (2.64m),érettségi (12%),"más párt/
+pártnélk.",medián,0.79
+végzettség,pártnélküli,érettségi,2644400.5767303184,0.21,555324.1211133668,2025/06,érettségi/szakérettségi,pártnélk.,érettségi (2.64m),érettségi (21%),"más párt/
+pártnélk.",medián,0.8
+végzettség,Fidesz-KDNP,érettségi,2644400.5767303184,0.2,528880.1153460637,2025/06,érettségi/szakérettségi,Fidesz,érettségi (2.64m),érettségi (20%),Fidesz,medián,0.8
+végzettség,Tisza Párt,felsőfokú,1965466.9384941305,0.49,963078.7998621239,2025/06,felsőfokú,TISZA,felsőfokú (1.97m),felsőfokú (49%),TISZA,medián,0.8
 végzettség,más párt,felsőfokú,1965466.9384941305,0.08,157237.35507953045,2025/06,felsőfokú,"más
-párt",felsőfokú (1.97m),medián,"más párt/
-pártnélk.",0.79,felsőfokú (8%)
-végzettség,pártnélküli,felsőfokú,1965466.9384941305,0.22,432402.7264687087,2025/06,felsőfokú,pártnélk.,felsőfokú (1.97m),medián,"más párt/
-pártnélk.",0.8,felsőfokú (22%)
-végzettség,Fidesz-KDNP,felsőfokú,1965466.9384941305,0.21,412748.0570837674,2025/06,felsőfokú,Fidesz,felsőfokú (1.97m),medián,Fidesz,0.8,felsőfokú (21%)
-végzettség,Fidesz-KDNP,≤8 általános,1506228.5252572875,0.54,813363.4036389353,2025/08,legfeljebb 8 általános,Fidesz,≤8 általános (1.51m),medián,Fidesz,0.8,≤8 általános (54%)
+párt",felsőfokú (1.97m),felsőfokú (8%),"más párt/
+pártnélk.",medián,0.79
+végzettség,pártnélküli,felsőfokú,1965466.9384941305,0.22,432402.7264687087,2025/06,felsőfokú,pártnélk.,felsőfokú (1.97m),felsőfokú (22%),"más párt/
+pártnélk.",medián,0.8
+végzettség,Fidesz-KDNP,felsőfokú,1965466.9384941305,0.21,412748.0570837674,2025/06,felsőfokú,Fidesz,felsőfokú (1.97m),felsőfokú (21%),Fidesz,medián,0.8
+végzettség,Fidesz-KDNP,≤8 általános,1506228.5252572875,0.54,813363.4036389353,2025/08,legfeljebb 8 általános,Fidesz,≤8 általános (1.51m),≤8 általános (54%),Fidesz,medián,0.8
 végzettség,más pártok és pártnélküliek,≤8 általános,1506228.5252572875,0.29,436806.27232461335,2025/08,legfeljebb 8 általános,"más párt/
-pártnélk.",≤8 általános (1.51m),medián,"más párt/
-pártnélk.",0.8,≤8 általános (29%)
-végzettség,Tisza Párt,≤8 általános,1506228.5252572875,0.17,256058.8492937389,2025/08,legfeljebb 8 általános,TISZA,≤8 általános (1.51m),medián,TISZA,0.8,≤8 általános (17%)
-végzettség,Fidesz-KDNP,szakmunkás,1762124.9595182636,0.35,616743.7358313922,2025/08,szakmunkásképző,Fidesz,szakmunkás (1.76m),medián,Fidesz,0.8,szakmunkás (35%)
+pártnélk.",≤8 általános (1.51m),≤8 általános (29%),"más párt/
+pártnélk.",medián,0.8
+végzettség,Tisza Párt,≤8 általános,1506228.5252572875,0.17,256058.8492937389,2025/08,legfeljebb 8 általános,TISZA,≤8 általános (1.51m),≤8 általános (17%),TISZA,medián,0.8
+végzettség,Fidesz-KDNP,szakmunkás,1762124.9595182636,0.35,616743.7358313922,2025/08,szakmunkásképző,Fidesz,szakmunkás (1.76m),szakmunkás (35%),Fidesz,medián,0.8
 végzettség,más pártok és pártnélküliek,szakmunkás,1762124.9595182636,0.35,616743.7358313922,2025/08,szakmunkásképző,"más párt/
-pártnélk.",szakmunkás (1.76m),medián,"más párt/
-pártnélk.",0.8,szakmunkás (35%)
-végzettség,Tisza Párt,szakmunkás,1762124.9595182636,0.3,528637.487855479,2025/08,szakmunkásképző,TISZA,szakmunkás (1.76m),medián,TISZA,0.8,szakmunkás (30%)
-végzettség,Fidesz-KDNP,érettségi,2644400.5767303184,0.24,634656.1384152764,2025/08,érettségi/szakérettségi,Fidesz,érettségi (2.64m),medián,Fidesz,0.8,érettségi (24%)
+pártnélk.",szakmunkás (1.76m),szakmunkás (35%),"más párt/
+pártnélk.",medián,0.8
+végzettség,Tisza Párt,szakmunkás,1762124.9595182636,0.3,528637.487855479,2025/08,szakmunkásképző,TISZA,szakmunkás (1.76m),szakmunkás (30%),TISZA,medián,0.8
+végzettség,Fidesz-KDNP,érettségi,2644400.5767303184,0.24,634656.1384152764,2025/08,érettségi/szakérettségi,Fidesz,érettségi (2.64m),érettségi (24%),Fidesz,medián,0.8
 végzettség,más pártok és pártnélküliek,érettségi,2644400.5767303184,0.33,872652.1903210051,2025/08,érettségi/szakérettségi,"más párt/
-pártnélk.",érettségi (2.64m),medián,"más párt/
-pártnélk.",0.8,érettségi (33%)
-végzettség,Tisza Párt,érettségi,2644400.5767303184,0.43,1137092.2479940369,2025/08,érettségi/szakérettségi,TISZA,érettségi (2.64m),medián,TISZA,0.8,érettségi (43%)
-végzettség,Fidesz-KDNP,felsőfokú,1965466.9384941305,0.18,353784.04892894346,2025/08,felsőfokú,Fidesz,felsőfokú (1.97m),medián,Fidesz,0.8,felsőfokú (18%)
+pártnélk.",érettségi (2.64m),érettségi (33%),"más párt/
+pártnélk.",medián,0.8
+végzettség,Tisza Párt,érettségi,2644400.5767303184,0.43,1137092.2479940369,2025/08,érettségi/szakérettségi,TISZA,érettségi (2.64m),érettségi (43%),TISZA,medián,0.8
+végzettség,Fidesz-KDNP,felsőfokú,1965466.9384941305,0.18,353784.04892894346,2025/08,felsőfokú,Fidesz,felsőfokú (1.97m),felsőfokú (18%),Fidesz,medián,0.8
 végzettség,más pártok és pártnélküliek,felsőfokú,1965466.9384941305,0.31,609294.7509331804,2025/08,felsőfokú,"más párt/
-pártnélk.",felsőfokú (1.97m),medián,"más párt/
-pártnélk.",0.8,felsőfokú (31%)
-végzettség,Tisza Párt,felsőfokú,1965466.9384941305,0.51,1002388.1386320066,2025/08,felsőfokú,TISZA,felsőfokú (1.97m),medián,TISZA,0.8,felsőfokú (51%)
-településtípus,Tisza Párt,község,2300462,0.28,644129.3600000001,2025/08,NA,TISZA,község (2.3m),medián,TISZA,0.8,község (28%)
+pártnélk.",felsőfokú (1.97m),felsőfokú (31%),"más párt/
+pártnélk.",medián,0.8
+végzettség,Tisza Párt,felsőfokú,1965466.9384941305,0.51,1002388.1386320066,2025/08,felsőfokú,TISZA,felsőfokú (1.97m),felsőfokú (51%),TISZA,medián,0.8
+településtípus,Tisza Párt,község,2300462,0.28,644129.3600000001,2025/08,NA,TISZA,község (2.3m),község (28%),TISZA,medián,0.8
 településtípus,más pártok és pártnélküliek,község,2300462,0.37,851170.94,2025/08,NA,"más párt/
-pártnélk.",község (2.3m),medián,"más párt/
-pártnélk.",0.8,község (37%)
-településtípus,Fidesz-KDNP,község,2300462,0.35,805161.7,2025/08,NA,Fidesz,község (2.3m),medián,Fidesz,0.8,község (35%)
-településtípus,Tisza Párt,egyéb város,2575046,0.37,952767.02,2025/08,NA,TISZA,egyéb város (2.58m),medián,TISZA,0.8,egyéb város (37%)
+pártnélk.",község (2.3m),község (37%),"más párt/
+pártnélk.",medián,0.8
+településtípus,Fidesz-KDNP,község,2300462,0.35,805161.7,2025/08,NA,Fidesz,község (2.3m),község (35%),Fidesz,medián,0.8
+településtípus,Tisza Párt,egyéb város,2575046,0.37,952767.02,2025/08,NA,TISZA,egyéb város (2.58m),egyéb város (37%),TISZA,medián,0.8
 településtípus,más pártok és pártnélküliek,egyéb város,2575046,0.31,798264.26,2025/08,NA,"más párt/
-pártnélk.",egyéb város (2.58m),medián,"más párt/
-pártnélk.",0.8,egyéb város (31%)
-településtípus,Fidesz-KDNP,egyéb város,2575046,0.32,824014.72,2025/08,NA,Fidesz,egyéb város (2.58m),medián,Fidesz,0.8,egyéb város (32%)
-településtípus,Tisza Párt,megyei jogú város,1609438,0.49,788624.62,2025/08,NA,TISZA,megyei jogú város (1.61m),medián,TISZA,0.8,megyei jogú város (49%)
+pártnélk.",egyéb város (2.58m),egyéb város (31%),"más párt/
+pártnélk.",medián,0.8
+településtípus,Fidesz-KDNP,egyéb város,2575046,0.32,824014.72,2025/08,NA,Fidesz,egyéb város (2.58m),egyéb város (32%),Fidesz,medián,0.8
+településtípus,Tisza Párt,megyei jogú város,1609438,0.49,788624.62,2025/08,NA,TISZA,megyei jogú város (1.61m),megyei jogú város (49%),TISZA,medián,0.8
 településtípus,más pártok és pártnélküliek,megyei jogú város,1609438,0.26,418453.88,2025/08,NA,"más párt/
-pártnélk.",megyei jogú város (1.61m),medián,"más párt/
-pártnélk.",0.8,megyei jogú város (26%)
-településtípus,Fidesz-KDNP,megyei jogú város,1609438,0.25,402359.5,2025/08,NA,Fidesz,megyei jogú város (1.61m),medián,Fidesz,0.8,megyei jogú város (25%)
-településtípus,Tisza Párt,főváros,1274391,0.42,535244.22,2025/08,NA,TISZA,főváros (1.27m),medián,TISZA,0.8,főváros (42%)
+pártnélk.",megyei jogú város (1.61m),megyei jogú város (26%),"más párt/
+pártnélk.",medián,0.8
+településtípus,Fidesz-KDNP,megyei jogú város,1609438,0.25,402359.5,2025/08,NA,Fidesz,megyei jogú város (1.61m),megyei jogú város (25%),Fidesz,medián,0.8
+településtípus,Tisza Párt,főváros,1274391,0.42,535244.22,2025/08,NA,TISZA,főváros (1.27m),főváros (42%),TISZA,medián,0.8
 településtípus,más pártok és pártnélküliek,főváros,1274391,0.35,446036.85,2025/08,NA,"más párt/
-pártnélk.",főváros (1.27m),medián,"más párt/
-pártnélk.",0.8,főváros (35%)
-településtípus,Fidesz-KDNP,főváros,1274391,0.23,293109.93,2025/08,NA,Fidesz,főváros (1.27m),medián,Fidesz,0.8,főváros (23%)
-településtípus,Fidesz-KDNP,község,2300462,0.33,759152.4600000001,2025/06,NA,Fidesz,község (2.3m),medián,Fidesz,0.8,község (33%)
-településtípus,pártnélküli,község,2300462,0.24,552110.88,2025/06,NA,pártnélk.,község (2.3m),medián,"más párt/
-pártnélk.",0.8,község (24%)
+pártnélk.",főváros (1.27m),főváros (35%),"más párt/
+pártnélk.",medián,0.8
+településtípus,Fidesz-KDNP,főváros,1274391,0.23,293109.93,2025/08,NA,Fidesz,főváros (1.27m),főváros (23%),Fidesz,medián,0.8
+településtípus,Fidesz-KDNP,község,2300462,0.33,759152.4600000001,2025/06,NA,Fidesz,község (2.3m),község (33%),Fidesz,medián,0.8
+településtípus,pártnélküli,község,2300462,0.24,552110.88,2025/06,NA,pártnélk.,község (2.3m),község (24%),"más párt/
+pártnélk.",medián,0.8
 településtípus,más párt,község,2300462,0.11,253050.82,2025/06,NA,"más
-párt",község (2.3m),medián,"más párt/
-pártnélk.",0.79,község (11%)
-településtípus,Tisza Párt,község,2300462,0.32,736147.84,2025/06,NA,TISZA,község (2.3m),medián,TISZA,0.8,község (32%)
-településtípus,Fidesz-KDNP,egyéb város,2575046,0.28,721012.8800000001,2025/06,NA,Fidesz,egyéb város (2.58m),medián,Fidesz,0.8,egyéb város (28%)
-településtípus,pártnélküli,egyéb város,2575046,0.27,695262.42,2025/06,NA,pártnélk.,egyéb város (2.58m),medián,"más párt/
-pártnélk.",0.8,egyéb város (27%)
+párt",község (2.3m),község (11%),"más párt/
+pártnélk.",medián,0.79
+településtípus,Tisza Párt,község,2300462,0.32,736147.84,2025/06,NA,TISZA,község (2.3m),község (32%),TISZA,medián,0.8
+településtípus,Fidesz-KDNP,egyéb város,2575046,0.28,721012.8800000001,2025/06,NA,Fidesz,egyéb város (2.58m),egyéb város (28%),Fidesz,medián,0.8
+településtípus,pártnélküli,egyéb város,2575046,0.27,695262.42,2025/06,NA,pártnélk.,egyéb város (2.58m),egyéb város (27%),"más párt/
+pártnélk.",medián,0.8
 településtípus,más párt,egyéb város,2575046,0.11,283255.06,2025/06,NA,"más
-párt",egyéb város (2.58m),medián,"más párt/
-pártnélk.",0.79,egyéb város (11%)
-településtípus,Tisza Párt,egyéb város,2575046,0.34,875515.64,2025/06,NA,TISZA,egyéb város (2.58m),medián,TISZA,0.8,egyéb város (34%)
-településtípus,Fidesz-KDNP,megyei jogú város,1609438,0.25,402359.5,2025/06,NA,Fidesz,megyei jogú város (1.61m),medián,Fidesz,0.8,megyei jogú város (25%)
-településtípus,pártnélküli,megyei jogú város,1609438,0.18,289698.83999999997,2025/06,NA,pártnélk.,megyei jogú város (1.61m),medián,"más párt/
-pártnélk.",0.8,megyei jogú város (18%)
+párt",egyéb város (2.58m),egyéb város (11%),"más párt/
+pártnélk.",medián,0.79
+településtípus,Tisza Párt,egyéb város,2575046,0.34,875515.64,2025/06,NA,TISZA,egyéb város (2.58m),egyéb város (34%),TISZA,medián,0.8
+településtípus,Fidesz-KDNP,megyei jogú város,1609438,0.25,402359.5,2025/06,NA,Fidesz,megyei jogú város (1.61m),megyei jogú város (25%),Fidesz,medián,0.8
+településtípus,pártnélküli,megyei jogú város,1609438,0.18,289698.83999999997,2025/06,NA,pártnélk.,megyei jogú város (1.61m),megyei jogú város (18%),"más párt/
+pártnélk.",medián,0.8
 településtípus,más párt,megyei jogú város,1609438,0.11,177038.18,2025/06,NA,"más
-párt",megyei jogú város (1.61m),medián,"más párt/
-pártnélk.",0.79,megyei jogú város (11%)
-településtípus,Tisza Párt,megyei jogú város,1609438,0.46,740341.48,2025/06,NA,TISZA,megyei jogú város (1.61m),medián,TISZA,0.8,megyei jogú város (46%)
-településtípus,Fidesz-KDNP,főváros,1274391,0.21,267622.11,2025/06,NA,Fidesz,főváros (1.27m),medián,Fidesz,0.8,főváros (21%)
-településtípus,pártnélküli,főváros,1274391,0.18,229390.38,2025/06,NA,pártnélk.,főváros (1.27m),medián,"más párt/
-pártnélk.",0.8,főváros (18%)
+párt",megyei jogú város (1.61m),megyei jogú város (11%),"más párt/
+pártnélk.",medián,0.79
+településtípus,Tisza Párt,megyei jogú város,1609438,0.46,740341.48,2025/06,NA,TISZA,megyei jogú város (1.61m),megyei jogú város (46%),TISZA,medián,0.8
+településtípus,Fidesz-KDNP,főváros,1274391,0.21,267622.11,2025/06,NA,Fidesz,főváros (1.27m),főváros (21%),Fidesz,medián,0.8
+településtípus,pártnélküli,főváros,1274391,0.18,229390.38,2025/06,NA,pártnélk.,főváros (1.27m),főváros (18%),"más párt/
+pártnélk.",medián,0.8
 településtípus,más párt,főváros,1274391,0.12,152926.91999999998,2025/06,NA,"más
-párt",főváros (1.27m),medián,"más párt/
-pártnélk.",0.79,főváros (12%)
-településtípus,Tisza Párt,főváros,1274391,0.49,624451.59,2025/06,NA,TISZA,főváros (1.27m),medián,TISZA,0.8,főváros (49%)
+párt",főváros (1.27m),főváros (12%),"más párt/
+pártnélk.",medián,0.79
+településtípus,Tisza Párt,főváros,1274391,0.49,624451.59,2025/06,NA,TISZA,főváros (1.27m),főváros (49%),TISZA,medián,0.8

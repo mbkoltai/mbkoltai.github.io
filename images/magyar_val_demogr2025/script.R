@@ -361,19 +361,21 @@ l_dem$vegzettseg$teljes %>%
   ) %>%
   mutate(partnev_kozos=case_when(
                     grepl("Fidesz",part) ~ "Fidesz",
-                    grepl("egyéb|más párt",part,ignore.case=T) ~ "egyéb", 
+                    grepl("egyéb|más párt",part,ignore.case=T) ~ "más\npárt", 
                     grepl("Kutya",part,ignore.case=T) ~ "MKKP",
                     grepl("TISZA",part,ignore.case=T) ~ "TISZA", 
                     grepl("Pártnélküli|bizonytalan",part,ignore.case=T) ~ "pártnélk/\nbizonyt.",
                     .default=part      ) ,
-    partnev_kozos=factor(gsub("Mi Hazánk","MiHaz",partnev_kozos),
-            levels=c("TISZA","Fidesz","MiHaz","DK","MKKP","egyéb","pártnélk/\nbizonyt.")) ) %>%
+    partnev_kozos=factor(partnev_kozos, # gsub("Mi Hazánk","MiHaz",partnev_kozos),
+            levels=c("TISZA","Fidesz","Mi Hazánk","DK","MKKP","más\npárt","pártnélk/\nbizonyt.")) ) %>%
   group_by(kateg,datum) %>%
   mutate(kateg=factor(gsub("középfokú-","",kateg),
             levels=c("teljes népesség",
                     gsub("középfokú-","",l_dem$vegzettseg$kozos_vegzettseg_kateg),
                     rev(unique(l_part_data$`21_kut`$`2025_06`$telep_tipus$kateg))    ) ),
-         kateg_nev_meret_str=paste0(kateg," (",round(sum(valasztok_szama,na.rm=T)/1e6,2),"m)" ) 
+         kateg_nev_meret_str=paste0(kateg," (",round(sum(valasztok_szama,na.rm=T)/1e6,2),"m)" ),
+         kateg_nev_arany_str=paste0(kateg," (",arány*100,"%)" ),
+         partnev_kozos_aggr=partnev_kozos
     ) # close mutate
 # reorder factors
 l_plot$`21_kut`$kateg_nev_meret_str <- factor(l_plot$`21_kut`$kateg_nev_meret_str,
