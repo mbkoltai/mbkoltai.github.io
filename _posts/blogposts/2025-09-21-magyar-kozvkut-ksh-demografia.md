@@ -7,28 +7,27 @@ secondary: blogposts
 mathjax: true
 ---
 
-Az ábrák a 21Kutatóközpont és a Medián 2025 nyári méréseit integrálják a KSH demográfiai adataival. 
-Minden demográfiai adat a választásra jogosult, tehát 18 éves vagy idősebb, népességre vonatkozik, ami a KSH 2025 évi becslése szerint kb. 7.88 millió ember. A függőleges tengelyen a választók száma ezerben van megadva. <br>
+A lenti ábrák a 21Kutatóközpont és a Medián 2025. évi méréseit integrálják a KSH demográfiai adataival. 
+A célom az volt, hogy abszolút számokban is láthassuk ezeknek a közvéleménykutatásoknak a pártpreferencia-számait, különböző demográfiai dimenziókban: a teljes népességben, illetve nem, kor, végzettség és település-típus szerint lebontva.<br>
 
-<b>Értelmezés</b>: Még ha a felmérések nagyon pontosak is (lennének), a hibahatár így, alkategóriákra lebontva, szinte biztosan nagyobb, mint a teljes mintára nézve. <br>
-Tehát az oszlopok fölötti számokat, amelyek tízezerre kerekítve lettek, nem helyes pontos becsléseknek venni. Ehelyett csak azt mutatják meg, hogy hány (százalék) szavazó lenne az adott kategóriában, <b>ha</b> a mérés tökéletesen pontos lenne - ami szinte biztosan nem igaz. <br>
-Ugyanakkor azt megmutatják, hogy az egyes demográfiai csoportokban (pl. szakmunkás végzettségűek, 65 év felettiek stb.) összesen mennyien vannak, illetve <i>ha</i> a mérések hozzávetőlegesen pontosak, akkor azt is, hogy körülbelül hogyan oszlik el a népesség pártszimpátia szerint az adott demográfiai kategóriában. 
+<b>Értelmezés</b>: Még ha a felmérések nagyon pontosak is (lennének), a hibahatár alkategóriákra lebontva szinte biztosan nagyobb, mint a teljes mintára nézve. 
+Tehát az oszlopok fölötti számokat, amelyek tízezerre kerekítve lettek, nem helyes pontos becsléseknek venni. 
+Viszont egyrészt megmutatják, hogy az egyes demográfiai csoportokban (pl. szakmunkás végzettségűek, 65 év felettiek stb.) összesen mennyien vannak.
+Másrészt pedig azt, hogy az adott kategóriában hogyan oszlan(nán)ak el az emberek pártpreferencia szerint, <b>ha</b> a mérés tökéletesen pontos lenne. Még ha ez nincs is így, kaphatunk egy hozzávetőleges képet a relatív arányokról: egyrészt a demográfiai csoportok méretéről, másrészt az ezeken belüli hozzávetőleges politikai erőviszonyokról. <br>
+Végül pedig, remélhetőleg ezek a demográfiailag lebontott kutatások folytatódni fognak a 2026-os választásokig, így  egy idősort fogunk kapni, amiből talán valamiféle trendek olvashatók majd ki. <br>
+Ami a közvéleménykutatók választását illeti: a MEDIÁN 2002 óta készült választás előtti előrejelzéseit <a href='https://docs.google.com/spreadsheets/d/1NUEgN7eV7MoZqi8dd9-xAzWxY_u2u_HYImV6l_U5qDE/' target='_blank'>itt gyűjtöttem össze</a>, a tényleges eredményekkel összehasonlítva. Ezeken látható, hogy 2002 óta minden választáson helyesen jelezték előre a választás győztesét, illetve, hogy átlagosan 2-3%-ot tévedtek pártonként. <br>
+A 21 Kutatóközpont nincsen ilyen hosszú távra visszamenő "recordja", mivel ez egy néhány éve megjelent cég, viszont a 2024-es <a href='https://mbkoltai.com/ep2024-hungary-datavis/' target='_blank'>EP-választások</a> előtti felmérésük <a href='https://24.hu/belfold/2024/06/09/ep-valasztas-2024-exit-poll-mandatumbecsles/' target='_blank'>gyakorlatilag tökéletesre sikerült</a>, illetve részletes, letölthető, viszonylag transzparens módszertanú kutatásokat közölnek, ezért használtam az ő méréseiket is. <br>
+A többi közvéleménykutató demográfiai lebontást általában nem publikál, emellett a múltbeli teljesítményük (és kapcsolataik) annyira ellentmondásos(ak), hogy inkább nem használtam őket.
 <br>
 
 <b>Adatokkal kapcsolatos megjegyzések</b>: 
-A demográfiai adatokat a KSH összefoglaló tábláiból, illetve a [2022-es országgyűlési választás honlapjáról](https://www.valasztas.hu/ogy2022-letoltheto-es-tovabbfeldolgozhato-adatok) vettem. Az adatfile-ok letölthetők a <a href='https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025' 
-target='_blank'> projekt Github mappájából</a>. 
+A demográfiai adatokat a KSH összefoglaló tábláiból, illetve a [2022-es országgyűlési választás honlapjáról](https://www.valasztas.hu/ogy2022-letoltheto-es-tovabbfeldolgozhato-adatok) vettem. Az adatfile-ok letölthetők a <a href='https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025' target='_blank'>projekt Github mappájából</a>. 
 A statikus grafikonokat generáló [R kódban](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025/script.R) a linkeket is megadtam, ahonnan az eredeti táblázatok letölthetők. 
 A 74 éven felüliek végzettség szerinti eloszlására nem találtam adatot a KSH-nál, csak a 15-74 közötti népességre. 
 Ezért itt (≥74) azt feltételeztem, hogy a végzettség szerinti megoszlás megfelel a legkorábbi adatpont (2009) <i>teljes</i> lakosságra vonatkozó adataival.
 Emellett, a KSH 2025-ös felnőtt népesség méret-adata kb. 120 ezerrel nagyobb, mint ami a 2022-es települési választási adatokból kivonható. 
 Ennek nem tudom, hogy mi az oka, talán a nem bejelentett külföldön élők. Ez a két demográfiai pontatlanság nem változtat sokat (valószínűleg kb. néhány tízezret) a végzettség és településtípus szerinti demográfiai csoportok méretén. <br>
 
-A MEDIÁN 2002 óta készült választás előtti - az eredményekkel összehasonlított - előrejelzéseit <a href='https://docs.google.com/spreadsheets/d/1NUEgN7eV7MoZqi8dd9-xAzWxY_u2u_HYImV6l_U5qDE/' target='_blank'>itt gyűjtöttem össze</a>. <br>
-A 21Kutközpont 2024-es <a href='https://mbkoltai.com/ep2024-hungary-datavis/' target='_blank'>EP-választások</a> előtti (gyakorlatilag tökéletesre sikerült) <a href='https://24.hu/belfold/2024/06/09/ep-valasztas-2024-exit-poll-mandatumbecsles/' target='_blank'> előrejelzése itt</a>. <br>
-A többi közvéleménykutató demográfiai lebontást általában nem publikál, illetve a <i> record</i>-juk annyira ellentmodásos, hogy inkább nem használtam őket.
- 
-A grafikonokat a választásokig megjelenő újabb Medián és 21Kutközponz mérésekkel frissíteni tervezem, így remélhetőleg egy hozzávetőleges idősort kaphatunk majd.
 
 
 <a href="https://mbkoltai.shinyapps.io/magyar_val_demogr_2025/" class="button">ShinyApp interaktív grafikonokkal</a>

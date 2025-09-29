@@ -528,6 +528,7 @@ if (F) {
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # segment into sep datafrs for datawrapper
 
+if (F) {
 lapply(unique(l_plot$median$kateg_tipus), \(x_nev)
 bind_rows(
   l_plot$`21_kut` %>% mutate(cég="21kut"), 
@@ -542,3 +543,4 @@ bind_rows(
   mutate(valasztok_szama=round(valasztok_szama/1e4)*1e4) %>%
   pivot_wider(names_from=c(cég),values_from=valasztok_szama) %>%
   write_csv(file = paste0("l_plot_",gsub(" ","",x_nev),".csv")) )
+}
