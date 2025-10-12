@@ -25,8 +25,7 @@ A demográfiai adatokat a KSH összefoglaló tábláiból, illetve a [2022-es or
 A statikus grafikonokat generáló [R kódban](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025/script.R) a linkeket is megadtam, ahonnan az eredeti táblázatok letölthetők. 
 A 74 éven felüliek végzettség szerinti eloszlására nem találtam adatot a KSH-nál, csak a 15-74 közötti népességre. 
 Ezért itt (≥74) azt feltételeztem, hogy a végzettség szerinti megoszlás megfelel a legkorábbi adatpont (2009) <i>teljes</i> lakosságra vonatkozó adataival.
-Emellett, a KSH 2025-ös felnőtt népesség méret-adata kb. 120 ezerrel nagyobb, mint ami a 2022-es települési választási adatokból kivonható. 
-Ennek nem tudom, hogy mi az oka, talán a nem bejelentett külföldön élők. Ez a két demográfiai pontatlanság nem változtat sokat (valószínűleg kb. néhány tízezret) a végzettség és településtípus szerinti demográfiai csoportok méretén. <br>
+A választásra jogosult népesség méretére a (2025. októberi 12-i adatot)[https://www.valasztas.hu/valasztopolgarok-szama-valasztastipusonkent] használtam, ami 7 635 775 (7.64 millió) fő volt. Ez csak a belföldi, magyartországi lakcímmel rendelkező szavazókat foglalja magában, tehát a levélszavazásra jogosultak (kb. 441 ezer fő) nincsenek benne, mint ahogy rájuk a magyarországi közvéleménykutatások sem terjednek ki (legalábbis általában).  <br>
 
 
 

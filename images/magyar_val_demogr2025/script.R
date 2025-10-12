@@ -127,10 +127,23 @@ l_dem$stadat_nep0003 <- read_delim("input_files/stadat-nep0003-22.1.1.3-hu.csv",
     value = as.numeric(value),
     ev  = as.integer(ev),
     kor_num=as.numeric(kor),
-    kor_num=ifelse(is.na(kor_num),90,kor_num)  ) 
+    kor_num=ifelse(is.na(kor_num),90,kor_num)  )
+
+# DE!!! ez a teljes Magyaro-i lakossag, nem a valasztasra jogosultak szama
+# ami itt erheto el: https://www.valasztas.hu/valasztopolgarok-szama-valasztastipusonkent
+# 2025/10/12: 7635775
+# csinalunk egy korrekciot, hogy a 18>= lakossagot felszorozzuk a ketto aranyaval...
+# mivel a csak valasztojoguakra nincsenek reszletes adatok
+l_dem$stadat_nep0003 <- with(list(valjog_belfold=7635775,
+  teljes_nep=sum((l_dem$stadat_nep0003 %>% filter(ev %in% 2025 & nem %in% "Összesen" & kor_num>=18))$value)),
+l_dem$stadat_nep0003 %>%
+  mutate(value_valjog=ifelse(ev==2025 & kor_num>=18,value*valjog_belfold/teljes_nep,NA)) %>%
+  rename(value_telj_nep=value) %>% rename(value=value_valjog)
+)
 
 # plot
 if (F) {
+  # ez megint a teljes >=18 lakossag
 l_dem$stadat_nep0003 %>%
   filter(grepl("esen",nem) & ev>2010) %>%
   group_by(ev,nem) %>%
@@ -171,7 +184,7 @@ l_dem$stadat_nep0003 %>% filter(ev==2025 & grepl("sszes",nem)) %>%
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 # teljes felnott nepesseg
 
-l_dem$teljes_felnott_nep_2025 <- as.numeric(
+l_dem$val_jog_nep_2025 <- as.numeric(
   l_dem$korszerk_csop %>% summarise(teljes_felnott_nepesseg=sum(szam)))
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
@@ -194,7 +207,8 @@ unique(l_part_data$median$`2025_08`$TELEPÜLÉS$kateg)
 
 # osszes telep val.polg. szamaval
 # osszesen 7.759m val.polgar jon ki a 2022-es valasztasi adatokbol, 
-# vmivel (kb 100e) kevesebb mint a KSH 18+ lakossagmeret... nem vagyok benne biztos ennek mi az oka
+# vmivel TOBB mint a 2025 val.jogosultak (https://www.valasztas.hu/valasztopolgarok-szama-valasztastipusonkent)
+# , vszleg demografiai fogyas miatt
 l_dem$telep_lista_valpolg_tipus <- right_join(
   read_csv("input_files/Egyéni_szavazás_szkjkv.csv") %>% 
   # source: https://www.valasztas.hu/ogy2022-letoltheto-es-tovabbfeldolgozhato-adatok
@@ -217,7 +231,7 @@ l_dem$telep_tipus <- l_dem$telep_lista_valpolg_tipus %>%
   rename(kateg_ksh=`Helység jogállása`) %>%
   group_by(kateg_ksh) %>% 
   summarise(kateg_tipus="településtípus",
-            n_valpolg=sum(n_valpolg),
+            n_valpolg2022=sum(n_valpolg),
             n_lako=sum(`Lakó-népesség`)) %>%
   mutate(kateg=case_when(
                 grepl("község",kateg_ksh,ignore.case=T) ~ grep("község",
@@ -230,8 +244,12 @@ l_dem$telep_tipus <- l_dem$telep_lista_valpolg_tipus %>%
                             unique(l_part_data$median$`2025_08`$TELEPÜLÉS$kateg),value=T),
                 .default=kateg_ksh)   )
 
+# scale this by 2025 data on all eligible to vote
+l_dem$telep_tipus$n_valpolg <- with(l_dem$telep_tipus,n_valpolg2022*l_dem$val_jog_nep_2025/sum(n_valpolg2022))
+
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # 21 kut kategoriak osszehangolasa a mediannal
+
 l_part_data$`21_kut`$`2025_06`$telep_tipus <- l_part_data$`21_kut`$`2025_06`$telep_tipus %>%
   mutate(kateg=case_when(
                 grepl("község",kateg_eredeti,ignore.case=T) ~ grep("község",
@@ -349,7 +367,7 @@ l_dem$vegzettseg$teljes %>%
 # teljes nepesseg
  l_part_data$`21_kut`$`2025_08`$teljes_nepesseg %>%
   mutate(kateg_tipus="teljes népesség", 
-        kateg_telj_nep=l_dem$teljes_felnott_nep_2025,
+        kateg_telj_nep=l_dem$val_jog_nep_2025,
         valasztok_szama=arány*kateg_telj_nep,
         kateg="teljes népesség" ),
  # telepules-tipus
@@ -415,7 +433,7 @@ l_plot$median <- bind_rows(
   bind_rows(l_part_data[["median"]]$`2025_06`$telj_nepesseg_partok,
             l_part_data[["median"]]$`2025_08`$telj_nepesseg_partok ) %>%
   mutate(kateg_tipus="teljes népesség", 
-        kateg_telj_nep=l_dem$teljes_felnott_nep_2025,
+        kateg_telj_nep=l_dem$val_jog_nep_2025,
         valasztok_szama=arány*kateg_telj_nep) %>%
     relocate(c(kateg_tipus,kateg_telj_nep),.before=kateg),
 # NEM
@@ -523,6 +541,11 @@ if (F) {
   ggsave(filename="plots/Median_2025_06_08_telj_vegz_teleptipus.png",
     device="png",width=48,height=35,units="cm")
 }
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ###
+### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# save for shiny app
+# saveRDS(l_plot,file = "shiny/l_plot_21kut_median.RDS")
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 

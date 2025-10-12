@@ -57,8 +57,10 @@ ui <- fluidPage(
       (csak a 15-74 közötti népességre van meg). 
       Ezért itt (≥74) azt feltételeztem, hogy a végzettség szerinti megoszlás megfelel a legkorábbi adatpont (2009) 
       <i>teljes</i> lakosságra vonatkozó adataival.
-      Emellett, a KSH felnőtt népesség adata kb. 120 ezerrel nagyobb, mint a 2022-es települési választási adatokból 
-      kivonható adat. Ennek nem vagyok benne biztos, hogy mi az oka (talán a nem bejelentett külföldön élők). 
+      A választásra jogosult népesség méretére a 2025. októberi 12-i adatot használtam, ami 7 635 775 fő volt. 
+      Ez csak a belföldi, magyartországi lakcímmel rendelkező szavazókat foglalja magában, 
+      tehát a levélszavazásra jogosultak (kb. 441 ezer fő) nincsenek benne, mint ahogy rájuk a magyarországi 
+      közvéleménykutatások sem terjednek ki (legalábbis általában).
       További információ a 
       <a href='https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr/script.R' 
       target='_blank'>projekt github-ján</a> érhető el, az ábrákhoz használt csv táblázatokkal együtt.
