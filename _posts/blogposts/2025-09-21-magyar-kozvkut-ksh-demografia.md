@@ -25,15 +25,20 @@ Az ábrákat tervezem update-elni, ha lesznek újabb demográfiailag lebontott m
 
 <b>Értelmezés</b>
 
-*Ha* a kutatások stimmelnek, akkor a a Fidesz bázisa 2025 szeptemberben így nézett ki:
-- teljes tábor kb. 2-2.3 millió támogató (21Kutközpont 2 millióra, Medián inkább 2.3m-ra mérte augusztus végén)
-- kb 2/3-uk 50 feletti: 650-700e 50-65 között, 800-850e 65 feletti
-- 150-200 ezer körüli 30 év alatti támogatója van a Fidesznek, 200-250e 30-40 év közötti
-- támogatók kb. 55-60%-a nem rendelkezik gimnáziumi érettségivel (kb 1.1-1.3 millió ember): kb. 600-800e 8 általánost végzett, kb. 600e szakmunkás
-- egyharmaduknak van érettségije (~600e ember), kb 15%-uk diplomás (~250-350e)
+*Ha* a kutatások stimmelnek, akkor - csak a két kutatás különbségeit megadva, a nagyobb hibahatárokat most félretéve - a Fidesz bázisa 2025 szeptemberben így nézett ki:
+- a teljes tábor kb. 2-2.3 millió ember (a 21Kutközpont 2 millióra, Medián inkább 2.3m-ra mérte augusztus végén)  
+- kicsit több mint felük nő (55%, 1.2m ember)  
+KOR szerint:
+- kb 2/3-uk 50 évnél idősebb: 650-700e 50-65 között, 800-850e 65 feletti
+- 150-200 ezer körüli 30 év alatti támogató, 200-250e 30-40 év közötti  
+VÉGZETTSÉG szerint: 
+- támogatók kb. 55-60%-a nem rendelkezik gimnáziumi érettségivel (1.1-1.3 millió ember): 600-800e 8 általánost végzett, 600e szakmunkás
+- kb. egyharmaduknak van érettségije (~600e ember), ~15% diplomás (~250-350e)  
+TELEPÜLÉSTÍPUS szerint:
 - kb. egyharmaduk községekben (650-800e), további egyharmaduk kisebb/közepes (nem megyeszékhely) városban lakik
 - 15-20%-uk lakik megyeszékhelyen (350-400e ember), és 10-15%-uk Budapesten (200-300e)
 
+Még egyszer: a tényleges hibák valószínűleg jelentősebbek, így csoportokra lebontva.
 A június és szeptember közötti változások bőven hibahatáron belüliek, de mindkét intézet 1-2%-os (80-160 ezer ember) növekedést mért a Fidesz teljes népességen belüli támogatottságában. 
 Ha szószerint vesszük az adatokat, akkor azt mutatják, hogy a következő csoportokban nőtt a Fidesz támogatottsága olyan mértékben, ami _talán_ több mint zaj (50e-nél nagyobb változásokat vettem):
 - nők: +160e
