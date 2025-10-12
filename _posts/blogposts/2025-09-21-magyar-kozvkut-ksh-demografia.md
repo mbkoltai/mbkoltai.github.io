@@ -13,14 +13,14 @@ A célom az volt, hogy abszolút számokban is láthassuk ezeknek a közvélemé
 <b>Háttér</b>
 
 Még ha a felmérések nagyon pontosak is (lennének), a hibahatár alkategóriákra lebontva szinte biztosan nagyobb, mint a teljes mintára nézve. 
-Tehát az oszlopok fölötti számokat, amelyek tízezerre kerekítve lettek, nem helyes pontos becsléseknek venni. 
-Viszont egyrészt megmutatják, hogy az egyes demográfiai csoportokban (pl. szakmunkás végzettségűek, 65 év felettiek stb.) összesen mennyien vannak.
-Másrészt pedig azt, hogy az adott kategóriában hogyan oszlan(nán)ak el az emberek pártpreferencia szerint, <b>ha</b> a mérés tökéletesen pontos lenne. Még ha ez nincs is így, kaphatunk egy hozzávetőleges képet a relatív arányokról: egyrészt a demográfiai csoportok méretéről, másrészt az ezeken belüli hozzávetőleges politikai erőviszonyokról. <br>
-Végül pedig, remélhetőleg ezek a demográfiailag lebontott kutatások folytatódni fognak a 2026-os választásokig, így  egy idősort fogunk kapni, amiből talán valamiféle trendek olvashatók majd ki. <br>
-Ami a közvéleménykutatók választását illeti: a MEDIÁN 2002 óta készült választás előtti előrejelzéseit <a href='https://docs.google.com/spreadsheets/d/1NUEgN7eV7MoZqi8dd9-xAzWxY_u2u_HYImV6l_U5qDE/' target='_blank'>itt gyűjtöttem össze</a>, a tényleges eredményekkel összehasonlítva. Ezeken látható, hogy 2002 óta minden választáson helyesen jelezték előre a választás győztesét, illetve, hogy átlagosan 2-3%-ot tévedtek pártonként. <br>
+Tehát a grafikonokon feltüntetett számokat, amelyek tízezerre kerekítve lettek, nem érdemes (és nem helyes) pontos becsléseknek venni. 
+Egyrészt viszont megmutatják, hogy az egyes demográfiai csoportokban (pl. szakmunkás végzettségűek, 65 év felettiek stb.) összesen mennyien vannak.
+Másrészt pedig azt, hogy az adott kategóriában hogyan oszlan(nán)ak el az emberek pártpreferencia szerint, <b>ha</b> a mérés tökéletesen pontos lenne. Még ha ez nincs is így, kapunk egy képet a relatív arányokról: egyrészt a demográfiai csoportok méretéről, másrészt az ezeken belüli hozzávetőleges politikai erőviszonyokról. <br>
+Végül pedig, remélhetőleg ezek a demográfiailag lebontott kutatások folytatódni fognak a 2026-os választásokig, így  egy idősort fogunk kapni, amiből talán valamiféle trendek látszanak majd. <br>
+Ami a közvéleménykutatók választását illeti: a MEDIÁN 2002 óta készült választás előtti előrejelzéseit <a href='https://docs.google.com/spreadsheets/d/1NUEgN7eV7MoZqi8dd9-xAzWxY_u2u_HYImV6l_U5qDE/' target='_blank'>itt gyűjtöttem össze</a>, a tényleges eredményekkel összehasonlítva. A cég 2002 óta minden választáson helyesen jelezte előre a választás győztesét, átlagosan 2-3%-ot tévedve pártonként. <br>
 A 21 Kutatóközpont nincsen ilyen hosszú távra visszamenő "recordja", mivel ez egy néhány éve megjelent cég, viszont a 2024-es <a href='https://mbkoltai.com/ep2024-hungary-datavis/' target='_blank'>EP-választások</a> előtti felmérésük <a href='https://24.hu/belfold/2024/06/09/ep-valasztas-2024-exit-poll-mandatumbecsles/' target='_blank'>gyakorlatilag tökéletesre sikerült</a>, illetve részletes, letölthető, viszonylag transzparens módszertanú kutatásokat közölnek, ezért használtam az ő méréseiket is. <br>
-A többi közvéleménykutató demográfiai lebontást általában nem publikál, emellett a múltbeli teljesítményük (és kapcsolataik) annyira ellentmondásos(ak), hogy inkább nem használtam őket.
-Az ábrákat tervezem update-elni, ha lesznek újabb demográfiailag lebontott mérések áprilisig.
+A többi közvéleménykutató demográfiai lebontást általában nem publikál és/vagy adataik nem letölthetőek, emellett a múltbeli teljesítményük (és kapcsolataik) annyira ellentmondásos(ak), hogy inkább nem használtam őket.
+Az ábrákat tervezem update-elni, ha lesznek újabb demográfiailag lebontott mérések 2026. áprilisig.
 <br>
 
 <b>Értelmezés</b>
@@ -40,9 +40,10 @@ Ha szószerint vesszük az adatokat, akkor azt mutatják, hogy a következő cso
 - 40-50 év közöttiek: +130e
 - 8 általános (+90e), szakmunkás (+70e) és érettségizettek (+110e)
 - kis/közepes városok: +100e
+
 Ezek a növekmények átfednek egymással, tehát nem összeadhatók. 
 
-<b>Demográfiai adatokkal kapcsolatos megjegyzések</b>
+<b>Demográfiai adatok</b>
 
 A demográfiai adatokat a KSH összefoglaló tábláiból, illetve a [2022-es országgyűlési választás honlapjáról](https://www.valasztas.hu/ogy2022-letoltheto-es-tovabbfeldolgozhato-adatok) vettem. Az adatfile-ok letölthetők a <a href='https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025' target='_blank'>projekt Github mappájából</a>. 
 A statikus grafikonokat generáló [R kódban](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025/script.R) a linkeket is megadtam, ahonnan az eredeti táblázatok letölthetők. 
@@ -102,6 +103,7 @@ A választásra jogosult népesség méretére a [2025. októberi 12-i adatot](h
 </script>
 
 
+<!--
 ## Statikus grafikonok, ahol az oszlopok fölötti számok a szavazók számát mutatják ezerben megadva:
 
 <div style="text-align: center;">
@@ -126,6 +128,8 @@ A választásra jogosult népesség méretére a [2025. októberi 12-i adatot](h
 <figcaption style="font-size: 20px; margin-top: 6px; width: 700px;">  <strong>21 kutatóközpont felmérés</strong> </figcaption>
 </figure>
 </div>
+
+-->
 
 <!-- 
 BOX FOR EQUATION
