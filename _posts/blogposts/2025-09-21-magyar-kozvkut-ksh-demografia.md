@@ -23,6 +23,51 @@ A többi közvéleménykutató demográfiai lebontást általában nem publikál
 Az ábrákat tervezem update-elni, ha lesznek újabb demográfiailag lebontott mérések 2026. áprilisig.
 <br>
 
+<b>Demográfiai adatok</b>
+
+A demográfiai adatokat a KSH összefoglaló tábláiból, illetve a [2022-es országgyűlési választás honlapjáról](https://www.valasztas.hu/ogy2022-letoltheto-es-tovabbfeldolgozhato-adatok) vettem. Az adatfile-ok letölthetők a <a href='https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025' target='_blank'>projekt Github mappájából</a>. 
+A statikus grafikonokat generáló [R kódban](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025/script.R) a linkeket is megadtam, ahonnan az eredeti táblázatok letölthetők. 
+A 74 éven felüliek végzettség szerinti eloszlására nem találtam adatot a KSH-nál, csak a 15-74 közötti népességre. 
+Ezért itt (≥74) azt feltételeztem, hogy a végzettség szerinti megoszlás megfelel a legkorábbi adatpont (2009) <i>teljes</i> lakosságra vonatkozó adataival.
+A választásra jogosult népesség méretére a [2025. októberi 12-i adatot](https://www.valasztas.hu/valasztopolgarok-szama-valasztastipusonkent) használtam, ami 7 635 775 (7.64 millió) fő volt. Ez csak a belföldi, magyarországi lakcímmel rendelkező szavazókat foglalja magában, tehát a levélszavazásra jogosultak (kb. 441 ezer fő 2025/10-ben) nincsenek benne, mint ahogy rájuk a magyarországi közvéleménykutatások sem terjednek ki általában.<br>
+
+## Datawrapper
+
+<iframe title="Pártprefenciák TELJES NÉPESSÉGBEN" aria-label="Split Bars" id="datawrapper-chart-cfTyu" src="https://datawrapper.dwcdn.net/cfTyu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="922" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+
+### ShinyApp
+
+<a href="https://mbkoltai.shinyapps.io/magyar_val_demogr_2025/" class="button">ShinyApp interaktív grafikonokkal</a>
+
+<style>
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 22px;
+    color: white;
+    background-color: #0056b3; /* Button background color */
+    border: 2px solid transparent; /* Transparent border by default */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: red; /* Change border color to red on hover */
+}
+</style>
+
+
+### Kód és adatforrások
+
+[GitHub mappa](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/magyar_val_demogr2025)
+
+
+
+<!--  
+
 <b>Értelmezés</b>
 
 *Ha* a kutatások stimmelnek, akkor - csak a két kutatás különbségeit megadva, a nagyobb hibahatárokat most félretéve - a Fidesz bázisa 2025 szeptemberben így nézett ki:
@@ -48,92 +93,6 @@ Ha szószerint vesszük az adatokat, akkor azt mutatják, hogy a következő cso
 
 Ezek a növekmények átfednek egymással, tehát nem összeadhatók. 
 
-<b>Demográfiai adatok</b>
-
-A demográfiai adatokat a KSH összefoglaló tábláiból, illetve a [2022-es országgyűlési választás honlapjáról](https://www.valasztas.hu/ogy2022-letoltheto-es-tovabbfeldolgozhato-adatok) vettem. Az adatfile-ok letölthetők a <a href='https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025' target='_blank'>projekt Github mappájából</a>. 
-A statikus grafikonokat generáló [R kódban](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025/script.R) a linkeket is megadtam, ahonnan az eredeti táblázatok letölthetők. 
-A 74 éven felüliek végzettség szerinti eloszlására nem találtam adatot a KSH-nál, csak a 15-74 közötti népességre. 
-Ezért itt (≥74) azt feltételeztem, hogy a végzettség szerinti megoszlás megfelel a legkorábbi adatpont (2009) <i>teljes</i> lakosságra vonatkozó adataival.
-A választásra jogosult népesség méretére a [2025. októberi 12-i adatot](https://www.valasztas.hu/valasztopolgarok-szama-valasztastipusonkent) használtam, ami 7 635 775 (7.64 millió) fő volt. Ez csak a belföldi, magyarországi lakcímmel rendelkező szavazókat foglalja magában, tehát a levélszavazásra jogosultak (kb. 441 ezer fő 2025/10-ben) nincsenek benne, mint ahogy rájuk a magyarországi közvéleménykutatások sem terjednek ki általában.<br>
-
-
-
-<a href="https://mbkoltai.shinyapps.io/magyar_val_demogr_2025/" class="button">ShinyApp interaktív grafikonokkal</a>
-
-<style>
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 22px;
-    color: white;
-    background-color: #0056b3; /* Button background color */
-    border: 2px solid transparent; /* Transparent border by default */
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    transition: border-color 0.3s; /* Smooth transition for border color */
-}
-.button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    border-color: red; /* Change border color to red on hover */
-}
-</style>
-
-## Datawrapper
-
-<iframe title="Pártprefenciák TELJES NÉPESSÉGBEN" aria-label="Split Bars" id="datawrapper-chart-cfTyu" src="https://datawrapper.dwcdn.net/cfTyu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="922" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
-</script>
-
-<br>
-<br>
-
-<iframe title="Pártprefenciák NEM szerint" aria-label="Split Bars" id="datawrapper-chart-us87e" src="https://datawrapper.dwcdn.net/us87e/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="519" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
-</script>
-
-<br>
-<br>
-
-<iframe title="Pártprefenciák KOR szerint" aria-label="Split Bars" id="datawrapper-chart-4j1BB" src="https://datawrapper.dwcdn.net/4j1BB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1077" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();</script>
-
-<br>
-<br>
-
-<iframe title="Pártprefenciák VÉGZETTSÉG szerint" aria-label="Split Bars" id="datawrapper-chart-wHysZ" src="https://datawrapper.dwcdn.net/wHysZ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1431" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
-</script>
-
-<br>
-<br>
-
-<iframe title="Pártprefenciák TELEPÜLÉSTÍPUS szerint" aria-label="Split Bars" id="datawrapper-chart-QVOTR" src="https://datawrapper.dwcdn.net/QVOTR/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="960" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
-</script>
-
-
-<!--
-## Statikus grafikonok, ahol az oszlopok fölötti számok a szavazók számát mutatják ezerben megadva:
-
-<div style="text-align: center;">
-<figure style="display:inline-block;border:1px solid #888; padding:8px; border-radius:1px; text-align:center; background-color:#ddd;">
-<a href="{{site.baseurl}}/images/magyar_val_demogr2025/plots/Median_2025_06_08_telj_vegz_teleptipus.png">
-<img src="{{site.baseurl}}/images/magyar_val_demogr2025/plots/Median_2025_06_08_telj_vegz_teleptipus.png" alt="_config.yml" />
-</a>
-<figcaption style="font-size: 20px; margin-top: 6px; width: 700px;"> <strong>MEDIÁN felmérés</strong> </figcaption>
-</figure>
-</div>
-
-<br>
-<br>
-<br>
-
-
-<div style="text-align: center;">
-<figure style="display:inline-block;border:1px solid #888; padding:8px; border-radius:1px; text-align:center; background-color:#ddd;">
-<a href="{{site.baseurl}}/images/magyar_val_demogr2025/plots/21kut_2025_04_06_08_telj_vegz_teleptipus.png">
-<img src="{{site.baseurl}}/images/magyar_val_demogr2025/plots/21kut_2025_04_06_08_telj_vegz_teleptipus.png" alt="_config.yml" />
-</a>
-<figcaption style="font-size: 20px; margin-top: 6px; width: 700px;">  <strong>21 kutatóközpont felmérés</strong> </figcaption>
-</figure>
-</div>
-
 -->
 
 <!-- 
@@ -144,8 +103,3 @@ BOX FOR EQUATION
   </div> <div style="background-color: #cccccc; padding: 6px 10px; border-radius: 4px; font-size: 0.9em;"> (1) </div>
 </div>
 -->
-
-
-### Kód és adatforrások
-
-[GitHub mappa](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/magyar_val_demogr2025)

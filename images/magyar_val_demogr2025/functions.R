@@ -15,7 +15,7 @@ lapply(c("select", "filter", "lag"), function(x) conflicted::conflict_prefer(x, 
 # source("functions.R")
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
-
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # plotting settings
 l_plot <- list()
 l_plot$standard_theme <- theme( # for publ plots
@@ -28,3 +28,17 @@ l_plot$standard_theme <- theme( # for publ plots
                         legend.text=element_text(size=20),
                         legend.title=element_text(size=22),
                         text=element_text(family="sans") )
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+
+
+
+convert_hu_date <- function(x) {
+  months_hu <- c(
+  január="01", február="02", március="03", április="04",
+  május="05", június="06", július="07", augusztus="08",
+  szeptember="09", október="10", november="11", december="12" )
+  m <- str_match(x, "([0-9]{4})\\.\\s*([[:alpha:]]+)")[,2:3]
+  sprintf("%s/%s", m[,1], months_hu[m[,2]])
+}
