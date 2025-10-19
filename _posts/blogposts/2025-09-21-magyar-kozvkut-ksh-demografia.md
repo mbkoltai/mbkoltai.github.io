@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Pártpreferencia felmérések abszolút számokban
+title: Magyarországi politikai erőviszonyok abszolút számokban (datawrapper plots)
 tags: hungary politics elections demographics data-visualisation magyar
-excerpt: Nem/kor/végzettség/településtípus szerinti KSH adatok alapján
+excerpt: Nem/kor/végzettség/településtípus szerint
 secondary: blogposts
 mathjax: true
 ---
@@ -15,7 +15,7 @@ A célom az volt, hogy abszolút számokban is láthassuk ezeknek a közvélemé
 Még ha a felmérések nagyon pontosak is (lennének), a hibahatár alkategóriákra lebontva szinte biztosan nagyobb, mint a teljes mintára nézve. 
 Tehát a grafikonokon feltüntetett számokat, amelyek tízezerre kerekítve lettek, nem érdemes (és nem helyes) pontos becsléseknek venni. 
 Egyrészt viszont megmutatják, hogy az egyes demográfiai csoportokban (pl. szakmunkás végzettségűek, 65 év felettiek stb.) összesen mennyien vannak.
-Másrészt pedig azt, hogy az adott kategóriában hogyan oszlan(nán)ak el az emberek pártpreferencia szerint, <b>ha</b> a mérés tökéletesen pontos lenne. Még ha ez nincs is így, kapunk egy képet a relatív arányokról: egyrészt a demográfiai csoportok méretéről, másrészt az ezeken belüli hozzávetőleges politikai erőviszonyokról. <br>
+Másrészt pedig, hogy az adott kategóriában hogyan oszlan(nán)ak el az emberek pártpreferencia szerint, <b>ha</b> a mérés tökéletesen pontos lenne. Még ha ez nincs is így, kapunk egy képet a relatív arányokról: egyrészt a demográfiai csoportok méretéről, másrészt az ezeken belüli hozzávetőleges politikai erőviszonyokról. <br>
 Végül pedig, remélhetőleg ezek a demográfiailag lebontott kutatások folytatódni fognak a 2026-os választásokig, így  egy idősort fogunk kapni, amiből talán valamiféle trendek látszanak majd. <br>
 Ami a közvéleménykutatók választását illeti: a MEDIÁN 2002 óta készült választás előtti előrejelzéseit <a href='https://docs.google.com/spreadsheets/d/1NUEgN7eV7MoZqi8dd9-xAzWxY_u2u_HYImV6l_U5qDE/' target='_blank'>itt gyűjtöttem össze</a>, a tényleges eredményekkel összehasonlítva. A cég 2002 óta minden választáson helyesen jelezte előre a választás győztesét, átlagosan 2-3%-ot tévedve pártonként. <br>
 A 21 Kutatóközpont nincsen ilyen hosszú távra visszamenő "recordja", mivel ez egy néhány éve megjelent cég, viszont a 2024-es <a href='https://mbkoltai.com/ep2024-hungary-datavis/' target='_blank'>EP-választások</a> előtti felmérésük <a href='https://24.hu/belfold/2024/06/09/ep-valasztas-2024-exit-poll-mandatumbecsles/' target='_blank'>gyakorlatilag tökéletesre sikerült</a>, illetve részletes, letölthető, viszonylag transzparens módszertanú kutatásokat közölnek, ezért használtam az ő méréseiket is. <br>
