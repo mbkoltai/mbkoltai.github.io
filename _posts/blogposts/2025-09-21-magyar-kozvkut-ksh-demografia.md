@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Magyarországi politikai erőviszonyok abszolút számokban (datawrapper plots)
+title: Magyarországi politikai erőviszonyok abszolút számokban (datawrapper)
 tags: hungary politics elections demographics data-visualisation magyar
 excerpt: Nem/kor/végzettség/településtípus szerint
 secondary: blogposts
