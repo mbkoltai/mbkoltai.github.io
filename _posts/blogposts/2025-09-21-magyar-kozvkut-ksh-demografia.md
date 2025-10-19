@@ -44,20 +44,23 @@ A választásra jogosult népesség méretére a [2025. októberi 12-i adatot](h
   <noscript><img src="https://public.flourish.studio/visualisation/25731267/thumbnail" width="100%" alt="chart visualization" /></noscript>
 </div>
 
+<div class="flourish-embed flourish-chart" data-src="visualisation/25731198">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript><img src="https://public.flourish.studio/visualisation/25731198/thumbnail" width="100%" alt="chart visualization" /></noscript>
+</div>
+
+
 <div class="flourish-embed flourish-chart" data-src="visualisation/25729323">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
   <noscript><img src="https://public.flourish.studio/visualisation/25729323/thumbnail" width="100%" alt="chart visualization" /></noscript>
 </div>
+
 
 <div class="flourish-embed flourish-chart" data-src="visualisation/25730741">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
   <noscript><img src="https://public.flourish.studio/visualisation/25730741/thumbnail" width="100%" alt="chart visualization" /></noscript>
 </div>
 
-<div class="flourish-embed flourish-chart" data-src="visualisation/25731198">
-  <script src="https://public.flourish.studio/resources/embed.js"></script>
-  <noscript><img src="https://public.flourish.studio/visualisation/25731198/thumbnail" width="100%" alt="chart visualization" /></noscript>
-</div>
 
 <div class="flourish-embed flourish-chart" data-src="visualisation/25731239">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
