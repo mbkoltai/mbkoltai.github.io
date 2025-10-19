@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Magyarországi politikai erőviszonyok abszolút számokban (datawrapper)
+title: Magyar közvéleménykutatások abszolút számokban (datawrapper + flourish)
 tags: hungary politics elections demographics data-visualisation magyar
 excerpt: Nem/kor/végzettség/településtípus szerint
 secondary: blogposts
@@ -36,7 +36,36 @@ A választásra jogosult népesség méretére a [2025. októberi 12-i adatot](h
 <iframe title="Pártprefenciák TELJES NÉPESSÉGBEN" aria-label="Split Bars" id="datawrapper-chart-cfTyu" src="https://datawrapper.dwcdn.net/cfTyu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="922" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
 </script>
 
-### ShinyApp
+
+## flourish
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/25731267">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript><img src="https://public.flourish.studio/visualisation/25731267/thumbnail" width="100%" alt="chart visualization" /></noscript>
+</div>
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/25729323">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript><img src="https://public.flourish.studio/visualisation/25729323/thumbnail" width="100%" alt="chart visualization" /></noscript>
+</div>
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/25730741">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript><img src="https://public.flourish.studio/visualisation/25730741/thumbnail" width="100%" alt="chart visualization" /></noscript>
+</div>
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/25731198">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript><img src="https://public.flourish.studio/visualisation/25731198/thumbnail" width="100%" alt="chart visualization" /></noscript>
+</div>
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/25731239">
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
+  <noscript><img src="https://public.flourish.studio/visualisation/25731239/thumbnail" width="100%" alt="chart visualization" /></noscript>
+</div>
+
+
+## ShinyApp
 
 <a href="https://mbkoltai.shinyapps.io/magyar_val_demogr_2025/" class="button">ShinyApp interaktív grafikonokkal</a>
 

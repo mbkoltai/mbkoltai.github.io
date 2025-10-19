@@ -555,6 +555,13 @@ if (F) {
 # save for shiny app
 # saveRDS(l_plot,file = "shiny/l_plot_21kut_median.RDS")
 
+bind_rows(
+  l_plot$`21_kut` %>% mutate(cég="21kut"), 
+  l_plot$median %>% mutate(cég="MEDIÁN")) %>% 
+  mutate(valasztok_szama=round(valasztok_szama/1e4)*1e4,
+        szazalek=arány*100  ) %>%
+  select(!c(pattern_var,kateg_eredeti,szazalek)) %>% write_csv(file = "l_plot.csv")
+
 ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # segment into sep datafrs for datawrapper
@@ -595,3 +602,46 @@ bind_rows(
   filter(!if_all(any_of(c("21kut", "MEDIÁN")), ~ is.na(.x))) %>%
   write_csv(file=paste0("output/szazalekok/l_plot_",gsub(" ","",x_nev),".csv")) )
 }
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ###
+### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# wide format
+
+lapply(unique(l_plot$median$kateg_tipus), function(x_kat) {
+xx <- bind_rows(
+  l_plot$`21_kut` %>% mutate(cég="21kut"), 
+  l_plot$median %>% mutate(cég="MEDIÁN")) %>% 
+  group_by(datum,kateg_tipus,kateg_nev_meret_str,kateg_telj_nep,partnev_kozos_aggr,cég) %>%
+  summarise(valasztok_szama=round(sum(valasztok_szama)),
+            szazalek=round(sum(arány)*100)) %>% 
+  mutate(valasztok_szama_10e=round(valasztok_szama/1e4)*1e4) %>%
+  # select(!c(pattern_var,valasztok_szama,arány,
+  #           partnev_kozos,part,kateg_nev_arany_str,kateg_eredeti)) %>%
+  filter(kateg_tipus %in% x_kat) 
+  if ( any(grepl("21", unique(xx$cég)))  ) {
+  xx <- xx %>%
+  pivot_wider(names_from=cég,values_from=szazalek,
+            names_glue="{cég} (%)") %>%
+  rowwise() %>%
+  mutate(`21kut (ezer választó)`=ifelse(is.na(`21kut (%)`),NA,valasztok_szama_10e/1e3),
+         `MEDIÁN (ezer választó)`=ifelse(is.na(`MEDIÁN (%)`),NA,valasztok_szama_10e/1e3)  ) %>%
+  select(!valasztok_szama_10e) 
+  } else {
+      xx <- xx %>%
+      mutate(`MEDIÁN (ezer választó)`=valasztok_szama_10e/1e3,
+             `MEDIÁN (%)`=szazalek ) %>% 
+      select(!c(valasztok_szama_10e,szazalek)) }
+    
+    xx %>%
+    mutate(kateg_telj_nep=round(kateg_telj_nep),
+           partnev_kozos_aggr={
+      cleaned <- partnev_kozos_aggr %>%
+        gsub("/\n", "/", .) %>%
+        gsub("\n", " ", .)
+      factor(cleaned, levels = unique(cleaned))    }
+        # factor(gsub("/\n","/",partnev_kozos_aggr),
+        #               levels = unique(gsub("/\n","/",partnev_kozos_aggr)))
+      ) %>%
+  write_csv(file=paste0("output/wide_absz_szam_szazalek/l_plot_",gsub(" ","",x_kat),".csv"))
+  }
+)
