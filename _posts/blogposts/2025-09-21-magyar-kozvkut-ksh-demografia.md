@@ -13,9 +13,9 @@ A célom az volt, hogy abszolút számokban is láthassuk ezeknek a közvélemé
 <b>Háttér</b>
 
 Még ha a felmérések nagyon pontosak is (lennének), a hibahatár alkategóriákra lebontva szinte biztosan nagyobb, mint a teljes mintára nézve. 
-Tehát a grafikonokon feltüntetett számokat, amelyek tízezerre kerekítve lettek, nem érdemes (és nem helyes) pontos becsléseknek venni. 
-Egyrészt viszont megmutatják, hogy az egyes demográfiai csoportokban (pl. szakmunkás végzettségűek, 65 év felettiek stb.) összesen mennyien vannak.
-Másrészt pedig, hogy az adott kategóriában hogyan oszlan(nán)ak el az emberek pártpreferencia szerint, <b>ha</b> a mérés tökéletesen pontos lenne. Még ha ez nincs is így, kapunk egy képet a relatív arányokról: egyrészt a demográfiai csoportok méretéről, másrészt az ezeken belüli hozzávetőleges politikai erőviszonyokról. <br>
+Tehát a grafikonokon feltüntetett (tízezerre kerekített) számokat nem érdemes és helyes pontos becsléseknek venni. 
+Viszont egyrészt megmutatják, hogy az egyes demográfiai csoportokban (pl. szakmunkás végzettségűek, 65 év felettiek stb.) összesen mennyien vannak.
+Másrészt pedig, hogy az adott kategóriában hogyan oszlanak el az emberek pártpreferencia szerint, <b>ha</b> a mérés tökéletesen pontos lenne, és hogy abszolút számban egymáshoz képest mekkorák az egyes választói tömbök. <br>
 Végül pedig, remélhetőleg ezek a demográfiailag lebontott kutatások folytatódni fognak a 2026-os választásokig, így  egy idősort fogunk kapni, amiből talán valamiféle trendek látszanak majd. <br>
 Ami a közvéleménykutatók választását illeti: a MEDIÁN 2002 óta készült választás előtti előrejelzéseit <a href='https://docs.google.com/spreadsheets/d/1NUEgN7eV7MoZqi8dd9-xAzWxY_u2u_HYImV6l_U5qDE/' target='_blank'>itt gyűjtöttem össze</a>, a tényleges eredményekkel összehasonlítva. A cég 2002 óta minden választáson helyesen jelezte előre a választás győztesét, átlagosan 2-3%-ot tévedve pártonként. <br>
 A 21 Kutatóközpont nincsen ilyen hosszú távra visszamenő "recordja", mivel ez egy néhány éve megjelent cég, viszont a 2024-es <a href='https://mbkoltai.com/ep2024-hungary-datavis/' target='_blank'>EP-választások</a> előtti felmérésük <a href='https://24.hu/belfold/2024/06/09/ep-valasztas-2024-exit-poll-mandatumbecsles/' target='_blank'>gyakorlatilag tökéletesre sikerült</a>, illetve részletes, letölthető, viszonylag transzparens módszertanú kutatásokat közölnek, ezért használtam az ő méréseiket is. <br>
@@ -28,7 +28,17 @@ Az ábrákat tervezem update-elni, ha lesznek újabb demográfiailag lebontott m
 A demográfiai adatokat a KSH összefoglaló tábláiból, illetve a [2022-es országgyűlési választás honlapjáról](https://www.valasztas.hu/ogy2022-letoltheto-es-tovabbfeldolgozhato-adatok) vettem. Az adatfile-ok letölthetők a <a href='https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025' target='_blank'>projekt Github mappájából</a>. 
 A statikus grafikonokat generáló [R kódban](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025/script.R) a linkeket is megadtam, ahonnan az eredeti táblázatok letölthetők. 
 A 74 éven felüliek végzettség szerinti eloszlására nem találtam adatot a KSH-nál, csak a 15-74 közötti népességre. 
-Ezért itt (≥74) azt feltételeztem, hogy a végzettség szerinti megoszlás megfelel a legkorábbi adatpont (2009) <i>teljes</i> lakosságra vonatkozó adataival.
+Ezért itt (≥74) azt feltételeztem, hogy a végzettség szerinti megoszlás megfelel a legkorábbi adatpont (2009) <i>teljes</i> lakosságra vonatkozó adataival. Ez egy további bizonytalansági tényező a végzettségi szerinti népességeloszlásban, bár nem nagyon nagy, mert az egész 74+ csoport csak kb. 822 ezer ember volt. Konkrétan így lett szétosztva ez a 822 ezer választó végzettség szerint, a 2009-es végzettségi adatokat használva, illetve ha a 2024-eseket használtuk volna:
+```r
+vegz_kateg   perc_2009 perc_2024 szam_2009 szam_2024
+  <chr>            <dbl>     <dbl>     <dbl>     <dbl>
+1 8alt              29.5      17.9    242000    147000
+2 szakmunkas        23.5      22.2    193000    183000
+3 erettsegi         30.8      33.9    253000    279000
+4 felsooktatas      16.3      26      134000    214000
+```
+Tehát kb. egy 50-100 ezres bizonytalanságról beszélünk emiatt a _teljes_ (végzettség szerinti) csoportok méretében, ti. ebben a sávban van a különbség kategóriánként ha a 2009-es vagy 2024-es végzettség-adatokat alkalmazzuk a 74+ csoport megoszlására. Ez pártonként nézve maximum olyan 50 ezres (ha azt mondjuk a tévedés 100 ezer fő, ennél valószínűleg kisebb) további bizonytalanságot jelenthet az abszolút számokban, mivel egyik párt sincs 50% fölött egyik kategóriában sem.
+
 A választásra jogosult népesség méretére a [2025. októberi 12-i adatot](https://www.valasztas.hu/valasztopolgarok-szama-valasztastipusonkent) használtam, ami 7 635 775 (7.64 millió) fő volt. Ez csak a belföldi, magyarországi lakcímmel rendelkező szavazókat foglalja magában, tehát a levélszavazásra jogosultak (kb. 441 ezer fő 2025/10-ben) nincsenek benne, mint ahogy rájuk a magyarországi közvéleménykutatások sem terjednek ki általában.<br>
 
 ## Datawrapper

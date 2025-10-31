@@ -1,0 +1,63 @@
+{
+  "chart": {
+    "title": "Gross national income (GNI) per capita",
+    "subtitle": "Gross national income (GNI) measures the total income earned by residents of a country, including income earned abroad. This data is adjusted for inflation and differences in living costs between countries.",
+    "note": "This data is expressed in [international-$](#dod:int_dollar_abbreviation) at 2017 prices.",
+    "citation": "UNDP, Human Development Report (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/gross-national-income-per-capita-undp?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "United States",
+      "United Kingdom",
+      "South Korea",
+      "Chile",
+      "China",
+      "Brazil",
+      "India",
+      "Niger",
+      "Nigeria",
+      "Democratic Republic of Congo"
+    ]
+  },
+  "columns": {
+    "Gross national income per capita": {
+      "titleShort": "Gross national income per capita",
+      "titleLong": "Gross national income per capita",
+      "descriptionShort": "Average income per person earned by residents of a country or region, including income earned abroad. This data is adjusted for inflation and for differences in living costs between countries.",
+      "descriptionKey": [
+        "Gross national income (GNI) is a measure of the total income earned by residents of a country or region each year. It is calculated as GDP plus net income received from abroad, plus taxes (minus subsidies) on production. GNI per capita is GNI divided by population.",
+        "This GNI per capita indicator provides information on economic growth and income levels from 1990.",
+        "This data is adjusted for inflation and for differences in living costs between countries.",
+        "This data is expressed in [international-$](#dod:int_dollar_abbreviation) at 2021 prices.",
+        "Higher GNI per capita typically signals greater average command over resources, but says little about distribution, non‑market production or environmental costs.",
+        "Subject to revisions when PPP benchmarks are updated; omits remittances/leakages in informal economies; exchange‑rate mis‑measurement can bias cross‑country comparisons."
+      ],
+      "shortUnit": "$",
+      "unit": "international-$ in 2021 prices",
+      "timespan": "1990-2023",
+      "type": "Numeric",
+      "owidVariableId": 1032436,
+      "shortName": "gni_pc__sex_total",
+      "lastUpdated": "2025-05-07",
+      "nextUpdate": "2026-05-07",
+      "citationShort": "UNDP, Human Development Report (2025) – with minor processing by Our World in Data",
+      "citationLong": "UNDP, Human Development Report (2025) – with minor processing by Our World in Data. “Gross national income per capita – UNDP – In constant international-$” [dataset]. UNDP, Human Development Report, “Human Development Report” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1032436.metadata.json"
+    },
+    "World regions according to OWID": {
+      "titleShort": "World regions according to OWID",
+      "titleLong": "World regions according to OWID",
+      "descriptionShort": "Regions defined by Our World in Data, which are used in OWID charts and maps.",
+      "unit": "",
+      "timespan": "2023-2023",
+      "type": "Continent",
+      "owidVariableId": 900801,
+      "shortName": "owid_region",
+      "lastUpdated": "2023-01-01",
+      "citationShort": "Our World in Data – processed by Our World in Data",
+      "citationLong": "Our World in Data – processed by Our World in Data. “World regions according to OWID” [dataset]. Our World in Data, “Regions” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/900801.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-10-28",
+  "activeFilters": {}
+}
