@@ -5,12 +5,11 @@ tags: political-economy globalization growth gdp hungary CEE convergence
 excerpt: Since 1990 - halfway to the West
 secondary: blogposts
 mathjax: true
-toc: true
 ---
 
-<!-- {% toc %} -->
+<!-- toc: true
+{% toc %} -->
 <!-- {:toc} -->
-{% toc %}
 
 <br> 
 <!-- secondary: blogposts 
@@ -42,6 +41,23 @@ This is in contrast to the pre-1990 socialist era when CEE steadily fell behind 
 This post-1990 convergence performance of CEE is comparable to East Asia's over the same period and substantially stronger than that of comparable country groups in Latin America, Africa, or the non-EU former USSR.<br>
 The path toward Western Europe's income and especially productivity levels still remains long and may prove more difficult than this initial phase of convergence.
 </div>
+
+
+## Table of contents
+1. [Introduction](#introduction)
+2. [Methods](#methods)  
+    2.1 [Peer countries: convergence comparators](#peer-countries-convergence-comparators)  
+    2.2 [Benchmarks countries: convergence targets](#benchmarks-countries-convergence-targets)  
+    2.3 [Selected indicators](#selected-indicators)  
+    2.4 [Periodisation](#periodisation)
+3. [Results](#results)  
+    3.1 [GDP and GNI per capita](#gdp-and-gni-per-capita)  
+    3.2 [Labour productivity trends since 1990](#labour-productivity-trends-since-1990)  
+    3.3 [Wages, earnings and income: trends since 1990](#wages-earnings-and-income-trends-since-1990)  
+    3.4 [Life expectancy](#life-expectancy)
+4. [Discussion](#discussion)
+5. [Afterword](#afterword)
+
 
 # Introduction
 
@@ -159,7 +175,7 @@ Besides expressing the convergence economies' performance as a percentage of the
 Therefore the S_EUR4 and LAT_AM groups are used both as peer groups and as benchmarks, to inform the assessment of the CEE convergence performance. 
 Expressing the CEE performance as a percentage of S_EUR4 and LAT_AM shows if CEE was catching up or falling behind (or perhaps remaining stable) relative to comparable regions.
 
-## Indicators
+## Selected indicators
 
 I selected a broad set of socio-economic indicators to characterise the economic development of the countries analysed. 
 This includes the most well-known and broadest output indicators, narrower labour productivity measures that drive the latter, but also wages, earnings and broader household income measures, to gauge the evolution of living standards. 
@@ -228,7 +244,7 @@ For several variables (output per hour of work, annual average wages, median ear
 
 <!-- ## Convergence since 1990 -->
 
-## Aggregate output measures: real GDP and GNI per capita
+## GDP and GNI per capita
 
 ### GDP per capita trends: CEE before and after 1990
 
