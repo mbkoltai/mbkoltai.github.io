@@ -10,8 +10,6 @@ mathjax: true
 <!-- toc: true
 {% toc %} -->
 <!-- {:toc} -->
-
-<br> 
 <!-- secondary: blogposts 
 toc: true -->
 
