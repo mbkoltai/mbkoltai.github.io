@@ -38,7 +38,9 @@ The path toward Western Europe's income and especially productivity levels still
 </div>
 
 
-{% toc %}
+<!-- {% toc %} -->
+{:toc}
+
 
 
 # Introduction
