@@ -7,12 +7,6 @@ secondary: blogposts
 mathjax: true
 ---
 
-<!-- toc: true
-{% toc %} -->
-<!-- {:toc} -->
-<!-- secondary: blogposts 
-toc: true -->
-
 <div style="
   border-left: 4px solid #c0392b;
   background-color: #fff5f5;
