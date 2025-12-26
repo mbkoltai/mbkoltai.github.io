@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Long Road to Convergence - Central and Eastern Europe Before and After 1990
-tags: political-economy globalization growth gdp hungary
+tags: political-economy globalization growth gdp hungary CEE convergence
 excerpt: Since 1990 - halfway to the West
 secondary: blogposts
 mathjax: true
