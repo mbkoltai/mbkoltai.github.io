@@ -323,6 +323,10 @@ a.footnote-ref {
 }
 
 /* Table of Contents Styling */
+nav.toc:empty {
+  display: none;
+}
+
 nav.toc {
   font-size: 0.85em;      /* smaller font */
   line-height: 1.3;

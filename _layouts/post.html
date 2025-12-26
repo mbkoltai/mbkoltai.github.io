@@ -5,11 +5,11 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
 
-  {% if page.layout == "post" %}
+{% if page.layout == "post" and page.toc %}
   <nav class="toc">
     {% toc %}
   </nav>
-  {% endif %}
+{% endif %}
 
   <div class="entry">
     {{ content }}

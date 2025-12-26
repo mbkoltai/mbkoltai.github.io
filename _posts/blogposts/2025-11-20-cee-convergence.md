@@ -8,7 +8,13 @@ mathjax: true
 toc: true
 ---
 
-<br> <!-- secondary: blogposts -->
+<!-- {% toc %} -->
+<!-- {:toc} -->
+{% toc %}
+
+<br> 
+<!-- secondary: blogposts 
+toc: true -->
 
 <div style="
   border-left: 4px solid #c0392b;
@@ -36,12 +42,6 @@ This is in contrast to the pre-1990 socialist era when CEE steadily fell behind 
 This post-1990 convergence performance of CEE is comparable to East Asia's over the same period and substantially stronger than that of comparable country groups in Latin America, Africa, or the non-EU former USSR.<br>
 The path toward Western Europe's income and especially productivity levels still remains long and may prove more difficult than this initial phase of convergence.
 </div>
-
-
-<!-- {% toc %} -->
-{:toc}
-
-
 
 # Introduction
 
