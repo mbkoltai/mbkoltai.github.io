@@ -83,7 +83,7 @@ l_part_data[["median"]][["2025_06"]]$telj_nepesseg_partok <- read_csv(
 l_part_data[["median"]][["2025_08"]] <- list()
 l_part_data[["median"]][["2025_08"]] <- read_csv(
   "input_files/median_2025_08_nem_vegzettseg_telepules_vegzettseg.csv") %>%
-  rename(tipus=filter,kateg=preferencia) %>%
+  rename(tipus=filter) %>%
   pivot_longer(!c(tipus,kateg),names_to="part") %>%
   mutate(arány=value/100,
          kateg=tolower(kateg),
@@ -101,7 +101,39 @@ l_part_data[["median"]][["2025_08"]]$telj_nepesseg_partok <- read_csv(
   mutate(kateg=tolower(kateg),arány=value/100) %>%
   select(!c(value,url)) %>%
   relocate(c(datum),.after=last_col()) %>%
-  bind_rows(data.frame(kateg="teljes népesség",part="Jobbik",datum="2025/08")) # arány=0,
+  bind_rows(data.frame(kateg="teljes népesség",
+    part="Jobbik",datum="2025/08")) # arány=0,
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# MEDIAN 2025/11, tobb demogr kateg
+# source: https://flo.uri.sh/visualisation/26553099/embed?auto=1
+
+# MEDIAN 2025/11, tobb demogr kateg
+# source: https://flo.uri.sh/visualisation/26553099/embed?auto=1
+
+l_part_data[["median"]][["2025_11"]] <- list()
+l_part_data[["median"]][["2025_11"]] <- read_csv(
+  "input_files/median_2025_11_nem_vegzettseg_telepules_vegzettseg.csv") %>%
+  rename(tipus=filter) %>%
+  pivot_longer(!c(tipus,kateg,url),names_to="part") %>%
+  mutate(arány=value/100,
+         kateg=tolower(kateg),
+         datum="2025/11") %>% 
+  select(!value) %>%
+  group_by(tipus) %>% { set_names(group_split(.,.keep=F), group_keys(.)$tipus) } %>%
+  as.list()
+
+# teljes nepesseg partokra bontva
+# https://flo.uri.sh/visualisation/25049245/embed?auto=1
+l_part_data[["median"]][["2025_11"]]$telj_nepesseg_partok <- read_csv(
+  "input_files/median_2025_11_teljes_nepesseg.csv") %>% 
+  pivot_longer(!c(kateg,url,datum),names_to="part") %>%
+  filter(grepl("Teljes",kateg)) %>%
+  mutate(kateg=tolower(kateg),arány=value/100) %>%
+  select(!c(value,url)) %>%
+  relocate(c(datum),.after=last_col()) %>%
+  bind_rows(data.frame(kateg="teljes népesség",
+    part="Jobbik",datum="2025/11")) # arány=0,
   
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -128,20 +160,22 @@ l_dem$stadat_nep0003 <- read_delim("input_files/stadat-nep0003-22.1.1.3-hu.csv",
     kor_num=ifelse(is.na(kor_num),90,kor_num)  )
 
 # DE!!! ez a teljes Magyaro-i lakossag, nem a valasztasra jogosultak szama
-# ami itt erheto el: https://www.valasztas.hu/valasztopolgarok-szama-valasztastipusonkent
+# ez utobbi itt erheto el: https://www.valasztas.hu/valasztopolgarok-szama-valasztastipusonkent
 # 2025/10/12: 7635775
 # csinalunk egy korrekciot, hogy a 18>= lakossagot felszorozzuk a ketto aranyaval...
 # mivel a csak valasztojoguakra nincsenek reszletes adatok
 l_dem$stadat_nep0003 <- with(list(valjog_belfold=7635775,
-  teljes_nep=sum((l_dem$stadat_nep0003 %>% filter(ev %in% 2025 & nem %in% "Összesen" & kor_num>=18))$value)),
+  teljes_nep=sum((l_dem$stadat_nep0003 %>% 
+      filter(ev %in% 2025 & nem %in% "Összesen" & kor_num>=18))$value)),
 l_dem$stadat_nep0003 %>%
-  mutate(value_valjog=ifelse(ev==2025 & kor_num>=18,value*valjog_belfold/teljes_nep,NA)) %>%
+  mutate(value_valjog=ifelse(ev==2025 & kor_num>=18,
+    value*valjog_belfold/teljes_nep,NA)) %>%
   rename(value_telj_nep=value) %>% rename(value=value_valjog)
 )
 
 # plot
 if (F) {
-  # ez megint a teljes >=18 lakossag
+  # ez a teljes >=18 lakossag
 l_dem$stadat_nep0003 %>%
   filter(grepl("esen",nem) & ev>2010) %>%
   group_by(ev,nem) %>%
@@ -205,7 +239,8 @@ unique(l_part_data$median$`2025_08`$TELEPÜLÉS$kateg)
 
 # osszes telep val.polg. szamaval
 # osszesen 7.759m val.polgar jon ki a 2022-es valasztasi adatokbol, 
-# vmivel TOBB mint a 2025 val.jogosultak (https://www.valasztas.hu/valasztopolgarok-szama-valasztastipusonkent)
+# vmivel TOBB mint a 2025 val.jogosultak 
+# (https://www.valasztas.hu/valasztopolgarok-szama-valasztastipusonkent)
 # , vszleg demografiai fogyas miatt
 l_dem$telep_lista_valpolg_tipus <- right_join(
   read_csv("input_files/Egyéni_szavazás_szkjkv.csv") %>% 
@@ -219,7 +254,8 @@ l_dem$telep_lista_valpolg_tipus <- right_join(
   read_csv("input_files/l_telep_meret.csv") %>%
     # forras: https://www.ksh.hu/docs/helysegnevtar/hnt_letoltes_2024.xlsx
     select(c(`Helység megnevezése`,`Lakó-népesség`,`Helység jogállása` )) %>%
-    mutate(telepules=ifelse(grepl("Budap",`Helység megnevezése`),"Budapest",`Helység megnevezése`)) %>%
+    mutate(telepules=ifelse(grepl("Budap",`Helység megnevezése`),
+            "Budapest",`Helység megnevezése`)) %>%
     filter(!grepl("fővárosi kerület",`Helység jogállása`)) %>%
     group_by(telepules,`Helység jogállása`)
   )
@@ -243,7 +279,8 @@ l_dem$telep_tipus <- l_dem$telep_lista_valpolg_tipus %>%
                 .default=kateg_ksh)   )
 
 # scale this by 2025 data on all eligible to vote
-l_dem$telep_tipus$n_valpolg <- with(l_dem$telep_tipus,n_valpolg2022*l_dem$val_jog_nep_2025/sum(n_valpolg2022))
+l_dem$telep_tipus$n_valpolg <- with(l_dem$telep_tipus,
+  n_valpolg2022*l_dem$val_jog_nep_2025/sum(n_valpolg2022))
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # 21 kut kategoriak osszehangolasa a mediannal
@@ -306,10 +343,14 @@ l_dem$vegzettseg$kozos_vegzettseg_kateg=c("≤8 általános","középfokú-szakm
 l_dem$vegzettseg$teljes <- with(l_dem$vegzettseg, {
 l_dem$vegzettseg$teljes %>%
   mutate(vegzettseg_kozos=case_when(
-      grepl("általános iskol",vegzettseg,ignore.case=T) ~ grep("általános",kozos_vegzettseg_kateg,value=T),
-      grepl("érettségi nélkül, szakmai",vegzettseg) ~ grep("szakmunkás",kozos_vegzettseg_kateg,value=T),
-      grepl("érettségivel",vegzettseg) ~ grep("érettségi",kozos_vegzettseg_kateg,value=T),
-      grepl("felsőfokú",vegzettseg,ignore.case=T) ~ grep("felsőfokú",kozos_vegzettseg_kateg,value=T)
+      grepl("általános iskol",vegzettseg,ignore.case=T) ~ 
+              grep("általános",kozos_vegzettseg_kateg,value=T),
+      grepl("érettségi nélkül, szakmai",vegzettseg) ~ 
+              grep("szakmunkás",kozos_vegzettseg_kateg,value=T),
+      grepl("érettségivel",vegzettseg) ~ 
+              grep("érettségi",kozos_vegzettseg_kateg,value=T),
+      grepl("felsőfokú",vegzettseg,ignore.case=T) ~ 
+              grep("felsőfokú",kozos_vegzettseg_kateg,value=T)
     ))                    
 })
 
@@ -318,10 +359,14 @@ l_dem$vegzettseg$teljes %>%
 for (k_name in names(l_part_data$median) ) {
 l_part_data$median[[k_name]]$VÉGZETTSÉG <- l_part_data$median[[k_name]]$VÉGZETTSÉG %>%
   mutate(vegzettseg_kozos=case_when(
-      grepl("általános",kateg) ~ grep("általános",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
-      grepl("szakmunkás",kateg,ignore.case=T) ~ grep("szakmunkás",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
-      grepl("érettségi",kateg,ignore.case=T) ~ grep("érettségi",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
-      grepl("felsőfokú",kateg,ignore.case=T) ~ grep("felsőfokú",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
+      grepl("általános",kateg) ~ 
+              grep("általános",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
+      grepl("szakmunkás",kateg,ignore.case=T) ~ 
+              grep("szakmunkás",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
+      grepl("érettségi",kateg,ignore.case=T) ~ 
+              grep("érettségi",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
+      grepl("felsőfokú",kateg,ignore.case=T) ~ 
+              grep("felsőfokú",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
         .default=kateg)) %>%
   rename(kateg_eredeti=kateg,kateg=vegzettseg_kozos)
 }
@@ -333,10 +378,14 @@ rm(k_name)
 # "8 általános" , "szakmunkásképző, szakiskola" , "érettségi", "felsőfokú végzettség" 
 l_part_data$`21_kut`$vegzettseg <- l_part_data$`21_kut`$vegzettseg %>%
   mutate(vegzettseg_kozos=case_when(
-      grepl("általános",vegzettseg) ~ grep("általános",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
-      grepl("szakmunkás",vegzettseg,ignore.case=T) ~ grep("szakmunkás",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
-      grepl("érettségi",vegzettseg,ignore.case=T) ~ grep("érettségi",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
-      grepl("felsőfokú",vegzettseg,ignore.case=T) ~ grep("felsőfokú",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
+      grepl("általános",vegzettseg) ~ 
+            grep("általános",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
+      grepl("szakmunkás",vegzettseg,ignore.case=T) ~ 
+            grep("szakmunkás",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
+      grepl("érettségi",vegzettseg,ignore.case=T) ~ 
+              grep("érettségi",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
+      grepl("felsőfokú",vegzettseg,ignore.case=T) ~ 
+              grep("felsőfokú",l_dem$vegzettseg$kozos_vegzettseg_kateg,value=T),
         .default=vegzettseg))
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -381,7 +430,8 @@ l_dem$vegzettseg$teljes %>%
                     grepl("Pártnélküli|bizonytalan",part,ignore.case=T) ~ "pártnélk/\nbizonyt.",
                     .default=part      ) ,
     partnev_kozos=factor(partnev_kozos, # gsub("Mi Hazánk","MiHaz",partnev_kozos),
-            levels=c("TISZA","Fidesz","Mi Hazánk","DK","MKKP","más\npárt","pártnélk/\nbizonyt.")) ) %>%
+            levels=c("TISZA","Fidesz","Mi Hazánk","DK","MKKP",
+                      "más\npárt","pártnélk/\nbizonyt.")) ) %>%
   group_by(kateg,datum) %>%
   mutate(kateg=factor(gsub("középfokú-","",kateg),
             levels=c("teljes népesség",
@@ -395,7 +445,8 @@ l_dem$vegzettseg$teljes %>%
 # reorder factors
 l_plot$`21_kut`$kateg_nev_meret_str <- factor(l_plot$`21_kut`$kateg_nev_meret_str,
                 levels=unlist(lapply(c(F,T), \(x) 
-                  grep("teljes",unique(l_plot$`21_kut`$kateg_nev_meret_str),value=T,invert=x)))  )
+                  grep("teljes",unique(l_plot$`21_kut`$kateg_nev_meret_str),
+                    value=T,invert=x)))  )
 l_plot$`21_kut`$datum <- factor(l_plot$`21_kut`$datum,
   levels = sort(unique(l_plot$`21_kut`$datum)))
 
@@ -404,7 +455,8 @@ l_plot$`21_kut`$datum <- factor(l_plot$`21_kut`$datum,
 
 with(list(), ({
   title_str <- paste0("21 KUTATÓKÖZPONT: ",
-    "nem, végzettség és településtípus szerint lebontott pártpreferenciák a teljes népességben")
+    "nem, végzettség és településtípus szerint",
+    " lebontott pártpreferenciák a teljes népességben")
 l_plot$`21_kut` %>%
 ggplot(aes(x=partnev_kozos,y=valasztok_szama/1e3,fill=datum)) +
   # facet_wrap(~kateg_nev_meret_str,scales="free",drop=T) +            # facet by kateg
@@ -436,7 +488,8 @@ if (F) {
 l_plot$median <- bind_rows(
 # teljes nepesseg
   bind_rows(l_part_data[["median"]]$`2025_06`$telj_nepesseg_partok,
-            l_part_data[["median"]]$`2025_08`$telj_nepesseg_partok ) %>%
+            l_part_data[["median"]]$`2025_08`$telj_nepesseg_partok,
+            l_part_data[["median"]]$`2025_11`$telj_nepesseg_partok ) %>%
   mutate(kateg_tipus="teljes népesség", 
         kateg_telj_nep=l_dem$val_jog_nep_2025,
         valasztok_szama=arány*kateg_telj_nep) %>%
@@ -445,21 +498,26 @@ l_plot$median <- bind_rows(
 left_join(
   bind_rows(
     l_part_data$median$`2025_06`$NEM,
-    l_part_data$median$`2025_08`$NEM), 
+    l_part_data$median$`2025_08`$NEM,
+    l_part_data$median$`2025_11`$NEM), 
   l_dem$NEM %>% rename(kateg_telj_nep=value) ) %>%
   mutate(valasztok_szama=arány*kateg_telj_nep,
          kateg_tipus="nem"),
 # ELETKOR
   left_join(
-  bind_rows(l_part_data$median$`2025_06`$ÉLETKOR,
-    l_part_data$median$`2025_08`$ÉLETKOR), 
+  bind_rows(
+    l_part_data$median$`2025_06`$ÉLETKOR,
+    l_part_data$median$`2025_08`$ÉLETKOR,
+    l_part_data$median$`2025_11`$ÉLETKOR), 
   l_dem$korszerk_csop %>% rename(kateg_telj_nep=szam) ) %>%
   mutate(valasztok_szama=arány*kateg_telj_nep,
          kateg_tipus="ELETKOR" ),
 # VÉGZETTSÉG  
 left_join(
-  bind_rows(l_part_data$median$`2025_06`$VÉGZETTSÉG,
-  l_part_data$median$`2025_08`$VÉGZETTSÉG),
+  bind_rows(
+    l_part_data$median$`2025_06`$VÉGZETTSÉG,
+    l_part_data$median$`2025_08`$VÉGZETTSÉG,
+    l_part_data$median$`2025_11`$VÉGZETTSÉG),
   l_dem$vegzettseg$teljes %>%
       select(vegzettseg_kozos,szam) %>% 
       rename(kateg_telj_nep=szam) %>%
@@ -473,8 +531,10 @@ left_join(
   relocate(kateg_tipus,.before=part),
  # telepules-tipus
  left_join(
-   bind_rows(l_part_data$median$`2025_06`$TELEPÜLÉSTÍPUS,
-     l_part_data$median$`2025_08`$TELEPÜLÉS),
+   bind_rows(
+     l_part_data$median$`2025_06`$TELEPÜLÉSTÍPUS,
+     l_part_data$median$`2025_08`$TELEPÜLÉS,
+     l_part_data$median$`2025_11`$TELEPÜLÉS),
    l_dem$telep_tipus %>% group_by(kateg) %>% 
             summarise(kateg_telj_nep=sum(n_valpolg)) ) %>%
   mutate(valasztok_szama=arány*kateg_telj_nep,
@@ -485,7 +545,8 @@ left_join(
     partnev_kozos=case_when(
                     grepl("TISZA|Tisza",part,ignore.case=T) ~ "TISZA",
                     grepl("Fidesz",part) ~ "Fidesz",
-                    grepl("más pártok és pártnélküliek",part,ignore.case=T) ~ "más párt/\npártnélk.",
+                    grepl("más pártok és pártnélküliek",part,ignore.case=T) ~ 
+                            "más párt/\npártnélk.",
                     grepl("^Pártnélküli$|^pártnélküli$", part) ~ "pártnélk.",
                     grepl("Egyéb|egyéb", part) ~ "más\npárt",
                     grepl("más párt", part) ~ "más\npárt",
@@ -499,14 +560,17 @@ left_join(
             grepl("más\npárt", partnev_kozos),0.79,0.8)) %>%
   group_by(kateg,datum) %>%
   mutate(kateg=gsub("középfokú-","",kateg),
-         kateg_nev_meret_str=paste0(kateg," (",round(sum(valasztok_szama,na.rm=T)/1e6,2),"m)"),
+         kateg_nev_meret_str=paste0(kateg,
+           " (",round(sum(valasztok_szama,na.rm=T)/1e6,2),"m)"),
          kateg_nev_arany_str=paste0(kateg," (",arány*100,"%)" )    ) 
 
 # factor levels
 l_plot$median$kateg <- factor(l_plot$median$kateg,levels=unique(l_plot$median$kateg))
-l_plot$median$kateg_nev_meret_str <- factor(l_plot$median$kateg_nev_meret_str,
+l_plot$median$kateg_nev_meret_str <- factor(
+          l_plot$median$kateg_nev_meret_str,
                 levels=unlist(lapply(c(F,T), \(x) 
-                  grep("teljes",unique(l_plot$median$kateg_nev_meret_str),value=T,invert=x)))  )
+                  grep("teljes",unique(l_plot$median$kateg_nev_meret_str),
+                    value=T,invert=x)))  )
 # partnev_kozos
 l_plot$median$partnev_kozos <- factor(l_plot$median$partnev_kozos,
   levels=unlist(lapply(c(T,F), \(x) grep("pártnélk|más",
@@ -518,10 +582,11 @@ l_plot$median$partnev_kozos_aggr <- factor(l_plot$median$partnev_kozos_aggr,
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
-# MEdian ABRA
+# Median ABRA
 
 with(list(), ({
-title_str <- "MEDIÁN: nem, végzettség és településtípus szerint lebontott pártpreferenciák a teljes népességben"
+title_str <- paste0("MEDIÁN: nem, végzettség és településtípus szerint lebontott",
+                    " pártpreferenciák a teljes népességben")
 l_plot$median %>%
   arrange(pattern_var) %>%
 ggplot(aes(x=partnev_kozos_aggr,y=valasztok_szama/1e3,
@@ -532,8 +597,9 @@ ggplot(aes(x=partnev_kozos_aggr,y=valasztok_szama/1e3,
           color="black",linewidth=1/3) + 
   guides(alpha="none") +
   labs(x="",y="szavazók száma (ezer)", fill="",
-    caption="2025/06: halványabb színű oszlopok=más párt, kevésbé halvány=pártnélküli.
-              2025/08-tól ez a két csoport egy közös \"más párt/pártnélküli\" kategóriában van") +
+    caption=paste0(
+      "2025/06: halványabb színű oszlopok=más párt, kevésbé halvány=pártnélküli.","\n",
+      "2025/08-tól ez a két csoport egy közös \"más párt/pártnélküli\" kategóriában van")) +
   geom_text(aes(label=round(valasztok_szama/1e4)*10), 
     position=position_dodge2(width=0.9),vjust= -0.3,size=4) + # ,preserve="single"
   scale_y_continuous(expand=expansion(mult=c(0.005,0.118)) ) + 
@@ -560,7 +626,8 @@ bind_rows(
   l_plot$median %>% mutate(cég="MEDIÁN")) %>% 
   mutate(valasztok_szama=round(valasztok_szama/1e4)*1e4,
         szazalek=arány*100  ) %>%
-  select(!c(pattern_var,kateg_eredeti,szazalek)) %>% write_csv(file = "l_plot.csv")
+  select(!c(pattern_var,kateg_eredeti,szazalek)) %>% 
+  write_csv(file = "l_plot.csv")
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -592,12 +659,15 @@ bind_rows(
   l_plot$`21_kut` %>% mutate(cég="21kut"), 
   l_plot$median %>% mutate(cég="MEDIÁN")) %>%
   mutate(valasztok_szama=round(valasztok_szama),
-          partnev_kozos=ifelse(grepl("más|egyéb|pártnélk|bizonyt",partnev_kozos),
-            "más párt/bizonytalan/pártnélküli",as.character(partnev_kozos) )) %>%
+          partnev_kozos=ifelse(
+            grepl("más|egyéb|pártnélk|bizonyt",partnev_kozos),
+            "más párt/bizonytalan/pártnélküli",
+            as.character(partnev_kozos) )) %>%
   filter(kateg_tipus %in% x_nev) %>%
   group_by(kateg,kateg_nev_meret_str,partnev_kozos,datum,cég) %>%
   summarise(szazalek=sum(arány)*100) %>%
-  select(c(kateg,kateg_nev_meret_str,partnev_kozos,datum,cég,szazalek)) %>%
+  select(c(kateg,kateg_nev_meret_str,
+          partnev_kozos,datum,cég,szazalek)) %>%
   pivot_wider(names_from=c(cég),values_from=szazalek) %>%
   filter(!if_all(any_of(c("21kut", "MEDIÁN")), ~ is.na(.x))) %>%
   write_csv(file=paste0("output/szazalekok/l_plot_",gsub(" ","",x_nev),".csv")) )
@@ -611,7 +681,8 @@ lapply(unique(l_plot$median$kateg_tipus), function(x_kat) {
 xx <- bind_rows(
   l_plot$`21_kut` %>% mutate(cég="21kut"), 
   l_plot$median %>% mutate(cég="MEDIÁN")) %>% 
-  group_by(datum,kateg_tipus,kateg_nev_meret_str,kateg_telj_nep,partnev_kozos_aggr,cég) %>%
+  group_by(datum,kateg_tipus,kateg_nev_meret_str,
+          kateg_telj_nep,partnev_kozos_aggr,cég) %>%
   summarise(valasztok_szama=round(sum(valasztok_szama)),
             szazalek=round(sum(arány)*100)) %>% 
   mutate(valasztok_szama_10e=round(valasztok_szama/1e4)*1e4) %>%
@@ -623,8 +694,10 @@ xx <- bind_rows(
   pivot_wider(names_from=cég,values_from=szazalek,
             names_glue="{cég} (%)") %>%
   rowwise() %>%
-  mutate(`21kut (ezer választó)`=ifelse(is.na(`21kut (%)`),NA,valasztok_szama_10e/1e3),
-         `MEDIÁN (ezer választó)`=ifelse(is.na(`MEDIÁN (%)`),NA,valasztok_szama_10e/1e3)  ) %>%
+  mutate(`21kut (ezer választó)`=ifelse(is.na(`21kut (%)`),
+    NA,valasztok_szama_10e/1e3),
+         `MEDIÁN (ezer választó)`=ifelse(is.na(`MEDIÁN (%)`),
+           NA,valasztok_szama_10e/1e3)  ) %>%
   select(!valasztok_szama_10e) 
   } else {
       xx <- xx %>%

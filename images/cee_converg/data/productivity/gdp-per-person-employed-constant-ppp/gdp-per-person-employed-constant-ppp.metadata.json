@@ -1,0 +1,40 @@
+{
+  "chart": {
+    "title": "GDP per employed person",
+    "subtitle": "Gross domestic product (GDP) divided by the total number of people employed in the economy. This data is adjusted for inflation and differences in living costs between countries.",
+    "note": "This data is expressed in [international-$](#dod:int_dollar_abbreviation) at 2021 prices.",
+    "citation": "World Bank, International Labour Organization, United Nations Population Division, Eurostat, and OECD (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/gdp-per-person-employed-constant-ppp?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "United States",
+      "China",
+      "India",
+      "Japan",
+      "Germany",
+      "Russia",
+      "Brazil",
+      "United Kingdom",
+      "France",
+      "Mexico"
+    ]
+  },
+  "columns": {
+    "GDP per person employed (constant 2021 PPP $)": {
+      "titleShort": "GDP per person employed (constant 2021 PPP $)",
+      "titleLong": "GDP per person employed (constant 2021 PPP $)",
+      "shortUnit": "$",
+      "unit": "constant 2021 PPP $",
+      "timespan": "1991-2024",
+      "type": "Numeric",
+      "owidVariableId": 1107509,
+      "shortName": "sl_gdp_pcap_em_kd",
+      "lastUpdated": "2025-09-08",
+      "nextUpdate": "2026-09-08",
+      "citationShort": "World Bank, International Labour Organization, United Nations Population Division, Eurostat, and OECD (2025) – processed by Our World in Data",
+      "citationLong": "World Bank, International Labour Organization, United Nations Population Division, Eurostat, and OECD (2025) – processed by Our World in Data. “GDP per person employed (constant 2021 PPP $)” [dataset]. World Bank, International Labour Organization, United Nations Population Division, Eurostat, and OECD, “World Development Indicators 122” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1107509.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-12-02",
+  "activeFilters": {}
+}

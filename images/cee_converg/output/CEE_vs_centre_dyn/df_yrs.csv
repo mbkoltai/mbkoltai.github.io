@@ -1,0 +1,84 @@
+cntr_group,year,% of World,country,Code,label_perc
+"USSR (Russia, Ukraine, Belarus)",1973,NA,Belarus,BLR,NA
+"USSR (Russia, Ukraine, Belarus)",1980,131.05049549505807,Belarus,BLR,131
+"USSR (Russia, Ukraine, Belarus)",1990,139.6546497739792,Belarus,BLR,140
+"USSR (Russia, Ukraine, Belarus)",1995,NA,Belarus,BLR,NA
+"USSR (Russia, Ukraine, Belarus)",2022,112.13095477236271,Belarus,BLR,112 (BLR)
+Bulgaria,1950,78.32951010724476,Bulgaria,BGR,78
+Bulgaria,1975,NA,Bulgaria,BGR,NA
+Bulgaria,1980,133.08110821117205,Bulgaria,BGR,133
+Bulgaria,1990,108.65952605593812,Bulgaria,BGR,109
+Bulgaria,1999,NA,Bulgaria,BGR,NA
+Bulgaria,2022,123.48002458512602,Bulgaria,BGR,123
+"Yugoslavia (Slovenia, Croatia, Serbia)",1952,NA,Croatia,HRV,NA
+"Yugoslavia (Slovenia, Croatia, Serbia)",1979,NA,Croatia,HRV,NA
+"Yugoslavia (Slovenia, Croatia, Serbia)",1980,196.05772979459883,Croatia,HRV,196
+"Yugoslavia (Slovenia, Croatia, Serbia)",1990,157.69149780007697,Croatia,HRV,158
+"Yugoslavia (Slovenia, Croatia, Serbia)",1993,NA,Croatia,HRV,NA
+"Yugoslavia (Slovenia, Croatia, Serbia)",2022,161.8226093213606,Croatia,HRV,162 (HRV)
+Czechia,1970,146.51652195703667,Czechia,CZE,147
+Czechia,1975,NA,Czechia,CZE,NA
+Czechia,1980,170.4057038502199,Czechia,CZE,170
+Czechia,1990,172.67145936125203,Czechia,CZE,173
+Czechia,1992,NA,Czechia,CZE,NA
+Czechia,2022,193.36738273344628,Czechia,CZE,193
+Baltics,1973,NA,Estonia,EST,NA
+Baltics,1980,207.81318164094586,Estonia,EST,208
+Baltics,1990,210.04829028096444,Estonia,EST,210
+Baltics,1994,NA,Estonia,EST,NA
+Baltics,2022,180.29529134873403,Estonia,EST,180 (EST)
+Hungary,1950,117.64306742170918,Hungary,HUN,118
+Hungary,1975,NA,Hungary,HUN,NA
+Hungary,1980,138.85523144474794,Hungary,HUN,139
+Hungary,1990,125.39323921451903,Hungary,HUN,125
+Hungary,1992,NA,Hungary,HUN,NA
+Hungary,2022,176.6042844079332,Hungary,HUN,177
+Baltics,1973,NA,Latvia,LVA,NA
+Baltics,1980,189.7863136509542,Latvia,LVA,190
+Baltics,1990,192.49859547636828,Latvia,LVA,192
+Baltics,1994,NA,Latvia,LVA,NA
+Baltics,2022,163.22306804383348,Latvia,LVA,163 (LVA)
+Baltics,1973,NA,Lithuania,LTU,NA
+Baltics,1980,175.9035532448687,Lithuania,LTU,176
+Baltics,1990,168.1774708928995,Lithuania,LTU,168
+Baltics,1994,NA,Lithuania,LTU,NA
+Baltics,2022,185.06795388789783,Lithuania,LTU,185 (LTU)
+Poland,1950,116.06576345678364,Poland,POL,116
+Poland,1975,NA,Poland,POL,NA
+Poland,1980,126.3814676171905,Poland,POL,126
+Poland,1990,99.2574688809567,Poland,POL,99
+Poland,1991,NA,Poland,POL,NA
+Poland,2022,194.6926229631073,Poland,POL,195
+Romania,1950,56.068001442786716,Romania,ROU,56
+Romania,1975,NA,Romania,ROU,NA
+Romania,1980,91.05483879607984,Romania,ROU,91
+Romania,1990,68.15273568807775,Romania,ROU,68
+Romania,1992,NA,Romania,ROU,NA
+Romania,2022,157.0923831082195,Romania,ROU,157
+"USSR (Russia, Ukraine, Belarus)",1950,98.53193772684904,Russia,RUS,99
+"USSR (Russia, Ukraine, Belarus)",1975,NA,Russia,RUS,NA
+"USSR (Russia, Ukraine, Belarus)",1980,168.5822965133012,Russia,RUS,169
+"USSR (Russia, Ukraine, Belarus)",1990,151.01749866550466,Russia,RUS,151
+"USSR (Russia, Ukraine, Belarus)",1998,NA,Russia,RUS,NA
+"USSR (Russia, Ukraine, Belarus)",2022,152.53036113151543,Russia,RUS,153 (RUS)
+"Yugoslavia (Slovenia, Croatia, Serbia)",1952,NA,Serbia,SRB,NA
+"Yugoslavia (Slovenia, Croatia, Serbia)",1979,NA,Serbia,SRB,NA
+"Yugoslavia (Slovenia, Croatia, Serbia)",1980,148.13803243269766,Serbia,SRB,148
+"Yugoslavia (Slovenia, Croatia, Serbia)",1990,118.79231306317197,Serbia,SRB,119
+"Yugoslavia (Slovenia, Croatia, Serbia)",1993,NA,Serbia,SRB,NA
+"Yugoslavia (Slovenia, Croatia, Serbia)",2022,102.52408892619965,Serbia,SRB,103 (SRB)
+Slovakia,1985,NA,Slovakia,SVK,NA
+Slovakia,1990,150.7008490715286,Slovakia,SVK,151
+Slovakia,1992,NA,Slovakia,SVK,NA
+Slovakia,2022,165.01588738813018,Slovakia,SVK,165
+"Yugoslavia (Slovenia, Croatia, Serbia)",1952,NA,Slovenia,SVN,NA
+"Yugoslavia (Slovenia, Croatia, Serbia)",1979,NA,Slovenia,SVN,NA
+"Yugoslavia (Slovenia, Croatia, Serbia)",1980,292.17339835732827,Slovenia,SVN,292
+"Yugoslavia (Slovenia, Croatia, Serbia)",1990,220.35158091572384,Slovenia,SVN,220
+"Yugoslavia (Slovenia, Croatia, Serbia)",1992,NA,Slovenia,SVN,NA
+"Yugoslavia (Slovenia, Croatia, Serbia)",2022,195.92403795703598,Slovenia,SVN,196 (SVN)
+"USSR (Russia, Ukraine, Belarus)",1973,NA,Ukraine,UKR,NA
+"USSR (Russia, Ukraine, Belarus)",1980,116.96052970977723,Ukraine,UKR,117
+"USSR (Russia, Ukraine, Belarus)",1990,117.00202497415349,Ukraine,UKR,117
+"USSR (Russia, Ukraine, Belarus)",1998,NA,Ukraine,UKR,NA
+"USSR (Russia, Ukraine, Belarus)",2022,46.46648537634731,Ukraine,UKR,46 (UKR)

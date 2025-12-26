@@ -1,0 +1,889 @@
+cntr_group,country,Code,cntr_region,era,varname,value,value_end,era_col,scaling,change_val,change_val_lab,change_lab,change_sign,era_num,pop,type_scale,sel_var
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,value,58.6416,71.6312,socialism,1,12.98960000000001,13,+13,increase,1,7127548,linear,value
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,value,71.6312,71.5034,socialism,1,-0.12780000000000769,-0,+0,no change,2,8679894,linear,value
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,value,71.5034,68.7521,transition,1,-2.7513000000000005,-3,-3,decrease,3,10158729,linear,value
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,value,68.7521,74.4339,capitalism,1,5.6817999999999955,6,+6,increase,4,10197421,linear,value
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,value,61.4691,71.3063,socialism,1,9.837199999999996,10,+10,increase,1,7248464,linear,value
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,value,71.3063,71.4801,socialism,1,0.17379999999999995,0,+0,no change,2,8202371,linear,value
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,value,71.4801,70.962,transition,1,-0.5180999999999898,-1,-1,decrease,3,8936335,linear,value
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,value,70.962,75.6363,capitalism,1,4.674300000000002,5,+5,increase,4,8357522,linear,value
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,value,58.4528,68.4751,socialism,1,10.022299999999994,10,+10,increase,1,3864936,linear,value
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,value,68.4751,72.4968,socialism,1,4.021699999999996,4,+4,increase,2,4346657,linear,value
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,value,72.4968,72.5612,transition,1,0.06440000000000623,0,+0,no change,3,4820680,linear,value
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,value,72.5612,78.5803,capitalism,1,6.019099999999995,6,+6,increase,4,4619314,linear,value
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,value,64.4058,70.2584,socialism,1,5.852599999999995,6,+6,increase,1,8916664,linear,value
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,value,70.2584,71.7544,socialism,1,1.4960000000000093,1,+1,increase,2,9706802,linear,value
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,value,71.7544,73.1772,transition,1,1.4227999999999952,1,+1,increase,3,10305562,linear,value
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,value,73.1772,79.8341,capitalism,1,6.656900000000007,7,+7,increase,4,10311979,linear,value
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,value,66.3621,70.715,socialism,1,4.352900000000005,4,+4,increase,1,1102004,linear,value
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,value,70.715,70.498,socialism,1,-0.21699999999999875,-0,+0,no change,2,1292753,linear,value
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,value,70.498,67.8143,transition,1,-2.6837000000000018,-3,-3,decrease,3,1567538,linear,value
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,value,67.8143,79.1535,capitalism,1,11.339199999999991,11,+11,increase,4,1452730,linear,value
+world regions,G7,G7,world regions: G7,1950-1965,value,65.90886566254831,70.56032496055731,socialism,1,4.6514592980090015,5,+5,increase,1,462630950,linear,value
+world regions,G7,G7,world regions: G7,1965-1989,value,70.56032496055731,76.27782333230338,socialism,1,5.717498371746075,6,+6,increase,2,546834533,linear,value
+world regions,G7,G7,world regions: G7,1989-1995,value,76.27782333230338,77.17017014926394,transition,1,0.8923468169605542,1,+1,increase,3,650839180,linear,value
+world regions,G7,G7,world regions: G7,1995-2023,value,77.17017014926394,81.39684696362745,capitalism,1,4.226676814363515,4,+4,increase,4,679107311,linear,value
+world regions,Germany,DE,world regions: Germany,1950-1965,value,66.8112,70.6251,socialism,1,3.813900000000004,4,+4,increase,1,69847722,linear,value
+world regions,Germany,DE,world regions: Germany,1965-1989,value,70.6251,75.467,socialism,1,4.841899999999995,5,+5,increase,2,75966929,linear,value
+world regions,Germany,DE,world regions: Germany,1989-1995,value,75.467,76.5515,transition,1,1.0845000000000056,1,+1,increase,3,79007007,linear,value
+world regions,Germany,DE,world regions: Germany,1995-2023,value,76.5515,81.3777,capitalism,1,4.8262,5,+5,increase,4,82019850,linear,value
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,value,62.1384,69.1487,socialism,1,7.010300000000008,7,+7,increase,1,9337826,linear,value
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,value,69.1487,69.3945,socialism,1,0.24579999999998847,0,+0,no change,2,10141073,linear,value
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,value,69.3945,69.9689,transition,1,0.5744000000000113,1,+1,increase,3,10403359,linear,value
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,value,69.9689,77.024,capitalism,1,7.055099999999996,7,+7,increase,4,10322744,linear,value
+world regions,LAT_AM,LAT_AM,world regions: LAT_AM,1950-1965,value,49.938607512027914,57.70047310137558,socialism,1,7.761865589347664,8,+8,increase,1,129239802,linear,value
+world regions,LAT_AM,LAT_AM,world regions: LAT_AM,1965-1989,value,57.70047310137558,67.78699388795279,socialism,1,10.08652078657721,10,+10,increase,2,194869623,linear,value
+world regions,LAT_AM,LAT_AM,world regions: LAT_AM,1989-1995,value,67.78699388795279,69.76176888192232,transition,1,1.9747749939695325,2,+2,increase,3,337079546,linear,value
+world regions,LAT_AM,LAT_AM,world regions: LAT_AM,1995-2023,value,69.76176888192232,76.23877667417244,capitalism,1,6.47700779225012,6,+6,increase,4,374006763,linear,value
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,value,64.5724,71.2237,socialism,1,6.651299999999992,7,+7,increase,1,1918675,linear,value
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,value,71.2237,70.4035,socialism,1,-0.8201999999999998,-1,-1,decrease,2,2252726,linear,value
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,value,70.4035,65.9954,transition,1,-4.40809999999999,-4,-4,decrease,3,2664789,linear,value
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,value,65.9954,76.1898,capitalism,1,10.194400000000002,10,+10,increase,4,2485908,linear,value
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,value,66.0682,71.6943,socialism,1,5.626099999999994,6,+6,increase,1,2432951,linear,value
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,value,71.6943,71.6371,socialism,1,-0.05719999999999459,-0,+0,no change,2,2965212,linear,value
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,value,71.6371,69.0184,transition,1,-2.618700000000004,-3,-3,decrease,3,3696048,linear,value
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,value,69.0184,76.025,capitalism,1,7.006600000000006,7,+7,increase,4,3626997,linear,value
+CEE,Poland,POL,CEE: Poland,1950-1965,value,58.3331,69.3849,socialism,1,11.0518,11,+11,increase,1,24780120,linear,value
+CEE,Poland,POL,CEE: Poland,1965-1989,value,69.3849,70.8161,socialism,1,1.431200000000004,1,+1,increase,2,31288294,linear,value
+CEE,Poland,POL,CEE: Poland,1989-1995,value,70.8161,71.9588,transition,1,1.1426999999999907,1,+1,increase,3,37938044,linear,value
+CEE,Poland,POL,CEE: Poland,1995-2023,value,71.9588,78.6329,capitalism,1,6.67410000000001,7,+7,increase,4,38364630,linear,value
+CEE,Romania,ROU,CEE: Romania,1950-1965,value,60.5083,68.3864,socialism,1,7.878099999999996,8,+8,increase,1,16397220,linear,value
+CEE,Romania,ROU,CEE: Romania,1965-1989,value,68.3864,69.5461,socialism,1,1.1597000000000008,1,+1,increase,2,18713016,linear,value
+CEE,Romania,ROU,CEE: Romania,1989-1995,value,69.5461,69.323,transition,1,-0.2231000000000023,-0,+0,no change,3,22887592,linear,value
+CEE,Romania,ROU,CEE: Romania,1995-2023,value,69.323,75.9381,capitalism,1,6.615100000000012,7,+7,increase,4,22657664,linear,value
+USSR,Russia,RUS,USSR: Russia,1950-1965,value,55.4723,69.2843,socialism,1,13.812000000000005,14,+14,increase,1,103392314,linear,value
+USSR,Russia,RUS,USSR: Russia,1965-1989,value,69.2843,69.6868,socialism,1,0.4025000000000034,0,+0,no change,2,126634148,linear,value
+USSR,Russia,RUS,USSR: Russia,1989-1995,value,69.6868,63.9945,transition,1,-5.692300000000003,-6,-6,decrease,3,148281823,linear,value
+USSR,Russia,RUS,USSR: Russia,1995-2023,value,63.9945,73.1541,capitalism,1,9.159599999999998,9,+9,increase,4,148291356,linear,value
+world regions,S_EUR4,S_EUR4,world regions: S_EUR4,1950-1965,value,63.86104821887171,70.19821640318807,socialism,1,6.337168184316361,6,+6,increase,1,90538481,linear,value
+world regions,S_EUR4,S_EUR4,world regions: S_EUR4,1965-1989,value,70.19821640318807,76.7742732731975,socialism,1,6.576056870009424,7,+7,increase,2,101002195,linear,value
+world regions,S_EUR4,S_EUR4,world regions: S_EUR4,1989-1995,value,76.7742732731975,77.91107257569574,transition,1,1.1367993024982468,1,+1,increase,3,116225538,linear,value
+world regions,S_EUR4,S_EUR4,world regions: S_EUR4,1995-2023,value,77.91107257569574,83.43965144649579,capitalism,1,5.528578870800047,6,+6,increase,4,118006877,linear,value
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,value,55.0875,68.7171,socialism,1,13.629600000000003,14,+14,increase,1,6009148,linear,value
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,value,68.7171,72.3396,socialism,1,3.6225000000000023,4,+4,increase,2,7031084,linear,value
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,value,72.3396,72.7264,transition,1,0.3867999999999938,0,+0,no change,3,7881211,linear,value
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,value,72.7264,76.7693,capitalism,1,4.042900000000003,4,+4,increase,4,7823230,linear,value
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,value,60.7756,70.2836,socialism,1,9.50800000000001,10,+10,increase,1,3465707,linear,value
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,value,70.2836,70.9375,socialism,1,0.653899999999993,1,+1,increase,2,4364999,linear,value
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,value,70.9375,72.2537,transition,1,1.316199999999995,1,+1,increase,3,5249882,linear,value
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,value,72.2537,78.3414,capitalism,1,6.087699999999998,6,+6,increase,4,5354244,linear,value
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,value,61.8152,68.7006,socialism,1,6.885399999999997,7,+7,increase,1,1446309,linear,value
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,value,68.7006,73.2901,socialism,1,4.589500000000001,5,+5,increase,2,1675272,linear,value
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,value,73.2901,74.4188,transition,1,1.1287000000000091,1,+1,increase,3,1995417,linear,value
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,value,74.4188,81.6034,capitalism,1,7.184599999999989,7,+7,increase,4,1988051,linear,value
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,value,61.1744,71.1431,socialism,1,9.968700000000005,10,+10,increase,1,37310845,linear,value
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,value,71.1431,70.8389,socialism,1,-0.3042000000000087,-0,+0,no change,2,45386845,linear,value
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,value,70.8389,67.1138,transition,1,-3.7250999999999976,-4,-4,decrease,3,51917779,linear,value
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,value,67.1138,73.4225,capitalism,1,6.308700000000002,6,+6,increase,4,51665488,linear,value
+world regions,W_EUR3,W_EUR3,world regions: W_EUR3,1950-1965,value,66.37877790106052,70.65176277735874,socialism,1,4.272984876298224,4,+4,increase,1,158122425,linear,value
+world regions,W_EUR3,W_EUR3,world regions: W_EUR3,1965-1989,value,70.65176277735874,76.21535551821133,socialism,1,5.5635927408525845,6,+6,increase,2,176220383,linear,value
+world regions,W_EUR3,W_EUR3,world regions: W_EUR3,1989-1995,value,76.21535551821133,77.39736038586435,transition,1,1.1820048676530206,1,+1,increase,3,192668736,linear,value
+world regions,W_EUR3,W_EUR3,world regions: W_EUR3,1995-2023,value,77.39736038586435,82.65334448590652,capitalism,1,5.25598410004217,5,+5,increase,4,197615305,linear,value
+world regions,World,World,world regions: World,1950-1965,value,46.3944,53.9975,socialism,1,7.603100000000005,8,+8,increase,1,2493092801,linear,value
+world regions,World,World,world regions: World,1965-1989,value,53.9975,63.7817,socialism,1,9.784199999999998,10,+10,increase,2,3334533671,linear,value
+world regions,World,World,world regions: World,1989-1995,value,63.7817,64.8817,transition,1,1.0999999999999943,1,+1,increase,3,5234431681,linear,value
+world regions,World,World,world regions: World,1995-2023,value,64.8817,73.1694,capitalism,1,8.287700000000001,8,+8,increase,4,5758878939,linear,value
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of DE,87.77211006537826,101.42456435459916,socialism,1,13.652454289220898,14,+14,convergence,1,7127548,linear,% of DE
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of DE,101.42456435459916,94.7479030569653,socialism,1,-6.676661297633856,-7,-7,divergence,2,8679894,linear,% of DE
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of DE,94.7479030569653,89.81156476359052,transition,1,-4.936338293374774,-5,-5,divergence,3,10158729,linear,% of DE
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of DE,89.81156476359052,91.46719555848837,capitalism,1,1.6556307948978457,2,+2,convergence,4,10197421,linear,% of DE
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of DE,92.0041849270781,100.96452960774567,socialism,1,8.960344680667575,9,+9,convergence,1,7248464,linear,% of DE
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of DE,100.96452960774567,94.71702863503252,socialism,1,-6.247500972713155,-6,-6,divergence,2,8202371,linear,% of DE
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of DE,94.71702863503252,92.6983795222824,transition,1,-2.0186491127501256,-2,-2,divergence,3,8936335,linear,% of DE
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of DE,92.6983795222824,92.9447502202692,capitalism,1,0.246370697986805,0,+0,no change,4,8357522,linear,% of DE
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of DE,87.48952271475443,96.95575652282263,socialism,1,9.466233808068196,9,+9,convergence,1,3864936,linear,% of DE
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of DE,96.95575652282263,96.06423999893993,socialism,1,-0.8915165238827001,-1,-1,divergence,2,4346657,linear,% of DE
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of DE,96.06423999893993,94.78743068391866,transition,1,-1.2768093150212678,-1,-1,divergence,3,4820680,linear,% of DE
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of DE,94.78743068391866,96.56244892642579,capitalism,1,1.7750182425071301,2,+2,convergence,4,4619314,linear,% of DE
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of DE,96.39970543860909,99.48077949624141,socialism,1,3.0810740576323212,3,+3,convergence,1,8916664,linear,% of DE
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of DE,99.48077949624141,95.08049876104788,socialism,1,-4.400280735193533,-4,-4,divergence,2,9706802,linear,% of DE
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of DE,95.08049876104788,95.59211772466901,transition,1,0.5116189636211317,1,+1,convergence,3,10305562,linear,% of DE
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of DE,95.59211772466901,98.10316585501926,capitalism,1,2.5110481303502468,3,+3,convergence,4,10311979,linear,% of DE
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of DE,99.3278073137438,100.12729185516197,socialism,1,0.7994845414181668,1,+1,convergence,1,1102004,linear,% of DE
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of DE,100.12729185516197,93.41566512515405,socialism,1,-6.7116267300079215,-7,-7,divergence,2,1292753,linear,% of DE
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of DE,93.41566512515405,88.58650712265599,transition,1,-4.829158002498062,-5,-5,divergence,3,1567538,linear,% of DE
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of DE,88.58650712265599,97.26681879679568,capitalism,1,8.680311674139688,9,+9,convergence,4,1452730,linear,% of DE
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of DE,93.00596307205977,97.9095250838583,socialism,1,4.9035620117985275,5,+5,convergence,1,9337826,linear,% of DE
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of DE,97.9095250838583,91.95343660142842,socialism,1,-5.956088482429877,-6,-6,divergence,2,10141073,linear,% of DE
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of DE,91.95343660142842,91.40108293109867,transition,1,-0.5523536703297509,-1,-1,divergence,3,10403359,linear,% of DE
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of DE,91.40108293109867,94.65000854042323,capitalism,1,3.2489256093245586,3,+3,convergence,4,10322744,linear,% of DE
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of DE,96.64906482745408,100.84757402113411,socialism,1,4.1985091936800245,4,+4,convergence,1,1918675,linear,% of DE
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of DE,100.84757402113411,93.29044483019068,socialism,1,-7.557129190943428,-8,-8,divergence,2,2252726,linear,% of DE
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of DE,93.29044483019068,86.21045962521961,transition,1,-7.0799852049710665,-7,-7,divergence,3,2664789,linear,% of DE
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of DE,86.21045962521961,93.62491198448716,capitalism,1,7.414452359267543,7,+7,convergence,4,2485908,linear,% of DE
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of DE,98.88791100893265,101.51390936083631,socialism,1,2.625998351903661,3,+3,convergence,1,2432951,linear,% of DE
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of DE,101.51390936083631,94.92506658539494,socialism,1,-6.588842775441364,-7,-7,divergence,2,2965212,linear,% of DE
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of DE,94.92506658539494,90.15943515149931,transition,1,-4.765631433895635,-5,-5,divergence,3,3696048,linear,% of DE
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of DE,90.15943515149931,93.42239950256644,capitalism,1,3.262964351067126,3,+3,convergence,4,3626997,linear,% of DE
+CEE,Poland,POL,CEE: Poland,1950-1965,% of DE,87.31036113705487,98.24396708818819,socialism,1,10.933605951133316,11,+11,convergence,1,24780120,linear,% of DE
+CEE,Poland,POL,CEE: Poland,1965-1989,% of DE,98.24396708818819,93.83717386407305,socialism,1,-4.406793224115134,-4,-4,divergence,2,31288294,linear,% of DE
+CEE,Poland,POL,CEE: Poland,1989-1995,% of DE,93.83717386407305,94.00050946095111,transition,1,0.16333559687805632,0,+0,no change,3,37938044,linear,% of DE
+CEE,Poland,POL,CEE: Poland,1995-2023,% of DE,94.00050946095111,96.62708579868932,capitalism,1,2.6265763377382143,3,+3,convergence,4,38364630,linear,% of DE
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of DE,90.56610268936944,96.83016378029906,socialism,1,6.264061090929616,6,+6,convergence,1,16397220,linear,% of DE
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of DE,96.83016378029906,92.15431910636437,socialism,1,-4.675844673934691,-5,-5,divergence,2,18713016,linear,% of DE
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of DE,92.15431910636437,90.55733721742878,transition,1,-1.5969818889355878,-2,-2,divergence,3,22887592,linear,% of DE
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of DE,90.55733721742878,93.31561349116527,capitalism,1,2.7582762737364845,3,+3,convergence,4,22657664,linear,% of DE
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of DE,83.02844433268673,98.10152481200026,socialism,1,15.073080479313532,15,+15,convergence,1,103392314,linear,% of DE
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of DE,98.10152481200026,92.34075821219872,socialism,1,-5.760766599801542,-6,-6,divergence,2,126634148,linear,% of DE
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of DE,92.34075821219872,83.5966636839252,transition,1,-8.744094528273521,-9,-9,divergence,3,148281823,linear,% of DE
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of DE,83.5966636839252,89.89452884512588,capitalism,1,6.297865161200676,6,+6,convergence,4,148291356,linear,% of DE
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of DE,82.45249299518643,97.29841090490491,socialism,1,14.84591790971848,15,+15,convergence,1,6009148,linear,% of DE
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of DE,97.29841090490491,95.85593703208025,socialism,1,-1.4424738728246638,-1,-1,divergence,2,7031084,linear,% of DE
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of DE,95.85593703208025,95.00323311757442,transition,1,-0.852703914505824,-1,-1,divergence,3,7881211,linear,% of DE
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of DE,95.00323311757442,94.33702353347415,capitalism,1,-0.6662095841002724,-1,-1,divergence,4,7823230,linear,% of DE
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of DE,90.96618531024738,99.51646086164834,socialism,1,8.550275551400958,9,+9,convergence,1,3465707,linear,% of DE
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of DE,99.51646086164834,93.99803887792015,socialism,1,-5.518421983728189,-6,-6,divergence,2,4364999,linear,% of DE
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of DE,93.99803887792015,94.38574031860904,transition,1,0.3877014406888861,0,+0,no change,3,5249882,linear,% of DE
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of DE,94.38574031860904,96.26887955791328,capitalism,1,1.883139239304242,2,+2,convergence,4,5354244,linear,% of DE
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of DE,92.52221184472064,97.27504810612656,socialism,1,4.752836261405918,5,+5,convergence,1,1446309,linear,% of DE
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of DE,97.27504810612656,97.11542793538896,socialism,1,-0.15962017073759682,-0,+0,no change,2,1675272,linear,% of DE
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of DE,97.11542793538896,97.21403238342815,transition,1,0.09860444803918256,0,+0,no change,3,1995417,linear,% of DE
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of DE,97.21403238342815,100.27734870855282,capitalism,1,3.0633163251246742,3,+3,convergence,4,1988051,linear,% of DE
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of DE,91.56309121823885,100.73345028891994,socialism,1,9.170359070681087,9,+9,convergence,1,37310845,linear,% of DE
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of DE,100.73345028891994,93.8673857447626,socialism,1,-6.866064544157339,-7,-7,divergence,2,45386845,linear,% of DE
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of DE,93.8673857447626,87.67143687582869,transition,1,-6.195948868933911,-6,-6,divergence,3,51917779,linear,% of DE
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of DE,87.67143687582869,90.22434893097248,capitalism,1,2.5529120551437927,3,+3,convergence,4,51665488,linear,% of DE
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of W_EUR3,88.34389823718507,101.38628844368358,socialism,1,13.04239020649851,13,+13,convergence,1,7127548,linear,% of W_EUR3
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of W_EUR3,101.38628844368358,93.81757719796317,socialism,1,-7.568711245720408,-8,-8,divergence,2,8679894,linear,% of W_EUR3
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of W_EUR3,93.81757719796317,88.83003200268921,transition,1,-4.987545195273967,-5,-5,divergence,3,10158729,linear,% of W_EUR3
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of W_EUR3,88.83003200268921,90.05552099914354,capitalism,1,1.225488996454331,1,+1,convergence,4,10197421,linear,% of W_EUR3
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of W_EUR3,92.60354279438748,100.9264273061436,socialism,1,8.322884511756115,8,+8,convergence,1,7248464,linear,% of W_EUR3
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of W_EUR3,100.9264273061436,93.78700593074073,socialism,1,-7.139421375402861,-7,-7,divergence,2,8202371,linear,% of W_EUR3
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of W_EUR3,93.78700593074073,91.68529733600622,transition,1,-2.101708594734518,-2,-2,divergence,3,8936335,linear,% of W_EUR3
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of W_EUR3,91.68529733600622,91.51027156910389,capitalism,1,-0.17502576690232274,-0,+0,no change,4,8357522,linear,% of W_EUR3
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of W_EUR3,88.05946998169443,96.91916706421333,socialism,1,8.859697082518892,9,+9,convergence,1,3864936,linear,% of W_EUR3
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of W_EUR3,96.91916706421333,95.12098908031362,socialism,1,-1.7981779838997056,-2,-2,divergence,2,4346657,linear,% of W_EUR3
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of W_EUR3,95.12098908031362,93.75151767223885,transition,1,-1.369471408074773,-1,-1,divergence,3,4820680,linear,% of W_EUR3
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of W_EUR3,93.75151767223885,95.07213590540063,capitalism,1,1.320618233161781,1,+1,convergence,4,4619314,linear,% of W_EUR3
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of W_EUR3,97.02769776207495,99.44323713677416,socialism,1,2.4155393746992075,2,+2,convergence,1,8916664,linear,% of W_EUR3
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of W_EUR3,99.44323713677416,94.14690715817052,socialism,1,-5.296329978603637,-5,-5,divergence,2,9706802,linear,% of W_EUR3
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of W_EUR3,94.14690715817052,94.54741044807633,transition,1,0.40050328990581363,0,+0,no change,3,10305562,linear,% of W_EUR3
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of W_EUR3,94.54741044807633,96.58907391655855,capitalism,1,2.041663468482213,2,+2,convergence,4,10311979,linear,% of W_EUR3
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of W_EUR3,99.97487464881415,100.0895055128922,socialism,1,0.11463086407805179,0,+0,no change,1,1102004,linear,% of W_EUR3
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of W_EUR3,100.0895055128922,92.4984204569574,socialism,1,-7.591085055934798,-8,-8,divergence,2,1292753,linear,% of W_EUR3
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of W_EUR3,92.4984204569574,87.61836277350027,transition,1,-4.880057683457139,-5,-5,divergence,3,1567538,linear,% of W_EUR3
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of W_EUR3,87.61836277350027,95.76563476326928,capitalism,1,8.14727198976901,8,+8,convergence,4,1452730,linear,% of W_EUR3
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of W_EUR3,93.6118469861242,97.87257568916539,socialism,1,4.260728703041181,4,+4,convergence,1,9337826,linear,% of W_EUR3
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of W_EUR3,97.87257568916539,91.05054949644429,socialism,1,-6.822026192721097,-7,-7,divergence,2,10141073,linear,% of W_EUR3
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of W_EUR3,91.05054949644429,90.40217864171366,transition,1,-0.6483708547306293,-1,-1,divergence,3,10403359,linear,% of W_EUR3
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of W_EUR3,90.40217864171366,93.18921149419864,capitalism,1,2.787032852484984,3,+3,convergence,4,10322744,linear,% of W_EUR3
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of W_EUR3,97.278681593456,100.80951585658742,socialism,1,3.5308342631314247,4,+4,convergence,1,1918675,linear,% of W_EUR3
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of W_EUR3,100.80951585658742,92.37442969504667,socialism,1,-8.435086161540752,-8,-8,divergence,2,2252726,linear,% of W_EUR3
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of W_EUR3,92.37442969504667,85.26828262744375,transition,1,-7.106147067602919,-7,-7,divergence,3,2664789,linear,% of W_EUR3
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of W_EUR3,85.26828262744375,92.17993594075479,capitalism,1,6.911653313311035,7,+7,convergence,4,2485908,linear,% of W_EUR3
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of W_EUR3,99.53211265575959,101.47559973263024,socialism,1,1.9434870768706531,2,+2,convergence,1,2432951,linear,% of W_EUR3
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of W_EUR3,101.47559973263024,93.99300116481466,socialism,1,-7.482598567815586,-7,-7,divergence,2,2965212,linear,% of W_EUR3
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of W_EUR3,93.99300116481466,89.17410058419169,transition,1,-4.818900580622966,-5,-5,divergence,3,3696048,linear,% of W_EUR3
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of W_EUR3,89.17410058419169,91.98054896975557,capitalism,1,2.8064483855638827,3,+3,convergence,4,3626997,linear,% of W_EUR3
+CEE,Poland,POL,CEE: Poland,1950-1965,% of W_EUR3,87.8791412625089,98.20689148075337,socialism,1,10.327750218244475,10,+10,convergence,1,24780120,linear,% of W_EUR3
+CEE,Poland,POL,CEE: Poland,1965-1989,% of W_EUR3,98.20689148075337,92.91579041847913,socialism,1,-5.291101062274237,-5,-5,divergence,2,31288294,linear,% of W_EUR3
+CEE,Poland,POL,CEE: Poland,1989-1995,% of W_EUR3,92.91579041847913,92.97319655508866,transition,1,0.05740613660952931,0,+0,no change,3,37938044,linear,% of W_EUR3
+CEE,Poland,POL,CEE: Poland,1995-2023,% of W_EUR3,92.97319655508866,95.13577519347442,capitalism,1,2.162578638385753,2,+2,convergence,4,38364630,linear,% of W_EUR3
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of W_EUR3,91.15609222301346,96.79362171826135,socialism,1,5.63752949524789,6,+6,convergence,1,16397220,linear,% of W_EUR3
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of W_EUR3,96.79362171826135,91.24945954412331,socialism,1,-5.544162174138037,-6,-6,divergence,2,18713016,linear,% of W_EUR3
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of W_EUR3,91.24945954412331,89.56765405743859,transition,1,-1.6818054866847234,-2,-2,divergence,3,22887592,linear,% of W_EUR3
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of W_EUR3,89.56765405743859,91.87541105847018,capitalism,1,2.3077570010315895,2,+2,convergence,4,22657664,linear,% of W_EUR3
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of W_EUR3,83.56933006914207,98.06450295986534,socialism,1,14.495172890723268,14,+14,convergence,1,103392314,linear,% of W_EUR3
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of W_EUR3,98.06450295986534,91.43406801185706,socialism,1,-6.630434948008272,-7,-7,divergence,2,126634148,linear,% of W_EUR3
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of W_EUR3,91.43406801185706,82.68305234307162,transition,1,-8.751015668785442,-9,-9,divergence,3,148281823,linear,% of W_EUR3
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of W_EUR3,82.68305234307162,88.50712630566781,capitalism,1,5.824073962596188,6,+6,convergence,4,148291356,linear,% of W_EUR3
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of W_EUR3,82.989626717909,97.26169213434159,socialism,1,14.272065416432582,14,+14,convergence,1,6009148,linear,% of W_EUR3
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of W_EUR3,97.26169213434159,94.91473143192879,socialism,1,-2.346960702412801,-2,-2,divergence,2,7031084,linear,% of W_EUR3
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of W_EUR3,94.91473143192879,93.96496164394071,transition,1,-0.9497697879880747,-1,-1,divergence,3,7881211,linear,% of W_EUR3
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of W_EUR3,93.96496164394071,92.88105699472352,capitalism,1,-1.0839046492171889,-1,-1,divergence,4,7823230,linear,% of W_EUR3
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of W_EUR3,91.55878116736011,99.47890503663878,socialism,1,7.920123869278669,8,+8,convergence,1,3465707,linear,% of W_EUR3
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of W_EUR3,99.47890503663878,93.07507590520889,socialism,1,-6.403829131429887,-6,-6,divergence,2,4364999,linear,% of W_EUR3
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of W_EUR3,93.07507590520889,93.35421730118361,transition,1,0.2791413959747189,0,+0,no change,3,5249882,linear,% of W_EUR3
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of W_EUR3,93.35421730118361,94.78309738979556,capitalism,1,1.4288800886119475,1,+1,convergence,4,5354244,linear,% of W_EUR3
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of W_EUR3,93.12494437926732,97.23833815228737,socialism,1,4.11339377302005,4,+4,convergence,1,1446309,linear,% of W_EUR3
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of W_EUR3,97.23833815228737,96.16185544458642,socialism,1,-1.0764827077009471,-1,-1,divergence,2,1675272,linear,% of W_EUR3
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of W_EUR3,96.16185544458642,96.15159952353059,transition,1,-0.010255921055829731,-0,+0,no change,3,1995417,linear,% of W_EUR3
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of W_EUR3,96.15159952353059,98.7297011482874,capitalism,1,2.578101624756812,3,+3,convergence,4,1988051,linear,% of W_EUR3
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of W_EUR3,92.15957559686049,100.6954351927348,socialism,1,8.535859595874314,9,+9,convergence,1,37310845,linear,% of W_EUR3
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of W_EUR3,100.6954351927348,92.94570564992425,socialism,1,-7.749729542810556,-8,-8,divergence,2,45386845,linear,% of W_EUR3
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of W_EUR3,92.94570564992425,86.71329314773051,transition,1,-6.232412502193739,-6,-6,divergence,3,51917779,linear,% of W_EUR3
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of W_EUR3,86.71329314773051,88.83185605697965,capitalism,1,2.1185629092491354,2,+2,convergence,4,51665488,linear,% of W_EUR3
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of LAT_AM,117.42738318419458,124.1431762165089,socialism,1,6.715793032314323,7,+7,convergence,1,7127548,linear,% of LAT_AM
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of LAT_AM,124.1431762165089,105.48247665059492,socialism,1,-18.660699565913987,-19,-19,divergence,2,8679894,linear,% of LAT_AM
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of LAT_AM,105.48247665059492,98.55269025125887,transition,1,-6.929786399336052,-7,-7,divergence,3,10158729,linear,% of LAT_AM
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of LAT_AM,98.55269025125887,97.63260016371184,capitalism,1,-0.9200900875470239,-1,-1,divergence,4,10197421,linear,% of LAT_AM
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of LAT_AM,123.0893352106282,123.58009591138006,socialism,1,0.4907607007518493,0,+0,no change,1,7248464,linear,% of LAT_AM
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of LAT_AM,123.58009591138006,105.44810427521193,socialism,1,-18.131991636168124,-18,-18,divergence,2,8202371,linear,% of LAT_AM
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of LAT_AM,105.44810427521193,101.72047116538742,transition,1,-3.7276331098245095,-4,-4,divergence,3,8936335,linear,% of LAT_AM
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of LAT_AM,101.72047116538742,99.20975033906002,capitalism,1,-2.5107208263274003,-3,-3,divergence,4,8357522,linear,% of LAT_AM
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of LAT_AM,117.04931897815015,118.6733770444034,socialism,1,1.624058066253241,2,+2,convergence,1,3864936,linear,% of LAT_AM
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of LAT_AM,118.6733770444034,106.94794951348955,socialism,1,-11.725427530913848,-12,-12,divergence,2,4346657,linear,% of LAT_AM
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of LAT_AM,106.94794951348955,104.01284423108014,transition,1,-2.9351052824094097,-3,-3,divergence,3,4820680,linear,% of LAT_AM
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of LAT_AM,104.01284423108014,103.07130233192842,capitalism,1,-0.9415418991517157,-1,-1,divergence,4,4619314,linear,% of LAT_AM
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of LAT_AM,128.9699557291172,121.76399295125543,socialism,1,-7.205962777861771,-7,-7,divergence,1,8916664,linear,% of LAT_AM
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of LAT_AM,121.76399295125543,105.85275417081493,socialism,1,-15.911238780440499,-16,-16,divergence,2,9706802,linear,% of LAT_AM
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of LAT_AM,105.85275417081493,104.89584936393827,transition,1,-0.9569048068766648,-1,-1,divergence,3,10305562,linear,% of LAT_AM
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of LAT_AM,104.89584936393827,104.71587226693468,capitalism,1,-0.17997709700358655,-0,+0,no change,4,10311979,linear,% of LAT_AM
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of LAT_AM,132.8873657200322,122.55532095163039,socialism,1,-10.3320447684018,-10,-10,divergence,1,1102004,linear,% of LAT_AM
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of LAT_AM,122.55532095163039,103.99930127677341,socialism,1,-18.556019674856984,-19,-19,divergence,2,1292753,linear,% of LAT_AM
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of LAT_AM,103.99930127677341,97.20840094347582,transition,1,-6.790900333297586,-7,-7,divergence,3,1567538,linear,% of LAT_AM
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of LAT_AM,97.20840094347582,103.82315070227901,capitalism,1,6.614749758803185,7,+7,convergence,4,1452730,linear,% of LAT_AM
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of LAT_AM,124.42958083089064,119.84078515008139,socialism,1,-4.588795680809255,-5,-5,divergence,1,9337826,linear,% of LAT_AM
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of LAT_AM,119.84078515008139,102.37140787612488,socialism,1,-17.46937727395651,-17,-17,divergence,2,10141073,linear,% of LAT_AM
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of LAT_AM,102.37140787612488,100.29691207863188,transition,1,-2.0744957974930003,-2,-2,divergence,3,10403359,linear,% of LAT_AM
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of LAT_AM,100.29691207863188,101.02995268298103,capitalism,1,0.7330406043491564,1,+1,convergence,4,10322744,linear,% of LAT_AM
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of LAT_AM,129.30356535161192,123.4369428390389,socialism,1,-5.8666225125730165,-6,-6,divergence,1,1918675,linear,% of LAT_AM
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of LAT_AM,123.4369428390389,103.85989400322444,socialism,1,-19.577048835814466,-20,-20,divergence,2,2252726,linear,% of LAT_AM
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of LAT_AM,103.85989400322444,94.60109893672963,transition,1,-9.258795066494812,-9,-9,divergence,3,2664789,linear,% of LAT_AM
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of LAT_AM,94.60109893672963,99.9357588404366,capitalism,1,5.334659903706978,5,+5,convergence,4,2485908,linear,% of LAT_AM
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of LAT_AM,132.29884310267806,124.25253407201407,socialism,1,-8.046309030663991,-8,-8,divergence,1,2432951,linear,% of LAT_AM
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of LAT_AM,124.25253407201407,105.67971212650492,socialism,1,-18.572821945509148,-19,-19,divergence,2,2965212,linear,% of LAT_AM
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of LAT_AM,105.67971212650492,98.93441795723308,transition,1,-6.745294169271844,-7,-7,divergence,3,3696048,linear,% of LAT_AM
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of LAT_AM,98.93441795723308,99.71959587561844,capitalism,1,0.785177918385358,1,+1,convergence,4,3626997,linear,% of LAT_AM
+CEE,Poland,POL,CEE: Poland,1950-1965,% of LAT_AM,116.809624669551,120.25014054580753,socialism,1,3.4405158762565264,3,+3,convergence,1,24780120,linear,% of LAT_AM
+CEE,Poland,POL,CEE: Poland,1965-1989,% of LAT_AM,120.25014054580753,104.46856533725942,socialism,1,-15.781575208548105,-16,-16,divergence,2,31288294,linear,% of LAT_AM
+CEE,Poland,POL,CEE: Poland,1989-1995,% of LAT_AM,104.46856533725942,103.14933401673964,transition,1,-1.3192313205197763,-1,-1,divergence,3,37938044,linear,% of LAT_AM
+CEE,Poland,POL,CEE: Poland,1995-2023,% of LAT_AM,103.14933401673964,103.14029609375753,capitalism,1,-0.009037922982116697,-0,+0,no change,4,38364630,linear,% of LAT_AM
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of LAT_AM,121.16537287393592,118.51965213500071,socialism,1,-2.6457207389352106,-3,-3,divergence,1,16397220,linear,% of LAT_AM
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of LAT_AM,118.51965213500071,102.59504959750079,socialism,1,-15.924602537499922,-16,-16,divergence,2,18713016,linear,% of LAT_AM
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of LAT_AM,102.59504959750079,99.37104679403272,transition,1,-3.2240028034680677,-3,-3,divergence,3,22887592,linear,% of LAT_AM
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of LAT_AM,99.37104679403272,99.60561188506806,capitalism,1,0.23456509103533563,0,+0,no change,4,22657664,linear,% of LAT_AM
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of LAT_AM,111.08099076779277,120.0757918886947,socialism,1,8.994801120901926,9,+9,convergence,1,103392314,linear,% of LAT_AM
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of LAT_AM,120.0757918886947,102.80261153811816,socialism,1,-17.27318035057654,-17,-17,divergence,2,126634148,linear,% of LAT_AM
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of LAT_AM,102.80261153811816,91.7329090498208,transition,1,-11.069702488297352,-11,-11,divergence,3,148281823,linear,% of LAT_AM
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of LAT_AM,91.7329090498208,95.95392684833381,capitalism,1,4.221017798513003,4,+4,convergence,4,148291356,linear,% of LAT_AM
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of LAT_AM,110.31044465293101,119.0927843507782,socialism,1,8.782339697847192,9,+9,convergence,1,6009148,linear,% of LAT_AM
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of LAT_AM,119.0927843507782,106.71604662034778,socialism,1,-12.37673773043042,-12,-12,divergence,2,7031084,linear,% of LAT_AM
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of LAT_AM,106.71604662034778,104.2496501530739,transition,1,-2.4663964672738814,-2,-2,divergence,3,7881211,linear,% of LAT_AM
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of LAT_AM,104.2496501530739,100.69587072218498,capitalism,1,-3.5537794308889232,-4,-4,divergence,4,7823230,linear,% of LAT_AM
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of LAT_AM,121.70063008937913,121.8076667699358,socialism,1,0.10703668055667492,0,+0,no change,1,3465707,linear,% of LAT_AM
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of LAT_AM,121.8076667699358,104.6476557394694,socialism,1,-17.160011030466407,-17,-17,divergence,2,4364999,linear,% of LAT_AM
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of LAT_AM,104.6476557394694,103.57205838959658,transition,1,-1.0755973498728224,-1,-1,divergence,3,5249882,linear,% of LAT_AM
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of LAT_AM,103.57205838959658,102.7579447330506,capitalism,1,-0.8141136565459703,-1,-1,divergence,4,5354244,linear,% of LAT_AM
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of LAT_AM,123.78238617308574,119.06418839807081,socialism,1,-4.718197775014929,-5,-5,divergence,1,1446309,linear,% of LAT_AM
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of LAT_AM,119.06418839807081,108.11823300667892,socialism,1,-10.945955391391891,-11,-11,divergence,2,1675272,linear,% of LAT_AM
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of LAT_AM,108.11823300667892,106.67562074860817,transition,1,-1.4426122580707528,-1,-1,divergence,3,1995417,linear,% of LAT_AM
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of LAT_AM,106.67562074860817,107.03660730123563,capitalism,1,0.36098655262746604,0,+0,no change,4,1988051,linear,% of LAT_AM
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of LAT_AM,122.49921062629929,123.29725594278351,socialism,1,0.7980453164842203,1,+1,convergence,1,37310845,linear,% of LAT_AM
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of LAT_AM,123.29725594278351,104.50220010802042,socialism,1,-18.79505583476309,-19,-19,divergence,2,45386845,linear,% of LAT_AM
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of LAT_AM,104.50220010802042,96.2042692948279,transition,1,-8.297930813192522,-8,-8,divergence,3,51917779,linear,% of LAT_AM
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of LAT_AM,96.2042692948279,96.30597866724885,capitalism,1,0.1017093724209559,0,+0,no change,4,51665488,linear,% of LAT_AM
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of G7,88.97376613981415,101.51767305499416,socialism,1,12.543906915180017,13,+13,convergence,1,7127548,linear,% of G7
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of G7,101.51767305499416,93.74074518159273,socialism,1,-7.7769278734014335,-8,-8,divergence,2,8679894,linear,% of G7
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of G7,93.74074518159273,89.09154906231053,transition,1,-4.649196119282195,-5,-5,divergence,3,10158729,linear,% of G7
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of G7,89.09154906231053,91.44567974882506,capitalism,1,2.354130686514523,2,+2,convergence,4,10197421,linear,% of G7
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of G7,93.26378080108404,101.05721599193268,socialism,1,7.793435190848641,8,+8,convergence,1,7248464,linear,% of G7
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of G7,101.05721599193268,93.71019895074592,socialism,1,-7.34701704118676,-7,-7,divergence,2,8202371,linear,% of G7
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of G7,93.71019895074592,91.9552203432285,transition,1,-1.7549786075174154,-2,-2,divergence,3,8936335,linear,% of G7
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of G7,91.9552203432285,92.92288684572564,capitalism,1,0.9676665024971385,1,+1,convergence,4,8357522,linear,% of G7
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of G7,88.6873099884268,97.04476281575668,socialism,1,8.35745282732988,8,+8,convergence,1,3864936,linear,% of G7
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of G7,97.04476281575668,95.0430896332327,socialism,1,-2.0016731825239873,-2,-2,divergence,2,4346657,linear,% of G7
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of G7,95.0430896332327,94.02752366575169,transition,1,-1.0155659674810096,-1,-1,divergence,3,4820680,linear,% of G7
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of G7,94.02752366575169,96.5397345613571,capitalism,1,2.5122108956054063,3,+3,convergence,4,4619314,linear,% of G7
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of G7,97.71947878720297,99.57210378392377,socialism,1,1.8526249967207917,2,+2,convergence,1,8916664,linear,% of G7
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of G7,99.57210378392377,94.06980543663767,socialism,1,-5.5022983472861,-6,-6,divergence,2,9706802,linear,% of G7
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of G7,94.06980543663767,94.8257595628717,transition,1,0.7559541262340304,1,+1,convergence,3,10305562,linear,% of G7
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of G7,94.8257595628717,98.08008906742326,capitalism,1,3.2543295045515634,3,+3,convergence,4,10311979,linear,% of G7
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of G7,100.68766824143545,100.21920964724745,socialism,1,-0.46845859418799307,-0,+0,no change,1,1102004,linear,% of G7
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of G7,100.21920964724745,92.42266876556813,socialism,1,-7.79654088167932,-8,-8,divergence,2,1292753,linear,% of G7
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of G7,92.42266876556813,87.87631265919507,transition,1,-4.546356106373068,-5,-5,divergence,3,1567538,linear,% of G7
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of G7,87.87631265919507,97.24393874294675,capitalism,1,9.367626083751688,9,+9,convergence,4,1452730,linear,% of G7
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of G7,94.27927392673848,97.999406945267907,socialism,1,3.720133018529424,4,+4,convergence,1,9337826,linear,% of G7
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of G7,97.999406945267907,90.97598354069926,socialism,1,-7.023423404568646,-7,-7,divergence,2,10141073,linear,% of G7
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of G7,90.97598354069926,90.66832412662158,transition,1,-0.3076594140776763,-0,+0,no change,3,10403359,linear,% of G7
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of G7,90.66832412662158,94.62774403831455,capitalism,1,3.9594199116929616,4,+4,convergence,4,10322744,linear,% of G7
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of G7,97.97225206485729,100.94015303899677,socialism,1,2.967900974139482,3,+3,convergence,1,1918675,linear,% of G7
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of G7,100.94015303899677,92.29877954603926,socialism,1,-8.641373492957513,-9,-9,divergence,2,2252726,linear,% of G7
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of G7,92.29877954603926,85.51931383894905,transition,1,-6.7794657070902105,-7,-7,divergence,3,2664789,linear,% of G7
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of G7,85.51931383894905,93.60288861563122,capitalism,1,8.08357477668217,8,+8,convergence,4,2485908,linear,% of G7
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of G7,100.24174947611371,101.60710008078418,socialism,1,1.3653506046704678,1,+1,convergence,1,2432951,linear,% of G7
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of G7,101.60710008078418,93.91602548477802,socialism,1,-7.69107459600616,-8,-8,divergence,2,2965212,linear,% of G7
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of G7,93.91602548477802,89.43663058731549,transition,1,-4.479394897462527,-4,-4,divergence,3,3696048,linear,% of G7
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of G7,89.43663058731549,93.4004237706801,capitalism,1,3.963793183364615,4,+4,convergence,4,3626997,linear,% of G7
+CEE,Poland,POL,CEE: Poland,1950-1965,% of G7,88.50569557464996,98.3341559704914,socialism,1,9.828460395841432,10,+10,convergence,1,24780120,linear,% of G7
+CEE,Poland,POL,CEE: Poland,1965-1989,% of G7,98.3341559704914,92.83969692146373,socialism,1,-5.494459049027668,-5,-5,divergence,2,31288294,linear,% of G7
+CEE,Poland,POL,CEE: Poland,1989-1995,% of G7,92.83969692146373,93.24691115856811,transition,1,0.40721423710438387,0,+0,no change,3,37938044,linear,% of G7
+CEE,Poland,POL,CEE: Poland,1995-2023,% of G7,93.24691115856811,96.60435622910242,capitalism,1,3.357445070534311,3,+3,convergence,4,38364630,linear,% of G7
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of G7,91.80601030186278,96.91905477791872,socialism,1,5.113044476055933,5,+5,convergence,1,16397220,linear,% of G7
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of G7,96.91905477791872,91.17473069075828,socialism,1,-5.744324087160436,-6,-6,divergence,2,18713016,linear,% of G7
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of G7,91.17473069075828,89.83134268839137,transition,1,-1.3433880023669076,-1,-1,divergence,3,22887592,linear,% of G7
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of G7,89.83134268839137,93.29366287853053,capitalism,1,3.4623201901391525,3,+3,convergence,4,22657664,linear,% of G7
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of G7,84.16515660278048,98.1915829309593,socialism,1,14.026426328178815,14,+14,convergence,1,103392314,linear,% of G7
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of G7,98.1915829309593,91.35918797316793,socialism,1,-6.832394957791365,-7,-7,divergence,2,126634148,linear,% of G7
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of G7,91.35918797316793,82.92647259455393,transition,1,-8.432715378614006,-8,-8,divergence,3,148281823,linear,% of G7
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of G7,82.92647259455393,89.87338297353119,capitalism,1,6.946910378977265,7,+7,convergence,4,148291356,linear,% of G7
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of G7,83.581320124741,97.38773175777229,socialism,1,13.806411633031288,14,+14,convergence,1,6009148,linear,% of G7
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of G7,97.38773175777229,94.83700089979422,socialism,1,-2.550730857978067,-3,-3,divergence,2,7031084,linear,% of G7
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of G7,94.83700089979422,94.24159601997933,transition,1,-0.5954048798148932,-1,-1,divergence,3,7881211,linear,% of G7
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of G7,94.24159601997933,94.31483265476452,capitalism,1,0.07323663478518938,0,+0,no change,4,7823230,linear,% of G7
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of G7,92.21157030856743,99.60781790515847,socialism,1,7.396247596591039,7,+7,convergence,1,3465707,linear,% of G7
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of G7,99.60781790515847,92.99885196115477,socialism,1,-6.6089659440037,-7,-7,divergence,2,4364999,linear,% of G7
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of G7,92.99885196115477,93.62905363593936,transition,1,0.6302016747845869,1,+1,convergence,3,5249882,linear,% of G7
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of G7,93.62905363593936,96.24623424910698,capitalism,1,2.617180613167619,3,+3,convergence,4,5354244,linear,% of G7
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of G7,93.78889983707538,97.36434751172577,socialism,1,3.575447674650391,4,+4,convergence,1,1446309,linear,% of G7
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of G7,97.36434751172577,96.08310357875918,socialism,1,-1.2812439329665892,-1,-1,divergence,2,1675272,linear,% of G7
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of G7,96.08310357875918,96.43467139706678,transition,1,0.35156781830760053,0,+0,no change,3,1995417,linear,% of G7
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of G7,96.43467139706678,100.25376048836982,capitalism,1,3.8190890913030415,4,+4,convergence,4,1988051,linear,% of G7
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of G7,92.81664823851065,100.82592454012713,socialism,1,8.009276301616481,8,+8,convergence,1,37310845,linear,% of G7
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of G7,100.82592454012713,92.86958765379448,socialism,1,-7.95633688633265,-8,-8,divergence,2,45386845,linear,% of G7
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of G7,92.86958765379448,86.96857849372014,transition,1,-5.901009160074338,-6,-6,divergence,3,51917779,linear,% of G7
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of G7,86.96857849372014,90.20312547586661,capitalism,1,3.234546982146469,3,+3,convergence,4,51665488,linear,% of G7
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of S_EUR4,91.826867293216,102.04133903998571,socialism,1,10.214471746769718,10,+10,convergence,1,7127548,linear,% of S_EUR4
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of S_EUR4,102.04133903998571,93.13458395829896,socialism,1,-8.906755081686754,-9,-9,divergence,2,8679894,linear,% of S_EUR4
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of S_EUR4,93.13458395829896,88.24432487847322,transition,1,-4.890259079825739,-5,-5,divergence,3,10158729,linear,% of S_EUR4
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of S_EUR4,88.24432487847322,89.20686832893762,capitalism,1,0.9625434504643948,1,+1,convergence,4,10197421,linear,% of S_EUR4
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of S_EUR4,96.25444886110581,101.5785067678181,socialism,1,5.324057906712284,5,+5,convergence,1,7248464,linear,% of S_EUR4
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of S_EUR4,101.5785067678181,93.10423525031824,socialism,1,-8.474271517499858,-8,-8,divergence,2,8202371,linear,% of S_EUR4
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of S_EUR4,93.10423525031824,91.0807638170502,transition,1,-2.0234714332680426,-2,-2,divergence,3,8936335,linear,% of S_EUR4
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of S_EUR4,91.0807638170502,90.64790982318576,capitalism,1,-0.4328539938644411,-0,+0,no change,4,8357522,linear,% of S_EUR4
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of S_EUR4,91.53122541876239,97.54535586304468,socialism,1,6.014130444282287,6,+6,convergence,1,3864936,linear,% of S_EUR4
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of S_EUR4,97.54535586304468,94.42850698439526,socialism,1,-3.116848878649421,-3,-3,divergence,2,4346657,linear,% of S_EUR4
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of S_EUR4,94.42850698439526,93.13336038276461,transition,1,-1.2951466016306483,-1,-1,divergence,3,4820680,linear,% of S_EUR4
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of S_EUR4,93.13336038276461,94.17620835867014,capitalism,1,1.0428479759055307,1,+1,convergence,4,4619314,linear,% of S_EUR4
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of S_EUR4,100.85302668265209,100.08573379765984,socialism,1,-0.7672928849922442,-1,-1,divergence,1,8916664,linear,% of S_EUR4
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of S_EUR4,100.08573379765984,93.46151639191098,socialism,1,-6.624217405748865,-7,-7,divergence,2,9706802,linear,% of S_EUR4
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of S_EUR4,93.46151639191098,93.92400538306481,transition,1,0.46248899115383324,0,+0,no change,3,10305562,linear,% of S_EUR4
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of S_EUR4,93.92400538306481,95.67885126077284,capitalism,1,1.7548458777080356,2,+2,convergence,4,10311979,linear,% of S_EUR4
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of S_EUR4,103.91639638071146,100.73617767415023,socialism,1,-3.1802187065612344,-3,-3,divergence,1,1102004,linear,% of S_EUR4
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of S_EUR4,100.73617767415023,91.82503069633276,socialism,1,-8.911146977817467,-9,-9,divergence,2,1292753,linear,% of S_EUR4
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of S_EUR4,91.82503069633276,87.04064487639282,transition,1,-4.784385819939942,-5,-5,divergence,3,1567538,linear,% of S_EUR4
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of S_EUR4,87.04064487639282,94.86317191863606,capitalism,1,7.822527042243237,8,+8,convergence,4,1452730,linear,% of S_EUR4
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of S_EUR4,97.30250556964293,98.50492440269409,socialism,1,1.202418833051155,1,+1,convergence,1,9337826,linear,% of S_EUR4
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of S_EUR4,98.50492440269409,90.38770025613015,socialism,1,-8.117224146563942,-8,-8,divergence,2,10141073,linear,% of S_EUR4
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of S_EUR4,90.38770025613015,89.80610545698829,transition,1,-0.581594799141854,-1,-1,divergence,3,10403359,linear,% of S_EUR4
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of S_EUR4,89.80610545698829,92.31102798816254,capitalism,1,2.5049225311742447,3,+3,convergence,4,10322744,linear,% of S_EUR4
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of S_EUR4,101.11390558246126,101.46083996055111,socialism,1,0.3469343780898555,0,+0,no change,1,1918675,linear,% of S_EUR4
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of S_EUR4,101.46083996055111,91.70194258885732,socialism,1,-9.758897371693791,-10,-10,divergence,2,2252726,linear,% of S_EUR4
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of S_EUR4,91.70194258885732,84.70606015066872,transition,1,-6.995882438188602,-7,-7,divergence,3,2664789,linear,% of S_EUR4
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of S_EUR4,84.70606015066872,91.31126350504397,capitalism,1,6.605203354375249,7,+7,convergence,4,2485908,linear,% of S_EUR4
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of S_EUR4,103.45617844161232,102.13122736369694,socialism,1,-1.3249510779153866,-1,-1,divergence,1,2432951,linear,% of S_EUR4
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of S_EUR4,102.13122736369694,93.30873083628273,socialism,1,-8.822496527414202,-9,-9,divergence,2,2965212,linear,% of S_EUR4
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of S_EUR4,93.30873083628273,88.58612481934975,transition,1,-4.7226060169329855,-5,-5,divergence,3,3696048,linear,% of S_EUR4
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of S_EUR4,88.58612481934975,91.11375548919892,capitalism,1,2.5276306698491737,3,+3,convergence,4,3626997,linear,% of S_EUR4
+CEE,Poland,POL,CEE: Poland,1950-1965,% of S_EUR4,91.34378721763899,98.84140018812339,socialism,1,7.497612970484397,7,+7,convergence,1,24780120,linear,% of S_EUR4
+CEE,Poland,POL,CEE: Poland,1965-1989,% of S_EUR4,98.84140018812339,92.23936219885063,socialism,1,-6.602037989272759,-7,-7,divergence,2,31288294,linear,% of S_EUR4
+CEE,Poland,POL,CEE: Poland,1989-1995,% of S_EUR4,92.23936219885063,92.36017118117232,transition,1,0.1208089823216909,0,+0,no change,3,37938044,linear,% of S_EUR4
+CEE,Poland,POL,CEE: Poland,1995-2023,% of S_EUR4,92.36017118117232,94.23924793168867,capitalism,1,1.8790767505163473,2,+2,convergence,4,38364630,linear,% of S_EUR4
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of S_EUR4,94.7499323728906,97.41899937630639,socialism,1,2.6690670034157904,3,+3,convergence,1,16397220,linear,% of S_EUR4
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of S_EUR4,97.41899937630639,90.58516223595319,socialism,1,-6.833837140353197,-7,-7,divergence,2,18713016,linear,% of S_EUR4
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of S_EUR4,90.58516223595319,88.97708336982286,transition,1,-1.6080788661303274,-2,-2,divergence,3,22887592,linear,% of S_EUR4
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of S_EUR4,88.97708336982286,91.0096083619117,capitalism,1,2.032524992088838,2,+2,convergence,4,22657664,linear,% of S_EUR4
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of S_EUR4,86.86406118778248,98.69809170372801,socialism,1,11.834030515945528,12,+12,convergence,1,103392314,linear,% of S_EUR4
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of S_EUR4,98.69809170372801,90.76842675152774,socialism,1,-7.92966495220027,-8,-8,divergence,2,126634148,linear,% of S_EUR4
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of S_EUR4,90.76842675152774,82.13787576576503,transition,1,-8.63055098576271,-9,-9,divergence,3,148281823,linear,% of S_EUR4
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of S_EUR4,82.13787576576503,87.67306518161666,capitalism,1,5.535189415851633,6,+6,convergence,4,148291356,linear,% of S_EUR4
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of S_EUR4,86.26150296061219,97.8900939666598,socialism,1,11.628591006047614,12,+12,convergence,1,6009148,linear,% of S_EUR4
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of S_EUR4,97.8900939666598,94.22375089449962,socialism,1,-3.6663430721601884,-4,-4,divergence,2,7031084,linear,% of S_EUR4
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of S_EUR4,94.22375089449962,93.34539699648147,transition,1,-0.8783538980181476,-1,-1,divergence,3,7881211,linear,% of S_EUR4
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of S_EUR4,93.34539699648147,92.00577743212047,capitalism,1,-1.3396195643610014,-1,-1,divergence,4,7823230,linear,% of S_EUR4
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of S_EUR4,95.16849737840676,100.12163214563961,socialism,1,4.953134767232854,5,+5,convergence,1,3465707,linear,% of S_EUR4
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of S_EUR4,100.12163214563961,92.39748808506774,socialism,1,-7.724144060571874,-8,-8,divergence,2,4364999,linear,% of S_EUR4
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of S_EUR4,92.39748808506774,92.73867963991995,transition,1,0.341191554852216,0,+0,no change,3,5249882,linear,% of S_EUR4
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of S_EUR4,92.73867963991995,93.88989364395302,capitalism,1,1.151214004033065,1,+1,convergence,4,5354244,linear,% of S_EUR4
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of S_EUR4,96.79640676761215,97.86658909595877,socialism,1,1.0701823283466183,1,+1,convergence,1,1446309,linear,% of S_EUR4
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of S_EUR4,97.86658909595877,95.46179582736102,socialism,1,-2.404793268597757,-2,-2,divergence,2,1675272,linear,% of S_EUR4
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of S_EUR4,95.46179582736102,95.51761712392964,transition,1,0.05582129656862378,0,+0,no change,3,1995417,linear,% of S_EUR4
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of S_EUR4,95.51761712392964,97.79930594787628,capitalism,1,2.281688823946638,2,+2,convergence,4,1988051,linear,% of S_EUR4
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of S_EUR4,95.79297820219966,101.34602222852064,socialism,1,5.5530440263209755,6,+6,convergence,1,37310845,linear,% of S_EUR4
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of S_EUR4,101.34602222852064,92.26905964700342,socialism,1,-9.076962581517222,-9,-9,divergence,2,45386845,linear,% of S_EUR4
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of S_EUR4,92.26905964700342,86.1415428914735,transition,1,-6.127516755529911,-6,-6,divergence,3,51917779,linear,% of S_EUR4
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of S_EUR4,86.1415428914735,87.99473478994683,capitalism,1,1.8531918984733267,2,+2,convergence,4,51665488,linear,% of S_EUR4
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of World,126.39801355335989,132.6565118755498,socialism,1,6.258498322189908,6,+6,convergence,1,7127548,linear,% of World
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of World,132.6565118755498,112.10645059633093,socialism,1,-20.550061279218866,-21,-21,divergence,2,8679894,linear,% of World
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of World,112.10645059633093,105.96531841798227,transition,1,-6.141132178348656,-6,-6,divergence,3,10158729,linear,% of World
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of World,105.96531841798227,101.72818145290245,capitalism,1,-4.237136965079827,-4,-4,divergence,4,10197421,linear,% of World
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of World,132.49249909471834,132.0548173526552,socialism,1,-0.43768174206314825,-0,+0,no change,1,7248464,linear,% of World
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of World,132.0548173526552,112.06991974186953,socialism,1,-19.984897610785666,-20,-20,divergence,2,8202371,linear,% of World
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of World,112.06991974186953,109.37136357401242,transition,1,-2.698556167857106,-3,-3,divergence,3,8936335,linear,% of World
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of World,109.37136357401242,103.37149136114279,capitalism,1,-5.999872212869633,-6,-6,divergence,4,8357522,linear,% of World
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of World,125.99106788750369,126.81161164868743,socialism,1,0.8205437611837425,1,+1,convergence,1,3864936,linear,% of World
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of World,126.81161164868743,113.66395063160749,socialism,1,-13.14766101707994,-13,-13,divergence,2,4346657,linear,% of World
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of World,113.66395063160749,111.83615719070247,transition,1,-1.827793440905026,-2,-2,divergence,3,4820680,linear,% of World
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of World,111.83615719070247,107.39503125623553,capitalism,1,-4.441125934466939,-4,-4,divergence,4,4619314,linear,% of World
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of World,138.82235787077752,130.11417195240517,socialism,1,-8.708185918372351,-9,-9,divergence,1,8916664,linear,% of World
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of World,130.11417195240517,112.49998040190212,socialism,1,-17.61419155050305,-18,-18,divergence,2,9706802,linear,% of World
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of World,112.49998040190212,112.78557744325443,transition,1,0.2855970413523039,0,+0,no change,3,10305562,linear,% of World
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of World,112.78557744325443,109.10858910965514,capitalism,1,-3.676988333599283,-4,-4,divergence,4,10311979,linear,% of World
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of World,143.03903057265532,130.9597666558637,socialism,1,-12.079263916791632,-12,-12,divergence,1,1102004,linear,% of World
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of World,130.9597666558637,110.53013638708282,socialism,1,-20.42963026878087,-20,-20,divergence,2,1292753,linear,% of World
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of World,110.53013638708282,104.51991855947055,transition,1,-6.010217827612266,-6,-6,divergence,3,1567538,linear,% of World
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of World,104.51991855947055,108.17841884722301,capitalism,1,3.65850028775246,4,+4,convergence,4,1452730,linear,% of World
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of World,133.93513010190887,128.05907680911153,socialism,1,-5.876053292797337,-6,-6,divergence,1,9337826,linear,% of World
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of World,128.05907680911153,108.80001630561742,socialism,1,-19.259060503494112,-19,-19,divergence,2,10141073,linear,% of World
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of World,108.80001630561742,107.84073167010114,transition,1,-0.9592846355162834,-1,-1,divergence,3,10403359,linear,% of World
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of World,107.84073167010114,105.268049211829,capitalism,1,-2.5726824582721406,-3,-3,divergence,4,10322744,linear,% of World
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of World,139.18145293397478,131.9018473077457,socialism,1,-7.279605626229085,-7,-7,divergence,1,1918675,linear,% of World
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of World,131.9018473077457,110.381974767057,socialism,1,-21.519872540688695,-22,-22,divergence,2,2252726,linear,% of World
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of World,110.381974767057,101.71650866114791,transition,1,-8.66546610590909,-9,-9,divergence,3,2664789,linear,% of World
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of World,101.71650866114791,104.12795512878336,capitalism,1,2.411446467635443,2,+2,convergence,4,2485908,linear,% of World
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of World,142.40554894556243,132.77336913746007,socialism,1,-9.632179808102364,-10,-10,divergence,1,2432951,linear,% of World
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of World,132.77336913746007,112.31607185133039,socialism,1,-20.457297286129673,-20,-20,divergence,2,2965212,linear,% of World
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of World,112.31607185133039,106.37575772521375,transition,1,-5.940314126116647,-6,-6,divergence,3,3696048,linear,% of World
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of World,106.37575772521375,103.90272436291676,capitalism,1,-2.473033362296988,-2,-2,divergence,4,3626997,linear,% of World
+CEE,Poland,POL,CEE: Poland,1950-1965,% of World,125.7330626110048,128.49650446779944,socialism,1,2.7634418567946426,3,+3,convergence,1,24780120,linear,% of World
+CEE,Poland,POL,CEE: Poland,1965-1989,% of World,128.49650446779944,111.02886878211149,socialism,1,-17.467635685687952,-17,-17,divergence,2,31288294,linear,% of World
+CEE,Poland,POL,CEE: Poland,1989-1995,% of World,111.02886878211149,110.90769816450555,transition,1,-0.12117061760594083,-0,+0,no change,3,37938044,linear,% of World
+CEE,Poland,POL,CEE: Poland,1995-2023,% of World,110.90769816450555,107.46691923126336,capitalism,1,-3.4407789332421856,-3,-3,divergence,4,38364630,linear,% of World
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of World,130.42155949856019,126.64734478448075,socialism,1,-3.7742147140794344,-4,-4,divergence,1,16397220,linear,% of World
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of World,126.64734478448075,109.03770203679112,socialism,1,-17.609642747689634,-18,-18,divergence,2,18713016,linear,% of World
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of World,109.03770203679112,106.84522754490095,transition,1,-2.1924744918901666,-2,-2,divergence,3,22887592,linear,% of World
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of World,106.84522754490095,103.78395886805141,capitalism,1,-3.0612686768495365,-3,-3,divergence,4,22657664,linear,% of World
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of World,119.56680116565792,128.3101995462753,socialism,1,8.743398380617379,9,+9,convergence,1,103392314,linear,% of World
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of World,128.3101995462753,109.25829822660732,socialism,1,-19.051901319667977,-19,-19,divergence,2,126634148,linear,% of World
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of World,109.25829822660732,98.63258823366219,transition,1,-10.625709992945133,-11,-11,divergence,3,148281823,linear,% of World
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of World,98.63258823366219,99.97908961943108,capitalism,1,1.3465013857688888,1,+1,convergence,4,148291356,linear,% of World
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of World,118.7373907195696,127.25978054539561,socialism,1,8.52238982582601,9,+9,convergence,1,6009148,linear,% of World
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of World,127.25978054539561,113.41748495258044,socialism,1,-13.842295592815177,-14,-14,divergence,2,7031084,linear,% of World
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of World,113.41748495258044,112.09077444025048,transition,1,-1.326710512329953,-1,-1,divergence,3,7881211,linear,% of World
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of World,112.09077444025048,104.91995287647569,capitalism,1,-7.170821563774794,-7,-7,divergence,4,7823230,linear,% of World
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of World,130.99770661976444,130.16084077966573,socialism,1,-0.8368658400987101,-1,-1,divergence,1,3465707,linear,% of World
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of World,130.16084077966573,111.21920550879014,socialism,1,-18.941635270875594,-19,-19,divergence,2,4364999,linear,% of World
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of World,111.21920550879014,111.36221769774836,transition,1,0.14301218895822387,0,+0,no change,3,5249882,linear,% of World
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of World,111.36221769774836,107.06852864722137,capitalism,1,-4.293689050526993,-4,-4,divergence,4,5354244,linear,% of World
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of World,133.23849430103633,127.2292235751655,socialism,1,-6.00927072587082,-6,-6,divergence,1,1446309,linear,% of World
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of World,127.2292235751655,114.90772431590878,socialism,1,-12.321499259256726,-12,-12,divergence,2,1675272,linear,% of World
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of World,114.90772431590878,114.69921410813836,transition,1,-0.2085102077704164,-0,+0,no change,3,1995417,linear,% of World
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of World,114.69921410813836,111.5266764521781,capitalism,1,-3.1725376559602694,-3,-3,divergence,4,1988051,linear,% of World
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of World,131.85729312158364,131.75258113801564,socialism,1,-0.10471198356799505,-0,+0,no change,1,37310845,linear,% of World
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of World,131.75258113801564,111.06461571265739,socialism,1,-20.687965425358257,-21,-21,divergence,2,45386845,linear,% of World
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of World,111.06461571265739,103.44026127552146,transition,1,-7.624354437135921,-8,-8,divergence,3,51917779,linear,% of World
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of World,103.44026127552146,100.34590962888859,capitalism,1,-3.094351646632873,-3,-3,divergence,4,51665488,linear,% of World
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,value,4.071444342335768,4.271530733243258,socialism,1,0.20008639090749014,0.2,+0.2,increase,1,7127548,logratio,value
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,value,4.271530733243258,4.269745001016933,socialism,1,-0.0017857322263257203,-0,+0,no change,2,8679894,logratio,value
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,value,4.269745001016933,4.230507281534723,transition,1,-0.039237719482209776,-0.04,-0.04,decrease,3,10158729,logratio,value
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,value,4.230507281534723,4.309911483225601,capitalism,1,0.07940420169087847,0.08,+0.08,increase,4,10197421,logratio,value
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,value,4.1185346095233,4.266984682563103,socialism,1,0.14845007303980307,0.15,+0.15,increase,1,7248464,logratio,value
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,value,4.266984682563103,4.269419089282974,socialism,1,0.0024344067198711627,0,+0,no change,2,8202371,logratio,value
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,value,4.269419089282974,4.262144522497035,transition,1,-0.007274566785938852,-0.01,-0.01,decrease,3,8936335,logratio,value
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,value,4.262144522497035,4.32593632667633,capitalism,1,0.06379180417929486,0.06,+0.06,increase,4,8357522,logratio,value
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,value,4.068219590962325,4.226470175535078,socialism,1,0.15825058457275265,0.16,+0.16,increase,1,3864936,logratio,value
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,value,4.226470175535078,4.283542422955487,socialism,1,0.05707224742040928,0.06,+0.06,increase,2,4346657,logratio,value
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,value,4.283542422955487,4.284430343707616,transition,1,8.879207521284016e-4,0,+0,no change,3,4820680,logratio,value
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,value,4.284430343707616,4.36412103188836,capitalism,1,0.07969068818074465,0.08,+0.08,increase,4,4619314,logratio,value
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,value,4.16520369116676,4.2521798740193155,socialism,1,0.08697618285255526,0.09,+0.09,increase,1,8916664,logratio,value
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,value,4.2521798740193155,4.273249176801301,socialism,1,0.021069302781985044,0.02,+0.02,increase,2,9706802,logratio,value
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,value,4.273249176801301,4.292883897038889,transition,1,0.01963472023758861,0.02,+0.02,increase,3,10305562,logratio,value
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,value,4.292883897038889,4.379950731477041,capitalism,1,0.08706683443815155,0.09,+0.09,increase,4,10311979,logratio,value
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,value,4.195126110391153,4.258657714472463,socialism,1,0.06353160408130964,0.06,+0.06,increase,1,1102004,logratio,value
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,value,4.258657714472463,4.255584340621495,socialism,1,-0.00307337385096762,-0,+0,no change,2,1292753,logratio,value
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,value,4.255584340621495,4.2167730871613,transition,1,-0.03881125346019498,-0.04,-0.04,decrease,3,1567538,logratio,value
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,value,4.2167730871613,4.371389005185108,capitalism,1,0.1546159180238078,0.15,+0.15,increase,4,1452730,logratio,value
+world regions,G7,G7,world regions: G7,1950-1965,value,4.188272964516715,4.2564680171380065,socialism,1,0.06819505262129155,0.07,+0.07,increase,1,462630950,logratio,value
+world regions,G7,G7,world regions: G7,1965-1989,value,4.2564680171380065,4.334382245090463,socialism,1,0.07791422795245673,0.08,+0.08,increase,2,546834533,logratio,value
+world regions,G7,G7,world regions: G7,1989-1995,value,4.334382245090463,4.346012985329902,transition,1,0.011630740239438886,0.01,+0.01,increase,3,650839180,logratio,value
+world regions,G7,G7,world regions: G7,1995-2023,value,4.346012985329902,4.3993365371677,capitalism,1,0.05332355183779747,0.05,+0.05,increase,4,679107311,logratio,value
+world regions,Germany,DE,world regions: Germany,1950-1965,value,4.201870731159109,4.2573856053948065,socialism,1,0.055514874235697675,0.06,+0.06,increase,1,69847722,logratio,value
+world regions,Germany,DE,world regions: Germany,1965-1989,value,4.2573856053948065,4.323695474612294,socialism,1,0.06630986921748772,0.07,+0.07,increase,2,75966929,logratio,value
+world regions,Germany,DE,world regions: Germany,1989-1995,value,4.323695474612294,4.337963716947637,transition,1,0.014268242335342407,0.01,+0.01,increase,3,79007007,logratio,value
+world regions,Germany,DE,world regions: Germany,1995-2023,value,4.337963716947637,4.399101279701801,capitalism,1,0.0611375627541646,0.06,+0.06,increase,4,82019850,logratio,value
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,value,4.129364155323141,4.236259258223277,socialism,1,0.10689510290013615,0.11,+0.11,increase,1,9337826,logratio,value
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,value,4.236259258223277,4.239807613651793,socialism,1,0.003548355428516281,0,+0,no change,2,10141073,logratio,value
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,value,4.239807613651793,4.2480508576109335,transition,1,0.008243243959140223,0.01,+0.01,increase,3,10403359,logratio,value
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,value,4.2480508576109335,4.344117061600661,capitalism,1,0.09606620398972776,0.1,+0.1,increase,4,10322744,logratio,value
+world regions,LAT_AM,LAT_AM,world regions: LAT_AM,1950-1965,value,3.910794401243578,4.055265372811039,socialism,1,0.14447097156746125,0.14,+0.14,increase,1,129239802,logratio,value
+world regions,LAT_AM,LAT_AM,world regions: LAT_AM,1965-1989,value,4.055265372811039,4.216370345983346,socialism,1,0.1611049731723071,0.16,+0.16,increase,2,194869623,logratio,value
+world regions,LAT_AM,LAT_AM,world regions: LAT_AM,1989-1995,value,4.216370345983346,4.245086135958181,transition,1,0.028715789974834927,0.03,+0.03,increase,3,337079546,logratio,value
+world regions,LAT_AM,LAT_AM,world regions: LAT_AM,1995-2023,value,4.245086135958181,4.333870213495445,capitalism,1,0.08878407753726414,0.09,+0.09,increase,4,374006763,logratio,value
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,value,4.1677870749115415,4.26582562819915,socialism,1,0.09803855328760847,0.1,+0.1,increase,1,1918675,logratio,value
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,value,4.26582562819915,4.2542429778372925,socialism,1,-0.01158265036185746,-0.01,-0.01,decrease,2,2252726,logratio,value
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,value,4.2542429778372925,4.189585042627782,transition,1,-0.06465793520951024,-0.06,-0.06,decrease,3,2664789,logratio,value
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,value,4.189585042627782,4.3332275954650665,capitalism,1,0.14364255283728422,0.14,+0.14,increase,4,2485908,logratio,value
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,value,4.1906875418383756,4.272411246537499,socialism,1,0.08172370469912327,0.08,+0.08,increase,1,2432951,logratio,value
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,value,4.272411246537499,4.271613096194495,socialism,1,-7.981503430034564e-4,-0,+0,no change,2,2965212,logratio,value
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,value,4.271613096194495,4.23437313571469,transition,1,-0.03723996047980549,-0.04,-0.04,decrease,3,3696048,logratio,value
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,value,4.23437313571469,4.331062233563428,capitalism,1,0.09668909784873847,0.1,+0.1,increase,4,3626997,logratio,value
+CEE,Poland,POL,CEE: Poland,1950-1965,value,4.066169685247404,4.2396692645882395,socialism,1,0.17349957934083537,0.17,+0.17,increase,1,24780120,logratio,value
+CEE,Poland,POL,CEE: Poland,1965-1989,value,4.2396692645882395,4.2600863759779,socialism,1,0.020417111389660292,0.02,+0.02,increase,2,31288294,logratio,value
+CEE,Poland,POL,CEE: Poland,1989-1995,value,4.2600863759779,4.276093733012215,transition,1,0.016007357034315106,0.02,+0.02,increase,3,37938044,logratio,value
+CEE,Poland,POL,CEE: Poland,1995-2023,value,4.276093733012215,4.36479018692067,capitalism,1,0.08869645390845537,0.09,+0.09,increase,4,38364630,logratio,value
+CEE,Romania,ROU,CEE: Romania,1950-1965,value,4.1027805457097415,4.225173974449762,socialism,1,0.12239342874002013,0.12,+0.12,increase,1,16397220,logratio,value
+CEE,Romania,ROU,CEE: Romania,1965-1989,value,4.225173974449762,4.241989842030848,socialism,1,0.01681586758108633,0.02,+0.02,increase,2,18713016,logratio,value
+CEE,Romania,ROU,CEE: Romania,1989-1995,value,4.241989842030848,4.238776741464335,transition,1,-0.0032131005665130274,-0,+0,no change,3,22887592,logratio,value
+CEE,Romania,ROU,CEE: Romania,1995-2023,value,4.238776741464335,4.329918534738221,capitalism,1,0.09114179327388605,0.09,+0.09,increase,4,22657664,logratio,value
+USSR,Russia,RUS,USSR: Russia,1950-1965,value,4.015883797061877,4.2382183293027005,socialism,1,0.2223345322408239,0.22,+0.22,increase,1,103392314,logratio,value
+USSR,Russia,RUS,USSR: Russia,1965-1989,value,4.2382183293027005,4.2440109167609386,socialism,1,0.005792587458238074,0.01,+0.01,increase,2,126634148,logratio,value
+USSR,Russia,RUS,USSR: Russia,1989-1995,value,4.2440109167609386,4.158797142166834,transition,1,-0.08521377459410484,-0.09,-0.09,decrease,3,148281823,logratio,value
+USSR,Russia,RUS,USSR: Russia,1995-2023,value,4.158797142166834,4.292568175109379,capitalism,1,0.133771032942545,0.13,+0.13,increase,4,148291356,logratio,value
+world regions,S_EUR4,S_EUR4,world regions: S_EUR4,1950-1965,value,4.1567096014781315,4.251322903347,socialism,1,0.0946133018688684,0.09,+0.09,increase,1,90538481,logratio,value
+world regions,S_EUR4,S_EUR4,world regions: S_EUR4,1965-1989,value,4.251322903347,4.34086960061224,socialism,1,0.08954669726523967,0.09,+0.09,increase,2,101002195,logratio,value
+world regions,S_EUR4,S_EUR4,world regions: S_EUR4,1989-1995,value,4.34086960061224,4.3555680811032955,transition,1,0.014698480491055932,0.01,+0.01,increase,3,116225538,logratio,value
+world regions,S_EUR4,S_EUR4,world regions: S_EUR4,1995-2023,value,4.3555680811032955,4.424123633388679,capitalism,1,0.06855555228538357,0.07,+0.07,increase,4,118006877,logratio,value
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,value,4.008922830168105,4.229998076552716,socialism,1,0.2210752463846113,0.22,+0.22,increase,1,6009148,logratio,value
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,value,4.229998076552716,4.281371697064373,socialism,1,0.05137362051165706,0.05,+0.05,increase,2,7031084,logratio,value
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,value,4.281371697064373,4.286704454797556,transition,1,0.00533275773318298,0.01,+0.01,increase,3,7881211,logratio,value
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,value,4.286704454797556,4.340804820653128,capitalism,1,0.05410036585557165,0.05,+0.05,increase,4,7823230,logratio,value
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,value,4.107188392633915,4.252538485683731,socialism,1,0.1453500930498155,0.15,+0.15,increase,1,3465707,logratio,value
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,value,4.252538485683731,4.261799207675722,socialism,1,0.009260721991990906,0.01,+0.01,increase,2,4364999,logratio,value
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,value,4.261799207675722,4.280183536753964,transition,1,0.018384329078242168,0.02,+0.02,increase,3,5249882,logratio,value
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,value,4.280183536753964,4.361076198897509,capitalism,1,0.08089266214354485,0.08,+0.08,increase,4,5354244,logratio,value
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,value,4.124149288914305,4.2297579328146195,socialism,1,0.10560864390031455,0.11,+0.11,increase,1,1446309,logratio,value
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,value,4.2297579328146195,4.294425538379453,socialism,1,0.06466760556483386,0.06,+0.06,increase,2,1675272,logratio,value
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,value,4.294425538379453,4.30970859809081,transition,1,0.015283059711356906,0.02,+0.02,increase,3,1995417,logratio,value
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,value,4.30970859809081,4.401870927768696,capitalism,1,0.09216232967788596,0.09,+0.09,increase,4,1988051,logratio,value
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,value,4.113728801352562,4.264693341618131,socialism,1,0.15096454026556927,0.15,+0.15,increase,1,37310845,logratio,value
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,value,4.264693341618131,4.260408284843762,socialism,1,-0.004285056774369522,-0,+0,no change,2,45386845,logratio,value
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,value,4.260408284843762,4.206389686021131,transition,1,-0.054018598822630715,-0.05,-0.05,decrease,3,51917779,logratio,value
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,value,4.206389686021131,4.29623042815637,capitalism,1,0.08984074213523918,0.09,+0.09,increase,4,51665488,logratio,value
+world regions,W_EUR3,W_EUR3,world regions: W_EUR3,1950-1965,value,4.195377395472463,4.257763059666527,socialism,1,0.06238566419406322,0.06,+0.06,increase,1,158122425,logratio,value
+world regions,W_EUR3,W_EUR3,world regions: W_EUR3,1965-1989,value,4.257763059666527,4.333562958378007,socialism,1,0.0757998987114803,0.08,+0.08,increase,2,176220383,logratio,value
+world regions,W_EUR3,W_EUR3,world regions: W_EUR3,1989-1995,value,4.333562958378007,4.348952676472338,transition,1,0.015389718094331428,0.02,+0.02,increase,3,192668736,logratio,value
+world regions,W_EUR3,W_EUR3,world regions: W_EUR3,1995-2023,value,4.348952676472338,4.414655289097523,capitalism,1,0.06570261262518429,0.07,+0.07,increase,4,197615305,logratio,value
+world regions,World,World,world regions: World,1950-1965,value,3.837178762293455,3.9889377491962716,socialism,1,0.15175898690281686,0.15,+0.15,increase,1,2493092801,logratio,value
+world regions,World,World,world regions: World,1965-1989,value,3.9889377491962716,4.155466315350246,socialism,1,0.16652856615397438,0.17,+0.17,increase,2,3334533671,logratio,value
+world regions,World,World,world regions: World,1989-1995,value,4.155466315350246,4.172565611683368,transition,1,0.017099296333121572,0.02,+0.02,increase,3,5234431681,logratio,value
+world regions,World,World,world regions: World,1995-2023,value,4.172565611683368,4.292777300780317,capitalism,1,0.12021168909694957,0.12,+0.12,increase,4,5758878939,logratio,value
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of DE,-0.13042638882334068,0.014145127848452711,socialism,0.01,0.14457151667179338,0.14,+0.14,convergence,1,7127548,logratio,% of DE
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of DE,0.014145127848452711,-0.053950473595361516,socialism,0.01,-0.06809560144381423,-0.07,-0.07,divergence,2,8679894,logratio,% of DE
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of DE,-0.053950473595361516,-0.10745643541291355,transition,0.01,-0.05350596181755204,-0.05,-0.05,divergence,3,10158729,logratio,% of DE
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of DE,-0.10745643541291355,-0.08918979647619915,capitalism,0.01,0.018266638936714402,0.02,+0.02,convergence,4,10197421,logratio,% of DE
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of DE,-0.08333612163580865,0.009599077168296636,socialism,0.01,0.09293519880410529,0.09,+0.09,convergence,1,7248464,logratio,% of DE
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of DE,0.009599077168296636,-0.054276385329320366,socialism,0.01,-0.063875462497617,-0.06,-0.06,divergence,2,8202371,logratio,% of DE
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of DE,-0.054276385329320366,-0.07581919445060188,transition,0.01,-0.021542809121281516,-0.02,-0.02,divergence,3,8936335,logratio,% of DE
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of DE,-0.07581919445060188,-0.07316495302547037,capitalism,0.01,0.002654241425131515,0,+0,no change,4,8357522,logratio,% of DE
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of DE,-0.13365114019678348,-0.03091542985972808,socialism,0.01,0.10273571033705539,0.1,+0.1,convergence,1,3864936,logratio,% of DE
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of DE,-0.03091542985972808,-0.040153051656806785,socialism,0.01,-0.009237621797078703,-0.01,-0.01,divergence,2,4346657,logratio,% of DE
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of DE,-0.040153051656806785,-0.053533373240021324,transition,0.01,-0.01338032158321454,-0.01,-0.01,divergence,3,4820680,logratio,% of DE
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of DE,-0.053533373240021324,-0.034980247813439995,capitalism,0.01,0.01855312542658133,0.02,+0.02,convergence,4,4619314,logratio,% of DE
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of DE,-0.03666703999234806,-0.005205731375490235,socialism,0.01,0.03146130861685783,0.03,+0.03,convergence,1,8916664,logratio,% of DE
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of DE,-0.005205731375490235,-0.05044629781099395,socialism,0.01,-0.04524056643550371,-0.05,-0.05,divergence,2,9706802,logratio,% of DE
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of DE,-0.05044629781099395,-0.045079819908747605,transition,0.01,0.005366477902246342,0.01,+0.01,convergence,3,10305562,logratio,% of DE
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of DE,-0.045079819908747605,-0.019150548224759943,capitalism,0.01,0.025929271683987662,0.03,+0.03,convergence,4,10311979,logratio,% of DE
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of DE,-0.006744620767955146,0.0012721090776570867,socialism,0.01,0.008016729845612233,0.01,+0.01,convergence,1,1102004,logratio,% of DE
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of DE,0.0012721090776570867,-0.06811113399079925,socialism,0.01,-0.06938324306845634,-0.07,-0.07,divergence,2,1292753,logratio,% of DE
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of DE,-0.06811113399079925,-0.12119062978633613,transition,0.01,-0.05307949579553688,-0.05,-0.05,divergence,3,1567538,logratio,% of DE
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of DE,-0.12119062978633613,-0.027712274516692927,capitalism,0.01,0.09347835526964321,0.09,+0.09,convergence,4,1452730,logratio,% of DE
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of DE,-0.07250657583596798,-0.021126347171529298,socialism,0.01,0.051380228664438685,0.05,+0.05,convergence,1,9337826,logratio,% of DE
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of DE,-0.021126347171529298,-0.08388786096050084,socialism,0.01,-0.06276151378897155,-0.06,-0.06,divergence,2,10141073,logratio,% of DE
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of DE,-0.08388786096050084,-0.08991285933670366,transition,0.01,-0.0060249983762028225,-0.01,-0.01,divergence,3,10403359,logratio,% of DE
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of DE,-0.08991285933670366,-0.05498421810113933,capitalism,0.01,0.034928641235564335,0.03,+0.03,convergence,4,10322744,logratio,% of DE
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of DE,-0.03408365624756669,0.00844002280434356,socialism,0.01,0.042523679051910256,0.04,+0.04,convergence,1,1918675,logratio,% of DE
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of DE,0.00844002280434356,-0.06945249677500143,socialism,0.01,-0.07789251957934498,-0.08,-0.08,divergence,2,2252726,logratio,% of DE
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of DE,-0.06945249677500143,-0.14837867431985496,transition,0.01,-0.07892617754485354,-0.08,-0.08,divergence,3,2664789,logratio,% of DE
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of DE,-0.14837867431985496,-0.06587368423673412,capitalism,0.01,0.08250499008312084,0.08,+0.08,convergence,4,2485908,logratio,% of DE
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of DE,-0.011183189320733264,0.01502564114269263,socialism,0.01,0.026208830463425894,0.03,+0.03,convergence,1,2432951,logratio,% of DE
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of DE,0.01502564114269263,-0.052082378417798766,socialism,0.01,-0.0671080195604914,-0.07,-0.07,divergence,2,2965212,logratio,% of DE
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of DE,-0.052082378417798766,-0.10359058123294664,transition,0.01,-0.05150820281514787,-0.05,-0.05,divergence,3,3696048,logratio,% of DE
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of DE,-0.10359058123294664,-0.06803904613837236,capitalism,0.01,0.035551535094574274,0.04,+0.04,convergence,4,3626997,logratio,% of DE
+CEE,Poland,POL,CEE: Poland,1950-1965,% of DE,-0.13570104591170432,-0.017716340806567008,socialism,0.01,0.11798470510513731,0.12,+0.12,convergence,1,24780120,logratio,% of DE
+CEE,Poland,POL,CEE: Poland,1965-1989,% of DE,-0.017716340806567008,-0.06360909863439432,socialism,0.01,-0.04589275782782731,-0.05,-0.05,divergence,2,31288294,logratio,% of DE
+CEE,Poland,POL,CEE: Poland,1989-1995,% of DE,-0.06360909863439432,-0.06186998393542229,transition,0.01,0.001739114698972026,0,+0,no change,3,37938044,logratio,% of DE
+CEE,Poland,POL,CEE: Poland,1995-2023,% of DE,-0.06186998393542229,-0.03431109278113073,capitalism,0.01,0.02755889115429156,0.03,+0.03,convergence,4,38364630,logratio,% of DE
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of DE,-0.09909018544936715,-0.032211630945044575,socialism,0.01,0.06687855450432258,0.07,+0.07,convergence,1,16397220,logratio,% of DE
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of DE,-0.032211630945044575,-0.08170563258144592,socialism,0.01,-0.049494001636401344,-0.05,-0.05,divergence,2,18713016,logratio,% of DE
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of DE,-0.08170563258144592,-0.09918697548330221,transition,0.01,-0.017481342901856295,-0.02,-0.02,divergence,3,22887592,logratio,% of DE
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of DE,-0.09918697548330221,-0.06918274496357983,capitalism,0.01,0.030004230519722383,0.03,+0.03,convergence,4,22657664,logratio,% of DE
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of DE,-0.18598693409723174,-0.019167276092105577,socialism,0.01,0.16681965800512616,0.17,+0.17,convergence,1,103392314,logratio,% of DE
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of DE,-0.019167276092105577,-0.0796845578513552,socialism,0.01,-0.06051728175924962,-0.06,-0.06,divergence,2,126634148,logratio,% of DE
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of DE,-0.0796845578513552,-0.17916657478080347,transition,0.01,-0.09948201692944827,-0.1,-0.1,divergence,3,148281823,logratio,% of DE
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of DE,-0.17916657478080347,-0.106533104592422,capitalism,0.01,0.07263347018838147,0.07,+0.07,convergence,4,148291356,logratio,% of DE
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of DE,-0.1929479009910034,-0.02738752884208988,socialism,0.01,0.1655603721489135,0.17,+0.17,convergence,1,6009148,logratio,% of DE
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of DE,-0.02738752884208988,-0.04232377754792052,socialism,0.01,-0.01493624870583064,-0.01,-0.01,divergence,2,7031084,logratio,% of DE
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of DE,-0.04232377754792052,-0.05125926215008079,transition,0.01,-0.008935484602160267,-0.01,-0.01,divergence,3,7881211,logratio,% of DE
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of DE,-0.05125926215008079,-0.05829645904867301,capitalism,0.01,-0.007037196898592224,-0.01,-0.01,divergence,4,7823230,logratio,% of DE
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of DE,-0.09468233852519359,-0.004847119711075623,socialism,0.01,0.08983521881411796,0.09,+0.09,convergence,1,3465707,logratio,% of DE
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of DE,-0.004847119711075623,-0.06189626693657233,socialism,0.01,-0.057049147225496706,-0.06,-0.06,divergence,2,4364999,logratio,% of DE
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of DE,-0.06189626693657233,-0.05778018019367316,transition,0.01,0.004116086742899171,0,+0,no change,3,5249882,logratio,% of DE
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of DE,-0.05778018019367316,-0.038025080804292066,capitalism,0.01,0.019755099389381095,0.02,+0.02,convergence,4,5354244,logratio,% of DE
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of DE,-0.07772144224480373,-0.027627672580186353,socialism,0.01,0.050093769664617385,0.05,+0.05,convergence,1,1446309,logratio,% of DE
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of DE,-0.027627672580186353,-0.02926993623284118,socialism,0.01,-0.0016422636526548275,-0,+0,no change,2,1675272,logratio,% of DE
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of DE,-0.02926993623284118,-0.02825511885682659,transition,0.01,0.0010148173760145887,0,+0,no change,3,1995417,logratio,% of DE
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of DE,-0.02825511885682659,0.0027696480668957055,capitalism,0.01,0.031024766923722295,0.03,+0.03,convergence,4,1988051,logratio,% of DE
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of DE,-0.08814192980654663,0.007307736223325357,socialism,0.01,0.09544966602987198,0.1,+0.1,convergence,1,37310845,logratio,% of DE
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of DE,0.007307736223325357,-0.06328718976853194,socialism,0.01,-0.0705949259918573,-0.07,-0.07,divergence,2,45386845,logratio,% of DE
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of DE,-0.06328718976853194,-0.13157403092650544,transition,0.01,-0.0682868411579735,-0.07,-0.07,divergence,3,51917779,logratio,% of DE
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of DE,-0.13157403092650544,-0.10287085154543031,capitalism,0.01,0.028703179381075125,0.03,+0.03,convergence,4,51665488,logratio,% of DE
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of W_EUR3,-0.12393305313669575,0.01376767357673194,socialism,0.01,0.1377007267134277,0.14,+0.14,convergence,1,7127548,logratio,% of W_EUR3
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of W_EUR3,0.01376767357673194,-0.06381795736107411,socialism,0.01,-0.07758563093780604,-0.08,-0.08,divergence,2,8679894,logratio,% of W_EUR3
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of W_EUR3,-0.06381795736107411,-0.11844539493761491,transition,0.01,-0.0546274375765408,-0.05,-0.05,divergence,3,10158729,logratio,% of W_EUR3
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of W_EUR3,-0.11844539493761491,-0.10474380587192081,capitalism,0.01,0.013701589065694103,0.01,+0.01,convergence,4,10197421,logratio,% of W_EUR3
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of W_EUR3,-0.07684278594916376,0.00922162289657621,socialism,0.01,0.08606440884573997,0.09,+0.09,convergence,1,7248464,logratio,% of W_EUR3
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of W_EUR3,0.00922162289657621,-0.06414386909503293,socialism,0.01,-0.07336549199160915,-0.07,-0.07,divergence,2,8202371,logratio,% of W_EUR3
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of W_EUR3,-0.06414386909503293,-0.08680815397530303,transition,0.01,-0.0226642848802701,-0.02,-0.02,divergence,3,8936335,logratio,% of W_EUR3
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of W_EUR3,-0.08680815397530303,-0.0887189624211921,capitalism,0.01,-0.0019108084458890617,-0,+0,no change,4,8357522,logratio,% of W_EUR3
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of W_EUR3,-0.12715780451013853,-0.03129288413144859,socialism,0.01,0.09586492037868993,0.1,+0.1,convergence,1,3864936,logratio,% of W_EUR3
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of W_EUR3,-0.03129288413144859,-0.05002053542251922,socialism,0.01,-0.01872765129107063,-0.02,-0.02,divergence,2,4346657,logratio,% of W_EUR3
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of W_EUR3,-0.05002053542251922,-0.06452233276472254,transition,0.01,-0.014501797342203318,-0.01,-0.01,divergence,3,4820680,logratio,% of W_EUR3
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of W_EUR3,-0.06452233276472254,-0.050534257209161736,capitalism,0.01,0.013988075555560801,0.01,+0.01,convergence,4,4619314,logratio,% of W_EUR3
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of W_EUR3,-0.03017370430570309,-0.005583185647210813,socialism,0.01,0.024590518658492277,0.02,+0.02,convergence,1,8916664,logratio,% of W_EUR3
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of W_EUR3,-0.005583185647210813,-0.060313781576706395,socialism,0.01,-0.054730595929495585,-0.05,-0.05,divergence,2,9706802,logratio,% of W_EUR3
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of W_EUR3,-0.060313781576706395,-0.05606877943344884,transition,0.01,0.004245002143257556,0,+0,no change,3,10305562,logratio,% of W_EUR3
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of W_EUR3,-0.05606877943344884,-0.034704557620481566,capitalism,0.01,0.021364221812967273,0.02,+0.02,convergence,4,10311979,logratio,% of W_EUR3
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of W_EUR3,-2.512850813101853e-4,8.946548059363431e-4,socialism,0.01,0.0011459398872465283,0,+0,no change,1,1102004,logratio,% of W_EUR3
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of W_EUR3,8.946548059363431e-4,-0.0779786177565118,socialism,0.01,-0.07887327256244814,-0.08,-0.08,divergence,2,1292753,logratio,% of W_EUR3
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of W_EUR3,-0.0779786177565118,-0.1321795893110373,transition,0.01,-0.054200971554525496,-0.05,-0.05,divergence,3,1567538,logratio,% of W_EUR3
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of W_EUR3,-0.1321795893110373,-0.043266283912414556,capitalism,0.01,0.08891330539862274,0.09,+0.09,convergence,4,1452730,logratio,% of W_EUR3
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of W_EUR3,-0.06601324014932296,-0.0215038014432498,socialism,0.01,0.04450943870607316,0.04,+0.04,convergence,1,9337826,logratio,% of W_EUR3
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of W_EUR3,-0.0215038014432498,-0.09375534472621344,socialism,0.01,-0.07225154328296364,-0.07,-0.07,divergence,2,10141073,logratio,% of W_EUR3
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of W_EUR3,-0.09375534472621344,-0.10090181886140494,transition,0.01,-0.007146474135191497,-0.01,-0.01,divergence,3,10403359,logratio,% of W_EUR3
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of W_EUR3,-0.10090181886140494,-0.07053822749686116,capitalism,0.01,0.03036359136454378,0.03,+0.03,convergence,4,10322744,logratio,% of W_EUR3
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of W_EUR3,-0.02759032056092176,0.008062568532622957,socialism,0.01,0.035652889093544714,0.04,+0.04,convergence,1,1918675,logratio,% of W_EUR3
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of W_EUR3,0.008062568532622957,-0.07931998054071393,socialism,0.01,-0.08738254907333688,-0.09,-0.09,divergence,2,2252726,logratio,% of W_EUR3
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of W_EUR3,-0.07931998054071393,-0.1593676338445561,transition,0.01,-0.08004765330384217,-0.08,-0.08,divergence,3,2664789,logratio,% of W_EUR3
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of W_EUR3,-0.1593676338445561,-0.0814276936324559,capitalism,0.01,0.0779399402121002,0.08,+0.08,convergence,4,2485908,logratio,% of W_EUR3
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of W_EUR3,-0.004689853634088247,0.014648186870972076,socialism,0.01,0.019338040505060324,0.02,+0.02,convergence,1,2432951,logratio,% of W_EUR3
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of W_EUR3,0.014648186870972076,-0.06194986218351127,socialism,0.01,-0.07659804905448335,-0.08,-0.08,divergence,2,2965212,logratio,% of W_EUR3
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of W_EUR3,-0.06194986218351127,-0.11457954075764776,transition,0.01,-0.05262967857413649,-0.05,-0.05,divergence,3,3696048,logratio,% of W_EUR3
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of W_EUR3,-0.11457954075764776,-0.08359305553409407,capitalism,0.01,0.030986485223553684,0.03,+0.03,convergence,4,3626997,logratio,% of W_EUR3
+CEE,Poland,POL,CEE: Poland,1950-1965,% of W_EUR3,-0.1292077102250592,-0.01809379507828744,socialism,0.01,0.11111391514677176,0.11,+0.11,convergence,1,24780120,logratio,% of W_EUR3
+CEE,Poland,POL,CEE: Poland,1965-1989,% of W_EUR3,-0.01809379507828744,-0.07347658240010686,socialism,0.01,-0.05538278732181942,-0.06,-0.06,divergence,2,31288294,logratio,% of W_EUR3
+CEE,Poland,POL,CEE: Poland,1989-1995,% of W_EUR3,-0.07347658240010686,-0.0728589434601236,transition,0.01,6.176389399832616e-4,0,+0,no change,3,37938044,logratio,% of W_EUR3
+CEE,Poland,POL,CEE: Poland,1995-2023,% of W_EUR3,-0.0728589434601236,-0.049865102176852506,capitalism,0.01,0.022993841283271095,0.02,+0.02,convergence,4,38364630,logratio,% of W_EUR3
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of W_EUR3,-0.09259684976272199,-0.0325890852167651,socialism,0.01,0.06000776454595689,0.06,+0.06,convergence,1,16397220,logratio,% of W_EUR3
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of W_EUR3,-0.0325890852167651,-0.09157311634715844,socialism,0.01,-0.058984031130393334,-0.06,-0.06,divergence,2,18713016,logratio,% of W_EUR3
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of W_EUR3,-0.09157311634715844,-0.11017593500800345,transition,0.01,-0.01860281866084501,-0.02,-0.02,divergence,3,22887592,logratio,% of W_EUR3
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of W_EUR3,-0.11017593500800345,-0.08473675435930153,capitalism,0.01,0.025439180648701917,0.03,+0.03,convergence,4,22657664,logratio,% of W_EUR3
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of W_EUR3,-0.17949359841058676,-0.019544730363826104,socialism,0.01,0.15994886804676067,0.16,+0.16,convergence,1,103392314,logratio,% of W_EUR3
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of W_EUR3,-0.019544730363826104,-0.08955204161706795,socialism,0.01,-0.07000731125324185,-0.07,-0.07,divergence,2,126634148,logratio,% of W_EUR3
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of W_EUR3,-0.08955204161706795,-0.19015553430550475,transition,0.01,-0.1006034926884368,-0.1,-0.1,divergence,3,148281823,logratio,% of W_EUR3
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of W_EUR3,-0.19015553430550475,-0.1220871139881437,capitalism,0.01,0.06806842031736104,0.07,+0.07,convergence,4,148291356,logratio,% of W_EUR3
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of W_EUR3,-0.1864545653043584,-0.027764983113810416,socialism,0.01,0.15868958219054796,0.16,+0.16,convergence,1,6009148,logratio,% of W_EUR3
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of W_EUR3,-0.027764983113810416,-0.05219126131363312,socialism,0.01,-0.024426278199822706,-0.02,-0.02,divergence,2,7031084,logratio,% of W_EUR3
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of W_EUR3,-0.05219126131363312,-0.06224822167478197,transition,0.01,-0.01005696036114885,-0.01,-0.01,divergence,3,7881211,logratio,% of W_EUR3
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of W_EUR3,-0.06224822167478197,-0.07385046844439469,capitalism,0.01,-0.011602246769612717,-0.01,-0.01,divergence,4,7823230,logratio,% of W_EUR3
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of W_EUR3,-0.08818900283854864,-0.005224573982796251,socialism,0.01,0.08296442885575238,0.08,+0.08,convergence,1,3465707,logratio,% of W_EUR3
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of W_EUR3,-0.005224573982796251,-0.07176375070228481,socialism,0.01,-0.06653917671948856,-0.07,-0.07,divergence,2,4364999,logratio,% of W_EUR3
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of W_EUR3,-0.07176375070228481,-0.06876913971837442,transition,0.01,0.0029946109839103924,0,+0,no change,3,5249882,logratio,% of W_EUR3
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of W_EUR3,-0.06876913971837442,-0.053579090200013904,capitalism,0.01,0.015190049518360518,0.02,+0.02,convergence,4,5354244,logratio,% of W_EUR3
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of W_EUR3,-0.07122810655815887,-0.028005126851906877,socialism,0.01,0.04322297970625199,0.04,+0.04,convergence,1,1446309,logratio,% of W_EUR3
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of W_EUR3,-0.028005126851906877,-0.03913741999855366,socialism,0.01,-0.011132293146646786,-0.01,-0.01,divergence,2,1675272,logratio,% of W_EUR3
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of W_EUR3,-0.03913741999855366,-0.03924407838152792,transition,0.01,-1.06658382974259e-4,-0,+0,no change,3,1995417,logratio,% of W_EUR3
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of W_EUR3,-0.03924407838152792,-0.012784361328826082,capitalism,0.01,0.02645971705270184,0.03,+0.03,convergence,4,1988051,logratio,% of W_EUR3
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of W_EUR3,-0.08164859411990161,0.006930281951604921,socialism,0.01,0.08857887607150652,0.09,+0.09,convergence,1,37310845,logratio,% of W_EUR3
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of W_EUR3,0.006930281951604921,-0.07315467353424439,socialism,0.01,-0.0800849554858493,-0.08,-0.08,divergence,2,45386845,logratio,% of W_EUR3
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of W_EUR3,-0.07315467353424439,-0.14256299045120682,transition,0.01,-0.06940831691696243,-0.07,-0.07,divergence,3,51917779,logratio,% of W_EUR3
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of W_EUR3,-0.14256299045120682,-0.11842486094115197,capitalism,0.01,0.024138129510054854,0.02,+0.02,convergence,4,51665488,logratio,% of W_EUR3
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of LAT_AM,0.16064994109219,0.2162653604322198,socialism,0.01,0.05561541934002981,0.06,+0.06,convergence,1,7127548,logratio,% of LAT_AM
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of LAT_AM,0.2162653604322198,0.053374655033586564,socialism,0.01,-0.16289070539863323,-0.16,-0.16,divergence,2,8679894,logratio,% of LAT_AM
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of LAT_AM,0.053374655033586564,-0.014578854423458139,transition,0.01,-0.0679535094570447,-0.07,-0.07,divergence,3,10158729,logratio,% of LAT_AM
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of LAT_AM,-0.014578854423458139,-0.023958730269843475,capitalism,0.01,-0.009379875846385336,-0.01,-0.01,divergence,4,10197421,logratio,% of LAT_AM
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of LAT_AM,0.20774020827972192,0.21171930975206404,socialism,0.01,0.0039791014723421225,0,+0,no change,1,7248464,logratio,% of LAT_AM
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of LAT_AM,0.21171930975206404,0.053048743299627873,socialism,0.01,-0.15867056645243616,-0.16,-0.16,divergence,2,8202371,logratio,% of LAT_AM
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of LAT_AM,0.053048743299627873,0.017058386538853623,transition,0.01,-0.03599035676077425,-0.04,-0.04,divergence,3,8936335,logratio,% of LAT_AM
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of LAT_AM,0.017058386538853623,-0.007933886819114796,capitalism,0.01,-0.02499227335796842,-0.02,-0.02,divergence,4,8357522,logratio,% of LAT_AM
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of LAT_AM,0.15742518971874717,0.17120480272403923,socialism,0.01,0.013779613005292068,0.01,+0.01,convergence,1,3864936,logratio,% of LAT_AM
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of LAT_AM,0.17120480272403923,0.0671720769721414,socialism,0.01,-0.10403272575189783,-0.1,-0.1,divergence,2,4346657,logratio,% of LAT_AM
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of LAT_AM,0.0671720769721414,0.03934420774943425,transition,0.01,-0.027827869222707156,-0.03,-0.03,divergence,3,4820680,logratio,% of LAT_AM
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of LAT_AM,0.03934420774943425,0.030250818392915674,capitalism,0.01,-0.009093389356518575,-0.01,-0.01,divergence,4,4619314,logratio,% of LAT_AM
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of LAT_AM,0.25440928992318257,0.19691450120827717,socialism,0.01,-0.057494788714905404,-0.06,-0.06,divergence,1,8916664,logratio,% of LAT_AM
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of LAT_AM,0.19691450120827717,0.05687883081795431,socialism,0.01,-0.14003567039032286,-0.14,-0.14,divergence,2,9706802,logratio,% of LAT_AM
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of LAT_AM,0.05687883081795431,0.04779776108070787,transition,0.01,-0.009081069737246435,-0.01,-0.01,divergence,3,10305562,logratio,% of LAT_AM
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of LAT_AM,0.04779776108070787,0.046080517981595695,capitalism,0.01,-0.001717243099112177,-0,+0,no change,4,10311979,logratio,% of LAT_AM
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of LAT_AM,0.2843317091475755,0.2033923416614244,socialism,0.01,-0.0809393674861511,-0.08,-0.08,divergence,1,1102004,logratio,% of LAT_AM
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of LAT_AM,0.2033923416614244,0.03921399463814881,socialism,0.01,-0.16417834702327558,-0.16,-0.16,divergence,2,1292753,logratio,% of LAT_AM
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of LAT_AM,0.03921399463814881,-0.02831304879688069,transition,0.01,-0.0675270434350295,-0.07,-0.07,divergence,3,1567538,logratio,% of LAT_AM
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of LAT_AM,-0.02831304879688069,0.03751879168966268,capitalism,0.01,0.06583184048654336,0.07,+0.07,convergence,4,1452730,logratio,% of LAT_AM
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of LAT_AM,0.21856975407956267,0.18099388541223804,socialism,0.01,-0.037575868667324624,-0.04,-0.04,divergence,1,9337826,logratio,% of LAT_AM
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of LAT_AM,0.18099388541223804,0.02343726766844732,socialism,0.01,-0.15755661774379073,-0.16,-0.16,divergence,2,10141073,logratio,% of LAT_AM
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of LAT_AM,0.02343726766844732,0.002964721652751679,transition,0.01,-0.02047254601569564,-0.02,-0.02,divergence,3,10403359,logratio,% of LAT_AM
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of LAT_AM,0.002964721652751679,0.010246848105216231,capitalism,0.01,0.007282126452464552,0.01,+0.01,convergence,4,10322744,logratio,% of LAT_AM
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of LAT_AM,0.2569926736679637,0.21056025538811088,socialism,0.01,-0.04643241827985281,-0.05,-0.05,divergence,1,1918675,logratio,% of LAT_AM
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of LAT_AM,0.21056025538811088,0.03787263185394663,socialism,0.01,-0.17268762353416425,-0.17,-0.17,divergence,2,2252726,logratio,% of LAT_AM
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of LAT_AM,0.03787263185394663,-0.05550109333039946,transition,0.01,-0.09337372518434608,-0.09,-0.09,divergence,3,2664789,logratio,% of LAT_AM
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of LAT_AM,-0.05550109333039946,-6.426180303784933e-4,capitalism,0.01,0.05485847530002096,0.05,+0.05,convergence,4,2485908,logratio,% of LAT_AM
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of LAT_AM,0.2798931405947975,0.2171458737264599,socialism,0.01,-0.06274726686833756,-0.06,-0.06,divergence,1,2432951,logratio,% of LAT_AM
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of LAT_AM,0.2171458737264599,0.05524275021114927,socialism,0.01,-0.16190312351531064,-0.16,-0.16,divergence,2,2965212,logratio,% of LAT_AM
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of LAT_AM,0.05524275021114927,-0.010713000243491257,transition,0.01,-0.06595575045464053,-0.07,-0.07,divergence,3,3696048,logratio,% of LAT_AM
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of LAT_AM,-0.010713000243491257,-0.0028079799320166153,capitalism,0.01,0.007905020311474642,0.01,+0.01,convergence,4,3626997,logratio,% of LAT_AM
+CEE,Poland,POL,CEE: Poland,1950-1965,% of LAT_AM,0.1553752840038264,0.18440389177720043,socialism,0.01,0.029028607773374016,0.03,+0.03,convergence,1,24780120,logratio,% of LAT_AM
+CEE,Poland,POL,CEE: Poland,1965-1989,% of LAT_AM,0.18440389177720043,0.04371602999455365,socialism,0.01,-0.14068786178264678,-0.14,-0.14,divergence,2,31288294,logratio,% of LAT_AM
+CEE,Poland,POL,CEE: Poland,1989-1995,% of LAT_AM,0.04371602999455365,0.031007597054033175,transition,0.01,-0.012708432940520476,-0.01,-0.01,divergence,3,37938044,logratio,% of LAT_AM
+CEE,Poland,POL,CEE: Poland,1995-2023,% of LAT_AM,0.031007597054033175,0.030919973425224824,capitalism,0.01,-8.762362880835109e-5,-0,+0,no change,4,38364630,logratio,% of LAT_AM
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of LAT_AM,0.19198614446616344,0.16990860163872268,socialism,0.01,-0.02207754282744076,-0.02,-0.02,divergence,1,16397220,logratio,% of LAT_AM
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of LAT_AM,0.16990860163872268,0.02561949604750207,socialism,0.01,-0.1442891055912206,-0.14,-0.14,divergence,2,18713016,logratio,% of LAT_AM
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of LAT_AM,0.02561949604750207,-0.00630939449384686,transition,0.01,-0.03192889054134893,-0.03,-0.03,divergence,3,22887592,logratio,% of LAT_AM
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of LAT_AM,-0.00630939449384686,-0.003951678757224252,capitalism,0.01,0.002357715736622608,0,+0,no change,4,22657664,logratio,% of LAT_AM
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of LAT_AM,0.10508939581829875,0.18295295649166185,socialism,0.01,0.0778635606733631,0.08,+0.08,convergence,1,103392314,logratio,% of LAT_AM
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of LAT_AM,0.18295295649166185,0.027640570777592792,socialism,0.01,-0.15531238571406905,-0.16,-0.16,divergence,2,126634148,logratio,% of LAT_AM
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of LAT_AM,0.027640570777592792,-0.08628899379134808,transition,0.01,-0.11392956456894088,-0.11,-0.11,divergence,3,148281823,logratio,% of LAT_AM
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of LAT_AM,-0.08628899379134808,-0.04130203838606627,capitalism,0.01,0.04498695540528181,0.04,+0.04,convergence,4,148291356,logratio,% of LAT_AM
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of LAT_AM,0.09812842892452725,0.17473270374167746,socialism,0.01,0.07660427481715021,0.08,+0.08,convergence,1,6009148,logratio,% of LAT_AM
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of LAT_AM,0.17473270374167746,0.06500135108102761,socialism,0.01,-0.10973135266064984,-0.11,-0.11,divergence,2,7031084,logratio,% of LAT_AM
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of LAT_AM,0.06500135108102761,0.04161831883937472,transition,0.01,-0.023383032241652897,-0.02,-0.02,divergence,3,7881211,logratio,% of LAT_AM
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of LAT_AM,0.04161831883937472,0.006934607157682644,capitalism,0.01,-0.03468371168169207,-0.03,-0.03,divergence,4,7823230,logratio,% of LAT_AM
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of LAT_AM,0.19639399139033686,0.19727311287269178,socialism,0.01,8.791214823549165e-4,0,+0,no change,1,3465707,logratio,% of LAT_AM
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of LAT_AM,0.19727311287269178,0.045428861692375616,socialism,0.01,-0.15184425118031616,-0.15,-0.15,divergence,2,4364999,logratio,% of LAT_AM
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of LAT_AM,0.045428861692375616,0.035097400795782316,transition,0.01,-0.0103314608965933,-0.01,-0.01,divergence,3,5249882,logratio,% of LAT_AM
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of LAT_AM,0.035097400795782316,0.027205985402063492,capitalism,0.01,-0.007891415393718824,-0.01,-0.01,divergence,4,5354244,logratio,% of LAT_AM
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of LAT_AM,0.21335488767072688,0.17449256000358107,socialism,0.01,-0.03886232766714581,-0.04,-0.04,divergence,1,1446309,logratio,% of LAT_AM
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of LAT_AM,0.17449256000358107,0.07805519239610707,socialism,0.01,-0.096437367607474,-0.1,-0.1,divergence,2,1675272,logratio,% of LAT_AM
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of LAT_AM,0.07805519239610707,0.06462246213262884,transition,0.01,-0.01343273026347823,-0.01,-0.01,divergence,3,1995417,logratio,% of LAT_AM
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of LAT_AM,0.06462246213262884,0.06800071427325124,capitalism,0.01,0.003378252140622401,0,+0,no change,4,1988051,logratio,% of LAT_AM
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of LAT_AM,0.20293440010898395,0.2094279688070928,socialism,0.01,0.006493568698108854,0.01,+0.01,convergence,1,37310845,logratio,% of LAT_AM
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of LAT_AM,0.2094279688070928,0.044037938860416265,socialism,0.01,-0.16539002994667654,-0.17,-0.17,divergence,2,45386845,logratio,% of LAT_AM
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of LAT_AM,0.044037938860416265,-0.03869644993705009,transition,0.01,-0.08273438879746636,-0.08,-0.08,divergence,3,51917779,logratio,% of LAT_AM
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of LAT_AM,-0.03869644993705009,-0.03763978533907461,capitalism,0.01,0.0010566645979754805,0,+0,no change,4,51665488,logratio,% of LAT_AM
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of G7,-0.1168286221809466,0.015062716105252772,socialism,0.01,0.13189133828619937,0.13,+0.13,convergence,1,7127548,logratio,% of G7
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of G7,0.015062716105252772,-0.0646372440735307,socialism,0.01,-0.07969996017878347,-0.08,-0.08,divergence,2,8679894,logratio,% of G7
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of G7,-0.0646372440735307,-0.11550570379517924,transition,0.01,-0.05086845972164854,-0.05,-0.05,divergence,3,10158729,logratio,% of G7
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of G7,-0.11550570379517924,-0.08942505394209808,capitalism,0.01,0.02608064985308116,0.03,+0.03,convergence,4,10197421,logratio,% of G7
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of G7,-0.06973835499341466,0.010516665425096855,socialism,0.01,0.08025502041851151,0.08,+0.08,convergence,1,7248464,logratio,% of G7
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of G7,0.010516665425096855,-0.06496315580748946,socialism,0.01,-0.07547982123258631,-0.08,-0.08,divergence,2,8202371,logratio,% of G7
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of G7,-0.06496315580748946,-0.08386846283286763,transition,0.01,-0.018905307025378168,-0.02,-0.02,divergence,3,8936335,logratio,% of G7
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of G7,-0.08386846283286763,-0.07340021049136936,capitalism,0.01,0.010468252341498271,0.01,+0.01,convergence,4,8357522,logratio,% of G7
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of G7,-0.12005337355438937,-0.02999784160292791,socialism,0.01,0.09005553195146146,0.09,+0.09,convergence,1,3864936,logratio,% of G7
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of G7,-0.02999784160292791,-0.05083982213497598,socialism,0.01,-0.020841980532048072,-0.02,-0.02,divergence,2,4346657,logratio,% of G7
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of G7,-0.05083982213497598,-0.061582641622287035,transition,0.01,-0.010742819487311053,-0.01,-0.01,divergence,3,4820680,logratio,% of G7
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of G7,-0.061582641622287035,-0.035215505279339115,capitalism,0.01,0.02636713634294792,0.03,+0.03,convergence,4,4619314,logratio,% of G7
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of G7,-0.023069273349953998,-0.004288143118690155,socialism,0.01,0.01878113023126384,0.02,+0.02,convergence,1,8916664,logratio,% of G7
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of G7,-0.004288143118690155,-0.061133068289163164,socialism,0.01,-0.05684492517047301,-0.06,-0.06,divergence,2,9706802,logratio,% of G7
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of G7,-0.061133068289163164,-0.05312908829101325,transition,0.01,0.008003979998149911,0.01,+0.01,convergence,3,10305562,logratio,% of G7
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of G7,-0.05312908829101325,-0.01938580569065892,capitalism,0.01,0.033743282600354335,0.03,+0.03,convergence,4,10311979,logratio,% of G7
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of G7,0.006853145874438949,0.0021896973344572588,socialism,0.01,-0.00466344853998169,-0,+0,no change,1,1102004,logratio,% of G7
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of G7,0.0021896973344572588,-0.0787979044689684,socialism,0.01,-0.08098760180342565,-0.08,-0.08,divergence,2,1292753,logratio,% of G7
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of G7,-0.0787979044689684,-0.12923989816860187,transition,0.01,-0.05044199369963348,-0.05,-0.05,divergence,3,1567538,logratio,% of G7
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of G7,-0.12923989816860187,-0.02794753198259189,capitalism,0.01,0.10129236618600998,0.1,+0.1,convergence,4,1452730,logratio,% of G7
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of G7,-0.05890880919357387,-0.02020875891472922,socialism,0.01,0.038700050278844655,0.04,+0.04,convergence,1,9337826,logratio,% of G7
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of G7,-0.02020875891472922,-0.09457463143867001,socialism,0.01,-0.074365872523940793,-0.07,-0.07,divergence,2,10141073,logratio,% of G7
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of G7,-0.09457463143867001,-0.09796212771896931,transition,0.01,-0.0033874962802993014,-0,+0,no change,3,10403359,logratio,% of G7
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of G7,-0.09796212771896931,-0.05521947556703848,capitalism,0.01,0.04274265215193083,0.04,+0.04,convergence,4,10322744,logratio,% of G7
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of G7,-0.020485889605172673,0.009357611061143615,socialism,0.01,0.02984350066631629,0.03,+0.03,convergence,1,1918675,logratio,% of G7
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of G7,0.009357611061143615,-0.08013926725317065,socialism,0.01,-0.08949687831431427,-0.09,-0.09,divergence,2,2252726,logratio,% of G7
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of G7,-0.08013926725317065,-0.15642794270212051,transition,0.01,-0.07628867544894986,-0.08,-0.08,divergence,3,2664789,logratio,% of G7
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of G7,-0.15642794270212051,-0.06610894170263314,capitalism,0.01,0.09031900099948738,0.09,+0.09,convergence,4,2485908,logratio,% of G7
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of G7,0.0024145773216607447,0.01594322939949268,socialism,0.01,0.013528652077831937,0.01,+0.01,convergence,1,2432951,logratio,% of G7
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of G7,0.01594322939949268,-0.06276914889596799,socialism,0.01,-0.07871237829546067,-0.08,-0.08,divergence,2,2965212,logratio,% of G7
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of G7,-0.06276914889596799,-0.1116398496152123,transition,0.01,-0.048870700719244306,-0.05,-0.05,divergence,3,3696048,logratio,% of G7
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of G7,-0.1116398496152123,-0.06827430360427138,capitalism,0.01,0.04336554601094092,0.04,+0.04,convergence,4,3626997,logratio,% of G7
+CEE,Poland,POL,CEE: Poland,1950-1965,% of G7,-0.12210327926931014,-0.01679875254976691,socialism,0.01,0.10530452671954323,0.11,+0.11,convergence,1,24780120,logratio,% of G7
+CEE,Poland,POL,CEE: Poland,1965-1989,% of G7,-0.01679875254976691,-0.07429586911256353,socialism,0.01,-0.057497116562796616,-0.06,-0.06,divergence,2,31288294,logratio,% of G7
+CEE,Poland,POL,CEE: Poland,1989-1995,% of G7,-0.07429586911256353,-0.06991925231768793,transition,0.01,0.004376616794875596,0,+0,no change,3,37938044,logratio,% of G7
+CEE,Poland,POL,CEE: Poland,1995-2023,% of G7,-0.06991925231768793,-0.03454635024702971,capitalism,0.01,0.03537290207065822,0.04,+0.04,convergence,4,38364630,logratio,% of G7
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of G7,-0.08549241880697298,-0.03129404268824445,socialism,0.01,0.054198376118728527,0.05,+0.05,convergence,1,16397220,logratio,% of G7
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of G7,-0.03129404268824445,-0.09239240305961507,socialism,0.01,-0.061098360371370626,-0.06,-0.06,divergence,2,18713016,logratio,% of G7
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of G7,-0.09239240305961507,-0.10723624386556785,transition,0.01,-0.014843840805952774,-0.01,-0.01,divergence,3,22887592,logratio,% of G7
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of G7,-0.10723624386556785,-0.0694180024294788,capitalism,0.01,0.03781824143608904,0.04,+0.04,convergence,4,22657664,logratio,% of G7
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of G7,-0.17238916745483765,-0.01824968783530541,socialism,0.01,0.15413947961953223,0.15,+0.15,convergence,1,103392314,logratio,% of G7
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of G7,-0.01824968783530541,-0.09037132832952462,socialism,0.01,-0.07212164049421921,-0.07,-0.07,divergence,2,126634148,logratio,% of G7
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of G7,-0.09037132832952462,-0.18721584316306916,transition,0.01,-0.09684451483354455,-0.1,-0.1,divergence,3,148281823,logratio,% of G7
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of G7,-0.18721584316306916,-0.10676836205832109,capitalism,0.01,0.08044748110474807,0.08,+0.08,convergence,4,148291356,logratio,% of G7
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of G7,-0.17935013434860927,-0.0264699405852899,socialism,0.01,0.15288019376331938,0.15,+0.15,convergence,1,6009148,logratio,% of G7
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of G7,-0.0264699405852899,-0.053010548026089656,socialism,0.01,-0.026540607440799755,-0.03,-0.03,divergence,2,7031084,logratio,% of G7
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of G7,-0.053010548026089656,-0.059308530532346394,transition,0.01,-0.0062979825062567385,-0.01,-0.01,divergence,3,7881211,logratio,% of G7
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of G7,-0.059308530532346394,-0.05853171651457193,capitalism,0.01,7.768140177744631e-4,0,+0,no change,4,7823230,logratio,% of G7
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of G7,-0.08108457188279958,-0.0039295314542756015,socialism,0.01,0.07715504042852397,0.08,+0.08,convergence,1,3465707,logratio,% of G7
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of G7,-0.0039295314542756015,-0.07258303741474158,socialism,0.01,-0.06865350596046597,-0.07,-0.07,divergence,2,4364999,logratio,% of G7
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of G7,-0.07258303741474158,-0.06582944857593882,transition,0.01,0.006753588838802754,0.01,+0.01,convergence,3,5249882,logratio,% of G7
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of G7,-0.06582944857593882,-0.03826033827019104,capitalism,0.01,0.027569110305747782,0.03,+0.03,convergence,4,5354244,logratio,% of G7
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of G7,-0.06412367560240965,-0.026710084323386174,socialism,0.01,0.03741359127902348,0.04,+0.04,convergence,1,1446309,logratio,% of G7
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of G7,-0.026710084323386174,-0.039956706711010294,socialism,0.01,-0.01324662238762412,-0.01,-0.01,divergence,2,1675272,logratio,% of G7
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of G7,-0.039956706711010294,-0.036304387239092316,transition,0.01,0.003652319471917978,0,+0,no change,3,1995417,logratio,% of G7
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of G7,-0.036304387239092316,0.002534390600996677,capitalism,0.01,0.03883877784008899,0.04,+0.04,convergence,4,1988051,logratio,% of G7
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of G7,-0.07454416316415252,0.008225324480125563,socialism,0.01,0.08276948764427808,0.08,+0.08,convergence,1,37310845,logratio,% of G7
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of G7,0.008225324480125563,-0.07397396024670112,socialism,0.01,-0.0821992847268267,-0.08,-0.08,divergence,2,45386845,logratio,% of G7
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of G7,-0.07397396024670112,-0.13962329930877107,transition,0.01,-0.06564933906206995,-0.07,-0.07,divergence,3,51917779,logratio,% of G7
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of G7,-0.13962329930877107,-0.1031061090113293,capitalism,0.01,0.03651719029744177,0.04,+0.04,convergence,4,51665488,logratio,% of G7
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of S_EUR4,-0.08526525914236334,0.020207829896259,socialism,0.01,0.10547308903862235,0.11,+0.11,convergence,1,7127548,logratio,% of S_EUR4
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of S_EUR4,0.020207829896259,-0.0711245995953066,socialism,0.01,-0.09133242949156561,-0.09,-0.09,divergence,2,8679894,logratio,% of S_EUR4
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of S_EUR4,-0.0711245995953066,-0.1250607995685724,transition,0.01,-0.053936199973265805,-0.05,-0.05,divergence,3,10158729,logratio,% of S_EUR4
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of S_EUR4,-0.1250607995685724,-0.11421215016307766,capitalism,0.01,0.01084864940549475,0.01,+0.01,convergence,4,10197421,logratio,% of S_EUR4
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of S_EUR4,-0.03817499195483154,0.01566177921610317,socialism,0.01,0.05383677117093471,0.05,+0.05,convergence,1,7248464,logratio,% of S_EUR4
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of S_EUR4,0.01566177921610317,-0.07145051132926535,socialism,0.01,-0.08711229054536851,-0.09,-0.09,divergence,2,8202371,logratio,% of S_EUR4
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of S_EUR4,-0.07145051132926535,-0.09342355860626075,transition,0.01,-0.02197304727699541,-0.02,-0.02,divergence,3,8936335,logratio,% of S_EUR4
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of S_EUR4,-0.09342355860626075,-0.09818730671234885,capitalism,0.01,-0.004763748106088095,-0,+0,no change,4,8357522,logratio,% of S_EUR4
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of S_EUR4,-0.08849001051580617,-0.024852727811921497,socialism,0.01,0.06363728270388468,0.06,+0.06,convergence,1,3864936,logratio,% of S_EUR4
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of S_EUR4,-0.024852727811921497,-0.057327177656751896,socialism,0.01,-0.0324744498448304,-0.03,-0.03,divergence,2,4346657,logratio,% of S_EUR4
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of S_EUR4,-0.057327177656751896,-0.07113773739568022,transition,0.01,-0.013810559738928321,-0.01,-0.01,divergence,3,4820680,logratio,% of S_EUR4
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of S_EUR4,-0.07113773739568022,-0.06000260150031854,capitalism,0.01,0.011135135895361678,0.01,+0.01,convergence,4,4619314,logratio,% of S_EUR4
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of S_EUR4,0.00849408968862919,8.569706723162605e-4,socialism,0.01,-0.00763711901631293,-0.01,-0.01,divergence,1,8916664,logratio,% of S_EUR4
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of S_EUR4,8.569706723162605e-4,-0.06762042381093904,socialism,0.01,-0.0684773944832553,-0.07,-0.07,divergence,2,9706802,logratio,% of S_EUR4
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of S_EUR4,-0.06762042381093904,-0.06268418406440653,transition,0.01,0.004936239746532511,0,+0,no change,3,10305562,logratio,% of S_EUR4
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of S_EUR4,-0.06268418406440653,-0.04417290191163851,capitalism,0.01,0.018511282152768017,0.02,+0.02,convergence,4,10311979,logratio,% of S_EUR4
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of S_EUR4,0.03841650891302214,0.007334811125463459,socialism,0.01,-0.03108169778755868,-0.03,-0.03,divergence,1,1102004,logratio,% of S_EUR4
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of S_EUR4,0.007334811125463459,-0.0852852599907444,socialism,0.01,-0.09262007111620786,-0.09,-0.09,divergence,2,1292753,logratio,% of S_EUR4
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of S_EUR4,-0.0852852599907444,-0.1387949939419949,transition,0.01,-0.0535097339512505,-0.05,-0.05,divergence,3,1567538,logratio,% of S_EUR4
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of S_EUR4,-0.1387949939419949,-0.05273462820357138,capitalism,0.01,0.08606036573842352,0.09,+0.09,convergence,4,1452730,logratio,% of S_EUR4
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of S_EUR4,-0.027345446154990523,-0.015063645123722689,socialism,0.01,0.012281801031267834,0.01,+0.01,convergence,1,9337826,logratio,% of S_EUR4
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of S_EUR4,-0.015063645123722689,-0.10106198696044602,socialism,0.01,-0.08599834183672334,-0.09,-0.09,divergence,2,10141073,logratio,% of S_EUR4
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of S_EUR4,-0.10106198696044602,-0.1075172234923626,transition,0.01,-0.006455236531916583,-0.01,-0.01,divergence,3,10403359,logratio,% of S_EUR4
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of S_EUR4,-0.1075172234923626,-0.08000657178801787,capitalism,0.01,0.027510651704344732,0.03,+0.03,convergence,4,10322744,logratio,% of S_EUR4
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of S_EUR4,0.011077473433410385,0.014502724852149994,socialism,0.01,0.0034252514187396096,0,+0,no change,1,1918675,logratio,% of S_EUR4
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of S_EUR4,0.014502724852149994,-0.08662662277494657,socialism,0.01,-0.10112934762709656,-0.1,-0.1,divergence,2,2252726,logratio,% of S_EUR4
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of S_EUR4,-0.08662662277494657,-0.16598303847551393,transition,0.01,-0.07935641570056737,-0.08,-0.08,divergence,3,2664789,logratio,% of S_EUR4
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of S_EUR4,-0.16598303847551393,-0.09089603792361269,capitalism,0.01,0.07508700055190125,0.08,+0.08,convergence,4,2485908,logratio,% of S_EUR4
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of S_EUR4,0.03397794036024395,0.02108834319049909,socialism,0.01,-0.01288959716974486,-0.01,-0.01,divergence,1,2432951,logratio,% of S_EUR4
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of S_EUR4,0.02108834319049909,-0.06925650441774385,socialism,0.01,-0.09034484760824293,-0.09,-0.09,divergence,2,2965212,logratio,% of S_EUR4
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of S_EUR4,-0.06925650441774385,-0.12119494538860545,transition,0.01,-0.0519384409708616,-0.05,-0.05,divergence,3,3696048,logratio,% of S_EUR4
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of S_EUR4,-0.12119494538860545,-0.0930613998252509,capitalism,0.01,0.028133545563354553,0.03,+0.03,convergence,4,3626997,logratio,% of S_EUR4
+CEE,Poland,POL,CEE: Poland,1950-1965,% of S_EUR4,-0.0905399162307269,-0.011653638758760559,socialism,0.01,0.07888627747196633,0.08,+0.08,convergence,1,24780120,logratio,% of S_EUR4
+CEE,Poland,POL,CEE: Poland,1965-1989,% of S_EUR4,-0.011653638758760559,-0.08078322463433947,socialism,0.01,-0.06912958587557891,-0.07,-0.07,divergence,2,31288294,logratio,% of S_EUR4
+CEE,Poland,POL,CEE: Poland,1989-1995,% of S_EUR4,-0.08078322463433947,-0.0794743480910812,transition,0.01,0.0013088765432582722,0,+0,no change,3,37938044,logratio,% of S_EUR4
+CEE,Poland,POL,CEE: Poland,1995-2023,% of S_EUR4,-0.0794743480910812,-0.059333446468009164,capitalism,0.01,0.020140901623072034,0.02,+0.02,convergence,4,38364630,logratio,% of S_EUR4
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of S_EUR4,-0.05392905576838978,-0.02614892889723802,socialism,0.01,0.02778012687115176,0.03,+0.03,convergence,1,16397220,logratio,% of S_EUR4
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of S_EUR4,-0.02614892889723802,-0.09887975858139092,socialism,0.01,-0.0727308296841529,-0.07,-0.07,divergence,2,18713016,logratio,% of S_EUR4
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of S_EUR4,-0.09887975858139092,-0.1167913396389611,transition,0.01,-0.01791158105757018,-0.02,-0.02,divergence,3,22887592,logratio,% of S_EUR4
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of S_EUR4,-0.1167913396389611,-0.09420509865045819,capitalism,0.01,0.022586240988502912,0.02,+0.02,convergence,4,22657664,logratio,% of S_EUR4
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of S_EUR4,-0.14082580441625447,-0.013104574044299079,socialism,0.01,0.1277212303719554,0.13,+0.13,convergence,1,103392314,logratio,% of S_EUR4
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of S_EUR4,-0.013104574044299079,-0.09685868385130039,socialism,0.01,-0.08375410980700132,-0.08,-0.08,divergence,2,126634148,logratio,% of S_EUR4
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of S_EUR4,-0.09685868385130039,-0.19677093893646241,transition,0.01,-0.09991225508516202,-0.1,-0.1,divergence,3,148281823,logratio,% of S_EUR4
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of S_EUR4,-0.19677093893646241,-0.1315554582793005,capitalism,0.01,0.0652154806571619,0.07,+0.07,convergence,4,148291356,logratio,% of S_EUR4
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of S_EUR4,-0.14778677131002607,-0.02132482679428345,socialism,0.01,0.1264619445157426,0.13,+0.13,convergence,1,6009148,logratio,% of S_EUR4
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of S_EUR4,-0.02132482679428345,-0.05949790354786567,socialism,0.01,-0.03817307675358222,-0.04,-0.04,divergence,2,7031084,logratio,% of S_EUR4
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of S_EUR4,-0.05949790354786567,-0.06886362630573972,transition,0.01,-0.009365722757874055,-0.01,-0.01,divergence,3,7881211,logratio,% of S_EUR4
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of S_EUR4,-0.06886362630573972,-0.08331881273555139,capitalism,0.01,-0.014455186429811667,-0.01,-0.01,divergence,4,7823230,logratio,% of S_EUR4
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of S_EUR4,-0.04952120884421629,0.0012155823367307698,socialism,0.01,0.05073679118094706,0.05,+0.05,convergence,1,3465707,logratio,% of S_EUR4
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of S_EUR4,0.0012155823367307698,-0.07907039293651752,socialism,0.01,-0.0802859752732483,-0.08,-0.08,divergence,2,4364999,logratio,% of S_EUR4
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of S_EUR4,-0.07907039293651752,-0.07538454434933199,transition,0.01,0.003685848587185528,0,+0,no change,3,5249882,logratio,% of S_EUR4
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of S_EUR4,-0.07538454434933199,-0.06304743449117052,capitalism,0.01,0.012337109858161471,0.01,+0.01,convergence,4,5354244,logratio,% of S_EUR4
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of S_EUR4,-0.03256031256382651,-0.021564970532379685,socialism,0.01,0.010995342031446823,0.01,+0.01,convergence,1,1446309,logratio,% of S_EUR4
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of S_EUR4,-0.021564970532379685,-0.0464440622327863,socialism,0.01,-0.024879091700406614,-0.02,-0.02,divergence,2,1675272,logratio,% of S_EUR4
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of S_EUR4,-0.0464440622327863,-0.04585948301248545,transition,0.01,5.845792203008487e-4,0,+0,no change,3,1995417,logratio,% of S_EUR4
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of S_EUR4,-0.04585948301248545,-0.022252705619982834,capitalism,0.01,0.023606777392502616,0.02,+0.02,convergence,4,1988051,logratio,% of S_EUR4
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of S_EUR4,-0.04298080012556941,0.013370438271132086,socialism,0.01,0.056351238396701496,0.06,+0.06,convergence,1,37310845,logratio,% of S_EUR4
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of S_EUR4,0.013370438271132086,-0.08046131576847697,socialism,0.01,-0.09383175403960906,-0.09,-0.09,divergence,2,45386845,logratio,% of S_EUR4
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of S_EUR4,-0.08046131576847697,-0.14917839508216432,transition,0.01,-0.06871707931368735,-0.07,-0.07,divergence,3,51917779,logratio,% of S_EUR4
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of S_EUR4,-0.14917839508216432,-0.12789320523230865,capitalism,0.01,0.021285189849855668,0.02,+0.02,convergence,4,51665488,logratio,% of S_EUR4
+USSR,Belarus,BLR,USSR: Belarus,1950-1965,% of World,0.23426558004231335,0.28259298404698724,socialism,0.01,0.04832740400467389,0.05,+0.05,convergence,1,7127548,logratio,% of World
+USSR,Belarus,BLR,USSR: Belarus,1965-1989,% of World,0.28259298404698724,0.11427868566668628,socialism,0.01,-0.16831429838030096,-0.17,-0.17,divergence,2,8679894,logratio,% of World
+USSR,Belarus,BLR,USSR: Belarus,1989-1995,% of World,0.11427868566668628,0.057941669851355806,transition,0.01,-0.056337015815330474,-0.06,-0.06,divergence,3,10158729,logratio,% of World
+USSR,Belarus,BLR,USSR: Belarus,1995-2023,% of World,0.057941669851355806,0.017134182445284966,capitalism,0.01,-0.04080748740607084,-0.04,-0.04,divergence,4,10197421,logratio,% of World
+CEE,Bulgaria,BGR,CEE: Bulgaria,1950-1965,% of World,0.2813558472298454,0.27804693336683123,socialism,0.01,-0.0033089138630141846,-0,+0,no change,1,7248464,logratio,% of World
+CEE,Bulgaria,BGR,CEE: Bulgaria,1965-1989,% of World,0.27804693336683123,0.11395277393272747,socialism,0.01,-0.16409415943410377,-0.16,-0.16,divergence,2,8202371,logratio,% of World
+CEE,Bulgaria,BGR,CEE: Bulgaria,1989-1995,% of World,0.11395277393272747,0.08957891081366766,transition,0.01,-0.024373863119059813,-0.02,-0.02,divergence,3,8936335,logratio,% of World
+CEE,Bulgaria,BGR,CEE: Bulgaria,1995-2023,% of World,0.08957891081366766,0.03315902589601347,capitalism,0.01,-0.056419884917654185,-0.06,-0.06,divergence,4,8357522,logratio,% of World
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1950-1965,% of World,0.23104082866887057,0.23753242633880656,socialism,0.01,0.006491597669935983,0.01,+0.01,convergence,1,3864936,logratio,% of World
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1965-1989,% of World,0.23753242633880656,0.12807610760524107,socialism,0.01,-0.10945631873356548,-0.11,-0.11,divergence,2,4346657,logratio,% of World
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1989-1995,% of World,0.12807610760524107,0.11186473202424824,transition,0.01,-0.016211375580992837,-0.02,-0.02,divergence,3,4820680,logratio,% of World
+Yugosl.,Croatia,HRV,Yugosl.: Croatia,1995-2023,% of World,0.11186473202424824,0.0713437311080438,capitalism,0.01,-0.04052100091620443,-0.04,-0.04,divergence,4,4619314,logratio,% of World
+CEE,Czechia,CZE,CEE: Czechia,1950-1965,% of World,0.3280249288733061,0.2632421248230443,socialism,0.01,-0.06478280405026177,-0.06,-0.06,divergence,1,8916664,logratio,% of World
+CEE,Czechia,CZE,CEE: Czechia,1965-1989,% of World,0.2632421248230443,0.11778286145105381,socialism,0.01,-0.1454592633719905,-0.15,-0.15,divergence,2,9706802,logratio,% of World
+CEE,Czechia,CZE,CEE: Czechia,1989-1995,% of World,0.11778286145105381,0.12031828535552194,transition,0.01,0.0025354239044681343,0,+0,no change,3,10305562,logratio,% of World
+CEE,Czechia,CZE,CEE: Czechia,1995-2023,% of World,0.12031828535552194,0.08717343069672401,capitalism,0.01,-0.033144854658797934,-0.03,-0.03,divergence,4,10311979,logratio,% of World
+Baltics,Estonia,EST,Baltics: Estonia,1950-1965,% of World,0.35794734809769885,0.2697199652761916,socialism,0.01,-0.08822738282150727,-0.09,-0.09,divergence,1,1102004,logratio,% of World
+Baltics,Estonia,EST,Baltics: Estonia,1965-1989,% of World,0.2697199652761916,0.10011802527124851,socialism,0.01,-0.16960194000494305,-0.17,-0.17,divergence,2,1292753,logratio,% of World
+Baltics,Estonia,EST,Baltics: Estonia,1989-1995,% of World,0.10011802527124851,0.04420747547793337,transition,0.01,-0.05591054979331514,-0.06,-0.06,divergence,3,1567538,logratio,% of World
+Baltics,Estonia,EST,Baltics: Estonia,1995-2023,% of World,0.04420747547793337,0.07861170440479094,capitalism,0.01,0.03440422892685757,0.03,+0.03,convergence,4,1452730,logratio,% of World
+CEE,Hungary,HUN,CEE: Hungary,1950-1965,% of World,0.29218539302968627,0.24732150902700523,socialism,0.01,-0.04486388400268104,-0.04,-0.04,divergence,1,9337826,logratio,% of World
+CEE,Hungary,HUN,CEE: Hungary,1965-1989,% of World,0.24732150902700523,0.08434129830154682,socialism,0.01,-0.1629802107254584,-0.16,-0.16,divergence,2,10141073,logratio,% of World
+CEE,Hungary,HUN,CEE: Hungary,1989-1995,% of World,0.08434129830154682,0.07548524592756571,transition,0.01,-0.008856052373981113,-0.01,-0.01,divergence,3,10403359,logratio,% of World
+CEE,Hungary,HUN,CEE: Hungary,1995-2023,% of World,0.07548524592756571,0.05133976082034458,capitalism,0.01,-0.02414548510722113,-0.02,-0.02,divergence,4,10322744,logratio,% of World
+Baltics,Latvia,LVA,Baltics: Latvia,1950-1965,% of World,0.33060831261808726,0.27688787900287815,socialism,0.01,-0.05372043361520912,-0.05,-0.05,divergence,1,1918675,logratio,% of World
+Baltics,Latvia,LVA,Baltics: Latvia,1965-1989,% of World,0.27688787900287815,0.09877666248704628,socialism,0.01,-0.17811121651583187,-0.18,-0.18,divergence,2,2252726,logratio,% of World
+Baltics,Latvia,LVA,Baltics: Latvia,1989-1995,% of World,0.09877666248704628,0.017019430944414625,transition,0.01,-0.08175723154263165,-0.08,-0.08,divergence,3,2664789,logratio,% of World
+Baltics,Latvia,LVA,Baltics: Latvia,1995-2023,% of World,0.017019430944414625,0.04045029468474986,capitalism,0.01,0.023430863740335234,0.02,+0.02,convergence,4,2485908,logratio,% of World
+Baltics,Lithuania,LTU,Baltics: Lithuania,1950-1965,% of World,0.3535087795449209,0.2834734973412273,socialism,0.01,-0.0700352822036936,-0.07,-0.07,divergence,1,2432951,logratio,% of World
+Baltics,Lithuania,LTU,Baltics: Lithuania,1965-1989,% of World,0.2834734973412273,0.11614678084424887,socialism,0.01,-0.16732671649697842,-0.17,-0.17,divergence,2,2965212,logratio,% of World
+Baltics,Lithuania,LTU,Baltics: Lithuania,1989-1995,% of World,0.11614678084424887,0.0618075240313229,transition,0.01,-0.05433925681292597,-0.05,-0.05,divergence,3,3696048,logratio,% of World
+Baltics,Lithuania,LTU,Baltics: Lithuania,1995-2023,% of World,0.0618075240313229,0.03828493278311167,capitalism,0.01,-0.023522591248211225,-0.02,-0.02,divergence,4,3626997,logratio,% of World
+CEE,Poland,POL,CEE: Poland,1950-1965,% of World,0.2289909229539499,0.25073151539196764,socialism,0.01,0.021740592438017736,0.02,+0.02,convergence,1,24780120,logratio,% of World
+CEE,Poland,POL,CEE: Poland,1965-1989,% of World,0.25073151539196764,0.10462006062765333,socialism,0.01,-0.1461114547643143,-0.15,-0.15,divergence,2,31288294,logratio,% of World
+CEE,Poland,POL,CEE: Poland,1989-1995,% of World,0.10462006062765333,0.10352812132884709,transition,0.01,-0.0010919392988062437,-0,+0,no change,3,37938044,logratio,% of World
+CEE,Poland,POL,CEE: Poland,1995-2023,% of World,0.10352812132884709,0.0720128861403533,capitalism,0.01,-0.03151523518849379,-0.03,-0.03,divergence,4,38364630,logratio,% of World
+CEE,Romania,ROU,CEE: Romania,1950-1965,% of World,0.265601783416287,0.2362362252534902,socialism,0.01,-0.02936555816279679,-0.03,-0.03,divergence,1,16397220,logratio,% of World
+CEE,Romania,ROU,CEE: Romania,1965-1989,% of World,0.2362362252534902,0.08652352668060197,socialism,0.01,-0.14971269857288821,-0.15,-0.15,divergence,2,18713016,logratio,% of World
+CEE,Romania,ROU,CEE: Romania,1989-1995,% of World,0.08652352668060197,0.06621112978096728,transition,0.01,-0.020312396899634683,-0.02,-0.02,divergence,3,22887592,logratio,% of World
+CEE,Romania,ROU,CEE: Romania,1995-2023,% of World,0.06621112978096728,0.03714123395790406,capitalism,0.01,-0.029069895823063227,-0.03,-0.03,divergence,4,22657664,logratio,% of World
+USSR,Russia,RUS,USSR: Russia,1950-1965,% of World,0.17870503476842228,0.24928058010642914,socialism,0.01,0.07057554533800686,0.07,+0.07,convergence,1,103392314,logratio,% of World
+USSR,Russia,RUS,USSR: Russia,1965-1989,% of World,0.24928058010642914,0.08854460141069248,socialism,0.01,-0.16073597869573666,-0.16,-0.16,divergence,2,126634148,logratio,% of World
+USSR,Russia,RUS,USSR: Russia,1989-1995,% of World,0.08854460141069248,-0.01376846951653411,transition,0.01,-0.1023130709272266,-0.1,-0.1,divergence,3,148281823,logratio,% of World
+USSR,Russia,RUS,USSR: Russia,1995-2023,% of World,-0.01376846951653411,-2.0912567093807146e-4,capitalism,0.01,0.013559343845596039,0.01,+0.01,convergence,4,148291356,logratio,% of World
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1950-1965,% of World,0.17174406787465077,0.24106032735644467,socialism,0.01,0.0693162594817939,0.07,+0.07,convergence,1,6009148,logratio,% of World
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1965-1989,% of World,0.24106032735644467,0.12590538171412716,socialism,0.01,-0.11515494564231751,-0.12,-0.12,divergence,2,7031084,logratio,% of World
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1989-1995,% of World,0.12590538171412716,0.11413884311418872,transition,0.01,-0.01176653859993844,-0.01,-0.01,divergence,3,7881211,logratio,% of World
+Yugosl.,Serbia,SRB,Yugosl.: Serbia,1995-2023,% of World,0.11413884311418872,0.048027519872810905,capitalism,0.01,-0.0661113232413778,-0.07,-0.07,divergence,4,7823230,logratio,% of World
+CEE,Slovakia,SVK,CEE: Slovakia,1950-1965,% of World,0.2700096303404604,0.2636007364874591,socialism,0.01,-0.006408893853001307,-0.01,-0.01,divergence,1,3465707,logratio,% of World
+CEE,Slovakia,SVK,CEE: Slovakia,1965-1989,% of World,0.2636007364874591,0.10633289232547542,socialism,0.01,-0.15726784416198364,-0.16,-0.16,divergence,2,4364999,logratio,% of World
+CEE,Slovakia,SVK,CEE: Slovakia,1989-1995,% of World,0.10633289232547542,0.10761792507059627,transition,0.01,0.0012850327451208454,0,+0,no change,3,5249882,logratio,% of World
+CEE,Slovakia,SVK,CEE: Slovakia,1995-2023,% of World,0.10761792507059627,0.06829889811719189,capitalism,0.01,-0.039319026953404376,-0.04,-0.04,divergence,4,5354244,logratio,% of World
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1950-1965,% of World,0.2869705266208503,0.24082018361834837,socialism,0.01,-0.04615034300250195,-0.05,-0.05,divergence,1,1446309,logratio,% of World
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1965-1989,% of World,0.24082018361834837,0.13895922302920663,socialism,0.01,-0.10186096058914174,-0.1,-0.1,divergence,2,1675272,logratio,% of World
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1989-1995,% of World,0.13895922302920663,0.1371429864074429,transition,0.01,-0.0018162366217637227,-0,+0,no change,3,1995417,logratio,% of World
+Yugosl.,Slovenia,SVN,Yugosl.: Slovenia,1995-2023,% of World,0.1371429864074429,0.10909362698837953,capitalism,0.01,-0.028049359419063377,-0.03,-0.03,divergence,4,1988051,logratio,% of World
+USSR,Ukraine,UKR,USSR: Ukraine,1950-1965,% of World,0.27655003905910736,0.2757555924218601,socialism,0.01,-7.944466372472592e-4,-0,+0,no change,1,37310845,logratio,% of World
+USSR,Ukraine,UKR,USSR: Ukraine,1965-1989,% of World,0.2757555924218601,0.10494196949351581,socialism,0.01,-0.1708136229283443,-0.17,-0.17,divergence,2,45386845,logratio,% of World
+USSR,Ukraine,UKR,USSR: Ukraine,1989-1995,% of World,0.10494196949351581,0.03382407433776404,transition,0.01,-0.07111789515575176,-0.07,-0.07,divergence,3,51917779,logratio,% of World
+USSR,Ukraine,UKR,USSR: Ukraine,1995-2023,% of World,0.03382407433776404,0.0034531273760536334,capitalism,0.01,-0.03037094696171041,-0.03,-0.03,divergence,4,51665488,logratio,% of World
