@@ -1255,8 +1255,77 @@ if (save_plot_flag) {
   
 })
 
+
+
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+# GNI per capita cumul change and growth rate (figure not in the article)
+
+if (F) {
+  with(list(sel_cntrs=c(
+  "China","Malaysia","South Korea",
+  "Czechia","Poland","Romania",
+  "Argentina","Brazil","Mexico",
+  "Algeria","Egypt","South Africa")), { # ,"Lithuania"
+
+df_plot <- l_gni_percap$GNI_per_cap_2021intUSD %>% # [,1:5]
+  filter(grepl(paste0(sel_cntrs,collapse="|"),country) ) %>%
+   group_by(country) %>%               # do calculations within country
+  mutate(
+    value_change_abs=value-lag(value),
+    value_change_pct = (value/lag(value)-1)*100,
+    value_change_pct_roll = rollmean(value_change_pct,
+      k=5,fill=NA,align="right") ) %>%
+  ungroup() %>%   # filter(year>=1993) 
+  mutate(country=factor(country,levels=sel_cntrs))
+# View(df_plot)
+
+df_summ <- df_plot %>% 
+  filter(year %in% c(1990,2023)) %>%
+  group_by(country) %>%
+  summarise(
+    startval=value[year==1990],
+    endval=value[year==2023],
+    diff=endval-startval,
+    ratio=endval/startval) %>%
+  ungroup() %>%
+  mutate(str=paste0(
+    # round(startval/1e3,1),"k→",
+    # round(endval/1e3,1), "k (+",
+    "+",round(diff/1e3,1),"k usd, ",
+    round(ratio,1),"x" ))
+# View(df_summ)
+
+df_plot %>%
+ggplot(aes(x=value/1e3,group=country,color=year)) + # ,color=country
+  facet_wrap(~country,ncol=3) + # , scale="free_x"
+  geom_path(aes(y=value_change_pct_roll,linewidth=year),alpha=2/3) +
+  # geom_path(aes(y=value_change_pct),linewidth=1/4,linetype = "dashed") + 
+  geom_point(aes(y=value_change_pct),alpha=1/3,size=2) +
+  geom_text(data=df_summ,aes(x=startval/1e3,label=str),hjust=0,
+    y=15,inherit.aes=F) +
+  geom_vline(data=. %>% filter(year %in% c(1990,2023)),
+    aes(xintercept=value/1e3),linewidth=1/4,linetype="dashed",show.legend=F) +
+  # scale_x_log10(breaks=c(1e3,2e3,3e3,5e3,1e4,2e4,3e4,4e4,5e4)) + 
+  scale_y_continuous(limits=c(-2,NA)) + # breaks = -5:10*2
+  scale_linewidth_continuous(range=c(0.3,2)) +
+  # geom_hline(yintercept = 0,linewidth=1/4) +
+  labs(x="GNI per capita (thousand constant 2021 USD, PPP)",y="% annual change",
+    color="",linewidth="5-yr rolling average growth rate",
+    caption="dashed vertical lines show GNI/cap level in 1990 and 2023") +
+  guides(colour = guide_colorbar(barwidth=20,barheight=0.6)) +
+  ggtitle("GNI per capita trends, 1990-2023") +
+  theme_bw() + plot_settings +
+  theme(axis.text.x=element_text(angle=0),
+    legend.position="top",legend.title = element_text(size = 17))
+# save
+ggsave("output/GNI_per_cap_1990_perc_change_level/change_growth_rate.png", 
+  width=35,height=24,units="cm")
+
+}
+)
+}
+
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 # 1990 to 2024 change only (scatterplot), compared to ...
 # GDP/cap vs GNI/cap

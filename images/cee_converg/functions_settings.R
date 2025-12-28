@@ -1,5 +1,5 @@
 # libraries
-lapply(c("tidyverse","wbstats", "RColorBrewer", "purrr",
+lapply(c("tidyverse","wbstats", "RColorBrewer", "purrr","zoo",
         "htmlwidgets","plotly","grid","cowplot","ggrepel"),
         library, character.only=T)
 # ,"jsonlite" , "sf",

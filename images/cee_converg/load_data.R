@@ -231,7 +231,7 @@ rename(country=Entity,year=Year,
 
 # %>%
   # concatenate new worldbank data for 2024?
-  # I didnt do this
+  # I didnt do this because for several cntrs 2024 data still missing
   # bind_rows(read_csv(
   #   paste0("data/gross-national-income-per-capita-undp/",
   #     "API_NY.GNP.PCAP.PP.KD_DS2_en_csv_v2_1701/",
@@ -264,21 +264,21 @@ l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr <- with(
     bind_rows(),
     sel_comps=c("Germany",names(l_groups$comp_groups),"World") ), {
       
+df_join <- left_join(
+    l_gni_percap$GNI_per_cap_2021intUSD,
+    l_pop$total_pop %>% select(!Code) %>% rename(pop=value))
+      
 bind_rows(
 # countries
-left_join(
-    l_gni_percap$GNI_per_cap_2021intUSD,
-    l_pop$total_pop %>% select(!Code) %>% rename(pop=value)),
+df_join,
   # calc averages of groupings
 lapply(names(l_groups$comp_groups), \(x)
- left_join(
-  l_gni_percap$GNI_per_cap_2021intUSD,
-  l_pop$total_pop %>% select(!Code) %>% rename(pop=value)) %>%
+ df_join %>%
   filter(country %in% l_groups$comp_groups[[x]]) %>%
   group_by(year) %>% 
   mutate(prop_pop=pop/sum(pop)) %>%
   summarise(country=x,
-    value=sum(value*prop_pop,na.rm = T),
+    value=sum(value*prop_pop,na.rm=T),
     pop=sum(pop,na.rm = T)) ) %>%
   bind_rows()
   ) %>%
