@@ -228,8 +228,36 @@ rename(country=Entity,year=Year,
     .default = country)) %>%
   filter(!grepl("Macao|Hong",country)) %>%
   select(c(country,value,year)) 
-# source: OurWorldinData
 
+# %>%
+  # concatenate new worldbank data for 2024?
+  # I didnt do this
+  # bind_rows(read_csv(
+  #   paste0("data/gross-national-income-per-capita-undp/",
+  #     "API_NY.GNP.PCAP.PP.KD_DS2_en_csv_v2_1701/",
+  #     "API_NY.GNP.PCAP.PP.KD_DS2_en_csv_v2_1701.csv"),
+  #   skip=4) %>% 
+  #   select_if(~ !all(is.na(.))) %>%
+  # rename(country=`Country Name`) %>%
+  # mutate(country=case_when(
+  #   grepl("Egypt",country) ~ "Egypt",
+  #   grepl("Russia",country) ~ "Russia",
+  #   grepl("Korea, Rep.",country) ~ "South Korea",
+  #   grepl("Viet",country) ~ "Vietnam",
+  #   grepl("Slovak",country) ~ "Slovakia",
+  #   grepl("Iran",country) ~ "Iran",
+  #   grepl("Turk",country) ~ "Turkey",
+  #     .default=country)) %>%
+  # select(!c(`Country Code`,`Indicator Name`,`Indicator Code`)) %>%
+  # pivot_longer(!country,names_to="year") %>%
+  # mutate(year=as.numeric(year)) %>%
+  # filter(!grepl("Macao|Hong",country)) %>%
+  # filter(year==2024) 
+  #   ) %>%
+  # arrange(country,year)
+# source: OurWorldinData, but 2024 missing here
+
+# SELECTED Countries
 l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr <- with(
   list(df_region=lapply(names(l_groups$list_cntrs), \(x) 
     data.frame(region=x,country=l_groups$list_cntrs[[x]]) ) %>% 
@@ -249,7 +277,9 @@ lapply(names(l_groups$comp_groups), \(x)
   filter(country %in% l_groups$comp_groups[[x]]) %>%
   group_by(year) %>% 
   mutate(prop_pop=pop/sum(pop)) %>%
-  summarise(country=x,value=sum(value*prop_pop),pop=sum(pop)) ) %>%
+  summarise(country=x,
+    value=sum(value*prop_pop,na.rm = T),
+    pop=sum(pop,na.rm = T)) ) %>%
   bind_rows()
   ) %>%
   # filter for cntrs analysed + cntrs standards of comparison
@@ -257,12 +287,12 @@ lapply(names(l_groups$comp_groups), \(x)
   mutate(year=as.numeric(year)) %>%
   group_by(year) %>%
   mutate(`% of DE` = 100*value/value[country %in% "Germany"],
-    `% of W_EUR3` = 100*value/value[country %in% "W_EUR3"],
-    `% of S_EUR4` = 100*value/value[country %in% "S_EUR4"],
+    # `% of W_EUR3` = 100*value/value[country %in% "W_EUR3"],
     `% of G7` = 100*value/value[country %in% "G7"],
-    `% of World` = 100*value/value[country %in% "World"],
+    `% of S_EUR4` = 100*value/value[country %in% "S_EUR4"],
     # `% of High income` = 100*value/value[country %in% "High income"],
-    `% of LAT_AM` = 100*value/value[country %in% "LAT_AM"]  ) %>% 
+    `% of LAT_AM` = 100*value/value[country %in% "LAT_AM"],
+    `% of World` = 100*value/value[country %in% "World"]) %>% 
   ungroup() %>%
   # join region names
   left_join(df_region) %>%

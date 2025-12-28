@@ -14,9 +14,11 @@ mathjax: true
   margin-bottom: 24px;
   font-size: 0.95em;
   color: #333;">
-  <strong>Note:</strong> This is an independent, long-form data analysis and visualisation project.
+  <strong>Note:</strong>
+This is an independent, long-form data analysis and visualisation project.
+For best viewing, please use a monitor or tablet to see the charts clearly.
 Sections are modular and may be adapted or republished with attribution. 
-Feedback, discussion, and collaboration welcome.
+Feedback, discussion, or collaboration welcome.
 </div>
 
 <div style="background-color: #4a4a4a;
@@ -1691,8 +1693,8 @@ While GDP per capita could be marginally increased in CEE (and more substantiall
 Data for output per hour worked is sparser and missing for several non-OECD countries (mainly Africa and ex-USSR) before 2005; we analysed the data for those countries where it was available since 1995.  
 The basic trends are similar to productivity per employed person and to GDP/GNI per capita.  
 Again, the CEE countries had the biggest increase in absolute (constant USD) terms or as a % of the German/G7 level, followed closely by Asian economies, where the average is dominated by China. 
-If we are looking at relative increase from the initia baselinele, then again Asia saw the largest increase (4.75x), again followed by CEE (2.4x). 
-Within CEE it is especially RO, PL, and the Baltics that showed strong convergence (+20-35%) towards the German level. In HU, CZ, SK and SI the increase was only around +6-8%, although CZ and SI were already at ~55% of the German level in 1995. The weighted average of CEE went from 36 to 55% of Germany's level, substantially less than if we look by output *per employee*, where CEE reached 75% of the DE level. 
+If we are looking at relative increase from the initial baseline, then again Asia saw the largest increase (4.75x), again followed by CEE (2.4x). 
+Within CEE it is especially RO, PL, and the Baltics that showed strong convergence (+20-35%) towards the German level. In HU, CZ, SK and SI the increase was only around +6-8%, although CZ and SI were already at ~55% of the German level in 1995. The weighted average of CEE went from 36 to 56% of Germany's level, substantially less than if we look by output *per employee*, where CEE reached 75% of the DE level. 
 This smaller increment for output per hour compared to per employee is also due to the fact that output per hour rose in Germany (+63%) much more than per employee (+22%), as parallel to rising (per hour) productivity in Germany annual working hours went down. 
 In that sense, Germany is a very high bar for the labour productivity per hour metric, as its value was as high as the USA's in 2024. 
 CEE convergence compared to the G7 (38→62%), Southern Europe (44→74%) was stronger, and CEE pulled away from Latin America (116→197%). 
@@ -2633,28 +2635,28 @@ Using Germany as a reference level, the CEE region and its Asian peer group (wei
   <tbody>
     <tr>
       <td style="padding:8px;">GDP per capita (from 1990)</td>
-      <td style="padding:8px;">41%→68% (+27%)</td>
+      <td style="padding:8px;">41%→69% (+28%)</td>
       <td style="padding:8px;">7%→39% (+32%)</td>
     </tr>
     <tr>
       <td style="padding:8px;">GNI per capita (from 1990)</td>
       <td style="padding:8px;">40%→63% (+23%)</td>
-      <td style="padding:8px;">8%→36% (+28%)</td>
+      <td style="padding:8px;">7%→36% (+28%)</td>
     </tr>
     <tr>
       <td style="padding:8px;">GDP per person employed (from 1991)</td>
       <td style="padding:8px;">41%→74% (+33%)</td>
-      <td style="padding:8px;">9%→38% (+29%)</td>
+      <td style="padding:8px;">8%→39% (+31%)</td>
     </tr>
     <tr>
       <td style="padding:8px;">GDP per hour worked (from 1995)</td>
-      <td style="padding:8px;">37%→55% (+18%)</td>
-      <td style="padding:8px;">8%→23% (+15%)</td>
+      <td style="padding:8px;">36%→56% (+20%)</td>
+      <td style="padding:8px;">7%→23% (+16%)</td>
     </tr>
     <tr>
       <td style="padding:8px;">Annual average wages (from 1995)</td>
       <td style="padding:8px;">34%→61% (+27%)</td>
-      <td style="padding:8px;">NA (South Korea+Israel: 60%→75% (+15%))</td>
+      <td style="padding:8px;">NA (South Korea & Israel: 60%→75% (+15%))</td>
     </tr>
     <tr>
       <td style="padding:8px;">Minimum wages (from 1995, % of France)</td>

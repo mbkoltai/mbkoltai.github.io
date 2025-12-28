@@ -883,8 +883,8 @@ with(list(df=l_GDP_percap$gdp_per_cap_2021usdppp_sel_cntr,
           all_vars=c("value",
                 colnames(l_GDP_percap$gdp_per_cap_2021usdppp_sel_cntr %>% 
                 ungroup() %>% select(contains("% of"))) ),
-          save_plot_flag=T,
-          save_table=F), {
+          save_plot_flag=F,
+          save_table=T), {
   
   l_print <- list(); k_cntr=0
             
@@ -940,8 +940,8 @@ xx <- left_join(df,
     end_yr=max(year,na.rm=T),
     start=(!!sym(sel_var))[year==start_yr],
     end=(!!sym(sel_var))[year==end_yr],
-    pop_start=unique(pop[year==end_yr]),
-    pop_end=unique(pop[year==start_yr]),
+    pop_start=unique(pop[year==start_yr]),
+    pop_end=unique(pop[year==end_yr]),
     .groups="drop") %>%
   filter(start_yr==1990) %>%
   group_by(region) %>%
@@ -1072,14 +1072,15 @@ with(list(df=l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr,
           all_vars=c("value",
                 colnames(l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr %>% 
                 ungroup() %>% select(contains("% of"))) ),
-          save_plot_flag=T,
-          save_table=F), {
+          save_plot_flag=F,
+          save_table=T), {
   
   l_print <- list(); k_cntr=0
             
   for (type_scale in c("linear","logratio") ) {
   for (sel_var in all_vars ) {
   
+    print(sel_var)
   comp_cntrs <- if (grepl("%",sel_var)) {
     c(names(l_groups$comp_groups),
         l_groups$comp_groups[[gsub("% of ","",sel_var)]],
@@ -1089,11 +1090,11 @@ with(list(df=l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr,
     x_lab_txt <- if (grepl("%",sel_var)) {
     paste0("GNI/capita as ",
       gsub("LAT_AM","Latin America",sel_var),
-      "* (const 2021 int. USD, PPP), change 1990 → 2024")
+      "* (const 2021 int. USD, PPP), change 1990 → 2023")
     
     } else {
         paste0("GNI/capita",ifelse(grepl("log",type_scale),"",", thousand"),
-        " (const 2021 int. USD, PPP), change 1990 → 2024")
+        " (const 2021 int. USD, PPP), change 1990 → 2023")
     }
   if (grepl("log",type_scale)) {
   x_lab_txt <- gsub("%","proportion",paste0("log of ",x_lab_txt) )
@@ -1102,13 +1103,13 @@ with(list(df=l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr,
   comp_expl_caption <- if (grepl("%",sel_var)) { 
     paste0("\n*",str_wrap(case_when(
       grepl("W_EUR",sel_var) ~ paste0("weighted average of ",
-                                  paste0(l_groups$comp_groups$W_EUR3,collapse=", ")),
+                  paste0(l_groups$comp_groups$W_EUR3,collapse=", ")),
       grepl("S_EUR",sel_var) ~ paste0("weighted average of ",
-                                  paste0(l_groups$comp_groups$S_EUR4,collapse=", ")),
+                    paste0(l_groups$comp_groups$S_EUR4,collapse=", ")),
       grepl("LAT_AM",sel_var) ~ paste0("weighted average of ",
-                                      paste0(l_groups$list_cntrs$`Latin America`,collapse=", ")),
+                      paste0(l_groups$list_cntrs$`Latin America`,collapse=", ")),
       grepl("G7",sel_var) ~ paste0("weighted average of ",
-                              paste0(l_groups$comp_groups$G7,collapse=", ")),
+                    paste0(l_groups$comp_groups$G7,collapse=", ")),
       grepl("DE",sel_var) ~ "Germany",
       grepl("World",sel_var) ~ "World average"),
       width=40) ) } else {""}
@@ -1118,25 +1119,30 @@ with(list(df=l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr,
   
   # print(comp_cntrs)
   
-xx <- left_join(df,
+  df_start <- left_join(df ,
   l_pop$pop_sel_cnts %>% rename(pop=value) ) %>%
-  filter(!is.na(value)) %>%
   filter(!country %in% comp_cntrs ) %>%
+  filter(!is.na(value) & !is.na(pop)) %>%
   group_by(country) %>%
   summarise(
     region=unique(region),
-    start_yr=min(year,na.rm=T),
-    end_yr=max(year,na.rm=T),
+    start_yr=min(year[!is.na(value)],na.rm=T),
+    end_yr=max(year[!is.na(value) & !is.na(pop) ]),
     start=(!!sym(sel_var))[year==start_yr],
     end=(!!sym(sel_var))[year==end_yr],
-    pop_start=unique(pop[year==end_yr]),
-    pop_end=unique(pop[year==start_yr]),
-    .groups="drop") %>%
-  filter(start_yr==1990) %>%
+    pop_start=unique(pop[year==start_yr]),
+    pop_end=unique(pop[year==end_yr]),
+    .groups="drop")
+  
+  # View(df_start)
+  
+xx <- df_start %>%
+  # filter(start_yr==1990) %>%
   group_by(region) %>%
   mutate(
-    mean_end=sum(end*pop_end/sum(pop_end)),
-    mean_start=sum(start*pop_start/sum(pop_start))) %>%
+    mean_start=sum(start*pop_start/sum(pop_start,na.rm=T)),
+    mean_end=sum(end*pop_end/sum(pop_end,na.rm=T))
+    ) %>%
   ungroup() %>%
   filter(!country %in% comp_cntrs) %>%
   # calculate metric
@@ -1159,7 +1165,6 @@ xx <- left_join(df,
   ungroup() # %>%
   # rowwise() %>%
   
-
 # View(xx)
 
 df_summary <- xx %>% 
@@ -1250,7 +1255,7 @@ if (save_plot_flag) {
   
 })
 
-
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 # 1990 to 2024 change only (scatterplot), compared to ...
@@ -1518,14 +1523,13 @@ print(p_comb)
 # per-hour-of-work: OWID always has more data
 # per-person-employed: before 1990 OECD has data for western cnts, 
 # after 1990, same data availability
-
 # PER PERSON EMPLOYED
 with(list(df=l_product$owid$`per person`,
           all_vars=c("value",
                 colnames(l_product$owid$`per person` %>% 
                 ungroup() %>% select(contains("% of"))) ),
-          save_plot_flag=F,
-          save_table=T  ), {
+          save_plot_flag=T,
+          save_table=T), {
   
   l_print <- list(); k_cntr=0
             
@@ -1578,8 +1582,8 @@ df_summary <- left_join(df,
     end_yr=max(year,na.rm=T),
     start=(!!sym(sel_var))[year==start_yr],
     end=(!!sym(sel_var))[year==end_yr],
-    pop_start=unique(pop[year==end_yr]),
-    pop_end=unique(pop[year==start_yr]),
+    pop_start=unique(pop[year==start_yr]),
+    pop_end=unique(pop[year==end_yr]),
     .groups="drop") %>%
   filter(start_yr<=1995) %>%
   group_by(region) %>%
@@ -1700,6 +1704,7 @@ if (save_plot_flag) {
             
 })
 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # per hour worked
@@ -1762,8 +1767,8 @@ df_summary <- left_join(df,
     end_yr=max(year,na.rm=T),
     start=(!!sym(sel_var))[year==start_yr],
     end=(!!sym(sel_var))[year==end_yr],
-    pop_start=unique(pop[year==end_yr]),
-    pop_end=unique(pop[year==start_yr]),
+    pop_start=unique(pop[year==start_yr]),
+    pop_end=unique(pop[year==end_yr]),
     .groups="drop") %>%
   group_by(region) %>%
   mutate(
@@ -1882,7 +1887,6 @@ if (save_table) {
 
 })
 
-
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # WAGES
@@ -1890,7 +1894,7 @@ if (save_table) {
 # ANNUAL average wage
 with(list(df_name="annual_aver_wage",
           save_plot_flag=T,
-          save_table=F), {
+          save_table=T), {
   
   all_vars <- c("value",
                 colnames(l_wages$oecd$sel_cntrs[[df_name]] %>% 
@@ -2122,7 +2126,7 @@ if (save_plot_flag) {
 
 with(list(df_name="annual_min_wage",
           save_plot_flag=T,
-          save_table=F), {
+          save_table=T), {
   
   l_print <- list(); k_cntr=0
             
