@@ -11,6 +11,13 @@ mathjax: true
 Az alábbi interaktív grafikon és kalkulátor azt mutatja meg, hogy 
 az ország - teljes illetve választásra jogosult - lakossága hogyan oszlik el településméret szerint. 
 
+## datawrapper
+
+<iframe title="Magyarország lakosság-eloszlása településméret szerint" aria-label="Scatter Plot" id="datawrapper-chart-5LEw2" src="https://datawrapper.dwcdn.net/5LEw2/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="599" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+
+
+
+## Shinyapp: 
 <a href="https://mbkoltai.shinyapps.io/shinyapp_HU_pop_distr/" class="button">Magyarország település-szerkezete</a>
 
 <style>
@@ -32,6 +39,7 @@ az ország - teljes illetve választásra jogosult - lakossága hogyan oszlik el
 }
 </style>
 
+<!--
 \[A fenti verzió a shinyapps.io szerveren fut, amelynek havi felhasználási limitje van.
 Ha nem működik, 
 <a href="https://mbkoltai.github.io/hun-pop-distr-shiny" target="_blank" 
@@ -48,6 +56,7 @@ Ha nem működik,
  onmouseout="this.style.color='white'; this.style.borderColor='#0056b3';">
 klikk a lokálisan futó (statikus html) változatra</a>.
 Ez utóbbi verzió igénybe vehet kb. 30 másodpercet míg betölt.\]
+--> 
 
 ## Interaktív opciók
 

@@ -41,12 +41,6 @@ Tehát kb. egy 50-100 ezres bizonytalanságról beszélünk emiatt a _teljes_ (v
 
 A választásra jogosult népesség méretére a [2025. októberi 12-i adatot](https://www.valasztas.hu/valasztopolgarok-szama-valasztastipusonkent) használtam, ami 7 635 775 (7.64 millió) fő volt. Ez csak a belföldi, magyarországi lakcímmel rendelkező szavazókat foglalja magában, tehát a levélszavazásra jogosultak (kb. 441 ezer fő 2025/10-ben) nincsenek benne, mint ahogy rájuk a magyarországi közvéleménykutatások sem terjednek ki általában.<br>
 
-## Datawrapper
-
-<iframe title="Pártprefenciák TELJES NÉPESSÉGBEN" aria-label="Split Bars" id="datawrapper-chart-cfTyu" src="https://datawrapper.dwcdn.net/cfTyu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="922" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
-</script>
-
-
 ## flourish
 
 <div class="flourish-embed flourish-chart" data-src="visualisation/25731267">
@@ -100,6 +94,12 @@ A választásra jogosult népesség méretére a [2025. októberi 12-i adatot](h
     border-color: red; /* Change border color to red on hover */
 }
 </style>
+
+
+## Datawrapper
+
+<iframe title="Pártprefenciák TELJES NÉPESSÉGBEN" aria-label="Split Bars" id="datawrapper-chart-cfTyu" src="https://datawrapper.dwcdn.net/cfTyu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="922" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
 
 
 ### Kód és adatforrások
