@@ -323,6 +323,8 @@ After each plot, I summarise the *cumulative* changes in tables, ranking countri
 For the employment ratio, countries are ranked by the increase in the percentage of the 15+ population in employment, since this is already a relative measure with a ceiling and is therefore more informative than re-normalising by EU8 values. 
 Similarly, for life expectancy, countries are ranked by the more meaningful absolute increase, as values expressed as a percentage of the EU8 average are very similar, given that all CEE countries already exceed 90% of the EU8 benchmark.
 
+All code and data used in the post and its plots can be downloaded from the project's [Github repo](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence).
+
 <!-- ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###  -->
 <!-- ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###  -->
 <!-- ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###  -->
@@ -378,7 +380,7 @@ alt="Relative-to-2010" style="max-width:100%;">
 <b>Figure 1</b> GDP per capita since 2004, measured in constant 2021 international dollars (PPP).
 The chart shows levels (const. USD PPP), indexed values relative to 2004 and 2010, and percentages of the EU8 weighted average. Countries are ranked by cumulative growth from the selected base year through 2024. 
 <br>
-<a href="{{site.baseurl}}/images/hu-cee-convergence/output/GDP_per_cap/data_table.csv" 
+<a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/GDP_per_cap/full_table.csv" 
 target="_blank" rel="noopener">[download data]</a>
 <a href="https://ourworldindata.org/grapher/gdp-per-capita-worldbank" target="_blank" rel="noopener">[source]</a>
 </p>
@@ -458,7 +460,8 @@ alt="Relative-to-2010" style="max-width:100%;">
 <p class="img-note">
 <b>Figure 2</b> GNI per capita since 2004, measured in constant 2021 international dollars (PPP).
 The chart shows levels (const. USD PPP), indexed values relative to 2004 and 2010, and percentages of the EU8 weighted average. Countries are ranked by cumulative growth from the selected base year through 2023. <br>
-<a href="{{site.baseurl}}/images/hu-cee-convergence/output/GNI_per_cap/data_table.csv" 
+
+<a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/GNI_per_cap/full_table.csv" 
 target="_blank" rel="noopener">[download data]</a>
 <a href="https://ourworldindata.org/grapher/gross-national-income-per-capita-undp" target="_blank" rel="noopener">[source]</a>
 </p>
@@ -554,7 +557,7 @@ alt="Relative-to-EU8" style="max-width:100%;">
 <b>Figure 3</b> Labour productivity (output per hour worked) since 2004, measured in constant 2021 international dollars (PPP).
 The chart shows levels (const. USD PPP), indexed values relative to 2004 and 2010, and percentages of the EU8 weighted average. Countries are ranked by cumulative growth from the selected base year through 2024. 
 
-<a href="{{site.baseurl}}/images/hu-cee-convergence/output/productivity/per_hr_work/data_table.csv" target="_blank" rel="noopener">[download data]</a>
+<a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/productivity/per_hr_work/data_table.csv" target="_blank" rel="noopener">[download data]</a>
 <a href="https://ourworldindata.org/grapher/labor-productivity-per-hour-pennworldtable" target="_blank" rel="noopener">[source]</a>
 </p>
 
@@ -639,7 +642,8 @@ alt="Relative-to-EU8" style="max-width:100%;">
 <p class="img-note">
 <b>Figure 4</b> Average annual wages since 2004, measured in constant 2024 international dollars (PPP).
 The chart shows levels (const. USD PPP), indexed values relative to 2004 and 2010, and percentages of the EU8 weighted average. Countries are ranked by cumulative growth from the selected base year through 2024. 
-<a href="{{site.baseurl}}/images/hu-cee-convergence/output/wages/annual_aver_wage/data_table.csv" target="_blank" rel="noopener">[download data]</a>
+
+<a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/wages/annual_aver_wage/data_table.csv" target="_blank" rel="noopener">[download data]</a>
 <a href="https://www.oecd.org/en/data/indicators/average-annual-wages.html" target="_blank" rel="noopener">[source]</a>
 </p>
 
@@ -718,7 +722,8 @@ alt="Relative-to-EU8" style="max-width:100%;">
 <p class="img-note">
 <b>Figure 5</b> Median hourly earnings since 2006, measured in PPS (purchasing power standards; anchored to EU-wide price changes).
 The chart shows levels (PPS), indexed values relative to 2004 and 2010, and percentages of the EU8 weighted average. Countries are ranked by cumulative growth from the selected base year through 2022. 
-<a href="{{site.baseurl}}/images/hu-cee-convergence/output/wages/real_median_hourly/data_table.csv" target="_blank" rel="noopener">[download data]</a>
+
+<a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/wages/real_median_hourly/data_table.csv" target="_blank" rel="noopener">[download data]</a>
 <a href="https://ec.europa.eu/eurostat/databrowser/view/earn_ses_pub2s/default/table?lang=en" target="_blank" rel="noopener">[source]</a>
 </p>
 
@@ -793,7 +798,7 @@ alt="Relative-to-EU8" style="max-width:100%;">
 <p class="img-note">
 <b>Figure 6</b> Minimum wages since 2004, measured in constant 2024 international dollars (PPP).
 The chart shows levels (const. USD PPP), indexed values relative to 2004 and 2010, and percentages of the EU8 weighted average. Countries are ranked by cumulative growth from the selected base year through 2024. 
-<a href="{{site.baseurl}}/images/hu-cee-convergence/output/wages/min_wage/data_table.csv" target="_blank" rel="noopener">[download data]</a>
+<a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/wages/min_wage/data_table.csv" target="_blank" rel="noopener">[download data]</a>
 <a href="https://data-explorer.oecd.org/vis?lc=en&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_EARNINGS%40RMW&df[ag]=OECD.ELS.SAE&df[vs]=1.0" target="_blank" rel="noopener">[source]</a>
 </p>
 
@@ -871,7 +876,7 @@ alt="Relative-to-EU8" style="max-width:100%;">
 <p class="img-note">
 <b>Figure 7</b> Median equivalised net income since 2005, measured in PPS (purchasing power standards anchored to EU-wide price changes).
 The chart shows levels (PPS), indexed values relative to 2005 and 2010, and percentages of the EU8 weighted average. Countries are ranked by cumulative growth from the selected base year through 2024. 
-<a href="{{site.baseurl}}/images/hu-cee-convergence/output/wages/median_equiv_net_income/data_table.csv" target="_blank" rel="noopener">[download data]</a>
+<a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/wages/median_equiv_net_income/data_table.csv" target="_blank" rel="noopener">[download data]</a>
 <a href="https://ec.europa.eu/eurostat/databrowser/view/ilc_di03/default/table?lang=en" target="_blank" rel="noopener">[source]</a>
 </p>
 
@@ -954,7 +959,7 @@ alt="Relative-to-EU8" style="max-width:100%;">
 <p class="img-note">
 <b>Figure 8</b> Actual individual consumption since 2004, measured in PPS (purchasing power standards anchored to EU-wide price changes).
 The chart shows levels (PPS), indexed values relative to 2004 and 2010, and percentages of the EU8 weighted average. Countries are ranked by cumulative growth from the selected base year through 2024. 
-<a href="{{site.baseurl}}/images/hu-cee-convergence/output/actual_indiv_consump/data_table.csv" target="_blank" rel="noopener">[download data]</a>
+<a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/actual_indiv_consump/data_table.csv" target="_blank" rel="noopener">[download data]</a>
 <a href="https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/" target="_blank" rel="noopener">[source]</a>
 </p>
 </div>
@@ -1036,7 +1041,7 @@ alt="Relative-to-EU8" style="max-width:100%;">
 <p class="img-note">
 <b>Figure 9</b> Employment ratio (% of 15+ population) since 2004.
 The chart shows levels (% of 15+ population), indexed values relative to 2004 and 2010, and percentages of the EU8 weighted average. Countries are ranked by cumulative growth from the selected base year through 2024. 
-<a href="{{site.baseurl}}/images/hu-cee-convergence/output/employment/data_table.csv" target="_blank" rel="noopener">[download data]</a>
+<a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/employment/data_table.csv" target="_blank" rel="noopener">[download data]</a>
 <a href="https://ec.europa.eu/eurostat/databrowser/view/ilc_di03/default/table?lang=en" target="_blank" rel="noopener">[source]</a>
 </p>
 
@@ -1110,7 +1115,7 @@ alt="Relative-to-EU8" style="max-width:100%;">
 <!-- ### ### ### ### ### ### ### LEGEND ### ### ### ### ### ### ### ### ### ### -->
 <p class="img-note">
 <b>Figure 10</b> Life expectancy (years) since 2004. The chart shows levels (years), indexed values relative to 2004 and 2010, and percentages of the EU8 weighted average. Countries are ranked by cumulative growth from the selected base year through 2024. 
-<a href="{{site.baseurl}}/images/hu-cee-convergence/output/life_exp/data_table.csv" target="_blank" rel="noopener">[download data]</a>
+<a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/life_exp/data_table.csv" target="_blank" rel="noopener">[download data]</a>
 <a href="https://ourworldindata.org/grapher/life-expectancy" target="_blank" rel="noopener">[source]</a>
 </p>
 
