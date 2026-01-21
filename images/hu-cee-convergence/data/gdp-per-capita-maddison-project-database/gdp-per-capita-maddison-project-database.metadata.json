@@ -1,0 +1,57 @@
+{
+  "chart": {
+    "title": "GDP per capita",
+    "subtitle": "This data is adjusted for inflation and for differences in living costs between countries.",
+    "note": "This data is expressed in [international-$](#dod:int_dollar_abbreviation) at 2011 prices.",
+    "citation": "Bolt and van Zanden - Maddison Project Database 2023",
+    "originalChartUrl": "https://ourworldindata.org/grapher/gdp-per-capita-maddison-project-database?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "World",
+      "Western Europe (MPD)",
+      "Eastern Europe (MPD)",
+      "Latin America (MPD)",
+      "East Asia (MPD)",
+      "Western offshoots (MPD)",
+      "Sub Saharan Africa (MPD)",
+      "South and South East Asia (MPD)",
+      "Middle East and North Africa (MPD)"
+    ]
+  },
+  "columns": {
+    "GDP per capita": {
+      "titleShort": "GDP per capita",
+      "titleLong": "GDP per capita - Maddison Project Database – In constant international-$. Historical data",
+      "descriptionShort": "Average economic output per person in a country or region per year. This data is adjusted for inflation and for differences in living costs between countries.",
+      "descriptionKey": [
+        "The Maddison Project Database is based on the work of many researchers who have produced estimates of economic growth and population for individual countries. The full list of sources for this historical data is given in [the original dataset](https://dataverse.nl/api/access/datafile/421302).",
+        "Gross domestic product (GDP) is a measure of the total value added from the production of goods and services in a country or region each year. GDP per capita is GDP divided by population.",
+        "This indicator provides information on economic growth and income levels in the _very long run_. Some country estimates are available as far back as 1 CE, and regional estimates as far back as 1820 CE.",
+        "This data is adjusted for inflation and for differences in living costs between countries.",
+        "This data is expressed in [international-$](#dod:int_dollar_abbreviation) at 2011 prices, using a combination of 2011 and 1990 PPPs for historical data.",
+        "Time series for former countries and territories are calculated forward in time by estimating values based on their last official borders.",
+        "For more regularly updated estimates of GDP per capita since 1990, see the [World Bank's indicator](https://ourworldindata.org/grapher/gdp-per-capita-worldbank)."
+      ],
+      "shortUnit": "$",
+      "unit": "international-$ in 2011 prices",
+      "timespan": "1-2022",
+      "type": "Numeric",
+      "owidVariableId": 900793,
+      "shortName": "gdp_per_capita",
+      "lastUpdated": "2024-04-26",
+      "nextUpdate": "2027-04-22",
+      "citationShort": "Bolt and van Zanden - Maddison Project Database 2023 – with minor processing by Our World in Data",
+      "citationLong": "Bolt and van Zanden - Maddison Project Database 2023 – with minor processing by Our World in Data. “GDP per capita – Maddison Project Database – In constant international-$. Historical data” [dataset]. Bolt and van Zanden, “Maddison Project Database 2023” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/900793.metadata.json"
+    },
+    "900793-annotations": {
+      "titleShort": "900793-annotations",
+      "titleLong": "900793-annotations",
+      "type": "SeriesAnnotation",
+      "citationShort": " – processed by Our World in Data",
+      "citationLong": " – processed by Our World in Data. “900793-annotations” [dataset].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/undefined.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-04-18",
+  "activeFilters": {}
+}

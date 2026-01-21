@@ -1,0 +1,45 @@
+{
+  "chart": {
+    "title": "Employment-to-population ratio",
+    "note": "All figures correspond to [modeled ILO estimates](#dod:ilo-modelled-estimates). Employment is defined in line with the [13th ICLS](#dod:13-icls) and includes the production of goods for own use, such as subsistence farming.",
+    "citation": "International Labour Organization, ILO Modelled Estimates (ILOEST) / ILOSTAT, via World Bank (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/employment-to-population-ratio?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "South Africa",
+      "Namibia",
+      "Romania",
+      "Finland",
+      "Mexico",
+      "United States",
+      "China",
+      "Vietnam",
+      "Tunisia"
+    ]
+  },
+  "columns": {
+    "Employment to population ratio, 15+, total (%) (modeled ILO estimate)": {
+      "titleShort": "Employment-to-population ratio",
+      "titleLong": "Employment-to-population ratio",
+      "descriptionShort": "Share of the working-age population (ages 15 and older) who are employed.",
+      "descriptionKey": [
+        "This indicator is defined as the proportion of a country’s working-age population that is employed. Employment refers to people who worked for at least an hour during the reference period (typically a week), whether in paid employment or self-employment. This indicator gives a broad sense of how many people in a country are working, regardless of the kind of job they have or how many hours they work.",
+        "When defining the working-age population, the definition of “working age” varies across countries, depending on national laws and practices. In the ILO modeled estimates shown here, this is harmonized to refer to people aged 15 and older.",
+        "This data comes from the ILO Modelled Estimates series. The ILO combines countries' own reported estimates with statistically modeled estimates when observations are missing. This improves comparability across countries and over time and allows the ILO to calculate regional and global aggregates for every year. You can read more about how the ILO produces these estimates in the [Modelled Estimates documentation](https://ilostat.ilo.org/methods/concepts-and-definitions/ilo-modelled-estimates/).",
+        "This data follows the standards of the [13th International Classification of Labour Statisticians (ICLS)](#dod:13-icls). Under this framework, employment includes work for pay or profit, including self-employment, as well as the production of goods for own use (such as subsistence farming). Changes in the definition of employment also affect who is counted as unemployed or outside the labor force. Because definitions were updated under the [19th ICLS](#dod:19-icls), data using the newer definitions is not fully comparable with data based on the 13th ICLS. You can read more about the definitions in [this explainer by the ILO](https://www.ilo.org/publications/quick-guide-understanding-impact-new-statistical-standards-ilostat)."
+      ],
+      "shortUnit": "%",
+      "unit": "%",
+      "timespan": "1991-2024",
+      "type": "Numeric",
+      "owidVariableId": 1107496,
+      "shortName": "sl_emp_totl_sp_zs",
+      "lastUpdated": "2025-09-08",
+      "nextUpdate": "2026-09-08",
+      "citationShort": "International Labour Organization, ILO Modelled Estimates (ILOEST) / ILOSTAT, via World Bank (2025) – processed by Our World in Data",
+      "citationLong": "International Labour Organization, ILO Modelled Estimates (ILOEST) / ILOSTAT, via World Bank (2025) – processed by Our World in Data. “Employment-to-population ratio – ILO” [dataset]. International Labour Organization, ILO Modelled Estimates (ILOEST) / ILOSTAT, via World Bank, “World Development Indicators 122” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1107496.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-01-11",
+  "activeFilters": {}
+}

@@ -1,0 +1,46 @@
+{
+  "chart": {
+    "title": "Productivity: output per hour worked",
+    "subtitle": "Productivity is measured as [gross domestic product (GDP)](#dod:gdp) per hour of work. This data is adjusted for inflation and differences in living costs between countries.",
+    "note": "This data is expressed in [international-$](#dod:int_dollar_abbreviation) at 2021 prices per hour, using multiple benchmark years to adjust for differences in living costs between countries over time.",
+    "citation": "Feenstra et al. - Penn World Table (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/labor-productivity-per-hour-pennworldtable?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "United States",
+      "Germany",
+      "United Kingdom",
+      "Brazil",
+      "South Korea",
+      "Japan",
+      "China",
+      "India",
+      "Ethiopia",
+      "Russia"
+    ]
+  },
+  "columns": {
+    "Productivity: output per hour worked": {
+      "titleShort": "Productivity: output per hour worked",
+      "titleLong": "Productivity: output per hour worked",
+      "descriptionShort": "Productivity is calculated as GDP divided by the total number of hours worked in the economy. This data is adjusted for inflation and differences in living costs between countries.",
+      "descriptionKey": [
+        "This data is adjusted for inflation and differences in living costs between countries.",
+        "This data is expressed in [international-$](#dod:int_dollar_abbreviation) at 2021 prices, using a multiple benchmark approach that incorporates PPP estimates from all available benchmark years."
+      ],
+      "descriptionProcessing": "We calculated productivity by dividing GDP (output side, multiple price benchmarks) by the number of people in work (employees and self-employed) and the average hours they work.\n\nWe excluded values considered outliers in the original dataset (`i_outlier = \"Outlier\"`), due to implausible relative prices (PPPs divided by exchange rates).\n\nWe replaced GDP values for Bermuda with different estimates (output side, single price benchmark) due to the unusual changes on prices in this country.",
+      "shortUnit": "$/h",
+      "unit": "international-$ in 2021 prices per hour",
+      "timespan": "1950-2023",
+      "type": "Numeric",
+      "owidVariableId": 1108544,
+      "shortName": "productivity",
+      "lastUpdated": "2025-10-09",
+      "nextUpdate": "2027-04-12",
+      "citationShort": "Feenstra et al. - Penn World Table (2025) – with major processing by Our World in Data",
+      "citationLong": "Feenstra et al. - Penn World Table (2025) – with major processing by Our World in Data. “Productivity: output per hour worked – Penn World Table – In constant international-$” [dataset]. Feenstra et al., “Penn World Table 11.0” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1108544.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-12-02",
+  "activeFilters": {}
+}

@@ -1,0 +1,51 @@
+country,variable,metric,start_yr,end_yr,n_cntr,name,value,column_name,period
+Hungary,GDP_per_cap,% of EU8,NA,2024,9,rank_level_start,"2/9 (HU: 52%, CEE: 44.4%)",Rank by level at start,NA
+Hungary,GDP_per_cap,% of EU8,NA,2024,9,rank_level_end,"5/9 (HU: 67%, CEE: 70.7%)",Rank by level in last year,NA
+Hungary,GDP_per_cap,% of EU8,2004,2024,9,rank_change_from_start,"8/9 (HU: 15%, CEE: 26.3%)",Rank by cumulative change since start,2004-2024
+Hungary,GDP_per_cap,% of EU8,NA,2024,9,rank_level_2010,"4/9 (HU: 51%, CEE: 51.6%)",Rank by level in 2010,NA
+Hungary,GDP_per_cap,% of EU8,2010,2024,9,rank_change_from_2010,"7/9 (HU: 15%, CEE: 19.2%)",Rank by cumulative change since 2010,2010-2024
+Hungary,GNI_per_cap,% of EU8,NA,2023,9,rank_level_start,"1/9 (HU: 51%, CEE: 42.8%)",Rank by level at start,NA
+Hungary,GNI_per_cap,% of EU8,NA,2023,9,rank_level_end,"7/9 (HU: 60%, CEE: 65.6%) [2023]",Rank by level in last year,NA
+Hungary,GNI_per_cap,% of EU8,2004,2023,9,rank_change_from_start,"9/9 (HU: 9.6%, CEE: 22.8%) [2004-2023]",Rank by cumulative change since start,2004-2023
+Hungary,GNI_per_cap,% of EU8,NA,2023,9,rank_level_2010,"3/9 (HU: 50%, CEE: 49.7%)",Rank by level in 2010,NA
+Hungary,GNI_per_cap,% of EU8,2010,2023,9,rank_change_from_2010,"8/9 (HU: 10%, CEE: 15.9%) [2010-2023]",Rank by cumulative change since 2010,2010-2023
+Hungary,actual_indiv_consump,% of EU8,NA,2024,9,rank_level_start,"1/9 (HU: 53%, CEE: 45.5%)",Rank by level at start,NA
+Hungary,actual_indiv_consump,% of EU8,NA,2024,9,rank_level_end,"9/9 (HU: 64%, CEE: 73%)",Rank by level in last year,NA
+Hungary,actual_indiv_consump,% of EU8,2004,2024,9,rank_change_from_start,"9/9 (HU: 11%, CEE: 27.5%)",Rank by cumulative change since start,2004-2024
+Hungary,actual_indiv_consump,% of EU8,NA,2024,9,rank_level_2010,"4/9 (HU: 52%, CEE: 55.3%)",Rank by level in 2010,NA
+Hungary,actual_indiv_consump,% of EU8,2010,2024,9,rank_change_from_2010,"8/9 (HU: 11%, CEE: 17.7%)",Rank by cumulative change since 2010,2010-2024
+Hungary,annual_aver_wage,% of EU8,NA,2024,6,rank_level_start,"2/6 (HU: 44%, CEE: 31.4%)",Rank by level at start,NA
+Hungary,annual_aver_wage,% of EU8,NA,2024,6,rank_level_end,"6/6 (HU: 52%, CEE: 44.5%)",Rank by level in last year,NA
+Hungary,annual_aver_wage,% of EU8,2004,2024,6,rank_change_from_start,"6/6 (HU: 8.3%, CEE: 13.1%)",Rank by cumulative change since start,2004-2024
+Hungary,annual_aver_wage,% of EU8,NA,2024,6,rank_level_2010,"5/6 (HU: 43%, CEE: 34.7%)",Rank by level in 2010,NA
+Hungary,annual_aver_wage,% of EU8,2010,2024,6,rank_change_from_2010,"5/6 (HU: 9.2%, CEE: 9.8%)",Rank by cumulative change since 2010,2010-2024
+Hungary,employment,absolute value (% of 15+ popul.),NA,2024,9,rank_level_start,"4/9 (HU: 49.2%, CEE: 47.2%)",Rank by level at start,NA
+Hungary,employment,absolute value (% of 15+ popul.),NA,2024,9,rank_level_end,"3/9 (HU: 57.8%, CEE: 55.3%)",Rank by level in last year,NA
+Hungary,employment,absolute value (% of 15+ popul.),2004,2024,9,rank_change_from_start,"3/9 (HU: 8.7%, CEE: 8.1%)",Rank by cumulative change since start,2004-2024
+Hungary,employment,absolute value (% of 15+ popul.),NA,2024,9,rank_level_2010,"9/9 (HU: 46.2%, CEE: 49.3%)",Rank by level in 2010,NA
+Hungary,employment,absolute value (% of 15+ popul.),2010,2024,9,rank_change_from_2010,"1/9 (HU: 11.6%, CEE: 6%)",Rank by cumulative change since 2010,2010-2024
+Hungary,life_exp,absolute value (years),NA,2023,9,rank_level_start,"4/9 (HU: 72.9y, CEE: 73.7y)",Rank by level at start,NA
+Hungary,life_exp,absolute value (years),NA,2023,9,rank_level_end,"5/9 (HU: 77y, CEE: 77.8y) [2023]",Rank by level in last year,NA
+Hungary,life_exp,absolute value (years),2004,2023,9,rank_change_from_start,"4/9 (HU: 4.1y, CEE: 4.1y) [2004-2023]",Rank by cumulative change since start,2004-2023
+Hungary,life_exp,absolute value (years),NA,2023,9,rank_level_2010,"5/9 (HU: 74.5y, CEE: 75.4y)",Rank by level in 2010,NA
+Hungary,life_exp,absolute value (years),2010,2023,9,rank_change_from_2010,"5/9 (HU: 2.5y, CEE: 2.4y) [2010-2023]",Rank by cumulative change since 2010,2010-2023
+Hungary,median_equiv_net_income,% of EU8,NA,2024,8,rank_level_start,"1/8 (HU: 39%, CEE: 31.7%)",Rank by level at start,NA
+Hungary,median_equiv_net_income,% of EU8,2007,2024,8,rank_change_from_start,"8/8 (HU: 5.8%, CEE: 28.1%) [2007-2024]",Rank by cumulative change since start,2007-2024
+Hungary,median_equiv_net_income,% of EU8,NA,2024,9,rank_level_2010,"5/9 (HU: 38%, CEE: 38.8%)",Rank by level in 2010,NA
+Hungary,median_equiv_net_income,% of EU8,NA,2024,9,rank_level_end,"9/9 (HU: 45%, CEE: 62.4%)",Rank by level in last year,NA
+Hungary,median_equiv_net_income,% of EU8,2010,2024,9,rank_change_from_2010,"8/9 (HU: 7.4%, CEE: 23.6%)",Rank by cumulative change since 2010,2010-2024
+Hungary,min_wage,% of EU8,NA,2024,9,rank_level_start,"3/9 (HU: 30%, CEE: 28.4%)",Rank by level at start,NA
+Hungary,min_wage,% of EU8,NA,2024,9,rank_level_end,"5/9 (HU: 52%, CEE: 63.2%)",Rank by level in last year,NA
+Hungary,min_wage,% of EU8,2004,2024,9,rank_change_from_start,"7/9 (HU: 22%, CEE: 34.8%)",Rank by cumulative change since start,2004-2024
+Hungary,min_wage,% of EU8,NA,2024,9,rank_level_2010,"6/9 (HU: 29%, CEE: 33.9%)",Rank by level in 2010,NA
+Hungary,min_wage,% of EU8,2010,2024,9,rank_change_from_2010,"5/9 (HU: 23%, CEE: 29.3%)",Rank by cumulative change since 2010,2010-2024
+Hungary,per_hr_work,% of EU8,NA,2023,9,rank_level_start,"2/9 (HU: 46%, CEE: 39.8%)",Rank by level at start,NA
+Hungary,per_hr_work,% of EU8,NA,2023,9,rank_level_end,"7/9 (HU: 52%, CEE: 56.6%) [2023]",Rank by level in last year,NA
+Hungary,per_hr_work,% of EU8,2004,2023,9,rank_change_from_start,"9/9 (HU: 5.7%, CEE: 16.9%) [2004-2023]",Rank by cumulative change since start,2004-2023
+Hungary,per_hr_work,% of EU8,NA,2023,9,rank_level_2010,"2/9 (HU: 54%, CEE: 46.9%)",Rank by level in 2010,NA
+Hungary,per_hr_work,% of EU8,2010,2023,9,rank_change_from_2010,"8/9 (HU: -1.8%, CEE: 9.8%) [2010-2023]",Rank by cumulative change since 2010,2010-2023
+Hungary,real_median_hourly,% of EU8,NA,2022,8,rank_level_start,"3/8 (HU: 34%, CEE: 32.3%)",Rank by level at start,NA
+Hungary,real_median_hourly,% of EU8,2006,2022,8,rank_change_from_start,"8/8 (HU: 19%, CEE: 26.3%) [2006-2022]",Rank by cumulative change since start,2006-2022
+Hungary,real_median_hourly,% of EU8,NA,2022,9,rank_level_2010,"5/9 (HU: 41%, CEE: 41.2%)",Rank by level in 2010,NA
+Hungary,real_median_hourly,% of EU8,NA,2022,9,rank_level_end,"7/9 (HU: 53%, CEE: 60.7%) [2022]",Rank by level in last year,NA
+Hungary,real_median_hourly,% of EU8,2010,2022,9,rank_change_from_2010,"8/9 (HU: 12%, CEE: 19.5%) [2010-2022]",Rank by cumulative change since 2010,2010-2022
