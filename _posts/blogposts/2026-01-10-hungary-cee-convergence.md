@@ -2,7 +2,7 @@
 layout: post
 title: Hungary's convergence since 2010 within the CEE region
 tags: hungary politics elections demographics data-visualisation magyar
-excerpt: hello
+excerpt: A story of failure, from EU accession to 16 years of Orbán
 secondary: blogposts
 mathjax: true
 ---
