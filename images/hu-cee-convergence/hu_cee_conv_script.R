@@ -15,12 +15,16 @@ source("load_data.R")
 with(list(all_vars=c("rel_val",grep("value|AT|DE|EU8",
             colnames(l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr),
             value=T)),
-          save_plot_flag=T,
-          save_table=F), {
+          start_yr_vals=c(2004,2010),
+          folder_name="output/GNI_per_cap/",
+          l_table_save=list(),
+          show_plot=F,
+          save_plot_flag=F,
+          save_table=T), {
   all_vars <- grep("LAT",all_vars,value=T,invert=T)
 
+for (start_yr in start_yr_vals) {
 for (sel_var in all_vars) {
-for (start_yr in c(2004,2010)) {
 
   y_txt <- if (grepl("value",sel_var)) {
   "GNI per capita (thousand constant 2021 USD, PPP)" 
@@ -32,12 +36,13 @@ for (start_yr in c(2004,2010)) {
               "\nrelative to first year (",start_yr,"=100)")
     }
   
-df_plot  <- l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr %>%
+df_plot <- l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr %>%
     filter(country %in% l_groups$list_cntrs$CEE 
       & year>=start_yr) %>%
-  mutate(value=value/1e3)  %>%
-  group_by(country) %>%
-  mutate(rel_val=100*value/value[year==min(year)],
+    group_by(country) %>%
+  mutate(rel_val=100*value/value[year==min(year)]) %>%
+  select(country,year,value,!!sym(sel_var),pop) %>%
+  mutate(value=value/1e3,
     start_val=(!!sym(sel_var))[year==min(year)],
          end_val=(!!sym(sel_var))[year==max(year)],
         diff_end_start=end_val-start_val ) %>%
@@ -54,6 +59,15 @@ df_plot  <- l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr %>%
   mutate(country_val_str=fct_reorder(
           country_val_str,diff_end_start,.desc=T) )
 # View(df_plot)
+
+l_table_save[[sel_var]][[as.character(start_yr)]] <- df_plot %>% 
+  mutate(facet_id=paste0(sel_var,"-",start_yr)) 
+  if (sel_var!="value") {
+    l_table_save[[sel_var]][[as.character(start_yr)]] <-
+      l_table_save[[sel_var]][[as.character(start_yr)]] %>%
+      select(!value) %>%
+      rename(value=!!sym(sel_var))    
+  }
 
 # caption text
     caption_src <- "source: https://data.worldbank.org/indicator/NY.GNP.PCAP.PP.KD"
@@ -113,6 +127,7 @@ df_summ <- df_plot %>%
 title_str <- paste0("weighted average: ",
   paste0(df_summ$str_yr,collapse = " → "))
 
+if (show_plot) {
 p <- df_plot %>%
 ggplot(aes(x=year,y=get(sel_var)) ) +
   # facet_wrap(~country_val_str) +
@@ -141,21 +156,37 @@ ggplot(aes(x=year,y=get(sel_var)) ) +
 print(p)
 
 # SAVE PLOT
-folder_name <- "output/GNI_per_cap/"
+# folder_name <- "output/GNI_per_cap/"
 file_name <- paste0(folder_name,start_yr,"/",gsub("% of ","",sel_var),".png")
 if (save_plot_flag) {
   file_name %>% ggsave(plot=p, width=42,height=28,units="cm")
 }
-
 }
+
+} # end of for loop (start_yr)
   
-} # end of for loop
+} # end of for loop (variable)
 
 # SAVE TABLE
 if (save_table) {
-  # full data
-  write_csv(df_plot,
+  
+  # FULL DATA
+  df_save_full <- bind_rows(
+  lapply(names(l_table_save), function(var) {
+    bind_rows(
+      lapply(names(l_table_save[[var]]), function(yr) {
+        l_table_save[[var]][[yr]] |>
+          mutate(
+            var = var,
+            year = yr) })) }) )
+    write_csv(df_save_full, 
       file=paste0(folder_name,"full_table.csv"))
+# SAVE selected variable
+    df_save_full %>%
+      filter(facet_id %in% "% of EU8-2004") %>%
+    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+    
+  
   # summary table (start and end values)
   l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr %>%
     filter(country %in% l_groups$list_cntrs$CEE) %>%
@@ -251,13 +282,20 @@ writeLines(html_tables[[2]], "output/GNI_per_cap/table_2010_2023.html")
 with(list(all_vars=c("rel_val",grep("value|AT|DE|EU8",
             colnames(l_GDP_percap$gdp_per_cap_2021usdppp_sel_cntr),
             value=T)),
-          save_plot_flag=T,
-          save_table=F), {
-  all_vars <- grep("LAT",all_vars,value=T,invert=T)
+  start_yr_vals=c(2004,2010),
+  show_plot=F,
+  save_plot_flag=F,
+  save_table=T,
+  folder_name="output/GDP_per_cap/",
+  l_table_save=list()
+  ),
+  {
+  
+  all_vars=grep("LAT",all_vars,value=T,invert=T)
 
+for (start_yr in start_yr_vals) {
 for (sel_var in all_vars) {
-for (start_yr in c(2004,2010)) {
-
+  
   y_txt <- if (grepl("value",sel_var)) {
   "GDP per capita (thousand constant 2021 USD, PPP)" 
     } else {
@@ -268,13 +306,15 @@ for (start_yr in c(2004,2010)) {
               "\nrelative to first year (",start_yr,"=100)")
     }
   
-df_plot  <- l_GDP_percap$gdp_per_cap_2021usdppp_sel_cntr %>%
+df_plot <- l_GDP_percap$gdp_per_cap_2021usdppp_sel_cntr %>%
     filter(country %in% l_groups$list_cntrs$CEE 
       & year>=start_yr) %>%
-  mutate(value=value/1e3)  %>%
   group_by(country) %>%
-  mutate(rel_val=100*value/value[year==min(year)],
-    start_val=(!!sym(sel_var))[year==min(year)],
+  mutate(rel_val=100*value/value[year==min(year)]) %>%
+  select(country,year,value,!!sym(sel_var),pop) %>%
+  mutate(value=value/1e3) %>%
+  group_by(country) %>%
+  mutate(start_val=(!!sym(sel_var))[year==min(year)],
          end_val=(!!sym(sel_var))[year==max(year)],
         diff_end_start=end_val-start_val ) %>%
   ungroup() %>%
@@ -290,6 +330,15 @@ df_plot  <- l_GDP_percap$gdp_per_cap_2021usdppp_sel_cntr %>%
   mutate(country_val_str=fct_reorder(
           country_val_str,diff_end_start,.desc=T) )
 # View(df_plot)
+
+l_table_save[[sel_var]][[as.character(start_yr)]] <- df_plot %>% 
+  mutate(facet_id=paste0(sel_var,"-",start_yr)) 
+  if (sel_var!="value") {
+    l_table_save[[sel_var]][[as.character(start_yr)]] <-
+      l_table_save[[sel_var]][[as.character(start_yr)]] %>%
+      select(!value) %>%
+      rename(value=!!sym(sel_var))    
+  }
 
 # caption text
     caption_src <- "source: https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD"
@@ -356,6 +405,7 @@ df_summ <- df_plot %>%
 title_str <- paste0("weighted average: ",
   paste0(df_summ$str_yr,collapse = " → "))
 
+if (show_plot) {
 p <- df_plot %>%
 ggplot(aes(x=year,y=get(sel_var)) ) +
   # facet_wrap(~country_val_str) +
@@ -384,28 +434,41 @@ ggplot(aes(x=year,y=get(sel_var)) ) +
 print(p)
 
 # SAVE PLOT
-folder_name <- "output/GDP_per_cap/"
 file_name <- paste0(folder_name,start_yr,"/",gsub("% of ","",sel_var),".png")
 if (save_plot_flag) {
   file_name %>% ggsave(plot=p, width=42,height=28,units="cm")
 }
 
+} # show plot
+
 }
   
 } # end of for loop
-
+  
 # SAVE TABLE
 if (save_table) {
-  # full data
-  write_csv(df_plot,
+# FULL DATA
+  df_save_full <- bind_rows(
+  lapply(names(l_table_save), function(var) {
+    bind_rows(
+      lapply(names(l_table_save[[var]]), function(yr) {
+        l_table_save[[var]][[yr]] |>
+          mutate(
+            var = var,
+            year = yr) })) }) )
+    write_csv(df_save_full, 
       file=paste0(folder_name,"full_table.csv"))
+  # selected variable
+    df_save_full %>%
+      filter(facet_id %in% "% of EU8-2004") %>%
+    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+    
   # summary table (start and end values)
   l_GDP_percap$gdp_per_cap_2021usdppp_sel_cntr %>%
     filter(country %in% l_groups$list_cntrs$CEE) %>%
   mutate(value=value/1e3)  %>%
   group_by(country) %>%
   mutate(rel_val=100*value/value[year==min(year)] ) %>%
-  # select(!c(`% of LAT_AM`,`% of World`))
   pivot_longer(!c(region,country,year,pop)) %>%
   filter(year %in% c(2004,2010,2019,max(year))) %>%
   select(!pop) %>%
@@ -413,10 +476,11 @@ if (save_table) {
   mutate(diff_2004_2024=`2024`-`2004`,
          diff_2010_2024=`2024`-`2010`  ) %>%
   write_csv(file = paste0(folder_name,"summ_table.csv"))
+} # SAVE IF
   
-}
   
 })
+
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -495,11 +559,15 @@ writeLines(html_tables[[2]], "output/GDP_per_cap/table_2010_2024.html")
 with(list(all_vars=c("rel_val",grep("DE|EU8|value",
             colnames(l_wages$oecd$sel_cntrs$annual_aver_wage),
             value=T)),
-          save_plot_flag=T,
-          save_table=T), {
+  start_yr_vals=c(2004,2010),
+  folder_name="output/wages/annual_aver_wage/",
+  l_table_save=list(),
+  show_plot=F,
+  save_plot_flag=F,
+  save_table=T), {
   
 for (sel_var in all_vars) {
-for (start_yr in c(2004,2010)) {
+for (start_yr in start_yr_vals) {
   
   y_txt <- if (grepl("value",sel_var)) {
   "Annual average wage (2024 constant USD PPP)" 
@@ -510,15 +578,16 @@ for (start_yr in c(2004,2010)) {
     y_txt <- paste0("Annual average wage (constant USD PPP)", 
               "\nrelative to first year (=100)") }
   
-df_plot  <- l_wages$oecd$sel_cntrs$annual_aver_wage %>%
+df_plot <- l_wages$oecd$sel_cntrs$annual_aver_wage %>%
     filter(country %in% l_groups$list_cntrs$CEE 
       & year>=start_yr) %>%
-  mutate(value=value/1e3)  %>%
   group_by(country) %>%
-  mutate(rel_val=100*value/value[year==min(year)],
-    start_val=(!!sym(sel_var))[year==min(year)],
+  mutate(rel_val=100*value/value[year==min(year)]) %>%
+  select(country,year,value,!!sym(sel_var),pop) %>%
+  mutate(value=value/1e3,
+         start_val=(!!sym(sel_var))[year==min(year)],
          end_val=(!!sym(sel_var))[year==max(year)],
-        diff_end_start=end_val-start_val ) %>%
+         diff_end_start=end_val-start_val ) %>%
   ungroup() %>%
   rowwise() %>%
   mutate(country_val_str=paste0(country," (", 
@@ -532,6 +601,14 @@ df_plot  <- l_wages$oecd$sel_cntrs$annual_aver_wage %>%
   mutate(country_val_str=fct_reorder(
           country_val_str,diff_end_start,.desc=T) )
 # View(df_plot)
+l_table_save[[sel_var]][[as.character(start_yr)]] <- df_plot %>% 
+  mutate(facet_id=paste0(sel_var,"-",start_yr)) 
+  if (sel_var!="value") {
+    l_table_save[[sel_var]][[as.character(start_yr)]] <-
+      l_table_save[[sel_var]][[as.character(start_yr)]] %>%
+      select(!value) %>%
+      rename(value=!!sym(sel_var))    
+  }
 
 # caption text
     caption_src <- "source: https://data-explorer.oecd.org/s/1p0"
@@ -591,6 +668,7 @@ df_summ <- df_plot %>%
 title_str <- paste0("weighted average: ",
   paste0(df_summ$str_yr,collapse = " → "))
 
+if (show_plot) {
 p <- df_plot %>%
 ggplot(aes(x=year,y=get(sel_var)) ) +
   # facet_wrap(~country_val_str) +
@@ -619,16 +697,30 @@ ggplot(aes(x=year,y=get(sel_var)) ) +
 print(p)
 
 # SAVE PLOT
-folder_name <- "output/wages/annual_aver_wage/"
+# folder_name <- "output/wages/annual_aver_wage/"
 file_name <- paste0(folder_name,start_yr,"/",gsub("% of ","",sel_var),".png")
 if (save_plot_flag) {
   file_name %>% ggsave(plot=p, width=42,height=28,units="cm")
 }
+} # show PLOT  
 
 # SAVE TABLE
 if (save_table) {
-        write_csv(df_plot,
-              file=paste0(folder_name,"data_table.csv"))
+    df_save_full <- bind_rows(
+  lapply(names(l_table_save), function(var) {
+    bind_rows(
+      lapply(names(l_table_save[[var]]), function(yr) {
+        l_table_save[[var]][[yr]] |>
+          mutate(
+            var = var,
+            year = yr) })) }) )
+    write_csv(df_save_full, 
+      file=paste0(folder_name,"data_table.csv"))
+# SAVE selected variable
+    df_save_full %>%
+      filter(facet_id %in% "% of EU8-2004") %>%
+    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+    
 }
 
 }
@@ -714,13 +806,18 @@ writeLines(html_tables[[2]], "output/wages/annual_aver_wage/table_2010_2024.html
 with(list(all_vars=c("rel_val",grep("S_EUR|EU8|value",
             colnames(l_wages$oecd$sel_cntrs$annual_min_wage),
             value=T)),
-          save_plot_flag=T,
-          save_table=T), {
+  start_yr_vals=c(2004,2010),
+  folder_name="output/wages/min_wage/",
+  l_table_save=list(),
+  show_plot=F,
+  save_plot_flag=F,
+  save_table=T), {
+    
   all_vars <- grep("LAT",all_vars,value=T,invert=T)
   # print(all_vars)
   
 for (sel_var in all_vars) {
-for (start_yr in c(2004,2010)) {
+for (start_yr in start_yr_vals) {
 
   y_txt <- if (grepl("value",sel_var)) {
   "Minimum wage (constant 2024 USD PPP, thousand)" 
@@ -734,9 +831,10 @@ for (start_yr in c(2004,2010)) {
 df_plot  <- l_wages$oecd$sel_cntrs$annual_min_wage %>%
     filter(country %in% l_groups$list_cntrs$CEE 
       & year>=start_yr) %>%
-  mutate(value=value/1e3)  %>%
   group_by(country) %>%
-  mutate(rel_val=100*value/value[year==min(year)],
+  mutate(rel_val=100*value/value[year==min(year)]) %>%
+  select(country,year,value,!!sym(sel_var),pop) %>%
+  mutate(value=value/1e3,
     start_val=(!!sym(sel_var))[year==min(year)],
          end_val=(!!sym(sel_var))[year==max(year)],
         diff_end_start=end_val-start_val ) %>%
@@ -753,6 +851,15 @@ df_plot  <- l_wages$oecd$sel_cntrs$annual_min_wage %>%
   mutate(country_val_str=fct_reorder(
           country_val_str,diff_end_start,.desc=T) )
 # View(df_plot)
+
+l_table_save[[sel_var]][[as.character(start_yr)]] <- df_plot %>% 
+  mutate(facet_id=paste0(sel_var,"-",start_yr)) 
+  if (sel_var!="value") {
+    l_table_save[[sel_var]][[as.character(start_yr)]] <-
+      l_table_save[[sel_var]][[as.character(start_yr)]] %>%
+      select(!value) %>%
+      rename(value=!!sym(sel_var))    
+  }
 
 # caption text
     caption_src <- paste0("source: https://data-explorer.oecd.org/",
@@ -816,6 +923,7 @@ df_summ <- df_plot %>%
 title_str <- paste0("weighted average: ",
   paste0(df_summ$str_yr,collapse = " → "))
 
+if (show_plot) {
 p <- df_plot %>%
 ggplot(aes(x=year,y=get(sel_var)) ) +
   # facet_wrap(~country_val_str) +
@@ -845,16 +953,32 @@ ggplot(aes(x=year,y=get(sel_var)) ) +
 print(p)
 
 # SAVE PLOT
-folder_name <- "output/wages/min_wage/"
+# folder_name <- "output/wages/min_wage/"
 file_name <- paste0(folder_name,start_yr,"/",gsub("% of ","",sel_var),".png")
 if (save_plot_flag) {
   file_name %>% ggsave(plot=p, width=42,height=28,units="cm")
 }
+} # show plot
+
 
 # SAVE TABLE
 if (save_table) {
-    write_csv(df_plot,
+    # FULL DATA
+  df_save_full <- bind_rows(
+  lapply(names(l_table_save), function(var) {
+    bind_rows(
+      lapply(names(l_table_save[[var]]), function(yr) {
+        l_table_save[[var]][[yr]] |>
+          mutate(
+            var = var,
+            year = yr) })) }) )
+    write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
+# SAVE selected variable
+    df_save_full %>%
+      filter(facet_id %in% "% of EU8-2004") %>%
+    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+    
 }
 
 }
@@ -941,11 +1065,15 @@ writeLines(html_tables[[2]], "output/wages/min_wage/table_2010_2024.html")
 with(list(all_vars=c("rel_val",grep("%|value",
             colnames(l_wages$eurostat$median_equiv_net_income$sel_cntr),
             value=T)),
-          save_plot_flag=T,
+  start_yr_vals=c(2005,2010),
+  folder_name="output/wages/median_equiv_net_income/",
+  l_table_save=list(),
+  show_plot=F,
+          save_plot_flag=F,
           save_table=T), {
   
 for (sel_var in all_vars) {
-for (start_yr in c(2005,2010)) {
+for (start_yr in start_yr_vals) {
   
   y_txt <- if (grepl("value",sel_var)) {
   "Median equivalised net income (thousand PPS)" 
@@ -957,15 +1085,16 @@ for (start_yr in c(2005,2010)) {
     "\nrelative to first year (=100)")
     }
   
-df_plot  <- l_wages$eurostat$median_equiv_net_income$sel_cntr %>%
+df_plot <- l_wages$eurostat$median_equiv_net_income$sel_cntr %>%
     filter(country %in% l_groups$list_cntrs$CEE 
       & year>=start_yr) %>%
-  mutate(value=value/1e3)  %>%
   group_by(country) %>%
-  mutate(rel_val=100*value/value[year==min(year)],
+  mutate(rel_val=100*value/value[year==min(year)]) %>%
+  select(country,year,value,!!sym(sel_var),pop) %>%
+  mutate(value=value/1e3,
     start_val=(!!sym(sel_var))[year==min(year)],
-         end_val=(!!sym(sel_var))[year==max(year)],
-        diff_end_start=end_val-start_val ) %>%
+    end_val=(!!sym(sel_var))[year==max(year)],
+    diff_end_start=end_val-start_val) %>%
   ungroup() %>%
   rowwise() %>%
   mutate(country_val_str=paste0(country," (", 
@@ -979,6 +1108,17 @@ df_plot  <- l_wages$eurostat$median_equiv_net_income$sel_cntr %>%
   mutate(country_val_str=fct_reorder(
           country_val_str,diff_end_start,.desc=T) )
 # View(df_plot)
+print(start_yr); print(sel_var)
+  
+# to save
+l_table_save[[sel_var]][[as.character(start_yr)]] <- df_plot %>% 
+  mutate(facet_id=paste0(sel_var,"-",start_yr)) 
+  if (sel_var!="value") {
+    l_table_save[[sel_var]][[as.character(start_yr)]] <-
+      l_table_save[[sel_var]][[as.character(start_yr)]] %>%
+      select(!value) %>%
+      rename(value=!!sym(sel_var))    
+  }
 
 # caption text
     caption_src <- "source: https://ec.europa.eu/eurostat/databrowser/view/ilc_di03/"
@@ -1037,6 +1177,7 @@ df_summ <- df_plot %>%
 title_str <- paste0("weighted average: ",
   paste0(df_summ$str_yr,collapse = " → "))
 
+if (show_plot) {
 p <- df_plot %>%
 ggplot(aes(x=year,y=get(sel_var)) ) +
   # facet_wrap(~country_val_str) +
@@ -1064,16 +1205,33 @@ ggplot(aes(x=year,y=get(sel_var)) ) +
 print(p)
 
 # SAVE PLOT
-folder_name <- "output/wages/median_equiv_net_income/"
+# folder_name <- "output/wages/median_equiv_net_income/"
 file_name <- paste0(folder_name,start_yr,"/",gsub("% of ","",sel_var),".png")
 if (save_plot_flag) {
   file_name %>% ggsave(plot=p, width=42,height=28,units="cm")
 }
+} # show plot
 
 # SAVE TABLE
 if (save_table) {
-        write_csv(df_plot,
-              file=paste0(folder_name,"data_table.csv"))
+        # write_csv(df_plot,
+        #       file=paste0(folder_name,"data_table.csv"))
+  # FULL DATA
+  df_save_full <- bind_rows(
+  lapply(names(l_table_save), function(var) {
+    bind_rows(
+      lapply(names(l_table_save[[var]]), function(yr) {
+        l_table_save[[var]][[yr]] |>
+          mutate(
+            var = var,
+            year = yr) })) }) )
+    write_csv(df_save_full, 
+          file=paste0(folder_name,"data_table.csv"))
+    
+# SAVE selected variable
+    df_save_full %>%
+      filter(facet_id %in% "% of EU8-2004") %>%
+    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 }
 
 }
@@ -1155,11 +1313,15 @@ writeLines(html_tables[[2]], "output/wages/median_equiv_net_income/table_2010_20
 with(list(all_vars=c("rel_val",
       grep("DE|EU8|value",
       colnames(l_wages$eurostat$real_median_hr_earning$sel_cntr),value=T)),
-          save_plot_flag=T,
-          save_table=T), {
+      start_yr_vals=c(2006,2010),
+      folder_name="output/wages/real_median_hourly/",
+      l_table_save=list(),
+      show_plot=F,
+      save_plot_flag=F,
+      save_table=T), {
   
 for (sel_var in all_vars) {
-for (start_yr in c(2006,2010) ) {
+for (start_yr in start_yr_vals ) {
   
   x_txt <- if (grepl("value",sel_var)) {
   "Real median hourly earnings (PPS)" } else {
@@ -1168,12 +1330,13 @@ for (start_yr in c(2006,2010) ) {
   if (sel_var=="rel_val") {
     x_txt <- "Real median hourly earnings (PPS), relative to first year (=100)" }
   
-df_plot  <- l_wages$eurostat$real_median_hr_earning$sel_cntr %>%
+df_plot <- l_wages$eurostat$real_median_hr_earning$sel_cntr %>%
     filter(country %in% l_groups$list_cntrs$CEE &
         year >= start_yr) %>%
   group_by(country) %>%
+  mutate(rel_val=100*value/value[year==min(year)]) %>%
+  select(country,year,value,!!sym(sel_var),pop) %>%
   mutate(
-    rel_val=100*value/value[year==min(year)],
     year_end=lead(year),
     value_end=lead(!!sym(sel_var))  ) %>%
   # keep only rows that have a next year
@@ -1200,6 +1363,16 @@ df_plot  <- l_wages$eurostat$real_median_hr_earning$sel_cntr %>%
   group_by(country) %>%
   filter(any(year==start_yr))
 # View(df_plot)
+
+l_table_save[[sel_var]][[as.character(start_yr)]] <- df_plot %>% 
+  mutate(facet_id=paste0(sel_var,"-",start_yr)) 
+  if (sel_var!="value") {
+    l_table_save[[sel_var]][[as.character(start_yr)]] <-
+      l_table_save[[sel_var]][[as.character(start_yr)]] %>%
+      select(!value) %>%
+      rename(value=!!sym(sel_var))    
+  }
+
 
 # caption text
     caption_src <- "source: https://ec.europa.eu/eurostat/databrowser/view/earn_ses_pub2s/"
@@ -1251,6 +1424,7 @@ if (sel_var == "rel_val") {
   x_vlines <- seq(100,ceiling(max_val/100)*100,50)
   }
 
+if (show_plot) {
 p <- df_plot %>%
 ggplot(aes(x=get(sel_var),xend=value_end,y=era,yend=era)) + # group = era
   # facet_wrap(~country_val_str) +
@@ -1295,10 +1469,27 @@ file_name <- paste0(folder_name,start_yr,"/",gsub("% of ","",sel_var),".png")
 if (save_plot_flag) {
   file_name %>% ggsave(plot=p, width=42,height=28,units="cm")
 }
+} # show plot
 
 # SAVE TABLE
 if (save_table) {
-  write_csv(df_plot,file=paste0(folder_name,"data_table.csv"))
+  
+  # FULL DATA
+  df_save_full <- bind_rows(
+  lapply(names(l_table_save), function(var) {
+    bind_rows(
+      lapply(names(l_table_save[[var]]), function(yr) {
+        l_table_save[[var]][[yr]] |>
+          mutate(
+            var = var,
+            year = yr) })) }) )
+    write_csv(df_save_full, 
+      file=paste0(folder_name,"data_table.csv"))
+# SAVE selected variable
+    df_save_full %>%
+      filter(facet_id %in% "% of EU8-2004") %>%
+    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+  
     }
 
   } # start yr
@@ -1390,11 +1581,15 @@ writeLines(html_tables[[2]], "output/wages/real_median_hourly/table_2010_2022.ht
 
 with(list(all_vars=c(
   "rel_val",grep("%|value",colnames(l_cons$sel_cntr),value=T)),
-          save_plot_flag=T,
-          save_table=T), {
+  start_yr_vals=c(2004,2010),
+  folder_name="output/actual_indiv_consump/",
+  l_table_save=list(),
+  show_plot=F,        
+  save_plot_flag=F,
+  save_table=T), {
   
 for (sel_var in all_vars) {
-for (start_yr in c(2004,2010)) {
+for (start_yr in start_yr_vals) {
   
   y_txt <- if (grepl("value",sel_var)) {
   "Actual individual consumption (thousand PPS)" 
@@ -1409,9 +1604,10 @@ for (start_yr in c(2004,2010)) {
 df_plot  <- l_cons$sel_cntr %>%
     filter(country %in% l_groups$list_cntrs$CEE 
       & year>=start_yr) %>%
-  mutate(value=value/1e3)  %>%
   group_by(country) %>%
-  mutate(rel_val=100*value/value[year==min(year)],
+  mutate(rel_val=100*value/value[year==min(year)]) %>%
+  select(country,year,value,!!sym(sel_var),pop) %>%
+  mutate(value=value/1e3,
     start_val=(!!sym(sel_var))[year==min(year)],
          end_val=(!!sym(sel_var))[year==max(year)],
         diff_end_start=end_val-start_val ) %>%
@@ -1428,6 +1624,15 @@ df_plot  <- l_cons$sel_cntr %>%
   mutate(country_val_str=fct_reorder(
           country_val_str,diff_end_start,.desc=T) )
 # View(df_plot)
+# TO SAVE
+l_table_save[[sel_var]][[as.character(start_yr)]] <- df_plot %>% 
+  mutate(facet_id=paste0(sel_var,"-",start_yr)) 
+  if (sel_var!="value") {
+    l_table_save[[sel_var]][[as.character(start_yr)]] <-
+      l_table_save[[sel_var]][[as.character(start_yr)]] %>%
+      select(!value) %>%
+      rename(value=!!sym(sel_var))    
+  }
 
 # caption text
     caption_src <- 
@@ -1488,6 +1693,7 @@ df_summ <- df_plot %>%
 title_str <- paste0("weighted average: ",
   paste0(df_summ$str_yr,collapse = " → "))
 
+if (show_plot) {
 p <- df_plot %>%
 ggplot(aes(x=year,y=get(sel_var)) ) +
   # facet_wrap(~country_val_str) +
@@ -1520,11 +1726,25 @@ file_name <- paste0(folder_name,start_yr,"/",gsub("% of ","",sel_var),".png")
 if (save_plot_flag) {
   file_name %>% ggsave(plot=p, width=42,height=28,units="cm")
 }
+}
 
 # SAVE TABLE
 if (save_table) {
-        write_csv(df_plot,
-              file=paste0(folder_name,"data_table.csv"))
+        # FULL DATA
+  df_save_full <- bind_rows(
+  lapply(names(l_table_save), function(var) {
+    bind_rows(
+      lapply(names(l_table_save[[var]]), function(yr) {
+        l_table_save[[var]][[yr]] |>
+          mutate(
+            var = var,
+            year = yr) })) }) )
+    write_csv(df_save_full, 
+      file=paste0(folder_name,"data_table.csv"))
+# SAVE selected variable
+    df_save_full %>%
+      filter(facet_id %in% "% of EU8-2004") %>%
+    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 }
 
 }
@@ -1541,11 +1761,15 @@ if (save_table) {
 with(list(all_vars=c("rel_val",grep("value|DE|EU8|S_EUR4",
             colnames(l_product$owid$`per hour of work`),
             value=T)),
-          save_plot_flag=T,
+  start_yr_vals=c(2004,2010),
+  folder_name="output/productivity/per_hr_work/",
+  l_table_save=list(),
+  show_plot=F,
+          save_plot_flag=F,
           save_table=T), {
   
 for (sel_var in all_vars) {
-for (start_yr in c(2004,2010)) {
+for (start_yr in start_yr_vals) {
   
   y_txt <- if (grepl("value",sel_var)) {
   "GDP per hour worked (constant 2020 USD, PPP)" 
@@ -1560,9 +1784,10 @@ for (start_yr in c(2004,2010)) {
 df_plot  <- l_product$owid$`per hour of work` %>%
     filter(country %in% l_groups$list_cntrs$CEE 
       & year>=start_yr) %>%
-  mutate(value=value)  %>%
   group_by(country) %>%
-  mutate(rel_val=100*value/value[year==min(year)],
+  mutate(rel_val=100*value/value[year==min(year)]) %>%
+  select(country,year,value,!!sym(sel_var),pop) %>%
+  mutate(# value=value/1e3,
     start_val=(!!sym(sel_var))[year==min(year)],
          end_val=(!!sym(sel_var))[year==max(year)],
         diff_end_start=end_val-start_val ) %>%
@@ -1579,10 +1804,19 @@ df_plot  <- l_product$owid$`per hour of work` %>%
   ungroup() %>%
   mutate(country_val_str=fct_reorder(
           country_val_str,diff_end_start,.desc=T) )
-# View(df_plot)
+# TO SAVE
+l_table_save[[sel_var]][[as.character(start_yr)]] <- df_plot %>% 
+  mutate(facet_id=paste0(sel_var,"-",start_yr)) 
+  if (sel_var!="value") {
+    l_table_save[[sel_var]][[as.character(start_yr)]] <-
+      l_table_save[[sel_var]][[as.character(start_yr)]] %>%
+      select(!value) %>%
+      rename(value=!!sym(sel_var))    
+  }
 
 # caption text
-    caption_src <- "source: ourworldindata.org/grapher/labor-productivity-per-hour-pennworldtable"
+    caption_src <- paste0("source: ",
+    "ourworldindata.org/grapher/labor-productivity-per-hour-pennworldtable")
     
     caption_txt <- if (!grepl("World|usd|value|rel_val",sel_var)) {
     paste0(
@@ -1644,6 +1878,7 @@ df_summ <- df_plot %>%
 title_str <- paste0("weighted average: ",
   paste0(ifelse(sel_var=="value","$",""),df_summ$str_yr,collapse = " → "))
 
+if (show_plot) {
 p <- df_plot %>%
 ggplot(aes(x=year,y=get(sel_var)) ) +
   # facet_wrap(~country_val_str) +
@@ -1676,11 +1911,25 @@ file_name <- paste0(folder_name,start_yr,"/",gsub("% of ","",sel_var),".png")
 if (save_plot_flag) {
   file_name %>% ggsave(plot=p, width=42,height=28,units="cm")
 }
+}
 
 # SAVE TABLE
 if (save_table) {
-        write_csv(df_plot,
-              file=paste0(folder_name,"data_table.csv"))
+        # FULL DATA
+  df_save_full <- bind_rows(
+  lapply(names(l_table_save), function(var) {
+    bind_rows(
+      lapply(names(l_table_save[[var]]), function(yr) {
+        l_table_save[[var]][[yr]] |>
+          mutate(
+            var = var,
+            year = yr) })) }) )
+    write_csv(df_save_full, 
+      file=paste0(folder_name,"data_table.csv"))
+# SAVE selected variable
+    df_save_full %>%
+      filter(facet_id %in% "% of EU8-2004") %>%
+    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 }
 
 }
@@ -1770,11 +2019,15 @@ writeLines(html_tables[[2]], "output/productivity/per_hr_work/table_2010_2023.ht
 with(list(all_vars=c("rel_val",grep("value|DE|EU8|S_EUR4",
             colnames(l_empl_rate$sel_cntrs),
             value=T)),
+  start_yr_vals=c(2004,2010),
+  folder_name="output/employment/",
+  l_table_save=list(),
+  show_plot=F,
           save_plot_flag=T,
           save_table=T), {
   
 for (sel_var in all_vars) {
-for (start_yr in c(2004,2010)) {
+for (start_yr in start_yr_vals) {
 
   y_txt <- if (grepl("value",sel_var)) {
   "Employment-to-population ratio (% of 15+ population, ILO estimates)" 
@@ -1789,10 +2042,10 @@ for (start_yr in c(2004,2010)) {
 df_plot  <- l_empl_rate$sel_cntrs %>%
     filter(country %in% l_groups$list_cntrs$CEE 
       & year>=start_yr) %>%
-  mutate(value=value)  %>%
   group_by(country) %>%
-  mutate(rel_val=100*value/value[year==min(year)],
-    start_val=(!!sym(sel_var))[year==min(year)],
+  mutate(rel_val=100*value/value[year==min(year)]) %>%
+  select(country,year,value,!!sym(sel_var),pop) %>%
+  mutate(start_val=(!!sym(sel_var))[year==min(year)],
          end_val=(!!sym(sel_var))[year==max(year)],
         diff_end_start=end_val-start_val ) %>%
   ungroup() %>%
@@ -1807,7 +2060,15 @@ df_plot  <- l_empl_rate$sel_cntrs %>%
   ungroup() %>%
   mutate(country_val_str=fct_reorder(
           country_val_str,diff_end_start,.desc=T) )
-# View(df_plot)
+# TO SAVE
+l_table_save[[sel_var]][[as.character(start_yr)]] <- df_plot %>% 
+  mutate(facet_id=paste0(sel_var,"-",start_yr)) 
+  if (sel_var!="value") {
+    l_table_save[[sel_var]][[as.character(start_yr)]] <-
+      l_table_save[[sel_var]][[as.character(start_yr)]] %>%
+      select(!value) %>%
+      rename(value=!!sym(sel_var))    
+  }
 
 # caption text
     caption_src <- paste0("source: ",
@@ -1916,8 +2177,21 @@ if (save_plot_flag) {
 
 # SAVE TABLE
 if (save_table) {
-        write_csv(df_plot,
-              file=paste0(folder_name,"data_table.csv"))
+        # FULL DATA
+  df_save_full <- bind_rows(
+  lapply(names(l_table_save), function(var) {
+    bind_rows(
+      lapply(names(l_table_save[[var]]), function(yr) {
+        l_table_save[[var]][[yr]] |>
+          mutate(
+            var = var,
+            year = yr) })) }) )
+    write_csv(df_save_full, 
+      file=paste0(folder_name,"data_table.csv"))
+# SAVE selected variable
+    df_save_full %>%
+      filter(facet_id %in% "value-2004") %>%
+    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 }
 
 }
@@ -2009,11 +2283,15 @@ writeLines(html_tables[[2]], "output/employment/table_2010_2024.html")
 with(list(all_vars=c("rel_val",grep("value|DE|EU8|S_EUR4",
             colnames(l_life_exp$sel_cntrs),
             value=T)),
+  start_yr_vals=c(2004,2010),
+  folder_name="output/life_exp/",
+  l_table_save=list(),
+  show_plot=F,
           save_plot_flag=T,
           save_table=T), {
   
 for (sel_var in all_vars) {
-for (start_yr in c(2004,2010)) {
+for (start_yr in start_yr_vals) {
 
   y_txt <- if (grepl("value",sel_var)) {
   "Period life expectancy (years)" 
@@ -2030,10 +2308,10 @@ for (start_yr in c(2004,2010)) {
 df_plot  <- l_life_exp$sel_cntrs %>%
     filter(country %in% l_groups$list_cntrs$CEE 
       & year>=start_yr) %>%
-  mutate(value=value)  %>%
   group_by(country) %>%
-  mutate(rel_val=100*value/value[year==min(year)],
-    start_val=(!!sym(sel_var))[year==min(year)],
+  mutate(rel_val=100*value/value[year==min(year)]) %>%
+  select(country,year,value,!!sym(sel_var),pop) %>%
+  mutate(start_val=(!!sym(sel_var))[year==min(year)],
          end_val=(!!sym(sel_var))[year==max(year)],
         diff_end_start=end_val-start_val ) %>%
   ungroup() %>%
@@ -2048,7 +2326,16 @@ df_plot  <- l_life_exp$sel_cntrs %>%
   ungroup() %>%
   mutate(country_val_str=fct_reorder(
           country_val_str,diff_end_start,.desc=T) )
-# View(df_plot)
+# TO SAVE
+l_table_save[[sel_var]][[as.character(start_yr)]] <- df_plot %>% 
+  mutate(facet_id=paste0(sel_var,"-",start_yr)) 
+  if (sel_var!="value") {
+    l_table_save[[sel_var]][[as.character(start_yr)]] <-
+      l_table_save[[sel_var]][[as.character(start_yr)]] %>%
+      select(!value) %>%
+      rename(value=!!sym(sel_var))    
+  }
+
 
 # caption text
     caption_src <- paste0("source: ",
@@ -2123,6 +2410,7 @@ df_summ <- df_plot %>%
 title_str <- paste0("weighted average: ",
   paste0(df_summ$str_yr,collapse = " → "))
 
+if (show_plot) {
 p <- df_plot %>%
 ggplot(aes(x=year,y=get(sel_var)) ) +
   # facet_wrap(~country_val_str) +
@@ -2155,11 +2443,25 @@ file_name <- paste0(folder_name,start_yr,"/",gsub("% of ","",sel_var),".png")
 if (save_plot_flag) {
   file_name %>% ggsave(plot=p, width=42,height=28,units="cm")
 }
+}
 
 # SAVE TABLE
 if (save_table) {
-        write_csv(df_plot,
-              file=paste0(folder_name,"data_table.csv"))
+# FULL DATA
+  df_save_full <- bind_rows(
+  lapply(names(l_table_save), function(var) {
+    bind_rows(
+      lapply(names(l_table_save[[var]]), function(yr) {
+        l_table_save[[var]][[yr]] |>
+          mutate(
+            var = var,
+            year = yr) })) }) )
+    write_csv(df_save_full, 
+      file=paste0(folder_name,"data_table.csv"))
+# SAVE selected variable
+    df_save_full %>%
+      filter(facet_id %in% "value-2004") %>%
+    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 }
 
 }

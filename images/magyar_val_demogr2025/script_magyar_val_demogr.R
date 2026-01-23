@@ -113,20 +113,22 @@ l_part_data[["median"]][["2025_08"]]$telj_nepesseg_partok <- read_csv(
 # MEDIAN 2025/11, tobb demogr kateg
 # source: https://flo.uri.sh/visualisation/26553099/embed?auto=1
 
-l_part_data[["median"]][["2025_11"]] <- list()
-l_part_data[["median"]][["2025_11"]] <- read_csv(
-  "input_files/median_2025_11_nem_vegzettseg_telepules_vegzettseg.csv") %>%
+for (k_yr in c("2025_11","2026_01")) {
+l_part_data[["median"]][[k_yr]] <- list()
+l_part_data[["median"]][[k_yr]] <- read_csv(
+  paste0("input_files/median_",k_yr,"_nem_vegzettseg_telepules_vegzettseg.csv")) %>%
   rename(tipus=filter) %>%
   pivot_longer(!c(tipus,kateg,url),names_to="part") %>%
   mutate(arány=value/100,
          kateg=tolower(kateg),
-         datum="2025/11") %>% 
+         datum=gsub("_","/",k_yr)) %>% 
   select(!c(value,url)) %>%
   group_by(tipus) %>% { 
     set_names(group_split(.,.keep=F), group_keys(.)$tipus) } %>%
   as.list()
+}
 
-# teljes nepesseg partokra bontva
+# Median teljes nepesseg (partokra bontva)
 # https://flo.uri.sh/visualisation/25049245/embed?auto=1
 for (period_name in c("2025_11","2026_01") ) {
 
@@ -182,21 +184,21 @@ l_dem$stadat_nep0003 %>%
 )
 
 # plot
-if (F) {
-  # ez a teljes >=18 lakossag
-l_dem$stadat_nep0003 %>%
-  filter(grepl("esen",nem) & ev>2010) %>%
-  group_by(ev,nem) %>%
-  summarise(valasztok=sum(value[kor_num>=18])/1e3,
-            kiskoruak=sum(value[kor_num<18])/1e3) %>%
-  pivot_longer(!c(ev,nem)) %>%
-ggplot(aes(x=ev,y=value)) + 
-  facet_wrap(~name,scale="free_y") +
-  geom_line() + geom_point() +
-  xlab("") + ylab("ezer fo") + labs(color="") +
-  scale_x_continuous(breaks = 2010:2025) +
-  theme_bw() + l_plot$standard_theme
-}
+# if (F) {
+#   # ez a teljes >=18 lakossag
+# l_dem$stadat_nep0003 %>%
+#   filter(grepl("esen",nem) & ev>2010) %>%
+#   group_by(ev,nem) %>%
+#   summarise(valasztok=sum(value[kor_num>=18])/1e3,
+#             kiskoruak=sum(value[kor_num<18])/1e3) %>%
+#   pivot_longer(!c(ev,nem)) %>%
+# ggplot(aes(x=ev,y=value)) + 
+#   facet_wrap(~name,scale="free_y") +
+#   geom_line() + geom_point() +
+#   xlab("") + ylab("ezer fo") + labs(color="") +
+#   scale_x_continuous(breaks = 2010:2025) +
+#   theme_bw() + l_plot$standard_theme
+# }
 
 # Median felmeresnek megfelelo korcsoportok
 # unique((l_part_data$median$`2025_08` %>% filter(tipus %in% "ÉLETKOR"))$kateg)
@@ -291,7 +293,7 @@ l_dem$telep_tipus$n_valpolg <- with(l_dem$telep_tipus,
   n_valpolg2022*l_dem$val_jog_nep_2025/sum(n_valpolg2022))
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
-# 21 kut kategoriak osszehangolasa a mediannal
+# 21 kut kategoriak osszehangolasa Median-nal
 
 l_part_data$`21_kut`$telep_tipus <- l_part_data$`21_kut`$telep_tipus %>%
   mutate(kateg=case_when(
@@ -464,33 +466,33 @@ l_plot$`21_kut`$datum <- factor(l_plot$`21_kut`$datum,
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # 21 kut eredmenyek abra
 
-if (F) {
-with(list(), ({
-  title_str <- paste0("21 KUTATÓKÖZPONT: ",
-    "nem, végzettség és településtípus szerint",
-    " lebontott pártpreferenciák a teljes népességben")
-l_plot$`21_kut` %>%
-ggplot(aes(x=partnev_kozos,y=valasztok_szama/1e3,fill=datum)) +
-  # facet_wrap(~kateg_nev_meret_str,scales="free",drop=T) +            # facet by kateg
-  facet_manual(vars(kateg_nev_meret_str),scales="free",design="AA##\nBCDE\nFGHI") + # 
-  geom_col(position=position_dodge2(),alpha=0.5,color="black",linewidth=1/3) + 
-  # position=position_dodge2(width=0.9,preserve="single")
-  labs(x="",y="szavazók száma (ezer)", fill="") +
-  geom_text(aes(label=round(valasztok_szama/1e4)*10), 
-    position=position_dodge2(width=0.9,preserve="single"),vjust= -0.3,size=3) +
-  scale_y_continuous(expand=expansion(mult=c(0.005,0.09)),
-              limits=function(x) c(0,max(max(x),1.05e3)) ) +
-  ggtitle(title_str) +  theme_bw() + l_plot$standard_theme +
-  theme(axis.text.x=element_text(vjust=0.5,hjust=1),
-        strip.text=element_text(size=18)) # ,legend.position="top"
-}) )
-# save
-if (F) {
-  ggsave(filename="plots/21kut_2025_04_06_08_telj_vegz_teleptipus.png",
-          device="png",width=48,height=28,units="cm")
-}
-
-}  
+# if (F) {
+# with(list(), ({
+#   title_str <- paste0("21 KUTATÓKÖZPONT: ",
+#     "nem, végzettség és településtípus szerint",
+#     " lebontott pártpreferenciák a teljes népességben")
+# l_plot$`21_kut` %>%
+# ggplot(aes(x=partnev_kozos,y=valasztok_szama/1e3,fill=datum)) +
+#   # facet_wrap(~kateg_nev_meret_str,scales="free",drop=T) +            # facet by kateg
+#   facet_manual(vars(kateg_nev_meret_str),scales="free",design="AA##\nBCDE\nFGHI") + # 
+#   geom_col(position=position_dodge2(),alpha=0.5,color="black",linewidth=1/3) + 
+#   # position=position_dodge2(width=0.9,preserve="single")
+#   labs(x="",y="szavazók száma (ezer)", fill="") +
+#   geom_text(aes(label=round(valasztok_szama/1e4)*10), 
+#     position=position_dodge2(width=0.9,preserve="single"),vjust= -0.3,size=3) +
+#   scale_y_continuous(expand=expansion(mult=c(0.005,0.09)),
+#               limits=function(x) c(0,max(max(x),1.05e3)) ) +
+#   ggtitle(title_str) +  theme_bw() + l_plot$standard_theme +
+#   theme(axis.text.x=element_text(vjust=0.5,hjust=1),
+#         strip.text=element_text(size=18)) # ,legend.position="top"
+# }) )
+# # save
+# if (F) {
+#   ggsave(filename="plots/21kut_2025_04_06_08_telj_vegz_teleptipus.png",
+#           device="png",width=48,height=28,units="cm")
+# }
+# 
+# }  
   
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -587,53 +589,52 @@ l_plot$median$partnev_kozos_aggr <- factor(l_plot$median$partnev_kozos_aggr,
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # Median ABRA
 
-if (F) {
-with(list(), ({
-title_str <- paste0("MEDIÁN: nem, végzettség és településtípus szerint lebontott",
-                    " pártpreferenciák a teljes népességben")
-l_plot$median %>%
-  arrange(pattern_var) %>%
-ggplot(aes(x=partnev_kozos_aggr,y=valasztok_szama/1e3,
-  fill=datum, group=datum )) + # pattern = partnev_kozos,
-  facet_manual(vars(kateg_nev_meret_str),scales="free",
-    design="AAAA# \n BC### \n DEFGH \n IJKL# \n MNOOP") + # 
-  geom_col(aes(alpha=pattern_var),position=position_dodge2(), # preserve="single"
-          color="black",linewidth=1/3) + 
-  guides(alpha="none") +
-  labs(x="",y="szavazók száma (ezer)", fill="",
-    caption=paste0(
-      "2025/06: halványabb színű oszlopok=más párt, kevésbé halvány=pártnélküli.","\n",
-      "2025/08-tól ez a két csoport egy közös \"más párt/pártnélküli\" kategóriában van")) +
-  geom_text(aes(label=round(valasztok_szama/1e4)*10), 
-    position=position_dodge2(width=0.9),vjust= -0.3,size=4) + # ,preserve="single"
-  scale_y_continuous(expand=expansion(mult=c(0.005,0.118)) ) + 
-  expand_limits(y=c(0,1100)) +
-  ggtitle(title_str) +
-  theme_bw() + l_plot$standard_theme + # 
-  theme(axis.text.x=element_text(angle=0),
-        plot.caption=element_text(size=10), # ,vjust=0.5,hjust=1
-        strip.text=element_text(size=18),legend.position="top")
-}) )
-# save
-if (F) {
-  ggsave(filename="plots/Median_2025_06_08_telj_vegz_teleptipus.png",
-    device="png",width=48,height=35,units="cm")
-}
-}
-
+# if (F) {
+# with(list(), ({
+# title_str <- paste0("MEDIÁN: nem, végzettség és településtípus szerint lebontott",
+#                     " pártpreferenciák a teljes népességben")
+# l_plot$median %>%
+#   arrange(pattern_var) %>%
+# ggplot(aes(x=partnev_kozos_aggr,y=valasztok_szama/1e3,
+#   fill=datum, group=datum )) + # pattern = partnev_kozos,
+#   facet_manual(vars(kateg_nev_meret_str),scales="free",
+#     design="AAAA# \n BC### \n DEFGH \n IJKL# \n MNOOP") + # 
+#   geom_col(aes(alpha=pattern_var),position=position_dodge2(), # preserve="single"
+#           color="black",linewidth=1/3) + 
+#   guides(alpha="none") +
+#   labs(x="",y="szavazók száma (ezer)", fill="",
+#     caption=paste0(
+#       "2025/06: halványabb színű oszlopok=más párt, kevésbé halvány=pártnélküli.","\n",
+#       "2025/08-tól ez a két csoport egy közös \"más párt/pártnélküli\" kategóriában van")) +
+#   geom_text(aes(label=round(valasztok_szama/1e4)*10), 
+#     position=position_dodge2(width=0.9),vjust= -0.3,size=4) + # ,preserve="single"
+#   scale_y_continuous(expand=expansion(mult=c(0.005,0.118)) ) + 
+#   expand_limits(y=c(0,1100)) +
+#   ggtitle(title_str) +
+#   theme_bw() + l_plot$standard_theme + # 
+#   theme(axis.text.x=element_text(angle=0),
+#         plot.caption=element_text(size=10), # ,vjust=0.5,hjust=1
+#         strip.text=element_text(size=18),legend.position="top")
+# }) )
+# # save
+# if (F) {
+#   ggsave(filename="plots/Median_2025_06_08_telj_vegz_teleptipus.png",
+#     device="png",width=48,height=35,units="cm")
+# }
+# }
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # save for shiny app
 # saveRDS(l_plot,file = "shiny/l_plot_21kut_median.RDS")
 
-bind_rows(
-  l_plot$`21_kut` %>% mutate(cég="21kut"), 
-  l_plot$median %>% mutate(cég="MEDIÁN")) %>% 
-  mutate(valasztok_szama=round(valasztok_szama/1e4)*1e4,
-        szazalek=arány*100  ) %>%
-  select(!c(pattern_var,kateg_eredeti,szazalek)) %>% 
-  write_csv(file = "l_plot.csv")
+# bind_rows(
+#   l_plot$`21_kut` %>% mutate(cég="21kut"), 
+#   l_plot$median %>% mutate(cég="MEDIÁN")) %>% 
+#   mutate(valasztok_szama=round(valasztok_szama/1e4)*1e4,
+#         szazalek=arány*100  ) %>%
+#   select(!c(pattern_var,kateg_eredeti,szazalek)) %>% 
+#   write_csv(file = "l_plot.csv")
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
