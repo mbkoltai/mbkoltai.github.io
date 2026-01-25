@@ -390,7 +390,7 @@ target="_blank" rel="noopener">[download data]</a>
 Ranking countries by cumulative convergence places **Hungary** in the lower half of the regional ranking, whether calculated from 2004 or 2010. 
 Czechia and Slovenia registered even smaller gains, but this reflects their higher starting (and finishing) levels. Apart from these two countries, only Estonia - and, using the 2010 baseline, Slovakia - experienced smaller convergence to the EU8 average. Consequently, while Hungary ranked 4th in 2004 and 6th in 2010, it slipped to 8th position by 2024.
 
-However, this ranking understates just how weak Hungary's convergence has been by regional standards, since GDP per capita is an area where its relative performance was actually stronger than in most other metrics, moving from 52 to 67% of the EU8 average from 2004 to 2024. It should be noted too that in the 2004-2010 Hungary showed slight *de*convergence, falling 1% behind the EU8 benchmark, so all its increase occurred in the 2013 to 2022 period.
+However, this ranking understates just how weak Hungary's convergence has been by regional standards, since GDP per capita is an area where its relative performance was actually stronger than in most other metrics, moving from 52 to 67% of the EU8 average from 2004 to 2024. It should be noted too that in the 2004-2010 period Hungary showed slight *de*convergence, falling 1% behind the EU8 benchmark, so all its increase occurred in the 2013 to 2022 period.
 
 <!-- ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### -->
 <!-- GDP per capita table  -->
