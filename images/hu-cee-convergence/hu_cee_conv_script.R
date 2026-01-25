@@ -178,28 +178,40 @@ if (save_table) {
         l_table_save[[var]][[yr]] |>
           mutate(
             var = var,
-            year = yr) })) }) )
+            start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"full_table.csv"))
+# SAVE in wide format
+df_save_full %>%
+  select(country,year,facet_id,value) %>% # country_val_str,
+  pivot_wider(names_from = facet_id,values_from = value) %>%
+  select(country,year,matches("rel_val|2004")) %>%
+  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+  write_csv(file = paste0(folder_name,"full_table_wide.csv"))
+
 # SAVE selected variable
     df_save_full %>%
       filter(facet_id %in% "% of EU8-2004") %>%
+      mutate(country_val_str=fct_reorder(
+          country_val_str,diff_end_start,.desc=T) ) %>%
+      arrange(country_val_str,year) %>%
+      select(country_val_str,country,facet_id,var,year,value) %>%
     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
     
   
   # summary table (start and end values)
   l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr %>%
     filter(country %in% l_groups$list_cntrs$CEE) %>%
-  mutate(value=value/1e3)  %>%
-  group_by(country) %>%
-  mutate(rel_val=100*value/value[year==min(year)] ) %>%
+    mutate(value=value/1e3)  %>%
+    group_by(country) %>%
+    mutate(rel_val=100*value/value[year==min(year)] ) %>%
   # select(!c(`% of LAT_AM`,`% of World`))
-  pivot_longer(!c(region,country,year,pop)) %>%
-  filter(year %in% c(2004,2010,2019,max(year))) %>%
-  select(!pop) %>%
-  pivot_wider(names_from = year,values_from=value) %>%
-  mutate(diff_2004_2023=`2023`-`2004`,
-         diff_2010_2023=`2023`-`2010`  ) %>%
+    pivot_longer(!c(region,country,year,pop)) %>%
+    filter(year %in% c(2004,2010,2019,max(year))) %>%
+    select(!pop) %>%
+    pivot_wider(names_from = year,values_from=value) %>%
+    mutate(diff_2004_2023=`2023`-`2004`,
+         diff_2010_2023=`2023`-`2010`) %>%
   write_csv(file = paste0(folder_name,"summ_table.csv"))
   
 }
@@ -454,13 +466,27 @@ if (save_table) {
       lapply(names(l_table_save[[var]]), function(yr) {
         l_table_save[[var]][[yr]] |>
           mutate(
-            var = var,
-            year = yr) })) }) )
+            start_year = yr,
+            var = var) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"full_table.csv"))
-  # selected variable
+#   View(df_save_full)
+
+# SAVE in wide format
+df_save_full %>%
+  select(country,year,facet_id,value) %>% # country_val_str,
+  pivot_wider(names_from = facet_id,values_from = value) %>%
+  select(country,year,matches("rel_val|2004")) %>%
+  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+  write_csv(file = paste0(folder_name,"full_table_wide.csv"))
+
+    # selected variable
     df_save_full %>%
       filter(facet_id %in% "% of EU8-2004") %>%
+            mutate(country_val_str=fct_reorder(
+          country_val_str,diff_end_start,.desc=T) ) %>%
+      arrange(country_val_str,year) %>%
+      select(country_val_str,country,facet_id,var,year,value) %>%
     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
     
   # summary table (start and end values)
@@ -713,13 +739,27 @@ if (save_table) {
         l_table_save[[var]][[yr]] |>
           mutate(
             var = var,
-            year = yr) })) }) )
+            start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
+    
+# SAVE in wide format
+df_save_full %>%
+  select(country,year,facet_id,value) %>% # country_val_str,
+  pivot_wider(names_from = facet_id,values_from = value) %>%
+  select(country,year,matches("rel_val|2004")) %>%
+  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+
 # SAVE selected variable
     df_save_full %>%
       filter(facet_id %in% "% of EU8-2004") %>%
+      mutate(country_val_str=fct_reorder(
+          country_val_str,diff_end_start,.desc=T) ) %>%
+      arrange(country_val_str,year) %>%
+      select(country_val_str,country,facet_id,var,year,value) %>%
     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+
     
 }
 
@@ -971,13 +1011,27 @@ if (save_table) {
         l_table_save[[var]][[yr]] |>
           mutate(
             var = var,
-            year = yr) })) }) )
+            start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
+    
+# SAVE in wide format
+df_save_full %>%
+  select(country,year,facet_id,value) %>% # country_val_str,
+  pivot_wider(names_from = facet_id,values_from = value) %>%
+  select(country,year,matches("rel_val|2004")) %>%
+  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+
 # SAVE selected variable
     df_save_full %>%
       filter(facet_id %in% "% of EU8-2004") %>%
+      mutate(country_val_str=fct_reorder(
+          country_val_str,diff_end_start,.desc=T) ) %>%
+      arrange(country_val_str,year) %>%
+      select(country_val_str,country,facet_id,var,year,value) %>%
     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+
     
 }
 
@@ -1214,8 +1268,7 @@ if (save_plot_flag) {
 
 # SAVE TABLE
 if (save_table) {
-        # write_csv(df_plot,
-        #       file=paste0(folder_name,"data_table.csv"))
+  
   # FULL DATA
   df_save_full <- bind_rows(
   lapply(names(l_table_save), function(var) {
@@ -1224,14 +1277,27 @@ if (save_table) {
         l_table_save[[var]][[yr]] |>
           mutate(
             var = var,
-            year = yr) })) }) )
+            start_year = yr) })) }) )
     write_csv(df_save_full, 
           file=paste0(folder_name,"data_table.csv"))
     
+# SAVE in wide format
+df_save_full %>%
+  select(country,year,facet_id,value) %>% # country_val_str,
+  pivot_wider(names_from = facet_id,values_from = value) %>%
+  select(country,year,matches("rel_val|2004")) %>%
+  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+
 # SAVE selected variable
     df_save_full %>%
       filter(facet_id %in% "% of EU8-2004") %>%
+      mutate(country_val_str=fct_reorder(
+          country_val_str,diff_end_start,.desc=T) ) %>%
+      arrange(country_val_str,year) %>%
+      select(country_val_str,country,facet_id,var,year,value) %>%
     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+
 }
 
 }
@@ -1482,13 +1548,27 @@ if (save_table) {
         l_table_save[[var]][[yr]] |>
           mutate(
             var = var,
-            year = yr) })) }) )
+            start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
+
+# SAVE in wide format
+df_save_full %>%
+  select(country,year,facet_id,value) %>% # country_val_str,
+  pivot_wider(names_from = facet_id,values_from = value) %>%
+  select(country,year,matches("rel_val|2004")) %>%
+  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+
 # SAVE selected variable
     df_save_full %>%
       filter(facet_id %in% "% of EU8-2004") %>%
+      mutate(country_val_str=fct_reorder(
+          country_val_str,diff_end_start,.desc=T) ) %>%
+      arrange(country_val_str,year) %>%
+      select(country_val_str,country,facet_id,var,year,value) %>%
     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+
   
     }
 
@@ -1738,13 +1818,27 @@ if (save_table) {
         l_table_save[[var]][[yr]] |>
           mutate(
             var = var,
-            year = yr) })) }) )
+            start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
+
+# SAVE in wide format
+df_save_full %>%
+  select(country,year,facet_id,value) %>% # country_val_str,
+  pivot_wider(names_from = facet_id,values_from = value) %>%
+  select(country,year,matches("rel_val|2004")) %>%
+  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+
 # SAVE selected variable
     df_save_full %>%
       filter(facet_id %in% "% of EU8-2004") %>%
+      mutate(country_val_str=fct_reorder(
+          country_val_str,diff_end_start,.desc=T) ) %>%
+      arrange(country_val_str,year) %>%
+      select(country_val_str,country,facet_id,var,year,value) %>%
     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+
 }
 
 }
@@ -1923,13 +2017,27 @@ if (save_table) {
         l_table_save[[var]][[yr]] |>
           mutate(
             var = var,
-            year = yr) })) }) )
+            start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
+
+# SAVE in wide format
+df_save_full %>%
+  select(country,year,facet_id,value) %>% # country_val_str,
+  pivot_wider(names_from = facet_id,values_from = value) %>%
+  select(country,year,matches("rel_val|2004")) %>%
+  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+
 # SAVE selected variable
     df_save_full %>%
       filter(facet_id %in% "% of EU8-2004") %>%
-    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+      mutate(country_val_str=fct_reorder(
+          country_val_str,diff_end_start,.desc=T) ) %>%
+      arrange(country_val_str,year) %>%
+      select(country_val_str,country,facet_id,var,year,value) %>%
+    write_csv(file=paste0(folder_name,"df_sel_var.csv"))
+
 }
 
 }
@@ -1942,6 +2050,7 @@ if (save_table) {
 # HTML tables
 
 with(l_product, {
+
 df_summ <- owid$`per hour of work` %>%
   filter(country %in% l_groups$list_cntrs$CEE) %>%
   select(!c(region,measure,unit,Code,`data source`)) %>%
@@ -2185,13 +2294,29 @@ if (save_table) {
         l_table_save[[var]][[yr]] |>
           mutate(
             var = var,
-            year = yr) })) }) )
+            start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
+
+# SAVE in wide format
+df_save_full %>%
+  select(country,year,facet_id,value) %>% # country_val_str,
+  pivot_wider(names_from = facet_id,values_from = value) %>%
+  select(country,year,matches("rel_val|2004")) %>%
+  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+
 # SAVE selected variable
-    df_save_full %>%
+df_save_full %>%
       filter(facet_id %in% "value-2004") %>%
+      mutate(country_val_str=fct_reorder(
+          country_val_str,diff_end_start,.desc=T) ) %>%
+      arrange(country_val_str,year) %>%
+      select(country_val_str,country,facet_id,var,year,value) %>%
     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+    # df_save_full %>%
+    #   filter(facet_id %in% "value-2004") %>%
+    # write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 }
 
 }
@@ -2455,12 +2580,25 @@ if (save_table) {
         l_table_save[[var]][[yr]] |>
           mutate(
             var = var,
-            year = yr) })) }) )
+            start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
+
+# SAVE in wide format
+df_save_full %>%
+  select(country,year,facet_id,value) %>% # country_val_str,
+  pivot_wider(names_from = facet_id,values_from = value) %>%
+  select(country,year,matches("rel_val|2004")) %>%
+  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+
 # SAVE selected variable
-    df_save_full %>%
+df_save_full %>%
       filter(facet_id %in% "value-2004") %>%
+      mutate(country_val_str=fct_reorder(
+          country_val_str,diff_end_start,.desc=T) ) %>%
+      arrange(country_val_str,year) %>%
+      select(country_val_str,country,facet_id,var,year,value) %>%
     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 }
 

@@ -1042,12 +1042,12 @@ alt="Relative-to-EU8" style="max-width:100%;">
 <b>Figure 9</b> Employment ratio (% of 15+ population) since 2004.
 The chart shows levels (% of 15+ population), indexed values relative to 2004 and 2010, and percentages of the EU8 weighted average. Countries are ranked by cumulative growth from the selected base year through 2024. 
 <a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/employment/data_table.csv" target="_blank" rel="noopener">[download data]</a>
-<a href="https://ec.europa.eu/eurostat/databrowser/view/ilc_di03/default/table?lang=en" target="_blank" rel="noopener">[source]</a>
+<a href="https://data.worldbank.org/indicator/SL.EMP.TOTL.SP.ZS?locations=HU-B8" target="_blank" rel="noopener">[source]</a>
 </p>
 
 </div>
 
-In this indicator, **Hungary** stands out positively in the region. Measured from 2004, its increase in the employment ratio is the third largest; from 2010, it is - tied with Lithuania - the largest. 
+In this indicator, **Hungary** is in line with the region and even slightly stands out positively. Measured from 2004, its increase in the employment ratio is the third largest; from 2010, it is - tied with Lithuania - the largest. 
 This partly reflects a baseline effect: the employment ratio in both countries actually fell between 2004 and 2010, which was rather the exception in the region. The subsequent rise in Hungary's employment ratio aligns with broader regional trends and neither the cumulative increase, nor the level achieved by 2024 are outliers. The unusual feature is how low the ratio was in 2010.
 
 <!-- ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### -->

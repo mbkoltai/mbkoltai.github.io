@@ -1,1 +1,1 @@
-country,year,value,pop,year_end,value_end,era,start_val,end_val,diff_end_start,country_val_str,facet_id,var
+country_val_str,country,facet_id,var,year,value
