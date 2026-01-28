@@ -6,6 +6,20 @@ lapply(c("tidyverse","wbstats", "RColorBrewer", "purrr","zoo","ggh4x",
         library, character.only=T)
 # ,"jsonlite" , "sf",
 
+countries_hu <- c(
+  "Bulgaria"  = "Bulgária",
+  "Croatia"  = "Horvátország",
+  "Czechia"  = "Csehország",
+  "Estonia"  = "Észtország",
+  "Hungary"  = "Magyarország",
+  "Latvia"   = "Lettország",
+  "Lithuania"= "Litvánia",
+  "Poland"   = "Lengyelország",
+  "Romania"  = "Románia",
+  "Slovakia" = "Szlovákia",
+  "Slovenia" = "Szlovénia"
+)
+
 # packs=c("tidyverse","ggrepel","plotly") # ,"RcppRoll","scales","lubridate","wpp2019","wesanderson"
 # missing_packs=setdiff(packs, as.data.frame(installed.packages()[,c(1,3:4)])$Package)
 # if (length(missing_packs)>0){ lapply(missing_packs,install.packages,character.only=TRUE) }

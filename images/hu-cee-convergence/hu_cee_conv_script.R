@@ -178,16 +178,38 @@ if (save_table) {
         l_table_save[[var]][[yr]] |>
           mutate(
             var = var,
-            start_year = yr) })) }) )
+            start_year = yr) })) }) ) %>%
+    filter(grepl("rel_val|2004",facet_id)) %>%
+    filter(!grepl("of DE",facet_id))
+  # SAVE
     write_csv(df_save_full, 
       file=paste0(folder_name,"full_table.csv"))
-# SAVE in wide format
+
+# magyar változat
+facet_labels_hu <- c(
+  "% of EU8-2004" = "EU8 átlag %-a",
+  "value-2004"   = "ezer USD (konstans 2021, PPP)",
+  "rel_val-2004" = "2004-hez (=100) képest",
+  "rel_val-2010" = "2010-hez (=100) képest")
 df_save_full %>%
-  select(country,year,facet_id,value) %>% # country_val_str,
-  pivot_wider(names_from = facet_id,values_from = value) %>%
-  select(country,year,matches("rel_val|2004")) %>%
-  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
-  write_csv(file = paste0(folder_name,"full_table_wide.csv"))
+  mutate(facet_id = factor(
+      facet_labels_hu[facet_id],
+      levels = facet_labels_hu),
+    country = countries_hu[country],
+    country_val_str=str_replace_all(
+      country_val_str,
+      setNames(countries_hu,paste0("^", names(countries_hu))) ) ) %>%
+  arrange(facet_id,desc(diff_end_start),year) %>%
+  write_csv(file=paste0(folder_name,"data_table_HU.csv"))
+  
+    
+# # SAVE in wide format
+# df_save_full %>%
+#   select(country,year,facet_id,value) %>% # country_val_str,
+#   pivot_wider(names_from = facet_id,values_from = value) %>%
+#   select(country,year,matches("rel_val|2004")) %>%
+#   mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+#   write_csv(file = paste0(folder_name,"full_table_wide.csv"))
 
 # SAVE selected variable
     df_save_full %>%
@@ -198,7 +220,6 @@ df_save_full %>%
       select(country_val_str,country,facet_id,var,year,value) %>%
     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
     
-  
   # summary table (start and end values)
   l_gni_percap$GNI_per_cap_2021intUSD_sel_cntr %>%
     filter(country %in% l_groups$list_cntrs$CEE) %>%
@@ -471,23 +492,43 @@ if (save_table) {
     write_csv(df_save_full, 
       file=paste0(folder_name,"full_table.csv"))
 #   View(df_save_full)
-
-# SAVE in wide format
+    
+# magyar változat
+facet_labels_hu <- c(
+  "% of EU8-2004" = "EU8 átlag %-a",
+  "value-2004"= "ezer USD (konstans 2021, PPP)",
+  "rel_val-2004" = "2004-hez (=100) képest",
+  "rel_val-2010" = "2010-hez (=100) képest")
 df_save_full %>%
-  select(country,year,facet_id,value) %>% # country_val_str,
-  pivot_wider(names_from = facet_id,values_from = value) %>%
-  select(country,year,matches("rel_val|2004")) %>%
-  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
-  write_csv(file = paste0(folder_name,"full_table_wide.csv"))
+    filter(grepl("rel_val|2004",facet_id)) %>%
+    filter(!grepl("of DE",facet_id)) %>%
+  mutate(facet_id = factor(
+      facet_labels_hu[facet_id],
+      levels = facet_labels_hu),
+    country = countries_hu[country],
+    country_val_str=str_replace_all(
+      country_val_str,
+      setNames(countries_hu,paste0("^", names(countries_hu))) ) ) %>%
+  arrange(facet_id,desc(diff_end_start),year) %>%
+  write_csv(file=paste0(folder_name,"data_table_HU.csv"))
+    
+    
+# SAVE in wide format
+# df_save_full %>%
+#   select(country,year,facet_id,value) %>% # country_val_str,
+#   pivot_wider(names_from = facet_id,values_from = value) %>%
+#   select(country,year,matches("rel_val|2004")) %>%
+#   mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+#   write_csv(file = paste0(folder_name,"full_table_wide.csv"))
 
     # selected variable
-    df_save_full %>%
-      filter(facet_id %in% "% of EU8-2004") %>%
-            mutate(country_val_str=fct_reorder(
-          country_val_str,diff_end_start,.desc=T) ) %>%
-      arrange(country_val_str,year) %>%
-      select(country_val_str,country,facet_id,var,year,value) %>%
-    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+    # df_save_full %>%
+    #   filter(facet_id %in% "% of EU8-2004") %>%
+    #         mutate(country_val_str=fct_reorder(
+    #       country_val_str,diff_end_start,.desc=T) ) %>%
+    #   arrange(country_val_str,year) %>%
+    #   select(country_val_str,country,facet_id,var,year,value) %>%
+    # write_csv(file = paste0(folder_name,"df_sel_var.csv"))
     
   # summary table (start and end values)
   l_GDP_percap$gdp_per_cap_2021usdppp_sel_cntr %>%
@@ -742,23 +783,42 @@ if (save_table) {
             start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
-    
-# SAVE in wide format
-df_save_full %>%
-  select(country,year,facet_id,value) %>% # country_val_str,
-  pivot_wider(names_from = facet_id,values_from = value) %>%
-  select(country,year,matches("rel_val|2004")) %>%
-  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
-  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
 
-# SAVE selected variable
-    df_save_full %>%
-      filter(facet_id %in% "% of EU8-2004") %>%
-      mutate(country_val_str=fct_reorder(
-          country_val_str,diff_end_start,.desc=T) ) %>%
-      arrange(country_val_str,year) %>%
-      select(country_val_str,country,facet_id,var,year,value) %>%
-    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+# magyar változat
+facet_labels_hu <- c(
+  "% of EU8-2004" = "EU8 átlag %-a",
+  "value-2004"= "ezer USD (konstans 2021, PPP)",
+  "rel_val-2004" = "2004-hez (=100) képest",
+  "rel_val-2010" = "2010-hez (=100) képest")
+df_save_full %>%
+    filter(grepl("rel_val|2004",facet_id)) %>%
+    filter(!grepl("of DE",facet_id)) %>%
+  mutate(facet_id = factor(
+      facet_labels_hu[facet_id],
+      levels = facet_labels_hu),
+    country = countries_hu[country],
+    country_val_str=str_replace_all(
+      country_val_str,
+      setNames(countries_hu,paste0("^", names(countries_hu))) ) ) %>%
+  arrange(facet_id,desc(diff_end_start),year) %>%
+  write_csv(file=paste0(folder_name,"data_table_HU.csv"))
+  
+# SAVE in wide format
+# df_save_full %>%
+#   select(country,year,facet_id,value) %>% # country_val_str,
+#   pivot_wider(names_from = facet_id,values_from = value) %>%
+#   select(country,year,matches("rel_val|2004")) %>%
+#   mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+#   write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+# 
+# # SAVE selected variable
+#     df_save_full %>%
+#       filter(facet_id %in% "% of EU8-2004") %>%
+#       mutate(country_val_str=fct_reorder(
+#           country_val_str,diff_end_start,.desc=T) ) %>%
+#       arrange(country_val_str,year) %>%
+#       select(country_val_str,country,facet_id,var,year,value) %>%
+#     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 
     
 }
@@ -1014,25 +1074,25 @@ if (save_table) {
             start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
-    
-# SAVE in wide format
+# magyar változat
+facet_labels_hu <- c(
+  "% of EU8-2004" = "EU3 átlag %-a",
+  "value-2004"= "ezer USD (konstans 2021, PPP)",
+  "rel_val-2004" = "2004-hez (=100) képest",
+  "rel_val-2010" = "2010-hez (=100) képest")
 df_save_full %>%
-  select(country,year,facet_id,value) %>% # country_val_str,
-  pivot_wider(names_from = facet_id,values_from = value) %>%
-  select(country,year,matches("rel_val|2004")) %>%
-  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
-  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+    filter(grepl("rel_val|2004",facet_id)) %>%
+    filter(!grepl("of DE|S_EUR",facet_id)) %>%
+  mutate(facet_id = factor(
+      facet_labels_hu[facet_id],
+      levels = facet_labels_hu),
+    country = countries_hu[country],
+    country_val_str=str_replace_all(
+      country_val_str,
+      setNames(countries_hu,paste0("^", names(countries_hu))) ) ) %>%
+  arrange(facet_id,desc(diff_end_start),year) %>%
+  write_csv(file=paste0(folder_name,"data_table_HU.csv"))
 
-# SAVE selected variable
-    df_save_full %>%
-      filter(facet_id %in% "% of EU8-2004") %>%
-      mutate(country_val_str=fct_reorder(
-          country_val_str,diff_end_start,.desc=T) ) %>%
-      arrange(country_val_str,year) %>%
-      select(country_val_str,country,facet_id,var,year,value) %>%
-    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
-
-    
 }
 
 }
@@ -1040,6 +1100,25 @@ df_save_full %>%
 } # end of for loop
             
 })
+
+
+        
+# SAVE in wide format
+# df_save_full %>%
+#   select(country,year,facet_id,value) %>% # country_val_str,
+#   pivot_wider(names_from = facet_id,values_from = value) %>%
+#   select(country,year,matches("rel_val|2004")) %>%
+#   mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+#   write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+# 
+# # SAVE selected variable
+#     df_save_full %>%
+#       filter(facet_id %in% "% of EU8-2004") %>%
+#       mutate(country_val_str=fct_reorder(
+#           country_val_str,diff_end_start,.desc=T) ) %>%
+#       arrange(country_val_str,year) %>%
+#       select(country_val_str,country,facet_id,var,year,value) %>%
+#     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -1123,8 +1202,8 @@ with(list(all_vars=c("rel_val",grep("%|value",
   folder_name="output/wages/median_equiv_net_income/",
   l_table_save=list(),
   show_plot=F,
-          save_plot_flag=F,
-          save_table=T), {
+  save_plot_flag=F,
+  save_table=T), {
   
 for (sel_var in all_vars) {
 for (start_yr in start_yr_vals) {
@@ -1280,24 +1359,26 @@ if (save_table) {
             start_year = yr) })) }) )
     write_csv(df_save_full, 
           file=paste0(folder_name,"data_table.csv"))
-    
-# SAVE in wide format
+### ### ### ### ### ### ### ### ### ### ### ### ### 
+# magyar változat
+facet_labels_hu <- c(
+  "% of EU8-2005" = "EU8 átlag %-a",
+  "value-2005"= "ezer PPS",
+  "rel_val-2005" = "2005-hez (=100) képest",
+  "rel_val-2010" = "2010-hez (=100) képest")
 df_save_full %>%
-  select(country,year,facet_id,value) %>% # country_val_str,
-  pivot_wider(names_from = facet_id,values_from = value) %>%
-  select(country,year,matches("rel_val|2004")) %>%
-  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
-  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
-
-# SAVE selected variable
-    df_save_full %>%
-      filter(facet_id %in% "% of EU8-2004") %>%
-      mutate(country_val_str=fct_reorder(
-          country_val_str,diff_end_start,.desc=T) ) %>%
-      arrange(country_val_str,year) %>%
-      select(country_val_str,country,facet_id,var,year,value) %>%
-    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
-
+    filter(grepl("rel_val|2005",facet_id)) %>%
+    filter(!grepl("of DE|of AT|W_EUR",facet_id)) %>%
+  mutate(facet_id = factor(
+      facet_labels_hu[facet_id],
+      levels = facet_labels_hu),
+    country = countries_hu[country],
+    country_val_str=str_replace_all(
+      country_val_str,
+      setNames(countries_hu,paste0("^", names(countries_hu))) ) ) %>%
+  arrange(facet_id,desc(diff_end_start),year) %>%
+  write_csv(file=paste0(folder_name,"data_table_HU.csv"))
+    
 }
 
 }
@@ -1305,6 +1386,22 @@ df_save_full %>%
             
 })
 
+# # SAVE in wide format
+# df_save_full %>%
+#   select(country,year,facet_id,value) %>% # country_val_str,
+#   pivot_wider(names_from = facet_id,values_from = value) %>%
+#   select(country,year,matches("rel_val|2004")) %>%
+#   mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+#   write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+# 
+# # SAVE selected variable
+#     df_save_full %>%
+#       filter(facet_id %in% "% of EU8-2004") %>%
+#       mutate(country_val_str=fct_reorder(
+#           country_val_str,diff_end_start,.desc=T) ) %>%
+#       arrange(country_val_str,year) %>%
+#       select(country_val_str,country,facet_id,var,year,value) %>%
+#     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # HTML tables
@@ -1551,31 +1648,61 @@ if (save_table) {
             start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
+### ### ### ### ### ### ### ### ### ### ### ### ### 
+# magyar változat
+facet_labels_hu <- c(
+  "% of EU8-2006" = "EU8 átlag %-a",
+  "value-2006"= "PPS",
+  "rel_val-2006" = "2006-hez (=100) képest",
+  "rel_val-2010" = "2010-hez (=100) képest")
+read_csv("output/wages/real_median_hourly/data_table.csv") %>%
+  select(country, year, value, year_end,
+    value_end,country_val_str,facet_id,var,diff_end_start) %>%
+  pivot_longer(
+    cols = c(value, value_end),
+    names_to = "point",
+    values_to = "value"
+  ) %>%
+  mutate(
+    year = ifelse(point == "value", year, year_end)
+  ) %>%
+  select(!c(point,year_end)) %>%
+  distinct() %>%
+    filter(grepl("rel_val|2006",facet_id)) %>%
+    filter(!grepl("of DE|of AT|W_EUR",facet_id)) %>%
+  mutate(facet_id = factor(
+      facet_labels_hu[facet_id],
+      levels = facet_labels_hu),
+    country = countries_hu[country],
+    country_val_str=str_replace_all(
+      country_val_str,
+      setNames(countries_hu,paste0("^", names(countries_hu))) ) ) %>%
+  arrange(facet_id,desc(diff_end_start),year) %>%
+  write_csv(file=paste0(folder_name,"data_table_HU.csv"))
 
-# SAVE in wide format
-df_save_full %>%
-  select(country,year,facet_id,value) %>% # country_val_str,
-  pivot_wider(names_from = facet_id,values_from = value) %>%
-  select(country,year,matches("rel_val|2004")) %>%
-  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
-  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
-
-# SAVE selected variable
-    df_save_full %>%
-      filter(facet_id %in% "% of EU8-2004") %>%
-      mutate(country_val_str=fct_reorder(
-          country_val_str,diff_end_start,.desc=T) ) %>%
-      arrange(country_val_str,year) %>%
-      select(country_val_str,country,facet_id,var,year,value) %>%
-    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
-
-  
     }
 
   } # start yr
 } # end of for loop
             
 })
+
+# # SAVE in wide format
+# df_save_full %>%
+#   select(country,year,facet_id,value) %>% # country_val_str,
+#   pivot_wider(names_from = facet_id,values_from = value) %>%
+#   select(country,year,matches("rel_val|2004")) %>%
+#   mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+#   write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+# 
+# # SAVE selected variable
+#     df_save_full %>%
+#       filter(facet_id %in% "% of EU8-2004") %>%
+#       mutate(country_val_str=fct_reorder(
+#           country_val_str,diff_end_start,.desc=T) ) %>%
+#       arrange(country_val_str,year) %>%
+#       select(country_val_str,country,facet_id,var,year,value) %>%
+#     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -1822,22 +1949,42 @@ if (save_table) {
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
 
-# SAVE in wide format
+    # magyar változat
+facet_labels_hu <- c(
+  "% of EU8-2004" = "EU8 átlag %-a",
+  "value-2004"= "PPS",
+  "rel_val-2004" = "2004-hez (=100) képest",
+  "rel_val-2010" = "2010-hez (=100) képest")
 df_save_full %>%
-  select(country,year,facet_id,value) %>% # country_val_str,
-  pivot_wider(names_from = facet_id,values_from = value) %>%
-  select(country,year,matches("rel_val|2004")) %>%
-  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
-  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+    filter(grepl("rel_val|2004",facet_id)) %>%
+    filter(!grepl("of DE|of AT|S_EUR|W_EUR",facet_id)) %>%
+  mutate(facet_id = factor(
+      facet_labels_hu[facet_id],
+      levels = facet_labels_hu),
+    country = countries_hu[country],
+    country_val_str=str_replace_all(
+      country_val_str,
+      setNames(countries_hu,paste0("^", names(countries_hu))) ) ) %>%
+  arrange(facet_id,desc(diff_end_start),year) %>%
+  write_csv(file=paste0(folder_name,"data_table_HU.csv"))
 
-# SAVE selected variable
-    df_save_full %>%
-      filter(facet_id %in% "% of EU8-2004") %>%
-      mutate(country_val_str=fct_reorder(
-          country_val_str,diff_end_start,.desc=T) ) %>%
-      arrange(country_val_str,year) %>%
-      select(country_val_str,country,facet_id,var,year,value) %>%
-    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+    
+# # SAVE in wide format
+# df_save_full %>%
+#   select(country,year,facet_id,value) %>% # country_val_str,
+#   pivot_wider(names_from = facet_id,values_from = value) %>%
+#   select(country,year,matches("rel_val|2004")) %>%
+#   mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+#   write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+# 
+# # SAVE selected variable
+#     df_save_full %>%
+#       filter(facet_id %in% "% of EU8-2004") %>%
+#       mutate(country_val_str=fct_reorder(
+#           country_val_str,diff_end_start,.desc=T) ) %>%
+#       arrange(country_val_str,year) %>%
+#       select(country_val_str,country,facet_id,var,year,value) %>%
+#     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 
 }
 
@@ -2021,22 +2168,41 @@ if (save_table) {
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
 
-# SAVE in wide format
+    # magyar változat
+facet_labels_hu <- c(
+  "% of EU8-2004" = "EU8 átlag %-a",
+  "value-2004"= "USD (konstans 2021, PPP)",
+  "rel_val-2004" = "2004-hez (=100) képest",
+  "rel_val-2010" = "2010-hez (=100) képest")
 df_save_full %>%
-  select(country,year,facet_id,value) %>% # country_val_str,
-  pivot_wider(names_from = facet_id,values_from = value) %>%
-  select(country,year,matches("rel_val|2004")) %>%
-  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
-  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+    filter(grepl("rel_val|2004",facet_id)) %>%
+    filter(!grepl("of DE|of AT|S_EUR",facet_id)) %>%
+  mutate(facet_id = factor(
+      facet_labels_hu[facet_id],
+      levels = facet_labels_hu),
+    country = countries_hu[country],
+    country_val_str=str_replace_all(
+      country_val_str,
+      setNames(countries_hu,paste0("^", names(countries_hu))) ) ) %>%
+  arrange(facet_id,desc(diff_end_start),year) %>%
+  write_csv(file=paste0(folder_name,"data_table_HU.csv"))
 
-# SAVE selected variable
-    df_save_full %>%
-      filter(facet_id %in% "% of EU8-2004") %>%
-      mutate(country_val_str=fct_reorder(
-          country_val_str,diff_end_start,.desc=T) ) %>%
-      arrange(country_val_str,year) %>%
-      select(country_val_str,country,facet_id,var,year,value) %>%
-    write_csv(file=paste0(folder_name,"df_sel_var.csv"))
+# # SAVE in wide format
+# df_save_full %>%
+#   select(country,year,facet_id,value) %>% # country_val_str,
+#   pivot_wider(names_from = facet_id,values_from = value) %>%
+#   select(country,year,matches("rel_val|2004")) %>%
+#   mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+#   write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+# 
+# # SAVE selected variable
+#     df_save_full %>%
+#       filter(facet_id %in% "% of EU8-2004") %>%
+#       mutate(country_val_str=fct_reorder(
+#           country_val_str,diff_end_start,.desc=T) ) %>%
+#       arrange(country_val_str,year) %>%
+#       select(country_val_str,country,facet_id,var,year,value) %>%
+#     write_csv(file=paste0(folder_name,"df_sel_var.csv"))
 
 }
 
@@ -2132,7 +2298,7 @@ with(list(all_vars=c("rel_val",grep("value|DE|EU8|S_EUR4",
   folder_name="output/employment/",
   l_table_save=list(),
   show_plot=F,
-          save_plot_flag=T,
+          save_plot_flag=F,
           save_table=T), {
   
 for (sel_var in all_vars) {
@@ -2251,6 +2417,7 @@ df_summ <- df_plot %>%
 title_str <- paste0("weighted average: ",
   paste0(df_summ$str_yr,collapse = " → "))
 
+if (show_plot) {
 p <- df_plot %>%
 ggplot(aes(x=year,y=get(sel_var)) ) +
   # facet_wrap(~country_val_str) +
@@ -2283,6 +2450,7 @@ file_name <- paste0(folder_name,start_yr,"/",gsub("% of ","",sel_var),".png")
 if (save_plot_flag) {
   file_name %>% ggsave(plot=p, width=42,height=28,units="cm")
 }
+}
 
 # SAVE TABLE
 if (save_table) {
@@ -2298,25 +2466,45 @@ if (save_table) {
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
 
-# SAVE in wide format
+    # magyar változat
+facet_labels_hu <- c(
+  "value-2004"= "15+ lakosság százaléka",
+  "% of EU8-2004" = "EU8 átlag %-a",
+  "rel_val-2004" = "2004-hez (=100) képest",
+  "rel_val-2010" = "2010-hez (=100) képest")
 df_save_full %>%
-  select(country,year,facet_id,value) %>% # country_val_str,
-  pivot_wider(names_from = facet_id,values_from = value) %>%
-  select(country,year,matches("rel_val|2004")) %>%
-  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
-  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+    filter(grepl("rel_val|2004",facet_id)) %>%
+    filter(!grepl("of DE|of AT|S_EUR",facet_id)) %>%
+  mutate(facet_id = factor(
+      facet_labels_hu[facet_id],
+      levels = facet_labels_hu),
+    country = countries_hu[country],
+    country_val_str=str_replace_all(
+      country_val_str,
+      setNames(countries_hu,paste0("^", names(countries_hu))) ) ) %>%
+  arrange(facet_id,desc(diff_end_start),year) %>%
+  write_csv(file=paste0(folder_name,"data_table_HU.csv"))
 
-# SAVE selected variable
-df_save_full %>%
-      filter(facet_id %in% "value-2004") %>%
-      mutate(country_val_str=fct_reorder(
-          country_val_str,diff_end_start,.desc=T) ) %>%
-      arrange(country_val_str,year) %>%
-      select(country_val_str,country,facet_id,var,year,value) %>%
-    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
-    # df_save_full %>%
-    #   filter(facet_id %in% "value-2004") %>%
-    # write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+    
+# # SAVE in wide format
+# df_save_full %>%
+#   select(country,year,facet_id,value) %>% # country_val_str,
+#   pivot_wider(names_from = facet_id,values_from = value) %>%
+#   select(country,year,matches("rel_val|2004")) %>%
+#   mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+#   write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+# 
+# # SAVE selected variable
+# df_save_full %>%
+#       filter(facet_id %in% "value-2004") %>%
+#       mutate(country_val_str=fct_reorder(
+#           country_val_str,diff_end_start,.desc=T) ) %>%
+#       arrange(country_val_str,year) %>%
+#       select(country_val_str,country,facet_id,var,year,value) %>%
+#     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+#     # df_save_full %>%
+#     #   filter(facet_id %in% "value-2004") %>%
+#     # write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 }
 
 }
@@ -2583,23 +2771,43 @@ if (save_table) {
             start_year = yr) })) }) )
     write_csv(df_save_full, 
       file=paste0(folder_name,"data_table.csv"))
-
-# SAVE in wide format
+# magyar változat
+facet_labels_hu <- c(
+  "value-2004"= "év",
+  "% of EU8-2004" = "EU8 átlag %-a",
+  "rel_val-2004" = "2004-hez (=100) képest",
+  "rel_val-2010" = "2010-hez (=100) képest")
 df_save_full %>%
-  select(country,year,facet_id,value) %>% # country_val_str,
-  pivot_wider(names_from = facet_id,values_from = value) %>%
-  select(country,year,matches("rel_val|2004")) %>%
-  mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
-  write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+    filter(grepl("rel_val|2004",facet_id)) %>%
+    filter(!grepl("of DE|of AT|S_EUR",facet_id)) %>%
+  mutate(facet_id = factor(
+      facet_labels_hu[facet_id],
+      levels = facet_labels_hu),
+    country = countries_hu[country],
+    country_val_str=str_replace_all(
+      country_val_str,
+      setNames(countries_hu,paste0("^", names(countries_hu))) ) ) %>%
+  arrange(facet_id,desc(diff_end_start),year) %>%
+  write_csv(file=paste0(folder_name,"data_table_HU.csv"))
 
-# SAVE selected variable
-df_save_full %>%
-      filter(facet_id %in% "value-2004") %>%
-      mutate(country_val_str=fct_reorder(
-          country_val_str,diff_end_start,.desc=T) ) %>%
-      arrange(country_val_str,year) %>%
-      select(country_val_str,country,facet_id,var,year,value) %>%
-    write_csv(file = paste0(folder_name,"df_sel_var.csv"))
+    
+    
+# # SAVE in wide format
+# df_save_full %>%
+#   select(country,year,facet_id,value) %>% # country_val_str,
+#   pivot_wider(names_from = facet_id,values_from = value) %>%
+#   select(country,year,matches("rel_val|2004")) %>%
+#   mutate(var_name=str_extract(folder_name, "(?<=/)[^/]+(?=/$|$)") ) %>%
+#   write_csv(file = paste0(folder_name,"data_table_wide.csv"))
+# 
+# # SAVE selected variable
+# df_save_full %>%
+#       filter(facet_id %in% "value-2004") %>%
+#       mutate(country_val_str=fct_reorder(
+#           country_val_str,diff_end_start,.desc=T) ) %>%
+#       arrange(country_val_str,year) %>%
+#       select(country_val_str,country,facet_id,var,year,value) %>%
+#     write_csv(file = paste0(folder_name,"df_sel_var.csv"))
 }
 
 }
@@ -2716,8 +2924,10 @@ df_summ <- read_csv("output/combined_HTML_tables.csv") %>%
   pivot_longer(!c(folder,file,country),names_to = "metric") %>% # table_index,
   rename(period=file,variable=folder) %>%
   filter(!is.na(value) & grepl("EU8|absolute",metric) &
-    ((variable %in% c("life_exp", "employment") & str_detect(metric, "absolute")) |
-    (!variable %in% c("life_exp", "employment") & str_detect(metric, "% of EU8")))
+    ((variable %in% c("life_exp", "employment") & 
+        str_detect(metric, "absolute")) |
+    (!variable %in% c("life_exp", "employment") & 
+        str_detect(metric, "% of EU8")))
   ) %>%
   mutate(period=gsub("table_|\\.html","",period),
     # Extract the "change" number before the parenthesis
@@ -2882,15 +3092,18 @@ employment="<b>Employment-to-<br>population ratio</b> <br> (% of 15+ population)
 life_exp="<b>Life expectancy</b><br>at birth (years) <span style='font-size:0.75em'>[2004-2023]</span>"
     )
     
-    df_hu <- (l_HU_summ[[k_name]] %>%
+  df_temp <- l_HU_summ[[k_name]] %>%
           select(!c(name,start_yr,end_yr,period,n_cntr)) %>%
           pivot_wider(names_from=column_name,values_from=value)
-              )[c(1,2,8,3,9,7,6,4,5),c(1:4,7,5,6,8)] |> 
+  # View(df_temp)
+  # View(df_temp[c(1,2,8,3,9,7,6,4,5),c(1:4,7,5,6,8)])
+  
+    df_hu <- df_temp[c(1,2,8,3,9,10,7,6,4,5),c(1:4,7,5,6,8)] |> 
           mutate(variable = var_labels[variable],
             variable=factor(variable,levels=var_labels)) %>%
           select(!c(country,metric)) %>%
       arrange(variable)
-    View(df_hu)
+    # View(df_hu)
     
     # rank
   if (k_metric == 2) {
@@ -2947,11 +3160,6 @@ life_exp="<b>Life expectancy</b><br>at birth (years) <span style='font-size:0.75
   rm(k_metric,k_name)
 }) # with end
 
-# %>%
-# mutate(across(
-#   c(contains("level", ignore.case = TRUE), contains("change", ignore.case = TRUE)),
-#   ~ str_replace_all(.x, "\\[", "<br>\\[")
-# ))
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 

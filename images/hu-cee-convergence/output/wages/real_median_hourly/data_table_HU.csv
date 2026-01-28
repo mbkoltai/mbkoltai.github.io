@@ -1,0 +1,195 @@
+country,year,country_val_str,facet_id,var,diff_end_start,value
+Litvánia,2006,Litvánia (+40%),EU8 átlag %-a,% of EU8,39.500163706633266,30.292382488378216
+Litvánia,2010,Litvánia (+40%),EU8 átlag %-a,% of EU8,39.500163706633266,33.175825466108265
+Litvánia,2014,Litvánia (+40%),EU8 átlag %-a,% of EU8,39.500163706633266,33.48215204240009
+Litvánia,2018,Litvánia (+40%),EU8 átlag %-a,% of EU8,39.500163706633266,43.332984258256474
+Litvánia,2022,Litvánia (+40%),EU8 átlag %-a,% of EU8,39.500163706633266,69.79254619501148
+Románia,2006,Románia (+38%),EU8 átlag %-a,% of EU8,37.86723993850307,21.265864474164506
+Románia,2010,Románia (+38%),EU8 átlag %-a,% of EU8,37.86723993850307,28.50933573021611
+Románia,2014,Románia (+38%),EU8 átlag %-a,% of EU8,37.86723993850307,25.838751677165323
+Románia,2018,Románia (+38%),EU8 átlag %-a,% of EU8,37.86723993850307,46.13727599761976
+Románia,2022,Románia (+38%),EU8 átlag %-a,% of EU8,37.86723993850307,59.133104412667585
+Szlovákia,2006,Szlovákia (+30%),EU8 átlag %-a,% of EU8,29.69816659629655,28.30348868863621
+Szlovákia,2010,Szlovákia (+30%),EU8 átlag %-a,% of EU8,29.69816659629655,42.80046054638583
+Szlovákia,2014,Szlovákia (+30%),EU8 átlag %-a,% of EU8,29.69816659629655,43.89882156670234
+Szlovákia,2018,Szlovákia (+30%),EU8 átlag %-a,% of EU8,29.69816659629655,47.27234646355251
+Szlovákia,2022,Szlovákia (+30%),EU8 átlag %-a,% of EU8,29.69816659629655,58.00165528493276
+Észtország,2006,Észtország (+27%),EU8 átlag %-a,% of EU8,27.347564614555772,34.88213741085976
+Észtország,2010,Észtország (+27%),EU8 átlag %-a,% of EU8,27.347564614555772,43.45668566549566
+Észtország,2014,Észtország (+27%),EU8 átlag %-a,% of EU8,27.347564614555772,43.89882156670234
+Észtország,2018,Észtország (+27%),EU8 átlag %-a,% of EU8,27.347564614555772,52.48031683665576
+Észtország,2022,Észtország (+27%),EU8 átlag %-a,% of EU8,27.347564614555772,62.229702025415534
+Lettország,2006,Lettország (+27%),EU8 átlag %-a,% of EU8,27.169497776141473,26.00861122739544
+Lettország,2010,Lettország (+27%),EU8 átlag %-a,% of EU8,27.169497776141473,22.894965266720867
+Lettország,2014,Lettország (+27%),EU8 átlag %-a,% of EU8,27.169497776141473,32.33225995205503
+Lettország,2018,Lettország (+27%),EU8 átlag %-a,% of EU8,27.169497776141473,42.932371152633145
+Lettország,2022,Lettország (+27%),EU8 átlag %-a,% of EU8,27.169497776141473,53.17810900353691
+Lengyelország,2006,Lengyelország (+25%),EU8 átlag %-a,% of EU8,25.413812311454137,41.46078613308332
+Lengyelország,2010,Lengyelország (+25%),EU8 átlag %-a,% of EU8,25.413812311454137,49.071056128990904
+Lengyelország,2014,Lengyelország (+25%),EU8 átlag %-a,% of EU8,25.413812311454137,52.015706910314485
+Lengyelország,2018,Lengyelország (+25%),EU8 átlag %-a,% of EU8,25.413812311454137,55.81875938351681
+Lengyelország,2022,Lengyelország (+25%),EU8 átlag %-a,% of EU8,25.413812311454137,66.87459844453745
+Bulgária,2006,Bulgária (+24%),EU8 átlag %-a,% of EU8,24.0299228360474,15.987646313310725
+Bulgária,2010,Bulgária (+24%),EU8 átlag %-a,% of EU8,24.0299228360474,24.936554526173683
+Bulgária,2014,Bulgária (+24%),EU8 átlag %-a,% of EU8,24.0299228360474,23.538967496475216
+Bulgária,2018,Bulgária (+24%),EU8 átlag %-a,% of EU8,24.0299228360474,30.780440282058915
+Bulgária,2022,Bulgária (+24%),EU8 átlag %-a,% of EU8,24.0299228360474,40.01756914935813
+Magyarország,2006,Magyarország (+19%),EU8 átlag %-a,% of EU8,18.797072898534303,33.96418642636346
+Magyarország,2010,Magyarország (+19%),EU8 átlag %-a,% of EU8,18.797072898534303,41.05052689542627
+Magyarország,2014,Magyarország (+19%),EU8 átlag %-a,% of EU8,18.797072898534303,42.207803786783145
+Magyarország,2018,Magyarország (+19%),EU8 átlag %-a,% of EU8,18.797072898534303,45.26928093543589
+Magyarország,2022,Magyarország (+19%),EU8 átlag %-a,% of EU8,18.797072898534303,52.761259324897765
+Szlovénia,2006,Szlovénia (+17%),EU8 átlag %-a,% of EU8,17.336641463648235,56.14800188502427
+Szlovénia,2010,Szlovénia (+17%),EU8 átlag %-a,% of EU8,17.336641463648235,62.414300217557525
+Szlovénia,2014,Szlovénia (+17%),EU8 átlag %-a,% of EU8,17.336641463648235,60.60607723230401
+Szlovénia,2018,Szlovénia (+17%),EU8 átlag %-a,% of EU8,17.336641463648235,61.56088056411783
+Szlovénia,2022,Szlovénia (+17%),EU8 átlag %-a,% of EU8,17.336641463648235,73.4846433486725
+Csehország,2006,Csehország (+16%),EU8 átlag %-a,% of EU8,16.05039263302909,44.75011049419509
+Csehország,2010,Csehország (+16%),EU8 átlag %-a,% of EU8,16.05039263302909,46.22741394618163
+Csehország,2014,Csehország (+16%),EU8 átlag %-a,% of EU8,16.05039263302909,48.36310850568902
+Csehország,2018,Csehország (+16%),EU8 átlag %-a,% of EU8,16.05039263302909,56.085834787265696
+Csehország,2022,Csehország (+16%),EU8 átlag %-a,% of EU8,16.05039263302909,60.80050312722418
+Litvánia,2006,Litvánia (+7.8k PPS),PPS,value,7.760000000000001,3.96
+Litvánia,2010,Litvánia (+7.8k PPS),PPS,value,7.760000000000001,4.55
+Litvánia,2014,Litvánia (+7.8k PPS),PPS,value,7.760000000000001,4.95
+Litvánia,2018,Litvánia (+7.8k PPS),PPS,value,7.760000000000001,6.49
+Litvánia,2022,Litvánia (+7.8k PPS),PPS,value,7.760000000000001,11.72
+Románia,2006,Románia (+7.2k PPS),PPS,value,7.15,2.78
+Románia,2010,Románia (+7.2k PPS),PPS,value,7.15,3.91
+Románia,2014,Románia (+7.2k PPS),PPS,value,7.15,3.82
+Románia,2018,Románia (+7.2k PPS),PPS,value,7.15,6.91
+Románia,2022,Románia (+7.2k PPS),PPS,value,7.15,9.93
+Szlovákia,2006,Szlovákia (+6k PPS),PPS,value,6.04,3.7
+Szlovákia,2010,Szlovákia (+6k PPS),PPS,value,6.04,5.87
+Szlovákia,2014,Szlovákia (+6k PPS),PPS,value,6.04,6.49
+Szlovákia,2018,Szlovákia (+6k PPS),PPS,value,6.04,7.08
+Szlovákia,2022,Szlovákia (+6k PPS),PPS,value,6.04,9.74
+Észtország,2006,Észtország (+5.9k PPS),PPS,value,5.89,4.56
+Észtország,2010,Észtország (+5.9k PPS),PPS,value,5.89,5.96
+Észtország,2014,Észtország (+5.9k PPS),PPS,value,5.89,6.49
+Észtország,2018,Észtország (+5.9k PPS),PPS,value,5.89,7.86
+Észtország,2022,Észtország (+5.9k PPS),PPS,value,5.89,10.45
+Lengyelország,2006,Lengyelország (+5.8k PPS),PPS,value,5.8100000000000005,5.42
+Lengyelország,2010,Lengyelország (+5.8k PPS),PPS,value,5.8100000000000005,6.73
+Lengyelország,2014,Lengyelország (+5.8k PPS),PPS,value,5.8100000000000005,7.69
+Lengyelország,2018,Lengyelország (+5.8k PPS),PPS,value,5.8100000000000005,8.36
+Lengyelország,2022,Lengyelország (+5.8k PPS),PPS,value,5.8100000000000005,11.23
+Lettország,2006,Lettország (+5.5k PPS),PPS,value,5.529999999999999,3.4
+Lettország,2010,Lettország (+5.5k PPS),PPS,value,5.529999999999999,3.14
+Lettország,2014,Lettország (+5.5k PPS),PPS,value,5.529999999999999,4.78
+Lettország,2018,Lettország (+5.5k PPS),PPS,value,5.529999999999999,6.43
+Lettország,2022,Lettország (+5.5k PPS),PPS,value,5.529999999999999,8.93
+Szlovénia,2006,Szlovénia (+5k PPS),PPS,value,5,7.34
+Szlovénia,2010,Szlovénia (+5k PPS),PPS,value,5,8.56
+Szlovénia,2014,Szlovénia (+5k PPS),PPS,value,5,8.96
+Szlovénia,2018,Szlovénia (+5k PPS),PPS,value,5,9.22
+Szlovénia,2022,Szlovénia (+5k PPS),PPS,value,5,12.34
+Bulgária,2006,Bulgária (+4.6k PPS),PPS,value,4.63,2.09
+Bulgária,2010,Bulgária (+4.6k PPS),PPS,value,4.63,3.42
+Bulgária,2014,Bulgária (+4.6k PPS),PPS,value,4.63,3.48
+Bulgária,2018,Bulgária (+4.6k PPS),PPS,value,4.63,4.61
+Bulgária,2022,Bulgária (+4.6k PPS),PPS,value,4.63,6.72
+Magyarország,2006,Magyarország (+4.4k PPS),PPS,value,4.419999999999999,4.44
+Magyarország,2010,Magyarország (+4.4k PPS),PPS,value,4.419999999999999,5.63
+Magyarország,2014,Magyarország (+4.4k PPS),PPS,value,4.419999999999999,6.24
+Magyarország,2018,Magyarország (+4.4k PPS),PPS,value,4.419999999999999,6.78
+Magyarország,2022,Magyarország (+4.4k PPS),PPS,value,4.419999999999999,8.86
+Csehország,2006,Csehország (+4.4k PPS),PPS,value,4.360000000000001,5.85
+Csehország,2010,Csehország (+4.4k PPS),PPS,value,4.360000000000001,6.34
+Csehország,2014,Csehország (+4.4k PPS),PPS,value,4.360000000000001,7.15
+Csehország,2018,Csehország (+4.4k PPS),PPS,value,4.360000000000001,8.4
+Csehország,2022,Csehország (+4.4k PPS),PPS,value,4.360000000000001,10.21
+Románia,2006,Románia (+257%),2006-hez (=100) képest,rel_val,257.19424460431657,100
+Románia,2010,Románia (+257%),2006-hez (=100) képest,rel_val,257.19424460431657,140.6474820143885
+Románia,2014,Románia (+257%),2006-hez (=100) képest,rel_val,257.19424460431657,137.41007194244605
+Románia,2018,Románia (+257%),2006-hez (=100) képest,rel_val,257.19424460431657,248.56115107913672
+Románia,2022,Románia (+257%),2006-hez (=100) képest,rel_val,257.19424460431657,357.19424460431657
+Bulgária,2006,Bulgária (+222%),2006-hez (=100) képest,rel_val,221.53110047846897,100
+Bulgária,2010,Bulgária (+222%),2006-hez (=100) képest,rel_val,221.53110047846897,163.63636363636363
+Bulgária,2014,Bulgária (+222%),2006-hez (=100) képest,rel_val,221.53110047846897,166.50717703349284
+Bulgária,2018,Bulgária (+222%),2006-hez (=100) képest,rel_val,221.53110047846897,220.57416267942588
+Bulgária,2022,Bulgária (+222%),2006-hez (=100) képest,rel_val,221.53110047846897,321.53110047846894
+Litvánia,2006,Litvánia (+196%),2006-hez (=100) képest,rel_val,195.95959595959596,100
+Litvánia,2010,Litvánia (+196%),2006-hez (=100) képest,rel_val,195.95959595959596,114.8989898989899
+Litvánia,2014,Litvánia (+196%),2006-hez (=100) képest,rel_val,195.95959595959596,125
+Litvánia,2018,Litvánia (+196%),2006-hez (=100) képest,rel_val,195.95959595959596,163.88888888888889
+Litvánia,2022,Litvánia (+196%),2006-hez (=100) képest,rel_val,195.95959595959596,295.95959595959596
+Szlovákia,2006,Szlovákia (+163%),2006-hez (=100) képest,rel_val,163.24324324324323,100
+Szlovákia,2010,Szlovákia (+163%),2006-hez (=100) képest,rel_val,163.24324324324323,158.64864864864865
+Szlovákia,2014,Szlovákia (+163%),2006-hez (=100) képest,rel_val,163.24324324324323,175.4054054054054
+Szlovákia,2018,Szlovákia (+163%),2006-hez (=100) képest,rel_val,163.24324324324323,191.35135135135135
+Szlovákia,2022,Szlovákia (+163%),2006-hez (=100) képest,rel_val,163.24324324324323,263.2432432432432
+Lettország,2006,Lettország (+163%),2006-hez (=100) képest,rel_val,162.6470588235294,100
+Lettország,2010,Lettország (+163%),2006-hez (=100) képest,rel_val,162.6470588235294,92.3529411764706
+Lettország,2014,Lettország (+163%),2006-hez (=100) képest,rel_val,162.6470588235294,140.58823529411765
+Lettország,2018,Lettország (+163%),2006-hez (=100) képest,rel_val,162.6470588235294,189.1176470588235
+Lettország,2022,Lettország (+163%),2006-hez (=100) képest,rel_val,162.6470588235294,262.6470588235294
+Észtország,2006,Észtország (+129%),2006-hez (=100) képest,rel_val,129.16666666666669,100
+Észtország,2010,Észtország (+129%),2006-hez (=100) képest,rel_val,129.16666666666669,130.70175438596493
+Észtország,2014,Észtország (+129%),2006-hez (=100) képest,rel_val,129.16666666666669,142.3245614035088
+Észtország,2018,Észtország (+129%),2006-hez (=100) képest,rel_val,129.16666666666669,172.3684210526316
+Észtország,2022,Észtország (+129%),2006-hez (=100) képest,rel_val,129.16666666666669,229.16666666666669
+Lengyelország,2006,Lengyelország (+107%),2006-hez (=100) képest,rel_val,107.19557195571956,100
+Lengyelország,2010,Lengyelország (+107%),2006-hez (=100) képest,rel_val,107.19557195571956,124.16974169741698
+Lengyelország,2014,Lengyelország (+107%),2006-hez (=100) képest,rel_val,107.19557195571956,141.8819188191882
+Lengyelország,2018,Lengyelország (+107%),2006-hez (=100) képest,rel_val,107.19557195571956,154.24354243542436
+Lengyelország,2022,Lengyelország (+107%),2006-hez (=100) képest,rel_val,107.19557195571956,207.19557195571957
+Magyarország,2006,Magyarország (+100%),2006-hez (=100) képest,rel_val,99.54954954954954,100
+Magyarország,2010,Magyarország (+100%),2006-hez (=100) képest,rel_val,99.54954954954954,126.8018018018018
+Magyarország,2014,Magyarország (+100%),2006-hez (=100) képest,rel_val,99.54954954954954,140.54054054054052
+Magyarország,2018,Magyarország (+100%),2006-hez (=100) képest,rel_val,99.54954954954954,152.70270270270268
+Magyarország,2022,Magyarország (+100%),2006-hez (=100) képest,rel_val,99.54954954954954,199.5495495495495
+Csehország,2006,Csehország (+75%),2006-hez (=100) képest,rel_val,74.52991452991455,100
+Csehország,2010,Csehország (+75%),2006-hez (=100) képest,rel_val,74.52991452991455,108.3760683760684
+Csehország,2014,Csehország (+75%),2006-hez (=100) képest,rel_val,74.52991452991455,122.22222222222224
+Csehország,2018,Csehország (+75%),2006-hez (=100) képest,rel_val,74.52991452991455,143.5897435897436
+Csehország,2022,Csehország (+75%),2006-hez (=100) képest,rel_val,74.52991452991455,174.52991452991455
+Szlovénia,2006,Szlovénia (+68%),2006-hez (=100) képest,rel_val,68.11989100817439,100
+Szlovénia,2010,Szlovénia (+68%),2006-hez (=100) képest,rel_val,68.11989100817439,116.62125340599457
+Szlovénia,2014,Szlovénia (+68%),2006-hez (=100) képest,rel_val,68.11989100817439,122.07084468664851
+Szlovénia,2018,Szlovénia (+68%),2006-hez (=100) képest,rel_val,68.11989100817439,125.61307901907358
+Szlovénia,2022,Szlovénia (+68%),2006-hez (=100) képest,rel_val,68.11989100817439,168.1198910081744
+Lettország,2010,Lettország (+184%),2010-hez (=100) képest,rel_val,184.39490445859872,100
+Lettország,2014,Lettország (+184%),2010-hez (=100) képest,rel_val,184.39490445859872,152.22929936305732
+Lettország,2018,Lettország (+184%),2010-hez (=100) képest,rel_val,184.39490445859872,204.77707006369425
+Lettország,2022,Lettország (+184%),2010-hez (=100) képest,rel_val,184.39490445859872,284.3949044585987
+Litvánia,2010,Litvánia (+158%),2010-hez (=100) képest,rel_val,157.58241758241758,100
+Litvánia,2014,Litvánia (+158%),2010-hez (=100) képest,rel_val,157.58241758241758,108.7912087912088
+Litvánia,2018,Litvánia (+158%),2010-hez (=100) képest,rel_val,157.58241758241758,142.63736263736266
+Litvánia,2022,Litvánia (+158%),2010-hez (=100) képest,rel_val,157.58241758241758,257.5824175824176
+Románia,2010,Románia (+154%),2010-hez (=100) képest,rel_val,153.9641943734015,100
+Románia,2014,Románia (+154%),2010-hez (=100) képest,rel_val,153.9641943734015,97.69820971867009
+Románia,2018,Románia (+154%),2010-hez (=100) képest,rel_val,153.9641943734015,176.72634271099744
+Románia,2022,Románia (+154%),2010-hez (=100) képest,rel_val,153.9641943734015,253.9641943734015
+Bulgária,2010,Bulgária (+96%),2010-hez (=100) képest,rel_val,96.49122807017544,100
+Bulgária,2014,Bulgária (+96%),2010-hez (=100) képest,rel_val,96.49122807017544,101.75438596491227
+Bulgária,2018,Bulgária (+96%),2010-hez (=100) képest,rel_val,96.49122807017544,134.79532163742692
+Bulgária,2022,Bulgária (+96%),2010-hez (=100) képest,rel_val,96.49122807017544,196.49122807017545
+Észtország,2010,Észtország (+75%),2010-hez (=100) képest,rel_val,75.33557046979865,100
+Észtország,2014,Észtország (+75%),2010-hez (=100) képest,rel_val,75.33557046979865,108.89261744966444
+Észtország,2018,Észtország (+75%),2010-hez (=100) képest,rel_val,75.33557046979865,131.8791946308725
+Észtország,2022,Észtország (+75%),2010-hez (=100) képest,rel_val,75.33557046979865,175.33557046979865
+Lengyelország,2010,Lengyelország (+67%),2010-hez (=100) képest,rel_val,66.86478454680534,100
+Lengyelország,2014,Lengyelország (+67%),2010-hez (=100) képest,rel_val,66.86478454680534,114.26448736998512
+Lengyelország,2018,Lengyelország (+67%),2010-hez (=100) képest,rel_val,66.86478454680534,124.21991084695394
+Lengyelország,2022,Lengyelország (+67%),2010-hez (=100) képest,rel_val,66.86478454680534,166.86478454680534
+Szlovákia,2010,Szlovákia (+66%),2010-hez (=100) képest,rel_val,65.92844974446336,100
+Szlovákia,2014,Szlovákia (+66%),2010-hez (=100) képest,rel_val,65.92844974446336,110.56218057921636
+Szlovákia,2018,Szlovákia (+66%),2010-hez (=100) képest,rel_val,65.92844974446336,120.61328790459966
+Szlovákia,2022,Szlovákia (+66%),2010-hez (=100) képest,rel_val,65.92844974446336,165.92844974446336
+Csehország,2010,Csehország (+61%),2010-hez (=100) képest,rel_val,61.04100946372242,100
+Csehország,2014,Csehország (+61%),2010-hez (=100) képest,rel_val,61.04100946372242,112.77602523659306
+Csehország,2018,Csehország (+61%),2010-hez (=100) képest,rel_val,61.04100946372242,132.49211356466878
+Csehország,2022,Csehország (+61%),2010-hez (=100) képest,rel_val,61.04100946372242,161.04100946372242
+Magyarország,2010,Magyarország (+57%),2010-hez (=100) képest,rel_val,57.37122557726465,100
+Magyarország,2014,Magyarország (+57%),2010-hez (=100) képest,rel_val,57.37122557726465,110.8348134991119
+Magyarország,2018,Magyarország (+57%),2010-hez (=100) képest,rel_val,57.37122557726465,120.42628774422737
+Magyarország,2022,Magyarország (+57%),2010-hez (=100) képest,rel_val,57.37122557726465,157.37122557726465
+Szlovénia,2010,Szlovénia (+44%),2010-hez (=100) képest,rel_val,44.15887850467288,100
+Szlovénia,2014,Szlovénia (+44%),2010-hez (=100) képest,rel_val,44.15887850467288,104.67289719626169
+Szlovénia,2018,Szlovénia (+44%),2010-hez (=100) képest,rel_val,44.15887850467288,107.71028037383178
+Szlovénia,2022,Szlovénia (+44%),2010-hez (=100) képest,rel_val,44.15887850467288,144.15887850467288
+Horvátország,2010,Horvátország (+36%),2010-hez (=100) képest,rel_val,36.231884057971,100
+Horvátország,2014,Horvátország (+36%),2010-hez (=100) képest,rel_val,36.231884057971,107.39130434782608
+Horvátország,2018,Horvátország (+36%),2010-hez (=100) képest,rel_val,36.231884057971,111.0144927536232
+Horvátország,2022,Horvátország (+36%),2010-hez (=100) képest,rel_val,36.231884057971,136.231884057971

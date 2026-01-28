@@ -12,8 +12,8 @@ mathjax: true
 <!-- ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###  -->
 <!-- SETTINGS  -->
 <!-- GLOBAL CSS/JAVA settings for tables -->
-<style>
 
+<style>
 .table-toggle {
   display: inline-block;   /* shrink container to fit content */
   border: 1.5px solid #000;
