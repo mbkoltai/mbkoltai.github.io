@@ -302,8 +302,10 @@ html_tables <- lapply(c("diff_2004_2023","diff_2010_2023"), function(diff_var) {
 # cat("\n<br>\n")  # optional separator
 # cat(html_tables[[2]])
 
-writeLines(html_tables[[1]], "output/GNI_per_cap/table_2004_2023.html")
-writeLines(html_tables[[2]], "output/GNI_per_cap/table_2010_2023.html")
+writeLines(html_tables[[1]],
+  "../../_includes/images/hu-cee-convergence/output/GNI_per_cap/table_2004_2023.html")
+writeLines(html_tables[[2]],
+  "../../_includes/images/hu-cee-convergence/output/GNI_per_cap/table_2010_2023.htm")
 
 } )
 
@@ -612,8 +614,10 @@ html_tables <- lapply(c("diff_2004_2024","diff_2010_2024"), function(diff_var) {
 # cat("\n<br>\n")  # optional separator
 # cat(html_tables[[2]])
 
-writeLines(html_tables[[1]], "output/GDP_per_cap/table_2004_2024.html")
-writeLines(html_tables[[2]], "output/GDP_per_cap/table_2010_2024.html")
+writeLines(html_tables[[1]], 
+  "../../_includes/images/hu-cee-convergence/output/GDP_per_cap/table_2004_2024.html")
+writeLines(html_tables[[2]], 
+  "../../_includes/images/hu-cee-convergence/output/GDP_per_cap/table_2010_2024.html")
 
 } )
 
@@ -893,10 +897,12 @@ html_tables <- lapply(c("diff_2004_2024","diff_2010_2024"), function(diff_var) {
 # cat("\n<br>\n")  # optional separator
 # cat(html_tables[[2]])
 
-writeLines(html_tables[[1]], "output/wages/annual_aver_wage/table_2004_2024.html")
-writeLines(html_tables[[2]], "output/wages/annual_aver_wage/table_2010_2024.html")
+writeLines(html_tables[[1]], 
+  "../../_includes/images/hu-cee-convergence/output/wages/annual_aver_wage/table_2004_2024.html")
+writeLines(html_tables[[2]],
+  "../../_includes/images/hu-cee-convergence/output/wages/annual_aver_wage/table_2010_2024.html")
 
-} )
+})
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -1185,8 +1191,10 @@ html_tables <- lapply(c("diff_2004_2024","diff_2010_2024"), function(diff_var) {
 # cat("\n<br>\n")  # optional separator
 # cat(html_tables[[2]])
 
-writeLines(html_tables[[1]], "output/wages/min_wage/table_2004_2024.html")
-writeLines(html_tables[[2]], "output/wages/min_wage/table_2010_2024.html")
+writeLines(html_tables[[1]], 
+  "../../_includes/images/hu-cee-convergence/output/wages/min_wage/table_2004_2024.html")
+writeLines(html_tables[[2]],
+  "../../_includes/images/hu-cee-convergence/output/wages/min_wage/table_2010_2024.html")
 
 } )
 
@@ -1463,8 +1471,10 @@ html_tables <- lapply(c("diff_2007_2024","diff_2010_2024"), function(diff_var) {
   )
 })
 
-writeLines(html_tables[[1]], "output/wages/median_equiv_net_income/table_2007_2024.html")
-writeLines(html_tables[[2]], "output/wages/median_equiv_net_income/table_2010_2024.html")
+writeLines(html_tables[[1]], 
+"../../_includes/images/hu-cee-convergence/output/wages/median_equiv_net_income/table_2007_2024.html")
+writeLines(html_tables[[2]],
+"../../_includes/images/hu-cee-convergence/output/wages/median_equiv_net_income/table_2010_2024.html")
 
 } )
 
@@ -1775,8 +1785,10 @@ html_tables <- lapply(c("diff_2006_2022","diff_2010_2022"), function(diff_var) {
   )
 })
 
-writeLines(html_tables[[1]], "output/wages/real_median_hourly/table_2006_2022.html")
-writeLines(html_tables[[2]], "output/wages/real_median_hourly/table_2010_2022.html")
+writeLines(html_tables[[1]],
+  "../../_includes/images/hu-cee-convergence/output/wages/real_median_hourly/table_2006_2022.html")
+writeLines(html_tables[[2]],
+  "../../_includes/images/hu-cee-convergence/output/wages/real_median_hourly/table_2010_2022.html")
 
 } )
 
@@ -2281,8 +2293,10 @@ html_tables <- lapply(c("diff_2004_2023","diff_2010_2023"), function(diff_var) {
   )
 })
 
-writeLines(html_tables[[1]], "output/productivity/per_hr_work/table_2004_2023.html")
-writeLines(html_tables[[2]], "output/productivity/per_hr_work/table_2010_2023.html")
+writeLines(html_tables[[1]], 
+  "../../_includes/images/hu-cee-convergence/output/productivity/per_hr_work/table_2004_2023.html")
+writeLines(html_tables[[2]], 
+  "../../_includes/images/hu-cee-convergence/output/productivity/per_hr_work/table_2010_2023.html")
 
 } )
 
@@ -2582,8 +2596,10 @@ html_tables <- lapply(c("diff_2004_2024","diff_2010_2024"), function(diff_var) {
   )
 })
 
-writeLines(html_tables[[1]], "output/employment/table_2004_2024.html")
-writeLines(html_tables[[2]], "output/employment/table_2010_2024.html")
+writeLines(html_tables[[1]],
+  "../../_includes/images/hu-cee-convergence/output/employment/table_2004_2024.html")
+writeLines(html_tables[[2]],
+  "../../_includes/images/hu-cee-convergence/output/employment/table_2010_2024.html")
 
 } )
 
@@ -2820,6 +2836,7 @@ df_save_full %>%
 # HTML table
 
 with(l_life_exp, {
+  
 df_summ <- sel_cntrs %>%
   filter(country %in% l_groups$list_cntrs$CEE) %>%
   select(!c(region,Code)) %>%
@@ -2865,15 +2882,16 @@ df_summ <- sel_cntrs %>%
       "",
       paste0(" (",start_2010,"→",end_val,")" ) ),
     diff_2010_2023=paste0(diff_2010_2023,parenth_2010)
-    ) 
+    ) %>%
+      filter(!grepl("LAT_AM|World|S_EUR|W_EUR|G7|DE|AT", name)) %>%
+      select(matches("country|name|diff"))
+
 # View(df_summ)
 
 ### 
 html_tables <- lapply(c("diff_2004_2023","diff_2010_2023"), function(diff_var) {
   make_table(
-    data = df_summ %>%
-      filter(!grepl("LAT_AM|World|S_EUR|W_EUR|G7|DE|AT", name)) %>%
-      select(matches("country|name|diff")),
+    data = df_summ,
     diff_var = diff_var,
     reloc_flag = F,
     order_col = "absolute value (years)",
@@ -2887,10 +2905,13 @@ html_tables <- lapply(c("diff_2004_2023","diff_2010_2023"), function(diff_var) {
   )
 })
 
-writeLines(html_tables[[1]], "output/life_exp/table_2004_2023.html")
-writeLines(html_tables[[2]], "output/life_exp/table_2010_2023.html")
+writeLines(html_tables[[1]],
+  "../../_includes/images/hu-cee-convergence/output/life_exp/table_2004_2023.html")
+writeLines(html_tables[[2]],
+  "../../_includes/images/hu-cee-convergence/output/life_exp/table_2010_2023.html")
 
 } )
+
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 

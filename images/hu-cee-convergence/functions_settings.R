@@ -173,7 +173,10 @@ make_table <- function(data,
     pivot_wider(
       names_from = name,
       values_from = formatted) %>%
-    arrange(desc(as.numeric(gsub("([+-]?\\d+).*", "\\1", !!sym(order_col)))) ) %>%
+    arrange(desc(as.numeric(
+      # gsub("([+-]?\\d+).*", "\\1", !!sym(order_col))
+      gsub("([+-]?\\d+(?:\\.\\d+)?).*", "\\1", !!sym(order_col))
+      )) ) %>%
     filter(!if_any(everything(), ~ grepl("NA", ., fixed = T)))
   
   if (reloc_flag) {

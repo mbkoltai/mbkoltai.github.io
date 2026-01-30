@@ -13,8 +13,8 @@ permalink: /blogposts/
 <ul style="list-style-type: none;">
       {%  assign p = '9999' %}
       {%  for post in site.posts%}
-    {% if post.secondary == 'blogposts' %}
 
+	{% if post.secondary == 'blogposts' and post.hidden != true %}
       {% assign n = post.date | date: "%Y" %}
       {% if n != p %}
       {%      assign p = n%}

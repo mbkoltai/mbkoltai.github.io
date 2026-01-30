@@ -77,10 +77,14 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
+
+
 <!-- GLOBAL CSS/JAVA settings -->
 
 <!-- ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###  -->
 <!-- Global CSS for images -->
+
+
 <style>
 .switchable {
   margin: 0.6rem 0 1rem 0;
@@ -659,15 +663,15 @@ Czechia also shows less convergence from 2010 onward, but this partly reflects i
 <div class="table-toggle">
 
   <div class="controls">
-    <button data-table="GDPperhr-2004">2004–2024</button>
-    <button class="active" data-table="GDPperhr-2010">2010–2024</button>
+    <button data-table="annaverwage-2004">2004–2024</button>
+    <button class="active" data-table="annaverwage-2010">2010–2024</button>
   </div>
 
 <div class="table-container">
-    <div id="GDPperhr-2004" class="table-view">
+    <div id="annaverwage-2004" class="table-view">
       {% include images/hu-cee-convergence/output/wages/annual_aver_wage/table_2004_2024.html %}
     </div>
-    <div id="GDPperhr-2010" class="table-view active">
+    <div id="annaverwage-2010" class="table-view active">
       {% include images/hu-cee-convergence/output/wages/annual_aver_wage/table_2010_2024.html %}
     </div>
 </div>
