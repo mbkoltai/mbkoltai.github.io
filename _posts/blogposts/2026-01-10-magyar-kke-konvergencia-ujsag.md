@@ -653,3 +653,8 @@ Bármi volt is a pontos oksági mechanizmus, egy dolog világosnak tűnik mostan
 Ellenkezőleg, a teljes KKE régióban a második vagy harmadik legrosszabb gazdasági teljesítményt eredményezte az utóbbi másfél évtizedben. 
 
 A stratégia bármely elemének felülvizsgálatától való teljes elzárkózás, valamint az explicit elköteleződés további folytatására, sőt fokozására, azt teszi valószínűve, hogy Magyarország relatív lecsúszása mind saját történelmi régióján, mind az egész EU-n belül tovább fog folytatódni. Legalább addig, amíg nem történik politikai és ezen belül gazdaságpolitikai változás.
+
+# Források
+
+A cikkben szereplő ábrákhoz használt adatok, illetve az ábrákat generáló kód megtalalálható a projekt [Github repójában](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence).
+A módszerek részletesebb kifejtéséért lásd a szerző [Substack-jén](https://mbklt.substack.com/p/hungarys-convergence-since-eu-accession).
