@@ -127,7 +127,7 @@ l_part_data[["median"]][[k_yr]] <- read_csv(
     set_names(group_split(.,.keep=F), group_keys(.)$tipus) } %>%
   as.list()
 }
-
+rm(k_yr)
 # Median teljes nepesseg (partokra bontva)
 # https://flo.uri.sh/visualisation/25049245/embed?auto=1
 for (period_name in c("2025_11","2026_01") ) {
