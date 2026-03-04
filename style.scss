@@ -425,10 +425,19 @@ h2 + ol a:hover {
   text-decoration: underline;      /* optional hover effect */
 }
 
-/*
-sdsds
-vssdfdsf
-*/
+.substack-button {
+  background-color: #0b174e;
+  color: white !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-left: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.substack-button:hover {
+  background-color: #c1121f;  // darker red on hover
+}
 
 
 
