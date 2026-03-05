@@ -1,48 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- ### ### ### ### ### ### ### ### ### STYLE ### ### ### ### ### ### ### ### ### -->
+
 <head>
     <meta charset="UTF-8">
     <title>magyar-partpreferencia-adatok</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
+
+.textbox {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 21px;
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+
         body { font-family: sans-serif; margin: 20px; }
         iframe { margin-bottom: 40px; }
-    </style>
-</head>
-<body>
-    <h2> 2025-2026 magyar pártpreferencia adatok demográfiai lebontásban - abszolút számokban és százalékokban megadva</h2>
 
-<p>
+        .chart-group {
+            display: none;
+            margin-top: 20px;
+        }
+
+        button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+button.active {
+    background-color: #333;
+    color: white;
+}
+
+    </style>
+
+<!-- JAVASCRIPT -->
+
+<script>
+function showCharts(type, btn) {
+
+    document.getElementById("barCharts").style.display = "none";
+    document.getElementById("timeTrends").style.display = "none";
+
+    document.getElementById(type).style.display = "block";
+
+    document.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+
+    btn.classList.add("active");
+}
+
+window.onload = function() {
+    document.getElementById("timeTrends").style.display = "block";
+    document.getElementById("btnTime").classList.add("active");
+};
+</script>
+
+
+</head>
+
+<!-- ### ### ### ### ### ### ### ### ### STYLE ### ### ### ### ### ### ### ### ### -->
+
+<body>
+
+<!-- TEXT AT TOP -->
+
+<h2> 2025-2026 magyar pártpreferencia adatok demográfiai lebontásban - abszolút számokban és százalékokban megadva</h2>
+
+<p class="textbox">
 A lenti ábrák mindegyike a <b>belföldi</b> szavazásra jogosult népesség egészére vonatkozik, tehát nem terjed ki a külföldön élő magyarokra.<br>
 A megadott százalékok és abszolút számok szintén <b>nem</b> egyenlők a választáson (belföldön) várhatóan résztvevők számával. 
 Ennek oka, hogy a "teljes népességre" (belföldi szavazásra jogosultak) vonatkozó számok azokat jelentik, akik a közvéleménykutatásokban meg tudnak nevezni egy pártot, amelyre szavaznának, azonban közülük nem mindenki megy el végül szavazni: a tényleges szavazók száma általában olyan 80-90%-a csak a teljes népességben mért "táboroknak". 
 Pl. a Medián <a href="https://hvg.hu/360/20220330_Median_valasztas_2022_Fidesz_ellenzek_mandatumbecsles_kozvelemeny_kutatas">2022. március végi felmérése</a> - amely a belföldi relatív szavazatarányokat viszonylag jól, 2-4%-os hibával jelezte előre - 80%-ra mérte a pártpreferenciával rendelkezők arányát, de (belföldön) végül csak 70.2% szavazott.<br>
-Tehát a lenti becslések inkább a teljes (belföldi) szavazókorú népességen belüli potenciális szimpatizáns-tábort adják meg, mintsem a várhatóan valóban szavazók számát - ez utóbbi általában 10-20%-kal alacsonyabb. 
+Tehát a lenti becslések inkább a teljes (belföldi) szavazókorú népességen belüli <b>potenciális</b> szimpatizáns-tábort adják meg, mintsem a várhatóan valóban szavazók számát - ez utóbbi általában 10-20%-kal alacsonyabb. 
 <br>
 PS. Ezen a ponton mintha módszertani különbségek is lennének, ui. a 21Kutatóközpont jóval magasabbra méri a pártnélküliek/bizonytalanok arányát a teljes népességben, mint a Medián, tehát az előbbi intézetnél a "pártpreferenciával rendelkező" mintha szűkebb kategória lenne.
-
 </p>
+
+<!-- ### ### ### ### ### START OF CHARTS ### ### ### ### ###  -->
+
+<button id="btnTime" onclick="showCharts('timeTrends', this)">Trendek időben</button>
+<button id="btnBar" onclick="showCharts('barCharts', this)">Oszlopdiagramok (hónapok szerint)</button>
+
+
+<!-- TIME TRENDS PLOTS-->
+<div id="timeTrends" class="chart-group" style="display:block;">
+
+<!--  Teljes Nepesseg -->
+<div class="flourish-embed flourish-chart" data-src="visualisation/27917966"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27917966/thumbnail" width="100%" alt="visualization" /></noscript></div>
+
+<!-- NEM -->
+<div class="flourish-embed flourish-chart" data-src="visualisation/27917953"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27917953/thumbnail" width="100%" alt="visualization" /></noscript></div>
+
+<!-- TELEP -->
+<div class="flourish-embed flourish-chart" data-src="visualisation/27916789"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27916789/thumbnail" width="100%" alt="visualization" /></noscript></div>
+
+<!-- VEGZ -->
+<div class="flourish-embed flourish-chart" data-src="visualisation/27917957"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27917957/thumbnail" width="100%" alt="visualization" /></noscript></div>
+
+</div> <!-- END OF TIME TREND -->
+
+
+<div id="barCharts" class="chart-group">
+
+<!-- TELJES NEPESSEG -->
 
 <div class="flourish-embed flourish-chart" data-src="visualisation/25731267">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
   <noscript><img src="https://public.flourish.studio/visualisation/25731267/thumbnail" width="100%" alt="chart visualization" /></noscript>
 </div>
 
+<!-- NEM -->
+
 <div class="flourish-embed flourish-chart" data-src="visualisation/25731198">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
   <noscript><img src="https://public.flourish.studio/visualisation/25731198/thumbnail" width="100%" alt="chart visualization" /></noscript>
 </div>
+
+<!-- KOR -->
 
 <div class="flourish-embed flourish-chart" data-src="visualisation/25729323">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
   <noscript><img src="https://public.flourish.studio/visualisation/25729323/thumbnail" width="100%" alt="chart visualization" /></noscript>
 </div>
 
+<!-- TELEPULESTIPUS -->
+
 <div class="flourish-embed flourish-chart" data-src="visualisation/25730741">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
   <noscript><img src="https://public.flourish.studio/visualisation/25730741/thumbnail" width="100%" alt="chart visualization" /></noscript>
 </div>
 
+<!-- VEGZETTSEG -->
 
 <div class="flourish-embed flourish-chart" data-src="visualisation/25731239">
   <script src="https://public.flourish.studio/resources/embed.js"></script>
@@ -50,6 +150,10 @@ PS. Ezen a ponton mintha módszertani különbségek is lennének, ui. a 21Kutat
 </div>
 
 
-    <!-- Add more charts as needed -->
+<!-- OSZLOPDIAGRAMOK VEGE-->
+</div>
+
+
+<!-- Add more charts as needed -->
 </body>
 </html>
