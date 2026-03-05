@@ -32,8 +32,6 @@ l_plot$standard_theme <- theme( # for publ plots
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 
-
-
 convert_hu_date <- function(x) {
   months_hu <- c(
   január="01", február="02", március="03", április="04",
@@ -41,4 +39,109 @@ convert_hu_date <- function(x) {
   szeptember="09", október="10", november="11", december="12" )
   m <- str_match(x, "([0-9]{4})\\.\\s*([[:alpha:]]+)")[,2:3]
   sprintf("%s/%s", m[,1], months_hu[m[,2]])
+}
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# ---- helpers -----------------------------------------------------------
+
+median_demog_file <- function(period) {
+  # e.g. "2025_06" -> "input_files/median_2025_06_nem_vegzettseg_telepules_vegzettseg.csv"
+  paste0("input_files/median_", period, "_nem_vegzettseg_telepules_vegzettseg.csv")
+}
+
+median_fullpop_file <- function(period) {
+  # e.g. "2025_06" -> "input_files/median_2025_06_teljes_nepesseg.csv"
+  paste0("input_files/median_", period, "_teljes_nepesseg.csv")
+}
+
+load_median_demog <- function(period) {
+  file <- median_demog_file(period)
+  
+  if (period == "2025_06") {
+    # special structure
+    read_csv(file) %>%
+      select(!url) %>%
+      pivot_longer(!c(kateg_tipus, kateg, datum), names_to = "part") %>%
+      mutate(
+        arány = value / 100,
+        part  = gsub("\\*", "", part),
+        kateg = tolower(kateg),
+        kateg = gsub(
+          "/vagy idősebb", "\\+",
+          gsub(" éves", "",
+          gsub(" végzettség", "",
+          gsub("\\, ", "/", kateg)))
+        )
+      ) %>%
+      select(!value) %>%
+      group_by(kateg_tipus) %>%
+      { set_names(group_split(.,.keep = FALSE), group_keys(.)$kateg_tipus) } %>%
+      as.list()
+    
+  } else if (period == "2025_08") {
+    # 2025_08 layout
+    read_csv(file) %>%
+      rename(tipus = filter) %>%
+      pivot_longer(!c(tipus, kateg), names_to = "part") %>%
+      mutate(
+        arány = value / 100,
+        kateg = tolower(kateg),
+        datum = gsub("_", "/", period)
+      ) %>%
+      select(!value) %>%
+      group_by(tipus) %>%
+      { set_names(group_split(.,.keep = FALSE), group_keys(.)$tipus) } %>%
+      as.list()
+    
+  } else {
+    # 2025_11, 2026_01 etc. (your existing loop pattern)
+    read_csv(file) %>%
+      rename(tipus = filter) %>%
+      pivot_longer(!c(tipus, kateg, url), names_to = "part") %>%
+      mutate(
+        arány = value / 100,
+        kateg = tolower(kateg),
+        datum = gsub("_", "/", period)
+      ) %>%
+      select(!c(value, url)) %>%
+      group_by(tipus) %>%
+      { set_names(group_split(.,.keep=F), group_keys(.)$tipus) } %>%
+      as.list()
+  }
+}
+
+load_median_fullpop <- function(period) {
+  file <- median_fullpop_file(period)
+  
+  if (period == "2025_06") {
+    read_csv(file) %>%
+      rename(part = Párt) %>%
+      select(part, `teljes népesség`) %>%
+      pivot_longer(!part, names_to = "kateg") %>%
+      mutate(
+        arány = value / 100,
+        datum = "2025/06"
+      ) %>%
+      select(!value)
+    
+  } else {
+    read_csv(file) %>%
+      pivot_longer(!c(kateg, url, datum), names_to = "part") %>%
+      filter(grepl("Teljes", kateg)) %>%
+      mutate(
+        kateg = tolower(kateg),
+        arány = value / 100
+      ) %>%
+      select(!c(value, url)) %>%
+      relocate(datum,.after = last_col()) %>%
+      bind_rows(
+        data.frame(
+          kateg = "teljes népesség",
+          part  = "Jobbik",
+          datum = gsub("_", "/", period)
+          # arány assumed 0 as in comment
+        )
+      )
+  }
 }
