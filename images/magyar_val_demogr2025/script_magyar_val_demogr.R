@@ -515,6 +515,149 @@ l_plot$median$partnev_kozos_aggr <- factor(l_plot$median$partnev_kozos_aggr,
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# SAVE IN wide format (FLOURISH)
+
+lapply(unique(l_plot$median$kateg_tipus),
+  function(x_kat) {
+
+xx <- bind_rows(
+  l_plot$`21_kut` %>% mutate(cég="21kut"), 
+  l_plot$median %>% mutate(cég="MEDIÁN")
+  ) %>% 
+  filter(!grepl("Jobbik",part)) %>% 
+  group_by(datum,kateg_tipus,kateg_nev_meret_str,
+          kateg_telj_nep,partnev_kozos_aggr,cég) %>%
+  summarise(valasztok_szama=round(sum(valasztok_szama)),
+            szazalek=round(sum(arány)*100)) %>% 
+  mutate(valasztok_szama_10e=round(valasztok_szama/1e4)*1e4) %>%
+  # select(!c(pattern_var,valasztok_szama,arány,
+  #           partnev_kozos,part,kateg_nev_arany_str,kateg_eredeti)) %>%
+  filter(kateg_tipus %in% x_kat) 
+
+  if ( any(grepl("21", unique(xx$cég)))  ) {
+  xx <- xx %>%
+  pivot_wider(names_from=cég,values_from=szazalek,
+            names_glue="{cég} (%)") %>%
+  rowwise() %>%
+  mutate(`21kut (ezer választó)`=ifelse(is.na(`21kut (%)`),
+    NA,valasztok_szama_10e/1e3),
+         `MEDIÁN (ezer választó)`=ifelse(is.na(`MEDIÁN (%)`),
+           NA,valasztok_szama_10e/1e3)  ) %>%
+  select(!valasztok_szama_10e) 
+  } else {
+      xx <- xx %>%
+      mutate(`MEDIÁN (ezer választó)`=valasztok_szama_10e/1e3,
+             `MEDIÁN (%)`=szazalek ) %>% 
+      select(!c(valasztok_szama_10e,szazalek)) 
+      }
+    
+  # FORMAT and SAVE
+    df_wide <- xx %>%
+      ungroup() %>%
+      select(!c(kateg_telj_nep)) %>%
+    mutate( # kateg_telj_nep=round(kateg_telj_nep),
+           partnev_kozos_aggr={
+      cleaned <- partnev_kozos_aggr %>%
+        gsub("/\n", "/", .) %>%
+        gsub("\n", " ", .)
+      factor(cleaned, levels = unique(cleaned))    } ) %>% 
+  pivot_longer(matches("MED|21")) %>% 
+  filter(!is.na(value)) %>%
+  pivot_wider(names_from = name,values_from = value)
+    
+    # SAVE wide format (bar chart)
+    df_wide %>% 
+      select(!valasztok_szama) %>%
+  write_csv(file=paste0("output/wide_format_bar_charts/l_plot_",
+    gsub(" ","",x_kat),".csv"))
+    
+    # wide format by party (for trend lines, panels by demogr cat)
+    df_wide %>% 
+        select(!valasztok_szama) %>%
+        ungroup() %>%
+        pivot_longer(cols = matches("21|Med"),names_to = "pollster") %>% 
+        filter(!is.na(value)) %>%
+        pivot_wider(names_from = partnev_kozos_aggr,values_from=value) %>%
+    write_csv(file=paste0("output/wide_format_trend_charts/l_plot_",
+          gsub(" ","",x_kat),".csv"))
+    
+    ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+    ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+    # panels by party
+    if (!grepl("teljes",x_kat)) {
+    df_wide %>%
+  select(!contains("%")) %>%
+  pivot_longer(matches("MED|21"),names_to = "pollster") %>% 
+  filter(!is.na(value)) %>%
+  group_by(datum,partnev_kozos_aggr,pollster) %>%
+  mutate(total_by_party=sum(valasztok_szama),
+         perc_of_party=round(100*valasztok_szama/total_by_party,1)) %>%
+  select(!valasztok_szama) %>%
+  pivot_longer(cols = c(value,perc_of_party),names_to="num_type") %>%
+  rowwise() %>%
+  mutate(pollster_type=ifelse(!grepl("perc",num_type),
+              paste0(ifelse(grepl("MED",pollster),"MEDIÁN","21KK"),
+                      " (ezer választó)"),
+              paste0(ifelse(grepl("MED",pollster),"MEDIÁN","21KK"),
+                      " (%)")  )) %>%
+  ungroup() %>%
+  select(!c(pollster,num_type)) %>%
+  pivot_wider(names_from=kateg_nev_meret_str,values_from=value) %>%
+  # SAVE
+  write_csv(file=paste0("output/wide_format_panel_by_party/l_plot_",
+          gsub(" ","",x_kat),".csv"))
+      }
+    
+  }
+)
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ###
+### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# segment into sep datafrs for datawrapper
+
+# abszolut szamok
+# if (F) {
+#   
+# lapply(unique(l_plot$median$kateg_tipus), \(x_nev)
+# bind_rows(
+#   l_plot$`21_kut` %>% mutate(cég="21kut"), 
+#   l_plot$median %>% mutate(cég="MEDIÁN")) %>%
+#   mutate(valasztok_szama=round(valasztok_szama),
+#           partnev_kozos=ifelse(grepl("más|egyéb|pártnélk|bizonyt",partnev_kozos),
+#             "más párt/bizonytalan/pártnélküli",as.character(partnev_kozos) )) %>%
+#   filter(kateg_tipus %in% x_nev) %>%
+#   group_by(kateg,kateg_nev_meret_str,partnev_kozos,datum,cég) %>%
+#   summarise(valasztok_szama=sum(valasztok_szama)) %>%
+#   select(c(kateg,kateg_nev_meret_str,partnev_kozos,datum,cég,valasztok_szama)) %>%
+#   mutate(valasztok_szama=round(valasztok_szama/1e4)*1e4) %>%
+#   pivot_wider(names_from=c(cég),values_from=valasztok_szama) %>%
+#   filter(!if_all(any_of(c("21kut", "MEDIÁN")), ~ is.na(.x))) %>%
+#   write_csv(file=paste0("output/l_plot_",gsub(" ","",x_nev),".csv")) )
+# }
+# 
+# # szazalekok
+# if (F) {
+# lapply(unique(l_plot$median$kateg_tipus), \(x_nev)
+# bind_rows(
+#   l_plot$`21_kut` %>% mutate(cég="21kut"), 
+#   l_plot$median %>% mutate(cég="MEDIÁN")) %>%
+#   mutate(valasztok_szama=round(valasztok_szama),
+#           partnev_kozos=ifelse(
+#             grepl("más|egyéb|pártnélk|bizonyt",partnev_kozos),
+#             "más párt/bizonytalan/pártnélküli",
+#             as.character(partnev_kozos) )) %>%
+#   filter(kateg_tipus %in% x_nev) %>%
+#   group_by(kateg,kateg_nev_meret_str,partnev_kozos,datum,cég) %>%
+#   summarise(szazalek=sum(arány)*100) %>%
+#   select(c(kateg,kateg_nev_meret_str,
+#           partnev_kozos,datum,cég,szazalek)) %>%
+#   pivot_wider(names_from=c(cég),values_from=szazalek) %>%
+#   filter(!if_all(any_of(c("21kut", "MEDIÁN")), ~ is.na(.x))) %>%
+#   write_csv(file=paste0("output/szazalekok/l_plot_",gsub(" ","",x_nev),".csv")) )
+# }
+### ### ### ### ### ### ### ### ### ### ### ### ### ###
+### ### ### ### ### ### ### ### ### ### ### ### ### ###
+### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # Median ABRA
 
 # if (F) {
@@ -563,118 +706,3 @@ l_plot$median$partnev_kozos_aggr <- factor(l_plot$median$partnev_kozos_aggr,
 #         szazalek=arány*100  ) %>%
 #   select(!c(pattern_var,kateg_eredeti,szazalek)) %>% 
 #   write_csv(file = "l_plot.csv")
-
-### ### ### ### ### ### ### ### ### ### ### ### ### ###
-### ### ### ### ### ### ### ### ### ### ### ### ### ### 
-# SAVE IN wide format (FLOURISH)
-
-lapply(unique(l_plot$median$kateg_tipus),
-  function(x_kat) {
-xx <- bind_rows(
-  l_plot$`21_kut` %>% mutate(cég="21kut") %>% filter(!grepl("Jobbik",part)), 
-  l_plot$median %>% mutate(cég="MEDIÁN") %>% filter(!grepl("Jobbik",part))
-  ) %>% 
-  group_by(datum,kateg_tipus,kateg_nev_meret_str,
-          kateg_telj_nep,partnev_kozos_aggr,cég) %>%
-  summarise(valasztok_szama=round(sum(valasztok_szama)),
-            szazalek=round(sum(arány)*100)) %>% 
-  mutate(valasztok_szama_10e=round(valasztok_szama/1e4)*1e4) %>%
-  # select(!c(pattern_var,valasztok_szama,arány,
-  #           partnev_kozos,part,kateg_nev_arany_str,kateg_eredeti)) %>%
-  filter(kateg_tipus %in% x_kat) 
-
-  if ( any(grepl("21", unique(xx$cég)))  ) {
-  xx <- xx %>%
-  pivot_wider(names_from=cég,values_from=szazalek,
-            names_glue="{cég} (%)") %>%
-  rowwise() %>%
-  mutate(`21kut (ezer választó)`=ifelse(is.na(`21kut (%)`),
-    NA,valasztok_szama_10e/1e3),
-         `MEDIÁN (ezer választó)`=ifelse(is.na(`MEDIÁN (%)`),
-           NA,valasztok_szama_10e/1e3)  ) %>%
-  select(!valasztok_szama_10e) 
-  } else {
-      xx <- xx %>%
-      mutate(`MEDIÁN (ezer választó)`=valasztok_szama_10e/1e3,
-             `MEDIÁN (%)`=szazalek ) %>% 
-      select(!c(valasztok_szama_10e,szazalek)) 
-      }
-    
-  # FORMAT and SAVE
-    df_wide <- xx %>%
-    mutate(kateg_telj_nep=round(kateg_telj_nep),
-           partnev_kozos_aggr={
-      cleaned <- partnev_kozos_aggr %>%
-        gsub("/\n", "/", .) %>%
-        gsub("\n", " ", .)
-      factor(cleaned, levels = unique(cleaned))    } )
-    
-    # SAVE wide format (bar chart)
-    df_wide %>%
-  write_csv(file=paste0("output/wide_format_bar_charts/l_plot_",
-    gsub(" ","",x_kat),".csv"))
-    
-    # wide format by party
-    df_wide %>% 
-      ungroup() %>%
-      select(!c(kateg_telj_nep,valasztok_szama)) %>%
-      pivot_longer(cols = matches("21|Med"),names_to = "pollster") %>% 
-      # mutate(
-      #   szam_tipus=ifelse(grepl("%",pollster),"százalék","ezer választó"),
-      #   pollster=gsub(" \\(ezer választó\\)| \\(%\\)","",pollster)) %>%
-      filter(! is.na(value) ) %>% #  & is.na(`ezer választó`))
-      pivot_wider(names_from = partnev_kozos_aggr,values_from=value) %>%
-    write_csv(file=paste0("output/wide_format_trend_charts/l_plot_",
-          gsub(" ","",x_kat),".csv"))
-    
-  }
-)
-
-
-# factor(gsub("/\n","/",partnev_kozos_aggr),
-#               levels = unique(gsub("/\n","/",partnev_kozos_aggr)))
-
-### ### ### ### ### ### ### ### ### ### ### ### ### ###
-### ### ### ### ### ### ### ### ### ### ### ### ### ### 
-# segment into sep datafrs for datawrapper
-
-# abszolut szamok
-# if (F) {
-#   
-# lapply(unique(l_plot$median$kateg_tipus), \(x_nev)
-# bind_rows(
-#   l_plot$`21_kut` %>% mutate(cég="21kut"), 
-#   l_plot$median %>% mutate(cég="MEDIÁN")) %>%
-#   mutate(valasztok_szama=round(valasztok_szama),
-#           partnev_kozos=ifelse(grepl("más|egyéb|pártnélk|bizonyt",partnev_kozos),
-#             "más párt/bizonytalan/pártnélküli",as.character(partnev_kozos) )) %>%
-#   filter(kateg_tipus %in% x_nev) %>%
-#   group_by(kateg,kateg_nev_meret_str,partnev_kozos,datum,cég) %>%
-#   summarise(valasztok_szama=sum(valasztok_szama)) %>%
-#   select(c(kateg,kateg_nev_meret_str,partnev_kozos,datum,cég,valasztok_szama)) %>%
-#   mutate(valasztok_szama=round(valasztok_szama/1e4)*1e4) %>%
-#   pivot_wider(names_from=c(cég),values_from=valasztok_szama) %>%
-#   filter(!if_all(any_of(c("21kut", "MEDIÁN")), ~ is.na(.x))) %>%
-#   write_csv(file=paste0("output/l_plot_",gsub(" ","",x_nev),".csv")) )
-# }
-# 
-# # szazalekok
-# if (F) {
-# lapply(unique(l_plot$median$kateg_tipus), \(x_nev)
-# bind_rows(
-#   l_plot$`21_kut` %>% mutate(cég="21kut"), 
-#   l_plot$median %>% mutate(cég="MEDIÁN")) %>%
-#   mutate(valasztok_szama=round(valasztok_szama),
-#           partnev_kozos=ifelse(
-#             grepl("más|egyéb|pártnélk|bizonyt",partnev_kozos),
-#             "más párt/bizonytalan/pártnélküli",
-#             as.character(partnev_kozos) )) %>%
-#   filter(kateg_tipus %in% x_nev) %>%
-#   group_by(kateg,kateg_nev_meret_str,partnev_kozos,datum,cég) %>%
-#   summarise(szazalek=sum(arány)*100) %>%
-#   select(c(kateg,kateg_nev_meret_str,
-#           partnev_kozos,datum,cég,szazalek)) %>%
-#   pivot_wider(names_from=c(cég),values_from=szazalek) %>%
-#   filter(!if_all(any_of(c("21kut", "MEDIÁN")), ~ is.na(.x))) %>%
-#   write_csv(file=paste0("output/szazalekok/l_plot_",gsub(" ","",x_nev),".csv")) )
-# }
