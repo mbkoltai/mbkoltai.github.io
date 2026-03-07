@@ -26,7 +26,7 @@ Az ábrákat tervezem update-elni, ha lesznek újabb demográfiailag lebontott m
 <b>Demográfiai adatok</b>
 
 A demográfiai adatokat a KSH összefoglaló tábláiból, illetve a [2022-es országgyűlési választás honlapjáról](https://www.valasztas.hu/ogy2022-letoltheto-es-tovabbfeldolgozhato-adatok) vettem. Az adatfile-ok letölthetők a <a href='https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025' target='_blank'>projekt Github mappájából</a>. 
-A statikus grafikonokat generáló [R kódban](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025/script.R) a linkeket is megadtam, ahonnan az eredeti táblázatok letölthetők. 
+A statikus grafikonokat generáló [R kódban](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/magyar_val_demogr2025/script_magyar_val_demogr.R) a linkeket is megadtam, ahonnan az eredeti táblázatok letölthetők. 
 A 74 éven felüliek végzettség szerinti eloszlására nem találtam adatot a KSH-nál, csak a 15-74 közötti népességre. 
 Ezért itt (≥74) azt feltételeztem, hogy a végzettség szerinti megoszlás megfelel a legkorábbi adatpont (2009) <i>teljes</i> lakosságra vonatkozó adataival. Ez egy további bizonytalansági tényező a végzettségi szerinti népességeloszlásban, bár nem nagyon nagy, mert az egész 74+ csoport csak kb. 822 ezer ember volt. Konkrétan így lett szétosztva ez a 822 ezer választó végzettség szerint, a 2009-es végzettségi adatokat használva, illetve ha a 2024-eseket használtuk volna:
 ```r
