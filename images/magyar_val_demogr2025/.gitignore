@@ -1,1 +1,4 @@
 *.csv
+datawrapper_plots/
+flourish_screenshots/
+output/regi/
