@@ -125,9 +125,9 @@ window.onload = function() {
 
 Közismert, hogy a kormánypárt és a legfőbb ellenzéki erő társadalmi bázisának nagyon más az összetétele kor, végzettség vagy településtípus szerint. 
 De mennyire vannak konkrét számaink arról, hogy ez mit jelent egyrészt adott társadalmi csoportokon belül, másrészt a két nagy politikai blokk összetételében, ezekben a különböző dimenziókban? 
-Például: mekkora a Tisza támogatottsága a diplomások versus a szakmunkás végzettségűek körében? Mekkor a 40 év alattiak és a nyugdíjasok között? Néhány közvéleménykutató (főleg a Medián, kisebb mértékben a 21Kutatóközpont) időnként publikál társadalmi csoportok szerint lebontott százalékokat, ezekből azonban nem látszik, hogy egymáshoz képest mekkorák a különböző támogatói csoportok. 
+Például: mekkora a Tisza támogatottsága a diplomások versus a szakmunkás végzettségűek körében? Mekkora a 40 év alattiak és a nyugdíjasok között? Néhány közvéleménykutató (főleg a Medián, kisebb mértékben a 21Kutatóközpont) időnként publikál társadalmi csoportok szerint lebontott százalékokat, ezekből azonban nem látszik, hogy egymáshoz képest mekkorák a különböző támogatói csoportok. 
 Például, ha a 65 év felettiek között kb. 50% a Fidesz támogatottsága, ez több vagy kevesebb ember, mint a 30 vagy 40 alatti - nagy többségben lévő - Tisza-támogatók csoportja? 
-És megfordítva, mit jelentenek ezek a számok egy-egy párt bázisának az összetételére nézve, pl. mekkor a diplomások, a 40 év alattiak, vagy a községben élők aránya az ellenzéki blokkban?
+És megfordítva, mit jelentenek ezek a számok egy-egy párt bázisának az összetételére nézve, pl. mekkora a diplomások, a 40 év alattiak, vagy a községben élők aránya az ellenzéki blokkban?
 
 Ebben a posztban ezekre a kérdésekre próbáltam válaszolni interaktív grafikonokkal, kombinálva a 21Kutatóközpont és a Medián 2025-2026-os a teljes népességre vonatkozó, illetve demográfiailag részletezett pártpreferencia-méréseit a KSH demográfiai adataival. 
 A lenti ábrák azt mutatják meg, hogy a mért pártpreferencia-százalékok abszolút számokban kb. mennyi szavazót jelentenek különböző demográfiai dimenziókban nézve: a teljes népességben, illetve nem, kor, végzettség és településtípus szerint. 
