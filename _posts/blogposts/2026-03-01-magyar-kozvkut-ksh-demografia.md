@@ -150,7 +150,10 @@ Az ábráknak két típusa van.
 A "Trendek demográfiai csoportok szerint" gombra katintva betöltő ábrák azt mutatják meg, hogy egy adott demográfiai csoportban mekkora a politikai blokkok támogatói bázisa, a teljes csoport százalékában, illetve abszolút számban (tízezerre kerekítve).  
 A "Trendek pártok szerint" ábrái pedig azt, hogy az egyes politikai blokkoknak milyen a demográfiai összetétele a különboző dimenziókban, tehát pl. településtípus vagy életkor szerint.
 Mindegyik ábra alatt egy rövid szöveges összefoglalóval elemeztem az arányokat és trendeket. 
-Fontos hangsúlyozni, hogy szinte az összes lenti számhoz illetve interpretációjukhoz hozzá lehet tenni két megjegyzést: 1) ha a mérések rosszak, akkor az értelmezések is elesnek 2) a hibahatárok rendkívül nagyok. 
+
+<br>
+<br>
+Fontos hangsúlyozni, hogy szinte az összes lenti számhoz illetve interpretációjukhoz hozzá lehet tenni pár óvatosságra intő megjegyzést: 1) ha a mérések rosszak, akkor nyilván az értelmezések is elesnek 2) a hibahatárok rendkívül nagyok 3) <a href="https://www.facebook.com/valasztasi.kalauz/posts/pfbid02eCqrvoDkCrQPD5FVQ1j2AFmMAAhHfr89ASLr6FqsaQYNr5diws6CRBjKED4kKdHjl">több</a> <a href="https://alexanderbor.github.io/idokozik/">arra utaló</a> dolog van, hogy a Fidesz támogatottságát a Medián és a 21KK recens mérései alulbecsülik; ha ez valóban így van, ez a lenti számokat is módosítaná. 
 <br>
 <br>
 További információkért az adatokról ld. lent, az ábrák alatt, a <a href="#hatter">"Háttér"</a> szekciót.
