@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A magyar politikai erőviszonyok demográfiai trendjei, 2025-2026
+title: Becslések a magyar politikai erőviszonyok demográfiai trendjeiről, 2025-2026
 tags: hungary politics elections demographics data-visualisation magyar
 excerpt: Nagyságrendek és trendek az utóbbi másfél évben 
 secondary: blogposts
@@ -123,8 +123,15 @@ window.onload = function() {
 
 <h3> Bevezető </h3>
 
-Ebben az elemzésben a 21Kutatóközpont és a Medián 2025–2026-os méréseit kombináltam a KSH demográfiai adataival. 
-A lenti ábrák azt mutatják meg, hogy a mért pártpreferencia-százalékok körülbelül mennyi szavazót jelentenek különböző demográfiai dimenziókban nézve: a teljes népességben, illetve nem, kor, végzettség és településtípus szerint.
+Közismert, hogy a kormánypárt és a legfőbb ellenzéki erő társadalmi bázisának nagyon más az összetétele kor, végzettség vagy településtípus szerint. 
+De mennyire vannak konkrét számaink arról, hogy ez mit jelent egyrészt adott társadalmi csoportokon belül, másrészt a két nagy politikai blokk összetételében, ezekben a különböző dimenziókban? 
+Például: mekkora a Tisza támogatottsága a diplomások versus a szakmunkás végzettségűek körében? Mekkor a 40 év alattiak és a nyugdíjasok között? Néhány közvéleménykutató (főleg a Medián, kisebb mértékben a 21Kutatóközpont) időnként publikál társadalmi csoportok szerint lebontott százalékokat, ezekből azonban nem látszik, hogy egymáshoz képest mekkorák a különböző támogatói csoportok. 
+Például, ha a 65 év felettiek között kb. 50% a Fidesz támogatottsága, ez több vagy kevesebb ember, mint a 30 vagy 40 alatti - nagy többségben lévő - Tisza-támogatók csoportja? 
+És megfordítva, mit jelentenek ezek a számok egy-egy párt bázisának az összetételére nézve, pl. mekkor a diplomások, a 40 év alattiak, vagy a községben élők aránya az ellenzéki blokkban?
+
+Ebben a posztban ezekre a kérdésekre próbáltam válaszolni interaktív grafikonokkal, kombinálva a 21Kutatóközpont és a Medián 2025-2026-os a teljes népességre vonatkozó, illetve demográfiailag részletezett pártpreferencia-méréseit a KSH demográfiai adataival. 
+A lenti ábrák azt mutatják meg, hogy a mért pártpreferencia-százalékok abszolút számokban kb. mennyi szavazót jelentenek különböző demográfiai dimenziókban nézve: a teljes népességben, illetve nem, kor, végzettség és településtípus szerint. 
+Megfordítva, az ábrák másik része pártonként csoportosítja az adatokat: ezek azt mutatják meg, hogy mi az összetétele a két nagy blokk, illetve a pártnélküliek csoportjának az egyes dimenziókban.
 Az ábrák mindegyike a <i>belföldi</i> szavazásra jogosult népességre vonatkozik, tehát nem terjed ki a külföldön élő magyarokra.
 
 <br>
@@ -143,7 +150,7 @@ Az egyes alcsoportoknál (pl. diplomások, 65 fölöttiek stb.) - mivel itt a mi
 Ehhez még hozzájön az is, hogy egy 1000 fős teljes mintánál a mintavétel általában eleve nem tökéletesen reprezentatív, amit súlyozással szoktak korrigálni, emiatt viszont számos alcsoportnál a mintaméret a népességarányosnál is kisebb, ami tovább növeli a tényleges hibahatárt.
 <br>
 <br>
-Mindezek miatt a lenti ábrákat inkább durva becsléseknek, a nagyságrendek érzékeltetéseként érdemes kezelni, mintsem pontos numerikus becsléseknek.
+Mindezek miatt <i>a lenti ábrákat inkább durva becsléseknek, a nagyságrendek érzékeltetéseként érdemes kezelni, mintsem pontos numerikus becsléseknek</i>.
 <br> 
 <br>
 Az ábráknak két típusa van. 
@@ -153,7 +160,7 @@ Mindegyik ábra alatt egy rövid szöveges összefoglalóval elemeztem az arány
 
 <br>
 <br>
-Fontos hangsúlyozni, hogy szinte az összes lenti számhoz illetve interpretációjukhoz hozzá lehet tenni pár óvatosságra intő megjegyzést: 1) ha a mérések rosszak, akkor nyilván az értelmezések is elesnek 2) a hibahatárok rendkívül nagyok 3) <a href="https://www.facebook.com/valasztasi.kalauz/posts/pfbid02eCqrvoDkCrQPD5FVQ1j2AFmMAAhHfr89ASLr6FqsaQYNr5diws6CRBjKED4kKdHjl">több</a> <a href="https://alexanderbor.github.io/idokozik/">arra utaló</a> dolog van, hogy a Fidesz támogatottságát a Medián és a 21KK recens mérései alulbecsülik; ha ez valóban így van, ez a lenti számokat is módosítaná. 
+Fontos hangsúlyozni, hogy <b>szinte az összes lenti számhoz (és értelmezésükhöz) hozzá lehet tenni ezeket az óvatosságra intő megjegyzéseket</b>: 1) ha a mérések rosszak, akkor nyilván az értelmezések is elesnek 2) még ha szisztematikus torzítások nincsenek is a számokban, a hibahatárok a kis mintaméretek miatt rendkívül nagyok 3) <a href="https://www.facebook.com/valasztasi.kalauz/posts/pfbid02eCqrvoDkCrQPD5FVQ1j2AFmMAAhHfr89ASLr6FqsaQYNr5diws6CRBjKED4kKdHjl">több</a> <a href="https://alexanderbor.github.io/idokozik/">arra utaló</a> dolog van, hogy a Fidesz támogatottságát a Medián és a 21KK recens mérései alulbecsülik; ha ez valóban így van, ez a lenti számokat is értelemszerűen módosítaná, de nagyon nehéz megbecsülni, hogy mennyivel. 
 <br>
 <br>
 További információkért az adatokról ld. lent, az ábrák alatt, a <a href="#hatter">"Háttér"</a> szekciót.
@@ -174,7 +181,7 @@ További információkért az adatokról ld. lent, az ábrák alatt, a <a href="
 <div class="flourish-embed flourish-chart" data-src="visualisation/27917966"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27917966/thumbnail" width="100%" alt="visualization" /></noscript></div>
 
 <div class="textbox">
-A teljes népességre vonatkozó számoknál a legföltűnőbb a számok stabilitása 2025 tavasza óta. 
+A teljes népességre vonatkozó számoknál a legfeltűnőbb a számok stabilitása 2025 tavasza óta. 
 A 21KK számainál az egyetlen jelentősebb - a hibahatár szintet elérő - mozgás a Fidesz tábor zsugorodása (-200e) 2025 tavaszán, illetve a Tisza bázis bővülése (+300e) 2025 novemberétől. A két nagy blokk náluk kb. 2.4-2.7 milliós (Tisza), illetve 1.9-2.2 milliós; az MH 300-400 ezres, a másik két kispárt 100-200 ezres sávban van stabilan.<br>
 A Medián a két nagy blokkot ennél nagyobbra méri: 2.9-3.2 (Tisza) illetve 2.1-2.5 milliósra, miközben a kispártok bázisát ugyanakkorára. Emiatt a Mediánnál pártnélküliek csak olyan másfél millióian vannak már csak (21KK: 2 millió). 
 A számok a Mediánnál is stabilak, bár a Tisza bázisnál mértek egy fokozatos, összesen kb. 300 ezres bővülést 2025 őszétől.
@@ -253,7 +260,7 @@ A Fidesz támogatóinak átlagosan kb. 55%-át adják a nők a Medián becslése
 <div class="flourish-embed flourish-chart" data-src="visualisation/27937729"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27937729/thumbnail" width="100%" alt="visualization" /></noscript></div>
 
 <div class="textbox">
-Korcsoport szerint az ellenzéki blokk összetétele viszonylag kiegyensúlyozottnak mondható, amennyiben az öt korcsoport (18-29, 30-39, 40-49, 50-64, 65+) mindegyike 16-25%-át adja a teljes bázisnak. Ez azt is jelenti, hogy a 18-30 korosztály 1.6x-os mértékben, a 30-39 korosztály 1.4x felülreprezentált a teljes népessébeni arányukhoz képest, az idősebbek pedig hasonló relatív mértékben alulreprezentáltak.
+Korcsoport szerint az ellenzéki blokk összetétele viszonylag kiegyensúlyozottnak mondható, amennyiben az öt korcsoport (18-29, 30-39, 40-49, 50-64, 65+) mindegyike 16-25%-át adja a teljes bázisnak. Ez azt is jelenti, hogy a 18-30 korosztály 1.6x-os mértékben, a 30-39 korosztály 1.4x felülreprezentált a teljes népességbeli arányukhoz képest, az idősebbek pedig hasonló relatív mértékben alulreprezentáltak.
 A Fidesz-bázis jóval inkább kiegyensúlyozatlan, a 65 éven felüliek 40%-át adják, az 50-65 évesek pedig további 28%-át, miközben a 40 alattiak <i>összesen</i> kevesebb mint 15%-át. 
 A pártnélküliek és más pártokat támogatók kor-összetétele kb. megfelel a teljes választókorú lakosság összetételének.
 </div>
