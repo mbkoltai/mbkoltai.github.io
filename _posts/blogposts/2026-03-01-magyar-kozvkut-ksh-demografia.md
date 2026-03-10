@@ -10,26 +10,24 @@ hidden: true
 
 <!-- ### ### ### ### ### ### ### ### ### STYLE ### ### ### ### ### ### ### ### ### -->
 
-
 <style>
 
-.textbox { 
+.highlight {
+    background-color: #939aa7;   /* light blue background */
+    border: 1px solid #4a6fdc;   /* frame */
+    padding: 0px 3px;
+    border-radius: 4px;
+}
+
+.textbox {
     font-family: Calibri, Arial, sans-serif;
     font-size: 21px;
     border: 2px solid #ccc;
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
+    padding: 15px;
     margin-bottom: 25px;
     background-color: #f9f9f9;
     border-radius: 6px;
 }
-.textbox h3 {
-    margin-top: 2px;
-    margin-bottom: 5px;
-}
-
 .textbox pre {
     margin: 0;
     font-family: Consolas, "Courier New", monospace;
@@ -79,6 +77,8 @@ button.active {
 
 </style>
 
+<!-- ### ### ### ### ### ### ### ### ### STYLE END ### ### ### ### ### ### ### ### ### -->
+
 <!-- JAVASCRIPT -->
 
 <script>
@@ -102,26 +102,14 @@ window.onload = function() {
 };
 </script>
 
-<!-- 
-<head>
-    <meta charset="UTF-8">
-    <title>magyar-partpreferencia-adatok</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
--->
-
 <!-- ### ### ### ### ### ### ### ### ### STYLE ### ### ### ### ### ### ### ### ### -->
 
 <body>
 
 <!-- TEXT AT TOP -->
 
-<!-- <h2> Magyarországi pártpreferencia-trendek demográfiai lebontásban, 2025-2026</h2> -->
 
-<div class="textbox">
-
-<h3> Bevezető </h3>
+<p class="textbox">
 
 Közismert, hogy a kormánypárt és a legfőbb ellenzéki erő társadalmi bázisának nagyon más az összetétele kor, végzettség vagy településtípus szerint. 
 De mennyire vannak konkrét számaink arról, hogy ez mit jelent egyrészt adott társadalmi csoportokon belül, másrészt a két nagy politikai blokk összetételében, ezekben a különböző dimenziókban? 
@@ -153,9 +141,14 @@ Ehhez még hozzájön az is, hogy egy 1000 fős teljes mintánál a mintavétel 
 Mindezek miatt <i>a lenti ábrákat inkább durva becsléseknek, a nagyságrendek érzékeltetéseként érdemes kezelni, mintsem pontos numerikus becsléseknek</i>.
 <br> 
 <br>
-Az ábráknak két típusa van. 
-A "Trendek demográfiai csoportok szerint" gombra katintva betöltő ábrák azt mutatják meg, hogy egy adott demográfiai csoportban mekkora a politikai blokkok támogatói bázisa, a teljes csoport százalékában, illetve abszolút számban (tízezerre kerekítve).  
-A "Trendek pártok szerint" ábrái pedig azt, hogy az egyes politikai blokkoknak milyen a demográfiai összetétele a különboző dimenziókban, tehát pl. településtípus vagy életkor szerint.
+Az első, legfelső ábra a teljes népességben mutatja meg az egyes pártok illetve bizonytalanok/pártnélküliek számát és arányát. 
+Az ezután következő ábráknál két ábrázolásmód közül lehet választani. 
+A 
+<span class="highlight">Trendek demográfia szerint csoportosítva</span>
+gombra katintva betöltő ábrák azt mutatják meg, hogy egy adott demográfiai csoportban mekkora a politikai blokkok támogatói bázisa, a teljes csoport százalékában, illetve abszolút számban (tízezerre kerekítve).  
+A
+<span class="highlight">Trendek pártok szerint csoportosítva</span> 
+gombra kattintva betöltő ábrák pedig azt, hogy az egyes politikai blokkoknak milyen a demográfiai összetétele a különboző dimenziókban, tehát pl. településtípus vagy életkor szerint.
 Mindegyik ábra alatt egy rövid szöveges összefoglalóval elemeztem az arányokat és trendeket. 
 
 <br>
@@ -165,17 +158,11 @@ Fontos hangsúlyozni, hogy <b>szinte az összes lenti számhoz (és értelmezés
 <br>
 További információkért az adatokról ld. lent, az ábrák alatt, a <a href="#hatter">"Háttér"</a> szekciót.
 
-</div>
+
+</p>
 
 <!-- ### ### ### ### ### START OF CHARTS ### ### ### ### ###  -->
 
-<button id="btnTime" onclick="showCharts('timeTrends', this)">Trendek demográfiai csoportok szerint</button>
-<button id="btnTimeParty" onclick="showCharts('timeTrendsByParty', this)">Trendek pártok szerint</button>
-<!--  <button id="btnBar" onclick="showCharts('barCharts', this)">Oszlopdiagramok (hónapok szerint)</button> -->
-
-
-<!-- TIME TRENDS BY DEMOGR GROUP PLOTS-->
-<div id="timeTrends" class="chart-group">
 
 <!--  Teljes Nepesseg -->
 <div class="flourish-embed flourish-chart" data-src="visualisation/27917966"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27917966/thumbnail" width="100%" alt="visualization" /></noscript></div>
@@ -187,6 +174,16 @@ A Medián a két nagy blokkot ennél nagyobbra méri: 2.9-3.2 (Tisza) illetve 2.
 A számok a Mediánnál is stabilak, bár a Tisza bázisnál mértek egy fokozatos, összesen kb. 300 ezres bővülést 2025 őszétől.
 </div>
 <!-- ### ### ### ### ### ### ### -->
+
+
+<button id="btnTime" onclick="showCharts('timeTrends', this)">Trendek demográfia szerint csoportosítva</button>
+<button id="btnTimeParty" onclick="showCharts('timeTrendsByParty', this)">Trendek pártok szerint csoportosítva</button>
+<!--  <button id="btnBar" onclick="showCharts('barCharts', this)">Oszlopdiagramok (hónapok szerint)</button> -->
+
+
+<!-- TIME TRENDS BY DEMOGR GROUP PLOTS-->
+<div id="timeTrends" class="chart-group">
+
 
 <!-- NEM -->
 <div class="flourish-embed flourish-chart" data-src="visualisation/27917953"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27917953/thumbnail" width="100%" alt="visualization" /></noscript></div>
@@ -373,6 +370,7 @@ Ez a 7.64 millió választó csak a belföldi, magyarországi lakcímmel rendelk
 <div style="margin: 20px 0;">
     <a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/magyar_val_demogr2025" target="_blank" class="btnExtLink">GitHub</a>
 </div>
+
 
 <!-- END OF HTML BODY -->
 </body>
