@@ -45,14 +45,18 @@ convert_hu_date <- function(x) {
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # ---- helpers -----------------------------------------------------------
 
-median_demog_file <- function(period) {
-  # e.g. "2025_06" -> "input_files/median_2025_06_nem_vegzettseg_telepules_vegzettseg.csv"
-  paste0("input_files/median_", period, "_nem_vegzettseg_telepules_vegzettseg.csv")
+median_demog_file <- function(period,input_path="input_files/kozvkut_adatok/") {
+  # e.g. "2025_06" -> 
+  # "input_files/kozvkut_adatok/median_2025_06_nem_vegzettseg_telepules_vegzettseg.csv"
+  paste0(input_path,"median_",
+          period,
+          "_nem_vegzettseg_telepules_vegzettseg.csv")
 }
 
-median_fullpop_file <- function(period) {
-  # e.g. "2025_06" -> "input_files/median_2025_06_teljes_nepesseg.csv"
-  paste0("input_files/median_", period, "_teljes_nepesseg.csv")
+median_fullpop_file <- function(period,input_path="input_files/kozvkut_adatok/") {
+  # e.g. "2025_06" -> "input_files/kozvkut_adatok/median_2025_06_teljes_nepesseg.csv"
+  paste0(input_path, # "input_files/kozvkut_adatok/",
+         "median_", period, "_teljes_nepesseg.csv")
 }
 
 load_median_demog <- function(period) {
@@ -156,7 +160,7 @@ load_median_fullpop <- function(period) {
 # # https://datawrapper.dwcdn.net/Ns8XR/10/
 # l_part_data[["median"]][["2025_06"]] = list()
 # l_part_data[["median"]][["2025_06"]] <- read_csv(
-#   "input_files/median_2025_06_nem_vegzettseg_telepules_vegzettseg.csv") %>%
+#   "input_files/kozvkut_adatok/median_2025_06_nem_vegzettseg_telepules_vegzettseg.csv") %>%
 #   select(!url) %>%
 #   pivot_longer(!c(kateg_tipus,kateg,datum),names_to="part") %>%
 #   mutate(arány=value/100,
@@ -177,7 +181,7 @@ load_median_fullpop <- function(period) {
 # # teljes nepesseg
 # # datawrapper.dwcdn.net/RLw52/2/
 # l_part_data[["median"]][["2025_06"]]$telj_nepesseg_partok <- read_csv(
-#   "input_files/median_2025_06_teljes_nepesseg.csv") %>% 
+#   "input_files/kozvkut_adatok/median_2025_06_teljes_nepesseg.csv") %>% 
 #   rename(part=Párt) %>%
 #   select(part,`teljes népesség`) %>%
 #   pivot_longer(!part,names_to = "kateg") %>%
@@ -193,20 +197,21 @@ load_median_fullpop <- function(period) {
 # 
 # l_part_data[["median"]][["2025_08"]] <- list()
 # l_part_data[["median"]][["2025_08"]] <- read_csv(
-#   "input_files/median_2025_08_nem_vegzettseg_telepules_vegzettseg.csv") %>%
+#   "input_files/kozvkut_adatok/median_2025_08_nem_vegzettseg_telepules_vegzettseg.csv") %>%
 #   rename(tipus=filter) %>%
 #   pivot_longer(!c(tipus,kateg),names_to="part") %>%
 #   mutate(arány=value/100,
 #          kateg=tolower(kateg),
 #          datum="2025/08"  ) %>% 
 #   select(!value) %>%
-#   group_by(tipus) %>% { set_names(group_split(.,.keep=F), group_keys(.)$tipus) } %>%
+#   group_by(tipus) %>% { set_names(group_split(.,.keep=F),
+#       group_keys(.)$tipus) } %>%
 #   as.list()
 # 
 # # teljes nepesseg partokra bontva
 # # https://flo.uri.sh/visualisation/25049245/embed?auto=1
 # l_part_data[["median"]][["2025_08"]]$telj_nepesseg_partok <- read_csv(
-#   "input_files/median_2025_08_teljes_nepesseg.csv") %>% 
+#   "input_files/kozvkut_adatok/median_2025_08_teljes_nepesseg.csv") %>% 
 #   pivot_longer(!c(kateg,url,datum),names_to="part") %>%
 #   filter(grepl("Teljes",kateg)) %>%
 #   mutate(kateg=tolower(kateg),arány=value/100) %>%
@@ -225,7 +230,7 @@ load_median_fullpop <- function(period) {
 # for (k_yr in c("2025_11","2026_01")) {
 # l_part_data[["median"]][[k_yr]] <- list()
 # l_part_data[["median"]][[k_yr]] <- read_csv(
-#   paste0("input_files/median_",k_yr,"_nem_vegzettseg_telepules_vegzettseg.csv")) %>%
+#   paste0("input_files/kozvkut_adatok/median_",k_yr,"_nem_vegzettseg_telepules_vegzettseg.csv")) %>%
 #   rename(tipus=filter) %>%
 #   pivot_longer(!c(tipus,kateg,url),names_to="part") %>%
 #   mutate(arány=value/100,
@@ -242,7 +247,7 @@ load_median_fullpop <- function(period) {
 # for (period_name in c("2025_11","2026_01") ) {
 # 
 # l_part_data[["median"]][[period_name]]$telj_nepesseg_partok <- read_csv(
-#   paste0("input_files/median_",period_name,"_teljes_nepesseg.csv")) %>% 
+#   paste0("input_files/kozvkut_adatok/median_",period_name,"_teljes_nepesseg.csv")) %>% 
 #   pivot_longer(!c(kateg,url,datum),names_to="part") %>%
 #   filter(grepl("Teljes",kateg)) %>%
 #   mutate(kateg=tolower(kateg),arány=value/100) %>%

@@ -1,31 +1,41 @@
-datum,kateg_tipus,kateg_nev_meret_str,partnev_kozos_aggr,cég,MEDIÁN (ezer választó),MEDIÁN (%)
-2025/06,nem,férfi (3.64m),TISZA,MEDIÁN,1490,41
-2025/06,nem,férfi (3.64m),Fidesz,MEDIÁN,1050,29
-2025/06,nem,férfi (3.64m),más párt/pártnélk.,MEDIÁN,1090,30
-2025/06,nem,nő (4m),TISZA,MEDIÁN,1440,36
-2025/06,nem,nő (4m),Fidesz,MEDIÁN,1080,27
-2025/06,nem,nő (4m),más párt/pártnélk.,MEDIÁN,1480,37
-2025/08,nem,férfi (3.64m),TISZA,MEDIÁN,1420,39
-2025/08,nem,férfi (3.64m),Fidesz,MEDIÁN,1020,28
-2025/08,nem,férfi (3.64m),más párt/pártnélk.,MEDIÁN,1200,33
-2025/08,nem,nő (4m),TISZA,MEDIÁN,1440,36
-2025/08,nem,nő (4m),Fidesz,MEDIÁN,1240,31
-2025/08,nem,nő (4m),más párt/pártnélk.,MEDIÁN,1320,33
-2025/11,nem,férfi (3.64m),TISZA,MEDIÁN,1530,42
-2025/11,nem,férfi (3.64m),Fidesz,MEDIÁN,1090,30
-2025/11,nem,férfi (3.64m),más párt/pártnélk.,MEDIÁN,1020,28
-2025/11,nem,nő (4m),TISZA,MEDIÁN,1400,35
-2025/11,nem,nő (4m),Fidesz,MEDIÁN,1440,36
-2025/11,nem,nő (4m),más párt/pártnélk.,MEDIÁN,1160,29
-2026/01,nem,férfi (3.64m),TISZA,MEDIÁN,1530,42
-2026/01,nem,férfi (3.64m),Fidesz,MEDIÁN,1200,33
-2026/01,nem,férfi (3.64m),más párt/pártnélk.,MEDIÁN,910,25
-2026/01,nem,nő (4m),TISZA,MEDIÁN,1520,38
-2026/01,nem,nő (4m),Fidesz,MEDIÁN,1320,33
-2026/01,nem,nő (4m),más párt/pártnélk.,MEDIÁN,1160,29
-2026/02,nem,férfi (3.64m),TISZA,MEDIÁN,1560,43
-2026/02,nem,férfi (3.64m),Fidesz,MEDIÁN,1050,29
-2026/02,nem,férfi (3.64m),más párt/pártnélk.,MEDIÁN,1020,28
-2026/02,nem,nő (4m),TISZA,MEDIÁN,1640,41
-2026/02,nem,nő (4m),Fidesz,MEDIÁN,1280,32
-2026/02,nem,nő (4m),más párt/pártnélk.,MEDIÁN,1080,27
+datum,kateg_tipus,kateg_nev_meret_str,partnev_kozos_aggr,MEDIÁN (%),MEDIÁN (ezer választó),21KK (%),21KK (ezer választó)
+2025/06,nem,férfi (3.64m),TISZA,41,1490,NA,NA
+2025/06,nem,férfi (3.64m),Fidesz,29,1050,NA,NA
+2025/06,nem,férfi (3.64m),más párt/pártnélk.,30,1090,NA,NA
+2025/06,nem,nő (4m),TISZA,36,1440,NA,NA
+2025/06,nem,nő (4m),Fidesz,27,1080,NA,NA
+2025/06,nem,nő (4m),más párt/pártnélk.,37,1480,NA,NA
+2025/08,nem,férfi (3.64m),TISZA,39,1420,NA,NA
+2025/08,nem,férfi (3.64m),Fidesz,28,1020,NA,NA
+2025/08,nem,férfi (3.64m),más párt/pártnélk.,33,1200,NA,NA
+2025/08,nem,nő (4m),TISZA,36,1440,NA,NA
+2025/08,nem,nő (4m),Fidesz,31,1240,NA,NA
+2025/08,nem,nő (4m),más párt/pártnélk.,33,1320,NA,NA
+2025/11,nem,férfi (3.64m),TISZA,42,1530,NA,NA
+2025/11,nem,férfi (3.64m),Fidesz,30,1090,NA,NA
+2025/11,nem,férfi (3.64m),más párt/pártnélk.,28,1020,NA,NA
+2025/11,nem,nő (4m),TISZA,35,1400,NA,NA
+2025/11,nem,nő (4m),Fidesz,36,1440,NA,NA
+2025/11,nem,nő (4m),más párt/pártnélk.,29,1160,NA,NA
+2026/01,nem,férfi (3.64m),TISZA,42,1530,NA,NA
+2026/01,nem,férfi (3.64m),Fidesz,33,1200,NA,NA
+2026/01,nem,férfi (3.64m),más párt/pártnélk.,25,910,NA,NA
+2026/01,nem,nő (4m),TISZA,38,1520,NA,NA
+2026/01,nem,nő (4m),Fidesz,33,1320,NA,NA
+2026/01,nem,nő (4m),más párt/pártnélk.,29,1160,NA,NA
+2026/02,nem,férfi (3.64m),TISZA,43,1560,NA,NA
+2026/02,nem,férfi (3.64m),Fidesz,29,1050,NA,NA
+2026/02,nem,férfi (3.64m),más párt/pártnélk.,28,1020,NA,NA
+2026/02,nem,nő (4m),TISZA,41,1640,NA,NA
+2026/02,nem,nő (4m),Fidesz,32,1280,NA,NA
+2026/02,nem,nő (4m),más párt/pártnélk.,27,1080,NA,NA
+2026/03,nem,férfi (3.64m),TISZA,NA,NA,49,1780
+2026/03,nem,férfi (3.64m),Fidesz,NA,NA,25,910
+2026/03,nem,férfi (3.64m),Mi Hazánk,NA,NA,6,220
+2026/03,nem,férfi (3.64m),más párt,NA,NA,2,70
+2026/03,nem,férfi (3.64m),pártnélk./bizonyt.,NA,NA,19,690
+2026/03,nem,nő (4m),TISZA,NA,NA,29,1160
+2026/03,nem,nő (4m),Fidesz,NA,NA,34,1360
+2026/03,nem,nő (4m),Mi Hazánk,NA,NA,3,120
+2026/03,nem,nő (4m),más párt,NA,NA,3,120
+2026/03,nem,nő (4m),pártnélk./bizonyt.,NA,NA,33,1320

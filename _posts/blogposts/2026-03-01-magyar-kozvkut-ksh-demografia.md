@@ -138,7 +138,7 @@ Az egyes alcsoportoknál (pl. diplomások, 65 fölöttiek stb.) - mivel itt a mi
 Ehhez még hozzájön az is, hogy egy 1000 fős teljes mintánál a mintavétel általában eleve nem tökéletesen reprezentatív, amit súlyozással szoktak korrigálni, emiatt viszont számos alcsoportnál a mintaméret a népességarányosnál is kisebb, ami tovább növeli a tényleges hibahatárt.
 <br>
 <br>
-Mindezek miatt <i>a lenti ábrákat inkább durva becsléseknek, a nagyságrendek érzékeltetéseként érdemes kezelni, mintsem pontos numerikus becsléseknek</i>.
+Mindezek miatt <b>a lenti ábrákat inkább durva becsléseknek, a nagyságrendek érzékeltetéseként érdemes kezelni, mintsem pontos numerikus becsléseknek</b>.
 <br> 
 <br>
 Az első, legfelső ábra a teljes népességben mutatja meg az egyes pártok illetve bizonytalanok/pártnélküliek számát és arányát. 
@@ -153,7 +153,7 @@ Mindegyik ábra alatt egy rövid szöveges összefoglalóval elemeztem az arány
 
 <br>
 <br>
-Fontos hangsúlyozni, hogy <b>szinte az összes lenti számhoz (és értelmezésükhöz) hozzá lehet tenni ezeket az óvatosságra intő megjegyzéseket</b>: 1) ha a mérések rosszak, akkor nyilván az értelmezések is elesnek 2) még ha szisztematikus torzítások nincsenek is a számokban, a hibahatárok a kis mintaméretek miatt rendkívül nagyok 3) <a href="https://www.facebook.com/valasztasi.kalauz/posts/pfbid02eCqrvoDkCrQPD5FVQ1j2AFmMAAhHfr89ASLr6FqsaQYNr5diws6CRBjKED4kKdHjl">több</a> <a href="https://alexanderbor.github.io/idokozik/">arra utaló</a> dolog van, hogy a Fidesz támogatottságát a Medián és a 21KK recens mérései alulbecsülik; ha ez valóban így van, ez a lenti számokat is értelemszerűen módosítaná, de nagyon nehéz megbecsülni, hogy mennyivel. 
+Fontos hangsúlyozni, hogy <b>az összes lenti számhoz (és értelmezésükhöz) hozzá lehet tenni ezeket az óvatosságra intő megjegyzéseket</b>: 1) ha a mérések rosszak, akkor nyilván az értelmezések is elesnek 2) még ha szisztematikus torzítások nincsenek is a számokban, a hibahatárok a demográfiailag lebontott alcsoportoknál a kis mintaméretek miatt rendkívül nagyok 3) <a href="https://www.facebook.com/valasztasi.kalauz/posts/pfbid02eCqrvoDkCrQPD5FVQ1j2AFmMAAhHfr89ASLr6FqsaQYNr5diws6CRBjKED4kKdHjl">több</a> <a href="https://alexanderbor.github.io/idokozik/">arra utaló</a> dolog van, hogy a Fidesz támogatottságát a Medián és a 21KK recens mérései alulbecsülik; ha ez valóban így van, ez a lenti számokat is értelemszerűen módosítaná, de nagyon nehéz megbecsülni, hogy mennyivel. 
 <br>
 <br>
 További információkért az adatokról ld. lent, az ábrák alatt, a <a href="#hatter">"Háttér"</a> szekciót.

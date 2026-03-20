@@ -1,45 +1,41 @@
-datum,kateg_tipus,partnev_kozos_aggr,total_by_party,pollster_type,≤8 általános (1.46m),szakmunkás (1.71m),érettségi (2.56m),felsőfokú (1.9m)
-2025/06,végzettség,TISZA,2898609,MEDIÁN (ezer választó),250,510,1200,930
-2025/06,végzettség,TISZA,2898609,MEDIÁN (%),8.6,17.7,41.6,32.2
-2025/06,végzettség,Fidesz,2142838,MEDIÁN (ezer választó),700,530,510,400
-2025/06,végzettség,Fidesz,2142838,MEDIÁN (%),32.7,24.7,23.9,18.7
-2025/06,végzettség,más párt/pártnélk.,2594327,MEDIÁN (ezer választó),510,670,850,570
-2025/06,végzettség,más párt/pártnélk.,2594327,MEDIÁN (%),19.7,25.7,32.6,22
-2025/08,végzettség,TISZA,2611161,21KK (ezer választó),220,480,1000,910
-2025/08,végzettség,TISZA,2611161,21KK (%),8.4,18.3,38.3,35
-2025/08,végzettség,TISZA,2834187,MEDIÁN (ezer választó),250,510,1100,970
-2025/08,végzettség,TISZA,2834187,MEDIÁN (%),8.8,18.1,38.9,34.3
-2025/08,végzettség,Fidesz,1986692,21KK (ezer választó),580,500,640,270
-2025/08,végzettség,Fidesz,1986692,21KK (%),29.4,24.9,32.3,13.4
-2025/08,végzettség,Fidesz,2344119,MEDIÁN (ezer választó),790,600,620,340
-2025/08,végzettség,Fidesz,2344119,MEDIÁN (%),33.6,25.5,26.2,14.6
-2025/08,végzettség,Mi Hazánk,405651,21KK (ezer választó),160,90,100,60
-2025/08,végzettség,Mi Hazánk,405651,21KK (%),39.6,21.1,25.3,14.1
-2025/08,végzettség,DK,121038,21KK (ezer választó),10,20,50,40
-2025/08,végzettség,DK,121038,21KK (%),12.1,14.1,42.4,31.5
-2025/08,végzettség,MKKP,178187,21KK (ezer választó),10,20,50,100
-2025/08,végzettség,MKKP,178187,21KK (%),8.2,9.6,28.8,53.5
-2025/08,végzettség,más párt,88476,21KK (ezer választó),40,0,30,20
-2025/08,végzettség,más párt,88476,21KK (%),49.5,0,29,21.5
-2025/08,végzettség,pártnélk/bizonyt.,2244568,21KK (ezer választó),420,610,690,510
-2025/08,végzettség,pártnélk/bizonyt.,2244568,21KK (%),18.9,27.4,30.8,22.9
-2025/08,végzettség,más párt/pártnélk.,2457469,MEDIÁN (ezer választó),420,600,850,590
-2025/08,végzettség,más párt/pártnélk.,2457469,MEDIÁN (%),17.2,24.3,34.4,24
-2025/11,végzettség,TISZA,2819079,MEDIÁN (ezer választó),250,480,1100,990
-2025/11,végzettség,TISZA,2819079,MEDIÁN (%),8.8,17,39.1,35.1
-2025/11,végzettség,Fidesz,2695668,MEDIÁN (ezer választó),860,670,690,480
-2025/11,végzettség,Fidesz,2695668,MEDIÁN (%),32,24.7,25.7,17.7
-2025/11,végzettség,más párt/pártnélk.,2121028,MEDIÁN (ezer választó),350,560,770,440
-2025/11,végzettség,más párt/pártnélk.,2121028,MEDIÁN (%),16.5,26.6,36.3,20.7
-2026/01,végzettség,TISZA,2956619,MEDIÁN (ezer választó),200,560,1180,1010
-2026/01,végzettség,TISZA,2956619,MEDIÁN (%),6.9,19.1,39.9,34.1
-2026/01,végzettség,Fidesz,2668926,MEDIÁN (ezer választó),820,730,640,480
-2026/01,végzettség,Fidesz,2668926,MEDIÁN (%),30.6,27.5,24,17.8
-2026/01,végzettség,más párt/pártnélk.,2086429,MEDIÁN (ezer választó),440,410,740,500
-2026/01,végzettség,más párt/pártnélk.,2086429,MEDIÁN (%),21,19.6,35.6,23.7
-2026/02,végzettség,TISZA,3192023,MEDIÁN (ezer választó),290,500,1200,1200
-2026/02,végzettség,TISZA,3192023,MEDIÁN (%),9.1,15.5,37.7,37.6
-2026/02,végzettség,Fidesz,2370417,MEDIÁN (ezer választó),790,650,670,270
-2026/02,végzettség,Fidesz,2370417,MEDIÁN (%),33.3,27.4,28.1,11.3
-2026/02,végzettség,más párt/pártnélk.,2073336,MEDIÁN (ezer választó),380,560,690,440
-2026/02,végzettség,más párt/pártnélk.,2073336,MEDIÁN (%),18.3,27.2,33.4,21.1
+datum,kateg_tipus,partnev_kozos_aggr,total_by_party,pollster_type,≤8 általános (1.46m),szakmunkás (1.71m),érettségi (2.56m),felsőfokú (1.9m),középfokú (4.27m)
+2025/06,végzettség,TISZA,2898609,MEDIÁN (ezer választó),250,510,1200,930,NA
+2025/06,végzettség,Fidesz,2142838,MEDIÁN (ezer választó),700,530,510,400,NA
+2025/06,végzettség,más párt/pártnélk.,2594327,MEDIÁN (ezer választó),510,670,850,570,NA
+2025/08,végzettség,TISZA,2834187,MEDIÁN (ezer választó),250,510,1100,970,NA
+2025/08,végzettség,Fidesz,2344119,MEDIÁN (ezer választó),790,600,620,340,NA
+2025/08,végzettség,más párt/pártnélk.,2457469,MEDIÁN (ezer választó),420,600,850,590,NA
+2025/11,végzettség,TISZA,2819079,MEDIÁN (ezer választó),250,480,1100,990,NA
+2025/11,végzettség,Fidesz,2695668,MEDIÁN (ezer választó),860,670,690,480,NA
+2025/11,végzettség,más párt/pártnélk.,2121028,MEDIÁN (ezer választó),350,560,770,440,NA
+2026/01,végzettség,TISZA,2956619,MEDIÁN (ezer választó),200,560,1180,1010,NA
+2026/01,végzettség,Fidesz,2668926,MEDIÁN (ezer választó),820,730,640,480,NA
+2026/01,végzettség,más párt/pártnélk.,2086429,MEDIÁN (ezer választó),440,410,740,500,NA
+2026/02,végzettség,TISZA,3192023,MEDIÁN (ezer választó),290,500,1200,1200,NA
+2026/02,végzettség,Fidesz,2370417,MEDIÁN (ezer választó),790,650,670,270,NA
+2026/02,végzettség,más párt/pártnélk.,2073336,MEDIÁN (ezer választó),380,560,690,440,NA
+2025/06,végzettség,TISZA,2898609,MEDIÁN (%),8.6,17.7,41.6,32.2,NA
+2025/06,végzettség,Fidesz,2142838,MEDIÁN (%),32.7,24.7,23.9,18.7,NA
+2025/06,végzettség,más párt/pártnélk.,2594327,MEDIÁN (%),19.7,25.7,32.6,22,NA
+2025/08,végzettség,TISZA,2834187,MEDIÁN (%),8.8,18.1,38.9,34.3,NA
+2025/08,végzettség,Fidesz,2344119,MEDIÁN (%),33.6,25.5,26.2,14.6,NA
+2025/08,végzettség,más párt/pártnélk.,2457469,MEDIÁN (%),17.2,24.3,34.4,24,NA
+2025/11,végzettség,TISZA,2819079,MEDIÁN (%),8.8,17,39.1,35.1,NA
+2025/11,végzettség,Fidesz,2695668,MEDIÁN (%),32,24.7,25.7,17.7,NA
+2025/11,végzettség,más párt/pártnélk.,2121028,MEDIÁN (%),16.5,26.6,36.3,20.7,NA
+2026/01,végzettség,TISZA,2956619,MEDIÁN (%),6.9,19.1,39.9,34.1,NA
+2026/01,végzettség,Fidesz,2668926,MEDIÁN (%),30.6,27.5,24,17.8,NA
+2026/01,végzettség,más párt/pártnélk.,2086429,MEDIÁN (%),21,19.6,35.6,23.7,NA
+2026/02,végzettség,TISZA,3192023,MEDIÁN (%),9.1,15.5,37.7,37.6,NA
+2026/02,végzettség,Fidesz,2370417,MEDIÁN (%),33.3,27.4,28.1,11.3,NA
+2026/02,végzettség,más párt/pártnélk.,2073336,MEDIÁN (%),18.3,27.2,33.4,21.1,NA
+2025/08,végzettség,TISZA,2611161,21KK (ezer választó),220,480,1000,910,NA
+2025/08,végzettség,Fidesz,1986692,21KK (ezer választó),580,500,640,270,NA
+2025/08,végzettség,Mi Hazánk,405651,21KK (ezer választó),160,90,100,60,NA
+2025/08,végzettség,más párt,387702,21KK (ezer választó),70,30,130,150,NA
+2025/08,végzettség,pártnélk./bizonyt.,2244568,21KK (ezer választó),420,610,690,510,NA
+2025/08,végzettség,TISZA,2611161,21KK (%),8.4,18.3,38.3,35,NA
+2025/08,végzettség,Fidesz,1986692,21KK (%),29.4,24.9,32.3,13.4,NA
+2025/08,végzettség,Mi Hazánk,405651,21KK (%),39.6,21.1,25.3,14.1,NA
+2025/08,végzettség,más párt,387702,21KK (%),18.8,8.8,33.1,39.3,NA
+2025/08,végzettség,pártnélk./bizonyt.,2244568,21KK (%),18.9,27.4,30.8,22.9,NA

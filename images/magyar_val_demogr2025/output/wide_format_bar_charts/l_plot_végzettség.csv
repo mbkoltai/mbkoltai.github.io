@@ -1,4 +1,4 @@
-datum,kateg_tipus,kateg_nev_meret_str,partnev_kozos_aggr,MEDIÁN (%),MEDIÁN (ezer választó),21kut (%),21kut (ezer választó)
+datum,kateg_tipus,kateg_nev_meret_str,partnev_kozos_aggr,MEDIÁN (%),MEDIÁN (ezer választó),21KK (%),21KK (ezer választó)
 2025/06,végzettség,≤8 általános (1.46m),TISZA,17,250,NA,NA
 2025/06,végzettség,≤8 általános (1.46m),Fidesz,48,700,NA,NA
 2025/06,végzettség,≤8 általános (1.46m),más párt/pártnélk.,35,510,NA,NA
@@ -16,41 +16,33 @@ datum,kateg_tipus,kateg_nev_meret_str,partnev_kozos_aggr,MEDIÁN (%),MEDIÁN (ez
 2025/08,végzettség,≤8 általános (1.46m),Fidesz,NA,NA,40,580
 2025/08,végzettség,≤8 általános (1.46m),Fidesz,54,790,NA,NA
 2025/08,végzettség,≤8 általános (1.46m),Mi Hazánk,NA,NA,11,160
-2025/08,végzettség,≤8 általános (1.46m),DK,NA,NA,1,10
-2025/08,végzettség,≤8 általános (1.46m),MKKP,NA,NA,1,10
-2025/08,végzettség,≤8 általános (1.46m),más párt,NA,NA,3,40
-2025/08,végzettség,≤8 általános (1.46m),pártnélk/bizonyt.,NA,NA,29,420
 2025/08,végzettség,≤8 általános (1.46m),más párt/pártnélk.,29,420,NA,NA
+2025/08,végzettség,≤8 általános (1.46m),más párt,NA,NA,5,70
+2025/08,végzettség,≤8 általános (1.46m),pártnélk./bizonyt.,NA,NA,29,420
 2025/08,végzettség,szakmunkás (1.71m),TISZA,NA,NA,28,480
 2025/08,végzettség,szakmunkás (1.71m),TISZA,30,510,NA,NA
 2025/08,végzettség,szakmunkás (1.71m),Fidesz,NA,NA,29,500
 2025/08,végzettség,szakmunkás (1.71m),Fidesz,35,600,NA,NA
 2025/08,végzettség,szakmunkás (1.71m),Mi Hazánk,NA,NA,5,90
-2025/08,végzettség,szakmunkás (1.71m),DK,NA,NA,1,20
-2025/08,végzettség,szakmunkás (1.71m),MKKP,NA,NA,1,20
-2025/08,végzettség,szakmunkás (1.71m),más párt,NA,NA,0,0
-2025/08,végzettség,szakmunkás (1.71m),pártnélk/bizonyt.,NA,NA,36,610
 2025/08,végzettség,szakmunkás (1.71m),más párt/pártnélk.,35,600,NA,NA
+2025/08,végzettség,szakmunkás (1.71m),más párt,NA,NA,2,30
+2025/08,végzettség,szakmunkás (1.71m),pártnélk./bizonyt.,NA,NA,36,610
 2025/08,végzettség,érettségi (2.56m),TISZA,NA,NA,39,1000
 2025/08,végzettség,érettségi (2.56m),TISZA,43,1100,NA,NA
 2025/08,végzettség,érettségi (2.56m),Fidesz,NA,NA,25,640
 2025/08,végzettség,érettségi (2.56m),Fidesz,24,620,NA,NA
 2025/08,végzettség,érettségi (2.56m),Mi Hazánk,NA,NA,4,100
-2025/08,végzettség,érettségi (2.56m),DK,NA,NA,2,50
-2025/08,végzettség,érettségi (2.56m),MKKP,NA,NA,2,50
-2025/08,végzettség,érettségi (2.56m),más párt,NA,NA,1,30
-2025/08,végzettség,érettségi (2.56m),pártnélk/bizonyt.,NA,NA,27,690
 2025/08,végzettség,érettségi (2.56m),más párt/pártnélk.,33,850,NA,NA
+2025/08,végzettség,érettségi (2.56m),más párt,NA,NA,5,130
+2025/08,végzettség,érettségi (2.56m),pártnélk./bizonyt.,NA,NA,27,690
 2025/08,végzettség,felsőfokú (1.9m),TISZA,NA,NA,48,910
 2025/08,végzettség,felsőfokú (1.9m),TISZA,51,970,NA,NA
 2025/08,végzettség,felsőfokú (1.9m),Fidesz,NA,NA,14,270
 2025/08,végzettség,felsőfokú (1.9m),Fidesz,18,340,NA,NA
 2025/08,végzettség,felsőfokú (1.9m),Mi Hazánk,NA,NA,3,60
-2025/08,végzettség,felsőfokú (1.9m),DK,NA,NA,2,40
-2025/08,végzettség,felsőfokú (1.9m),MKKP,NA,NA,5,100
-2025/08,végzettség,felsőfokú (1.9m),más párt,NA,NA,1,20
-2025/08,végzettség,felsőfokú (1.9m),pártnélk/bizonyt.,NA,NA,27,510
 2025/08,végzettség,felsőfokú (1.9m),más párt/pártnélk.,31,590,NA,NA
+2025/08,végzettség,felsőfokú (1.9m),más párt,NA,NA,8,150
+2025/08,végzettség,felsőfokú (1.9m),pártnélk./bizonyt.,NA,NA,27,510
 2025/11,végzettség,≤8 általános (1.46m),TISZA,17,250,NA,NA
 2025/11,végzettség,≤8 általános (1.46m),Fidesz,59,860,NA,NA
 2025/11,végzettség,≤8 általános (1.46m),más párt/pártnélk.,24,350,NA,NA
@@ -87,3 +79,18 @@ datum,kateg_tipus,kateg_nev_meret_str,partnev_kozos_aggr,MEDIÁN (%),MEDIÁN (ez
 2026/02,végzettség,felsőfokú (1.9m),TISZA,63,1200,NA,NA
 2026/02,végzettség,felsőfokú (1.9m),Fidesz,14,270,NA,NA
 2026/02,végzettség,felsőfokú (1.9m),más párt/pártnélk.,23,440,NA,NA
+2026/03,végzettség,≤8 általános (1.46m),TISZA,NA,NA,23,340
+2026/03,végzettség,≤8 általános (1.46m),Fidesz,NA,NA,44,640
+2026/03,végzettség,≤8 általános (1.46m),Mi Hazánk,NA,NA,3,40
+2026/03,végzettség,≤8 általános (1.46m),más párt,NA,NA,2,30
+2026/03,végzettség,≤8 általános (1.46m),pártnélk./bizonyt.,NA,NA,28,410
+2026/03,végzettség,felsőfokú (1.9m),TISZA,NA,NA,53,1010
+2026/03,végzettség,felsőfokú (1.9m),Fidesz,NA,NA,16,300
+2026/03,végzettség,felsőfokú (1.9m),Mi Hazánk,NA,NA,5,100
+2026/03,végzettség,felsőfokú (1.9m),más párt,NA,NA,3,60
+2026/03,végzettség,felsőfokú (1.9m),pártnélk./bizonyt.,NA,NA,23,440
+2026/03,végzettség,középfokú (4.27m),TISZA,NA,NA,45,1920
+2026/03,végzettség,középfokú (4.27m),Fidesz,NA,NA,22,940
+2026/03,végzettség,középfokú (4.27m),Mi Hazánk,NA,NA,6,260
+2026/03,végzettség,középfokú (4.27m),más párt,NA,NA,3,130
+2026/03,végzettség,középfokú (4.27m),pártnélk./bizonyt.,NA,NA,24,1030

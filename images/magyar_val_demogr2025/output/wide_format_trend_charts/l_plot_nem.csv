@@ -1,21 +1,25 @@
-datum,kateg_tipus,kateg_nev_meret_str,cég,pollster,TISZA,Fidesz,más párt/pártnélk.
-2025/06,nem,férfi (3.64m),MEDIÁN,MEDIÁN (ezer választó),1490,1050,1090
-2025/06,nem,férfi (3.64m),MEDIÁN,MEDIÁN (%),41,29,30
-2025/06,nem,nő (4m),MEDIÁN,MEDIÁN (ezer választó),1440,1080,1480
-2025/06,nem,nő (4m),MEDIÁN,MEDIÁN (%),36,27,37
-2025/08,nem,férfi (3.64m),MEDIÁN,MEDIÁN (ezer választó),1420,1020,1200
-2025/08,nem,férfi (3.64m),MEDIÁN,MEDIÁN (%),39,28,33
-2025/08,nem,nő (4m),MEDIÁN,MEDIÁN (ezer választó),1440,1240,1320
-2025/08,nem,nő (4m),MEDIÁN,MEDIÁN (%),36,31,33
-2025/11,nem,férfi (3.64m),MEDIÁN,MEDIÁN (ezer választó),1530,1090,1020
-2025/11,nem,férfi (3.64m),MEDIÁN,MEDIÁN (%),42,30,28
-2025/11,nem,nő (4m),MEDIÁN,MEDIÁN (ezer választó),1400,1440,1160
-2025/11,nem,nő (4m),MEDIÁN,MEDIÁN (%),35,36,29
-2026/01,nem,férfi (3.64m),MEDIÁN,MEDIÁN (ezer választó),1530,1200,910
-2026/01,nem,férfi (3.64m),MEDIÁN,MEDIÁN (%),42,33,25
-2026/01,nem,nő (4m),MEDIÁN,MEDIÁN (ezer választó),1520,1320,1160
-2026/01,nem,nő (4m),MEDIÁN,MEDIÁN (%),38,33,29
-2026/02,nem,férfi (3.64m),MEDIÁN,MEDIÁN (ezer választó),1560,1050,1020
-2026/02,nem,férfi (3.64m),MEDIÁN,MEDIÁN (%),43,29,28
-2026/02,nem,nő (4m),MEDIÁN,MEDIÁN (ezer választó),1640,1280,1080
-2026/02,nem,nő (4m),MEDIÁN,MEDIÁN (%),41,32,27
+datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,más párt/pártnélk.,Mi Hazánk,más párt,pártnélk./bizonyt.
+2025/06,nem,férfi (3.64m),MEDIÁN (ezer választó),1490,1050,1090,NA,NA,NA
+2025/06,nem,nő (4m),MEDIÁN (ezer választó),1440,1080,1480,NA,NA,NA
+2025/08,nem,férfi (3.64m),MEDIÁN (ezer választó),1420,1020,1200,NA,NA,NA
+2025/08,nem,nő (4m),MEDIÁN (ezer választó),1440,1240,1320,NA,NA,NA
+2025/11,nem,férfi (3.64m),MEDIÁN (ezer választó),1530,1090,1020,NA,NA,NA
+2025/11,nem,nő (4m),MEDIÁN (ezer választó),1400,1440,1160,NA,NA,NA
+2026/01,nem,férfi (3.64m),MEDIÁN (ezer választó),1530,1200,910,NA,NA,NA
+2026/01,nem,nő (4m),MEDIÁN (ezer választó),1520,1320,1160,NA,NA,NA
+2026/02,nem,férfi (3.64m),MEDIÁN (ezer választó),1560,1050,1020,NA,NA,NA
+2026/02,nem,nő (4m),MEDIÁN (ezer választó),1640,1280,1080,NA,NA,NA
+2025/06,nem,férfi (3.64m),MEDIÁN (%),41,29,30,NA,NA,NA
+2025/06,nem,nő (4m),MEDIÁN (%),36,27,37,NA,NA,NA
+2025/08,nem,férfi (3.64m),MEDIÁN (%),39,28,33,NA,NA,NA
+2025/08,nem,nő (4m),MEDIÁN (%),36,31,33,NA,NA,NA
+2025/11,nem,férfi (3.64m),MEDIÁN (%),42,30,28,NA,NA,NA
+2025/11,nem,nő (4m),MEDIÁN (%),35,36,29,NA,NA,NA
+2026/01,nem,férfi (3.64m),MEDIÁN (%),42,33,25,NA,NA,NA
+2026/01,nem,nő (4m),MEDIÁN (%),38,33,29,NA,NA,NA
+2026/02,nem,férfi (3.64m),MEDIÁN (%),43,29,28,NA,NA,NA
+2026/02,nem,nő (4m),MEDIÁN (%),41,32,27,NA,NA,NA
+2026/03,nem,férfi (3.64m),21KK (ezer választó),1780,910,NA,220,70,690
+2026/03,nem,nő (4m),21KK (ezer választó),1160,1360,NA,120,120,1320
+2026/03,nem,férfi (3.64m),21KK (%),49,25,NA,6,2,19
+2026/03,nem,nő (4m),21KK (%),29,34,NA,3,3,33
