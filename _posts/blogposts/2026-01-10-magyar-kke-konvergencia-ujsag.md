@@ -114,6 +114,7 @@ Tíz társadalmi-gazdasági mutató – amelyek lefedik a kibocsátás, termelé
 10. [Összkép](#összkép)  
 11. [Végszó](#végszó)
 12. [Függelék](#függelék)
+13. [Források](#források)
 
 # Mi történt velünk?
 
@@ -694,16 +695,18 @@ A 2022 óta gyakorlatilag stagnáló kibocsátás és a 2010-es évek átlag ala
 A 2021 utáni stagnáció magyarázatául pedig nem tűnik elégségesnek az ukrajnai háború: csak Észtország (és talán Csehország) látszik hasonló mértékben stagnálni, miközben több földrajzilag és gazdaságilag hasonló helyzetben lévő ország - Lengyelország, Románia, Horvátország, Szlovénia - az elmúlt négy évben emelkedő pályán volt.
 
 Fontos megjegyezni, hogy Magyarország konvergenciája már a 2006-2010 közötti időszakban sem volt sikeres, sőt, több mutatóban még a 2010-2024-es időszaknál is gyengébb volt, ami hozzájárult a mára kialakult leszakadáshoz. 
-Ugyanakkor a 2010 utáni 16 év elegendő időt biztosított (volna) ahhoz, hogy az ország vezetése azonosítsa a makrogazdaság strukturális problémáit, és javaslatot tegyen a korrekcióra, még ha ennek végrehajtása esetleg esetleg ennél is több időt igényel (vagy igényelt volna).
+Ugyanakkor a 2010 utáni 16 év elegendő időt adhatott (volna) ahhoz, hogy az ország vezetése azonosítsa a makrogazdaság strukturális problémáit, és javaslatot tegyen a korrekcióra, még ha ennek végrehajtása esetleg esetleg ennél is több időt igényel (vagy igényelt volna).
 
-A hosszú ideje regnáló magyar kormány ehelyett következetesen megtagadta, hogy beismerje gazdaságpolitikai stratégiájának bármilyen hiányosságát. Ehelyett egy olyan stratégia mellett kötelezte el magát egyre inkább, amelyet a szélsőséges centralizáció, a külföldi - elsősorban feldolgozóipari - beruházások közvetlen és aránytalan állami támogatása, valamint az állami fejlesztéspolitika fizikai infrastruktúra-fejlesztésre (autópályák és stadionok...) való szinte kizárólagos fókusza jellemez. 
-A hibák elismerésére való képtelenség, illetve minden korrekciós javaslat agresszív elutasítása talán az elmúlt 16 év legaggasztóbb jellemzője: nem is annyira az a probléma ha egy vezetés hibákat követ el, hiszen ez elkerülhetetlen - hanem az, ha teljesen hiányzik bármilyen mechanizmus a korrekcióra.
+A hosszú ideje regnáló magyar kormány ehelyett következetesen megtagadta, hogy beismerje gazdaságpolitikai stratégiájának bármilyen hiányosságát. Ehelyett egy olyan stratégia mellett kötelezte el magát egyre inkább, amelyet a szélsőséges centralizáció, a külföldi - elsősorban feldolgozóipari - beruházások közvetlen és aránytalan állami támogatása, az önkényesen változó "különadók", valamint az állami fejlesztéspolitika fizikai infrastruktúra-fejlesztésre (autópályák és stadionok...) való szinte kizárólagos leszűkítése jellemez. 
+A hibák elismerésére való képtelenség, illetve bármiféle korrekció kategorikus elutasítása talán az elmúlt 16 év legaggasztóbb jellemzője: nem is annyira az a probléma, ha egy vezetés hibákat követ el, hiszen ez elkerülhetetlen - hanem az, ha teljesen hiányzik bármilyen mechanizmus a korrekcióra.
 
-Vannak plauzibilis és közismert jelöltek Magyarország relatív lecsúszásának kauzális magyarázatára: a humántőke-befektetés elhanyagolása, a rendszerszintű kleptokrácia és ebből adódó versenyhiány, az ország nyugati kapcsolatainak megrendülése, és a mindezekből fakadó fokozódó gazdasági bizonytalanság. 
+Vannak plauzibilis és közismert "jelöltek" Magyarország relatív lecsúszásának kauzális magyarázatára: a humántőke-befektetés elhanyagolása, a rendszerszintű kleptokrácia és ebből adódó versenyhiány, az ország nyugati kapcsolatainak megrendülése, és a mindezekből fakadó fokozódó jogi és gazdasági bizonytalanság és kiszámíthatatlanság. 
 Bármi volt is a pontos oksági mechanizmus, egy dolog világosnak tűnik mostanra: az alkalmazott stratégia nem eredményezett sikeres, vagy akár csak a régióban átlagosnak mondható, felzárkózási teljesítményt. 
 Ellenkezőleg, úgy tűnik, hogy a teljes KKE régióban a második vagy harmadik legrosszabb gazdasági teljesítményt eredményezte az utóbbi másfél évtizedben. 
 
 A stratégia bármely elemének felülvizsgálatától való teljes elzárkózás, valamint az explicit elköteleződés további folytatására, sőt fokozására, azt teszi valószínűve, hogy Magyarország relatív lecsúszása mind saját történelmi régióján, mind az egész EU-n belül tovább fog folytatódni. Legalábbis addig, amíg nem történik politikai és ezen belül gazdaságpolitikai változás.
+
+---
 
 # Függelék
 
@@ -716,8 +719,8 @@ Az első ábrán a konstans áron megadott volumenindexek illetve a folyóáras 
 
 <div style="text-align: center;">
 <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
-<a href="{{ site.baseurl }}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/scatter_arany_osszehasonlitas_log.png">
-<img src="{{ site.baseurl }}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/scatter_arany_osszehasonlitas_log.png" alt="_config.yml" style="width: 1100px;"/>
+<a href="{{site.baseurl}}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/scatter_arany_osszehasonlitas_log.png">
+<img src="{{site.baseurl}}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/scatter_arany_osszehasonlitas_log.png" alt="_config.yml" style="width: 1100px;"/>
 </a>
 <figcaption style="font-size: 20px; margin-top: 6px; width: 1100px;"> <strong>Függelék 1. ábra</strong>
 A volumenindexek (konstans ár, vásárlóerő-paritás nélkül) és a folyóáras PPP/PPS-ben számolt relatív növekedési mutatók összefüggése hat vizsgált mutatóra. 
@@ -725,18 +728,19 @@ A volumenindexek (konstans ár, vásárlóerő-paritás nélkül) és a folyóá
 </figure>
 </div>
 
-A Világbank illetve az OECD által publikált mutatók eleve elérhetők konstans árú idősorban, itt ezeket használtuk. Az Eurostat mérőszámait minden esetben az adott ország HICP fogyasztói árindexével defláltuk, majd egy fixált év árfolyamán váltottuk euróra. 
-Mivel csak a relatív változást ábrázoltuk, ezért az átváltási árfolyam nem változtat az eredményeken, az arányszámokból ez kiesik.
+A Világbank illetve az OECD által publikált mutatók eleve elérhetők konstans árú idősorban, itt ezeket használtuk. 
+Az Eurostat nominális mérőszámait minden esetben az adott ország HICP fogyasztói árindexével defláltuk, majd egy fixált év árfolyamán váltottuk euróra. 
+Mivel csak a relatív változást ábrázoltuk, ezért az átváltási árfolyam nem változtat az eredményeken, az arányszámokból az átváltási árfolyam ez kiesik.
 Az arányszámok azt mutatják meg, hogy az adott mutató hányszorosára nőtt a választott bázisévtől (ami 2004 [néhány kivétellel, ld. az ábrát], 2010 és 2021) 2024-ig.
-Látható, hogy a korreláció igen erős (R^2 0.8 és 0.95 között), bár van néhány ország ami messze esik az átlótól, amin a változás mértéke megegyezik a két mérőszámra: különösen Romániánál a folyóáras PPP-ben megadott GDP számok növekedése [meghaladja]({{ site.baseurl }}/images/hu-cee-convergence/output/compare_units/gdp_per_cap/gdp_per_cap_pct_change_from_baselines_CEE9.png) a konstans áras (volumenindex) mérőszámét. 
+Látható, hogy a korreláció igen erős (R^2 0.8 és 0.95 között) a volumenindexek és a folyóáras PPP/PPS mérőszámok között, bár van néhány ország ami messze esik az átlótól (ahol a két érték azonos). Különösen Romániánál a folyóáras PPP-ben megadott GDP számok növekedése [meghaladja](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/compare_units/gdp_per_cap/gdp_per_cap_pct_change_from_baselines_CEE9.png) a konstans áras (volumenindex) mérőszámét, ami feltehetőleg azért van mert itt a belföldi teljes infláció jelentősen meghaladta a PPP kosárban lévő (nagyrészt _tradeable_) áruk inflációját. 
 Mivel a fenti elemzésben a konstans áras mutatókat használtuk, ez Románia konvergencia-teljesítményét inkább konzervatívan becsüli meg. 
 
 A következő ábrán egyesével áttekintjük, hogy az egyes mutatókra hogyan alakult a folyóáras PPP-ben, illetve volumenindexben számolt relatív változás, egyrészt Magyarországon, másrészt a másik nyolc összehasonlítható KKE ország (KKE9: a kilenc EU-tag ex-szocialista ország, Csehország és Szlovénia nélkül) Magyarország nélküli átlagát nézve.
 
 <div style="text-align: center;">
 <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
-<a href="{{ site.baseurl }}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/change/valtozas_foldchange_kke9_wtd-changes.png">
-<img src="{{ site.baseurl }}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/change/valtozas_foldchange_kke9_wtd-changes.png" alt="_config.yml" style="width: 1100px;"/>
+<a href="{{site.baseurl}}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/change/valtozas_foldchange_kke9_wtd-changes.png">
+<img src="{{site.baseurl}}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/change/valtozas_foldchange_kke9_wtd-changes.png" alt="_config.yml" style="width: 1100px;"/>
 </a>
 <figcaption style="font-size: 20px; margin-top: 6px; width: 1100px;"> <strong>Függelék 2. ábra</strong>
 A volumenindexek (konstans ár, vásárlóerő-paritás nélkül) és a folyóáras PPP/PPS-ben számolt relatív növekedési mutatók hat vizsgált mutatóra. A karikák a magyar, a négyzetek a KKE9 mérőszámok relatív növekedését mutatják, három különböző bázisévtől nézve. Piros=volumenindex, kék=folyóáras PPP/PPS. KKE9 csoportnál az országonként számolt relatív változások súlyozott átlagát ábrázoljuk.
@@ -748,25 +752,31 @@ Ahogy a korrelációkat mutató ábra alapján várható volt, a relatív növek
 Két mutató van, ahol a konstans áras (volumenindex) mutatóban Magyarország nincs annyira elmaradva a 2010-2014 időszak konvergencia-teljesítményére nézve, mint a folyóáras mutatóban: ezek a tényleges egyéni fogyasztás és a medián órabér. 
 Ennél a két mutatónál Magyarország relatív növekedése kb. megfelelt a KKE9 átlagnak a 2010-2024 időszakban, és egyben nagyobb mértékű, mint a (saját) PPS-ben számított változás.
 Ennek pontos oka további elemzést igényelne, de a forint leértékelődése valószínűleg fontos szerepet játszik ebben, ami miatt a PPS kosár forintban kifejezett ára erősebben nőtt, mint a fogyasztói árindex, így a PPS-kosárral elosztott nominális növekedés kisebb volt, mint a fogyasztói árindex deflátorával számolt volumenindex-növekedés.
-Mivel azonban itt életszínvonalbeli változókról van szó, a folyóáras PPS ebben az esetben informatívabb lehet, még ha a [máshol tárgyalt okokból](https://www.portfolio.hu/gazdasag/20230907/mire-jo-a-vasarloero-paritas-es-mire-nem-637557) a folyóáras PPS idősorokat nem teljesen helyes időbeli görbéknek kezelni.
+Mivel azonban itt életszínvonalbeli változókról van szó, a folyóáras PPS ebben az esetben informatívabb lehet, még ha a [máshol tárgyalt okokból](https://www.portfolio.hu/gazdasag/20230907/mire-jo-a-vasarloero-paritas-es-mire-nem-637557) a folyóáras PPS idősorokat nem teljesen helyes időbeli görbéknek kezelni, habár ebben sincs teljes egyetértés, és vannak tanulmányok, [amelyek megteszik ezt](https://www.bruegel.org/analysis/twenty-years-european-east-west-household-income-convergence).
 
-Végezetül, megvizsgáltuk mennyire hat a rangsorolásra az, hogy melyik mérőszámot használjuk.
+Az összes számítás kódja megtalálható [ebben a folderben](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/compare_units_scripts), illetve az összehasonlító ábrák az összes változóra, országra lebontva [ebben a folderben](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/compare_units_scripts). 
+Itt látható az is, hogy a konstans PPP és a konstans áras volumenindex mérőszámok relatív változása [mindig](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/compare_units/gdp_per_hr_worked/gdp_per_hr_worked_pct_change_from_baselines_CEE9.png) [azonos](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/compare_units/gdp_per_hr_worked/gdp_per_hr_worked_pct_change_from_baselines_CEE9.png).
+Az is látható, hogy a 2021 utáni időszakban az eloszlás összeszűkült, és itt már Magyarország az átlagtól való lemaradása több mutatóban kisebb. Tekintetbe kell azonban venni, hogy egyrészt itt csak három évnyi időszakról beszélünk, tehát eleve a különbségek törvényszerűen kisebbek. Másrészt, az adatokban nincsen benne még a 2025-ös év, amikor is a magyar gazdaság újra stagnált - ha a hamarosan elérehtővé váló 2010-2025 periódusra újraszámolnánk az adatokat, akkor szinte biztosan újra megnőnek Magyarország relatív lemaradása.
+
+Végül megvizsgáltuk mennyire hat a rangsorolásra az, hogy melyik mérőszámot használjuk.
 
 <div style="text-align: center;">
 <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
-<a href="{{ site.baseurl }}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/rank/helyezes_foldchange_kke9.png">
-<img src="{{ site.baseurl }}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/rank/helyezes_foldchange_kke9.png" alt="_config.yml" style="width: 1100px;"/>
+<a href="{{site.baseurl}}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/rank/helyezes_foldchange_kke9.png">
+<img src="{{site.baseurl}}/images/hu-cee-convergence/output/compare_units/summary/HU_plots/incl2021/rank/helyezes_foldchange_kke9.png" alt="_config.yml" style="width: 1100px;"/>
 </a>
 <figcaption style="font-size: 20px; margin-top: 6px; width: 1100px;"> <strong>Függelék 3. ábra</strong>
 Országok rangsorolása volumenindexben (konstans ár, vásárlóerő-paritás nélkül) és folyóáras PPP/PPS-ben számolt relatív növekedési mutatók alapján, három különböző bázisévtől nézve. 
-Piros=volumenindex, kék=folyóáras PPP/PPS. KKE9 csoportnál az országonként számolt relatív változások súlyozott átlagát ábrázoljuk.
+Piros=volumenindex, kék=folyóáras PPP/PPS. A KKE9 csoportnál az országonként számolt relatív változások súlyozott átlagát ábrázoljuk.
 </figcaption>
 </figure>
 </div>
 
 A különbségek jelentéktelennek mondhatók. Volumenindexben nézve Magyarország a tényleges fogyasztásra és a medián órabérre vonatkozó helyezése kevésbé rossz a 2010-2024 időszakra nézve, de ennél a két változónál kérdéses, hogy ez jobb mérőszám-e, mint a folyóáras PPS. Mindenesetre a medián órabért tekintve 2022-be (utolsó adat ennél a mutatónál) Magyarország hátulról a [második helyen állt](https://ec.europa.eu/eurostat/databrowser/view/earn_ses_pub2s/default/table?lang=en) az EU-ban, míg a tényleges fogyasztásban 2024-ben [a legutolsón](https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind_1__custom_20761075/default/table). Ha a folyóáras PPS-t idősorként kezelni nem is egészen helyes módszertanilag, a végső állapot összehasonlítása viszont az, és világos képet mutat.
 
+---
+
 # Források
 
 A cikkben szereplő ábrákhoz használt adatok, illetve az ábrákat generáló kód megtalalálható a projekt [Github repójában](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence).
-A módszerek részletesebb kifejtéséért lásd a szerző [Substack-jén](https://mbklt.substack.com/p/hungarys-convergence-since-eu-accession).
+<!--- A módszerek részletesebb kifejtéséért lásd a szerző [Substack-jén](https://mbklt.substack.com/p/hungarys-convergence-since-eu-accession). --->
