@@ -160,7 +160,7 @@ Fontos kérdés, hogy hogyan mérjük a felzárkózás mértékét, és ez a gaz
 MÓDSZERTANI JEGYZET
 </span>
 
-A konvergencia mérésének megfelelő mutatójáról (-iról) bonyolult módszertani viták folynak, magyar nyelven is, ld. pl. ezeket a tanulmányokat:
+A konvergencia mérésének megfelelő mutatójáról (illetve mutatóiról) bonyolult módszertani viták folynak, magyar nyelven is, ld. pl. ezeket a tanulmányokat:
 <a href="https://www.portfolio.hu/gazdasag/20230907/mire-jo-a-vasarloero-paritas-es-mire-nem-637557">Obláth 2023</a>
 és <a href="https://kulgazdasag.eu/api/uploads/Kuelg_7_8_2_Oblath_df9f0c279f.pdf">Obláth 2021</a>.
 
@@ -171,26 +171,26 @@ A vásárlóerő-paritás (PPP illetve PPS) mutatók az országok közötti árk
 A <b> <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD?locations=HU-PL">folyóáras PPP</a> 
 /
 PPS mutatók </b>  
-alkalmasak arra, hogy egy adott időpontban reálértéken hasonlítsuk össze külonböző országok jövedelem/kibocsátás/fogyasztás szintjét. A probléma itt az <it>időbeli</it> változások összehasonlításával van, mert a PPP/PPS-ben megadott mutatók időbeli változása egyszerre tükrözi a reálértéken vett (inflációra szűrt) volumen-változásokat, az országokon <it>belüli</it> relatív árváltozásokat (bizonyos áruk másokhoz képest megdrágulnak), illetve az általános árszínvonal emelkedést és az árfolyamhatást. 
+alkalmasak arra, hogy egy adott időpontban reálértéken hasonlítsuk össze különböző országok jövedelem/kibocsátás/fogyasztás szintjét. A probléma itt az <i>időbeli</i> változások összehasonlításával van, mert a PPP/PPS-ben megadott mutatók időbeli változása egyszerre tükrözi a reálértéken vett (inflációra szűrt) volumen-változásokat, az országokon <i>belüli</i> relatív árváltozásokat (bizonyos áruk másokhoz képest megdrágulnak), illetve az általános árszínvonal emelkedést és az árfolyamhatást. 
 Így időben összehasonlítani különböző országok folyóáras PPP mutatóit annyiban problematikus, hogy több tényezőt von össze, amiből az inflációtól megtisztított (reál) volumen-növekedés csak az egyik. <br>
 
 <button style="font-size:0.7em;padding:1px 6px;border:1px solid #6f7a86;border-radius:6px;background:#f6f8fa;color:#0969da;cursor:pointer;">2</button>  
-A PPP/PPS alapú összehasonlítás alternatívája, ha csak <b>volumenindexeket</b> hasonlítunk össze. Ez azt jelenti, hogy az egyes országok nominális, saját pénznemükben vett idősorait defláljuk az adott ország releváns árindexével (GDP deflátor, vagy fogyasztói árindex-szel), majd a különbözó országok adatait egy fixált árfolyamon egy közös és konstans egységre váltjuk át. 
+A PPP/PPS alapú összehasonlítás alternatívája, ha csak <b>volumenindexeket</b> hasonlítunk össze. Ez azt jelenti, hogy az egyes országok nominális, saját pénznemükben vett idősorait defláljuk az adott ország releváns árindexével (GDP deflátor, vagy fogyasztói árindex-szel), majd a különböző országok adatait egy fixált árfolyamon egy közös és konstans egységre váltjuk át. 
 Ilyen pl. a Világbank 
 <a href="https://data.worldbank.org/indicator/NY.GNP.PCAP.KD?locations=HU-B8">"constant 2015 USD"</a> 
 mutatója. 
-Ekkor megkapjuk az inflációtól megtisztított volumen-változásokat, amely alkalmas arra, hogy az időbeli relatív növekedést hasonlítsuk össze országok között. Azonban, ha egy referencia-országhoz képest számított <it>relatív szint</it> érdekel minket, erre ez a mutató kevésbé alkalmas, mert az országok közötti árszint-különbségeket egyáltalán nem veszi figyelembe, így az alacsonyabb jövedelemszinten lévő országokat alacsonyabb szintre fogja tenni a gazdagabbakhoz képest, mint a tényleges jövedelmi vagy fogyasztás-szintbeli különbség. 
-Ugyanakkor, ha csak a relatív felzárkózási teljesítményt nézzük, pl. hogy adott KKE országok GNI/fő szintje az EU8 átlag hány százaléka volt 2010-ben és ez hogyan változott 2024-re, akkor a volumenindex egy alkalmas konvergencia-indikátor, viszont egy <it>adott</it> év GNI/fő szintjének az EU8 országokkal való összehasonlítására kevésbé megfelelő.
+Ekkor megkapjuk az inflációtól megtisztított volumen-változásokat, amely alkalmas arra, hogy az időbeli relatív növekedést hasonlítsuk össze országok között. Azonban, ha egy referencia-országhoz képest számított <i>relatív szint</i> érdekel minket, erre ez a mutató kevésbé alkalmas, mert az országok közötti árszint-különbségeket egyáltalán nem veszi figyelembe, így az alacsonyabb jövedelemszinten lévő országokat alacsonyabb szintre fogja tenni a gazdagabbakhoz képest, mint a tényleges jövedelmi vagy fogyasztás-szintbeli különbség. 
+Ugyanakkor, ha csak a relatív felzárkózási teljesítményt nézzük, pl. hogy adott KKE országok GNI/fő szintje az EU8 átlag hány százaléka volt 2010-ben és ez hogyan változott 2024-re, akkor a volumenindex egy alkalmas konvergencia-indikátor, viszont egy <i>adott</i> év GNI/fő szintjének az EU8 országokkal való összehasonlítására kevésbé megfelelő.
 <br>
 
 <button style="font-size:0.7em;padding:1px 6px;border:1px solid #6f7a86;border-radius:6px;background:#f6f8fa;color:#0969da;cursor:pointer;">3</button> 
-Az időbeli és térbeli összehasonlíthatóságot egyszerre próbálja megoldani a <b>konstans PPP</b> mutató. Ezek a mutatók valójában szintén volumen-indexek, tehát az inflációra korrigált reál-növekedést hasonlítják össze, azonban az így kapott értékeket egy <it>adott év</it> relatív árszint különbségeivel korrigálják. Tehát, pl. ha a PPP által használt fogyasztói kosár 2021-ben (az adott év árfolyamát használva) egy adott országban csak 70%-a volt a referenciaszintnek (ami a PPS-nél az egész EU-ra vett átlagos ár), akkor ezen ország mutatóit arányosan felszorozza 100%-ra, hogy eltávolítsa az árkülönbsége hatását.
-Mivel ez a mutató csak egy konstanssal szorozza meg a volumenváltozások trendjét, ezért ha relatív változásokat nézünk, akkor a konstans PPP és a konstans áras (de nem PPP) volumenindex ugyanazt fogja mutatni. Ezért ezt a két mutatót nem szükséges egyszerre vizualizálni. A konstans PPP-nél viszont azt fontos látni, hogy a konkrét értékek erősen függeni fognak attól, hogy melyik évhez rögzítjük az adatsort, mivel az országok közötti relatív árszinteket több tényező is mozgatja. 
+Az időbeli és térbeli összehasonlíthatóságot egyszerre próbálja megoldani a <b>konstans PPP</b> mutató. Ezek a mutatók valójában szintén volumen-indexek, tehát az inflációra korrigált reál-növekedést hasonlítják össze, azonban az így kapott értékeket egy <i>adott év</i> relatív árszint különbségeivel korrigálják. Tehát, pl. ha a PPP által használt fogyasztói kosár 2021-ben (az adott év árfolyamát használva) egy adott országban csak 70%-a volt a referenciaszintnek (ami a PPS-nél az egész EU-ra vett átlagos ár), akkor ezen ország mutatóit arányosan felszorozza 100%-ra, hogy eltávolítsa az árkülönbségek hatását.
+Mivel ez a mutató csak egy konstanssal szorozza meg a volumenváltozások trendjét, ezért ha relatív változásokat nézünk, akkor a konstans PPP és a konstans áras (de nem PPP-alapú) volumenindex ugyanazt fogja mutatni. Ezért ezt a két mutatót nem szükséges egyszerre vizualizálni. A konstans PPP-nél viszont azt fontos látni, hogy a konkrét értékek erősen függeni fognak attól, hogy melyik évhez rögzítjük az adatsort, mivel az országok közötti relatív árszinteket több tényező is mozgatja. 
 
 Mivel a lenti elemzésben elsősorban az EU centrumországaihoz viszonyított relatív változást elemezzük, 
-ezért a legtöbb esetben a <it>konstans PPP</it> mutatót használtuk, ami egyrészt megadja a volumen-változást, másrészt az EU8-hoz képest számolt <it>szintet</it> is, habár az utóbbi számoknál fontos észben tartani, hogy függenek a referenciaévtől. Mivel azonban minden KKE országra ugyanazt a referenciaévet alkalmaztuk, ezért az eredmények nem függenek erősen ettől.
+ezért a legtöbb esetben a <i>konstans PPP</i> mutatót használtuk, ami egyrészt megadja a volumen-változást, másrészt az EU8-hoz képest számolt <i>szintet</i> is, habár az utóbbi számoknál fontos észben tartani, hogy függenek a referenciaévtől. Mivel azonban minden KKE országra ugyanazt a referenciaévet alkalmaztuk, ezért az eredmények nem függenek erősen ettől.
 
-A cikk végén lévő Függelékben konkrétan is megvizsgáljuk, hogy mennyiben függenek az eredmények a választott mértékegységtől.
+A cikk végén lévő [Függelékben](#függelék) konkrétan is megvizsgáljuk, hogy mennyiben függenek az eredmények a választott mértékegységtől.
 </div>
 
 Az alábbiakban a mutatók időbeli változását mindig háromféleképpen számoljuk ki. Az első egyszerűen az abszolút változás időben. A pénzbeli mutatókat vásárlóerő-paritáson (PPP/PPS) fejeztük ki a nemzetközi összehasonlíthatóság érdekében, és ahol lehetséges, állandó USD-ben, az inflációt kiszűrve. 
