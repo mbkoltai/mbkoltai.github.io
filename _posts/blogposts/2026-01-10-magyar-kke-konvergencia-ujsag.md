@@ -146,7 +146,7 @@ Szintén elemezzük a minimálbér-szintet, amely különösen az alacsony bér�
 
 Fontos kérdés, hogy hogyan mérjük a felzárkózás mértékét, és ez a gazdasági mutatóknál egyáltalán nem egyértelmű. 
 
-<div style="border: 4px solid red; padding: 15px; border-radius: 5px; position: relative;">
+<div style="border: 4px solid red; padding: 24px 16px 16px 16px; border-radius: 5px; position: relative;">
 
 <span style="
   position: absolute;
@@ -154,31 +154,32 @@ Fontos kérdés, hogy hogyan mérjük a felzárkózás mértékét, és ez a gaz
   left: 12px;
   background: #bc8581;
   color: black;
-  padding: 8px 8px;
+  padding: 2px 8px;
   font-size: 16px;
   border-radius: 4px;
 ">
 MÓDSZERTANI JEGYZET
 </span>
 
-A konvergencia mérésének megfelelő mutatójáról (illetve mutatóiról) bonyolult módszertani viták folynak, magyar nyelven is, ld. pl. ezeket a tanulmányokat:
+A konvergencia mérésének megfelelő mérőszámairól bonyolult módszertani viták folynak, magyar nyelven is, ld. pl. ezeket a tanulmányokat:
 <a href="https://www.portfolio.hu/gazdasag/20230907/mire-jo-a-vasarloero-paritas-es-mire-nem-637557">Obláth 2023</a>
 és <a href="https://kulgazdasag.eu/api/uploads/Kuelg_7_8_2_Oblath_df9f0c279f.pdf">Obláth 2021</a>.
 
-A cikk végén egy külön függelékben foglalkozunk azzal, hogy mennyiben (nem) függenek az eredmények a választott metrikától. Itt röviden összefoglaljuk a lényeget, összehasonlítva a három lehetséges mutatót. 
+A cikk végén egy külön függelékben foglalkozunk azzal, hogy mennyiben (nem) függenek az eredmények a választott mérőszámtól. Itt röviden összefoglaljuk a lényeget, összehasonlítva a három lehetséges mérőszámot. 
 <br>
-A vásárlóerő-paritás (PPP illetve PPS) mutatók az országok közötti árkülönbségekre próbálnak úgy korrigálni, hogy a nominális pénzbeli értékeket az egyes valutákban normalizálják egy reprezentatív(nak szánt) vásárló kosár adott országbeli árával, tehát tekintetbe veszik a relatív árszint-különbségeket. 
+A vásárlóerő-paritás (PPP illetve PPS) mérőszámok az országok közötti árkülönbségekre próbálnak úgy korrigálni, hogy a nominális pénzbeli értékeket az egyes valutákban normalizálják egy reprezentatív(nak szánt) vásárló kosár adott országbeli árával, tehát tekintetbe veszik a relatív árszint-különbségeket. <br>
+
 <button style="font-size:0.7em;padding:1px 6px;border:1px solid #6f7a86;border-radius:6px;background:#f6f8fa;color:#0969da;cursor:pointer;">1</button> 
 A <b> <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD?locations=HU-PL">folyóáras PPP</a> 
 /
-PPS mutatók </b>  
+PPS mérőszámok </b>  
 alkalmasak arra, hogy egy adott időpontban reálértéken hasonlítsuk össze különböző országok jövedelem/kibocsátás/fogyasztás szintjét. A probléma itt az <i>időbeli</i> változások összehasonlításával van, mert a PPP/PPS-ben megadott mutatók időbeli változása egyszerre tükrözi a reálértéken vett (inflációra szűrt) volumen-változásokat, az országokon <i>belüli</i> relatív árváltozásokat (bizonyos áruk másokhoz képest megdrágulnak), illetve az általános árszínvonal emelkedést és az árfolyamhatást. 
 Így időben összehasonlítani különböző országok folyóáras PPP mutatóit annyiban problematikus, hogy több tényezőt von össze, amiből az inflációtól megtisztított (reál) volumen-növekedés csak az egyik. <br>
 
 <button style="font-size:0.7em;padding:1px 6px;border:1px solid #6f7a86;border-radius:6px;background:#f6f8fa;color:#0969da;cursor:pointer;">2</button>  
 A PPP/PPS alapú összehasonlítás alternatívája, ha csak <b>volumenindexeket</b> hasonlítunk össze. Ez azt jelenti, hogy az egyes országok nominális, saját pénznemükben vett idősorait defláljuk az adott ország releváns árindexével (GDP deflátor, vagy fogyasztói árindex-szel), majd a különböző országok adatait egy fixált árfolyamon egy közös és konstans egységre váltjuk át. 
 Ilyen pl. a Világbank 
-<a href="https://data.worldbank.org/indicator/NY.GNP.PCAP.KD?locations=HU-B8">"constant 2015 USD"</a> 
+<a href="https://data.worldbank.org/indicator/NY.GNP.PCAP.KD?locations=HU-B8">constant 2015 USD</a> 
 mutatója. 
 Ekkor megkapjuk az inflációtól megtisztított volumen-változásokat, amely alkalmas arra, hogy az időbeli relatív növekedést hasonlítsuk össze országok között. Azonban, ha egy referencia-országhoz képest számított <i>relatív szint</i> érdekel minket, erre ez a mutató kevésbé alkalmas, mert az országok közötti árszint-különbségeket egyáltalán nem veszi figyelembe, így az alacsonyabb jövedelemszinten lévő országokat alacsonyabb szintre fogja tenni a gazdagabbakhoz képest, mint a tényleges jövedelmi vagy fogyasztás-szintbeli különbség. 
 Ugyanakkor, ha csak a relatív felzárkózási teljesítményt nézzük, pl. hogy adott KKE országok GNI/fő szintje az EU8 átlag hány százaléka volt 2010-ben és ez hogyan változott 2024-re, akkor a volumenindex egy alkalmas konvergencia-indikátor, viszont egy <i>adott</i> év GNI/fő szintjének az EU8 országokkal való összehasonlítására kevésbé megfelelő.
@@ -191,7 +192,9 @@ Mivel ez a mutató csak egy konstanssal szorozza meg a volumenváltozások trend
 Mivel a lenti elemzésben elsősorban az EU centrumországaihoz viszonyított relatív változást elemezzük, 
 ezért a legtöbb esetben a <i>konstans PPP</i> mutatót használtuk, ami egyrészt megadja a volumen-változást, másrészt az EU8-hoz képest számolt <i>szintet</i> is, habár az utóbbi számoknál fontos észben tartani, hogy függenek a referenciaévtől. Mivel azonban minden KKE országra ugyanazt a referenciaévet alkalmaztuk, ezért az eredmények nem függenek erősen ettől.
 
-A cikk végén lévő <b>Függelékben</b> konkrétan is megvizsgáljuk, hogy mennyiben függenek az eredmények a választott mértékegységtől.
+A cikk végén lévő 
+<a href="https://mbkoltai.com/magyar-kke-konvergencia-ujsag/#f%C3%BCggel%C3%A9k">Függelékben</a> 
+részletesen megvizsgáljuk, hogy mennyiben függenek az eredmények a választott mértékegységtől.
 </div>
 
 Az alábbiakban a mutatók időbeli változását mindig háromféleképpen számoljuk ki. Az első egyszerűen az abszolút változás időben. A pénzbeli mutatókat vásárlóerő-paritáson (PPP/PPS) fejeztük ki a nemzetközi összehasonlíthatóság érdekében, és ahol lehetséges, állandó USD-ben, az inflációt kiszűrve. 
