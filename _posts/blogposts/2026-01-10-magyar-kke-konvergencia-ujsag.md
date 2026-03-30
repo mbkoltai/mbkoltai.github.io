@@ -154,7 +154,7 @@ Fontos kérdés, hogy hogyan mérjük a felzárkózás mértékét, és ez a gaz
   left: 12px;
   background: #bc8581;
   color: black;
-  padding: 2px 8px;
+  padding: 8px 8px;
   font-size: 16px;
   border-radius: 4px;
 ">
