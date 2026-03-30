@@ -190,7 +190,7 @@ Mivel ez a mutató csak egy konstanssal szorozza meg a volumenváltozások trend
 Mivel a lenti elemzésben elsősorban az EU centrumországaihoz viszonyított relatív változást elemezzük, 
 ezért a legtöbb esetben a <i>konstans PPP</i> mutatót használtuk, ami egyrészt megadja a volumen-változást, másrészt az EU8-hoz képest számolt <i>szintet</i> is, habár az utóbbi számoknál fontos észben tartani, hogy függenek a referenciaévtől. Mivel azonban minden KKE országra ugyanazt a referenciaévet alkalmaztuk, ezért az eredmények nem függenek erősen ettől.
 
-A cikk végén lévő [Függelékben](#függelék) konkrétan is megvizsgáljuk, hogy mennyiben függenek az eredmények a választott mértékegységtől.
+A cikk végén lévő <b>Függelékben</b> konkrétan is megvizsgáljuk, hogy mennyiben függenek az eredmények a választott mértékegységtől.
 </div>
 
 Az alábbiakban a mutatók időbeli változását mindig háromféleképpen számoljuk ki. Az első egyszerűen az abszolút változás időben. A pénzbeli mutatókat vásárlóerő-paritáson (PPP/PPS) fejeztük ki a nemzetközi összehasonlíthatóság érdekében, és ahol lehetséges, állandó USD-ben, az inflációt kiszűrve. 
@@ -707,12 +707,12 @@ A stratégia bármely elemének felülvizsgálatától való teljes elzárkózá
 
 # Függelék
 
-Az alábbi néhány ábrán azt foglaljuk össze, hogy mennyiben függenek a fenti eredmények attól, hogy melyik mérőszámot használjuk az egyes mutatók időbeli és térbeli összehasonlítására: 
+Az alábbi néhány ábrán azt foglaljuk össze, hogy a fenti eredmények mennyiben függnek attól, hogy melyik mérőszámot használjuk az egyes mutatók időbeli és térbeli összehasonlítására: 
 - folyóáras PPP/PPS
 - volumenindex (konstans áras mutatók, vásárlóerő-paritás nélkül)
 - konstans PPP
 
-Az első ábrán a konstans áron megadott volumenindexek illetve a folyóáras PPP-ben számolt adatok relatív változásának hasonlóságát ábrázoltuk. A konstant PPP mérőszámokat nem mutatjuk külön, mivel ezek _relatív_ változása azonos a volumenindexek relatív változásával.
+Az első ábrán a konstans áron megadott volumenindexek illetve a folyóáras PPP-ben számolt adatok relatív változásának hasonlóságát ábrázoltuk. A konstans PPP mérőszámokat nem mutatjuk külön, mivel ezek _relatív_ változása azonos a volumenindexek relatív változásával.
 
 <div style="text-align: center;">
 <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
@@ -727,11 +727,11 @@ A volumenindexek (konstans ár, vásárlóerő-paritás nélkül) és a folyóá
 
 A Világbank illetve az OECD által publikált mutatók eleve elérhetők konstans árú idősorban, itt ezeket használtuk. Az Eurostat mérőszámait minden esetben az adott ország HICP fogyasztói árindexével defláltuk, majd egy fixált év árfolyamán váltottuk euróra. 
 Mivel csak a relatív változást ábrázoltuk, ezért az átváltási árfolyam nem változtat az eredményeken, az arányszámokból ez kiesik.
-Az arányszámok azt mutatják meg, hogy az adott mutató hányszorosára nőtt a választott bázisévtől (ami 2004 [néhány kivétellel, ld. az ábrát], 2010 és 2010) 2024-ig.
-Látható, hogy a korreláció igen erős (R2 0.8 és 0.95 között), bár van néhány ország ami messze esik az átlótól, amin a változás mértéke megegyezik a két mérőszámra: különösen Romániánál a folyóáras PPP-ben megadott GDP számok növekedése [meghaladja]({{ site.baseurl }}/images/hu-cee-convergence/output/compare_units/gdp_per_cap/gdp_per_cap_pct_change_from_baselines_CEE9.png) a konstans áras (volumenindex) mérőszámét. 
+Az arányszámok azt mutatják meg, hogy az adott mutató hányszorosára nőtt a választott bázisévtől (ami 2004 [néhány kivétellel, ld. az ábrát], 2010 és 2021) 2024-ig.
+Látható, hogy a korreláció igen erős (R^2 0.8 és 0.95 között), bár van néhány ország ami messze esik az átlótól, amin a változás mértéke megegyezik a két mérőszámra: különösen Romániánál a folyóáras PPP-ben megadott GDP számok növekedése [meghaladja]({{ site.baseurl }}/images/hu-cee-convergence/output/compare_units/gdp_per_cap/gdp_per_cap_pct_change_from_baselines_CEE9.png) a konstans áras (volumenindex) mérőszámét. 
 Mivel a fenti elemzésben a konstans áras mutatókat használtuk, ez Románia konvergencia-teljesítményét inkább konzervatívan becsüli meg. 
 
-A következő ábrán egyesével áttekintjük, hogy az egyes mutatókra hogyan alakult a folyóáras PPP-ben, illetve volumenindexben számolt relatív változás, egyrészt Magyarországon, másrészt a másik 8 összehasonlítható KKE ország (KKE9 - a kilenc EU-tag ex-szocialista ország, Csehország és Szlovénia nélkül) átlagát nézve.
+A következő ábrán egyesével áttekintjük, hogy az egyes mutatókra hogyan alakult a folyóáras PPP-ben, illetve volumenindexben számolt relatív változás, egyrészt Magyarországon, másrészt a másik nyolc összehasonlítható KKE ország (KKE9: a kilenc EU-tag ex-szocialista ország, Csehország és Szlovénia nélkül) Magyarország nélküli átlagát nézve.
 
 <div style="text-align: center;">
 <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
@@ -744,11 +744,11 @@ A volumenindexek (konstans ár, vásárlóerő-paritás nélkül) és a folyóá
 </figure>
 </div>
 
-Ahogy a korrelációkat mutató ábra alapján várható volt, a relatív növekedési számok alapvetően nagyon hasonlóak, akár konstans áron, akár folyóáras PPP/PPS-ben számolunk. 
+Ahogy a korrelációkat mutató ábra alapján várható volt, a relatív növekedési számok alapvetően hasonlóak, akár konstans áron, akár folyóáras PPP/PPS-ben számolunk. 
 Két mutató van, ahol a konstans áras (volumenindex) mutatóban Magyarország nincs annyira elmaradva a 2010-2014 időszak konvergencia-teljesítményére nézve, mint a folyóáras mutatóban: ezek a tényleges egyéni fogyasztás és a medián órabér. 
-Ennél a két mutatónál Magyarország relatív növekedése kb. megfelelt a KKE9 átlagnak a 2010-2024 időszakban, és egyben nagyobb mértékű, mint a PPS-ben számított változás.
-Ennek pontos oka további elemzést igényelne, de feltehetően a forint leértékelődése fontos szerepet játszik ebben, amennyiben a PPS kosár forintban kifejezett ára erősebben nőtt, mint a fogyasztói árindex, így a PPS-kosárral elosztott nominális növekedés kisebb volt, mint a fogyasztói árindex deflátorával számolt volumenindex-növekedés.
-Mivel azonban itt életszínvonalbeli változókról van szó, a folyóáras PPS ebben az esetben informatívabb lehet, még ha a [máshol tárgyalt okokból](https://www.portfolio.hu/gazdasag/20230907/mire-jo-a-vasarloero-paritas-es-mire-nem-637557) a folyóáras PPS idősorokat nem teljesen helyes összefüggő görbéknek kezelni.
+Ennél a két mutatónál Magyarország relatív növekedése kb. megfelelt a KKE9 átlagnak a 2010-2024 időszakban, és egyben nagyobb mértékű, mint a (saját) PPS-ben számított változás.
+Ennek pontos oka további elemzést igényelne, de a forint leértékelődése valószínűleg fontos szerepet játszik ebben, ami miatt a PPS kosár forintban kifejezett ára erősebben nőtt, mint a fogyasztói árindex, így a PPS-kosárral elosztott nominális növekedés kisebb volt, mint a fogyasztói árindex deflátorával számolt volumenindex-növekedés.
+Mivel azonban itt életszínvonalbeli változókról van szó, a folyóáras PPS ebben az esetben informatívabb lehet, még ha a [máshol tárgyalt okokból](https://www.portfolio.hu/gazdasag/20230907/mire-jo-a-vasarloero-paritas-es-mire-nem-637557) a folyóáras PPS idősorokat nem teljesen helyes időbeli görbéknek kezelni.
 
 Végezetül, megvizsgáltuk mennyire hat a rangsorolásra az, hogy melyik mérőszámot használjuk.
 
@@ -764,7 +764,7 @@ Piros=volumenindex, kék=folyóáras PPP/PPS. KKE9 csoportnál az országonként
 </figure>
 </div>
 
-A különbségek jelentékteleneknek mondhatók. Volumenindexben nézve a tényleges fogyasztásra és a medián órabérre vonatkozó helyezése Magyarországnak kevésbé rossz a 2010-2024 időszakra nézve, de ennél a két változónál kérdéses, hogy ez jobb mérőszám-e, mint a folyóáras PPS. Mindenesetre a medián órabért tekintve 2022-be (utolsó adat ennél a mutatónál) Magyarország hátulról a [második helyen állt](https://ec.europa.eu/eurostat/databrowser/view/earn_ses_pub2s/default/table?lang=en) az EU-ban, míg a tényleges fogyasztásban 2024-ben [a legutolsón](https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind_1__custom_20761075/default/table). Ha a folyóáras PPS-t idősorként kezelni nem is egészen helyes módszertanilag, a végső állapot összehasonlítása az, és világos képet mutat.
+A különbségek jelentéktelennek mondhatók. Volumenindexben nézve Magyarország a tényleges fogyasztásra és a medián órabérre vonatkozó helyezése kevésbé rossz a 2010-2024 időszakra nézve, de ennél a két változónál kérdéses, hogy ez jobb mérőszám-e, mint a folyóáras PPS. Mindenesetre a medián órabért tekintve 2022-be (utolsó adat ennél a mutatónál) Magyarország hátulról a [második helyen állt](https://ec.europa.eu/eurostat/databrowser/view/earn_ses_pub2s/default/table?lang=en) az EU-ban, míg a tényleges fogyasztásban 2024-ben [a legutolsón](https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind_1__custom_20761075/default/table). Ha a folyóáras PPS-t idősorként kezelni nem is egészen helyes módszertanilag, a végső állapot összehasonlítása viszont az, és világos képet mutat.
 
 # Források
 
