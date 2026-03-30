@@ -1,11 +1,12 @@
 # load settings
-source("functions_settings.R")
+source("fcns/functions_settings.R"); 
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # LOAD data, functions, libraries
 
-source("load_data.R")
+source("fcns/load_pop_data.R"); source("fcns/transl_tables.R")
+source("fcns/filter_norm_data.R")
 
 ### PLOTTING 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
