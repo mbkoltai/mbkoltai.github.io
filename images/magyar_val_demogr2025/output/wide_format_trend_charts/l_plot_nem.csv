@@ -9,6 +9,8 @@ datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,más párt/pártnél
 2026/01,nem,nő (4m),MEDIÁN (ezer választó),1520,1320,1160,NA,NA,NA
 2026/02,nem,férfi (3.64m),MEDIÁN (ezer választó),1560,1050,1020,NA,NA,NA
 2026/02,nem,nő (4m),MEDIÁN (ezer választó),1640,1280,1080,NA,NA,NA
+2026/04,nem,férfi (3.64m),MEDIÁN (ezer választó),1820,980,840,NA,NA,NA
+2026/04,nem,nő (4m),MEDIÁN (ezer választó),1800,1320,880,NA,NA,NA
 2025/06,nem,férfi (3.64m),MEDIÁN (%),41,29,30,NA,NA,NA
 2025/06,nem,nő (4m),MEDIÁN (%),36,27,37,NA,NA,NA
 2025/08,nem,férfi (3.64m),MEDIÁN (%),39,28,33,NA,NA,NA
@@ -19,6 +21,8 @@ datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,más párt/pártnél
 2026/01,nem,nő (4m),MEDIÁN (%),38,33,29,NA,NA,NA
 2026/02,nem,férfi (3.64m),MEDIÁN (%),43,29,28,NA,NA,NA
 2026/02,nem,nő (4m),MEDIÁN (%),41,32,27,NA,NA,NA
+2026/04,nem,férfi (3.64m),MEDIÁN (%),50,27,23,NA,NA,NA
+2026/04,nem,nő (4m),MEDIÁN (%),45,33,22,NA,NA,NA
 2026/03,nem,férfi (3.64m),21KK (ezer választó),1780,910,NA,220,70,690
 2026/03,nem,nő (4m),21KK (ezer választó),1160,1360,NA,120,120,1320
 2026/03,nem,férfi (3.64m),21KK (%),49,25,NA,6,2,19

@@ -14,6 +14,9 @@ datum,kateg_tipus,partnev_kozos_aggr,total_by_party,pollster_type,község (2.26
 2026/02,településtípus,TISZA,3203471,MEDIÁN (ezer választó),720,1040,710,730
 2026/02,településtípus,Fidesz,2343132,MEDIÁN (ezer választó),860,760,460,260
 2026/02,településtípus,más párt/pártnélk.,2089171,MEDIÁN (ezer választó),680,730,410,260
+2026/04,településtípus,TISZA,3619962,MEDIÁN (ezer választó),930,1190,820,680
+2026/04,településtípus,Fidesz,2293704,MEDIÁN (ezer választó),790,760,430,310
+2026/04,településtípus,más párt/pártnélk.,1722108,MEDIÁN (ezer választó),540,580,330,260
 2025/06,településtípus,TISZA,2929059,MEDIÁN (%),24.7,29.4,24.9,21
 2025/06,településtípus,Fidesz,2115906,MEDIÁN (%),35.3,33.5,18.7,12.4
 2025/06,településtípus,más párt/pártnélk.,2590809,MEDIÁN (%),30.6,37.2,17.7,14.5
@@ -29,6 +32,9 @@ datum,kateg_tipus,partnev_kozos_aggr,total_by_party,pollster_type,község (2.26
 2026/02,településtípus,TISZA,3203471,MEDIÁN (%),22.6,32.4,22.2,22.7
 2026/02,településtípus,Fidesz,2343132,MEDIÁN (%),36.7,32.4,19.6,11.2
 2026/02,településtípus,más párt/pártnélk.,2089171,MEDIÁN (%),32.5,35.2,19.7,12.6
+2026/04,településtípus,TISZA,3619962,MEDIÁN (%),25.6,32.9,22.8,18.7
+2026/04,településtípus,Fidesz,2293704,MEDIÁN (%),34.5,33.1,18.6,13.7
+2026/04,településtípus,más párt/pártnélk.,1722108,MEDIÁN (%),31.5,33.8,19.3,15.3
 2025/06,településtípus,TISZA,2445363,21KK (ezer választó),570,810,550,510
 2025/06,településtípus,Fidesz,1902336,21KK (ezer választó),660,680,350,210
 2025/06,településtípus,pártnélk./bizonyt.,2493728,21KK (ezer választó),810,810,550,310

@@ -19,6 +19,10 @@ datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,más párt/pártnél
 2026/02,településtípus,egyéb város (2.53m),MEDIÁN (ezer választó),1040,760,730,NA,NA
 2026/02,településtípus,megyei jogú város (1.58m),MEDIÁN (ezer választó),710,460,410,NA,NA
 2026/02,településtípus,főváros (1.25m),MEDIÁN (ezer választó),730,260,260,NA,NA
+2026/04,településtípus,község (2.26m),MEDIÁN (ezer választó),930,790,540,NA,NA
+2026/04,településtípus,egyéb város (2.53m),MEDIÁN (ezer választó),1190,760,580,NA,NA
+2026/04,településtípus,megyei jogú város (1.58m),MEDIÁN (ezer választó),820,430,330,NA,NA
+2026/04,településtípus,főváros (1.25m),MEDIÁN (ezer választó),680,310,260,NA,NA
 2025/06,településtípus,község (2.26m),MEDIÁN (%),32,33,35,NA,NA
 2025/06,településtípus,egyéb város (2.53m),MEDIÁN (%),34,28,38,NA,NA
 2025/06,településtípus,megyei jogú város (1.58m),MEDIÁN (%),46,25,29,NA,NA
@@ -39,6 +43,10 @@ datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,más párt/pártnél
 2026/02,településtípus,egyéb város (2.53m),MEDIÁN (%),41,30,29,NA,NA
 2026/02,településtípus,megyei jogú város (1.58m),MEDIÁN (%),45,29,26,NA,NA
 2026/02,településtípus,főváros (1.25m),MEDIÁN (%),58,21,21,NA,NA
+2026/04,településtípus,község (2.26m),MEDIÁN (%),41,35,24,NA,NA
+2026/04,településtípus,egyéb város (2.53m),MEDIÁN (%),47,30,23,NA,NA
+2026/04,településtípus,megyei jogú város (1.58m),MEDIÁN (%),52,27,21,NA,NA
+2026/04,településtípus,főváros (1.25m),MEDIÁN (%),54,25,21,NA,NA
 2025/06,településtípus,község (2.26m),21KK (ezer választó),570,660,NA,810,NA
 2025/06,településtípus,egyéb város (2.53m),21KK (ezer választó),810,680,NA,810,NA
 2025/06,településtípus,megyei jogú város (1.58m),21KK (ezer választó),550,350,NA,550,NA

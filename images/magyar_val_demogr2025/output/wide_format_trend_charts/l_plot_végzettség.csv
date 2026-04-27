@@ -19,6 +19,10 @@ datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,más párt/pártnél
 2026/02,végzettség,szakmunkás (1.71m),MEDIÁN (ezer választó),500,650,560,NA,NA,NA
 2026/02,végzettség,érettségi (2.56m),MEDIÁN (ezer választó),1200,670,690,NA,NA,NA
 2026/02,végzettség,felsőfokú (1.9m),MEDIÁN (ezer választó),1200,270,440,NA,NA,NA
+2026/04,végzettség,≤8 általános (1.46m),MEDIÁN (ezer választó),420,720,320,NA,NA,NA
+2026/04,végzettség,szakmunkás (1.71m),MEDIÁN (ezer választó),600,670,440,NA,NA,NA
+2026/04,végzettség,érettségi (2.56m),MEDIÁN (ezer választó),1410,620,540,NA,NA,NA
+2026/04,végzettség,felsőfokú (1.9m),MEDIÁN (ezer választó),1140,380,380,NA,NA,NA
 2025/06,végzettség,≤8 általános (1.46m),MEDIÁN (%),17,48,35,NA,NA,NA
 2025/06,végzettség,szakmunkás (1.71m),MEDIÁN (%),30,31,39,NA,NA,NA
 2025/06,végzettség,érettségi (2.56m),MEDIÁN (%),47,20,33,NA,NA,NA
@@ -39,6 +43,10 @@ datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,más párt/pártnél
 2026/02,végzettség,szakmunkás (1.71m),MEDIÁN (%),29,38,33,NA,NA,NA
 2026/02,végzettség,érettségi (2.56m),MEDIÁN (%),47,26,27,NA,NA,NA
 2026/02,végzettség,felsőfokú (1.9m),MEDIÁN (%),63,14,23,NA,NA,NA
+2026/04,végzettség,≤8 általános (1.46m),MEDIÁN (%),29,49,22,NA,NA,NA
+2026/04,végzettség,szakmunkás (1.71m),MEDIÁN (%),35,39,26,NA,NA,NA
+2026/04,végzettség,érettségi (2.56m),MEDIÁN (%),55,24,21,NA,NA,NA
+2026/04,végzettség,felsőfokú (1.9m),MEDIÁN (%),60,20,20,NA,NA,NA
 2025/08,végzettség,≤8 általános (1.46m),21KK (ezer választó),220,580,NA,160,70,420
 2025/08,végzettség,szakmunkás (1.71m),21KK (ezer választó),480,500,NA,90,30,610
 2025/08,végzettség,érettségi (2.56m),21KK (ezer választó),1000,640,NA,100,130,690

@@ -73,7 +73,7 @@ l_part_data$`21_kut`$telep_tipus <- read_csv(
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # Median adatok betoltese 
 
-median_periods <- c("2025_06", "2025_08", "2025_11", "2026_01", "2026_02")
+median_periods <- c("2025_06", "2025_08", "2025_11", "2026_01", "2026_02", "2026_04")
 
 for (p in median_periods) {
   # container

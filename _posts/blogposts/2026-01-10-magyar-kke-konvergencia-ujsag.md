@@ -5,7 +5,6 @@ tags: hungary politics elections demographics data-visualisation magyar
 excerpt: Egy kudarc története
 secondary: blogposts
 mathjax: true
-hidden: true
 ---
 
 
@@ -86,6 +85,9 @@ document.addEventListener('DOMContentLoaded', function () {
 Ez az írás egy független, hosszú formátumú adatelemző és -vizualizációs projekt.
 Az ábrák jobb áttekintéséhez ajánlott monitoron vagy (nagyobb) tableten olvasni.
 Visszajelzést, vitát, együttműködési javaslatokat örömmel veszek.
+A cikk egy rövidített és átszerkesztett, részben átírt változata 
+<a href="https://telex.hu/komplex/2026/04/09/kanyarban-akart-elozni-az-ut-szelen-maradt-orban-magyarorszaga">megjelent a Telex-en</a>
+, a társszerző Csurgó Dénes volt.
 </div>
 
 <div style="background-color: #4a4a4a;
