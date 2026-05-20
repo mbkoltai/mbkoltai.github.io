@@ -73,32 +73,36 @@ l_part_data$`21_kut`$telep_tipus <- read_csv(
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # Median adatok betoltese 
 
-median_periods <- c("2025_06", "2025_08", "2025_11", "2026_01", "2026_02", "2026_04")
+input_path <- "input_files/kozvkut_adatok/"
 
-for (p in median_periods) {
-  # container
-  l_part_data[["median"]][[p]] <- list()
-  
-  # demographic splits
+all_files <- list.files(input_path, pattern = "^median_.*\\.csv$")
+
+demog_periods   <- sort(unique(gsub("^median_(.+)_nem_vegzettseg.*\\.csv$", "\\1", 
+                                     grep("nem_vegzettseg", all_files, value = TRUE))))
+
+fullpop_periods <- sort(unique(gsub("^median_(.+)_teljes_nepesseg\\.csv$", "\\1", 
+                                     grep("teljes_nepesseg", all_files, value = TRUE))))
+
+# --- demographic splits (only where file exists) ---
+for (p in demog_periods) {
   l_part_data[["median"]][[p]] <- load_median_demog(p)
   
-  # teljes népesség
-  l_part_data[["median"]][[p]]$telj_nepesseg_partok <- load_median_fullpop(p)
-  
-  # 2025_06-specific post-processing
   if (p == "2025_06") {
-    # rename KORCSOPORT -> ÉLETKOR if present
     names(l_part_data$median$`2025_06`)[
       names(l_part_data$median$`2025_06`) %in% "KORCSOPORT"
     ] <- "ÉLETKOR"
-    
-    # TELEPÜLÉSTÍPUS -> TELEPÜLÉS
-    l_part_data$median$`2025_06`$TELEPÜLÉS <- l_part_data$median$`2025_06`$TELEPÜLÉSTÍPUS
+    l_part_data$median$`2025_06`$TELEPÜLÉS    <- l_part_data$median$`2025_06`$TELEPÜLÉSTÍPUS
     l_part_data$median$`2025_06`$TELEPÜLÉSTÍPUS <- NULL
   }
 }
 
-rm(p,median_periods)
+# --- full population (superset of periods) ---
+for (p in fullpop_periods) {
+  if (is.null(l_part_data[["median"]][[p]])) l_part_data[["median"]][[p]] <- list()
+  l_part_data[["median"]][[p]]$telj_nepesseg_partok <- load_median_fullpop(p)
+}
+
+rm(p,fullpop_periods,demog_periods,input_path)
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
