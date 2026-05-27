@@ -654,7 +654,7 @@ A választások után több közvéleménykutatás is egyöntetűen azt jelezte
 hogy a Fidesz bázisa jelentős, kb. 600 ezres mértékben csökkent, 2,1-2,3 millióról kb. 1,5-1,6 millióra zsugorodva:
 
 <iframe src="https://flo.uri.sh/visualisation/27917966/embed?auto=1"
-  width="100%" height="600"
+  width="100%" height="800"
   frameborder="0" scrolling="no"
   style="border:none;">
 </iframe>
