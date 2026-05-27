@@ -661,7 +661,7 @@ hogy a Fidesz bázisa jelentős, kb. 600 ezres mértékben csökkent, 2,1-2,3 mi
 
 Ezzel egyidejűleg hasonló mértékben tovább bővült a Tisza bázisa, már 4,5 milliót is meghaladva.  
 
-Mivel demográfiai lebontások egyelőre nem jelentek meg, ezért nagy kérdés, hogy a Fidesz bázis "leszakadt" 1/3-a mely demográfiai csoportokból jött elsősorban: inkább a bázis többségét adó kistelepülési-idősebb-alacsony iskolázottságú csoportból, vagy a párt április elején még meglévő, de régóta fogyatkozó nagyvárosibb és érettségizett támogatói váltak le.
+Mivel demográfiai lebontások egyelőre nem jelentek meg, ezért nagy kérdés, hogy a Fidesz bázis "leszakadt" 1/3-a mely demográfiai csoportokból jött elsősorban: inkább a bázis többségét adó kistelepülési-idősebb-alacsony iskolázottságú csoportból, vagy a párt április elején még meglévő, de régóta kisebbséget alkotó és fogyatkozó számú iskolázottabb, kevésbé idős, inkább városi támogatói váltak le.
 Ha ez utobbiról van szó, ez méginkább idősebbé és kistelepülésekre beszorulttá tenné a bázis összetételét, ami azt vetítené előre, hogy a még megmaradt kb. másfél milliós tábor csak demográfiai okokból - ha a várható politikai trajektóriát nem is nézzük - kb. évi 60-70 ezerrel zsugorodhat, ami most már a megmaradt támogatói tömeg évi 5%-át jelentené.
 
 A politikai előrejelzés és a különböző politikai narratívák várható ellenállóképessége nem tárgya ennek az elemzésenek és túl is menne keretein. 
