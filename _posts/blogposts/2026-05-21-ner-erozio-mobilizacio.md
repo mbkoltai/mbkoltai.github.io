@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lépésről lépésre: a NER-váltó választási blokk kialakulása számokban"
+title: "A NER-váltó választói blokk kialakulása számokban"
 tags: hungary politics elections demographics data-visualisation magyar
 excerpt: Erózió, konszolidáció, mozgósítás
 secondary: blogposts
