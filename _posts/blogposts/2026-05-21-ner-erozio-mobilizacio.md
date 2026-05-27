@@ -711,7 +711,7 @@ Könnyen elképzelhető, sőt valószínű, hogy a kormányzás nehézségeivel 
 Ugyanakkor nehéz elképzelni, hogy a 2026-os "rendszerváltó" szavazóblokk valaha Orbánhoz fordulna, mint ahogy 2011-ben - az akkori kormánypárt kezdeti válságából - sem az egykori balliberális ellenzék profitált, amely soha nem tudott feltámadni, bár vegetálása még közel egy évtizedig tartott. 
 
 Így ha megindulna a Tisza-bázis apadása, az könnyen lehet, hogy inkább a 2024 utáni nagyon magas politikai aktivitás süllyedését jelentené: ebben az esetben pedig akár egy 2,2-2,5 milliós bázis is elég lehet arra, hogy a Tisza Párt akár több cikluson keresztül is kormányozzon. Ezt tovább valószínűsíti, hogy a Tisza bázisa földrajzilag meglehetősen kiegyensúlyozott és széles bázisú, az átlagnál iskolázottabb és fiatalabb, és minden valószínűség szerint nagyon motivált, hogy ne történjen visszafordulás egy NER-típusú autokratikus rendszer és az európai szövetségi rendszerből való kisodródás felé. 
-A jövő kiszámíthatatlan, és megjósolhatatlan, hogy hogyan fog kinézni a magyar politikai erőtér akár csak néhány év múlva - az azonban valószínű, hogy nem az utóbbi másfél évtized megismétlődése lesz.
+A jövő kiszámíthatatlan: megjósolhatatlan, hogy hogyan fog kinézni a magyar politikai erőtér akár csak néhány év múlva - az azonban valószínű, hogy nem az utóbbi másfél évtized megismétlődése vagy reinkarnációja lesz.
 
 
 **Hivatkozások**
