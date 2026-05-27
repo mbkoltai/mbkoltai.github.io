@@ -735,7 +735,7 @@ A volumenindexek (konstans ár, vásárlóerő-paritás nélkül) és a folyóá
 
 A Világbank illetve az OECD által publikált mutatók eleve elérhetők konstans árú idősorban, itt ezeket használtuk. 
 Az Eurostat nominális mérőszámait minden esetben az adott ország HICP fogyasztói árindexével defláltuk, majd egy fixált év árfolyamán váltottuk euróra. 
-Mivel csak a relatív változást ábrázoltuk, ezért az átváltási árfolyam nem változtat az eredményeken, az arányszámokból az átváltási árfolyam ez kiesik.
+Mivel csak a relatív változást ábrázoltuk, ezért az átváltási árfolyam nem változtat az eredményeken, az arányszámokból az átváltási árfolyam kiesik.
 Az arányszámok azt mutatják meg, hogy az adott mutató hányszorosára nőtt a választott bázisévtől (ami 2004 [néhány kivétellel, ld. az ábrát], 2010 és 2021) 2024-ig.
 Látható, hogy a korreláció igen erős (R^2 0.8 és 0.95 között) a volumenindexek és a folyóáras PPP/PPS mérőszámok között, bár van néhány ország ami messze esik az átlótól (ahol a két érték azonos). Különösen Romániánál a folyóáras PPP-ben megadott GDP számok növekedése [meghaladja](https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/hu-cee-convergence/output/compare_units/gdp_per_cap/gdp_per_cap_pct_change_from_baselines_CEE9.png) a konstans áras (volumenindex) mérőszámét, ami feltehetőleg azért van mert itt a belföldi teljes infláció jelentősen meghaladta a PPP kosárban lévő (nagyrészt _tradeable_) áruk inflációját. 
 Mivel a fenti elemzésben a konstans áras mutatókat használtuk, ez Románia konvergencia-teljesítményét inkább konzervatívan becsüli meg. 
