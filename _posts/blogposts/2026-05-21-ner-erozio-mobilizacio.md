@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-A NER választási vereségének nagyságrendjét és területi mintázatait már több színvonalas elemzés is feltérképezte [1-7]. Közös következtetésük: az eltolódás a teljes magyar település-hierarchiát átfogta - a Tisza nemcsak a közép- és kisvárosokban, de a községek jelentős részében is "letarolta a vidéket" [1,4,7], miközben minden szinten megtizedelődött a Fidesz bázisa.
+A NER választási vereségének nagyságrendjét és területi mintázatait már több színvonalas elemzés is feltérképezte [1-7]. Közös következtetésük: az eltolódás a teljes magyar település-hierarchiát átfogta - a Tisza nemcsak a nagy-, közép és kisvárosokban, de még a községek jelentős részében is "letarolta a vidéket" [1,4,7], miközben az ország gyakorlatilag egészáben és minden település-szinten megtizedelődött a Fidesz bázisa.
 
 Ez a cikk az előbbi elemzésekhez három aspektusban szeretne hozzátenni: ez az eltolódás időben _mikor_ ment végbe a 2022-2026 ciklusban, _mekkora_ volt abszolút számokban kifejezve, illetve mik voltak a fő _mozgások_ az egyes választói blokkok között. 
 Az elemzés alapja az utóbbi négy év három választási eredményeinek (OGY2022, EP2024, OGY2026), illetve a Medián közvéleménykutató teljes népességre vonatkozó, hosszú idősoros adatainak vizuális elemzése. 
