@@ -700,9 +700,9 @@ Ha ehhez hozzáadjuk, hogy a választások után a párt azonnal elvesztette tá
 </div>
 
 Alapvetően a következő periódusokat különböztethetjük meg, a fent elemzett időszak, tehát 2022 előtt:
-- 2009-2011: a NER létrejötte, egy 3,5 millió potenciális bázis (ami azonban csak 80%-ban vett részt a választásokon), 1,5 milliósra zsugorodott liberális/baloldali ellenzék, erősödő, de még egymillió alatti Jobbik
-- 2011-2012 közepe: kezdeti válság. A Fidesz-bázis összezuhan kb. kettő millióra, 2012-ben az "óellenzék" összesített támogatottságával összeér
-- 2013-2022: "emelkedő NER" - nagyjából folyamatosan emelkedő Fidesz támogatottság, széteső "óellenzék", egymilliós Jobbik. 2015-től 2022-ig emelkedő politikai aktivitás. 2018-ra kialakul a bő hárommilliós Fidesz-bázis, ami egészen 2022 második feléig kitart
+- 2009-2011: a NER létrejötte, 3,5 milliós tág Fidesz-bázis, amelyből  azonban csak 80%-ban vett részt a választásokon. 1,5 milliósra zsugorodott liberális/baloldali ellenzék, erősödő, de még egymillió alatti Jobbik
+- 2011-2012 közepe: kezdeti válság. A Fidesz-bázis összezuhan kb. kettő millióra, 2012-ben az "óellenzék" összesített támogatottsága egy pillanatra eléri a Fideszét
+- 2013-2022: "high NER" - 2018-ig folyamatosan emelkedő, majd stabil Fidesz támogatottság, széteső "óellenzék", egymilliós Jobbik. 2015-től 2022-ig emelkedő politikai aktivitás. 2018-ra kialakul a bő hárommilliós Fidesz-bázis, ami egészen 2022 második feléig kitart.
 
 Azaz: bár volt egy-két rövid időszak, amikor a Fidesz bázis úgy tűnt, hogy megroppan (2011-2012, 2014-2015), az ellenzék sosem tudott _egy blokkban_ tartósan kettő millió támogató felé menni 2024-ig, így az egykori kormánypárt hegemóniája stabil volt. Ez esett szét 2022-től: lassú erózióval, majd a választásokat követően hirtelen zuhanással. És most, 2026. májusában, a Fidesz-bázis mérete kb. akkora, mint az egykori "balliberális" ellenzéké, de öregebb és más demográfiai dimenziókban méginkább egyoldalú.
 
