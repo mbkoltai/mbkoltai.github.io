@@ -11,6 +11,26 @@ hidden: true
 
 
 <style>
+
+
+.btnExtLink {
+    display: inline-block;
+    background-color: #1a3e8c;  /* dark blue */
+    color: white;               /* normal text color */
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Calibri, Arial, sans-serif;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.btnExtLink:hover {
+    color: red;                 /* text turns red on hover */
+    background-color: #1a3e8c;  /* keep background dark blue */
+}
+
+
 .table-toggle {
   display: inline-block;   /* shrink container to fit content */
   border: 1.5px solid #000;
@@ -728,3 +748,10 @@ A jövő kiszámíthatatlan: megjósolhatatlan, hogy hogyan fog kinézni a magya
 [10] [Elite defection and opposition realignment in Hungary](https://www.tandfonline.com/doi/full/10.1080/21599165.2025.2468693)  
 [11] [Ábrákon és térképeken mutatjuk, mennyire volt hatékony Magyar Péter országjárása](https://telex.hu/valasztasi-foldrajz/2024/07/11/magyar-peter-orszagjaras-ep-2024-valasztasi-eredmeny-terkep-foldrajz)  
 [12] [Mozgó szavazók: Honnan jöttek, hova mentek?](https://median.hu/2026/04/08/mozgo-szavazok-honnan-jottek-hova-mentek/)
+
+
+<h2>Kód és adatok</h2>
+
+<div style="margin: 20px 0;">
+    <a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/2010-2026-Median-osszes" target="_blank" class="btnExtLink">GitHub</a>
+</div>
