@@ -113,13 +113,14 @@ A közvélemény-kutatások mellett az utóbbi négy év fontos köztes adatpont
 Általában véve az EP választások kevésbé használhatók a teljes választói csoportok méretének a megbecsülésére, mert annyira alacsony a részvétel. A 2024-es EP választás azonban kivétel volt, ugyanis a részvétel magas (60%) szintet ért el. Ezzel egyrészt validálta a teljes népességre vonatkozó KVK-okat (ld. később). Másrészt, mint idén áprilisban kiderült, az EP választáson "felvonult" Fidesz-bázis gyakorlatilag a teljes bázisnak felelt meg, a volt kormánypártnak további tartalékai már nem voltak. 
 Így a 2024-es EP választási eredmények megmutatják, hogy addigra mennyiben történt meg a Fidesz-bázis eróziója, illetve az (egykori) ellenzéki bázis kibővülése, település-szintekre is lebontva. 
 
-Az elemzésben mindvégig [a hazai listás szavazatokról lesz szó](https://voxpopuli.444.hu/2026/04/22/meg-a-valasztasi-eredmenyrol-is-kodosit-a-propaganda-avagy-mit-kezdjunk-a-levelszavazatokkal). 
-Egyrészt, mert a KVK adatok ezekre vonatkoznak, az erdélyi/vajdasági (és nyugati diaszpóra-beli) levélszavazatokra nem. 
+Az elemzésben mindvégig [a hazai listás szavazatokról lesz szó](https://voxpopuli.444.hu/2026/04/22/meg-a-valasztasi-eredmenyrol-is-kodosit-a-propaganda-avagy-mit-kezdjunk-a-levelszavazatokkal). A "hazai" szavazatok gyakran "belföldi" szavazatnak is szokták nevezni, de valójában a _magyar lakcímmel rendelkezők" szavazatait jelenti egész pontosan, tehát a külképviseleten szavazókat is magában foglalja - viszont a levélszavazatokat nem.
+Több okból is ez tűnik a helyes eljárásnak. 
+Egyrészt, mert a KVK adatok ezekre vonatkoznak, az erdélyi/vajdasági (és - kisebb mértékben - a nyugati diaszpóra-beli) levélszavazatokra nem. 
 Másrészt, mivel a mandátumokra az utóbbiaknak szinte semmi hatásuk nincsen (+1 Fidesz mandátum az OGY választásokon), így ez utóbbiak jórészt "holt" szavazatok, ráadásul eleve nem relevánsak a Magyarországon belüli politikai erőviszonyokra nézve. 
-Végül, az erdélyi/vajdasági levélszavazatok egy [súlyosan manipulált rendszerben](https://transtelex.ro/kozelet/2026/05/01/egyenlobb-erdelyert-mozgalom-jelentes-levelszavazas-kiss-tamas-toro-tibor-kiss-anna) születnek (illetve jórészt inkább: szedik őket össze), így a magyar választási rendszernek ez a része még formális-technikai értelemben sem nevezhető tisztának. 
-A hazai szavazatokon belül végig a listás szavazatokról fogok beszélni, mivel ebben az elemzésben az országos trendek az érdekesek, nem az attól való esetleges lokális eltérések. Nota bene, az egyéni eredmények egyébként szinte tökéletesen korreláltak a listásokkal (néhány kivételtől eltekintve), így a listás-egyéni megkülönböztetés eleve nem sok különséget jelent(ene).
+Végül, az erdélyi/vajdasági levélszavazatok egy [súlyosan manipulált rendszerben](https://transtelex.ro/kozelet/2026/05/01/egyenlobb-erdelyert-mozgalom-jelentes-levelszavazas-kiss-tamas-toro-tibor-kiss-anna) születnek (illetve, jórészt inkább: szedik őket össze - tehát még a "levélszavazat" kifejezés is félrevezető), így a magyar választási rendszernek ez a része még formális-technikai értelemben sem nevezhető tisztának. 
+Továbbá, a hazai szavazatokon belül végig a listás szavazatokról fogok beszélni, mivel ebben az elemzésben az országos trendekre fókuszálok elsősorban, nem az attól való lokális eltérésekre. _Nota bene_, az egyéni eredmények szinte tökéletesen korreláltak a listásokkal (néhány kivételtől eltekintve), így a listás-egyéni megkülönböztetés eleve nem sok különséget jelent(ene).
 
-Alapvető viszonyítási pontként érdemes összefoglalni a legutóbbi három választás eredményeit az összes választó arányában, illetve abszolút számokban kifejezve:
+Alapvető viszonyítási pontként érdemes összefoglalni a legutóbbi három választás (hazai listás) eredményeit az összes választó arányában, illetve abszolút számokban kifejezve:
 
 <div id="valasztas-wrap" style="font-family:sans-serif;max-width:900px;">
 
@@ -231,7 +232,7 @@ Alapvető viszonyítási pontként érdemes összefoglalni a legutóbbi három v
   </div>
 
   <p style="font-size:0.78rem;color:#555;margin-top:0.7rem;line-height:1.6;">
-    <strong>A 2022, 2024, 2026 választások listás eredményei.</strong><br>
+    <strong>A 2022, 2024, 2026 választások (hazai) listás eredményei.</strong><br>
     Forrás: NVI
     <a href="https://vtr.valasztas.hu/ogy2022/orszagos-listak?tab=parties" style="color:#2a3a7a;">2022</a> ·
     <a href="https://vtr.valasztas.hu/ep2024" style="color:#2a3a7a;">2024</a> ·
@@ -259,7 +260,7 @@ function valTab(id) {
 
 A NER-váltó választói blokk összeállása három lépésben valósult meg a 2022-es választásokat követően. Haladjunk időrendben.
 
-**2022-2023: erózió**
+**2022-2024: Fidesz-erózió**
 
 A 2022-2026 ciklusra visszanézve leggyakrabban a pártválasztók közötti trendeket szokás bemutatni - amelyek 2020 után így néztek ki, a Medián méréseit használva (amelyeket mindhárom választás visszaigazolt):
 
@@ -308,8 +309,8 @@ Ez alapján azt gondolhatnánk az események sorrendje a következő volt:
 - a Tisza térnyerése kb. megfelelt a régi ellenzék térvesztésének, elsősorban onnan táplálkozott, majd a választások előtti néhány hónapban bővült még tovább a korábban pártnélküliekből
 
 Ez az értelmezés azonban részben téves lenne. 
-Ennek oka, hogy ha csak a "pártválasztó" kategóriát nézzük, akkor összekeveredik pl. az hogy egy párt szavazóinak száma stabil, vagy hogy valójában zsugorodik, de egy általános de-mobilizáció mellett, így a pártválasztókon _belül_ stabilnak tűnik. 
-Vagy megfordítva: egy párt támogatottsága süllyedhet azért mert valóban támogatókat veszt, de azért is, mert más pártoké nő, és így az összetétel-hatás miatt süllyed. 
+Ennek oka, hogy ha csak a "pártválasztó" kategóriát nézzük, akkor összekeveredik az, hogy a párt szavazóinak száma stabil vagy hogy egy általános de-mobilizáció mellett valójában zsugorodik - így a pártválasztókon _belül_ stabilnak tűnik. 
+Vagy megfordítva: egy párt támogatottsága süllyedhet azért, mert valóban támogatókat veszt, de azért is, mert más pártoké nő, és így az összetétel-hatás miatt süllyed. 
 Pontosan ez utóbbi két dolog történt az előző cikluban.
 
 Erről tisztább képet kaphatunk, ha a _teljes népességben_ vett trendeket nézzük:
@@ -366,22 +367,24 @@ A 2022-es választáson az összes választó kb. 36%-a szavazott a Fideszre (2,
 Ez még _azelőtt_ játszódott le, hogy a Tisza Párt egyáltalán megjelent volna. 
 Ez a lassú, de összességében nagyon jelentős erózió ugyanakkor a pártválasztókra számított százalékokban kevésbé jelenik meg ebben az időszakban. Miért? Mert a pártnélküliek csoportja ugyanebben az időszakban szintén meredeken nőtt: a 2022-es választások környékén még csak 20% körül volt, 2023 végére kb. 35%-ra nőtt az arányuk. 
 A teljes népességben mért párt-szimpatizáns csoportok majdnem mindig nagyobbak, mint a ténylegesen szavazók száma. 
-Ökölszabályként alkalmazható, hogy 70-80% körüli részvétel mellett ennek a "potenciális szimpatizáns" körnek  kb. 80-90%-a megy el szavazni: a 2023 végére 2,4 millió körüli "tág" Fidesz bázis előrejelezte, hogy mennyi ennyi szavazója lehet a Fidesznek élesben, bár ezt akkor még nem lehetett biztosan tudni. 
-A 2022-2023 során lemorzsolódó Fidesz-szavazók tehát ekkor elsősorban passzívvá váltak, nem pedig más pártokhoz mentek át. Eközben azonban az ellenzéki pártok támogatottsága is csökkent, innen a pártnélküliek csoportjának kb. 15%-os, azaz egymillió körüli felduzzadása 2022-2023-ban.
+Ökölszabályként alkalmazható, hogy 70-80% körüli részvétel mellett ennek a "potenciális szimpatizáns" körnek  kb. 80-90%-a megy el szavazni: a 2023 végére 2,4 millió körüli "tág" Fidesz bázis előrejelezte, hogy ennyi szavazója lehet a Fidesznek élesben, bár ezt akkor még nem lehetett biztosan tudni. 
+A 2022-2023 során lemorzsolódó Fidesz-szavazók tehát ekkor - úgy tűnik - elsősorban passzívvá váltak, nem pedig más pártokhoz mentek át. Eközben azonban az ellenzéki pártok támogatottsága is csökkent, innen a pártnélküliek csoportjának kb. 15%-os, azaz egymillió fő körüli bővülése 2022-2023-ban.
 
 **2024: ellenzék-váltás és konszolidáció**
 
 Ebben a helyzetben jelent meg 2024 tavaszán a Tisza Párt. 
-Ekkor két tendencia megindulása figyelhető meg. Egyrészt a régi ellenzéki pártok összesített bázisa meredeken zuhanni kezdett. Az összes választó kb. egynegyedéről (kb. 2 millió szavazó) 2024 végére 5-10% közé, tehát kb. félmilliósra zsugorodott a régi ellenzéki pártok összesített bázisa. 
-A Tisza Párt 2024-2025-ös támogatóinak jó része visszaemlékezésen alapuló felmérések szerint is [8,9] a 2022-es ellenzéki blokkból jött. Ugyanakkor már ebben az időszakban százezrek kezdtek el áramlani a pártnélküliek sorából a Tisza Párt felé, ahogyan azt a fenti ábrából is láthatjuk: a pártnélküliek száma a 2023 végi 2,5-2,7 millióról alig több, mint 1,5 millióra apadt 2024 végére. 
-Tehát alapvetően két dolog történt 2024 során: egyrészt az újonnan megjelent Tisza Párthot áramlott át a szinte teljes '22-es ellenzéki blokk, illetve megindult egy mobilizáció amiből szintén kizárólag a Tisza profitált. 
+Innetől két tendencia figyelhető meg. 
+Egyrészt a régi ellenzéki pártok összesített bázisa meredeken zuhanni kezdett. Az összes választó kb. egynegyedéről (kb. 2 millió szavazó) 2024 végére 5-10% közé, tehát kb. félmilliósra zsugorodott a régi ellenzéki pártok összesített bázisa. 
+A Tisza Párt 2024-2025-ös támogatóinak jó része visszaemlékezésen alapuló felmérések szerint is [8,9] a 2022-es ellenzéki blokkból jött. 
+Ugyanakkor már ebben az időszakban százezrek kezdtek el áramlani a pártnélküliek sorából a Tisza Párt felé, ahogy azt a fenti ábra trendjei is jelzik: a pártnélküliek száma a 2023 végi 2,5-2,7 millióról alig több, mint 1,5 millióra apadt 2024 végére. 
+Tehát alapvetően két dolog történt 2024 során: egyrészt az újonnan megjelent Tisza Párthot áramlott át a szinte teljes '22-es ellenzéki blokk, illetve megindult egy mobilizáció, amiből döntő részben a Tisza profitált. 
 A 21KK visszaemlékezéseken alapuló, 2025 közepén készült felmérése [8] szerint az akkori Tisza bázisban kb. 250 ezer korábbi Fidesz szavazó volt. Az alapján, hogy 2023-ban először a pártnélküliek tábora nőtt meg, ők minden valószínűség szerint azok voltak, akik először passzívvá váltak, majd 2024-25-ben a Tiszához mentek át.
-Ezekről a trendekről egy nagyon érdekes "zuhanás közbeni" pillanatképet ad a 2024-es EP választás.
+Ezekről a trendekről ad egy "zuhanás közbeni" pillanatképet ad a 2024-es EP választás.
 
 **EP2024: 2026 előképe a Fidesz, de nem az ellenzék számára**
 
 A 2024-es EP választás (EP2024) összehasonlítása a 2023-24-es teljes népességre vonatkozó mérésekkel és a 2026-os választásokkal validálja ezeket a méréseket és lényegében bizonyítja azt, hogy a Fidesz-tábor eróziója ekkorra lényegében végbement és az ekkor látott erőviszonyok a _Fideszre nézve_ gyakorlatilag egészen 2026 áprilisáig konzerválódtak. 
-Az EP2024-en az összes választó 26%-a szavazott a Fideszre (2 millió szavazó), míg 2026 áprilisában 28,6% (2,18 millió szavazó): szinte ugyanannyi, miközben a teljes részvétel húsz százalékponttal - 60-ról 80%-ra - nőtt. 
+Az EP2024-en az összes választó 26%-a szavazott a Fideszre (2 millió szavazó), míg 2026 áprilisában 28,6% (2,18 millió szavazó): szinte ugyanannyi, miközben a teljes részvétel húsz százalékponttal - kerekítve 60%-ról 80%-ra - nőtt. 
 Tehát az EP2024 utáni trendek elsősorban a Tisza példátlan mértékű további erősödéséről szóltak, egy stagnáló, de _nem_ tovább zsugorodó Fidesz és egy gyakorlatilag nullára zsugorodó "óellenzék" mellett.
 
 A településtípus szerinti lebontások tisztán megmutatják mindezt: 
