@@ -642,8 +642,8 @@ A Medián becslései és a demográfiai korrekció alapján a Tisza 3,5 millió 
 
 Azaz a Tisza-bázis majdnem fele 2022-ben (és '24-ben) nem szavazó választó volt. 
 A [21 Kutatóközpont](https://telex.hu/belfold/2026/04/18/21-kutatokozpont-valasztas-elotti-utolso-napok-varakozasok-gazdasag) választások előtti hasonló "honnan-hová" mérése nagyon hasonló számokat közölt. 
-Egy jelentősebb eltérés, hogy a 2022-ben nem szavazott → Tisza/Fidesz mozgás ott jóval kisebb volt, emiatt 10-15%-kal kisebbre becsülve mindkét bázis abszolút méretét, minimálisan kisebbre, mint ami a választáson ténylegesen elért szavazatszám. 
-Ebben az értelemben a Medián mérése reálisabbnak tűnik a teljes "potenciális" tábor méretére nézve, de összességében a Medián és a 21KK szavazatvándorlási becslése közötti különbség nem nagy, és valószínűleg jórészt módszertani (lekérdezési) különbségekből adódik. 
+Egy jelentősebb eltérés, hogy a 2022-ben nem szavazott → Tisza/Fidesz mozgás ott jóval kisebb volt, emiatt a 21KK 10-20%-kal kisebbre [becsülte mindkét bázis abszolút méretét a teljes népességben](https://telex.hu/belfold/2026/04/01/21-kutatokozpont-partpreferencia-tisza-fidesz-56-37) - ezáltal egyben kisebbre, mint ami a választáson ténylegesen elért szavazatszám volt. 
+Ebben az értelemben a Medián mérése reálisabbnak tűnik a teljes "potenciális" tábor méretére nézve, de összességében a két intézet szavazatvándorlási becslése közötti különbség nem nagy, és a teljes népességben mért adatok különbségei valószínűleg jórészt módszertani (lekérdezési) különbségekből adódik. 
 A fenti szavazatvándorlási becslések szintén közel vannak [komplexebb modellezési megközelítések](https://exanumber.free.nf/szavazat/) becsléseivel.
 
 A választási eredmények település-kategória szerinti bontásában fent láthattuk, hogy a Tiszához áramló korábban passzív vagy új szavazó százezrek milyen jelentős növekményt jelentettek az összes település-szinten a kormányváltó blokk számára 2024-hez képest: a 2026-os Tisza eredmény a 2024-es _kombinált_ (Tisza + óellenzék) ellenzéki bázishoz képest minden település-szinten minimum 10, de van ahol 15 százalékpontot emelkedett az _összes_ választó arányában. 
