@@ -458,10 +458,11 @@ Az utolsó mérésnél a pártnélküliek már nem is voltak elkülönítve a t�
 
 Ezt a teljes népesség számok alapján számított hozzávetőleges rekonstrukciót összehasonlíthatjuk a Medián a választások előtt publikált felmérésével, ahol a 2022-es - emélkezetből felidézett - szavazat szerint is lebontották a pártpreferenciákat:
 
+<!--- 
 <div style="text-align: center;">
 <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
 <a href="https://median.hu/wp-content/uploads/2026/04/ossz2-1024x710.png">
-<img src="https://median.hu/wp-content/uploads/2026/04/ossz2-1024x710.png" alt="Medián – mozgó szavazók" style="width: 700px;"/>
+<img src="https://median.hu/wp-content/uploads/2026/04/ossz2-1024x710.png" alt="Medián – mozgó szavazók" style="width: 950px;"/>
 </a>
 <figcaption style="font-size: 20px; margin-top: 6px; width: 1100px;">
 <strong>Honnan jöttek a 2026-os választói blokkok?</strong><br>
@@ -469,12 +470,97 @@ Forrás: <a href="https://median.hu/2026/04/08/mozgo-szavazok-honnan-jottek-hova
 </figcaption>
 </figure>
 </div>
+--->
 
-Ahhoz, hogy ezeket a százalékokat abszolút számokká kovertáljuk tekintetbe kell vennünk egyrészt a halálozásokat, másrészt a belépő új szavazókat.
+<div class="table-toggle">
+  <div class="controls">
+    <button data-table="sv-median26" class="active">Medián, 2026/04</button>
+    <button data-table="sv-21kk25jun-ep">21KK, 2025/06 – EP2024</button>
+    <button data-table="sv-21kk25jun-ogy">21KK, 2025/06 – OGY2022</button>
+    <button data-table="sv-21kk25aug-ep">21KK, 2025/08 – EP2024</button>
+    <button data-table="sv-21kk26apr-ogy">21KK, 2026/04 – OGY2022</button>
+  </div>
+
+  <div id="sv-median26" class="table-view active">
+    <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
+      <a href="https://median.hu/wp-content/uploads/2026/04/ossz2-1024x710.png">
+        <img src="https://median.hu/wp-content/uploads/2026/04/ossz2-1024x710.png" alt="Medián – mozgó szavazók" style="width: 750px;"/>
+      </a>
+      <figcaption style="font-size: 16px; margin-top: 6px; width: 750px;">
+        <strong>Szavazatvándorlás – 2026. április</strong><br>
+        Kiindulási pont: OGY2022 + EP2024 &nbsp;·&nbsp;
+        Forrás: <a href="https://median.hu/2026/04/08/mozgo-szavazok-honnan-jottek-hova-mentek/">Medián, 2026. április 8.</a>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div id="sv-21kk25jun-ep" class="table-view">
+    <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
+      <div style="position: relative; width: 600px; padding-bottom: 58%; height: 0; overflow: visible;">
+        <iframe src="https://flo.uri.sh/visualisation/24049603/embed?auto=1"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+          scrolling="no"></iframe>
+      </div>
+      <figcaption style="font-size: 16px; margin-top: 6px; width: 950px;">
+        <strong>Szavazatvándorlás – 2025. június</strong><br>
+        Kiindulási pont: EP2024 &nbsp;·&nbsp;
+        Forrás: <a href="https://21kutatokozpont.hu/szavazatvandorlas.html">21 Kutatóközpont, 2025. június</a>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div id="sv-21kk25jun-ogy" class="table-view">
+    <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
+      <div style="position: relative; width: 600px; padding-bottom: 56%; height: 0; overflow: visible;">
+        <iframe src="https://flo.uri.sh/visualisation/24049939/embed?auto=1"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+          scrolling="no"></iframe>
+      </div>
+      <figcaption style="font-size: 16px; margin-top: 6px; width: 950px;">
+        <strong>Szavazatvándorlás – 2025. június</strong><br>
+        Kiindulási pont: OGY2022 &nbsp;·&nbsp;
+        Forrás: <a href="https://21kutatokozpont.hu/szavazatvandorlas.html">21 Kutatóközpont, 2025. június</a>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div id="sv-21kk25aug-ep" class="table-view">
+    <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
+      <div style="position: relative; width: 950px; padding-bottom: 58%; height: 0; overflow: visible;">
+        <iframe src="https://flo.uri.sh/visualisation/24957470/embed?auto=1"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+          scrolling="no"></iframe>
+      </div>
+      <figcaption style="font-size: 16px; margin-top: 6px; width: 950px;">
+        <strong>Szavazatvándorlás – 2025. augusztus</strong><br>
+        Kiindulási pont: EP2024 &nbsp;·&nbsp;
+        Forrás: <a href="https://21kutatokozpont.hu/parhuzamos_valosagok.html">21 Kutatóközpont, 2025. augusztus</a>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div id="sv-21kk26apr-ogy" class="table-view">
+    <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
+      <div style="position: relative; width: 950px; padding-bottom: 38%; height: 0; overflow: visible;">
+        <iframe src="https://flo.uri.sh/visualisation/28538679/embed?auto=1"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+          scrolling="no"></iframe>
+      </div>
+      <figcaption style="font-size: 16px; margin-top: 6px; width: 950px;">
+        <strong>Szavazatvándorlás – 2026. április</strong><br>
+        Kiindulási pont: OGY2022 &nbsp;·&nbsp;
+        Forrás: <a href="https://21kutatokozpont.hu/parhuzamos_valosagok.html">21 Kutatóközpont, 2026. április</a>
+      </figcaption>
+    </figure>
+  </div>
+
+</div>
+
+Ahhoz, hogy ezeket a százalékokat abszolút számokká konvertáljuk tekintetbe kell vennünk egyrészt a halálozásokat, másrészt a belépő új szavazókat.
 A [2022-os](https://hvg.hu/360/20211229_Median_Az_emberek_ketharmada_Orban_maradasara_szamit) és a [2026-os választások](https://median.hu/2026/04/08/mozgo-szavazok-honnan-jottek-hova-mentek/) előtti hónapokban is jelentős mértékű Fidesz-vezetés volt a 65 feletti korcsoportban, kb. a következő arányban: 50% Fidesz, 30% óellenzék/Tisza, 20% más/pártnélküli. 
 A 18-29 éves korcsoportban, ahová a 18 évesek belépnek, ezzel szemben már 2022 elején kb. fordított, 50-20-30 ellenzék-Fidesz-más/pártnélküli arányok voltak, ami 2026-ra 75-10-15 Tisza-Fidesz-más aránnyá vált. 
 Ezeknek a számoknak a középértékét használva kiszámolhatjuk a 2022-es választó blokkok demográfiai változását, a következő közelítésekkel. 
-2022 óta kb. 510 ezer [halálozás](https://www.ksh.hu/stadat_files/nep/hu/nep0065.html) történt, amely nagyrészt (75-90%-ban) a 65 feletti korcsoportban realizálódott. Mivel rendelkezünk a 65+ korcsoport pártpreferencia becslésével 2022-ből és 2026-ból, és ez rendkívül stabil volt, ezért - némileg egyszerűsítve - számolhatunk úgy, hogy a halálozások eloszlása azonos a 65+ csoport pártpreferencia eloszlásával, tehát pl. ha ebben a csoportban a volt kormánypárt 50% körül volt 2022-ben és 2026-ban is, akkor a halálozásokban is ugyanez az arány. Ez valószínűleg a Fideszre nézve optimista becslés, mivel a szavazótábor - már 2022-ben is, de 2026-ra különösen - erősen eltolódott az alacsonyabb státuszú, kistelepülési választók felé, akiknek a halálozási rátája [szinte biztosan magasabb](https://www.tandfonline.com/doi/full/10.1080/00324728.2021.1877332#d1e347) az országos átlagnál. 
+2022 áprilisa óta kb. 510 ezer [halálozás](https://www.ksh.hu/stadat_files/nep/hu/nep0065.html) történt, amely nagyrészt (75-90%-ban) a 65 feletti korcsoportban realizálódott. Mivel rendelkezünk a 65+ korcsoport pártpreferencia becslésével 2022-ből és 2026-ból, és ez rendkívül stabil volt, ezért - némileg egyszerűsítve - számolhatunk úgy, hogy a halálozások eloszlása azonos a 65+ csoport pártpreferencia eloszlásával, tehát pl. ha ebben a csoportban a volt kormánypárt 50% körül volt 2022-ben és 2026-ban is, akkor a halálozásokban is ugyanez az arány. Ez valószínűleg a Fideszre nézve optimista becslés, mivel a szavazótábor - már 2022-ben is, de 2026-ra különösen - erősen eltolódott az alacsonyabb státuszú, kistelepülési választók felé, akiknek a halálozási rátája [szinte biztosan magasabb](https://www.tandfonline.com/doi/full/10.1080/00324728.2021.1877332) az országos átlagnál. 
 Egyidejűleg kb. [400 ezer új választó lépett be](https://www.ksh.hu/interaktiv/korfak/orszag.html) 2022 óta a 18-29 éves csoportba, itt pedig némi egyszerűsítéssel úgy számíthatunk, hogy a 18 évesek pártpreferenciáit megegyeznek a 18-29 éves csoport egészének preferenciáival. 
 
 A fenti hozzávetőleges becslések alapján a 2022-es választói blokkok mérete a halálozások és az új belépők miatt kb. így változott 2026-ra:  
