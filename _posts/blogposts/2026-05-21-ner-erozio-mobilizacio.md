@@ -540,13 +540,13 @@ A Fidesz 2,8-3 milliós 2022-es bázisából összesen kb. 900 ezren morzsolódt
 - kb. háromszáz-négyszáz ezren pártnélkülivé váltak (vagy - jóval kisebb részben - a MH-hoz vándoroltak)
 
 Emellett kb. négyszázezer 2022-ben nem szavazó választó is csatlakozott a Fidesz-bázishoz. 
-A 2022-es bázisnak összességében kb. 2/3-a maradt meg, a 2026-ban _még élő_ 2022-es bázisnak pedig háromnegyede, miközben a 2026-os bázis kb. egynegyede 2022-höz képest új volt. 
+A 2022-es bázisnak kb. 2/3-a volt ott a 2026-os Fidesz-bázisban, a 2026-ban _még élő_ 2022-es bázisnak pedig háromnegyede, miközben a 2026-os bázis kb. egynegyede 2022-höz képest új volt. 
 
-A Medián becslései és a demográfiai korrekció alapján alapján a Tisza 3,5 millió körüli választás előtti bázisából:
-- kb. 45%-a (1,6 millió ember) a 2022-es ellenzéki összefogásból jött
-- kb. 40%-a (1,5 millió ember) 2022-ben nem szavazott, ebből kb. 250-300 ezer lehetett új szavazó (400 ezer új belépő 60-70%-a)
-- kb. 300 ezer volt Fidesz-szavazó
-- kb. 250 ezer más pártok (döntően valószínűleg MKKP) 2022-es szavazói
+A Medián becslései és a demográfiai korrekció alapján a Tisza 3,5 millió körüli választás előtti bázisából:
+- kb. 45% (1,6 millió ember) a 2022-es ellenzéki összefogásból jött
+- kb. 40% (1,5 millió ember) 2022-ben nem szavazott, ebből kb. 250-300 ezer lehetett új szavazó (400 ezer új belépő 60-70%-a)
+- kb. 8-10% (300 ezer) volt Fidesz-szavazó
+- kb. 6-8% (250 ezer) más pártok (döntően valószínűleg MKKP) 2022-es szavazói
 
 Azaz a Tisza-bázis majdnem fele 2022-ben (és '24-ben) nem szavazó választó volt. 
 A [21 Kutatóközpont](https://telex.hu/belfold/2026/04/18/21-kutatokozpont-valasztas-elotti-utolso-napok-varakozasok-gazdasag) választások előtti hasonló "honnan-hová" mérése nagyon hasonló számokat közölt. 
