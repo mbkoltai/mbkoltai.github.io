@@ -431,7 +431,7 @@ Nyilván ez nem jelenti azt, hogy a 2022-es és 2024-es csoport teljesen azonos 
 A település-kategóriák szerinti eredményeket nézve is erősödhet ez a feltételezésünk, mivel a legtöbb település-kategóriában mindössze 1-2 százalékpontos különbség van a teljes ellenzék 2022-es és 2024-es szavazataránya között (teljes népesség). 
 Ugyanakkor az ötezer főnél kisebb településeknél már ekkor volt egy 3-5%-os növekmény, ami összefügghetett a Tisza Párt sikeresen mobilizáló [11] első országjárásával. 
 Összefoglalva: az EP választás egy pillanatképet adott egyrészt a Fidesz-bázis előző két évben megtörtént súlyos eróziójáról, és a már 2/3-ban végbement "ellenzékváltásról", amely során a régi ellenzék bázisa az új kihívó mögé sorakozott föl. 
-Ugyanakkor ekkor még egy döntetlen közeli állapotról beszélhetünk ahol a kétmilliós Fidesz-táborral szemben egy alig nagyobb (2,2 milliós) és még nem egészen egységes ellenzéki blokk állt, ráadásul a Mi Hazánk kb. 300 ezres tábora is intakt maradt. Ez még [nem lett volna elég](https://mbklt.substack.com/p/erosion-of-the-fidesz-vote-share) a kormányváltáshoz sem, de a 2/3-hoz biztosan nem.
+Ugyanakkor ekkor még egy döntetlen közeli állapotról beszélhetünk ahol a kétmilliós Fidesz-táborral szemben egy alig nagyobb (2,2 milliós) és még nem egészen egységes ellenzéki blokk állt, ráadásul a Mi Hazánk (MH) kb. 300 ezres tábora is intakt maradt. Ez még [nem lett volna elég](https://mbklt.substack.com/p/erosion-of-the-fidesz-vote-share) a kormányváltáshoz sem, de a 2/3-hoz biztosan nem.
 Hogyan lett ebből egy 3,34 milliós Tisza tábor, azaz kb. 1,2 millióval nagyobb választói blokk, mint a volt kormánypárté?
 
 **2025-26: befagyott Fidesz-bázis, fokozódó mobilizáció**
@@ -751,6 +751,8 @@ A jövő kiszámíthatatlan: megjósolhatatlan, hogy hogyan fog kinézni a magya
 
 
 <h2>Kód és adatok</h2>
+
+[Az összes Medián-felmérés 2009 elejétől](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/2010-2026-Median-osszes/inputs/median_polls.csv)
 
 <div style="margin: 20px 0;">
     <a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/2010-2026-Median-osszes" target="_blank" class="btnExtLink">GitHub</a>
