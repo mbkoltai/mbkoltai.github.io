@@ -471,14 +471,14 @@ Forrás: <a href="https://median.hu/2026/04/08/mozgo-szavazok-honnan-jottek-hova
 </div>
 
 Ahhoz, hogy ezeket a százalékokat abszolút számokká kovertáljuk tekintetbe kell vennünk egyrészt a halálozásokat, másrészt a belépő új szavazókat.
-A [2022-os](https://hvg.hu/360/20211229_Median_Az_emberek_ketharmada_Orban_maradasara_szamit) és a [2026-os választások](https://median.hu/2026/04/08/mozgo-szavazok-honnan-jottek-hova-mentek/) előtti hónapokban is jelentős mértékű Fidesz vezetés volt a 65+ csoportban, kb. a következő arányban: 50% Fidesz, 30% óellenzék/Tisza, 20% más/pártnélküli. 
-Az újonnan belépő csoportokban ezzel szemben már 2022 elején kb. fordított, 50-20-30 ellenzék-Fidesz-más/pártnélküli arányok voltak, ami 2026-ra 75-10-15 Tisza-Fidesz-más aránnyá vált. 
-Ezeknek a számoknak a középértékét használva kiszámolhatjuk a 2022-es választó blokkok demográfiai változását, tekintve hogy az azóta történt kb. 510 ezer [halálozás](https://www.ksh.hu/stadat_files/nep/hu/nep0065.html) szinte kizárólag a 65+ csoportban volt, miközben kb. [400 ezer új választó lépett be](https://www.ksh.hu/interaktiv/korfak/orszag.html) a 18-29 csoportba. 
-A 2022-es választói blokkok (csak demográfiai szempontból) a halálozások miatt kb. így változtak 2026-ra:  
+A [2022-os](https://hvg.hu/360/20211229_Median_Az_emberek_ketharmada_Orban_maradasara_szamit) és a [2026-os választások](https://median.hu/2026/04/08/mozgo-szavazok-honnan-jottek-hova-mentek/) előtti hónapokban is jelentős mértékű Fidesz-vezetés volt a 65 feletti korcsoportban, kb. a következő arányban: 50% Fidesz, 30% óellenzék/Tisza, 20% más/pártnélküli. 
+A 18-29 éves korcsoportban, ahová a 18 évesek belépnek, ezzel szemben már 2022 elején kb. fordított, 50-20-30 ellenzék-Fidesz-más/pártnélküli arányok voltak, ami 2026-ra 75-10-15 Tisza-Fidesz-más aránnyá vált. 
+Ezeknek a számoknak a középértékét használva kiszámolhatjuk a 2022-es választó blokkok demográfiai változását, tekintve hogy az azóta történt kb. 510 ezer [halálozás](https://www.ksh.hu/stadat_files/nep/hu/nep0065.html) szinte kizárólag a 65 feletti korcsoportban realizálódott, miközben kb. [400 ezer új választó lépett be](https://www.ksh.hu/interaktiv/korfak/orszag.html) a 18-29 éves csoportba (itt van egy további egyszerűsítés: úgy vesszük, hogy a 18 évesek számai megegyeznek a 18-29 éves csoport egészéivel). 
+A 2022-es választói blokkok mérete a halálozások és az új belépők miatt kb. így változott 2026-ra:  
 Fidesz: 2,81m <span style="color:red"> - 0.5\*0,51m</span> → 2,55m  
 Ellenzéki összefogás: 1,94m <span style="color:red"> - 0.3\*0,51m</span> → 1.8m  
 Más párt: 0.62m <span style="color:red"> - 0.1\*0,51m</span> → 0.57m  
-Nem szavazott: 2,37m <span style="color:red"> - 0.1\*0.51</span> <span style="color:green">+0.4m</span> → 2,72m
+Nem szavazott: 2,37m <span style="color:red"> - 0.1\*0.51</span> <span style="color:green">+0.4m</span> → 2,72m (az új belépőket mind ide kell számolni, mivel 2022-ben még nem szavaztak, és itt most a 2022-es szavazat alapján csoportosítunk)
 
 A fenti demográfiailag korrigált blokkok összege 7,64m, ami csak 20 ezerrel tér el a 2026-ban ténylegesen a névjegyzéken lévőktől (7,62m), ami kisebb, mint 0,5%-nyi hiba, így elfogadhatónak mondható. 
 Alkalmazva ezekre a blokkokra a Medián 2026/04 választás előtti "honnan hová" számait, kiszámíthatjuk, hogy a 2026-os blokkoknak mi volt az összetétele "eredet" szerint:  
