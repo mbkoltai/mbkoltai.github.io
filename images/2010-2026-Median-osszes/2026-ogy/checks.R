@@ -35,7 +35,7 @@ plot_df <- europion_2026_05 |>
   # Mi Hazánk az "Egyéb"-be olvasztva, mert a Medián nem közli külön -> így összevethető
   mutate(part = if_else(part == "Mi Hazánk", "Egyéb", part)) |>
   group_by(datum, dimenzio, csoport, part,forras) |>
-  summarise(szazalek = sum(szazalek), .groups = "drop") |>
+  summarise(fo=sum(fo),szazalek = sum(szazalek), .groups = "drop") |>
   # eltérő életkori sávok közös címkére (lásd csillag a feliratban)
   mutate(csoport = case_when(
     csoport %in% c("50-59", "50-64") ~ "50-64*",

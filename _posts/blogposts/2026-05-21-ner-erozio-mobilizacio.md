@@ -812,18 +812,18 @@ Ugyanakkor azt is nehéz elképzelni, hogy az utóbbira - ti. az alapvető vált
 </div>
 
 Alapvetően a következő periódusokat különböztethetjük meg, a fent elemzett időszak, tehát 2022 előtt:
-- 2009-2011: a NER létrejötte, 3,5 milliós tág Fidesz-bázis, amelyből  azonban csak 80%-ban vett részt a választásokon. 1,5 milliósra zsugorodott liberális/baloldali ellenzék, erősödő, de még egymillió alatti Jobbik
-- 2011-2012 közepe: kezdeti válság. A Fidesz-bázis összezuhan kb. kettő millióra, 2012-ben az "óellenzék" összesített támogatottsága egy pillanatra eléri a Fideszét
+- 2009-2011: a NER létrejötte, 3,5 milliós tág Fidesz-bázis, amelynek csak kb. 80%-a vett részt a 2010-es választáson. 1,5 milliósra zsugorodott liberális/baloldali ellenzék, erősödő, de még egymillió alatti Jobbik
+- 2011-2012 közepe: kezdeti válság. A Fidesz-bázis összezuhan kb. kettő millióra, 2012-ben az "óellenzék" összesített támogatottsága egy tövid időre eléri a Fideszét
 - 2013-2022: A "high NER" időszak. 2018-ig folyamatosan emelkedő, majd stabil Fidesz támogatottság, széteső "óellenzék", egymilliós Jobbik. 2015-től 2022-ig emelkedő politikai aktivitás. 2018-ra kialakul a bő hárommilliós Fidesz-bázis, ami egészen 2022 második feléig kitart.
 
-Azaz: bár volt egy-két rövid időszak, amikor a Fidesz bázis úgy tűnt, hogy megroppan (2011-2012, 2014-2015), 2024 előtt az ellenzék sosem tudott _egy blokkban_ tartósan kettő millió támogató felé menni, így az egykori kormánypárt hegemóniája stabil volt, stabilan 2,5-3 milliónyi szimpatizánsra építve. 
-Ez esett szét 2022-től: először lassú erózióval, majd a választásokat követően hirtelen zuhanással. És most, 2026. májusában, a Fidesz-bázis mérete kb. akkora, mint az egykori "balliberális" ellenzéké, de talán méginkább elöregedett, más demográfiai dimenziókban pedig méginkább egyoldalú.
+Azaz: bár volt egy-két rövid időszak, amikor a Fidesz bázis úgy tűnt, hogy megroppan (2011-2012, 2014-2015), 2024 előtt az ellenzék sosem tudott _egy blokkban_ tartósan kettő millió támogató felé menni, így az egykori kormánypárt hegemóniája stabil maradt, egy kb. 2,5-3 milliós szimpatizáns-bázisra építve. 
+Ez esett szét 2022-től: először lassú erózióval, majd a választásokat követően hirtelen zuhanással. 2026. májusában pedig a Fidesz-bázis mérete kb. akkora, mint az egykori "balliberális" ellenzéké volt 2010-ben - de valószínűleg méginkább elöregedett, más demográfiai dimenziókban (iskolázottság, falvak/kistelepülések relatív súlya) pedig még egyoldalúbb.
 
 A másik oldalon a Tisza-bázis felfutása nagyon gyors folyamat volt, és a választások előtti kb. 3,5 milliós bázisból kb. másfél millió szavazó a 2022-ben nem szavazók illetve az új szavazók közül jött. 
 Könnyen elképzelhető, sőt valószínű, hogy a kormányzás nehézségeivel szembesülve a jelenleg már 4,5 milliósra mért bázis apadni fog, vissza a választás előtti 3-3,5 milliós sávba, vagy akár a 2025 eleji 2,5 millió körüli szintre. 
 Ugyanakkor nehéz elképzelni, hogy a 2026-os "rendszerváltó" szavazóblokk valaha Orbánhoz fordulna, mint ahogy 2011-ben - az akkori kormánypárt kezdeti válságából - sem az egykori balliberális ellenzék profitált, amely soha nem tudott feltámadni, bár teljes eltűnése még közel egy évtizedig tartott. 
 
-Így, ha megindulna a Tisza-bázis apadása, az valószínűbb, hogy inkább a 2024 utáni nagyon magas politikai aktivitás süllyedését okozná: ebben az esetben pedig akár egy 2,2-2,5 milliós bázis is elég lehet arra, hogy a Tisza Párt akár több cikluson keresztül is kormányozzon. 
+Ha megindul a Tisza-bázis apadása, az valószínűbb, hogy inkább a 2024 utáni nagyon magas politikai aktivitás süllyedését okozná: ebben az esetben pedig akár egy 2,2-2,5 milliós bázis is elég lehet arra, hogy a Tisza Párt akár több cikluson keresztül is kormányozzon. 
 Ezt az is valószínűsíti, hogy a Tisza bázisa földrajzilag meglehetősen kiegyensúlyozott és széles bázisú, miközben az átlagnál iskolázottabb és fiatalabb, és minden valószínűség szerint nagyon motivált, hogy ne történjen visszafordulás egy NER-típusú autokratikus-klientelista rendszer, illetve az európai szövetségi rendszerből való kisodródás felé. 
 A jövő kiszámíthatatlan: nem lehet megjósolni, hogy hogyan fog kinézni a magyar politikai erőtér akár csak néhány év múlva - az azonban valószínű, hogy nem az utóbbi másfél-két évtized megismétlődése vagy reinkarnációja lesz.
 
