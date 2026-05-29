@@ -757,7 +757,7 @@ A Fidesz választások előtti bázisának kb. 35%-a lakott községekben, 40%-a
 
 A választások után több közvéleménykutatás is egyöntetűen azt jelezte 
 ([Medián](https://hvg.hu/360/20260506_median-felmeres-aprilis-vege-partpreferenciak-orban-viktor-felelossegrevonas-birosag-bizakodas), [21KK](https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/), [Publicus](https://nepszava.hu/3322698_tisza-part-fidesz-osszeomlas-felmeres-publicus-intezet-parlamenti-valasztas-2026)), 
-hogy a Fidesz bázisa jelentős, kb. 600 ezres mértékben csökkent, 2,1-2,3 millióról kb. 1,5-1,6 millióra zsugorodva:
+hogy a Fidesz bázisa jelentős, kb. 600 ezres mértékben csökkent, 2,1-2,3 millióról 1,5-1,6 millióra zsugorodva:
 
 <iframe src="https://flo.uri.sh/visualisation/27917966/embed?auto=1"
   width="100%" height="800"
@@ -767,8 +767,8 @@ hogy a Fidesz bázisa jelentős, kb. 600 ezres mértékben csökkent, 2,1-2,3 mi
 
 Ezzel egyidejűleg hasonló mértékben tovább bővült a Tisza bázisa, már 4,5 milliót is meghaladva.  
 
-Egyelőre egyetlen [demográfiai lebontás](https://europion.hu/partpreferencia_202605/) lebontás jelent meg (az Europion cégtől, amelynek kutatásait nem tudjuk összevetni a választási eredményekkel, mivel nem közöltek ilyet), hogy a választás utáni hirtelen esése a Fidesz-bázisnak elsősorban mely csoportok leválásából származott. 
-Érdemes lesz megvárni a Medián és a 21KK első választás utáni demográfiai lebontásait és még korai lenne a konklúzióhoz ugrani - de ez alapján az első kutatás alapján [eddig úgy tűnik](https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/refs/heads/source/images/2010-2026-Median-osszes/2026-ogy/plots/KVK/median202604_europion202605_teljesnepesseg.png), hogy a választások utáni kb. egyharmadnyi bázis-vesztés _nem_ a volt kormánypárt még meglévő nagyvárosi, iskolázottabb, 50 alatti szavazóiból jön (akik már régóta csak egy kb. 20-30%-os kisebbséget alkottak), hanem ellenkezőleg, elsősorban a bázis 65 feletti, falusi-kisvárosi és érettségivel nem rendelkező többségéből. Ilyen értelemben a megmaradt másfél milliós bázis valószínűsíthetűen az ideológiai keménymagot jelenti inkább, legalábbis jelentős részben.
+Egyelőre egyetlen [demográfiai lebontás](https://europion.hu/partpreferencia_202605/) lebontás jelent meg (az Europion cégtől, amelynek kutatásait nem tudjuk összevetni a választási eredményekkel, mivel nem közöltek ilyet) arról, hogy a választás utáni hirtelen esése a Fidesz-bázisnak elsősorban mely csoportok leválásából származott. 
+Érdemes lesz megvárni a Medián és a 21KK első választás utáni demográfiai lebontásait és még korai lenne a konklúzióhoz ugrani - de az első ilyen kutatás alapján [eddig úgy tűnik](https://raw.githubusercontent.com/mbkoltai/mbkoltai.github.io/refs/heads/source/images/2010-2026-Median-osszes/2026-ogy/plots/KVK/median202604_europion202605_teljesnepesseg.png), hogy a választások utáni kb. egyharmadnyi bázis-vesztés _nem_ a volt kormánypárt még meglévő nagyvárosi, iskolázottabb, 50 alatti szavazóiból jön (akik már régóta csak egy kb. 20-30%-os kisebbséget alkottak), hanem ellenkezőleg, elsősorban a bázis 65 feletti, falusi-kisvárosi és érettségivel nem rendelkező többségéből. Ilyen értelemben a megmaradt másfél milliós bázis valószínűsíthetően az ideológiai keménymagot jelenti inkább, legalábbis jelentős részben.
 
 <!--- 
 ezért nagy kérdés, hogy a Fidesz bázis "leszakadt" 1/3-a mely demográfiai csoportokból jött elsősorban: inkább a bázis többségét adó kistelepülési-idősebb-alacsony iskolázottságú csoportból, vagy a párt április elején még meglévő, de régóta kisebbséget alkotó és fogyatkozó számú iskolázottabb, kevésbé idős, inkább városi támogatói váltak le.
@@ -776,9 +776,9 @@ Ha ez utobbiról van szó, ez méginkább idősebbé és kistelepülésekre besz
 --->
 
 A politikai előrejelzés és a különböző politikai narratívák várható ellenállóképessége nem tárgya ennek az elemzésenek és túl is menne keretein. 
-Azt megállapíthatjuk, hogy a Fidesz-bázis eróziója már 2022 óta tart, és 2024 után minden erőfeszítés ellenére sem sikerült megállítani a folyamatot: bár néhány százezer 2022-ben nem szavazó választót sikerült bevonni a "totális mozgósítás" kontextusában, de ez nem tudta kompenzálni a veszteségeket a Tisza-párt illetve a politikai passzivitás irányában, az elöregedés miatti demográfiai veszteségen pedig végképp nem változtat. 
+Azt megállapíthatjuk, hogy a Fidesz-bázis eróziója már 2022 óta tart, és 2024 után minden erőfeszítés ellenére sem sikerült megállítani a folyamatot: bár néhány százezer 2022-ben nem szavazó választót sikerült bevonni a "totális mozgósítás" kontextusában, ez nem tudta kompenzálni a veszteségeket a Tisza-párt illetve a politikai passzivitás irányában, az elöregedés miatti demográfiai veszteségen pedig nem is változtathatott. 
 Ha ehhez hozzáadjuk, hogy a választások után a párt azonnal elvesztette támogatóinak közel egyharmadát, nehéz elképzelni, hogy egy ilyen hosszútávú leszállóágban lévő politikai erő - amelynek vezetői és támogatói is nagyrészt 60 év felettiek, és a megkérdőjelezhetetlen vezető visszatérését [az összes választó kb. 2/3-a](https://nepszava.hu/3323491_orban-viktor-fidesz-visszateres-ketharmad-haromnegyed-felmeres-publicus-intezet) nemkívánatosnak és irreálisnak tartja - radikális profil-váltás nélkül meg tudná fordítani ezt a folyamatot. 
-Ugyanakkor azt is nehéz elképzelni, hogy az utóbbira, ti. az alapvető változtatásra ez a politikai erő képes lenne, bár vezetésváltás esetén nem lehet kizárni. Ezen a ponton talán érdemes felidézni a Fidesz-bázis alakulását egészen 2010-től nézve:
+Ugyanakkor azt is nehéz elképzelni, hogy az utóbbira - ti. az alapvető változtatásra - ez a politikai erő képes lenne, bár vezetésváltás esetén nem lehet kizárni. Ezen a ponton talán érdemes felidézni a Fidesz-bázis alakulását egészen 2010-től nézve:
 
 <div class="table-toggle">
   <div class="controls">
@@ -816,13 +816,15 @@ Alapvetően a következő periódusokat különböztethetjük meg, a fent elemze
 - 2011-2012 közepe: kezdeti válság. A Fidesz-bázis összezuhan kb. kettő millióra, 2012-ben az "óellenzék" összesített támogatottsága egy pillanatra eléri a Fideszét
 - 2013-2022: A "high NER" időszak. 2018-ig folyamatosan emelkedő, majd stabil Fidesz támogatottság, széteső "óellenzék", egymilliós Jobbik. 2015-től 2022-ig emelkedő politikai aktivitás. 2018-ra kialakul a bő hárommilliós Fidesz-bázis, ami egészen 2022 második feléig kitart.
 
-Azaz: bár volt egy-két rövid időszak, amikor a Fidesz bázis úgy tűnt, hogy megroppan (2011-2012, 2014-2015), az ellenzék sosem tudott _egy blokkban_ tartósan kettő millió támogató felé menni 2024-ig, így az egykori kormánypárt hegemóniája stabil volt. Ez esett szét 2022-től: lassú erózióval, majd a választásokat követően hirtelen zuhanással. És most, 2026. májusában, a Fidesz-bázis mérete kb. akkora, mint az egykori "balliberális" ellenzéké, de talán méginkább elöregedett, más demográfiai dimenziókban pedig méginkább egyoldalú.
+Azaz: bár volt egy-két rövid időszak, amikor a Fidesz bázis úgy tűnt, hogy megroppan (2011-2012, 2014-2015), 2024 előtt az ellenzék sosem tudott _egy blokkban_ tartósan kettő millió támogató felé menni, így az egykori kormánypárt hegemóniája stabil volt, stabilan 2,5-3 milliónyi szimpatizánsra építve. 
+Ez esett szét 2022-től: először lassú erózióval, majd a választásokat követően hirtelen zuhanással. És most, 2026. májusában, a Fidesz-bázis mérete kb. akkora, mint az egykori "balliberális" ellenzéké, de talán méginkább elöregedett, más demográfiai dimenziókban pedig méginkább egyoldalú.
 
-A másik oldalon a Tisza-bázis felfutása nagyon gyors folyamat volt, és a választások előtti kb. 3,5 milliós bázisból kb. másfél millió szavazó a 2022-ben nem szavazók közül jött, illetve új szavazó volt. 
+A másik oldalon a Tisza-bázis felfutása nagyon gyors folyamat volt, és a választások előtti kb. 3,5 milliós bázisból kb. másfél millió szavazó a 2022-ben nem szavazók illetve az új szavazók közül jött. 
 Könnyen elképzelhető, sőt valószínű, hogy a kormányzás nehézségeivel szembesülve a jelenleg már 4,5 milliósra mért bázis apadni fog, vissza a választás előtti 3-3,5 milliós sávba, vagy akár a 2025 eleji 2,5 millió körüli szintre. 
 Ugyanakkor nehéz elképzelni, hogy a 2026-os "rendszerváltó" szavazóblokk valaha Orbánhoz fordulna, mint ahogy 2011-ben - az akkori kormánypárt kezdeti válságából - sem az egykori balliberális ellenzék profitált, amely soha nem tudott feltámadni, bár teljes eltűnése még közel egy évtizedig tartott. 
 
-Így, ha megindulna a Tisza-bázis apadása, az valószínűbb, hogy inkább a 2024 utáni nagyon magas politikai aktivitás süllyedését okozná: ebben az esetben pedig akár egy 2,2-2,5 milliós bázis is elég lehet arra, hogy a Tisza Párt akár több cikluson keresztül is kormányozzon. Ezt tovább valószínűsíti, hogy a Tisza bázisa földrajzilag meglehetősen kiegyensúlyozott és széles bázisú, miközben az átlagnál iskolázottabb és fiatalabb, és minden valószínűség szerint nagyon motivált, hogy ne történjen visszafordulás egy NER-típusú autokratikus-klientelista rendszer, illetve az európai szövetségi rendszerből való kisodródás felé. 
+Így, ha megindulna a Tisza-bázis apadása, az valószínűbb, hogy inkább a 2024 utáni nagyon magas politikai aktivitás süllyedését okozná: ebben az esetben pedig akár egy 2,2-2,5 milliós bázis is elég lehet arra, hogy a Tisza Párt akár több cikluson keresztül is kormányozzon. 
+Ezt az is valószínűsíti, hogy a Tisza bázisa földrajzilag meglehetősen kiegyensúlyozott és széles bázisú, miközben az átlagnál iskolázottabb és fiatalabb, és minden valószínűség szerint nagyon motivált, hogy ne történjen visszafordulás egy NER-típusú autokratikus-klientelista rendszer, illetve az európai szövetségi rendszerből való kisodródás felé. 
 A jövő kiszámíthatatlan: nem lehet megjósolni, hogy hogyan fog kinézni a magyar politikai erőtér akár csak néhány év múlva - az azonban valószínű, hogy nem az utóbbi másfél-két évtized megismétlődése vagy reinkarnációja lesz.
 
 
