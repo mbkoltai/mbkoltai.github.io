@@ -823,7 +823,7 @@ A másik oldalon a Tisza-bázis felfutása nagyon gyors folyamat volt, és a vá
 Könnyen elképzelhető, sőt valószínű, hogy a kormányzás nehézségeivel szembesülve a jelenleg már 4,5 milliósra mért bázis apadni fog, vissza a választás előtti 3-3,5 milliós sávba, vagy akár a 2025 eleji 2,5 millió körüli szintre. 
 Ugyanakkor nehéz elképzelni, hogy a 2026-os "rendszerváltó" szavazóblokk valaha Orbánhoz fordulna, mint ahogy 2011-ben - az akkori kormánypárt kezdeti válságából - sem az egykori balliberális ellenzék profitált, amely soha nem tudott feltámadni, bár teljes eltűnése még közel egy évtizedig tartott. 
 
-Ha megindul a Tisza-bázis apadása, az valószínűbb, hogy inkább a 2024 utáni nagyon magas politikai aktivitás süllyedését okozná: ebben az esetben pedig akár egy 2,2-2,5 milliós bázis is elég lehet arra, hogy a Tisza Párt akár több cikluson keresztül is kormányozzon. 
+Ha megindul a Tisza-bázis apadása, az valószínűbb, hogy inkább a 2024 utáni nagyon magas politikai aktivitás süllyedését okozná: ha pedig a részvételi kedv visszamenne 65-70%-ra akkor egy 2,5 millió körüli bázis is elég lehet arra, hogy a Tisza Párt akár több cikluson keresztül is kormányozzon. 
 Ezt az is valószínűsíti, hogy a Tisza bázisa földrajzilag meglehetősen kiegyensúlyozott és széles bázisú, miközben az átlagnál iskolázottabb és fiatalabb, és minden valószínűség szerint nagyon motivált, hogy ne történjen visszafordulás egy NER-típusú autokratikus-klientelista rendszer, illetve az európai szövetségi rendszerből való kisodródás felé. 
 A jövő kiszámíthatatlan: nem lehet megjósolni, hogy hogyan fog kinézni a magyar politikai erőtér akár csak néhány év múlva - az azonban valószínű, hogy nem az utóbbi másfél-két évtized megismétlődése vagy reinkarnációja lesz.
 
