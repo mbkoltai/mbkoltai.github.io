@@ -767,7 +767,10 @@ hogy a Fidesz bázisa jelentős, kb. 600 ezres mértékben csökkent, 2,1-2,3 mi
 
 Ezzel egyidejűleg hasonló mértékben tovább bővült a Tisza bázisa, már 4,5 milliót is meghaladva.  
 
-Mivel demográfiai lebontások egyelőre nem jelentek meg, ezért nagy kérdés, hogy a Fidesz bázis "leszakadt" 1/3-a mely demográfiai csoportokból jött elsősorban: inkább a bázis többségét adó kistelepülési-idősebb-alacsony iskolázottságú csoportból, vagy a párt április elején még meglévő, de régóta kisebbséget alkotó és fogyatkozó számú iskolázottabb, kevésbé idős, inkább városi támogatói váltak le.
+Egyelőre egyetlen [demográfiai lebontás](https://europion.hu/partpreferencia_202605/) lebontás jelent meg (az Europion cégtől, amelynek kutatásait nem tudjuk összevetni a választási eredményekkel, mivel nem közöltek ilyet), hogy a választás utáni hirtelen esése a Fidesz-bázisnak elsősorban mely csoportok leválásából származott. 
+Még korai lenne a konklúzióhoz ugrani, de [ez alapján az egy kutatás alapján eddig úgy tűnik](), hogy ez az eddig zuhanás _nem_ a volt kormánypárt még meglévő nagyvárosi, iskolázottabb, 50 alatti szavazóiból jön, hanem ellenkezőleg, elsősorban a bázis 65 feletti, falusi-kisvárosi és érettségivel nem rendelkező többségéből.
+
+ezért nagy kérdés, hogy a Fidesz bázis "leszakadt" 1/3-a mely demográfiai csoportokból jött elsősorban: inkább a bázis többségét adó kistelepülési-idősebb-alacsony iskolázottságú csoportból, vagy a párt április elején még meglévő, de régóta kisebbséget alkotó és fogyatkozó számú iskolázottabb, kevésbé idős, inkább városi támogatói váltak le.
 Ha ez utobbiról van szó, ez méginkább idősebbé és kistelepülésekre beszorulttá tenné a párt bázisát. Ha pedig a 65 év feletti szavazói jó részét megtartotta az egykori kormánypárt ez azt is jelentené, hogy a még megmaradt kb. másfél milliós tábor csak demográfiai okokból továbbra is kb. évi 50-70 ezerrel zsugorodhat, ami most már viszont a _megmaradt_ támogatói tömeg évi kb. 5%-át jelentené.
 
 A politikai előrejelzés és a különböző politikai narratívák várható ellenállóképessége nem tárgya ennek az elemzésenek és túl is menne keretein. 
