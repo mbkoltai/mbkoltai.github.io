@@ -900,3 +900,142 @@ local({
 
   } # end for loop
 })
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# medián/závecz/21kk összehasonlítás
+
+local({
+  save_flag <- T
+  
+  key_to_hu <- c(
+  "Tisza"   ="Tisza",
+  "Fidesz"  ="Fidesz",
+  "MiHazank"="Mi Hazánk",
+  "DK"      ="DK",
+  "DK-MSZP-PM"="DK",  # 2024 EP combined list → DK facet
+  "MKKP"    ="MKKP"
+)
+
+elections_raw <- read_csv("inputs/val_eredmenyek.csv") %>%
+  filter(ev %in% c(2024,2026)) %>%
+  filter(part %in% names(key_to_hu)) %>%        # keep only parties in polling data
+  mutate(
+    party   =key_to_hu[part],              # remap to Hungarian label
+    result_pct=lista_szavazat / jogosult * 100,
+    date    =as.Date(case_when(
+      ev == 2024 ~ "2024-06-09",
+      ev == 2026 ~ "2026-04-06"
+    ))
+  )
+
+# ── Election vlines ───────────────────────────────────────────────────────────
+election_dates <- tibble(
+  date =as.Date(c("2024-06-09","2026-04-06")),
+  label=c("EP2024","OGY2026") )
+
+# ── Polling data ──────────────────────────────────────────────────────────────
+df <- read_csv("inputs/median_zavecz_21kk_osszehas/polling_combined_long.csv") %>%
+  mutate(date=as.Date(date))
+
+#   library(ggh4x)
+
+party_colour_map <- c(
+  "Tisza"    =party_cols[["Tisza"]],
+  "Fidesz"   =party_cols[["Fidesz"]],
+  "Pártnélküli"=party_cols[["nincs_partja"]],
+  "Mi Hazánk"=party_cols[["MiHazank"]],
+  "DK"       =party_cols[["DK"]],
+  "Egyéb párt" =party_cols[["egyeb"]],
+  "MKKP"     =party_cols[["MKKP"]]
+)
+
+df_plot <- df %>%
+  mutate(party=factor(party,levels=names(party_colour_map))) %>%
+  filter(!grepl("Egy",party)) # |MKKP
+
+elections_plot <- elections_raw %>%
+  mutate(party=factor(party,levels=names(party_colour_map))) %>%
+  filter(!grepl("Egy",party)) # |MKKP
+
+# per-facet y scales: positions 1-3 (Tisza,Fidesz,Pártnélküli) fixed ~0-60
+# positions 4-5 (Mi Hazánk,DK) free/lower
+y_scales <- list(
+  scale_y_continuous(limits=c(0,60)), # Tisza
+  scale_y_continuous(limits=c(0,60)), # Fidesz
+  scale_y_continuous(limits=c(0,60)), # Pártnélküli
+  scale_y_continuous(limits=c(0,10)), # Mi Hazánk
+  scale_y_continuous(limits=c(0,10)),  # DK
+  scale_y_continuous(limits=c(0,10))   # MKKP
+)
+
+# ── Date labels with linebreak ────────────────────────────────────────────
+  date_labeller <- function(x) format(x, "%Y-\n%m")
+
+  # ── Base plot (no loess) ──────────────────────────────────────────────────
+  p_base <- ggplot(df_plot, aes(x = date, y = value, colour = party)) +
+    facet_wrap(~ party, ncol = 3, scales = "free_y") +
+    geom_line(aes(group = pollster), linewidth = 1/2, alpha = 0.6, linetype = "dashed") +
+    geom_point(aes(shape = pollster), size = 3, alpha = 0.5) +
+    geom_point(data = elections_plot,
+               aes(x = date, y = result_pct, fill = party),
+               shape = 23, size = 4, colour = "black", stroke = 0.5,
+               inherit.aes = FALSE, alpha = 2/3) +
+    geom_text(data = elections_plot,
+              aes(x = date, y = result_pct,
+                  label = paste0(format(round(result_pct, 1), nsmall = 1), "%"),
+                  hjust = ifelse(ev == 2024, -0.15, 1.15),
+                  vjust = ifelse(ev == 2024, 1.5, -0.8)),
+              size = 5, inherit.aes = FALSE) +
+    geom_vline(data = election_dates,
+               aes(xintercept = date),
+               linetype = "dashed", colour = "grey40", linewidth = 0.6) +
+    geom_text(data = election_dates,
+              aes(x = date, label = label,
+                  hjust = ifelse(label == "EP2024", -0.08, 1.08)),
+              y = Inf, vjust = 1.4, size = 5, inherit.aes = FALSE) +
+    facetted_pos_scales(y = y_scales) +
+    scale_colour_manual(values = party_colour_map, guide = "none") +
+    scale_fill_manual(values = party_colour_map, guide = "none") +
+    scale_shape_manual(values = c("21KK" = 16, "Medián" = 17, "Závecz" = 15)) +
+    scale_x_date(date_labels = "%Y-\n%m", date_breaks = "3 months") +
+    labs(
+      title   = "Pártok támogatottsága a teljes népességben (Medián/21KK/Závecz)",
+      x       = NULL,
+      y       = "Támogatottság (% összes választásra jogosult)",
+      shape   = "Közvélemény-kutató",
+      caption = "Választási eredmény (◆) az összes választásra jogosult arányában"
+    ) +
+    theme_bw() +
+    standard_theme +
+    theme(
+      plot.caption  = element_text(size = 15),
+      plot.subtitle = element_text(size = 15),
+      legend.title  = element_text(size = 19),
+      legend.position = "top",
+      axis.text.x   = element_text(size = 12, hjust = 0.5)  # centred for multiline
+    )
+
+  # ── Two versions ─────────────────────────────────────────────────────────
+  plots <- list(
+    no_loess = p_base,
+    loess    = p_base + geom_smooth(method = "loess", se = FALSE,
+                                    linewidth = 2, span = 1, alpha = 0.1)
+  )
+
+  if (save_flag) {
+    for (nm in names(plots)) {
+      ggsave(
+        filename = paste0("plots/kvk/median_zav_21kk_comparison_", nm, ".png"),
+        plot     = plots[[nm]],
+        width    = 40, height = 22, units = "cm" )
+    }
+  }
+  
+})
+
+

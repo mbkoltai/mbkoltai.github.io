@@ -309,8 +309,8 @@ Ez alapján azt gondolhatnánk az események sorrendje a következő volt:
 - a Tisza térnyerése kb. megfelelt a régi ellenzék térvesztésének, elsősorban onnan táplálkozott, majd a választások előtti néhány hónapban bővült még tovább a korábban pártnélküliekből
 
 Ez az értelmezés azonban részben téves lenne. 
-Ennek oka, hogy ha csak a "pártválasztó" kategóriát nézzük, akkor összekeveredik az, hogy a párt szavazóinak száma stabil vagy hogy egy általános de-mobilizáció mellett valójában zsugorodik - így a pártválasztókon _belül_ stabilnak tűnik. 
-Vagy megfordítva: egy párt támogatottsága süllyedhet azért, mert valóban támogatókat veszt, de azért is, mert más pártoké nő, és így az összetétel-hatás miatt süllyed. 
+Ennek oka, hogy ha csak a "pártválasztó" kategóriát nézzük, akkor nem tudjuk megkülönböztetni azt, hogy egy párt szavazóinak száma stabil vagy hogy egy általános de-mobilizáció mellett valójában zsugorodik - így a pártválasztókon _belül_ csak stabilnak tűnik. 
+Megfordítva: egy párt támogatottsága süllyedhet azért, mert valóban támogatókat veszt, de azért is, mert más pártoké nő, és így az összetétel-hatás miatt süllyed. 
 Pontosan ez utóbbi két dolog történt az előző cikluban.
 
 Erről tisztább képet kaphatunk, ha a _teljes népességben_ vett trendeket nézzük:
@@ -363,28 +363,28 @@ Erről tisztább képet kaphatunk, ha a _teljes népességben_ vett trendeket n�
 </figcaption>
 </div>
 
-A 2022-es választáson az összes választó kb. 36%-a szavazott a Fideszre (2,8 millió szavazó), míg a teljes népességben mért potenciális tábor kb. 40%, azaz 3 millió volt. Ez a bázis 2022 vége felé nagyot zuhant, majd 2023 végére kb. 30%-on, azaz 2,3-2,4 millió körül stabilizálódott. Tehát a 2022 nyara és 2023 ősze közötti időszakban a volt kormánypárt elvesztett 600-800 ezer támogatót, az összes támogatójának kb. egynegyedét. 
+A fenti ábrák csak a Medián "teljes népesség" számait mutatják - ugyanakkor az utóbbi pár évben ezek [szinte megegyeztek]({{site.baseurl}}/images/2010-2026-Median-osszes/plots/kvk/median_zav_21kk_comparison_no_loess.png) a másik kettő választásokon jól szerepelt KVK (a Závecz és a 21KK) számaival.  
+A 2022-es választáson az összes választó kb. 36%-a szavazott a Fideszre (2,8 millió szavazó), míg a teljes népességben mért potenciális tábor kb. 40%, azaz 3 millió volt. Ez a bázis 2022 vége felé nagyot zuhant, majd 2023 végére kb. 30%-on, azaz 2,3-2,4 millió körül stabilizálódott. Tehát a - Medián mérései alapján - 2022 nyara és 2023 ősze között a volt kormánypárt elvesztett 600-800 ezer támogatót, az összes támogatójának kb. egynegyedét. 
 Ez még _azelőtt_ játszódott le, hogy a Tisza Párt egyáltalán megjelent volna. 
-Ez a lassú, de összességében nagyon jelentős erózió ugyanakkor a pártválasztókra számított százalékokban kevésbé jelenik meg ebben az időszakban. Miért? Mert a pártnélküliek csoportja ugyanebben az időszakban szintén meredeken nőtt: a 2022-es választások környékén még csak 20% körül volt, 2023 végére kb. 35%-ra nőtt az arányuk. 
-A teljes népességben mért párt-szimpatizáns csoportok majdnem mindig nagyobbak, mint a ténylegesen szavazók száma. 
-Ökölszabályként alkalmazható, hogy 70-80% körüli részvétel mellett ennek a "potenciális szimpatizáns" körnek  kb. 80-90%-a megy el szavazni: a 2023 végére 2,4 millió körüli "tág" Fidesz bázis előrejelezte, hogy ennyi szavazója lehet a Fidesznek élesben, bár ezt akkor még nem lehetett biztosan tudni. 
-A 2022-2023 során lemorzsolódó Fidesz-szavazók tehát ekkor - úgy tűnik - elsősorban passzívvá váltak, nem pedig más pártokhoz mentek át. Eközben azonban az ellenzéki pártok támogatottsága is csökkent, innen a pártnélküliek csoportjának kb. 15%-os, azaz egymillió fő körüli bővülése 2022-2023-ban.
+Ez a lassú, de jelentős mértékű erózió ugyanakkor a pártválasztókra számított százalékokban kevésbé jelenik meg ebben az időszakban. Miért? Mert a pártnélküliek csoportja ugyanebben az időszakban szintén meredeken nőtt: a 2022-es választások környékén még csak 20% körül volt, 2023 végére kb. 35%-ra nőtt az arányuk. 
+A teljes népességben mért párt-szimpatizáns csoportok mindig nagyobbak, mint a végül ténylegesen szavazók száma - ökölszabályként alkalmazható, hogy 70-80% körüli részvétel mellett ennek a "potenciális szimpatizáns" körnek kb. 80-90%-a megy el szavazni: a 2023 végére 2,4 millió körüli "tág" Fidesz bázis előrejelezte, hogy maximum 2,2 millió körüli szavazója lehet a Fidesznek élesben, bár ezt akkor még nem lehetett biztosan tudni. 
+A 2022-2023 során lemorzsolódó Fidesz-szavazók tehát ekkor - úgy tűnik - elsősorban passzívvá váltak, nem pedig más pártokhoz mentek át. Eközben azonban az ellenzéki pártok támogatottsága sem nőtt érdemben: ehelyett a pártnélküliek csoportjának kb. 15%-os, azaz egymillió fő körüli bővülése volt megfigyelhető 2022-2023-ban.
 
 **2024: ellenzék-váltás és konszolidáció**
 
 Ebben a helyzetben jelent meg 2024 tavaszán a Tisza Párt. 
 Innetől két tendencia figyelhető meg. 
 Egyrészt a régi ellenzéki pártok összesített bázisa meredeken zuhanni kezdett. Az összes választó kb. egynegyedéről (kb. 2 millió szavazó) 2024 végére 5-10% közé, tehát kb. félmilliósra zsugorodott a régi ellenzéki pártok összesített bázisa. 
-A Tisza Párt 2024-2025-ös támogatóinak jó része visszaemlékezésen alapuló felmérések szerint is [8,9] a 2022-es ellenzéki blokkból jött. 
-Ugyanakkor már ebben az időszakban százezrek kezdtek el áramlani a pártnélküliek sorából a Tisza Párt felé, ahogy azt a fenti ábra trendjei is jelzik: a pártnélküliek száma a 2023 végi 2,5-2,7 millióról alig több, mint 1,5 millióra apadt 2024 végére. 
+A Tisza Párt 2024-2025-ös támogatóinak jó része a visszaemlékezésen alapuló felmérések szerint is [8,9] a 2022-es ellenzéki blokkból jött. 
+Ugyanakkor már ebben az időszakban százezrek kezdtek el áramlani a pártnélküliek közül a Tisza Párt felé, ahogy azt a fenti ábra trendjei is jelzik: a pártnélküliek száma a 2023 végi 2,5-2,7 millióról alig több, mint 1,5 millióra apadt 2024 végére. 
 Tehát alapvetően két dolog történt 2024 során: egyrészt az újonnan megjelent Tisza Párthot áramlott át a szinte teljes '22-es ellenzéki blokk, illetve megindult egy mobilizáció, amiből döntő részben a Tisza profitált. 
-A 21KK visszaemlékezéseken alapuló, 2025 közepén készült felmérése [8] szerint az akkori Tisza bázisban kb. 250 ezer korábbi Fidesz szavazó volt. Az alapján, hogy 2023-ban először a pártnélküliek tábora nőtt meg, ők minden valószínűség szerint azok voltak, akik először passzívvá váltak, majd 2024-25-ben a Tiszához mentek át.
+A 21KK visszaemlékezéseken alapuló, 2025 közepén készült felmérése [8] szerint az akkori Tisza bázisban kb. 250 ezer korábbi Fidesz szavazó volt. Az alapján, hogy 2023-ban először a pártnélküliek tábora nőtt meg, ők minden valószínűség szerint azok voltak, akik először passzívvá váltak, majd 2024-25-ben mentek át a Tiszához.
 Ezekről a trendekről ad egy "zuhanás közbeni" pillanatképet ad a 2024-es EP választás.
 
 **EP2024: 2026 előképe a Fidesz, de nem az ellenzék számára**
 
-A 2024-es EP választás (EP2024) összehasonlítása a 2023-24-es teljes népességre vonatkozó mérésekkel és a 2026-os választásokkal validálja ezeket a méréseket és lényegében bizonyítja azt, hogy a Fidesz-tábor eróziója ekkorra lényegében végbement és az ekkor látott erőviszonyok a _Fideszre nézve_ gyakorlatilag egészen 2026 áprilisáig konzerválódtak. 
-Az EP2024-en az összes választó 26%-a szavazott a Fideszre (2 millió szavazó), míg 2026 áprilisában 28,6% (2,18 millió szavazó): szinte ugyanannyi, miközben a teljes részvétel húsz százalékponttal - kerekítve 60%-ról 80%-ra - nőtt. 
+A 2024-es EP választás (EP2024) összehasonlítása a 2023-24-es teljes népességre vonatkozó mérésekkel és a 2026-os választásokkal validálja ezeket a méréseket és lényegében bizonyítja azt, hogy a Fidesz-tábor eróziója ekkorra már végbement és az ekkor látott erőviszonyok a _Fideszre nézve_ gyakorlatilag egészen 2026 áprilisáig konzerválódtak. 
+Az EP2024-en az összes választó 26%-a szavazott a Fideszre (2 millió), míg 2026 áprilisában 28,6% (2,18 millió): szinte ugyanannyi, miközben a teljes részvétel húsz százalékponttal - kerekítve 60%-ról 80%-ra - nőtt. 
 Tehát az EP2024 utáni trendek elsősorban a Tisza példátlan mértékű további erősödéséről szóltak, egy stagnáló, de _nem_ tovább zsugorodó Fidesz és egy gyakorlatilag nullára zsugorodó "óellenzék" mellett.
 
 A településtípus szerinti lebontások tisztán megmutatják mindezt: 

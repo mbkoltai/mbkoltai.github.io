@@ -19,27 +19,6 @@ standard_theme <- theme(plot.title=element_text(hjust=0.5,size=20),
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 
 # --- Teljes nevek ---
-# col_labels_full <- c(
-#   AL ="Névjegyzékben lévő választópolgárok száma",
-#   B  ="Átjelentkezett választópolgárok száma",
-#   C  ="Külképviseleti névjegyzékben lévők száma",
-#   EL ="Választópolgárok száma összesen",
-#   FL ="Szavazókörben szavazó választópolgárok száma",
-#   IL ="Átjelentkezéssel/külképviseleten szavazók beérkezett borítékjai",
-#   JL ="Szavazó választópolgárok száma összesen",
-#   OL ="Bélyegzőlenyomat nélküli szavazólapok száma",
-#   KL ="Lebélyegzett szavazólapok száma",
-#   L  ="Eltérés a szavazóként megjelenetek számától",
-#   M  ="Érvénytelen lebélyegzett szavazólapok száma",
-#   NL ="Érvényes szavazólapok száma",
-#   MKKP       ="Magyar Kétfarkú Kutya Párt",
-#   TISZA      ="Tisztelet és Szabadság Párt",
-#   Mi_Hazank  ="Mi Hazánk Mozgalom",
-#   DK         ="Demokratikus Koalíció",
-#   FIDESZ_KDNP="Fidesz–KDNP"
-# )
-
-# --- Rövid, space nélküli nevek ---
 col_labels_short <- c(
   AL ="névjegyzék",
   B  ="átjelentk.",

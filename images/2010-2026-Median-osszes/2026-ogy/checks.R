@@ -18,8 +18,8 @@ df_ogy2026 %>%
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # Europion 2026/05 felmérés
 
-# hvg.hu/360/20260412_a-tisza-tortenelmi-gyozelmet-vetiti-elore-a-median-merese-a-kampany-utolso-napjaibol
-# https://europion.hu/partpreferencia_202605/
+# Medián (HVG): https://shorturl.at/9r6wB
+# Europion: https://europion.hu/partpreferencia_202605/
 
 europion_2026_05 <- read_csv("adatok/europion_2026_05.csv")
 
@@ -100,8 +100,10 @@ p <- wrap_plots(lapply(dims, make_row), ncol = 1) +
     title    = "Pártpreferenciák a teljes népességben, 2026 április-május",
     subtitle = "(világos = április / Medián, sötét = május / Europion)",
     caption  = paste(
-      "*Bizonyos életkori sávok nem azonosak: Medián 18-29, 50-64, 65+, Europion 16-29, 50-59, 60+.",
-      "Az Europion felmérésben a \"8 általános\" és \"szakmunkás\" kategóriák nincsenek elkülönítve.",
+      "*Bizonyos életkori sávok nem azonosak: ",
+      "Medián 18-29, 50-64, 65+, Europion 16-29, 50-59, 60+.",
+      "Az Europion felmérésben a \"8 általános\" és \"szakmunkás\" ",
+      "kategóriák nincsenek elkülönítve.",
       "A Mi Hazánk az Egyébben szerepel (a Medián nem közölte külön).",
       sep = "\n")
   ) # &# theme(legend.position = "top")
@@ -112,3 +114,107 @@ ggsave(paste0("plots/KVK/",
 print(p)
 })
 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# STACKED BARPLOTS
+
+local({
+
+  library(patchwork)
+  library(viridisLite)
+
+  lev <- levels(plot_df$datum)
+
+  base_df <- plot_df |>
+    filter(part %in% c("Fidesz", "Tisza"),
+           !grepl("Teljes", dimenzio)) |>
+    mutate(
+      part  = factor(part, levels = c("Fidesz", "Tisza")),
+      honap = factor(datum, levels = lev,
+                     labels = c("2026/04", "2026/05")) )
+
+  plot_specs <- list(
+    list(
+      name   = "fidesz_tisza",
+      parts  = c("Fidesz", "Tisza"),
+      palette = function(n)
+        viridisLite::viridis(
+          n, option = "mako", begin = 0.5, end = 0.92,
+          direction = 1 ),
+      title = "Fidesz- és Tisza-támogatók száma, 2026 április → május" ),
+
+    list(
+      name   = "fidesz_only",
+      parts  = c("Fidesz"),
+      # palette = function(n)   hcl.colors(     14,     palette = "Oranges"   )[4:(n + 3)],
+      palette = function(n)   hcl.colors(n, palette = "Oranges"),
+      title = "Fidesz-támogatók száma, 2026 április → május")
+  )
+
+  for (spec in plot_specs) {
+
+    bar_df <- base_df |>
+      filter(part %in% spec$parts) |>
+      mutate( xkey = interaction(part, honap,
+                sep = ", ", lex.order=T) )
+
+    make_panel <- function(dim) {
+
+      df <- bar_df |>
+        filter(dimenzio == dim) |>
+        mutate(
+          csoport = droplevels(csoport),
+          csoport = factor( csoport,
+            levels = rev(levels(csoport)) )  )
+
+      ggplot(df, aes(x = xkey, y = fo, fill = csoport)) +
+        geom_col( colour = "grey",alpha=3/4 ) + # , linewidth = 0.3
+        geom_text(
+          aes(label = round(fo / 10) * 10),
+          position = position_stack(vjust = 0.5),
+          size=6) +
+        # fill
+        scale_fill_manual(
+          values = spec$palette(nlevels(df$csoport)),
+          name = NULL ) +
+        scale_x_discrete(limits = rev) +
+        scale_y_continuous(
+          expand = expansion(mult = c(0, 0.05)),
+          breaks = 1e3 * 0:8 / 2 ) +
+
+        coord_flip() +
+        guides(fill = guide_legend(reverse=T)) +
+        labs( subtitle = dim, x = NULL, y = "" ) +
+        theme_bw() + standard_theme +
+        theme( panel.grid.major.y = element_blank(),
+          plot.subtitle = element_text(size=25, margin = margin(b = 0)),
+          # plot.caption = element_text(size=15),
+          plot.margin = margin(t = 5, r = 5, b = 5, l = 5),
+          legend.text = element_text(size=20),
+          legend.position = "top" )
+    }
+
+    dims <- c( "Korcsoport", "Településtípus", "Iskolázottság" )
+
+    p <- wrap_plots( lapply(dims, make_panel), ncol = 1 ) +
+      plot_annotation(
+        title = paste0( spec$title,
+          " (ezer főben megadva, tízezerre kerekítve; ",
+          "április: Medián, május: Europion)" ),
+        caption = paste(
+          "*Bizonyos életkori sávok nem azonosak:",
+          "Medián 18-29 / 50-64 / 65+ vs. Europion 16-29 / 50-59 / 60+",
+          "Az Europionnál a 8 általános és szakmunkás kategóriák nincsenek elkülönítve",
+          # "(azonos %, csak népességarányos a bontás).",
+          sep = "\n" ) )
+
+    print(p)
+
+    ggsave( paste0(
+      "plots/KVK/median202604_europion202605_", spec$name, "_teljnepesseg_absz_szam.png" ),
+      plot = p, width = 44, height = 22, units = "cm" )
+
+  }
+
+})
