@@ -397,8 +397,8 @@ A településtípus szerinti lebontások tisztán megmutatják mindezt:
 
   <div id="img-oe" class="table-view active">
     <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
-      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/barplot/per_party/val_jog.png">
-        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/barplot/per_party/val_jog.png" style="width: 1300px;"/>
+      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/barplot/per_party/val_jog.png">
+        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/barplot/per_party/val_jog.png" style="width: 1300px;"/>
       </a>
 
     </figure>
@@ -406,8 +406,8 @@ A településtípus szerinti lebontások tisztán megmutatják mindezt:
 
   <div id="img-orig" class="table-view">
     <figure style="display: inline-block; border: 1px solid #888; padding: 8px; border-radius: 1px; text-align: center; background-color: #ddd;">
-<a href="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/barplot/per_party/abszolut_nemszav.png">
-<img src="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/barplot/per_party/abszolut_nemszav.png" style="width: 1300px;"/>
+<a href="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/barplot/per_party/abszolut_nemszav.png">
+<img src="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/barplot/per_party/abszolut_nemszav.png" style="width: 1300px;"/>
       </a>
 
     </figure>
@@ -677,8 +677,8 @@ Emiatt a nagyon széles bázisú mobilizáció miatt az eredmények földrajzila
 
   <div id="t1" style="display:block;">
     <figure style="margin:0;padding:8px;border:1px solid #bbb;border-radius:2px;background:#f8f8f8;display:inline-block;">
-      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/lineplot/per_year/2026_arany.png">
-        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/lineplot/per_year/2026_arany.png" style="width:1300px;max-width:100%;"/>
+      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/lineplot/per_year/2026_arany.png">
+        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/lineplot/per_year/2026_arany.png" style="width:1300px;max-width:100%;"/>
       </a>
       <figcaption style="font-size:0.82rem;color:#444;margin-top:6px;max-width:1100px;">
         <strong>OGY 2026 – Szavazati arányok településméret szerint.</strong> Leadott érvényes szavazatok %-a. Forrás: NVI (100% feldolgozottság) + KSH Helységnévtár.
@@ -688,8 +688,8 @@ Emiatt a nagyon széles bázisú mobilizáció miatt az eredmények földrajzila
 
   <div id="t2" style="display:none;">
     <figure style="margin:0;padding:8px;border:1px solid #bbb;border-radius:2px;background:#f8f8f8;display:inline-block;">
-      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/lineplot/per_year/2026_val_jog.png">
-        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/lineplot/per_year/2026_val_jog.png" style="width:1300px;max-width:100%;"/>
+      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/lineplot/per_year/2026_val_jog.png">
+        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/lineplot/per_year/2026_val_jog.png" style="width:1300px;max-width:100%;"/>
       </a>
       <figcaption style="font-size:0.82rem;color:#444;margin-top:6px;max-width:1100px;">
         <strong>OGY 2026 – Szavazati arányok településméret szerint.</strong> Szavazásra jogosultak %-a. Forrás: NVI (100% feldolgozottság) + KSH Helységnévtár.
@@ -699,8 +699,8 @@ Emiatt a nagyon széles bázisú mobilizáció miatt az eredmények földrajzila
 
   <div id="t3" style="display:none;">
     <figure style="margin:0;padding:8px;border:1px solid #bbb;border-radius:2px;background:#f8f8f8;display:inline-block;">
-      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/lineplot/per_party/arany.png">
-        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/lineplot/per_party/arany.png" style="width:1300px;max-width:100%;"/>
+      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/lineplot/per_party/arany.png">
+        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/lineplot/per_party/arany.png" style="width:1300px;max-width:100%;"/>
       </a>
       <figcaption style="font-size:0.82rem;color:#444;margin-top:6px;max-width:1100px;">
         <strong>OGY 2022 / EP 2024 / OGY 2026 – Változások pártok szerint, településméret szerint.</strong> Leadott érvényes szavazatok %-a. Forrás: NVI (100% feldolgozottság) + KSH Helységnévtár.
@@ -710,8 +710,8 @@ Emiatt a nagyon széles bázisú mobilizáció miatt az eredmények földrajzila
 
   <div id="t4" style="display:none;">
     <figure style="margin:0;padding:8px;border:1px solid #bbb;border-radius:2px;background:#f8f8f8;display:inline-block;">
-      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/lineplot/per_party/val_jog.png">
-        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/telep_kateg_aggreg/lineplot/per_party/val_jog.png" style="width:1300px;max-width:100%;"/>
+      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/lineplot/per_party/val_jog.png">
+        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/telep_kateg_aggreg/lineplot/per_party/val_jog.png" style="width:1300px;max-width:100%;"/>
       </a>
       <figcaption style="font-size:0.82rem;color:#444;margin-top:6px;max-width:1100px;">
         <strong>OGY 2022 / EP 2024 / OGY 2026 – Változások pártok szerint, településméret szerint.</strong> Szavazásra jogosultak %-a. Forrás: NVI (100% feldolgozottság) + KSH Helységnévtár.
@@ -721,8 +721,8 @@ Emiatt a nagyon széles bázisú mobilizáció miatt az eredmények földrajzila
 
   <div id="t5" style="display:none;">
     <figure style="margin:0;padding:8px;border:1px solid #bbb;border-radius:2px;background:#f8f8f8;display:inline-block;">
-      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/kumul_eloszlas/ogy2026_CDF_partonkent_telepmeret_szam.png">
-        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/plots/val_eredm/kumul_eloszlas/ogy2026_CDF_partonkent_telepmeret_szam.png" style="width:1300px;max-width:100%;"/>
+      <a href="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/kumul_eloszlas/ogy2026_CDF_partonkent_telepmeret_szam.png">
+        <img src="{{site.baseurl}}/images/2010-2026-Median-osszes/2026-ogy/plots/kumul_eloszlas/ogy2026_CDF_partonkent_telepmeret_szam.png" style="width:1300px;max-width:100%;"/>
       </a>
       <figcaption style="font-size:0.82rem;color:#444;margin-top:6px;max-width:1100px;">
         <strong>Pártok szavazatainak kumulatív eloszlása településméret szerint, OGY 2026.</strong> Forrás: NVI (100% feldolgozottság) + KSH Helységnévtár.
