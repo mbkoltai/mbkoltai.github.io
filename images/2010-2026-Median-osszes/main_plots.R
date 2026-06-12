@@ -211,7 +211,7 @@ local({
       theme(legend.position="top", plot.caption=element_text(size=13))
 
     if (save_flag) ggsave(plot=p,
-      paste0("plots/osszes_szav_szazalek_",fname_year,"_2026.png"),
+      paste0("plots/kvk/osszes_szav_szazalek_",fname_year,"_2026.png"),
       width=40, height=22, units="cm")
     print(p)
 
@@ -334,7 +334,7 @@ local({
       theme(legend.position="top", plot.caption=element_text(size=13))
 
     if (save_flag) ggsave(plot=p_oe,
-      paste0("plots/osszes_szav_szazalek_oell_",fname_year,"_2026.png"),
+      paste0("plots/kvk/osszes_szav_szazalek_oell_",fname_year,"_2026.png"),
       width=40, height=22, units="cm")
     print(p_oe)
 
@@ -498,7 +498,7 @@ local({
       theme(legend.position="top", plot.caption=element_text(size=13))
 
     if (save_flag) ggsave(plot=p,
-      paste0("plots/abszolut_szam_",fname_year,"_2026.png"),
+      paste0("plots/kvk/abszolut_szam_",fname_year,"_2026.png"),
       width=40, height=22, units="cm")
     print(p)
 
@@ -617,7 +617,7 @@ local({
       theme(legend.position="top", plot.caption=element_text(size=13))
 
     if (save_flag) ggsave(plot=p_oe,
-      paste0("plots/abszolut_szam_oell_",fname_year,"_2026.png"),
+      paste0("plots/kvk/abszolut_szam_oell_",fname_year,"_2026.png"),
       width=40, height=22, units="cm")
     print(p_oe)
 
@@ -776,7 +776,7 @@ local({
       theme(legend.position="top", plot.caption=element_text(size=13))
 
     if (save_flag) ggsave(plot=p,
-      paste0("plots/partvalasztok_pct_", fname_year, "_2026.png"),
+      paste0("plots/kvk/partvalasztok_pct_", fname_year, "_2026.png"),
       width=40, height=22, units="cm")
     print(p)
 
@@ -894,7 +894,7 @@ local({
       theme(legend.position="top", plot.caption=element_text(size=13))
 
     if (save_flag) ggsave(plot=p_oe,
-      paste0("plots/partvalasztok_pct_oell_", fname_year, "_2026.png"),
+      paste0("plots/kvk/partvalasztok_pct_oell_", fname_year, "_2026.png"),
       width=40, height=22, units="cm")
     print(p_oe)
 
