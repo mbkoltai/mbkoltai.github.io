@@ -965,9 +965,9 @@ elections_plot <- elections_raw %>%
 # per-facet y scales: positions 1-3 (Tisza,Fidesz,Pártnélküli) fixed ~0-60
 # positions 4-5 (Mi Hazánk,DK) free/lower
 y_scales <- list(
-  scale_y_continuous(limits=c(0,60)), # Tisza
-  scale_y_continuous(limits=c(0,60)), # Fidesz
-  scale_y_continuous(limits=c(0,60)), # Pártnélküli
+  scale_y_continuous(limits=c(0,60),breaks = 0:6*10), # Tisza
+  scale_y_continuous(limits=c(0,60),breaks = 0:6*10), # Fidesz
+  scale_y_continuous(limits=c(0,60),breaks = 0:6*10), # Pártnélküli
   scale_y_continuous(limits=c(0,10)), # Mi Hazánk
   scale_y_continuous(limits=c(0,10)),  # DK
   scale_y_continuous(limits=c(0,10))   # MKKP
@@ -998,7 +998,7 @@ y_scales <- list(
               aes(x = date, label = label,
                   hjust = ifelse(label == "EP2024", -0.08, 1.08)),
               y = Inf, vjust = 1.4, size = 5, inherit.aes = FALSE) +
-    facetted_pos_scales(y = y_scales) +
+    ggh4x::facetted_pos_scales(y = y_scales) +
     scale_colour_manual(values = party_colour_map, guide = "none") +
     scale_fill_manual(values = party_colour_map, guide = "none") +
     scale_shape_manual(values = c("21KK" = 16, "Medián" = 17, "Závecz" = 15)) +
@@ -1037,5 +1037,3 @@ y_scales <- list(
   }
   
 })
-
-
