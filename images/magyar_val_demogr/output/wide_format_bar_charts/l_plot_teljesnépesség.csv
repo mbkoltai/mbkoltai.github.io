@@ -1,105 +1,152 @@
-datum,kateg_tipus,kateg_nev_meret_str,partnev_kozos_aggr,21KK (%),21KK (ezer választó),MEDIÁN (%),MEDIÁN (ezer választó)
-2025/04,teljes népesség,teljes népesség (7.64m),TISZA,34,2600,NA,NA
-2025/04,teljes népesség,teljes népesség (7.64m),Fidesz,28,2140,NA,NA
-2025/04,teljes népesség,teljes népesség (7.64m),Mi Hazánk,4,310,NA,NA
-2025/04,teljes népesség,teljes népesség (7.64m),MKKP,3,230,NA,NA
-2025/04,teljes népesség,teljes népesség (7.64m),DK,2,150,NA,NA
-2025/04,teljes népesség,teljes népesség (7.64m),más párt,4,310,NA,NA
-2025/04,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,25,1910,NA,NA
-2025/06,teljes népesség,teljes népesség (7.64m),TISZA,32,2440,NA,NA
-2025/06,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,38,2900
-2025/06,teljes népesség,teljes népesség (7.64m),Fidesz,25,1910,NA,NA
-2025/06,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,28,2140
-2025/06,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,NA,NA
-2025/06,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,4,310
-2025/06,teljes népesség,teljes népesség (7.64m),MKKP,2,150,NA,NA
-2025/06,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,3,230
-2025/06,teljes népesség,teljes népesség (7.64m),DK,3,230,NA,NA
-2025/06,teljes népesség,teljes népesség (7.64m),DK,NA,NA,2,150
-2025/06,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,NA,NA,23,1760
-2025/06,teljes népesség,teljes népesség (7.64m),más párt,1,80,NA,NA
-2025/06,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,32,2440,NA,NA
-2025/08,teljes népesség,teljes népesség (7.64m),TISZA,34,2600,NA,NA
-2025/08,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,37,2830
-2025/08,teljes népesség,teljes népesség (7.64m),Fidesz,26,1990,NA,NA
-2025/08,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,30,2290
-2025/08,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,NA,NA
-2025/08,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,4,310
-2025/08,teljes népesség,teljes népesség (7.64m),MKKP,2,150,NA,NA
-2025/08,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,3,230
+datum,kateg_tipus,kateg_nev_meret_str,partnev_kozos_aggr,MEDIÁN (%),MEDIÁN (ezer választó),21KK (%),21KK (ezer választó)
+2024/05,teljes népesség,teljes népesség (7.64m),TISZA,19,1450,NA,NA
+2024/05,teljes népesség,teljes népesség (7.64m),Fidesz,32,2440,NA,NA
+2024/05,teljes népesség,teljes népesség (7.64m),Mi Hazánk,4,310,NA,NA
+2024/05,teljes népesség,teljes népesség (7.64m),MKKP,3,230,NA,NA
+2024/05,teljes népesség,teljes népesség (7.64m),DK,4,310,NA,NA
+2024/05,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,38,2900,NA,NA
+2024/06,teljes népesség,teljes népesség (7.64m),TISZA,19,1450,NA,NA
+2024/06,teljes népesség,teljes népesség (7.64m),Fidesz,35,2670,NA,NA
+2024/06,teljes népesség,teljes népesség (7.64m),Mi Hazánk,3,230,NA,NA
+2024/06,teljes népesség,teljes népesség (7.64m),MKKP,3,230,NA,NA
+2024/06,teljes népesség,teljes népesség (7.64m),DK,7,530,NA,NA
+2024/06,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,33,2520,NA,NA
+2024/07,teljes népesség,teljes népesség (7.64m),TISZA,21,1600,NA,NA
+2024/07,teljes népesség,teljes népesség (7.64m),Fidesz,32,2440,NA,NA
+2024/07,teljes népesség,teljes népesség (7.64m),Mi Hazánk,6,460,NA,NA
+2024/07,teljes népesség,teljes népesség (7.64m),MKKP,4,310,NA,NA
+2024/07,teljes népesség,teljes népesség (7.64m),DK,6,460,NA,NA
+2024/07,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,31,2370,NA,NA
+2024/09,teljes népesség,teljes népesség (7.64m),TISZA,25,1910,NA,NA
+2024/09,teljes népesség,teljes népesség (7.64m),Fidesz,30,2290,NA,NA
+2024/09,teljes népesség,teljes népesség (7.64m),Mi Hazánk,4,310,NA,NA
+2024/09,teljes népesség,teljes népesség (7.64m),MKKP,4,310,NA,NA
+2024/09,teljes népesség,teljes népesség (7.64m),DK,2,150,NA,NA
+2024/09,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,35,2670,NA,NA
+2024/10,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,26,1990
+2024/10,teljes népesség,teljes népesség (7.64m),TISZA,34,2600,NA,NA
+2024/10,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,29,2210
+2024/10,teljes népesség,teljes népesség (7.64m),Fidesz,32,2440,NA,NA
+2024/10,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,5,380
+2024/10,teljes népesség,teljes népesség (7.64m),MKKP,3,230,3,230
+2024/10,teljes népesség,teljes népesség (7.64m),DK,NA,NA,3,230
+2024/10,teljes népesség,teljes népesség (7.64m),DK,2,150,NA,NA
+2024/10,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,24,1830,NA,NA
+2024/10,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,NA,NA,28,2140
+2024/11,teljes népesség,teljes népesség (7.64m),TISZA,34,2600,NA,NA
+2024/11,teljes népesség,teljes népesség (7.64m),Fidesz,27,2060,NA,NA
+2024/11,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,NA,NA
+2024/11,teljes népesség,teljes népesség (7.64m),MKKP,3,230,NA,NA
+2024/11,teljes népesség,teljes népesség (7.64m),DK,3,230,NA,NA
+2024/11,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,28,2140,NA,NA
+2025/03,teljes népesség,teljes népesség (7.64m),TISZA,33,2520,NA,NA
+2025/03,teljes népesség,teljes népesség (7.64m),Fidesz,29,2210,NA,NA
+2025/03,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,NA,NA
+2025/03,teljes népesség,teljes népesség (7.64m),MKKP,3,230,NA,NA
+2025/03,teljes népesség,teljes népesség (7.64m),DK,2,150,NA,NA
+2025/03,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,28,2140,NA,NA
+2025/04,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,34,2600
+2025/04,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,28,2140
+2025/04,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,4,310
+2025/04,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,3,230
+2025/04,teljes népesség,teljes népesség (7.64m),DK,NA,NA,2,150
+2025/04,teljes népesség,teljes népesség (7.64m),más párt,NA,NA,4,310
+2025/04,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,NA,NA,25,1910
+2025/06,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,32,2440
+2025/06,teljes népesség,teljes népesség (7.64m),TISZA,38,2900,NA,NA
+2025/06,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,25,1910
+2025/06,teljes népesség,teljes népesség (7.64m),Fidesz,28,2140,NA,NA
+2025/06,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,5,380
+2025/06,teljes népesség,teljes népesség (7.64m),Mi Hazánk,4,310,NA,NA
+2025/06,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,2,150
+2025/06,teljes népesség,teljes népesség (7.64m),MKKP,3,230,NA,NA
+2025/06,teljes népesség,teljes népesség (7.64m),DK,NA,NA,3,230
+2025/06,teljes népesség,teljes népesség (7.64m),DK,2,150,NA,NA
+2025/06,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,25,1910,NA,NA
+2025/06,teljes népesség,teljes népesség (7.64m),más párt,NA,NA,1,80
+2025/06,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,NA,NA,32,2440
+2025/08,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,34,2600
+2025/08,teljes népesség,teljes népesség (7.64m),TISZA,37,2830,NA,NA
+2025/08,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,26,1990
+2025/08,teljes népesség,teljes népesség (7.64m),Fidesz,30,2290,NA,NA
+2025/08,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,5,380
+2025/08,teljes népesség,teljes népesség (7.64m),Mi Hazánk,4,310,NA,NA
+2025/08,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,2,150
+2025/08,teljes népesség,teljes népesség (7.64m),MKKP,3,230,NA,NA
 2025/08,teljes népesség,teljes népesség (7.64m),DK,2,150,2,150
-2025/08,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,NA,NA,24,1830
-2025/08,teljes népesség,teljes népesség (7.64m),más párt,1,80,NA,NA
-2025/08,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,30,2290,NA,NA
-2025/10,teljes népesség,teljes népesség (7.64m),TISZA,33,2520,NA,NA
-2025/10,teljes népesség,teljes népesség (7.64m),Fidesz,26,1990,NA,NA
-2025/10,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,NA,NA
-2025/10,teljes népesség,teljes népesség (7.64m),MKKP,1,80,NA,NA
-2025/10,teljes népesség,teljes népesség (7.64m),DK,2,150,NA,NA
-2025/10,teljes népesség,teljes népesség (7.64m),más párt,1,80,NA,NA
-2025/10,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,32,2440,NA,NA
-2025/11,teljes népesség,teljes népesség (7.64m),TISZA,31,2370,NA,NA
-2025/11,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,38,2900
-2025/11,teljes népesség,teljes népesség (7.64m),Fidesz,27,2060,NA,NA
-2025/11,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,33,2520
-2025/11,teljes népesség,teljes népesség (7.64m),Mi Hazánk,4,310,NA,NA
-2025/11,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,5,380
+2025/08,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,24,1830,NA,NA
+2025/08,teljes népesség,teljes népesség (7.64m),más párt,NA,NA,1,80
+2025/08,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,NA,NA,30,2290
+2025/10,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,33,2520
+2025/10,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,26,1990
+2025/10,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,5,380
+2025/10,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,1,80
+2025/10,teljes népesség,teljes népesség (7.64m),DK,NA,NA,2,150
+2025/10,teljes népesség,teljes népesség (7.64m),más párt,NA,NA,1,80
+2025/10,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,NA,NA,32,2440
+2025/11,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,31,2370
+2025/11,teljes népesség,teljes népesség (7.64m),TISZA,38,2900,NA,NA
+2025/11,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,27,2060
+2025/11,teljes népesség,teljes népesség (7.64m),Fidesz,33,2520,NA,NA
+2025/11,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,4,310
+2025/11,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,NA,NA
 2025/11,teljes népesség,teljes népesség (7.64m),MKKP,2,150,2,150
 2025/11,teljes népesség,teljes népesség (7.64m),DK,2,150,2,150
-2025/11,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,NA,NA,20,1530
-2025/11,teljes népesség,teljes népesség (7.64m),más párt,1,80,NA,NA
-2025/11,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,33,2520,NA,NA
-2025/12,teljes népesség,teljes népesség (7.64m),TISZA,34,2600,NA,NA
-2025/12,teljes népesség,teljes népesség (7.64m),Fidesz,26,1990,NA,NA
-2025/12,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,NA,NA
-2025/12,teljes népesség,teljes népesség (7.64m),MKKP,2,150,NA,NA
-2025/12,teljes népesség,teljes népesség (7.64m),DK,2,150,NA,NA
-2025/12,teljes népesség,teljes népesség (7.64m),más párt,0,0,NA,NA
-2025/12,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,31,2370,NA,NA
-2026/01,teljes népesség,teljes népesség (7.64m),TISZA,35,2670,NA,NA
-2026/01,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,40,3050
-2026/01,teljes népesség,teljes népesség (7.64m),Fidesz,28,2140,NA,NA
-2026/01,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,33,2520
-2026/01,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,NA,NA
-2026/01,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,4,310
+2025/11,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,20,1530,NA,NA
+2025/11,teljes népesség,teljes népesség (7.64m),más párt,NA,NA,1,80
+2025/11,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,NA,NA,33,2520
+2025/12,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,34,2600
+2025/12,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,26,1990
+2025/12,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,5,380
+2025/12,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,2,150
+2025/12,teljes népesség,teljes népesség (7.64m),DK,NA,NA,2,150
+2025/12,teljes népesség,teljes népesség (7.64m),más párt,NA,NA,0,0
+2025/12,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,NA,NA,31,2370
+2026/01,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,35,2670
+2026/01,teljes népesség,teljes népesség (7.64m),TISZA,40,3050,NA,NA
+2026/01,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,28,2140
+2026/01,teljes népesség,teljes népesség (7.64m),Fidesz,33,2520,NA,NA
+2026/01,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,5,380
+2026/01,teljes népesség,teljes népesség (7.64m),Mi Hazánk,4,310,NA,NA
 2026/01,teljes népesség,teljes népesség (7.64m),MKKP,2,150,2,150
-2026/01,teljes népesség,teljes népesség (7.64m),DK,2,150,NA,NA
-2026/01,teljes népesség,teljes népesség (7.64m),DK,NA,NA,1,80
-2026/01,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,NA,NA,20,1530
-2026/01,teljes népesség,teljes népesség (7.64m),más párt,1,80,NA,NA
-2026/01,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,27,2060,NA,NA
-2026/02,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,42,3210
-2026/02,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,31,2370
-2026/02,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,5,380
-2026/02,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,2,150
-2026/02,teljes népesség,teljes népesség (7.64m),DK,NA,NA,1,80
-2026/02,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,NA,NA,19,1450
-2026/03,teljes népesség,teljes népesség (7.64m),TISZA,38,2900,NA,NA
-2026/03,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,46,3510
+2026/01,teljes népesség,teljes népesség (7.64m),DK,NA,NA,2,150
+2026/01,teljes népesség,teljes népesség (7.64m),DK,1,80,NA,NA
+2026/01,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,20,1530,NA,NA
+2026/01,teljes népesség,teljes népesség (7.64m),más párt,NA,NA,1,80
+2026/01,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,NA,NA,27,2060
+2026/02,teljes népesség,teljes népesség (7.64m),TISZA,42,3210,NA,NA
+2026/02,teljes népesség,teljes népesség (7.64m),Fidesz,31,2370,NA,NA
+2026/02,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,NA,NA
+2026/02,teljes népesség,teljes népesség (7.64m),MKKP,2,150,NA,NA
+2026/02,teljes népesség,teljes népesség (7.64m),DK,1,80,NA,NA
+2026/02,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,19,1450,NA,NA
+2026/03,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,38,2900
+2026/03,teljes népesség,teljes népesség (7.64m),TISZA,46,3510,NA,NA
 2026/03,teljes népesség,teljes népesség (7.64m),Fidesz,30,2290,30,2290
-2026/03,teljes népesség,teljes népesség (7.64m),Mi Hazánk,4,310,NA,NA
-2026/03,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,5,380
-2026/03,teljes népesség,teljes népesség (7.64m),MKKP,1,80,NA,NA
-2026/03,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,2,150
+2026/03,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,4,310
+2026/03,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,NA,NA
+2026/03,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,1,80
+2026/03,teljes népesség,teljes népesség (7.64m),MKKP,2,150,NA,NA
 2026/03,teljes népesség,teljes népesség (7.64m),DK,1,80,1,80
-2026/03,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,NA,NA,18,1370
-2026/03,teljes népesség,teljes népesség (7.64m),más párt,0,0,NA,NA
-2026/03,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,26,1990,NA,NA
-2026/04,teljes népesség,teljes népesség (7.64m),TISZA,40,3050,NA,NA
-2026/04,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,48,3670
-2026/04,teljes népesség,teljes népesség (7.64m),Fidesz,28,2140,NA,NA
-2026/04,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,30,2290
-2026/04,teljes népesség,teljes népesség (7.64m),Mi Hazánk,4,310,NA,NA
-2026/04,teljes népesség,teljes népesség (7.64m),MKKP,1,80,NA,NA
-2026/04,teljes népesség,teljes népesség (7.64m),DK,1,80,NA,NA
-2026/04,teljes népesség,teljes népesség (7.64m),más párt,0,0,NA,NA
-2026/04,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,26,1990,NA,NA
-2026/05,teljes népesség,teljes népesség (7.64m),TISZA,60,4580,NA,NA
-2026/05,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,61,4660
-2026/05,teljes népesség,teljes népesség (7.64m),Fidesz,20,1530,NA,NA
-2026/05,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,21,1600
+2026/03,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,18,1370,NA,NA
+2026/03,teljes népesség,teljes népesség (7.64m),más párt,NA,NA,0,0
+2026/03,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,NA,NA,26,1990
+2026/04,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,40,3050
+2026/04,teljes népesség,teljes népesség (7.64m),TISZA,48,3670,NA,NA
+2026/04,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,28,2140
+2026/04,teljes népesség,teljes népesség (7.64m),Fidesz,30,2290,NA,NA
+2026/04,teljes népesség,teljes népesség (7.64m),Mi Hazánk,NA,NA,4,310
+2026/04,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,1,80
+2026/04,teljes népesség,teljes népesség (7.64m),DK,NA,NA,1,80
+2026/04,teljes népesség,teljes népesség (7.64m),más párt,NA,NA,0,0
+2026/04,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,NA,NA,26,1990
+2026/05,teljes népesség,teljes népesség (7.64m),TISZA,NA,NA,60,4580
+2026/05,teljes népesség,teljes népesség (7.64m),TISZA,61,4660,NA,NA
+2026/05,teljes népesség,teljes népesség (7.64m),Fidesz,NA,NA,20,1530
+2026/05,teljes népesség,teljes népesség (7.64m),Fidesz,21,1600,NA,NA
 2026/05,teljes népesség,teljes népesség (7.64m),Mi Hazánk,5,380,5,380
-2026/05,teljes népesség,teljes népesség (7.64m),MKKP,1,80,NA,NA
+2026/05,teljes népesség,teljes népesség (7.64m),MKKP,NA,NA,1,80
 2026/05,teljes népesség,teljes népesség (7.64m),DK,1,80,1,80
-2026/05,teljes népesség,teljes népesség (7.64m),más párt,0,0,NA,NA
-2026/05,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,13,990,NA,NA
+2026/05,teljes népesség,teljes népesség (7.64m),más párt/pártnélk.,12,920,NA,NA
+2026/05,teljes népesség,teljes népesség (7.64m),más párt,NA,NA,0,0
+2026/05,teljes népesség,teljes népesség (7.64m),pártnélk./bizonyt.,NA,NA,13,990

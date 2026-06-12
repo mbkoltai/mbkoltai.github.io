@@ -1,0 +1,286 @@
+period,tipus,kateg,part,arány,datum
+2025_06,NEM,férfi,Tisza Párt,0.41,2025/06
+2025_06,NEM,férfi,más párt,0.12,2025/06
+2025_06,NEM,férfi,pártnélküli,0.18,2025/06
+2025_06,NEM,férfi,Fidesz-KDNP,0.29,2025/06
+2025_06,NEM,nő,Tisza Párt,0.36,2025/06
+2025_06,NEM,nő,más párt,0.11,2025/06
+2025_06,NEM,nő,pártnélküli,0.26,2025/06
+2025_06,NEM,nő,Fidesz-KDNP,0.27,2025/06
+2025_06,ÉLETKOR,18-29,Tisza Párt,0.58,2025/06
+2025_06,ÉLETKOR,18-29,más párt,0.13,2025/06
+2025_06,ÉLETKOR,18-29,pártnélküli,0.13,2025/06
+2025_06,ÉLETKOR,18-29,Fidesz-KDNP,0.16,2025/06
+2025_06,ÉLETKOR,30-39,Tisza Párt,0.58,2025/06
+2025_06,ÉLETKOR,30-39,más párt,0.04,2025/06
+2025_06,ÉLETKOR,30-39,pártnélküli,0.21,2025/06
+2025_06,ÉLETKOR,30-39,Fidesz-KDNP,0.17,2025/06
+2025_06,ÉLETKOR,40-49,Tisza Párt,0.35,2025/06
+2025_06,ÉLETKOR,40-49,más párt,0.17,2025/06
+2025_06,ÉLETKOR,40-49,pártnélküli,0.29,2025/06
+2025_06,ÉLETKOR,40-49,Fidesz-KDNP,0.19,2025/06
+2025_06,ÉLETKOR,50-64,Tisza Párt,0.31,2025/06
+2025_06,ÉLETKOR,50-64,más párt,0.12,2025/06
+2025_06,ÉLETKOR,50-64,pártnélküli,0.22,2025/06
+2025_06,ÉLETKOR,50-64,Fidesz-KDNP,0.35,2025/06
+2025_06,ÉLETKOR,65+,Tisza Párt,0.24,2025/06
+2025_06,ÉLETKOR,65+,más párt,0.1,2025/06
+2025_06,ÉLETKOR,65+,pártnélküli,0.23,2025/06
+2025_06,ÉLETKOR,65+,Fidesz-KDNP,0.43,2025/06
+2025_06,VÉGZETTSÉG,legfeljebb 8 általános,Tisza Párt,0.17,2025/06
+2025_06,VÉGZETTSÉG,legfeljebb 8 általános,más párt,0.13,2025/06
+2025_06,VÉGZETTSÉG,legfeljebb 8 általános,pártnélküli,0.22,2025/06
+2025_06,VÉGZETTSÉG,legfeljebb 8 általános,Fidesz-KDNP,0.48,2025/06
+2025_06,VÉGZETTSÉG,szakmunkásképző,Tisza Párt,0.3,2025/06
+2025_06,VÉGZETTSÉG,szakmunkásképző,más párt,0.13,2025/06
+2025_06,VÉGZETTSÉG,szakmunkásképző,pártnélküli,0.26,2025/06
+2025_06,VÉGZETTSÉG,szakmunkásképző,Fidesz-KDNP,0.31,2025/06
+2025_06,VÉGZETTSÉG,érettségi/szakérettségi,Tisza Párt,0.47,2025/06
+2025_06,VÉGZETTSÉG,érettségi/szakérettségi,más párt,0.12,2025/06
+2025_06,VÉGZETTSÉG,érettségi/szakérettségi,pártnélküli,0.21,2025/06
+2025_06,VÉGZETTSÉG,érettségi/szakérettségi,Fidesz-KDNP,0.2,2025/06
+2025_06,VÉGZETTSÉG,felsőfokú,Tisza Párt,0.49,2025/06
+2025_06,VÉGZETTSÉG,felsőfokú,más párt,0.08,2025/06
+2025_06,VÉGZETTSÉG,felsőfokú,pártnélküli,0.22,2025/06
+2025_06,VÉGZETTSÉG,felsőfokú,Fidesz-KDNP,0.21,2025/06
+2025_06,TELEPÜLÉS,főváros,Tisza Párt,0.49,2025/06
+2025_06,TELEPÜLÉS,főváros,más párt,0.12,2025/06
+2025_06,TELEPÜLÉS,főváros,pártnélküli,0.18,2025/06
+2025_06,TELEPÜLÉS,főváros,Fidesz-KDNP,0.21,2025/06
+2025_06,TELEPÜLÉS,megyei jogú város,Tisza Párt,0.46,2025/06
+2025_06,TELEPÜLÉS,megyei jogú város,más párt,0.11,2025/06
+2025_06,TELEPÜLÉS,megyei jogú város,pártnélküli,0.18,2025/06
+2025_06,TELEPÜLÉS,megyei jogú város,Fidesz-KDNP,0.25,2025/06
+2025_06,TELEPÜLÉS,egyéb város,Tisza Párt,0.34,2025/06
+2025_06,TELEPÜLÉS,egyéb város,más párt,0.11,2025/06
+2025_06,TELEPÜLÉS,egyéb város,pártnélküli,0.27,2025/06
+2025_06,TELEPÜLÉS,egyéb város,Fidesz-KDNP,0.28,2025/06
+2025_06,TELEPÜLÉS,község,Tisza Párt,0.32,2025/06
+2025_06,TELEPÜLÉS,község,más párt,0.11,2025/06
+2025_06,TELEPÜLÉS,község,pártnélküli,0.24,2025/06
+2025_06,TELEPÜLÉS,község,Fidesz-KDNP,0.33,2025/06
+2025_08,NEM,férfi,Fidesz-KDNP,0.28,2025/08
+2025_08,NEM,férfi,más pártok és pártnélküliek,0.33,2025/08
+2025_08,NEM,férfi,Tisza Párt,0.39,2025/08
+2025_08,NEM,nő,Fidesz-KDNP,0.31,2025/08
+2025_08,NEM,nő,más pártok és pártnélküliek,0.33,2025/08
+2025_08,NEM,nő,Tisza Párt,0.36,2025/08
+2025_08,ÉLETKOR,18-29,Fidesz-KDNP,0.13,2025/08
+2025_08,ÉLETKOR,18-29,más pártok és pártnélküliek,0.31,2025/08
+2025_08,ÉLETKOR,18-29,Tisza Párt,0.56,2025/08
+2025_08,ÉLETKOR,30-39,Fidesz-KDNP,0.19,2025/08
+2025_08,ÉLETKOR,30-39,más pártok és pártnélküliek,0.32,2025/08
+2025_08,ÉLETKOR,30-39,Tisza Párt,0.49,2025/08
+2025_08,ÉLETKOR,40-49,Fidesz-KDNP,0.28,2025/08
+2025_08,ÉLETKOR,40-49,más pártok és pártnélküliek,0.37,2025/08
+2025_08,ÉLETKOR,40-49,Tisza Párt,0.35,2025/08
+2025_08,ÉLETKOR,50-64,Fidesz-KDNP,0.37,2025/08
+2025_08,ÉLETKOR,50-64,más pártok és pártnélküliek,0.29,2025/08
+2025_08,ÉLETKOR,50-64,Tisza Párt,0.34,2025/08
+2025_08,ÉLETKOR,65+,Fidesz-KDNP,0.43,2025/08
+2025_08,ÉLETKOR,65+,más pártok és pártnélküliek,0.34,2025/08
+2025_08,ÉLETKOR,65+,Tisza Párt,0.23,2025/08
+2025_08,VÉGZETTSÉG,legfeljebb 8 általános,Fidesz-KDNP,0.54,2025/08
+2025_08,VÉGZETTSÉG,legfeljebb 8 általános,más pártok és pártnélküliek,0.29,2025/08
+2025_08,VÉGZETTSÉG,legfeljebb 8 általános,Tisza Párt,0.17,2025/08
+2025_08,VÉGZETTSÉG,szakmunkásképző,Fidesz-KDNP,0.35,2025/08
+2025_08,VÉGZETTSÉG,szakmunkásképző,más pártok és pártnélküliek,0.35,2025/08
+2025_08,VÉGZETTSÉG,szakmunkásképző,Tisza Párt,0.3,2025/08
+2025_08,VÉGZETTSÉG,érettségi/szakérettségi,Fidesz-KDNP,0.24,2025/08
+2025_08,VÉGZETTSÉG,érettségi/szakérettségi,más pártok és pártnélküliek,0.33,2025/08
+2025_08,VÉGZETTSÉG,érettségi/szakérettségi,Tisza Párt,0.43,2025/08
+2025_08,VÉGZETTSÉG,felsőfokú,Fidesz-KDNP,0.18,2025/08
+2025_08,VÉGZETTSÉG,felsőfokú,más pártok és pártnélküliek,0.31,2025/08
+2025_08,VÉGZETTSÉG,felsőfokú,Tisza Párt,0.51,2025/08
+2025_08,TELEPÜLÉS,főváros,Fidesz-KDNP,0.23,2025/08
+2025_08,TELEPÜLÉS,főváros,más pártok és pártnélküliek,0.35,2025/08
+2025_08,TELEPÜLÉS,főváros,Tisza Párt,0.42,2025/08
+2025_08,TELEPÜLÉS,megyei jogú város,Fidesz-KDNP,0.25,2025/08
+2025_08,TELEPÜLÉS,megyei jogú város,más pártok és pártnélküliek,0.26,2025/08
+2025_08,TELEPÜLÉS,megyei jogú város,Tisza Párt,0.49,2025/08
+2025_08,TELEPÜLÉS,egyéb város,Fidesz-KDNP,0.32,2025/08
+2025_08,TELEPÜLÉS,egyéb város,más pártok és pártnélküliek,0.31,2025/08
+2025_08,TELEPÜLÉS,egyéb város,Tisza Párt,0.37,2025/08
+2025_08,TELEPÜLÉS,község,Fidesz-KDNP,0.35,2025/08
+2025_08,TELEPÜLÉS,község,más pártok és pártnélküliek,0.37,2025/08
+2025_08,TELEPÜLÉS,község,Tisza Párt,0.28,2025/08
+2025_11,NEM,férfi,Tisza Párt,0.42,2025/11
+2025_11,NEM,férfi,más pártok és pártnélküliek,0.28,2025/11
+2025_11,NEM,férfi,Fidesz-KDNP,0.3,2025/11
+2025_11,NEM,nő,Tisza Párt,0.35,2025/11
+2025_11,NEM,nő,más pártok és pártnélküliek,0.29,2025/11
+2025_11,NEM,nő,Fidesz-KDNP,0.36,2025/11
+2025_11,ÉLETKOR,18-29,Tisza Párt,0.63,2025/11
+2025_11,ÉLETKOR,18-29,más pártok és pártnélküliek,0.22,2025/11
+2025_11,ÉLETKOR,18-29,Fidesz-KDNP,0.15,2025/11
+2025_11,ÉLETKOR,30-39,Tisza Párt,0.58,2025/11
+2025_11,ÉLETKOR,30-39,más pártok és pártnélküliek,0.23,2025/11
+2025_11,ÉLETKOR,30-39,Fidesz-KDNP,0.19,2025/11
+2025_11,ÉLETKOR,40-49,Tisza Párt,0.36,2025/11
+2025_11,ÉLETKOR,40-49,más pártok és pártnélküliek,0.34,2025/11
+2025_11,ÉLETKOR,40-49,Fidesz-KDNP,0.3,2025/11
+2025_11,ÉLETKOR,50-64,Tisza Párt,0.29,2025/11
+2025_11,ÉLETKOR,50-64,más pártok és pártnélküliek,0.32,2025/11
+2025_11,ÉLETKOR,50-64,Fidesz-KDNP,0.39,2025/11
+2025_11,ÉLETKOR,65+,Tisza Párt,0.21,2025/11
+2025_11,ÉLETKOR,65+,más pártok és pártnélküliek,0.3,2025/11
+2025_11,ÉLETKOR,65+,Fidesz-KDNP,0.49,2025/11
+2025_11,VÉGZETTSÉG,legfeljebb 8 általános,Tisza Párt,0.17,2025/11
+2025_11,VÉGZETTSÉG,legfeljebb 8 általános,más pártok és pártnélküliek,0.24,2025/11
+2025_11,VÉGZETTSÉG,legfeljebb 8 általános,Fidesz-KDNP,0.59,2025/11
+2025_11,VÉGZETTSÉG,szakmunkásképző,Tisza Párt,0.28,2025/11
+2025_11,VÉGZETTSÉG,szakmunkásképző,más pártok és pártnélküliek,0.33,2025/11
+2025_11,VÉGZETTSÉG,szakmunkásképző,Fidesz-KDNP,0.39,2025/11
+2025_11,VÉGZETTSÉG,érettségi/szakérettségi,Tisza Párt,0.43,2025/11
+2025_11,VÉGZETTSÉG,érettségi/szakérettségi,más pártok és pártnélküliek,0.3,2025/11
+2025_11,VÉGZETTSÉG,érettségi/szakérettségi,Fidesz-KDNP,0.27,2025/11
+2025_11,VÉGZETTSÉG,felsőfokú,Tisza Párt,0.52,2025/11
+2025_11,VÉGZETTSÉG,felsőfokú,más pártok és pártnélküliek,0.23,2025/11
+2025_11,VÉGZETTSÉG,felsőfokú,Fidesz-KDNP,0.25,2025/11
+2025_11,TELEPÜLÉS,főváros,Tisza Párt,0.46,2025/11
+2025_11,TELEPÜLÉS,főváros,más pártok és pártnélküliek,0.27,2025/11
+2025_11,TELEPÜLÉS,főváros,Fidesz-KDNP,0.27,2025/11
+2025_11,TELEPÜLÉS,megyei jogú város,Tisza Párt,0.43,2025/11
+2025_11,TELEPÜLÉS,megyei jogú város,más pártok és pártnélküliek,0.25,2025/11
+2025_11,TELEPÜLÉS,megyei jogú város,Fidesz-KDNP,0.32,2025/11
+2025_11,TELEPÜLÉS,egyéb város,Tisza Párt,0.39,2025/11
+2025_11,TELEPÜLÉS,egyéb város,más pártok és pártnélküliek,0.27,2025/11
+2025_11,TELEPÜLÉS,egyéb város,Fidesz-KDNP,0.34,2025/11
+2025_11,TELEPÜLÉS,község,Tisza Párt,0.31,2025/11
+2025_11,TELEPÜLÉS,község,más pártok és pártnélküliek,0.32,2025/11
+2025_11,TELEPÜLÉS,község,Fidesz-KDNP,0.37,2025/11
+2026_01,NEM,férfi,Tisza Párt,0.42,2026/01
+2026_01,NEM,férfi,más pártok és pártnélküliek,0.25,2026/01
+2026_01,NEM,férfi,Fidesz-KDNP,0.33,2026/01
+2026_01,NEM,nő,Tisza Párt,0.38,2026/01
+2026_01,NEM,nő,más pártok és pártnélküliek,0.29,2026/01
+2026_01,NEM,nő,Fidesz-KDNP,0.33,2026/01
+2026_01,ÉLETKOR,18-29,Tisza Párt,0.67,2026/01
+2026_01,ÉLETKOR,18-29,más pártok és pártnélküliek,0.21,2026/01
+2026_01,ÉLETKOR,18-29,Fidesz-KDNP,0.12,2026/01
+2026_01,ÉLETKOR,30-39,Tisza Párt,0.59,2026/01
+2026_01,ÉLETKOR,30-39,más pártok és pártnélküliek,0.23,2026/01
+2026_01,ÉLETKOR,30-39,Fidesz-KDNP,0.18,2026/01
+2026_01,ÉLETKOR,40-49,Tisza Párt,0.35,2026/01
+2026_01,ÉLETKOR,40-49,más pártok és pártnélküliek,0.32,2026/01
+2026_01,ÉLETKOR,40-49,Fidesz-KDNP,0.33,2026/01
+2026_01,ÉLETKOR,50-64,Tisza Párt,0.31,2026/01
+2026_01,ÉLETKOR,50-64,más pártok és pártnélküliek,0.3,2026/01
+2026_01,ÉLETKOR,50-64,Fidesz-KDNP,0.39,2026/01
+2026_01,ÉLETKOR,65+,Tisza Párt,0.24,2026/01
+2026_01,ÉLETKOR,65+,más pártok és pártnélküliek,0.27,2026/01
+2026_01,ÉLETKOR,65+,Fidesz-KDNP,0.49,2026/01
+2026_01,VÉGZETTSÉG,legfeljebb 8 általános,Tisza Párt,0.14,2026/01
+2026_01,VÉGZETTSÉG,legfeljebb 8 általános,más pártok és pártnélküliek,0.3,2026/01
+2026_01,VÉGZETTSÉG,legfeljebb 8 általános,Fidesz-KDNP,0.56,2026/01
+2026_01,VÉGZETTSÉG,szakmunkásképző,Tisza Párt,0.33,2026/01
+2026_01,VÉGZETTSÉG,szakmunkásképző,más pártok és pártnélküliek,0.24,2026/01
+2026_01,VÉGZETTSÉG,szakmunkásképző,Fidesz-KDNP,0.43,2026/01
+2026_01,VÉGZETTSÉG,érettségi/szakérettségi,Tisza Párt,0.46,2026/01
+2026_01,VÉGZETTSÉG,érettségi/szakérettségi,más pártok és pártnélküliek,0.29,2026/01
+2026_01,VÉGZETTSÉG,érettségi/szakérettségi,Fidesz-KDNP,0.25,2026/01
+2026_01,VÉGZETTSÉG,felsőfokú,Tisza Párt,0.53,2026/01
+2026_01,VÉGZETTSÉG,felsőfokú,más pártok és pártnélküliek,0.26,2026/01
+2026_01,VÉGZETTSÉG,felsőfokú,Fidesz-KDNP,0.25,2026/01
+2026_01,TELEPÜLÉS,főváros,Tisza Párt,0.51,2026/01
+2026_01,TELEPÜLÉS,főváros,más pártok és pártnélküliek,0.24,2026/01
+2026_01,TELEPÜLÉS,főváros,Fidesz-KDNP,0.25,2026/01
+2026_01,TELEPÜLÉS,megyei jogú város,Tisza Párt,0.45,2026/01
+2026_01,TELEPÜLÉS,megyei jogú város,más pártok és pártnélküliek,0.26,2026/01
+2026_01,TELEPÜLÉS,megyei jogú város,Fidesz-KDNP,0.29,2026/01
+2026_01,TELEPÜLÉS,egyéb város,Tisza Párt,0.33,2026/01
+2026_01,TELEPÜLÉS,egyéb város,más pártok és pártnélküliek,0.33,2026/01
+2026_01,TELEPÜLÉS,egyéb város,Fidesz-KDNP,0.34,2026/01
+2026_01,TELEPÜLÉS,község,Tisza Párt,0.37,2026/01
+2026_01,TELEPÜLÉS,község,más pártok és pártnélküliek,0.24,2026/01
+2026_01,TELEPÜLÉS,község,Fidesz-KDNP,0.39,2026/01
+2026_02,NEM,férfi,Tisza Párt,0.43,2026/02
+2026_02,NEM,férfi,más pártok és pártnélküliek,0.28,2026/02
+2026_02,NEM,férfi,Fidesz-KDNP,0.29,2026/02
+2026_02,NEM,nő,Tisza Párt,0.41,2026/02
+2026_02,NEM,nő,más pártok és pártnélküliek,0.27,2026/02
+2026_02,NEM,nő,Fidesz-KDNP,0.32,2026/02
+2026_02,ÉLETKOR,18-29,Tisza Párt,0.67,2026/02
+2026_02,ÉLETKOR,18-29,más pártok és pártnélküliek,0.25,2026/02
+2026_02,ÉLETKOR,18-29,Fidesz-KDNP,0.08,2026/02
+2026_02,ÉLETKOR,30-39,Tisza Párt,0.58,2026/02
+2026_02,ÉLETKOR,30-39,más pártok és pártnélküliek,0.22,2026/02
+2026_02,ÉLETKOR,30-39,Fidesz-KDNP,0.2,2026/02
+2026_02,ÉLETKOR,40-49,Tisza Párt,0.36,2026/02
+2026_02,ÉLETKOR,40-49,más pártok és pártnélküliek,0.34,2026/02
+2026_02,ÉLETKOR,40-49,Fidesz-KDNP,0.3,2026/02
+2026_02,ÉLETKOR,50-64,Tisza Párt,0.36,2026/02
+2026_02,ÉLETKOR,50-64,más pártok és pártnélküliek,0.29,2026/02
+2026_02,ÉLETKOR,50-64,Fidesz-KDNP,0.35,2026/02
+2026_02,ÉLETKOR,65+,Tisza Párt,0.26,2026/02
+2026_02,ÉLETKOR,65+,más pártok és pártnélküliek,0.26,2026/02
+2026_02,ÉLETKOR,65+,Fidesz-KDNP,0.48,2026/02
+2026_02,VÉGZETTSÉG,legfeljebb 8 általános,Tisza Párt,0.2,2026/02
+2026_02,VÉGZETTSÉG,legfeljebb 8 általános,más pártok és pártnélküliek,0.26,2026/02
+2026_02,VÉGZETTSÉG,legfeljebb 8 általános,Fidesz-KDNP,0.54,2026/02
+2026_02,VÉGZETTSÉG,szakmunkásképző,Tisza Párt,0.29,2026/02
+2026_02,VÉGZETTSÉG,szakmunkásképző,más pártok és pártnélküliek,0.33,2026/02
+2026_02,VÉGZETTSÉG,szakmunkásképző,Fidesz-KDNP,0.38,2026/02
+2026_02,VÉGZETTSÉG,érettségi/szakérettségi,Tisza Párt,0.47,2026/02
+2026_02,VÉGZETTSÉG,érettségi/szakérettségi,más pártok és pártnélküliek,0.27,2026/02
+2026_02,VÉGZETTSÉG,érettségi/szakérettségi,Fidesz-KDNP,0.26,2026/02
+2026_02,VÉGZETTSÉG,felsőfokú,Tisza Párt,0.63,2026/02
+2026_02,VÉGZETTSÉG,felsőfokú,más pártok és pártnélküliek,0.23,2026/02
+2026_02,VÉGZETTSÉG,felsőfokú,Fidesz-KDNP,0.14,2026/02
+2026_02,TELEPÜLÉS,főváros,Tisza Párt,0.58,2026/02
+2026_02,TELEPÜLÉS,főváros,más pártok és pártnélküliek,0.21,2026/02
+2026_02,TELEPÜLÉS,főváros,Fidesz-KDNP,0.21,2026/02
+2026_02,TELEPÜLÉS,megyei jogú város,Tisza Párt,0.45,2026/02
+2026_02,TELEPÜLÉS,megyei jogú város,más pártok és pártnélküliek,0.26,2026/02
+2026_02,TELEPÜLÉS,megyei jogú város,Fidesz-KDNP,0.29,2026/02
+2026_02,TELEPÜLÉS,egyéb város,Tisza Párt,0.41,2026/02
+2026_02,TELEPÜLÉS,egyéb város,más pártok és pártnélküliek,0.29,2026/02
+2026_02,TELEPÜLÉS,egyéb város,Fidesz-KDNP,0.3,2026/02
+2026_02,TELEPÜLÉS,község,Tisza Párt,0.32,2026/02
+2026_02,TELEPÜLÉS,község,más pártok és pártnélküliek,0.3,2026/02
+2026_02,TELEPÜLÉS,község,Fidesz-KDNP,0.38,2026/02
+2026_04,NEM,férfi,Tisza Párt,0.5,2026/04
+2026_04,NEM,férfi,más pártok és pártnélküliek,0.23,2026/04
+2026_04,NEM,férfi,Fidesz-KDNP,0.27,2026/04
+2026_04,NEM,nő,Tisza Párt,0.45,2026/04
+2026_04,NEM,nő,más pártok és pártnélküliek,0.22,2026/04
+2026_04,NEM,nő,Fidesz-KDNP,0.33,2026/04
+2026_04,ÉLETKOR,18-29,Tisza Párt,0.76,2026/04
+2026_04,ÉLETKOR,18-29,más pártok és pártnélküliek,0.14,2026/04
+2026_04,ÉLETKOR,18-29,Fidesz-KDNP,0.1,2026/04
+2026_04,ÉLETKOR,30-39,Tisza Párt,0.63,2026/04
+2026_04,ÉLETKOR,30-39,más pártok és pártnélküliek,0.2,2026/04
+2026_04,ÉLETKOR,30-39,Fidesz-KDNP,0.17,2026/04
+2026_04,ÉLETKOR,40-49,Tisza Párt,0.46,2026/04
+2026_04,ÉLETKOR,40-49,más pártok és pártnélküliek,0.26,2026/04
+2026_04,ÉLETKOR,40-49,Fidesz-KDNP,0.28,2026/04
+2026_04,ÉLETKOR,50-64,Tisza Párt,0.38,2026/04
+2026_04,ÉLETKOR,50-64,más pártok és pártnélküliek,0.26,2026/04
+2026_04,ÉLETKOR,50-64,Fidesz-KDNP,0.36,2026/04
+2026_04,ÉLETKOR,65+,Tisza Párt,0.29,2026/04
+2026_04,ÉLETKOR,65+,más pártok és pártnélküliek,0.24,2026/04
+2026_04,ÉLETKOR,65+,Fidesz-KDNP,0.47,2026/04
+2026_04,VÉGZETTSÉG,legfeljebb 8 általános,Tisza Párt,0.29,2026/04
+2026_04,VÉGZETTSÉG,legfeljebb 8 általános,más pártok és pártnélküliek,0.22,2026/04
+2026_04,VÉGZETTSÉG,legfeljebb 8 általános,Fidesz-KDNP,0.49,2026/04
+2026_04,VÉGZETTSÉG,szakmunkásképző,Tisza Párt,0.35,2026/04
+2026_04,VÉGZETTSÉG,szakmunkásképző,más pártok és pártnélküliek,0.26,2026/04
+2026_04,VÉGZETTSÉG,szakmunkásképző,Fidesz-KDNP,0.39,2026/04
+2026_04,VÉGZETTSÉG,érettségi/szakérettségi,Tisza Párt,0.55,2026/04
+2026_04,VÉGZETTSÉG,érettségi/szakérettségi,más pártok és pártnélküliek,0.21,2026/04
+2026_04,VÉGZETTSÉG,érettségi/szakérettségi,Fidesz-KDNP,0.24,2026/04
+2026_04,VÉGZETTSÉG,felsőfokú,Tisza Párt,0.6,2026/04
+2026_04,VÉGZETTSÉG,felsőfokú,más pártok és pártnélküliek,0.2,2026/04
+2026_04,VÉGZETTSÉG,felsőfokú,Fidesz-KDNP,0.2,2026/04
+2026_04,TELEPÜLÉS,főváros,Tisza Párt,0.54,2026/04
+2026_04,TELEPÜLÉS,főváros,más pártok és pártnélküliek,0.21,2026/04
+2026_04,TELEPÜLÉS,főváros,Fidesz-KDNP,0.25,2026/04
+2026_04,TELEPÜLÉS,megyei jogú város,Tisza Párt,0.52,2026/04
+2026_04,TELEPÜLÉS,megyei jogú város,más pártok és pártnélküliek,0.21,2026/04
+2026_04,TELEPÜLÉS,megyei jogú város,Fidesz-KDNP,0.27,2026/04
+2026_04,TELEPÜLÉS,egyéb város,Tisza Párt,0.47,2026/04
+2026_04,TELEPÜLÉS,egyéb város,más pártok és pártnélküliek,0.23,2026/04
+2026_04,TELEPÜLÉS,egyéb város,Fidesz-KDNP,0.3,2026/04
+2026_04,TELEPÜLÉS,község,Tisza Párt,0.41,2026/04
+2026_04,TELEPÜLÉS,község,más pártok és pártnélküliek,0.24,2026/04
+2026_04,TELEPÜLÉS,község,Fidesz-KDNP,0.35,2026/04

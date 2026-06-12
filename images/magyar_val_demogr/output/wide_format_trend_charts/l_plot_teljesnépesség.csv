@@ -1,37 +1,53 @@
-datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,Mi Hazánk,MKKP,DK,más párt,pártnélk./bizonyt.,más párt/pártnélk.
-2025/06,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),2900,2140,310,230,150,NA,NA,1760
-2025/08,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),2830,2290,310,230,150,NA,NA,1830
-2025/11,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),2900,2520,380,150,150,NA,NA,1530
-2026/01,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),3050,2520,310,150,80,NA,NA,1530
-2026/02,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),3210,2370,380,150,80,NA,NA,1450
-2026/03,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),3510,2290,380,150,80,NA,NA,1370
+datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,Mi Hazánk,MKKP,DK,más párt/pártnélk.,pártnélk./bizonyt.,más párt
+2024/05,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),1450,2440,310,230,310,2900,NA,NA
+2024/06,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),1450,2670,230,230,530,2520,NA,NA
+2024/07,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),1600,2440,460,310,460,2370,NA,NA
+2024/09,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),1910,2290,310,310,150,2670,NA,NA
+2024/10,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),2600,2440,380,230,150,1830,NA,NA
+2024/11,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),2600,2060,380,230,230,2140,NA,NA
+2025/03,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),2520,2210,380,230,150,2140,NA,NA
+2025/06,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),2900,2140,310,230,150,1910,NA,NA
+2025/08,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),2830,2290,310,230,150,1830,NA,NA
+2025/11,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),2900,2520,380,150,150,1530,NA,NA
+2026/01,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),3050,2520,310,150,80,1530,NA,NA
+2026/02,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),3210,2370,380,150,80,1450,NA,NA
+2026/03,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),3510,2290,380,150,80,1370,NA,NA
 2026/04,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),3670,2290,NA,NA,NA,NA,NA,NA
-2026/05,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),4660,1600,380,NA,80,NA,NA,NA
-2025/06,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),38,28,4,3,2,NA,NA,23
-2025/08,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),37,30,4,3,2,NA,NA,24
-2025/11,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),38,33,5,2,2,NA,NA,20
-2026/01,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),40,33,4,2,1,NA,NA,20
-2026/02,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),42,31,5,2,1,NA,NA,19
-2026/03,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),46,30,5,2,1,NA,NA,18
+2026/05,teljes népesség,teljes népesség (7.64m),MEDIÁN (ezer választó),4660,1600,380,NA,80,920,NA,NA
+2024/05,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),19,32,4,3,4,38,NA,NA
+2024/06,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),19,35,3,3,7,33,NA,NA
+2024/07,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),21,32,6,4,6,31,NA,NA
+2024/09,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),25,30,4,4,2,35,NA,NA
+2024/10,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),34,32,5,3,2,24,NA,NA
+2024/11,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),34,27,5,3,3,28,NA,NA
+2025/03,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),33,29,5,3,2,28,NA,NA
+2025/06,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),38,28,4,3,2,25,NA,NA
+2025/08,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),37,30,4,3,2,24,NA,NA
+2025/11,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),38,33,5,2,2,20,NA,NA
+2026/01,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),40,33,4,2,1,20,NA,NA
+2026/02,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),42,31,5,2,1,19,NA,NA
+2026/03,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),46,30,5,2,1,18,NA,NA
 2026/04,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),48,30,NA,NA,NA,NA,NA,NA
-2026/05,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),61,21,5,NA,1,NA,NA,NA
-2025/04,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2600,2140,310,230,150,310,1910,NA
-2025/06,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2440,1910,380,150,230,80,2440,NA
-2025/08,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2600,1990,380,150,150,80,2290,NA
-2025/10,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2520,1990,380,80,150,80,2440,NA
-2025/11,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2370,2060,310,150,150,80,2520,NA
-2025/12,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2600,1990,380,150,150,0,2370,NA
-2026/01,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2670,2140,380,150,150,80,2060,NA
-2026/03,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2900,2290,310,80,80,0,1990,NA
-2026/04,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),3050,2140,310,80,80,0,1990,NA
-2026/05,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),4580,1530,380,80,80,0,990,NA
-2025/04,teljes népesség,teljes népesség (7.64m),21KK (%),34,28,4,3,2,4,25,NA
-2025/06,teljes népesség,teljes népesség (7.64m),21KK (%),32,25,5,2,3,1,32,NA
-2025/08,teljes népesség,teljes népesség (7.64m),21KK (%),34,26,5,2,2,1,30,NA
-2025/10,teljes népesség,teljes népesség (7.64m),21KK (%),33,26,5,1,2,1,32,NA
-2025/11,teljes népesség,teljes népesség (7.64m),21KK (%),31,27,4,2,2,1,33,NA
-2025/12,teljes népesség,teljes népesség (7.64m),21KK (%),34,26,5,2,2,0,31,NA
-2026/01,teljes népesség,teljes népesség (7.64m),21KK (%),35,28,5,2,2,1,27,NA
-2026/03,teljes népesség,teljes népesség (7.64m),21KK (%),38,30,4,1,1,0,26,NA
-2026/04,teljes népesség,teljes népesség (7.64m),21KK (%),40,28,4,1,1,0,26,NA
-2026/05,teljes népesség,teljes népesség (7.64m),21KK (%),60,20,5,1,1,0,13,NA
+2026/05,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),61,21,5,NA,1,12,NA,NA
+2024/10,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),1990,2210,380,230,230,NA,2140,NA
+2025/04,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2600,2140,310,230,150,NA,1910,310
+2025/06,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2440,1910,380,150,230,NA,2440,80
+2025/08,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2600,1990,380,150,150,NA,2290,80
+2025/10,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2520,1990,380,80,150,NA,2440,80
+2025/11,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2370,2060,310,150,150,NA,2520,80
+2025/12,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2600,1990,380,150,150,NA,2370,0
+2026/01,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2670,2140,380,150,150,NA,2060,80
+2026/03,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2900,2290,310,80,80,NA,1990,0
+2026/04,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),3050,2140,310,80,80,NA,1990,0
+2026/05,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),4580,1530,380,80,80,NA,990,0
+2024/10,teljes népesség,teljes népesség (7.64m),21KK (%),26,29,5,3,3,NA,28,NA
+2025/04,teljes népesség,teljes népesség (7.64m),21KK (%),34,28,4,3,2,NA,25,4
+2025/06,teljes népesség,teljes népesség (7.64m),21KK (%),32,25,5,2,3,NA,32,1
+2025/08,teljes népesség,teljes népesség (7.64m),21KK (%),34,26,5,2,2,NA,30,1
+2025/10,teljes népesség,teljes népesség (7.64m),21KK (%),33,26,5,1,2,NA,32,1
+2025/11,teljes népesség,teljes népesség (7.64m),21KK (%),31,27,4,2,2,NA,33,1
+2025/12,teljes népesség,teljes népesség (7.64m),21KK (%),34,26,5,2,2,NA,31,0
+2026/01,teljes népesség,teljes népesség (7.64m),21KK (%),35,28,5,2,2,NA,27,1
+2026/03,teljes népesség,teljes népesség (7.64m),21KK (%),38,30,4,1,1,NA,26,0
+2026/04,teljes népesség,teljes népesség (7.64m),21KK (%),40,28,4,1,1,NA,26,0
+2026/05,teljes népesség,teljes népesség (7.64m),21KK (%),60,20,5,1,1,NA,13,0

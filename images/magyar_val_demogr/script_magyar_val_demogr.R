@@ -74,35 +74,80 @@ l_part_data$`21_kut`$telep_tipus <- read_csv(
 # Median adatok betoltese 
 
 input_path <- "input_files/kozvkut_adatok/"
+ 
+# all_files <- list.files(input_path, pattern = "^median_.*\\.csv$")
+# 
+# demog_periods   <- sort(unique(gsub("^median_(.+)_nem_vegzettseg.*\\.csv$", "\\1", 
+#                                      grep("nem_vegzettseg", all_files, value = TRUE))))
+# 
+# fullpop_periods <- sort(unique(gsub("^median_(.+)_teljes_nepesseg\\.csv$", "\\1", 
+#                                      grep("teljes_nepesseg", all_files, value = TRUE))))
+# 
+# # --- demographic splits (only where file exists) ---
+# for (p in demog_periods) {
+#   l_part_data[["median"]][[p]] <- load_median_demog(p)
+#   
+#   if (p == "2025_06") {
+#     names(l_part_data$median$`2025_06`)[
+#       names(l_part_data$median$`2025_06`) %in% "KORCSOPORT"
+#     ] <- "ÉLETKOR"
+#     l_part_data$median$`2025_06`$TELEPÜLÉS    <- l_part_data$median$`2025_06`$TELEPÜLÉSTÍPUS
+#     l_part_data$median$`2025_06`$TELEPÜLÉSTÍPUS <- NULL
+#   }
+# }
+# 
+# # --- full population (superset of periods) ---
+# for (p in fullpop_periods) {
+#   if (is.null(l_part_data[["median"]][[p]])) l_part_data[["median"]][[p]] <- list()
+#   l_part_data[["median"]][[p]]$telj_nepesseg_partok <- load_median_fullpop(p)
+# }
+# 
+# rm(p,fullpop_periods,demog_periods,input_path)
 
-all_files <- list.files(input_path, pattern = "^median_.*\\.csv$")
+# ── Load both unified files once ──────────────────────────────────────────────
+unified_demog   <- read_csv(file.path(input_path, "Median_demog_osszes.csv"),
+                            show_col_types = FALSE)
+unified_fullpop <- read_csv(file.path(input_path, "Median_teljes_nepesseg_osszes.csv"),
+                            show_col_types = FALSE)
 
-demog_periods   <- sort(unique(gsub("^median_(.+)_nem_vegzettseg.*\\.csv$", "\\1", 
-                                     grep("nem_vegzettseg", all_files, value = TRUE))))
+demog_periods   <- unified_demog   %>% pull(period) %>% unique() %>% sort()
+fullpop_periods <- unified_fullpop %>% pull(month)  %>% unique() %>% sort() %>%
+                     gsub("/", "_", .)
 
-fullpop_periods <- sort(unique(gsub("^median_(.+)_teljes_nepesseg\\.csv$", "\\1", 
-                                     grep("teljes_nepesseg", all_files, value = TRUE))))
+jobbik_periods <- c("2024_05", "2024_06", "2024_07", "2024_09",
+                    "2024_10", "2024_11", "2025_03", "2025_06")
 
-# --- demographic splits (only where file exists) ---
+# ── Demographic splits ────────────────────────────────────────────────────────
 for (p in demog_periods) {
-  l_part_data[["median"]][[p]] <- load_median_demog(p)
-  
-  if (p == "2025_06") {
-    names(l_part_data$median$`2025_06`)[
-      names(l_part_data$median$`2025_06`) %in% "KORCSOPORT"
-    ] <- "ÉLETKOR"
-    l_part_data$median$`2025_06`$TELEPÜLÉS    <- l_part_data$median$`2025_06`$TELEPÜLÉSTÍPUS
-    l_part_data$median$`2025_06`$TELEPÜLÉSTÍPUS <- NULL
-  }
+  l_part_data[["median"]][[p]] <- unified_demog %>%
+    filter(period == p) %>%
+    select(-period) %>%
+    group_by(tipus) %>%
+    { set_names(group_split(., .keep = FALSE), group_keys(.)$tipus) } %>%
+    as.list()
 }
 
-# --- full population (superset of periods) ---
+# ── Full population (superset of periods) ─────────────────────────────────────
 for (p in fullpop_periods) {
   if (is.null(l_part_data[["median"]][[p]])) l_part_data[["median"]][[p]] <- list()
-  l_part_data[["median"]][[p]]$telj_nepesseg_partok <- load_median_fullpop(p)
+
+  l_part_data[["median"]][[p]]$telj_nepesseg_partok <- unified_fullpop %>%
+    filter(month == gsub("_", "/", p), grepl("Teljes", kateg)) %>%
+    select(-datum, -month, -url) %>%
+    pivot_longer(-kateg, names_to = "part", values_drop_na = TRUE) %>%
+    mutate(kateg = tolower(kateg),
+           arány = value / 100,
+           datum = gsub("_", "/", p)) %>%
+    select(-value) %>%
+    { if (p %in% jobbik_periods)
+        bind_rows(., tibble(kateg = "teljes népesség", part = "Jobbik",
+                            arány = NA_real_, datum = gsub("_", "/", p)))
+      else . } %>%
+    relocate(datum, .after = last_col())
 }
 
-rm(p,fullpop_periods,demog_periods,input_path)
+rm(p, demog_periods, fullpop_periods, jobbik_periods,
+   unified_demog, unified_fullpop)
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
