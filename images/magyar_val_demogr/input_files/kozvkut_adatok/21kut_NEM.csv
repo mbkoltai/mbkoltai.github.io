@@ -1,3 +1,5 @@
-kateg,Fidesz,Tisza,DK,Mi Hazánk,Kétfarkú Kutya Párt,pártnélk./bizonyt.,datum
-férfi,25,49,1,6,1,19,2026. március
-nő,34,29,2,3,1,33,2026. március
+kateg,Fidesz,Tisza,DK,Mi Hazánk,Kétfarkú Kutya Párt,egyeb,pártnélk./bizonyt.,datum,url
+férfi,27,31,2,7,3,6,24,2024. október,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+nő,30,22,4,3,3,6,33,2024. október,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+férfi,25,49,1,6,1,NA,19,2026. március,https://24.hu/belfold/2026/03/19/fidesz-tisza-felmeres-demografia-21-kutatokozpont/
+nő,34,29,2,3,1,NA,33,2026. március,https://24.hu/belfold/2026/03/19/fidesz-tisza-felmeres-demografia-21-kutatokozpont/

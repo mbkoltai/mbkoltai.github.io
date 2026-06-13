@@ -12,18 +12,17 @@ l_part_data <- list()
 
 # 21kut, telj. nepesseg
 l_part_data$`21_kut`$teljes_nepesseg <- read_csv(
-            "input_files/kozvkut_adatok/21kut_teljes_nepesseg.csv") %>%
-  filter(grepl("teljes",kateg)) %>%
-  pivot_longer(!c(kateg,part),names_to = "datum") %>%
-  mutate(value=value/100,
-        datum=convert_hu_date(datum)  ) %>%
-  rename(arány=value)
+    "input_files/kozvkut_adatok/21kut_teljes_nepesseg.csv",
+    show_col_types = FALSE) %>%
+  filter(grepl("teljes", kateg)) %>%
+  mutate(arány = ertek / 100) %>%
+  select(kateg, part, datum, arány)
 
 # 21KK, NEM szerint
 # source: https://flo.uri.sh/visualisation/24922340/embed
 l_part_data[["21_kut"]]$nem <- read_csv(
   "input_files/kozvkut_adatok/21kut_NEM.csv") %>%
-  pivot_longer(!c(kateg,datum),names_to="part")  %>%
+  pivot_longer(!c(kateg,datum,url),names_to="part")  %>%
   mutate(arány=value/100,
          datum=convert_hu_date(datum)  ) %>% 
   select(!value) %>%
@@ -35,7 +34,7 @@ l_part_data[["21_kut"]]$nem <- read_csv(
 # 21KK, ELETKOR szerint
 l_part_data[["21_kut"]]$eletkor <- read_csv(
   "input_files/kozvkut_adatok/21kut_eletkor.csv") %>%
-  pivot_longer(!c(kateg,datum),names_to="part")  %>%
+  pivot_longer(!c(kateg,datum,url),names_to="part")  %>%
   mutate(arány=value/100,
          datum=convert_hu_date(datum)  ) %>% 
   select(!value) %>%
@@ -47,7 +46,7 @@ l_part_data[["21_kut"]]$eletkor <- read_csv(
 # source: https://flo.uri.sh/visualisation/24922340/embed
 l_part_data[["21_kut"]]$vegzettseg <- read_csv(
   "input_files/kozvkut_adatok/21kut_vegzettseg.csv") %>%
-  pivot_longer(!c(kateg,datum),names_to="part")  %>%
+  pivot_longer(!c(kateg,datum,url),names_to="part")  %>%
   mutate(arány=value/100,
          datum=convert_hu_date(datum)  ) %>% 
   select(!value) %>%
@@ -59,7 +58,7 @@ l_part_data[["21_kut"]]$vegzettseg <- read_csv(
 # source: https://flo.uri.sh/visualisation/23976053/embed
 l_part_data$`21_kut`$telep_tipus <- read_csv(
   "input_files/kozvkut_adatok/21kut_telepulestipus.csv") %>%
-  pivot_longer(!c(kateg,datum),names_to = "part") %>%
+  pivot_longer(!c(kateg,datum,url),names_to = "part") %>%
   rename(arány=value) %>% 
   mutate(arány=arány/100) %>%
   mutate(kateg_tipus="településtípus",
@@ -840,3 +839,12 @@ xx <- bind_rows(
 # }
 # 
 # }  
+#
+#
+# l_part_data$`21_kut`$teljes_nepesseg <- read_csv(
+#             "input_files/kozvkut_adatok/21kut_teljes_nepesseg.csv") %>%
+#   filter(grepl("teljes",kateg)) %>%
+#   pivot_longer(!c(kateg,part),names_to = "datum") %>%
+#   mutate(value=value/100,
+#         datum=convert_hu_date(datum)  ) %>%
+#   rename(arány=value)

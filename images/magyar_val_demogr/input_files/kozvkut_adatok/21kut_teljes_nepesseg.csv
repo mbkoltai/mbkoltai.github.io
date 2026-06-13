@@ -1,20 +1,203 @@
-kateg,part,2024. október,2025. április,2025. június,2025. augusztus,2025. október,2025. november,2025. december,2026. január,2026. március,2026. április,2026. május
-teljes népesség,TISZA,26,34,32,34,33,31,34,35,38,40,60
-teljes népesség,Fidesz–KDNP,29,28,25,26,26,27,26,28,30,28,20
-teljes népesség,Mi Hazánk,5,4,5,5,5,4,5,5,4,4,5
-teljes népesség,DK,3,2,3,2,2,2,2,2,1,1,1
-teljes népesség,Magyar Kétfarkú Kutya Párt,3,3,2,2,1,2,2,2,1,1,1
-teljes népesség,Egyéb,,4,1,1,1,1,0,1,0,0,0
-teljes népesség,Pártnélküli,28,25,32,30,32,33,31,27,26,26,13
-pártot választani tudók,TISZA,,46,48,48,48,47,49,48,51,54,69
-pártot választani tudók,Fidesz–KDNP,,38,37,38,38,40,38,38,41,38,23
-pártot választani tudók,Mi Hazánk,,5,7,7,8,6,7,7,6,6,6
-pártot választani tudók,DK,,3,4,2,3,3,3,3,1,1,1
-pártot választani tudók,Magyar Kétfarkú Kutya Párt,,4,3,3,2,3,2,3,1,1,1
-pártot választani tudók,Egyéb,,4,1,2,1,1,1,1,0,0,0
-"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,,51,52,52,53,50,53,53,39,56,71
-"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,,37,34,36,35,37,36,37,53,37,21
-"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,,4,6,5,6,6,5,5,5,5,6
-"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,,3,5,2,3,4,3,3,2,1,1
-"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,,3,2,4,2,3,2,2,1,1,1
-"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,,2,1,1,1,0,1,0,0,0,0
+kateg,part,datum,ertek,url
+teljes népesség,TISZA,2024/10,26,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+teljes népesség,Fidesz–KDNP,2024/10,29,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+teljes népesség,Mi Hazánk,2024/10,5,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+teljes népesség,Magyar Kétfarkú Kutya Párt,2024/10,3,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+teljes népesség,DK,2024/10,3,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+teljes népesség,Pártnélküli,2024/10,28,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,2024/10,42,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,2024/10,40,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,2024/10,5,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,2024/10,4,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,2024/10,4,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,2024/10,4,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+teljes népesség,TISZA,2025/04,34,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+teljes népesség,Fidesz–KDNP,2025/04,28,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+teljes népesség,Mi Hazánk,2025/04,4,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+teljes népesség,Magyar Kétfarkú Kutya Párt,2025/04,3,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+teljes népesség,DK,2025/04,2,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+teljes népesség,Egyéb,2025/04,4,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+teljes népesség,Pártnélküli,2025/04,25,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+pártot választani tudók,TISZA,2025/04,46,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+pártot választani tudók,Fidesz–KDNP,2025/04,38,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+pártot választani tudók,Mi Hazánk,2025/04,5,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+pártot választani tudók,Magyar Kétfarkú Kutya Párt,2025/04,4,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+pártot választani tudók,DK,2025/04,3,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+pártot választani tudók,Egyéb,2025/04,4,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,2025/04,51,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,2025/04,37,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,2025/04,4,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,2025/04,3,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,2025/04,3,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,2025/04,2,https://24.hu/belfold/2025/04/10/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas/
+teljes népesség,TISZA,2025/06,32,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+teljes népesség,Fidesz–KDNP,2025/06,25,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+teljes népesség,Mi Hazánk,2025/06,5,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+teljes népesség,Magyar Kétfarkú Kutya Párt,2025/06,2,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+teljes népesség,DK,2025/06,3,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+teljes népesség,Egyéb,2025/06,1,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+teljes népesség,Pártnélküli,2025/06,32,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+pártot választani tudók,TISZA,2025/06,48,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+pártot választani tudók,Fidesz–KDNP,2025/06,37,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+pártot választani tudók,Mi Hazánk,2025/06,7,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+pártot választani tudók,Magyar Kétfarkú Kutya Párt,2025/06,3,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+pártot választani tudók,DK,2025/06,4,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+pártot választani tudók,Egyéb,2025/06,1,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,2025/06,52,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,2025/06,34,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,2025/06,6,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,2025/06,2,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,2025/06,5,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,2025/06,1,https://24.hu/belfold/2025/06/30/21-kutatokozpont-tisza-part-fidesz-kozvelemeny-kutatas-2025-junius/
+teljes népesség,TISZA,2025/08,34,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+teljes népesség,Fidesz–KDNP,2025/08,26,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+teljes népesség,Mi Hazánk,2025/08,5,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+teljes népesség,Magyar Kétfarkú Kutya Párt,2025/08,2,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+teljes népesség,DK,2025/08,2,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+teljes népesség,Egyéb,2025/08,1,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+teljes népesség,Pártnélküli,2025/08,30,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+pártot választani tudók,TISZA,2025/08,48,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+pártot választani tudók,Fidesz–KDNP,2025/08,38,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+pártot választani tudók,Mi Hazánk,2025/08,7,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+pártot választani tudók,Magyar Kétfarkú Kutya Párt,2025/08,3,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+pártot választani tudók,DK,2025/08,2,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+pártot választani tudók,Egyéb,2025/08,2,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,2025/08,52,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,2025/08,36,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,2025/08,5,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,2025/08,4,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,2025/08,2,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,2025/08,1,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+teljes népesség,TISZA,2025/10,33,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+teljes népesség,Fidesz–KDNP,2025/10,26,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+teljes népesség,Mi Hazánk,2025/10,5,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+teljes népesség,Magyar Kétfarkú Kutya Párt,2025/10,1,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+teljes népesség,DK,2025/10,2,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+teljes népesség,Egyéb,2025/10,1,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+teljes népesség,Pártnélküli,2025/10,32,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+pártot választani tudók,TISZA,2025/10,48,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+pártot választani tudók,Fidesz–KDNP,2025/10,38,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+pártot választani tudók,Mi Hazánk,2025/10,8,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+pártot választani tudók,Magyar Kétfarkú Kutya Párt,2025/10,2,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+pártot választani tudók,DK,2025/10,3,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+pártot választani tudók,Egyéb,2025/10,1,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,2025/10,53,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,2025/10,35,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,2025/10,6,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,2025/10,2,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,2025/10,3,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,2025/10,1,https://24.hu/belfold/2025/10/13/21-kutatokozpont-2025-oktober-partpreferencia-tisza-fidesz/
+teljes népesség,TISZA,2025/11,31,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+teljes népesség,Fidesz–KDNP,2025/11,27,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+teljes népesség,Mi Hazánk,2025/11,4,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+teljes népesség,Magyar Kétfarkú Kutya Párt,2025/11,2,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+teljes népesség,DK,2025/11,2,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+teljes népesség,Egyéb,2025/11,1,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+teljes népesség,Pártnélküli,2025/11,33,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+pártot választani tudók,TISZA,2025/11,47,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+pártot választani tudók,Fidesz–KDNP,2025/11,40,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+pártot választani tudók,Mi Hazánk,2025/11,6,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+pártot választani tudók,Magyar Kétfarkú Kutya Párt,2025/11,3,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+pártot választani tudók,DK,2025/11,3,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+pártot választani tudók,Egyéb,2025/11,1,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,2025/11,50,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,2025/11,37,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,2025/11,6,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,2025/11,3,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,2025/11,4,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,2025/11,0,https://24.hu/belfold/2025/12/02/21-kutatokozpont-tisza-part-fidesz-kulonbseg-2025-november/
+teljes népesség,TISZA,2025/12,34,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+teljes népesség,Fidesz–KDNP,2025/12,26,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+teljes népesség,Mi Hazánk,2025/12,5,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+teljes népesség,Magyar Kétfarkú Kutya Párt,2025/12,2,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+teljes népesség,DK,2025/12,2,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+teljes népesség,Egyéb,2025/12,0,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+teljes népesség,Pártnélküli,2025/12,31,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+pártot választani tudók,TISZA,2025/12,49,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+pártot választani tudók,Fidesz–KDNP,2025/12,38,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+pártot választani tudók,Mi Hazánk,2025/12,7,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+pártot választani tudók,Magyar Kétfarkú Kutya Párt,2025/12,2,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+pártot választani tudók,DK,2025/12,3,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+pártot választani tudók,Egyéb,2025/12,1,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,2025/12,53,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,2025/12,36,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,2025/12,5,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,2025/12,2,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,2025/12,3,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,2025/12,1,https://24.hu/belfold/2025/12/17/21-kutatokozpont-2025-december-tisza-fidesz-tamogatottsag/
+teljes népesség,TISZA,2026/01,35,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+teljes népesség,Fidesz–KDNP,2026/01,28,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+teljes népesség,Mi Hazánk,2026/01,5,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+teljes népesség,Magyar Kétfarkú Kutya Párt,2026/01,2,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+teljes népesség,DK,2026/01,2,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+teljes népesség,Egyéb,2026/01,1,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+teljes népesség,Pártnélküli,2026/01,27,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+pártot választani tudók,TISZA,2026/01,48,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+pártot választani tudók,Fidesz–KDNP,2026/01,38,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+pártot választani tudók,Mi Hazánk,2026/01,7,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+pártot választani tudók,Magyar Kétfarkú Kutya Párt,2026/01,3,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+pártot választani tudók,DK,2026/01,3,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+pártot választani tudók,Egyéb,2026/01,1,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,2026/01,53,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,2026/01,37,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,2026/01,5,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,2026/01,2,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,2026/01,3,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,2026/01,0,https://24.hu/belfold/2026/02/03/21-kutatokozpont-felmeres-2026-januar/
+teljes népesség,TISZA,2026/03,38,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+teljes népesség,Fidesz–KDNP,2026/03,30,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+teljes népesség,Mi Hazánk,2026/03,4,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+teljes népesség,Magyar Kétfarkú Kutya Párt,2026/03,1,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+teljes népesség,DK,2026/03,1,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+teljes népesség,Egyéb,2026/03,0,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+teljes népesség,Pártnélküli,2026/03,26,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+pártot választani tudók,TISZA,2026/03,51,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+pártot választani tudók,Fidesz–KDNP,2026/03,41,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+pártot választani tudók,Mi Hazánk,2026/03,6,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+pártot választani tudók,Magyar Kétfarkú Kutya Párt,2026/03,1,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+pártot választani tudók,DK,2026/03,1,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+pártot választani tudók,Egyéb,2026/03,0,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,2026/03,39,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,2026/03,53,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,2026/03,5,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,2026/03,1,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,2026/03,2,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,2026/03,0,https://24.hu/belfold/2026/03/11/21-kutatokozpont-felmeres-2026-marcius-partok-tamogatottsaga/
+teljes népesség,TISZA,2026/04,40,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+teljes népesség,Fidesz–KDNP,2026/04,28,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+teljes népesség,Mi Hazánk,2026/04,4,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+teljes népesség,Magyar Kétfarkú Kutya Párt,2026/04,1,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+teljes népesség,DK,2026/04,1,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+teljes népesség,Egyéb,2026/04,0,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+teljes népesség,Pártnélküli,2026/04,26,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+pártot választani tudók,TISZA,2026/04,54,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+pártot választani tudók,Fidesz–KDNP,2026/04,38,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+pártot választani tudók,Mi Hazánk,2026/04,6,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+pártot választani tudók,Magyar Kétfarkú Kutya Párt,2026/04,1,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+pártot választani tudók,DK,2026/04,1,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+pártot választani tudók,Egyéb,2026/04,0,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,2026/04,56,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,2026/04,37,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,2026/04,5,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,2026/04,1,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,2026/04,1,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,2026/04,0,https://24.hu/belfold/2026/04/01/21-kutatokozpont-2026-marcius-partpreferencia/
+teljes népesség,TISZA,2026/05,60,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+teljes népesség,Fidesz–KDNP,2026/05,20,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+teljes népesség,Mi Hazánk,2026/05,5,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+teljes népesség,Magyar Kétfarkú Kutya Párt,2026/05,1,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+teljes népesség,DK,2026/05,1,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+teljes népesség,Egyéb,2026/05,0,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+teljes népesség,Pártnélküli,2026/05,13,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+pártot választani tudók,TISZA,2026/05,69,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+pártot választani tudók,Fidesz–KDNP,2026/05,23,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+pártot választani tudók,Mi Hazánk,2026/05,6,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+pártot választani tudók,Magyar Kétfarkú Kutya Párt,2026/05,1,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+pártot választani tudók,DK,2026/05,1,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+pártot választani tudók,Egyéb,2026/05,0,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",TISZA,2026/05,71,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Fidesz–KDNP,2026/05,21,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Mi Hazánk,2026/05,6,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Magyar Kétfarkú Kutya Párt,2026/05,1,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",DK,2026/05,1,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/
+"pártot választani tudó, részvételüket biztosra mondó szavazók",Egyéb,2026/05,0,https://24.hu/belfold/2026/05/15/21-kutatokozpont-2026-majus-tisza-fidesz/

@@ -1,8 +1,12 @@
-kateg,Fidesz,Tisza,DK,Mi Hazánk,Kétfarkú Kutya Párt,más párt,pártnélk./bizonyt.,datum
-8 általános,40,15,1,11,1,3,29,2025. augusztus
-"szakmunkásképző, szakiskola",29,28,1,5,1,0,36,2025. augusztus
-érettségi,25,39,2,4,2,1,27,2025. augusztus
-felsőfokú végzettség,14,48,2,3,5,1,27,2025. augusztus
-8 általános,44,23,1,3,1,0,28,2026. március
-középfokú,22,45,2,6,1,0,24,2026. március
-felsőfokú végzettség,16,53,2,5,1,0,23,2026. március
+kateg,Fidesz,Tisza,DK,Mi Hazánk,Kétfarkú Kutya Párt,más párt,pártnélk./bizonyt.,datum,url
+8 általános,38,13,NA,NA,NA,NA,35,2024. október,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+"szakmunkásképző, szakiskola",41,19,NA,NA,NA,NA,28,2024. október,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+érettségi,20,31,NA,NA,NA,NA,33,2024. október,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+felsőfokú végzettség,22,38,NA,NA,NA,NA,19,2024. október,https://24.hu/kozelet/2024/10/23/21-kutatokozpont-tisza-part-kozvelemeny-kutatas-tisza-part-fidesz/
+8 általános,40,15,1,11,1,3,29,2025. augusztus,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+"szakmunkásképző, szakiskola",29,28,1,5,1,0,36,2025. augusztus,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+érettségi,25,39,2,4,2,1,27,2025. augusztus,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+felsőfokú végzettség,14,48,2,3,5,1,27,2025. augusztus,https://24.hu/belfold/2025/09/03/21-kutatokozpont-felmeres-2025-augusztus-fidesz-tisza-partpreferencia/
+8 általános,44,23,1,3,1,0,28,2026. március,https://24.hu/belfold/2026/03/19/fidesz-tisza-felmeres-demografia-21-kutatokozpont/
+középfokú,22,45,2,6,1,0,24,2026. március,https://24.hu/belfold/2026/03/19/fidesz-tisza-felmeres-demografia-21-kutatokozpont/
+felsőfokú végzettség,16,53,2,5,1,0,23,2026. március,https://24.hu/belfold/2026/03/19/fidesz-tisza-felmeres-demografia-21-kutatokozpont/
