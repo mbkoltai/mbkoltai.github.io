@@ -5,7 +5,6 @@ tags: hungary politics elections demographics data-visualisation magyar
 excerpt: Erózió, konszolidáció, mozgósítás
 secondary: blogposts
 mathjax: true
-hidden: true
 ---
 
 
