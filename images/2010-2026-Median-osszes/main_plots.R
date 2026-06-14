@@ -991,7 +991,8 @@ y_scales <- list(
   # ── Base plot (no loess) ──────────────────────────────────────────────────
   p_base <- ggplot(df_plot, aes(x = date, y = value)) +
     facet_wrap(~ party, ncol = 3, scales = "free_y") +
-    geom_line(aes(colour = party,group = pollster), linewidth = 1/2, alpha = 0.6, linetype = "dashed") +
+    geom_line(aes(colour = party,group = pollster), 
+      linewidth = 1/2, alpha = 0.6, linetype = "dashed") +
     geom_point(aes(shape = pollster,colour=party,fill=party), size = 3, alpha = 1/3) +
     geom_point(data = elections_plot,
                aes(x = date, y = result_pct, fill = party),
@@ -1036,8 +1037,10 @@ y_scales <- list(
   # ── Two versions ─────────────────────────────────────────────────────────
   plots <- list(
     no_loess = p_base,
-    loess    = p_base + geom_smooth(method = "loess", se = FALSE,
-                                    linewidth = 2, span = 1, alpha = 0.1)
+    loess    = p_base + 
+      geom_smooth(aes(colour=party),
+                  method = "loess", se = FALSE,
+                  linewidth=2,span=0.6,alpha=0.1)
   )
 
   if (save_flag) {

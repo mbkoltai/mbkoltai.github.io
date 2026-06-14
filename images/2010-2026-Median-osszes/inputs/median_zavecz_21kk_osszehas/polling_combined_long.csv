@@ -76,6 +76,10 @@ pollster,date,party,value,url
 21KK,2026-05-15,Mi Hazánk,5,https://datawrapper.dwcdn.net/ENBVR/14/
 21KK,2026-05-15,Pártnélküli,13,https://datawrapper.dwcdn.net/ENBVR/14/
 21KK,2026-05-15,Tisza,60,https://datawrapper.dwcdn.net/ENBVR/14/
+Medián,2022-03-25,Fidesz,40,https://hvg.hu/360/20220330_Median_valasztas_2022_Fidesz_ellenzek_mandatumbecsles_kozvelemeny_kutatas
+Medián,2022-03-25,MKKP,4,https://hvg.hu/360/20220330_Median_valasztas_2022_Fidesz_ellenzek_mandatumbecsles_kozvelemeny_kutatas
+Medián,2022-03-25,Mi Hazánk,3,https://hvg.hu/360/20220330_Median_valasztas_2022_Fidesz_ellenzek_mandatumbecsles_kozvelemeny_kutatas
+Medián,2022-03-25,Pártnélküli,20,https://hvg.hu/360/20220330_Median_valasztas_2022_Fidesz_ellenzek_mandatumbecsles_kozvelemeny_kutatas
 Medián,2022-04-30,DK,7,https://hvg.hu/360/20220511_Az_emlek_mas
 Medián,2022-04-30,Egyéb párt,17,https://hvg.hu/360/20220511_Az_emlek_mas
 Medián,2022-04-30,Fidesz,48,https://hvg.hu/360/20220511_Az_emlek_mas
@@ -236,6 +240,11 @@ Medián,2026-05-06,MKKP,0,https://datawrapper.dwcdn.net/9DoJh/8/
 Medián,2026-05-06,Mi Hazánk,5,https://datawrapper.dwcdn.net/9DoJh/8/
 Medián,2026-05-06,Pártnélküli,11,https://datawrapper.dwcdn.net/9DoJh/8/
 Medián,2026-05-06,Tisza,61,https://datawrapper.dwcdn.net/9DoJh/8/
+Závecz,2022-03-24,Egyéb párt,1,https://hvg.hu/itthon/20220329_zavecz_biztos_valasztok_fidesz_ellenzek
+Závecz,2022-03-24,Fidesz,39,https://hvg.hu/itthon/20220329_zavecz_biztos_valasztok_fidesz_ellenzek
+Závecz,2022-03-24,MKKP,2,https://hvg.hu/itthon/20220329_zavecz_biztos_valasztok_fidesz_ellenzek
+Závecz,2022-03-24,Mi Hazánk,3,https://hvg.hu/itthon/20220329_zavecz_biztos_valasztok_fidesz_ellenzek
+Závecz,2022-03-24,Pártnélküli,19,https://hvg.hu/itthon/20220329_zavecz_biztos_valasztok_fidesz_ellenzek
 Závecz,2022-05-01,DK,9,https://hvg.hu/itthon/20220513_zavecz_kozvelemenykutatas
 Závecz,2022-05-01,Egyéb párt,18,https://hvg.hu/itthon/20220513_zavecz_kozvelemenykutatas
 Závecz,2022-05-01,Fidesz,47,https://hvg.hu/itthon/20220513_zavecz_kozvelemenykutatas
