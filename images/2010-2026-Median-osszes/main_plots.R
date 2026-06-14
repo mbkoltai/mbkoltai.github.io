@@ -909,6 +909,7 @@ local({
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # medián/závecz/21kk összehasonlítás
 
+
 local({
   save_flag <- T
   
@@ -922,12 +923,13 @@ local({
 )
 
 elections_raw <- read_csv("inputs/val_eredmenyek.csv") %>%
-  filter(ev %in% c(2024,2026)) %>%
+  filter(ev %in% c(2022,2024,2026)) %>%
   filter(part %in% names(key_to_hu)) %>%        # keep only parties in polling data
   mutate(
     party   =key_to_hu[part],              # remap to Hungarian label
-    result_pct=lista_szavazat / jogosult * 100,
+    result_pct=lista_szavazat / jogosult*100,
     date    =as.Date(case_when(
+      ev == 2022 ~ "2022-04-03",
       ev == 2024 ~ "2024-06-09",
       ev == 2026 ~ "2026-04-06"
     ))
@@ -935,8 +937,8 @@ elections_raw <- read_csv("inputs/val_eredmenyek.csv") %>%
 
 # ── Election vlines ───────────────────────────────────────────────────────────
 election_dates <- tibble(
-  date =as.Date(c("2024-06-09","2026-04-06")),
-  label=c("EP2024","OGY2026") )
+  date =as.Date(c("2022-04-03","2024-06-09","2026-04-06")),
+  label=c("OGY2022","EP2024","OGY2026") )
 
 # ── Polling data ──────────────────────────────────────────────────────────────
 df <- read_csv("inputs/median_zavecz_21kk_osszehas/polling_combined_long.csv") %>%
@@ -977,10 +979,10 @@ y_scales <- list(
   date_labeller <- function(x) format(x, "%Y-\n%m")
 
   # ── Base plot (no loess) ──────────────────────────────────────────────────
-  p_base <- ggplot(df_plot, aes(x = date, y = value, colour = party)) +
+  p_base <- ggplot(df_plot, aes(x = date, y = value)) +
     facet_wrap(~ party, ncol = 3, scales = "free_y") +
-    geom_line(aes(group = pollster), linewidth = 1/2, alpha = 0.6, linetype = "dashed") +
-    geom_point(aes(shape = pollster), size = 3, alpha = 0.5) +
+    geom_line(aes(colour = party,group = pollster), linewidth = 1/2, alpha = 0.6, linetype = "dashed") +
+    geom_point(aes(shape = pollster,colour=party,fill=party), size = 3, alpha = 1/3) +
     geom_point(data = elections_plot,
                aes(x = date, y = result_pct, fill = party),
                shape = 23, size = 4, colour = "black", stroke = 0.5,
@@ -988,21 +990,22 @@ y_scales <- list(
     geom_text(data = elections_plot,
               aes(x = date, y = result_pct,
                   label = paste0(format(round(result_pct, 1), nsmall = 1), "%"),
-                  hjust = ifelse(ev == 2024, -0.15, 1.15),
-                  vjust = ifelse(ev == 2024, 1.5, -0.8)),
+                  hjust = ifelse(ev %in% c(2022,2024), -0.15, 1.15),
+                  vjust = ifelse(ev %in% c(2022,2024), 1.5, -0.8)),
               size = 5, inherit.aes = FALSE) +
     geom_vline(data = election_dates,
                aes(xintercept = date),
                linetype = "dashed", colour = "grey40", linewidth = 0.6) +
     geom_text(data = election_dates,
               aes(x = date, label = label,
-                  hjust = ifelse(label == "EP2024", -0.08, 1.08)),
+                  hjust = ifelse(grepl("2022|2024",label), -0.08, 1.08)),
               y = Inf, vjust = 1.4, size = 5, inherit.aes = FALSE) +
     ggh4x::facetted_pos_scales(y = y_scales) +
     scale_colour_manual(values = party_colour_map, guide = "none") +
     scale_fill_manual(values = party_colour_map, guide = "none") +
-    scale_shape_manual(values = c("21KK" = 16, "Medián" = 17, "Závecz" = 15)) +
-    scale_x_date(date_labels = "%Y-\n%m", date_breaks = "3 months") +
+    # scale_shape_manual(values = c("21KK" = 16, "Medián" = 17, "Závecz" = 15)) +
+    scale_shape_manual(values = c("21KK" = 21, "Medián" = 24, "Závecz" = 22)) +
+    scale_x_date(date_labels = "%Y-\n%m", date_breaks = "6 months") +
     labs(
       title   = "Pártok támogatottsága a teljes népességben (Medián/21KK/Závecz)",
       x       = NULL,

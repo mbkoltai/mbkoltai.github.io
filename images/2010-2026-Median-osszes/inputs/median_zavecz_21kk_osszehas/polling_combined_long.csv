@@ -1,260 +1,390 @@
-﻿pollster,date,party,value
-21KK,2024-10-01,DK,3
-21KK,2024-10-01,Egyéb párt,6
-21KK,2024-10-01,Fidesz,29
-21KK,2024-10-01,MKKP,3
-21KK,2024-10-01,Mi Hazánk,5
-21KK,2024-10-01,Pártnélküli,28
-21KK,2024-10-01,Tisza,26
-21KK,2025-04-01,DK,2
-21KK,2025-04-01,Egyéb párt,4
-21KK,2025-04-01,Fidesz,28
-21KK,2025-04-01,MKKP,3
-21KK,2025-04-01,Mi Hazánk,4
-21KK,2025-04-01,Pártnélküli,25
-21KK,2025-04-01,Tisza,34
-21KK,2025-06-01,DK,3
-21KK,2025-06-01,Egyéb párt,1
-21KK,2025-06-01,Fidesz,25
-21KK,2025-06-01,MKKP,2
-21KK,2025-06-01,Mi Hazánk,5
-21KK,2025-06-01,Pártnélküli,32
-21KK,2025-06-01,Tisza,32
-21KK,2025-08-01,DK,2
-21KK,2025-08-01,Egyéb párt,1
-21KK,2025-08-01,Fidesz,26
-21KK,2025-08-01,MKKP,2
-21KK,2025-08-01,Mi Hazánk,5
-21KK,2025-08-01,Pártnélküli,30
-21KK,2025-08-01,Tisza,34
-21KK,2025-10-01,DK,2
-21KK,2025-10-01,Egyéb párt,1
-21KK,2025-10-01,Fidesz,26
-21KK,2025-10-01,MKKP,1
-21KK,2025-10-01,Mi Hazánk,5
-21KK,2025-10-01,Pártnélküli,32
-21KK,2025-10-01,Tisza,33
-21KK,2025-11-01,DK,2
-21KK,2025-11-01,Egyéb párt,1
-21KK,2025-11-01,Fidesz,27
-21KK,2025-11-01,MKKP,2
-21KK,2025-11-01,Mi Hazánk,4
-21KK,2025-11-01,Pártnélküli,33
-21KK,2025-11-01,Tisza,31
-21KK,2025-12-01,DK,2
-21KK,2025-12-01,Egyéb párt,0
-21KK,2025-12-01,Fidesz,26
-21KK,2025-12-01,MKKP,2
-21KK,2025-12-01,Mi Hazánk,5
-21KK,2025-12-01,Pártnélküli,31
-21KK,2025-12-01,Tisza,34
-21KK,2026-01-31,DK,2
-21KK,2026-01-31,Egyéb párt,1
-21KK,2026-01-31,Fidesz,28
-21KK,2026-01-31,MKKP,2
-21KK,2026-01-31,Mi Hazánk,5
-21KK,2026-01-31,Pártnélküli,27
-21KK,2026-01-31,Tisza,35
-21KK,2026-03-11,DK,1
-21KK,2026-03-11,Egyéb párt,0
-21KK,2026-03-11,Fidesz,30
-21KK,2026-03-11,MKKP,1
-21KK,2026-03-11,Mi Hazánk,4
-21KK,2026-03-11,Pártnélküli,26
-21KK,2026-03-11,Tisza,38
-21KK,2026-04-01,DK,1
-21KK,2026-04-01,Egyéb párt,0
-21KK,2026-04-01,Fidesz,28
-21KK,2026-04-01,MKKP,1
-21KK,2026-04-01,Mi Hazánk,4
-21KK,2026-04-01,Pártnélküli,26
-21KK,2026-04-01,Tisza,40
-21KK,2026-05-15,DK,1
-21KK,2026-05-15,Egyéb párt,0
-21KK,2026-05-15,Fidesz,20
-21KK,2026-05-15,MKKP,1
-21KK,2026-05-15,Mi Hazánk,5
-21KK,2026-05-15,Pártnélküli,13
-21KK,2026-05-15,Tisza,60
-Medián,2024-07-31,DK,6
-Medián,2024-07-31,Egyéb párt,4
-Medián,2024-07-31,Fidesz,32
-Medián,2024-07-31,MKKP,4
-Medián,2024-07-31,Mi Hazánk,6
-Medián,2024-07-31,Pártnélküli,27
-Medián,2024-07-31,Tisza,21
-Medián,2024-09-30,DK,2
-Medián,2024-09-30,Egyéb párt,5
-Medián,2024-09-30,Fidesz,30
-Medián,2024-09-30,MKKP,4
-Medián,2024-09-30,Mi Hazánk,4
-Medián,2024-09-30,Pártnélküli,30
-Medián,2024-09-30,Tisza,25
-Medián,2024-10-31,DK,2
-Medián,2024-10-31,Egyéb párt,4
-Medián,2024-10-31,Fidesz,32
-Medián,2024-10-31,MKKP,3
-Medián,2024-10-31,Mi Hazánk,5
-Medián,2024-10-31,Pártnélküli,20
-Medián,2024-10-31,Tisza,34
-Medián,2024-11-30,DK,3
-Medián,2024-11-30,Egyéb párt,4
-Medián,2024-11-30,Fidesz,27
-Medián,2024-11-30,MKKP,3
-Medián,2024-11-30,Mi Hazánk,5
-Medián,2024-11-30,Pártnélküli,24
-Medián,2024-11-30,Tisza,34
-Medián,2025-03-31,DK,2
-Medián,2025-03-31,Egyéb párt,4
-Medián,2025-03-31,Fidesz,29
-Medián,2025-03-31,MKKP,3
-Medián,2025-03-31,Mi Hazánk,5
-Medián,2025-03-31,Pártnélküli,24
-Medián,2025-03-31,Tisza,33
-Medián,2025-06-30,DK,2
-Medián,2025-06-30,Egyéb párt,3
-Medián,2025-06-30,Fidesz,28
-Medián,2025-06-30,MKKP,3
-Medián,2025-06-30,Mi Hazánk,4
-Medián,2025-06-30,Pártnélküli,22
-Medián,2025-06-30,Tisza,38
-Medián,2025-09-30,DK,2
-Medián,2025-09-30,Egyéb párt,2
-Medián,2025-09-30,Fidesz,30
-Medián,2025-09-30,MKKP,3
-Medián,2025-09-30,Mi Hazánk,4
-Medián,2025-09-30,Pártnélküli,22
-Medián,2025-09-30,Tisza,37
-Medián,2025-11-30,DK,2
-Medián,2025-11-30,Egyéb párt,1
-Medián,2025-11-30,Fidesz,33
-Medián,2025-11-30,MKKP,2
-Medián,2025-11-30,Mi Hazánk,5
-Medián,2025-11-30,Pártnélküli,19
-Medián,2025-11-30,Tisza,38
-Medián,2026-01-10,DK,1
-Medián,2026-01-10,Egyéb párt,1
-Medián,2026-01-10,Fidesz,33
-Medián,2026-01-10,MKKP,2
-Medián,2026-01-10,Mi Hazánk,4
-Medián,2026-01-10,Pártnélküli,19
-Medián,2026-01-10,Tisza,40
-Medián,2026-02-25,DK,1
-Medián,2026-02-25,Egyéb párt,0
-Medián,2026-02-25,Fidesz,31
-Medián,2026-02-25,MKKP,2
-Medián,2026-02-25,Mi Hazánk,5
-Medián,2026-02-25,Pártnélküli,19
-Medián,2026-02-25,Tisza,42
-Medián,2026-03-25,DK,1
-Medián,2026-03-25,Egyéb párt,0
-Medián,2026-03-25,Fidesz,30
-Medián,2026-03-25,MKKP,2
-Medián,2026-03-25,Mi Hazánk,3
-Medián,2026-03-25,Pártnélküli,18
-Medián,2026-03-25,Tisza,46
-Medián,2026-04-22,DK,1
-Medián,2026-04-22,Egyéb párt,1
-Medián,2026-04-22,Fidesz,21
-Medián,2026-04-22,MKKP,1
-Medián,2026-04-22,Mi Hazánk,6
-Medián,2026-04-22,Pártnélküli,14
-Medián,2026-04-22,Tisza,56
-Medián,2026-05-06,DK,1
-Medián,2026-05-06,Egyéb párt,1
-Medián,2026-05-06,Fidesz,21
-Medián,2026-05-06,MKKP,0
-Medián,2026-05-06,Mi Hazánk,5
-Medián,2026-05-06,Pártnélküli,11
-Medián,2026-05-06,Tisza,61
-Závecz,2024-05-31,DK,9
-Závecz,2024-05-31,Egyéb párt,9
-Závecz,2024-05-31,Fidesz,31
-Závecz,2024-05-31,MKKP,2
-Závecz,2024-05-31,Mi Hazánk,3
-Závecz,2024-05-31,Pártnélküli,27
-Závecz,2024-05-31,Tisza,19
-Závecz,2024-08-31,DK,5
-Závecz,2024-08-31,Egyéb párt,12
-Závecz,2024-08-31,Fidesz,26
-Závecz,2024-08-31,MKKP,3
-Závecz,2024-08-31,Mi Hazánk,5
-Závecz,2024-08-31,Pártnélküli,29
-Závecz,2024-08-31,Tisza,20
-Závecz,2024-10-10,DK,5
-Závecz,2024-10-10,Egyéb párt,10
-Závecz,2024-10-10,Fidesz,25
-Závecz,2024-10-10,MKKP,3
-Závecz,2024-10-10,Mi Hazánk,4
-Závecz,2024-10-10,Pártnélküli,32
-Závecz,2024-10-10,Tisza,21
-Závecz,2024-11-30,DK,5
-Závecz,2024-11-30,Egyéb párt,8
-Závecz,2024-11-30,Fidesz,24
-Závecz,2024-11-30,MKKP,3
-Závecz,2024-11-30,Mi Hazánk,5
-Závecz,2024-11-30,Pártnélküli,29
-Závecz,2024-11-30,Tisza,26
-Závecz,2025-03-31,DK,6
-Závecz,2025-03-31,Egyéb párt,9
-Závecz,2025-03-31,Fidesz,26
-Závecz,2025-03-31,MKKP,3
-Závecz,2025-03-31,Mi Hazánk,5
-Závecz,2025-03-31,Pártnélküli,22
-Závecz,2025-03-31,Tisza,29
-Závecz,2025-06-30,DK,4
-Závecz,2025-06-30,Egyéb párt,5
-Závecz,2025-06-30,Fidesz,26
-Závecz,2025-06-30,MKKP,3
-Závecz,2025-06-30,Mi Hazánk,6
-Závecz,2025-06-30,Pártnélküli,24
-Závecz,2025-06-30,Tisza,32
-Závecz,2025-08-31,DK,4
-Závecz,2025-08-31,Egyéb párt,4
-Závecz,2025-08-31,Fidesz,28
-Závecz,2025-08-31,MKKP,4
-Závecz,2025-08-31,Mi Hazánk,5
-Závecz,2025-08-31,Pártnélküli,22
-Závecz,2025-08-31,Tisza,33
-Závecz,2025-10-31,DK,4
-Závecz,2025-10-31,Egyéb párt,2
-Závecz,2025-10-31,Fidesz,29
-Závecz,2025-10-31,MKKP,3
-Závecz,2025-10-31,Mi Hazánk,5
-Závecz,2025-10-31,Pártnélküli,22
-Závecz,2025-10-31,Tisza,35
-Závecz,2025-11-30,DK,4
-Závecz,2025-11-30,Egyéb párt,1
-Závecz,2025-11-30,Fidesz,30
-Závecz,2025-11-30,MKKP,3
-Závecz,2025-11-30,Mi Hazánk,4
-Závecz,2025-11-30,Pártnélküli,23
-Závecz,2025-11-30,Tisza,35
-Závecz,2026-01-31,DK,3
-Závecz,2026-01-31,Egyéb párt,1
-Závecz,2026-01-31,Fidesz,31
-Závecz,2026-01-31,MKKP,3
-Závecz,2026-01-31,Mi Hazánk,3
-Závecz,2026-01-31,Pártnélküli,23
-Závecz,2026-01-31,Tisza,36
-Závecz,2026-03-03,DK,3
-Závecz,2026-03-03,Egyéb párt,0
-Závecz,2026-03-03,Fidesz,32
-Závecz,2026-03-03,MKKP,2
-Závecz,2026-03-03,Mi Hazánk,5
-Závecz,2026-03-03,Pártnélküli,20
-Závecz,2026-03-03,Tisza,38
-Závecz,2026-03-31,DK,3
-Závecz,2026-03-31,Egyéb párt,0
-Závecz,2026-03-31,Fidesz,31
-Závecz,2026-03-31,MKKP,3
-Závecz,2026-03-31,Mi Hazánk,4
-Závecz,2026-03-31,Pártnélküli,20
-Závecz,2026-03-31,Tisza,39
-Závecz,2026-05-31,DK,1
-Závecz,2026-05-31,Egyéb párt,0
-Závecz,2026-05-31,Fidesz,18
-Závecz,2026-05-31,MKKP,1
-Závecz,2026-05-31,Mi Hazánk,4
-Závecz,2026-05-31,Pártnélküli,19
-Závecz,2026-05-31,Tisza,57
+pollster,date,party,value,url
+21KK,2024-10-01,DK,3,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2024-10-01,Egyéb párt,6,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2024-10-01,Fidesz,29,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2024-10-01,MKKP,3,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2024-10-01,Mi Hazánk,5,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2024-10-01,Pártnélküli,28,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2024-10-01,Tisza,26,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-04-01,DK,2,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-04-01,Egyéb párt,4,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-04-01,Fidesz,28,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-04-01,MKKP,3,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-04-01,Mi Hazánk,4,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-04-01,Pártnélküli,25,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-04-01,Tisza,34,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-06-01,DK,3,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-06-01,Egyéb párt,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-06-01,Fidesz,25,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-06-01,MKKP,2,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-06-01,Mi Hazánk,5,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-06-01,Pártnélküli,32,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-06-01,Tisza,32,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-08-01,DK,2,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-08-01,Egyéb párt,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-08-01,Fidesz,26,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-08-01,MKKP,2,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-08-01,Mi Hazánk,5,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-08-01,Pártnélküli,30,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-08-01,Tisza,34,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-10-01,DK,2,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-10-01,Egyéb párt,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-10-01,Fidesz,26,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-10-01,MKKP,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-10-01,Mi Hazánk,5,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-10-01,Pártnélküli,32,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-10-01,Tisza,33,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-11-01,DK,2,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-11-01,Egyéb párt,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-11-01,Fidesz,27,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-11-01,MKKP,2,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-11-01,Mi Hazánk,4,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-11-01,Pártnélküli,33,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-11-01,Tisza,31,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-12-01,DK,2,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-12-01,Egyéb párt,0,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-12-01,Fidesz,26,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-12-01,MKKP,2,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-12-01,Mi Hazánk,5,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-12-01,Pártnélküli,31,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2025-12-01,Tisza,34,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-01-31,DK,2,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-01-31,Egyéb párt,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-01-31,Fidesz,28,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-01-31,MKKP,2,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-01-31,Mi Hazánk,5,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-01-31,Pártnélküli,27,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-01-31,Tisza,35,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-03-11,DK,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-03-11,Egyéb párt,0,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-03-11,Fidesz,30,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-03-11,MKKP,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-03-11,Mi Hazánk,4,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-03-11,Pártnélküli,26,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-03-11,Tisza,38,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-04-01,DK,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-04-01,Egyéb párt,0,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-04-01,Fidesz,28,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-04-01,MKKP,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-04-01,Mi Hazánk,4,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-04-01,Pártnélküli,26,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-04-01,Tisza,40,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-05-15,DK,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-05-15,Egyéb párt,0,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-05-15,Fidesz,20,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-05-15,MKKP,1,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-05-15,Mi Hazánk,5,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-05-15,Pártnélküli,13,https://datawrapper.dwcdn.net/ENBVR/14/
+21KK,2026-05-15,Tisza,60,https://datawrapper.dwcdn.net/ENBVR/14/
+Medián,2022-04-30,DK,7,https://hvg.hu/360/20220511_Az_emlek_mas
+Medián,2022-04-30,Egyéb párt,17,https://hvg.hu/360/20220511_Az_emlek_mas
+Medián,2022-04-30,Fidesz,48,https://hvg.hu/360/20220511_Az_emlek_mas
+Medián,2022-04-30,MKKP,5,https://hvg.hu/360/20220511_Az_emlek_mas
+Medián,2022-04-30,Mi Hazánk,8,https://hvg.hu/360/20220511_Az_emlek_mas
+Medián,2022-04-30,Pártnélküli,15,https://hvg.hu/360/20220511_Az_emlek_mas
+Medián,2022-10-18,DK,9,https://hvg.hu/360/20221102_Sok_kicsi_kevesre_megy
+Medián,2022-10-18,Egyéb párt,16,https://hvg.hu/360/20221102_Sok_kicsi_kevesre_megy
+Medián,2022-10-18,Fidesz,39,https://hvg.hu/360/20221102_Sok_kicsi_kevesre_megy
+Medián,2022-10-18,MKKP,7,https://hvg.hu/360/20221102_Sok_kicsi_kevesre_megy
+Medián,2022-10-18,Mi Hazánk,7,https://hvg.hu/360/20221102_Sok_kicsi_kevesre_megy
+Medián,2022-10-18,Pártnélküli,23,https://hvg.hu/360/20221102_Sok_kicsi_kevesre_megy
+Medián,2022-12-15,DK,8,https://hvg.hu/360/20230104_Nincs_ok_unneplesre
+Medián,2022-12-15,Egyéb párt,17,https://hvg.hu/360/20230104_Nincs_ok_unneplesre
+Medián,2022-12-15,Fidesz,32,https://hvg.hu/360/20230104_Nincs_ok_unneplesre
+Medián,2022-12-15,MKKP,6,https://hvg.hu/360/20230104_Nincs_ok_unneplesre
+Medián,2022-12-15,Mi Hazánk,7,https://hvg.hu/360/20230104_Nincs_ok_unneplesre
+Medián,2022-12-15,Pártnélküli,30,https://hvg.hu/360/20230104_Nincs_ok_unneplesre
+Medián,2023-02-24,DK,9,https://hvg.hu/360/20230308_Median_Kutyafuttatas
+Medián,2023-02-24,Egyéb párt,17,https://hvg.hu/360/20230308_Median_Kutyafuttatas
+Medián,2023-02-24,Fidesz,35,https://hvg.hu/360/20230308_Median_Kutyafuttatas
+Medián,2023-02-24,MKKP,7,https://hvg.hu/360/20230308_Median_Kutyafuttatas
+Medián,2023-02-24,Mi Hazánk,5,https://hvg.hu/360/20230308_Median_Kutyafuttatas
+Medián,2023-02-24,Pártnélküli,27,https://hvg.hu/360/20230308_Median_Kutyafuttatas
+Medián,2023-05-29,DK,9,https://hvg.hu/360/20230615_hvg_median_kozvelemeny_kutatas_fidesz_ellenzek_gazdasagi_valsag_EU
+Medián,2023-05-29,Egyéb párt,16,https://hvg.hu/360/20230615_hvg_median_kozvelemeny_kutatas_fidesz_ellenzek_gazdasagi_valsag_EU
+Medián,2023-05-29,Fidesz,32,https://hvg.hu/360/20230615_hvg_median_kozvelemeny_kutatas_fidesz_ellenzek_gazdasagi_valsag_EU
+Medián,2023-05-29,MKKP,8,https://hvg.hu/360/20230615_hvg_median_kozvelemeny_kutatas_fidesz_ellenzek_gazdasagi_valsag_EU
+Medián,2023-05-29,Mi Hazánk,6,https://hvg.hu/360/20230615_hvg_median_kozvelemeny_kutatas_fidesz_ellenzek_gazdasagi_valsag_EU
+Medián,2023-05-29,Pártnélküli,29,https://hvg.hu/360/20230615_hvg_median_kozvelemeny_kutatas_fidesz_ellenzek_gazdasagi_valsag_EU
+Medián,2023-09-25,DK,7,https://hvg.hu/360/20231004_Median_partok_partpreferenciak_kozvelemenykutatas_onkormanyzati_valasztasok_EPvalasztas
+Medián,2023-09-25,Egyéb párt,16,https://hvg.hu/360/20231004_Median_partok_partpreferenciak_kozvelemenykutatas_onkormanyzati_valasztasok_EPvalasztas
+Medián,2023-09-25,Fidesz,30,https://hvg.hu/360/20231004_Median_partok_partpreferenciak_kozvelemenykutatas_onkormanyzati_valasztasok_EPvalasztas
+Medián,2023-09-25,MKKP,6,https://hvg.hu/360/20231004_Median_partok_partpreferenciak_kozvelemenykutatas_onkormanyzati_valasztasok_EPvalasztas
+Medián,2023-09-25,Mi Hazánk,7,https://hvg.hu/360/20231004_Median_partok_partpreferenciak_kozvelemenykutatas_onkormanyzati_valasztasok_EPvalasztas
+Medián,2023-09-25,Pártnélküli,34,https://hvg.hu/360/20231004_Median_partok_partpreferenciak_kozvelemenykutatas_onkormanyzati_valasztasok_EPvalasztas
+Medián,2024-01-10,DK,6,https://hvg.hu/360/20240124_hvg_onkormanyzati_valasztas_median_fidesz_ellenzek_momentum_dk_kozvelemenykutatas_epvalasztas
+Medián,2024-01-10,Egyéb párt,16,https://hvg.hu/360/20240124_hvg_onkormanyzati_valasztas_median_fidesz_ellenzek_momentum_dk_kozvelemenykutatas_epvalasztas
+Medián,2024-01-10,Fidesz,32,https://hvg.hu/360/20240124_hvg_onkormanyzati_valasztas_median_fidesz_ellenzek_momentum_dk_kozvelemenykutatas_epvalasztas
+Medián,2024-01-10,MKKP,5,https://hvg.hu/360/20240124_hvg_onkormanyzati_valasztas_median_fidesz_ellenzek_momentum_dk_kozvelemenykutatas_epvalasztas
+Medián,2024-01-10,Mi Hazánk,5,https://hvg.hu/360/20240124_hvg_onkormanyzati_valasztas_median_fidesz_ellenzek_momentum_dk_kozvelemenykutatas_epvalasztas
+Medián,2024-01-10,Pártnélküli,36,https://hvg.hu/360/20240124_hvg_onkormanyzati_valasztas_median_fidesz_ellenzek_momentum_dk_kozvelemenykutatas_epvalasztas
+Medián,2024-03-01,DK,8,https://hvg.hu/360/20240313_median
+Medián,2024-03-01,Egyéb párt,17,https://hvg.hu/360/20240313_median
+Medián,2024-03-01,Fidesz,32,https://hvg.hu/360/20240313_median
+Medián,2024-03-01,MKKP,8,https://hvg.hu/360/20240313_median
+Medián,2024-03-01,Mi Hazánk,6,https://hvg.hu/360/20240313_median
+Medián,2024-03-01,Pártnélküli,29,https://hvg.hu/360/20240313_median
+Medián,2024-04-27,DK,6,https://hvg.hu/360/20240430_hvg-median-ep-onkormanyzati-valasztas-magyar-peter-tisza-part-fidesz-ellenzek
+Medián,2024-04-27,Egyéb párt,9,https://hvg.hu/360/20240430_hvg-median-ep-onkormanyzati-valasztas-magyar-peter-tisza-part-fidesz-ellenzek
+Medián,2024-04-27,Fidesz,32,https://hvg.hu/360/20240430_hvg-median-ep-onkormanyzati-valasztas-magyar-peter-tisza-part-fidesz-ellenzek
+Medián,2024-04-27,MKKP,5,https://hvg.hu/360/20240430_hvg-median-ep-onkormanyzati-valasztas-magyar-peter-tisza-part-fidesz-ellenzek
+Medián,2024-04-27,Mi Hazánk,4,https://hvg.hu/360/20240430_hvg-median-ep-onkormanyzati-valasztas-magyar-peter-tisza-part-fidesz-ellenzek
+Medián,2024-04-27,Pártnélküli,28,https://hvg.hu/360/20240430_hvg-median-ep-onkormanyzati-valasztas-magyar-peter-tisza-part-fidesz-ellenzek
+Medián,2024-04-27,Tisza,16,https://hvg.hu/360/20240430_hvg-median-ep-onkormanyzati-valasztas-magyar-peter-tisza-part-fidesz-ellenzek
+Medián,2024-05-28,DK,4,https://hvg.hu/itthon/20240530_median-a-tisza-tovabb-erosodott-de-a-fidesz-is
+Medián,2024-05-28,Egyéb párt,7,https://hvg.hu/itthon/20240530_median-a-tisza-tovabb-erosodott-de-a-fidesz-is
+Medián,2024-05-28,Fidesz,32,https://hvg.hu/itthon/20240530_median-a-tisza-tovabb-erosodott-de-a-fidesz-is
+Medián,2024-05-28,MKKP,3,https://hvg.hu/itthon/20240530_median-a-tisza-tovabb-erosodott-de-a-fidesz-is
+Medián,2024-05-28,Mi Hazánk,4,https://hvg.hu/itthon/20240530_median-a-tisza-tovabb-erosodott-de-a-fidesz-is
+Medián,2024-05-28,Pártnélküli,31,https://hvg.hu/itthon/20240530_median-a-tisza-tovabb-erosodott-de-a-fidesz-is
+Medián,2024-05-28,Tisza,19,https://hvg.hu/itthon/20240530_median-a-tisza-tovabb-erosodott-de-a-fidesz-is
+Medián,2024-06-02,DK,7,https://hvg.hu/itthon/20240607_median-az-europai-parlamenti-valasztas-biztos-magyarorszagi-gyoztese-a-fidesz-kdnp
+Medián,2024-06-02,Egyéb párt,4,https://hvg.hu/itthon/20240607_median-az-europai-parlamenti-valasztas-biztos-magyarorszagi-gyoztese-a-fidesz-kdnp
+Medián,2024-06-02,Fidesz,35,https://hvg.hu/itthon/20240607_median-az-europai-parlamenti-valasztas-biztos-magyarorszagi-gyoztese-a-fidesz-kdnp
+Medián,2024-06-02,MKKP,3,https://hvg.hu/itthon/20240607_median-az-europai-parlamenti-valasztas-biztos-magyarorszagi-gyoztese-a-fidesz-kdnp
+Medián,2024-06-02,Mi Hazánk,3,https://hvg.hu/itthon/20240607_median-az-europai-parlamenti-valasztas-biztos-magyarorszagi-gyoztese-a-fidesz-kdnp
+Medián,2024-06-02,Pártnélküli,29,https://hvg.hu/itthon/20240607_median-az-europai-parlamenti-valasztas-biztos-magyarorszagi-gyoztese-a-fidesz-kdnp
+Medián,2024-06-02,Tisza,19,https://hvg.hu/itthon/20240607_median-az-europai-parlamenti-valasztas-biztos-magyarorszagi-gyoztese-a-fidesz-kdnp
+Medián,2024-07-31,DK,6,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-07-31,Egyéb párt,4,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-07-31,Fidesz,32,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-07-31,MKKP,4,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-07-31,Mi Hazánk,6,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-07-31,Pártnélküli,27,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-07-31,Tisza,21,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-09-30,DK,2,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-09-30,Egyéb párt,5,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-09-30,Fidesz,30,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-09-30,MKKP,4,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-09-30,Mi Hazánk,4,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-09-30,Pártnélküli,30,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-09-30,Tisza,25,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-10-31,DK,2,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-10-31,Egyéb párt,4,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-10-31,Fidesz,32,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-10-31,MKKP,3,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-10-31,Mi Hazánk,5,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-10-31,Pártnélküli,20,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-10-31,Tisza,34,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-11-30,DK,3,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-11-30,Egyéb párt,4,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-11-30,Fidesz,27,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-11-30,MKKP,3,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-11-30,Mi Hazánk,5,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-11-30,Pártnélküli,24,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2024-11-30,Tisza,34,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-03-31,DK,2,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-03-31,Egyéb párt,4,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-03-31,Fidesz,29,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-03-31,MKKP,3,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-03-31,Mi Hazánk,5,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-03-31,Pártnélküli,24,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-03-31,Tisza,33,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-06-30,DK,2,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-06-30,Egyéb párt,3,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-06-30,Fidesz,28,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-06-30,MKKP,3,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-06-30,Mi Hazánk,4,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-06-30,Pártnélküli,22,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-06-30,Tisza,38,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-09-30,DK,2,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-09-30,Egyéb párt,2,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-09-30,Fidesz,30,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-09-30,MKKP,3,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-09-30,Mi Hazánk,4,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-09-30,Pártnélküli,22,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-09-30,Tisza,37,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-11-30,DK,2,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-11-30,Egyéb párt,1,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-11-30,Fidesz,33,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-11-30,MKKP,2,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-11-30,Mi Hazánk,5,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-11-30,Pártnélküli,19,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2025-11-30,Tisza,38,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-01-10,DK,1,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-01-10,Egyéb párt,1,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-01-10,Fidesz,33,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-01-10,MKKP,2,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-01-10,Mi Hazánk,4,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-01-10,Pártnélküli,19,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-01-10,Tisza,40,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-02-25,DK,1,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-02-25,Egyéb párt,0,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-02-25,Fidesz,31,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-02-25,MKKP,2,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-02-25,Mi Hazánk,5,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-02-25,Pártnélküli,19,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-02-25,Tisza,42,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-03-25,DK,1,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-03-25,Egyéb párt,0,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-03-25,Fidesz,30,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-03-25,MKKP,2,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-03-25,Mi Hazánk,3,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-03-25,Pártnélküli,18,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-03-25,Tisza,46,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-04-22,DK,1,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-04-22,Egyéb párt,1,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-04-22,Fidesz,21,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-04-22,MKKP,1,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-04-22,Mi Hazánk,6,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-04-22,Pártnélküli,14,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-04-22,Tisza,56,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-05-06,DK,1,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-05-06,Egyéb párt,1,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-05-06,Fidesz,21,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-05-06,MKKP,0,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-05-06,Mi Hazánk,5,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-05-06,Pártnélküli,11,https://datawrapper.dwcdn.net/9DoJh/8/
+Medián,2026-05-06,Tisza,61,https://datawrapper.dwcdn.net/9DoJh/8/
+Závecz,2022-05-01,DK,9,https://hvg.hu/itthon/20220513_zavecz_kozvelemenykutatas
+Závecz,2022-05-01,Egyéb párt,18,https://hvg.hu/itthon/20220513_zavecz_kozvelemenykutatas
+Závecz,2022-05-01,Fidesz,47,https://hvg.hu/itthon/20220513_zavecz_kozvelemenykutatas
+Závecz,2022-05-01,MKKP,2,https://hvg.hu/itthon/20220513_zavecz_kozvelemenykutatas
+Závecz,2022-05-01,Mi Hazánk,5,https://hvg.hu/itthon/20220513_zavecz_kozvelemenykutatas
+Závecz,2022-05-01,Pártnélküli,19,https://hvg.hu/itthon/20220513_zavecz_kozvelemenykutatas
+Závecz,2022-09-15,DK,10,https://hvg.hu/itthon/20220926_zavecz_fidesz_felmeres
+Závecz,2022-09-15,Egyéb párt,19,https://hvg.hu/itthon/20220926_zavecz_fidesz_felmeres
+Závecz,2022-09-15,Fidesz,37,https://hvg.hu/itthon/20220926_zavecz_fidesz_felmeres
+Závecz,2022-09-15,MKKP,2,https://hvg.hu/itthon/20220926_zavecz_fidesz_felmeres
+Závecz,2022-09-15,Mi Hazánk,6,https://hvg.hu/itthon/20220926_zavecz_fidesz_felmeres
+Závecz,2022-09-15,Pártnélküli,26,https://hvg.hu/itthon/20220926_zavecz_fidesz_felmeres
+Závecz,2022-11-15,DK,11,https://telex.hu/belfold/2022/11/25/zavecz-felmeres-partpreferencia-november
+Závecz,2022-11-15,Egyéb párt,17,https://telex.hu/belfold/2022/11/25/zavecz-felmeres-partpreferencia-november
+Závecz,2022-11-15,Fidesz,33,https://telex.hu/belfold/2022/11/25/zavecz-felmeres-partpreferencia-november
+Závecz,2022-11-15,MKKP,3,https://telex.hu/belfold/2022/11/25/zavecz-felmeres-partpreferencia-november
+Závecz,2022-11-15,Mi Hazánk,6,https://telex.hu/belfold/2022/11/25/zavecz-felmeres-partpreferencia-november
+Závecz,2022-11-15,Pártnélküli,30,https://telex.hu/belfold/2022/11/25/zavecz-felmeres-partpreferencia-november
+Závecz,2023-03-05,DK,12,https://hvg.hu/itthon/20230313_politika_zavecz_research_partpreferencia_kutatas_fidesz_dk
+Závecz,2023-03-05,Egyéb párt,19,https://hvg.hu/itthon/20230313_politika_zavecz_research_partpreferencia_kutatas_fidesz_dk
+Závecz,2023-03-05,Fidesz,32,https://hvg.hu/itthon/20230313_politika_zavecz_research_partpreferencia_kutatas_fidesz_dk
+Závecz,2023-03-05,MKKP,2,https://hvg.hu/itthon/20230313_politika_zavecz_research_partpreferencia_kutatas_fidesz_dk
+Závecz,2023-03-05,Mi Hazánk,7,https://hvg.hu/itthon/20230313_politika_zavecz_research_partpreferencia_kutatas_fidesz_dk
+Závecz,2023-03-05,Pártnélküli,28,https://hvg.hu/itthon/20230313_politika_zavecz_research_partpreferencia_kutatas_fidesz_dk
+Závecz,2023-05-05,DK,13,https://hvg.hu/itthon/20230510_kozvelemenykutatas_zavecz_research_partok_tamogatottsaga_kozhangulat_fidesz_dk_momentum_jobbik_mszp_mi_hazank_lmp_ketfarku_kutyapart
+Závecz,2023-05-05,Egyéb párt,21,https://hvg.hu/itthon/20230510_kozvelemenykutatas_zavecz_research_partok_tamogatottsaga_kozhangulat_fidesz_dk_momentum_jobbik_mszp_mi_hazank_lmp_ketfarku_kutyapart
+Závecz,2023-05-05,Fidesz,32,https://hvg.hu/itthon/20230510_kozvelemenykutatas_zavecz_research_partok_tamogatottsaga_kozhangulat_fidesz_dk_momentum_jobbik_mszp_mi_hazank_lmp_ketfarku_kutyapart
+Závecz,2023-05-05,MKKP,5,https://hvg.hu/itthon/20230510_kozvelemenykutatas_zavecz_research_partok_tamogatottsaga_kozhangulat_fidesz_dk_momentum_jobbik_mszp_mi_hazank_lmp_ketfarku_kutyapart
+Závecz,2023-05-05,Mi Hazánk,6,https://hvg.hu/itthon/20230510_kozvelemenykutatas_zavecz_research_partok_tamogatottsaga_kozhangulat_fidesz_dk_momentum_jobbik_mszp_mi_hazank_lmp_ketfarku_kutyapart
+Závecz,2023-05-05,Pártnélküli,28,https://hvg.hu/itthon/20230510_kozvelemenykutatas_zavecz_research_partok_tamogatottsaga_kozhangulat_fidesz_dk_momentum_jobbik_mszp_mi_hazank_lmp_ketfarku_kutyapart
+Závecz,2023-09-01,DK,13,https://hvg.hu/itthon/20230922_Zavecz_A_Fidesz_kicsit_csokkent_orok_masodik_a_DK_a_nyar_nyertese_viszont_a_Mi_Hazank_es_a_Kutyapart_voltak
+Závecz,2023-09-01,Egyéb párt,16,https://hvg.hu/itthon/20230922_Zavecz_A_Fidesz_kicsit_csokkent_orok_masodik_a_DK_a_nyar_nyertese_viszont_a_Mi_Hazank_es_a_Kutyapart_voltak
+Závecz,2023-09-01,Fidesz,30,https://hvg.hu/itthon/20230922_Zavecz_A_Fidesz_kicsit_csokkent_orok_masodik_a_DK_a_nyar_nyertese_viszont_a_Mi_Hazank_es_a_Kutyapart_voltak
+Závecz,2023-09-01,MKKP,4,https://hvg.hu/itthon/20230922_Zavecz_A_Fidesz_kicsit_csokkent_orok_masodik_a_DK_a_nyar_nyertese_viszont_a_Mi_Hazank_es_a_Kutyapart_voltak
+Závecz,2023-09-01,Mi Hazánk,7,https://hvg.hu/itthon/20230922_Zavecz_A_Fidesz_kicsit_csokkent_orok_masodik_a_DK_a_nyar_nyertese_viszont_a_Mi_Hazank_es_a_Kutyapart_voltak
+Závecz,2023-09-01,Pártnélküli,30,https://hvg.hu/itthon/20230922_Zavecz_A_Fidesz_kicsit_csokkent_orok_masodik_a_DK_a_nyar_nyertese_viszont_a_Mi_Hazank_es_a_Kutyapart_voltak
+Závecz,2023-11-01,DK,14,https://hvg.hu/itthon/20231115_zavecz_kozvelemenykutatas_fidesz_dk_mi_hazank_momentum
+Závecz,2023-11-01,Egyéb párt,20,https://hvg.hu/itthon/20231115_zavecz_kozvelemenykutatas_fidesz_dk_mi_hazank_momentum
+Závecz,2023-11-01,Fidesz,32,https://hvg.hu/itthon/20231115_zavecz_kozvelemenykutatas_fidesz_dk_mi_hazank_momentum
+Závecz,2023-11-01,MKKP,3,https://hvg.hu/itthon/20231115_zavecz_kozvelemenykutatas_fidesz_dk_mi_hazank_momentum
+Závecz,2023-11-01,Mi Hazánk,6,https://hvg.hu/itthon/20231115_zavecz_kozvelemenykutatas_fidesz_dk_mi_hazank_momentum
+Závecz,2023-11-01,Pártnélküli,25,https://hvg.hu/itthon/20231115_zavecz_kozvelemenykutatas_fidesz_dk_mi_hazank_momentum
+Závecz,2024-03-05,DK,13,https://24.hu/belfold/2024/03/14/fidesz-ellenzek-valasztas-2024-zavecz-kutatas-tamogatottsag/
+Závecz,2024-03-05,Egyéb párt,17,https://24.hu/belfold/2024/03/14/fidesz-ellenzek-valasztas-2024-zavecz-kutatas-tamogatottsag/
+Závecz,2024-03-05,Fidesz,29,https://24.hu/belfold/2024/03/14/fidesz-ellenzek-valasztas-2024-zavecz-kutatas-tamogatottsag/
+Závecz,2024-03-05,MKKP,3,https://24.hu/belfold/2024/03/14/fidesz-ellenzek-valasztas-2024-zavecz-kutatas-tamogatottsag/
+Závecz,2024-03-05,Mi Hazánk,6,https://24.hu/belfold/2024/03/14/fidesz-ellenzek-valasztas-2024-zavecz-kutatas-tamogatottsag/
+Závecz,2024-03-05,Pártnélküli,32,https://24.hu/belfold/2024/03/14/fidesz-ellenzek-valasztas-2024-zavecz-kutatas-tamogatottsag/
+Závecz,2024-04-08,DK,13,https://hvg.hu/itthon/20240422_oriasit-esett-a-fidesz-tamogatottsaga-a-zavecz-felmerese-szerint-kozvelemeny-kutatas-magyar-peter-tisza-part
+Závecz,2024-04-08,Egyéb párt,10,https://hvg.hu/itthon/20240422_oriasit-esett-a-fidesz-tamogatottsaga-a-zavecz-felmerese-szerint-kozvelemeny-kutatas-magyar-peter-tisza-part
+Závecz,2024-04-08,Fidesz,25,https://hvg.hu/itthon/20240422_oriasit-esett-a-fidesz-tamogatottsaga-a-zavecz-felmerese-szerint-kozvelemeny-kutatas-magyar-peter-tisza-part
+Závecz,2024-04-08,MKKP,5,https://hvg.hu/itthon/20240422_oriasit-esett-a-fidesz-tamogatottsaga-a-zavecz-felmerese-szerint-kozvelemeny-kutatas-magyar-peter-tisza-part
+Závecz,2024-04-08,Mi Hazánk,6,https://hvg.hu/itthon/20240422_oriasit-esett-a-fidesz-tamogatottsaga-a-zavecz-felmerese-szerint-kozvelemeny-kutatas-magyar-peter-tisza-part
+Závecz,2024-04-08,Pártnélküli,25,https://hvg.hu/itthon/20240422_oriasit-esett-a-fidesz-tamogatottsaga-a-zavecz-felmerese-szerint-kozvelemeny-kutatas-magyar-peter-tisza-part
+Závecz,2024-04-08,Tisza,11,https://hvg.hu/itthon/20240422_oriasit-esett-a-fidesz-tamogatottsaga-a-zavecz-felmerese-szerint-kozvelemeny-kutatas-magyar-peter-tisza-part
+Závecz,2024-05-06,Egyéb párt,11,https://rtl.hu/europa/2024/05/14/zavecz-ep-valasztas-kozvelemeny-kutatas-fidesz-tisza-part-dk
+Závecz,2024-05-06,Fidesz,28,https://rtl.hu/europa/2024/05/14/zavecz-ep-valasztas-kozvelemeny-kutatas-fidesz-tisza-part-dk
+Závecz,2024-05-06,MKKP,2,https://rtl.hu/europa/2024/05/14/zavecz-ep-valasztas-kozvelemeny-kutatas-fidesz-tisza-part-dk
+Závecz,2024-05-06,Mi Hazánk,4,https://rtl.hu/europa/2024/05/14/zavecz-ep-valasztas-kozvelemeny-kutatas-fidesz-tisza-part-dk
+Závecz,2024-05-06,Pártnélküli,24,https://rtl.hu/europa/2024/05/14/zavecz-ep-valasztas-kozvelemeny-kutatas-fidesz-tisza-part-dk
+Závecz,2024-05-06,Tisza,19,https://rtl.hu/europa/2024/05/14/zavecz-ep-valasztas-kozvelemeny-kutatas-fidesz-tisza-part-dk
+Závecz,2024-05-31,DK,9,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-05-31,Egyéb párt,9,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-05-31,Fidesz,31,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-05-31,MKKP,2,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-05-31,Mi Hazánk,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-05-31,Pártnélküli,27,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-05-31,Tisza,19,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-08-31,DK,5,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-08-31,Egyéb párt,12,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-08-31,Fidesz,26,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-08-31,MKKP,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-08-31,Mi Hazánk,5,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-08-31,Pártnélküli,29,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-08-31,Tisza,20,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-10-10,DK,5,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-10-10,Egyéb párt,10,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-10-10,Fidesz,25,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-10-10,MKKP,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-10-10,Mi Hazánk,4,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-10-10,Pártnélküli,32,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-10-10,Tisza,21,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-11-30,DK,5,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-11-30,Egyéb párt,8,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-11-30,Fidesz,24,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-11-30,MKKP,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-11-30,Mi Hazánk,5,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-11-30,Pártnélküli,29,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2024-11-30,Tisza,26,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-03-31,DK,6,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-03-31,Egyéb párt,9,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-03-31,Fidesz,26,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-03-31,MKKP,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-03-31,Mi Hazánk,5,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-03-31,Pártnélküli,22,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-03-31,Tisza,29,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-06-30,DK,4,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-06-30,Egyéb párt,5,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-06-30,Fidesz,26,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-06-30,MKKP,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-06-30,Mi Hazánk,6,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-06-30,Pártnélküli,24,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-06-30,Tisza,32,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-08-31,DK,4,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-08-31,Egyéb párt,4,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-08-31,Fidesz,28,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-08-31,MKKP,4,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-08-31,Mi Hazánk,5,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-08-31,Pártnélküli,22,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-08-31,Tisza,33,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-10-31,DK,4,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-10-31,Egyéb párt,2,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-10-31,Fidesz,29,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-10-31,MKKP,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-10-31,Mi Hazánk,5,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-10-31,Pártnélküli,22,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-10-31,Tisza,35,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-11-30,DK,4,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-11-30,Egyéb párt,1,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-11-30,Fidesz,30,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-11-30,MKKP,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-11-30,Mi Hazánk,4,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-11-30,Pártnélküli,23,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2025-11-30,Tisza,35,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-01-31,DK,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-01-31,Egyéb párt,1,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-01-31,Fidesz,31,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-01-31,MKKP,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-01-31,Mi Hazánk,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-01-31,Pártnélküli,23,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-01-31,Tisza,36,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-03,DK,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-03,Egyéb párt,0,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-03,Fidesz,32,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-03,MKKP,2,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-03,Mi Hazánk,5,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-03,Pártnélküli,20,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-03,Tisza,38,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-31,DK,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-31,Egyéb párt,0,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-31,Fidesz,31,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-31,MKKP,3,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-31,Mi Hazánk,4,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-31,Pártnélküli,20,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-03-31,Tisza,39,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-05-31,DK,1,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-05-31,Egyéb párt,0,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-05-31,Fidesz,18,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-05-31,MKKP,1,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-05-31,Mi Hazánk,4,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-05-31,Pártnélküli,19,https://datawrapper.dwcdn.net/SOL0u/9/
+Závecz,2026-05-31,Tisza,57,https://datawrapper.dwcdn.net/SOL0u/9/
