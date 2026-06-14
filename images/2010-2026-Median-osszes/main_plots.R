@@ -935,6 +935,16 @@ elections_raw <- read_csv("inputs/val_eredmenyek.csv") %>%
     ))
   )
 
+elections_raw <- elections_raw %>%
+  bind_rows(
+    elections_raw %>%
+      distinct(ev, date, jogosult, megjelent) %>%
+      mutate(
+        party      = "Pártnélküli",
+        result_pct = 100 * (jogosult - megjelent) / jogosult
+      )
+  )
+
 # ── Election vlines ───────────────────────────────────────────────────────────
 election_dates <- tibble(
   date =as.Date(c("2022-04-03","2024-06-09","2026-04-06")),
@@ -971,7 +981,7 @@ y_scales <- list(
   scale_y_continuous(limits=c(0,60),breaks = 0:6*10), # Fidesz
   scale_y_continuous(limits=c(0,60),breaks = 0:6*10), # Pártnélküli
   scale_y_continuous(limits=c(0,10)), # Mi Hazánk
-  scale_y_continuous(limits=c(0,10)),  # DK
+  scale_y_continuous(limits=c(0,15)),  # DK
   scale_y_continuous(limits=c(0,10))   # MKKP
 )
 
@@ -985,7 +995,7 @@ y_scales <- list(
     geom_point(aes(shape = pollster,colour=party,fill=party), size = 3, alpha = 1/3) +
     geom_point(data = elections_plot,
                aes(x = date, y = result_pct, fill = party),
-               shape = 23, size = 4, colour = "black", stroke = 0.5,
+               shape = 23, size = 4, colour = "black", stroke=2,
                inherit.aes = FALSE, alpha = 2/3) +
     geom_text(data = elections_plot,
               aes(x = date, y = result_pct,
