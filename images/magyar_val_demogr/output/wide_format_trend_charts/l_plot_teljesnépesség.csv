@@ -29,7 +29,7 @@ datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,Mi Hazánk,MKKP,DK,m
 2026/03,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),46,30,5,2,1,18,NA,NA
 2026/04,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),48,30,NA,NA,NA,NA,NA,NA
 2026/05,teljes népesség,teljes népesség (7.64m),MEDIÁN (%),61,21,5,NA,1,12,NA,NA
-2024/10,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),1990,2210,380,230,230,NA,2140,NA
+2024/10,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),1990,2210,380,230,230,NA,2210,NA
 2025/04,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2600,2140,310,230,150,NA,1910,310
 2025/06,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2440,1910,380,150,230,NA,2440,80
 2025/08,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2600,1990,380,150,150,NA,2290,80
@@ -40,7 +40,7 @@ datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,Mi Hazánk,MKKP,DK,m
 2026/03,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),2900,2290,310,80,80,NA,1990,0
 2026/04,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),3050,2140,310,80,80,NA,1990,0
 2026/05,teljes népesség,teljes népesség (7.64m),21KK (ezer választó),4580,1530,380,80,80,NA,990,0
-2024/10,teljes népesség,teljes népesség (7.64m),21KK (%),26,29,5,3,3,NA,28,NA
+2024/10,teljes népesség,teljes népesség (7.64m),21KK (%),26,29,5,3,3,NA,29,NA
 2025/04,teljes népesség,teljes népesség (7.64m),21KK (%),34,28,4,3,2,NA,25,4
 2025/06,teljes népesség,teljes népesség (7.64m),21KK (%),32,25,5,2,3,NA,32,1
 2025/08,teljes népesség,teljes népesség (7.64m),21KK (%),34,26,5,2,2,NA,30,1

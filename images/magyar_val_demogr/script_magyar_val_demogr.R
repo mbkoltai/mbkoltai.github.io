@@ -26,9 +26,9 @@ l_part_data[["21_kut"]]$nem <- read_csv(
   mutate(arány=value/100,
          datum=convert_hu_date(datum)  ) %>% 
   select(!value) %>%
-  mutate(part=ifelse(grepl("Kutya|DK|más párt",part),"más párt",part)) %>%
+  mutate(part=ifelse(grepl("Kutya|DK|egyeb|egyéb",part),"más párt",part)) %>%
   group_by(kateg,datum,part) %>%
-  summarise(arány=sum(arány))
+  summarise(arány=sum(arány,na.rm = T))
   
 
 # 21KK, ELETKOR szerint
@@ -38,7 +38,7 @@ l_part_data[["21_kut"]]$eletkor <- read_csv(
   mutate(arány=value/100,
          datum=convert_hu_date(datum)  ) %>% 
   select(!value) %>%
-  mutate(part=ifelse(grepl("Kutya|DK|más párt",part),"más párt",part)) %>%
+  mutate(part=ifelse(grepl("Kutya|DK|egyeb|egyéb",part),"más párt",part)) %>%
   group_by(kateg,datum,part) %>%
   summarise(arány=sum(arány))
 
@@ -50,7 +50,7 @@ l_part_data[["21_kut"]]$vegzettseg <- read_csv(
   mutate(arány=value/100,
          datum=convert_hu_date(datum)  ) %>% 
   select(!value) %>%
-  mutate(part=ifelse(grepl("Kutya|DK|más párt",part),"más párt",part)) %>%
+  mutate(part=ifelse(grepl("Kutya|DK|egyeb|egyéb",part),"más párt",part)) %>%
   group_by(kateg,datum,part) %>%
   summarise(arány=sum(arány))
 
@@ -64,7 +64,7 @@ l_part_data$`21_kut`$telep_tipus <- read_csv(
   mutate(kateg_tipus="településtípus",
          datum=convert_hu_date(datum)  ) %>%
   rename(kateg_eredeti=kateg) %>%
-  mutate(part=ifelse(grepl("Kutya|Mi Haz|DK|más párt",part),"más párt",part)) %>%
+  mutate(part=ifelse(grepl("Kutya|Mi Haz|DK|egyeb",part),"más párt",part)) %>%
   group_by(kateg_eredeti,datum,part) %>%
   summarise(arány=sum(arány))
 

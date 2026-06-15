@@ -32,6 +32,33 @@
     line-height: 1.3;
 }
 
+.vertical-line {
+    width: 1px;
+    height: 100px;
+    background-color: #999;
+}
+
+details summary {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #e6e6e6;
+    border: 2px solid #ccc;
+    border-radius: 6px 6px 0 0;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+details[open] summary {
+    margin-bottom: 0;
+}
+
+details .textbox {
+    border-top-left-radius: 0;
+}
+
 body { font-family: sans-serif; margin: 20px; }
         iframe { margin-bottom: 40px; }
 
@@ -113,31 +140,35 @@ window.onload = function() {
 
 <!-- TEXT AT TOP -->
 
-<h2> Becslések a magyar politikai erőviszonyok demográfiai trendjeiről, 2025-2026 </h2>
+<h2> Becslések a magyar politikai erőviszonyok demográfiai trendjeiről, 2024-2026 </h2>
 
 <p class="textbox">
 
-Közismert, hogy a kormánypárt és a legfőbb ellenzéki erő társadalmi bázisának nagyon más az összetétele kor, végzettség vagy településtípus szerint. 
-De mennyire vannak konkrét számaink arról, hogy ez mit jelent egyrészt adott társadalmi csoportokon belül, másrészt a két nagy politikai blokk összetételében, ezekben a különböző dimenziókban? 
-Például: mekkora a Tisza támogatottsága a diplomások versus a szakmunkás végzettségűek körében? Mekkora a 40 év alattiak és a nyugdíjasok között? Néhány közvéleménykutató (főleg a Medián, kisebb mértékben a 21Kutatóközpont) időnként publikál társadalmi csoportok szerint lebontott százalékokat, ezekből azonban nem látszik, hogy egymáshoz képest mekkorák a különböző támogatói csoportok. 
-Például, ha a 65 év felettiek között kb. 50% a Fidesz támogatottsága, ez több vagy kevesebb ember, mint a 30 vagy 40 alatti - nagy többségben lévő - Tisza-támogatók csoportja? 
-És megfordítva, mit jelentenek ezek a számok egy-egy párt bázisának az összetételére nézve, pl. mekkora a diplomások, a 40 év alattiak, vagy a községben élők aránya az ellenzéki blokkban?
+Az alábbi grafikonok a Medián és a 21 Kutatóközpont (továbbiakban: 21KK) demográfiai kataegóriákban lebontott pártpreferencia méréseit mutatja be 2024-től kezdve.  
+    
+Közismert, hogy a fő politikai erők társadalmi bázisának nagyon más az összetétele kor, végzettség vagy településtípus szerint. 
+A lenti ábrákkal az volt a célom, hogy abszolút számokra is le legyenek fordítva ezek a demográfiai lebontások. 
+Például: mekkora a Tisza támogatottsága a diplomások versus a szakmunkás végzettségűek körében? Mekkora a 40 év alattiak és a nyugdíjasok között? Néhány közvéleménykutató (főleg a Medián, kisebb mértékben a 21KK) időnként publikál társadalmi csoportok szerint lebontott százalékokat, ezekből azonban nem látszik, hogy egymáshoz képest mekkorák a különböző támogatói csoportok. 
+<!--- Például, ha a 65 év felettiek között kb. 50% a Fidesz támogatottsága, ez több vagy kevesebb ember, mint a 30 vagy 40 alatti - nagy többségben lévő - Tisza-támogatók csoportja? 
+Megfordítva, azt is vizualizáltam, hogy mit jelentenek ezek a számok egy-egy párt bázisának az összetételére nézve, pl. mekkora a diplomások, a 40 év alattiak, vagy a községben élők aránya az egyes politikai blokkokban.
 
 Ebben a posztban ezekre a kérdésekre próbáltam válaszolni interaktív grafikonokkal, kombinálva a 21Kutatóközpont és a Medián 2025-2026-os a teljes népességre vonatkozó, illetve demográfiailag részletezett pártpreferencia-méréseit a KSH demográfiai adataival. 
+--->
+
 A lenti ábrák azt mutatják meg, hogy a mért pártpreferencia-százalékok abszolút számokban kb. mennyi szavazót jelentenek különböző demográfiai dimenziókban nézve: a teljes népességben, illetve nem, kor, végzettség és településtípus szerint. 
-Megfordítva, az ábrák másik része pártonként csoportosítja az adatokat: ezek azt mutatják meg, hogy mi az összetétele a két nagy blokk, illetve a pártnélküliek csoportjának az egyes dimenziókban.
+Megfordítva, az ábrák másik része <i>pártonként</i> csoportosítja az adatokat: ezek azt mutatják meg, hogy mi az összetétele a két nagy blokk, illetve a pártnélküliek csoportjának az egyes dimenziókban.
 Az ábrák mindegyike a <i>belföldi</i> szavazásra jogosult népességre vonatkozik, tehát nem terjed ki a külföldön élő magyarokra.
 
 <br>
 <br>
 A megadott százalékok és abszolút számok <i>nem</i> azonosak a választáson várhatóan résztvevők számával és így nem tekinthetők választási előrejelzésnek sem, <i>még akkor sem</i> ha a mérési hibáktól eltekintünk. 
-Ennek oka, hogy ezek a "teljes népességre" (belföldi szavazásra jogosultak) vonatkozó számok azoknak az arányát jelölik, akik a közvéleménykutatásokban megneveztek egy pártot, amelyre potenciálisan szavaznának - közülük azonban sokan tipikusan végül nem mennek el szavazni, és a tényleges szavazók száma általában olyan 80-90%-a csak ezeknek a teljes népességben mért számoknak. 
+Ennek oka, hogy ezek a "teljes népességre" (=belföldi szavazásra jogosultak) vonatkozó számok azoknak az arányát jelölik, akik a közvéleménykutatásokban megneveztek egy pártot, amelyre potenciálisan szavaznának - közülük azonban sokan tipikusan végül nem mennek el szavazni, és a tényleges szavazók száma általában olyan 80-90%-a csak ezeknek a teljes népességben mért számoknak, a részvételi szinttől függően. 
 <br>
 Egy példa erre a Medián 
 <a href="https://hvg.hu/360/20220330_Median_valasztas_2022_Fidesz_ellenzek_mandatumbecsles_kozvelemeny_kutatas">2022. március végi felmérése</a> a választások előtt, 
 amely a belföldi relatív szavazatarányokat viszonylag jól, 2-4%-os hibával jelezte előre, de 80%-ra mérte a pártpreferenciával rendelkezők arányát, míg a valóságban (belföldön) végül csak 70.2% szavazott.
-A lenti becslések tehát inkább a szavazásra jogosult (belföldi) népességen belüli <i>potenciális</i> szimpatizáns-tábort adják meg, mintsem a várhatóan valóban szavazók számát. 
-A teljes népességben mért pártpreferenciák jelentésében ugyanakkor mintha módszertani különbségek is lennének a közvéleménykutatók között: a 21Kutatóközpont (21KK) az utóbbi két évben jóval kisebbre mérte a pártválasztók arányát a teljes népességben, mint a Medián, tehát az előbbi intézetnél a "pártpreferenciával rendelkező" mintha egy szűkebb kategória lenne.
+A lenti becslések tehát inkább a szavazásra jogosult (belföldi) népességen belüli <i>potenciális</i> szimpatizáns-tábort adják meg, mintsem a várhatóan valóban szavazók számát, bár a kettő nem feltétlenül esik messze egymástől, pl. a 2026-os választás 80%-os részvétele mellett a leadott szavazatszámok majdnem megfeleltek a Medián "teljes népesség" becsléseinek. 
+A teljes népességben mért pártpreferenciák jelentésében módszertani különbségek is lehetnek a közvéleménykutatók között: a 21Kutatóközpont (21KK) az utóbbi két évben jóval kisebbre mérte a pártválasztók arányát a teljes népességben, mint a Medián, tehát az előbbi intézetnél a "pártpreferenciával rendelkező" mintha egy szűkebb kategória lenne.
 <br>
 <br>
 Az egyes alcsoportoknál (pl. diplomások, 65 fölöttiek stb.) - mivel itt a mintaméret értelemszerűen kisebb mint a teljes minta - az elméleti hibahatárok is nagyobbak, mint az egész halmazra (teljes népességre) vonatkozó becsléseknél. 
@@ -159,7 +190,7 @@ Mindegyik ábra alatt egy rövid szöveges összefoglaló elemzi az arányokat �
 
 <br>
 <br>
-Fontos hangsúlyozni, hogy <em>az összes lenti számhoz (és értelmezésükhöz) hozzá lehet tenni ezeket az óvatosságra intő megjegyzéseket</em>: <br>
+Fontos hangsúlyozni, hogy <em>az összes lenti számhoz (és értelmezésükhöz) hozzá lehet tenni bizonyos óvatosságra intő megjegyzéseket</em>: <br>
 1) ha a mérések rosszak, akkor értelemszerűen az értelmezések is (legalábbis részben) elesnek <br>
 2) még ha szisztematikus torzítások nincsenek is a számokban, az alcsoportokra vonatkozó hibahatárok a kis mintaméretek miatt rendkívül nagyok, amit az ábrák lábjegyzeteiben jeleztünk <br>
 3) voltak olyan (komoly, plauzibilis) elemzések a választások előtt amelyek amellett érveltek, hogy <a href="https://www.facebook.com/valasztasi.kalauz/posts/pfbid02eCqrvoDkCrQPD5FVQ1j2AFmMAAhHfr89ASLr6FqsaQYNr5diws6CRBjKED4kKdHjl">több</a> 
@@ -189,6 +220,8 @@ További információkért az adatokról ld. lent, az ábrák alatt, a <a href="
 <!--  Teljes Nepesseg -->
 <div class="flourish-embed flourish-chart" data-width="97%" data-src="visualisation/27917966"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27917966/thumbnail" width="100%" alt="visualization" /></noscript></div>
 
+<details>
+    <summary>Megjegyzések (2025 ősz)</summary>
 
 <div class="textbox">
 A teljes népességre vonatkozó számoknál a legfeltűnőbb a számok stabilitása 2025 tavasza óta. 
@@ -199,8 +232,14 @@ A pártnélküliek/bizonytalanok száma a 21KK-nál 2026 márciusára 2 milliór
 A Medián a két nagy blokkot ennél nagyobbra méri: 2.8-3.2 (Tisza) illetve 2.1-2.5 milliósra (Fidesz), miközben a kispártok bázisát ugyanakkorára, mint a 21KK. Emiatt a Mediánnál a más pártot választók és pártnélküliek együttesen is csak kb. másfél millióan vannak már csak. 
 A számok a Mediánnál is stabilak, bár a Tisza bázisnál látható egy fokozatos, összesen kb. 300 ezres (+4%) bővülés 2025 őszétől.
 </div>
-<!-- ### ### ### ### ### ### ### -->
 
+</details>
+
+<!-- ### ### ### ### ### ### ### -->
+<br>
+<br>
+
+<hr>
 
 <button id="btnTime" onclick="showCharts('timeTrends', this)">Trendek demográfia szerint csoportosítva</button>
 <button id="btnTimeParty" onclick="showCharts('timeTrendsByParty', this)">Trendek pártok szerint csoportosítva</button>
@@ -214,58 +253,99 @@ A számok a Mediánnál is stabilak, bár a Tisza bázisnál látható egy fokoz
 <!-- NEM -->
 <div class="flourish-embed flourish-chart" data-width="97%" data-src="visualisation/27917953"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27917953/thumbnail" width="100%" alt="visualization" /></noscript></div>
 
+<details>
+<summary>Megjegyzések (2026. március)</summary>
+
 <div class="textbox">
-A Medián becslései szerint a férfiak között stabilan kb. 400-500 ezerrel nagyobb a Tisza bázisa, mint a kormánypárté. 
+A Medián becslései szerint a férfiak között stabilan kb. 400-500 ezerrel nagyobb a Tisza bázisa, mint a Fideszé. 
 A nők között 2025 nyara óta folyamatosan süllyed a pártnélküliek (+ két nagyon kívüli pártot támogatók) aránya, és mostanra már nem magasabb, mint a férfiak között. 
 Ebből 2025 őszén a Fidesz profitált (+350 ezer szavazó), 2025 novembere óta viszont a Tisza (+240 ezer), így a legutóbbi felméréskor a nők között kb. 350 ezerrel több támogatója volt. 
 <br>
 A 21KK adatai 2026 márciusából a férfiakra nézve hasonló számokat mutatnak, de még magasabb Tisza támogatói aránnyal. Ugyanakkor a nők között a 21KK mérésében több mint 10%-kal alacsonyabb a Tisza támogatók aránya és sokkal magasabb a nem válaszoló/bizonytalan/pártnélkülieké.
 </div>
 
+</details>
+
+<br>
+<br>
+
+<hr>
+
 <!-- ### ### ### ### ### ### ### -->
 <!-- KOR -->
 <div class="flourish-embed flourish-chart" data-width="97%" data-src="visualisation/27917963"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27917963/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
 
+<details>
+<summary>Megjegyzések (2026. február)</summary>
+
 <div class="textbox">
-Az életkor az egyik olyan dimenzió - a végzettség és a településtípus mellett - ami nagyon erősen korrelál azzal, hogy a két nagy párt közül melyiket támogatja valaki. 
+Az életkor az egyik olyan dimenzió - a végzettség és a településtípus mellett - amely nagyon erősen korrelál azzal, hogy a két nagy párt közül melyiket támogatja valaki. 
 A felmérések szerint 18-29 éves kohortban a legutóbbi (2026/02) felméréskor már kb. nyolcszor annyi támogatója volt a Tiszának, mint az állampártnak (800 vs 100 ezer; ne felejtsük el fejben hozzáadni/kivonni a hibahatárokat). 
-A spektrum másik végén, a 65 év felettieknél a Fidesz támogatók vannak kb. kétszer annyian, mint az ellenzék támogatói, ami kb. 450 ezres előnyt jelent: a 65 felettiek csoportja kb. másfélszer nagyobb, mint a 30 alatti (1.9 vs 1.2 millió). 
+A spektrum másik végén, a 65 év felettieknél a Fidesz támogatók vannak kb. kétszer annyian, mint a Tisza támogatói, ami kb. 450 ezres előnyt jelent: a 65 felettiek csoportja kb. másfélszer nagyobb, mint a 30 alatti (1.9 vs 1.2 millió). 
 A támogatói bázisok egyfajta "besűrűsödése" is mintha történt volna 2025 óta: a fiatalok között a Tisza, az idősek között a Fidesz támogatók száma nőtt méginkább. 
 A 30-39 kohortban kb. háromszoros Tisza-vezetés tapasztalható stabilan (700 vs 250 ezer), míg a 40-49 és az 50-64 csoportban kb. ugyanakkora a két párt bázisa.
 <br>
 A 21KK 2026. márciusi mérése hasonló arányokat mutat, kicsit magasabb Fidesz-aránnyal a legfiatalabbak között (14%, 170 ezer ember) és kicsit akacsonyabb a Tisza-támogatóké a 65 felettiek között (19%, 370e). A 18-29 évesek kb. 2/3-a itt is Tisza-támogató, a 65 év felettieknek pedig kb. fele Fidesz-támogató.
 </div>
+</details>
+
+<br>
+<br>
+
+<hr>
 
 <!-- ### ### ### ### ### ### ### -->
 <!-- TELEP-TIPUS -->
 <div class="flourish-embed flourish-chart" data-width="97%" data-src="visualisation/27916789"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27916789/thumbnail" width="100%" alt="visualization" /></noscript></div>
 
+
+<details>
+<summary>Megjegyzések (2026. március)</summary>
+
 <div class="textbox">
-A településtípus szintén erősen előre tudja jelezni a pártpreferenciát. 
-Ez valójában inkább egy összetétel-hatás: a községekben és kisvárosokban alacsonyabb a fiatalok, magasabb végzettségűek és magasabb jövedelműek aránya, ezért <i>átlagban</i> kevesebb az ellenzéki (és több a Fidesz-) szavazó; tehát ha kontrollálnánk végzettségi és jövedelmi helyzetre is, akkor <i>önmagában</i> a településtípus nem erős prediktor. A választási földrajz szempontjából ugyanakkor ez szinte mindegy. 
+A településtípus szintén erősen korellál a pártpreferenciával. 
+Ez valójában inkább egy összetétel-hatás: a községekben és kisvárosokban alacsonyabb a fiatalok, magasabb végzettségűek és magasabb jövedelműek aránya, ezért <i>átlagban</i> kevesebb a Tisza- (és több a Fidesz-) szavazó; tehát ha kontrollálnánk végzettségi és jövedelmi helyzetre is, akkor <i>önmagában</i> a településtípus nem erős prediktor. A választási földrajz szempontjából ugyanakkor ez szinte mindegy. 
 A községekben 1-6% (max. 150 ezres) között ingadozó Fidesz-fölényt mutatnak a felmérések. 
 A kisebb (nem megyei jogú, ezek kb. a 10-40 ezres települések) kiegyenlítettek az erőviszonyok, általában inkább pár százalékos Tisza-fölénnyel. 
-A megyei jogú városokban kb. másfélszer akkora az ellenzéket támogatók aránya (45 vs 30%, kb. 250 ezres különbség). 
-A fővárosban jelenleg majdnem háromszor akkora az ellenzéki párt támogatóinak aránya, mint a kormánypárté (58% vs 21%, kb. 450 ezres különbség). 
+A megyei jogú városokban kb. másfélszer akkora az Tiszát támogatók aránya (45 vs 30%, kb. 250 ezres különbség). 
+A fővárosban jelenleg majdnem háromszor akkora az Tisza támogatóinak aránya, mint a Fideszé (58% vs 21%, kb. 450 ezres különbség). 
 Ez a különség korábban csak másfél-kétszeres volt, de a más pártot támogatók/pártnélküliek számának apadásával november óta jelentősen nyílott az olló, tehát úgy tűnik ez a mozgás szinte teljesen a Tisza bázist bővítette.  
 <br>
 A 21KK mérései hasonló számokat mutatnak, egy jelentősebb különség, hogy a kisebb városokban a Tiszát alacsonyabbra mérték a legutolsó méréskor (2026/03) 7%-kal, azaz kb. 200 ezer emberrel - azonban még ez is hibahatár környéki különbség.
 </div>
 
+</details>
+
+<br>
+<br>
+
+<hr>
+
 <!-- ### ### ### ### ### ### ### -->
 <!-- VÉGZETTSÉG -->
 <div class="flourish-embed flourish-chart" data-width="97%" data-src="visualisation/27917957"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27917957/thumbnail" width="100%" alt="visualization" /></noscript></div>
 
+
+<details>
+<summary>Megjegyzések (2026. március)</summary>
+
 <div class="textbox">
-A végzettségi szint az életkorhoz hasonlóan erős előrejelzője annak, hogy valaki a kormánypártot vagy a Tiszát támogatja.
+A végzettségi szint az életkorhoz hasonlóan erős előrejelzője a pártpreferenciának.
 A maximum nyolc általánost végzett szavazóknál (kb. másfél millió ember) a Fidesz támogatók a legutóbbi mérésnél már abszolút többséget alkottak (+6% növedekedés 2025 nyara óta), míg a Tisza támogatottsága stabilan 20% körül van csak. 
 A szakmunkás végzettségűeknél (1.7 millió szavazó) stabilan kb. 10%-os Fidesz előny tapasztalható az utóbbi fél évben. 
-Az érettségivel rendelkezőknél - ez a legnagyobb csoport, kb. 2.5 millió ember - már jelentős, kb 20%-os ellenzéki fölényt mutatnak a felmérések.
-A felsőfokú végzettségűeknél eleve magas volt a Tiszát támogatók aránya (kb. 50 vs 20%), de 2025 nyara óta folyamatosan nő, a legutóbbi mérésnél már majdnem ötszöröse volt a kormány támogatóinak. 
-A fiatal választókhoz és a budapestiekhez hasonlóan - e két kategóriával a diplomások nyilván átfednek, tehát ezek nem független változók - itt is egyfajta "besűrüsödés" figyelhető meg, hogy az eleve ellenzéki csoportokban még tovább erősödött ez a tendencia. Felmerül ugyanakkor, itt nem lehet-e egy olyan torzító hatás, hogy az ellenzéki választók ezekben a csoportokban sokkal könnyebben válaszolnak a közvéleménykutatóknak, mint a kormánypártiak, felerősítve az arányukat. 
+Az érettségivel rendelkezőknél - ez a legnagyobb csoport, kb. 2.5 millió ember - már jelentős, kb 20%-os Tisza-fölényt mutatnak a felmérések.
+A felsőfokú végzettségűeknél eleve magas volt a Tiszát támogatók aránya (kb. 50 vs 20%), de 2025 nyara óta folyamatosan nő, a legutóbbi mérésnél már majdnem ötszöröse volt a Fidesz támogatóinak. 
+A fiatal választókhoz és a budapestiekhez hasonlóan - e két kategóriával a diplomások nyilván átfednek, tehát ezek nem független változók - itt is egyfajta "besűrüsödés" figyelhető meg, hogy az eleve Tisza-párti csoportokban még tovább erősödött ez a tendencia.
 <br>
 A 21KK becslései hasonló képet mutatnak. A 2026/03 mérésben a nyolc általánost végzettek körében itt "csak" 44%-ra mérték a Fideszt és megfordítva, a felsőfokú végzettségűeknél "csak" 53%-ra a Tiszát - mindkét érték kb. 10%-kal alacsonyabb mint a Mediánnál, tehát a polarizáció valamivel kevésbé extrém. 
 </div>
+
+</details>
+
+<br>
+<br>
+
+<hr>
 
 </div> 
 
@@ -279,6 +359,9 @@ A 21KK becslései hasonló képet mutatnak. A 2026/03 mérésben a nyolc által�
 <!-- NEM -->
 <div class="flourish-embed flourish-chart" data-width="97%" data-src="visualisation/27938529"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27938529/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
 
+<details>
+<summary>Megjegyzések (2026. március)</summary>
+
 <div class="textbox">
 A Medián méréseiben politikai blokkok nem szerinti összetétele azt mutatja, hogy a Tisza támogatói kb. fele-fele arányban férfiak illetve nők. 
 Ez igaz a a pártnélküliek/más pártot választókra is.
@@ -287,21 +370,41 @@ A Medián becsléseiben a Fidesz támogatóinak átlagosan kb. 55%-át adják a 
 A 21KK 2026/03 mérése ezzel szemben masszív, 60-40%-os férfi-dominanciát mutat a Tisza-táborban és megfordítva kb. ugyanakkora nőit a Fideszében. Mivel egyetlen recens mérésről van itt szó, nem világos, hogy ez a különbség a valójában akár 10% körüli mintavételi hibahatár miatt van, vagy ennek a mérésnek valamilyen speciális körülménye okozhatta ezt.
 </div>
 
+</details>
+
+<br>
+<br>
+
+<hr>
+
 <!-- ### ### ### ### ### ### ### -->
 
 <!-- KOR -->
 <div class="flourish-embed flourish-chart" data-width="97%" data-src="visualisation/27937729"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27937729/thumbnail" width="100%" alt="visualization" /></noscript></div>
 
+<details>
+<summary>Megjegyzések (2026. március)</summary>
+
 <div class="textbox">
-Korcsoport szerint az ellenzéki blokk összetétele viszonylag kiegyensúlyozottnak mondható, amennyiben az öt korcsoport (18-29, 30-39, 40-49, 50-64, 65+) mindegyike 16-25%-át adja a teljes bázisnak. Ez azt is jelenti, hogy a 18-30 korosztály 1.6x-os mértékben, a 30-39 korosztály 1.4x felülreprezentált a teljes népességbeli arányukhoz képest, az idősebbek pedig hasonló relatív mértékben alulreprezentáltak.
+Korcsoport szerint az Tisza-blokk összetétele viszonylag kiegyensúlyozottnak mondható, amennyiben az öt korcsoport (18-29, 30-39, 40-49, 50-64, 65+) mindegyike 16-25%-át adja a teljes bázisnak. Ez azt is jelenti, hogy a 18-30 korosztály 1.6x-os mértékben, a 30-39 korosztály 1.4x felülreprezentált a teljes népességbeli arányukhoz képest, az idősebbek pedig hasonló relatív mértékben alulreprezentáltak.
 A Fidesz-bázis jóval inkább kiegyensúlyozatlan, a 65 éven felüliek 40%-át adják, az 50-65 évesek pedig további 28%-át, miközben a 40 alattiak <i>összesen</i> kevesebb mint 15%-át. 
 A pártnélküliek és más pártokat támogatók kor-összetétele kb. megfelel a teljes választókorú lakosság összetételének.
 </div>
+
+</details>
+
+<br>
+<br>
+
+<hr>
 
 <!-- ### ### ### ### ### ### ### -->
 
 <!-- TELEP-TÍPUS -->
 <div class="flourish-embed flourish-chart" data-width="97%" data-src="visualisation/27938707"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27938707/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+
+<details>
+<summary>Megjegyzések (2026. március)</summary>
 
 <div class="textbox">
 A Tisza bázisban erősen felülreprezentáltak a budapestiek (1.4x a teljes népességbeli arányukhoz képest), és alulreprezentáltak a községekben élők (0.78x); a megyei jogú illetve kisebb városok súlya szinte pont lakosságarányos. 
@@ -309,16 +412,25 @@ A párt bázisa így kb. egyenlően oszlik el e négy település-típus közöt
 A Fidesz bázisban felülreprezentáltak (1.25x) a községekben élők, és masszívan alulreprezentáltak a fővárosiak (0.67x). 
 A bázis közel 70%-a községben vagy kisebb városban él.
 A pártnélküliek/más pártot választók összetétele inkább a Fidesz-bázisra hasonlít: felülreprezentáltak a községek és alulreprezentáltak a fővárosiak. 
-Kérdés ez így lesz-e a választáson is, vagy itt lehet még egy mobilizációs potenciál a kormánypártnak.
 A trendek összességében rendkívül stabilak, az összetétel alig változott valamit 2025 óta.
 <br>
 A 21KK mérései nagyon hasonló település-típus szerinti összetételt mutatnak.
 </div>
 
+</details>
+
+<br>
+<br>
+
+<hr>
+
 <!-- ### ### ### ### ### ### ### -->
 
 <!-- VEGZ -->
 <div class="flourish-embed flourish-chart" data-width="97%" data-src="visualisation/27933940"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27933940/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+
+<details>
+<summary>Megjegyzések (2026. március)</summary>
 
 <div class="textbox">
 Az iskolai végzettség dimenziója mentén a Tisza bázisa erősen a magasabban képzettek felé hajlik. 
@@ -329,6 +441,11 @@ A pártnélküliek vagy más pártot választók összetétele közelebb áll a 
 <br>
 A 21KK korábbi (2025/08) mérése nagyon hasonló végzettség szerinti összetételt mutat.
 </div>
+
+</details>
+
+<br>
+<br>
 
 </div> <!-- END OF TIME TREND, as % of demographic groups -->
 

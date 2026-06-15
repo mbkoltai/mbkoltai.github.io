@@ -1,33 +1,33 @@
-datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,Mi Hazánk,más párt,pártnélk./bizonyt.,NA,más párt/pártnélk.
-2025/06,nem,férfi (3.64m),MEDIÁN (ezer választó),1490,1050,NA,NA,NA,NA,1090
-2025/06,nem,nő (4m),MEDIÁN (ezer választó),1440,1080,NA,NA,NA,NA,1480
-2025/08,nem,férfi (3.64m),MEDIÁN (ezer választó),1420,1020,NA,NA,NA,NA,1200
-2025/08,nem,nő (4m),MEDIÁN (ezer választó),1440,1240,NA,NA,NA,NA,1320
-2025/11,nem,férfi (3.64m),MEDIÁN (ezer választó),1530,1090,NA,NA,NA,NA,1020
-2025/11,nem,nő (4m),MEDIÁN (ezer választó),1400,1440,NA,NA,NA,NA,1160
-2026/01,nem,férfi (3.64m),MEDIÁN (ezer választó),1530,1200,NA,NA,NA,NA,910
-2026/01,nem,nő (4m),MEDIÁN (ezer választó),1520,1320,NA,NA,NA,NA,1160
-2026/02,nem,férfi (3.64m),MEDIÁN (ezer választó),1560,1050,NA,NA,NA,NA,1020
-2026/02,nem,nő (4m),MEDIÁN (ezer választó),1640,1280,NA,NA,NA,NA,1080
-2026/04,nem,férfi (3.64m),MEDIÁN (ezer választó),1820,980,NA,NA,NA,NA,840
-2026/04,nem,nő (4m),MEDIÁN (ezer választó),1800,1320,NA,NA,NA,NA,880
-2025/06,nem,férfi (3.64m),MEDIÁN (%),41,29,NA,NA,NA,NA,30
-2025/06,nem,nő (4m),MEDIÁN (%),36,27,NA,NA,NA,NA,37
-2025/08,nem,férfi (3.64m),MEDIÁN (%),39,28,NA,NA,NA,NA,33
-2025/08,nem,nő (4m),MEDIÁN (%),36,31,NA,NA,NA,NA,33
-2025/11,nem,férfi (3.64m),MEDIÁN (%),42,30,NA,NA,NA,NA,28
-2025/11,nem,nő (4m),MEDIÁN (%),35,36,NA,NA,NA,NA,29
-2026/01,nem,férfi (3.64m),MEDIÁN (%),42,33,NA,NA,NA,NA,25
-2026/01,nem,nő (4m),MEDIÁN (%),38,33,NA,NA,NA,NA,29
-2026/02,nem,férfi (3.64m),MEDIÁN (%),43,29,NA,NA,NA,NA,28
-2026/02,nem,nő (4m),MEDIÁN (%),41,32,NA,NA,NA,NA,27
-2026/04,nem,férfi (3.64m),MEDIÁN (%),50,27,NA,NA,NA,NA,23
-2026/04,nem,nő (4m),MEDIÁN (%),45,33,NA,NA,NA,NA,22
-2024/10,nem,férfi (3.64m),21KK (ezer választó),1130,980,250,180,870,220,NA
-2024/10,nem,nő (4m),21KK (ezer választó),880,1200,120,280,1320,240,NA
-2026/03,nem,férfi (3.64m),21KK (ezer választó),1780,910,220,70,690,NA,NA
-2026/03,nem,nő (4m),21KK (ezer választó),1160,1360,120,120,1320,NA,NA
-2024/10,nem,férfi (3.64m),21KK (%),31,27,7,5,24,6,NA
-2024/10,nem,nő (4m),21KK (%),22,30,3,7,33,6,NA
-2026/03,nem,férfi (3.64m),21KK (%),49,25,6,2,19,NA,NA
-2026/03,nem,nő (4m),21KK (%),29,34,3,3,33,NA,NA
+datum,kateg_tipus,kateg_nev_meret_str,pollster,TISZA,Fidesz,Mi Hazánk,más párt,pártnélk./bizonyt.,más párt/pártnélk.
+2025/06,nem,férfi (3.64m),MEDIÁN (ezer választó),1490,1050,NA,NA,NA,1090
+2025/06,nem,nő (4m),MEDIÁN (ezer választó),1440,1080,NA,NA,NA,1480
+2025/08,nem,férfi (3.64m),MEDIÁN (ezer választó),1420,1020,NA,NA,NA,1200
+2025/08,nem,nő (4m),MEDIÁN (ezer választó),1440,1240,NA,NA,NA,1320
+2025/11,nem,férfi (3.64m),MEDIÁN (ezer választó),1530,1090,NA,NA,NA,1020
+2025/11,nem,nő (4m),MEDIÁN (ezer választó),1400,1440,NA,NA,NA,1160
+2026/01,nem,férfi (3.64m),MEDIÁN (ezer választó),1530,1200,NA,NA,NA,910
+2026/01,nem,nő (4m),MEDIÁN (ezer választó),1520,1320,NA,NA,NA,1160
+2026/02,nem,férfi (3.64m),MEDIÁN (ezer választó),1560,1050,NA,NA,NA,1020
+2026/02,nem,nő (4m),MEDIÁN (ezer választó),1640,1280,NA,NA,NA,1080
+2026/04,nem,férfi (3.64m),MEDIÁN (ezer választó),1820,980,NA,NA,NA,840
+2026/04,nem,nő (4m),MEDIÁN (ezer választó),1800,1320,NA,NA,NA,880
+2025/06,nem,férfi (3.64m),MEDIÁN (%),41,29,NA,NA,NA,30
+2025/06,nem,nő (4m),MEDIÁN (%),36,27,NA,NA,NA,37
+2025/08,nem,férfi (3.64m),MEDIÁN (%),39,28,NA,NA,NA,33
+2025/08,nem,nő (4m),MEDIÁN (%),36,31,NA,NA,NA,33
+2025/11,nem,férfi (3.64m),MEDIÁN (%),42,30,NA,NA,NA,28
+2025/11,nem,nő (4m),MEDIÁN (%),35,36,NA,NA,NA,29
+2026/01,nem,férfi (3.64m),MEDIÁN (%),42,33,NA,NA,NA,25
+2026/01,nem,nő (4m),MEDIÁN (%),38,33,NA,NA,NA,29
+2026/02,nem,férfi (3.64m),MEDIÁN (%),43,29,NA,NA,NA,28
+2026/02,nem,nő (4m),MEDIÁN (%),41,32,NA,NA,NA,27
+2026/04,nem,férfi (3.64m),MEDIÁN (%),50,27,NA,NA,NA,23
+2026/04,nem,nő (4m),MEDIÁN (%),45,33,NA,NA,NA,22
+2024/10,nem,férfi (3.64m),21KK (ezer választó),1130,980,250,400,870,NA
+2024/10,nem,nő (4m),21KK (ezer választó),880,1200,120,520,1320,NA
+2026/03,nem,férfi (3.64m),21KK (ezer választó),1780,910,220,70,690,NA
+2026/03,nem,nő (4m),21KK (ezer választó),1160,1360,120,120,1320,NA
+2024/10,nem,férfi (3.64m),21KK (%),31,27,7,11,24,NA
+2024/10,nem,nő (4m),21KK (%),22,30,3,13,33,NA
+2026/03,nem,férfi (3.64m),21KK (%),49,25,6,2,19,NA
+2026/03,nem,nő (4m),21KK (%),29,34,3,3,33,NA
