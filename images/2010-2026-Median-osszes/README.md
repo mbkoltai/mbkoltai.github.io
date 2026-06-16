@@ -5,8 +5,6 @@ A cikk rövidített változata a [Telex-en is megjelent](https://telex.hu/belfol
 
 ### Guide a file-okhoz
 
-At the top of the folder [inflow_progr_immigr/](https://github.com/mbkoltai/TB_det_mod_engl/blob/main/inflow_progr_immigr/) there are scripts to run and evaluate the model. 
-
 - [2010-2026-Median-osszes.Rproj](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/2010-2026-Median-osszes/2010-2026-Median-osszes.Rproj): R projekt file, ezt érdemes megnyitni először, mert betölti a helyes path-t stb.
 
 - [main_plots.R](https://github.com/mbkoltai/mbkoltai.github.io/blob/source/images/2010-2026-Median-osszes/main_plots.R): a közvéleménykutatási eredményeket elemző ábrák kódja 
