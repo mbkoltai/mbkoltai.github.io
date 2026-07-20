@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Magyar pártpreferencia trendek 2024-től demográfiai lebontásban"
+tags: hungary politics elections demographics data-visualisation magyar
+excerpt: A Medián és a 21KK mérései idősorban és kategóriánként
+secondary: blogposts
+mathjax: true
+---
+
 <!DOCTYPE html>
 <html>
 <head>
