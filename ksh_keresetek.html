@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>magyar-kereseti-adatok</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ### ### ### ### ### ### ### ### ### STYLE ### ### ### ### ### ### ### ### ### -->
+
+<style>
+.substack-button {
+  display: inline-block;
+  background-color: #10337e;
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.substack-button:hover {
+  background-color: #10337e;
+}
+
+/* Sections styled like textboxes */
+.section-box {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #e0e0e0ea;
+    border-radius: 6px;
+}
+
+.section-box h3 {
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* Horizontal divider line */
+.horizontal-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+    margin: 20px 0;
+}
+
+.section-container {
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.section {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+.section h3 {
+    color: #1a3e8c;
+    margin-bottom: 15px;
+}
+
+
+.highlight {
+    background-color: #939aa7;   /* light blue background */
+    border: 1px solid 1a3e8c;   /* frame */
+    padding: 0px 3px;
+    border-radius: 4px;
+}
+
+.textbox {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 21px;
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+.textbox pre {
+    margin: 0;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.85em;   /* smaller than text */
+    line-height: 1.3;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 100px;
+    background-color: #999;
+}
+
+details summary {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #e6e6e6;
+    border: 2px solid #ccc;
+    border-radius: 6px 6px 0 0;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+details[open] summary {
+    margin-bottom: 0;
+}
+
+details .textbox {
+    border-top-left-radius: 0;
+}
+
+body { font-family: sans-serif; margin: 20px; }
+        iframe { margin-bottom: 40px; }
+
+.chart-group {
+            display: none;
+            margin-top: 10px;
+        }
+
+.flourish-embed iframe {
+    display: block;       /* make margin auto work */
+    margin: 0 auto;       /* center horizontally */
+}
+
+button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+button.active {
+    background-color: #333;
+    color: white;
+}
+
+.btnExtLink {
+    display: inline-block;
+    background-color: #1a3e8c;  /* dark blue */
+    color: white;               /* normal text color */
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Calibri, Arial, sans-serif;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.btnExtLink:hover {
+    color: red;                 /* text turns red on hover */
+    background-color: #1a3e8c;  /* keep background dark blue */
+}
+
+</style>
+
+<!-- ### ### ### ### ### ### ### ### ### STYLE END ### ### ### ### ### ### ### ### ### -->
+
+<!-- JAVASCRIPT -->
+
+<script>
+function showCharts(type, btn) {
+
+    document.getElementById("timeTrends").style.display = "none";
+    document.getElementById("timeTrendsByParty").style.display = "none";
+    // document.getElementById("barCharts").style.display = "none";
+
+    document.getElementById(type).style.display = "block";
+
+    document.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+
+    btn.classList.add("active");
+}
+
+
+window.onload = function() {
+    document.getElementById("timeTrends").style.display = "block";
+    document.getElementById("btnTime").classList.add("active");
+};
+</script>
+
+
+</head>
+
+<!-- ### ### ### ### ### ### ### ### ### STYLE ### ### ### ### ### ### ### ### ### -->
+
+<body>
+
+<!-- TEXT AT TOP -->
+
+<h2> Magyar kereset-statisztikák (KSH): idősorok és eloszlások </h2>
+
+<a href="https://mbklt.substack.com" class="substack-button" target="_blank">
+  Substack
+</a>
+
+<br><br>
+
+<div class="textbox">
+
+Ezek a grafikonok a KSH kereseti statisztikáinak idősorait illetve eloszlásait gyűjtik össze 2023-tól kezdve, amikor a jelenleg futó <a href="https://www.ksh.hu/gyorstajekoztatok/ker/ker2605.html" target="_blank">tájékoztató-sorozat</a> elkezdődött. 
+A grafikonok részben átfednek a KSH saját "Keresetek" <a href="https://www.ksh.hu/heti-monitor/keresetek.html" target="_blank">dashboard-jával</a>, de a (teljes) bruttó átlag- és mediánkereset mellett (amelyek megtalálhatók ott is) több más idősort is tartalmaznak:
+<ul>
+    <li><a href="#full-vs-regular">Átlag és mediánkeresetek: bruttó/nettó, teljes/rendszeres, kedvezményekkel/kedvezmények nélkül</a></li>
+    <li><a href="#sectors">Bruttó és nettó átlagkeresetek nemzetgazdasági kategóriánként: költségvetés, vállalati, nonprofit szektor</a></li>
+    <li><a href="#industries">Bruttó átlagkeresetek ágazatok szerint</a></li>
+    <li><a href="#quintiles">Bruttó átlagkeresetek kvintilisei</a></li>
+    
+</ul>
+
+Mivel ezek az idősorok így kategóriánként csoportosítva nem találhatók meg sem a KSH "Keresetek" dashboard-on, sem a havonta megjelenő tájékoztatókban, így a havi tájékoztatókból összegyűjtöttem és egységes idősorokként ábrázoltam őket. Az adatok és az ábrákat generáló R kód letölthetők az oldal alján található Github repóról.
+
+</div>
+
+<!-- ### ### ### ### ### START OF CHARTS ### ### ### ### ###  -->
+
+<!-- SECTION SKELETON START -->
+
+<div id="full-vs-regular" class="section-box">
+    <h3>Átlag és medián keresetek (bruttó/nettó, teljes/rendszeres, kedvezményekkel/kedvezmények nélkül)</h3>
+    <!-- Your Plotly or other content here -->
+
+<div id="full-vs-regular" class="section-box">
+<iframe src="/images/ksh-keresetek/plots/atlag_median_keresetek.html" width="90%" height="700" frameborder="0"></iframe>
+
+<div style="margin: 20px 0;">
+    <a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/ksh-keresetek/plots/ksh_df_atlag_median.csv" target="_blank" class="btnExtLink">Adatok letöltése (csv)</a>
+</div>
+
+</div>
+
+
+
+Az adatokra vonatkozó <a href="https://www.ksh.hu/gyorstajekoztatok/modszertan/kermodsz25.html" target="_blank">további módszertani információk itt</a> találhatók. 
+
+Mindegyik adat a teljes munkaidőben alkalmazásban állók keresetetére vonatkozik.
+A rendszeres bruttó átlagkereset nem tartalmazza a különböző prémium, jutalom, egyhavi különjuttatás jellegű tételeket, ezért stabilabb trendet is mutat, mint a teljes bruttó átlagkereset, amelyet pl. 2026 januárjában kiugró mértékben megnövelt az ún. fegyverpénz juttatás.
+A nettó átlagkereseteknél 2025 elejéig megkülönböztették a kedvezmény nélküli illetve az azzal számolt nettó összeget. 2025. márciustól már csak egy nettó átlagértéket publikál a KSH, amely magában foglalja a kedvezményeket.
+Az ábra szintén megkülönbözteti a keresetek átlag és medián (közép) értékét: az utóbbi az aritmetikai átlag kb. 80%-a körül van általában.
+
+</div>
+
+<!-- ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  -->
+
+<div class="horizontal-divider"></div>
+
+<div id="sectors" class="section-box">
+    <h3>Bruttó és nettó átlagkeresetek nemzetgazdasági kategóriánként: költségvetés, vállalati, nonprofit szektor</h3>
+    <!-- Your Plotly or other content here -->
+
+<div id="full-vs-regular" class="section-box">
+<iframe src="/images/ksh-keresetek/plots/nemzetgazd_kateg.html" width="90%" height="800" frameborder="0"></iframe>
+
+<div style="margin: 20px 0;">
+    <a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/ksh-keresetek/plots/nemzetgazd_kateg.csv" target="_blank" class="btnExtLink">Adatok letöltése (csv)</a>
+</div>
+
+</div>
+
+Ez az ábra a szektor-típus alapján bontja szét a (teljes és rendszeres bruttó, illetve nettó) átlagkereset adatokat: vállalati, költségvetési, nonprofit szektor. 
+Emellett szintén vannak adatok az egész nemzetgazdaságra nézve a közfoglalkoztatottak nélkül. Az utóbbi csoport átlagkeresete a nemzetgazdasági átlag töredéke: 2026. márciusában bruttó 158700, illetve nettó 121900 Ft volt.
+
+</div>
+
+<!-- ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  -->
+<!-- ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  -->
+
+<div class="horizontal-divider"></div>
+
+<div id="industries" class="section-box">
+<h3>Bruttó átlagkeresetek ágazatok szerint</h3>
+<!-- Your Plotly or other content here -->
+
+<div id="agazatok" class="section-box">
+<iframe src="/images/ksh-keresetek/plots/nemzetgazd_agak.html" width="99%" height="900" frameborder="0"></iframe>
+
+<div style="margin: 20px 0;">
+    <a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/ksh-keresetek/plots/nemzetgazd_agak.csv" target="_blank" class="btnExtLink">Adatok letöltése (csv)</a>
+</div>
+
+</div>
+
+Ez az ábra a bruttó átlagkeresetet adja meg ágazatonként. Az al-ábrák az utolsó érték szerint lettek rendezve, csökkenő sorrenben, tehát a legmagasabb átlagkeresetű szektortól (Energiaipar) indulva. 
+
+</div>
+
+<!-- ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  -->
+<!-- ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  -->
+
+<div class="horizontal-divider"></div>
+
+<div id="quintiles" class="section-box">
+<h3>Bruttó átlagkeresetek kvintilisei</h3>
+<!-- Your Plotly or other content here -->
+
+<div id="kvintilisek-kulon-panel" class="section-box">
+
+<b>Idősorok kvintilisek szerint csoportosítva</b>
+    
+<br> <br>
+
+<iframe src="/images/ksh-keresetek/plots/kvintilisek.html" width="90%" height="700" frameborder="0"></iframe>
+
+<div style="margin: 20px 0;">
+    <a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/ksh-keresetek/plots/ksh_quintiles.csv" target="_blank" class="btnExtLink">Adatok letöltése (csv)</a>
+</div>
+
+</div>
+
+Ezek az ábrák a bruttó keresetek eloszlását mutatják meg, kvintilisek, tehát jövedelmi ötödök szerint: az összes keresőt sorrendbe állítva öt egyenlő méretű (számosságú) csoportra osztjuk őket, majd kiszámítjuk a csoportok (kvintilisek) szerinti átlagot. 
+A legfelső kvintilist erősen felhúzzák a felső néhány percentilis keresetei, így az átlagérték jóval magasabb az 5. kvintilis mediánjánál. <br>
+Mivel az elsőtől az ötödik kvintilisig közel hatszoros különbség van, a fenti ábrán a kvintiliseket külön részábrákon ábrázoltuk saját y-tengellyel, hogy az időbeli változások jobban láthatók legyenek. 
+<br>
+
+<hr>
+
+<b>Kvintilisek idősora egy ábrán</b>
+<br><br>
+
+<div id="kvintilisek-egy-panel" class="section-box">
+<iframe src="/images/ksh-keresetek/plots/ksh_quintiles_groupedquint.html" width="90%" height="700" frameborder="0"></iframe>
+
+<div style="margin: 20px 0;">
+<a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/ksh-keresetek/plots/ksh_quintiles_groupedquint.csv" target="_blank" class="btnExtLink">Adatok letöltése (csv)</a>
+</div>
+
+</div>
+
+Ezen az ábrán a kvintilisek bruttó átlagkereset-értékeit ugyanazon (logaritmikus) y-tengelyen ábrázoljuk. A kereseti kvintilisek x-tengely mentén vannak elkülönítve (Q1=1. kvintilis, Q5=5. kvintilis), a függőleges vonalak jelzik a kvintilisek közötti választóvonalat: egy kvintilisen belül balról jobbra haladunk időben. 
+
+</div>
+
+<!-- ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  -->
+<!-- ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  ###  -->
+
+<h2>Kód és adatforrások</h2>
+
+<div style="margin: 20px 0;">
+    <a href="https://github.com/mbkoltai/mbkoltai.github.io/tree/source/images/ksh-keresetek" target="_blank" class="btnExtLink">GitHub</a>
+</div>
+
+
+<!-- END OF HTML BODY -->
+</body>
+</html>

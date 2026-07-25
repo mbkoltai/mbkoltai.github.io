@@ -1,0 +1,160 @@
+date,measure,tax,scope,netto_koncepcio,value,period,incl_kozfoglalk,metric
+2024-01-01,atlag,Bruttó,nemzetgazdasag,NA,605100,monthly,TRUE,Átlag (teljes)
+2024-01-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,416600,monthly,TRUE,Átlag (kedvezménnyel)
+2024-01-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,402400,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-01-01,median,Bruttó,nemzetgazdasag,NA,493700,monthly,TRUE,Medián
+2024-01-01,median,Nettó,nemzetgazdasag,kedvezmennyel,341700,monthly,TRUE,Medián
+2024-01-01,rendsz,Bruttó,nemzetgazdasag,NA,578300,monthly,TRUE,Átlag (rendszeres)
+2024-02-01,atlag,Bruttó,nemzetgazdasag,NA,605400,monthly,TRUE,Átlag (teljes)
+2024-02-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,417100,monthly,TRUE,Átlag (kedvezménnyel)
+2024-02-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,402600,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-02-01,median,Bruttó,nemzetgazdasag,NA,491900,monthly,TRUE,Medián
+2024-02-01,median,Nettó,nemzetgazdasag,kedvezmennyel,340700,monthly,TRUE,Medián
+2024-02-01,rendsz,Bruttó,nemzetgazdasag,NA,578000,monthly,TRUE,Átlag (rendszeres)
+2024-03-01,atlag,Bruttó,nemzetgazdasag,NA,658400,monthly,TRUE,Átlag (teljes)
+2024-03-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,452700,monthly,TRUE,Átlag (kedvezménnyel)
+2024-03-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,437800,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-03-01,median,Bruttó,nemzetgazdasag,NA,510000,monthly,TRUE,Medián
+2024-03-01,median,Nettó,nemzetgazdasag,kedvezmennyel,354500,monthly,TRUE,Medián
+2024-03-01,rendsz,Bruttó,nemzetgazdasag,NA,598400,monthly,TRUE,Átlag (rendszeres)
+2024-04-01,atlag,Bruttó,nemzetgazdasag,NA,645300,monthly,TRUE,Átlag (teljes)
+2024-04-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,444000,monthly,TRUE,Átlag (kedvezménnyel)
+2024-04-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,429100,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-04-01,median,Bruttó,nemzetgazdasag,NA,516000,monthly,TRUE,Medián
+2024-04-01,median,Nettó,nemzetgazdasag,kedvezmennyel,357900,monthly,TRUE,Medián
+2024-04-01,rendsz,Bruttó,nemzetgazdasag,NA,596200,monthly,TRUE,Átlag (rendszeres)
+2024-05-01,atlag,Bruttó,nemzetgazdasag,NA,652000,monthly,TRUE,Átlag (teljes)
+2024-05-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,448700,monthly,TRUE,Átlag (kedvezménnyel)
+2024-05-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,433600,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-05-01,median,Bruttó,nemzetgazdasag,NA,525100,monthly,TRUE,Medián
+2024-05-01,median,Nettó,nemzetgazdasag,kedvezmennyel,363900,monthly,TRUE,Medián
+2024-05-01,rendsz,Bruttó,nemzetgazdasag,NA,607800,monthly,TRUE,Átlag (rendszeres)
+2024-06-01,atlag,Bruttó,nemzetgazdasag,NA,642000,monthly,TRUE,Átlag (teljes)
+2024-06-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,442000,monthly,TRUE,Átlag (kedvezménnyel)
+2024-06-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,427000,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-06-01,median,Bruttó,nemzetgazdasag,NA,518800,monthly,TRUE,Medián
+2024-06-01,median,Nettó,nemzetgazdasag,kedvezmennyel,359200,monthly,TRUE,Medián
+2024-06-01,rendsz,Bruttó,nemzetgazdasag,NA,598200,monthly,TRUE,Átlag (rendszeres)
+2024-07-01,atlag,Bruttó,nemzetgazdasag,NA,636700,monthly,TRUE,Átlag (teljes)
+2024-07-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,438400,monthly,TRUE,Átlag (kedvezménnyel)
+2024-07-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,423400,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-07-01,median,Bruttó,nemzetgazdasag,NA,524100,monthly,TRUE,Medián
+2024-07-01,median,Nettó,nemzetgazdasag,kedvezmennyel,362900,monthly,TRUE,Medián
+2024-07-01,rendsz,Bruttó,nemzetgazdasag,NA,602200,monthly,TRUE,Átlag (rendszeres)
+2024-08-01,atlag,Bruttó,nemzetgazdasag,NA,628800,monthly,TRUE,Átlag (teljes)
+2024-08-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,433100,monthly,TRUE,Átlag (kedvezménnyel)
+2024-08-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,418100,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-08-01,median,Bruttó,nemzetgazdasag,NA,520000,monthly,TRUE,Medián
+2024-08-01,median,Nettó,nemzetgazdasag,kedvezmennyel,360100,monthly,TRUE,Medián
+2024-08-01,rendsz,Bruttó,nemzetgazdasag,NA,601300,monthly,TRUE,Átlag (rendszeres)
+2024-09-01,atlag,Bruttó,nemzetgazdasag,NA,627400,monthly,TRUE,Átlag (teljes)
+2024-09-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,432200,monthly,TRUE,Átlag (kedvezménnyel)
+2024-09-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,417200,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-09-01,median,Bruttó,nemzetgazdasag,NA,519500,monthly,TRUE,Medián
+2024-09-01,median,Nettó,nemzetgazdasag,kedvezmennyel,359100,monthly,TRUE,Medián
+2024-09-01,rendsz,Bruttó,nemzetgazdasag,NA,605100,monthly,TRUE,Átlag (rendszeres)
+2024-10-01,atlag,Bruttó,nemzetgazdasag,NA,637200,monthly,TRUE,Átlag (teljes)
+2024-10-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,438900,monthly,TRUE,Átlag (kedvezménnyel)
+2024-10-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,423800,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-10-01,median,Bruttó,nemzetgazdasag,NA,529000,monthly,TRUE,Medián
+2024-10-01,median,Nettó,nemzetgazdasag,kedvezmennyel,366000,monthly,TRUE,Medián
+2024-10-01,rendsz,Bruttó,nemzetgazdasag,NA,613100,monthly,TRUE,Átlag (rendszeres)
+2024-11-01,atlag,Bruttó,nemzetgazdasag,NA,695100,monthly,TRUE,Átlag (teljes)
+2024-11-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,478000,monthly,TRUE,Átlag (kedvezménnyel)
+2024-11-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,462200,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-11-01,median,Bruttó,nemzetgazdasag,NA,550800,monthly,TRUE,Medián
+2024-11-01,median,Nettó,nemzetgazdasag,kedvezmennyel,383400,monthly,TRUE,Medián
+2024-11-01,rendsz,Bruttó,nemzetgazdasag,NA,613700,monthly,TRUE,Átlag (rendszeres)
+2024-12-01,atlag,Bruttó,nemzetgazdasag,NA,727700,monthly,TRUE,Átlag (teljes)
+2024-12-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,500500,monthly,TRUE,Átlag (kedvezménnyel)
+2024-12-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,483900,monthly,TRUE,Átlag (kedvezmény nélkül)
+2024-12-01,median,Bruttó,nemzetgazdasag,NA,560900,monthly,TRUE,Medián
+2024-12-01,median,Nettó,nemzetgazdasag,kedvezmennyel,389800,monthly,TRUE,Medián
+2024-12-01,rendsz,Bruttó,nemzetgazdasag,NA,625400,monthly,TRUE,Átlag (rendszeres)
+2025-01-01,atlag,Bruttó,nemzetgazdasag,NA,668100,monthly,TRUE,Átlag (teljes)
+2025-01-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,459000,monthly,TRUE,Átlag (kedvezménnyel)
+2025-01-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,444300,monthly,TRUE,Átlag (kedvezmény nélkül)
+2025-01-01,median,Bruttó,nemzetgazdasag,NA,539500,monthly,TRUE,Medián
+2025-01-01,median,Nettó,nemzetgazdasag,kedvezmennyel,373600,monthly,TRUE,Medián
+2025-01-01,rendsz,Bruttó,nemzetgazdasag,NA,639800,monthly,TRUE,Átlag (rendszeres)
+2025-02-01,atlag,Bruttó,nemzetgazdasag,NA,661400,monthly,TRUE,Átlag (teljes)
+2025-02-01,atlag,Nettó,nemzetgazdasag,kedvezmennyel,455000,monthly,TRUE,Átlag (kedvezménnyel)
+2025-02-01,atlag,Nettó,nemzetgazdasag,kedvezmeny_nelkul,439800,monthly,TRUE,Átlag (kedvezmény nélkül)
+2025-02-01,median,Bruttó,nemzetgazdasag,NA,533600,monthly,TRUE,Medián
+2025-02-01,median,Nettó,nemzetgazdasag,kedvezmennyel,370700,monthly,TRUE,Medián
+2025-02-01,rendsz,Bruttó,nemzetgazdasag,NA,632500,monthly,TRUE,Átlag (rendszeres)
+2025-03-01,atlag,Bruttó,nemzetgazdasag,NA,714400,monthly,TRUE,Átlag (teljes)
+2025-03-01,atlag,Nettó,nemzetgazdasag,NA,490400,monthly,TRUE,Átlag (kedvezménnyel)
+2025-03-01,median,Bruttó,nemzetgazdasag,NA,550000,monthly,TRUE,Medián
+2025-03-01,median,Nettó,nemzetgazdasag,NA,381700,monthly,TRUE,Medián
+2025-03-01,rendsz,Bruttó,nemzetgazdasag,NA,648700,monthly,TRUE,Átlag (rendszeres)
+2025-04-01,atlag,Bruttó,nemzetgazdasag,NA,708300,monthly,TRUE,Átlag (teljes)
+2025-04-01,atlag,Nettó,nemzetgazdasag,NA,486500,monthly,TRUE,Átlag (kedvezménnyel)
+2025-04-01,median,Bruttó,nemzetgazdasag,NA,564800,monthly,TRUE,Medián
+2025-04-01,median,Nettó,nemzetgazdasag,NA,392700,monthly,TRUE,Medián
+2025-04-01,rendsz,Bruttó,nemzetgazdasag,NA,657800,monthly,TRUE,Átlag (rendszeres)
+2025-05-01,atlag,Bruttó,nemzetgazdasag,NA,702800,monthly,TRUE,Átlag (teljes)
+2025-05-01,atlag,Nettó,nemzetgazdasag,NA,483000,monthly,TRUE,Átlag (kedvezménnyel)
+2025-05-01,median,Bruttó,nemzetgazdasag,NA,562300,monthly,TRUE,Medián
+2025-05-01,median,Nettó,nemzetgazdasag,NA,391200,monthly,TRUE,Medián
+2025-05-01,rendsz,Bruttó,nemzetgazdasag,NA,660000,monthly,TRUE,Átlag (rendszeres)
+2025-06-01,atlag,Bruttó,nemzetgazdasag,NA,704400,monthly,TRUE,Átlag (teljes)
+2025-06-01,atlag,Nettó,nemzetgazdasag,NA,484200,monthly,TRUE,Átlag (kedvezménnyel)
+2025-06-01,median,Bruttó,nemzetgazdasag,NA,567700,monthly,TRUE,Medián
+2025-06-01,median,Nettó,nemzetgazdasag,NA,395000,monthly,TRUE,Medián
+2025-06-01,rendsz,Bruttó,nemzetgazdasag,NA,655600,monthly,TRUE,Átlag (rendszeres)
+2025-07-01,atlag,Bruttó,nemzetgazdasag,NA,693700,monthly,TRUE,Átlag (teljes)
+2025-07-01,atlag,Nettó,nemzetgazdasag,NA,479500,monthly,TRUE,Átlag (kedvezménnyel)
+2025-07-01,median,Bruttó,nemzetgazdasag,NA,570000,monthly,TRUE,Medián
+2025-07-01,median,Nettó,nemzetgazdasag,NA,399000,monthly,TRUE,Medián
+2025-07-01,rendsz,Bruttó,nemzetgazdasag,NA,656600,monthly,TRUE,Átlag (rendszeres)
+2025-08-01,atlag,Bruttó,nemzetgazdasag,NA,683300,monthly,TRUE,Átlag (teljes)
+2025-08-01,atlag,Nettó,nemzetgazdasag,NA,472600,monthly,TRUE,Átlag (kedvezménnyel)
+2025-08-01,median,Bruttó,nemzetgazdasag,NA,563400,monthly,TRUE,Medián
+2025-08-01,median,Nettó,nemzetgazdasag,NA,394300,monthly,TRUE,Medián
+2025-08-01,rendsz,Bruttó,nemzetgazdasag,NA,654700,monthly,TRUE,Átlag (rendszeres)
+2025-09-01,atlag,Bruttó,nemzetgazdasag,NA,687100,monthly,TRUE,Átlag (teljes)
+2025-09-01,atlag,Nettó,nemzetgazdasag,NA,475100,monthly,TRUE,Átlag (kedvezménnyel)
+2025-09-01,median,Bruttó,nemzetgazdasag,NA,568700,monthly,TRUE,Medián
+2025-09-01,median,Nettó,nemzetgazdasag,NA,397400,monthly,TRUE,Medián
+2025-09-01,rendsz,Bruttó,nemzetgazdasag,NA,660400,monthly,TRUE,Átlag (rendszeres)
+2025-10-01,atlag,Bruttó,nemzetgazdasag,NA,692700,monthly,TRUE,Átlag (teljes)
+2025-10-01,atlag,Nettó,nemzetgazdasag,NA,482400,monthly,TRUE,Átlag (kedvezménnyel)
+2025-10-01,median,Bruttó,nemzetgazdasag,NA,575000,monthly,TRUE,Medián
+2025-10-01,median,Nettó,nemzetgazdasag,NA,401100,monthly,TRUE,Medián
+2025-10-01,rendsz,Bruttó,nemzetgazdasag,NA,668000,monthly,TRUE,Átlag (rendszeres)
+2025-11-01,atlag,Bruttó,nemzetgazdasag,NA,756400,monthly,TRUE,Átlag (teljes)
+2025-11-01,atlag,Nettó,nemzetgazdasag,NA,525900,monthly,TRUE,Átlag (kedvezménnyel)
+2025-11-01,median,Bruttó,nemzetgazdasag,NA,600000,monthly,TRUE,Medián
+2025-11-01,median,Nettó,nemzetgazdasag,NA,417900,monthly,TRUE,Medián
+2025-11-01,rendsz,Bruttó,nemzetgazdasag,NA,665100,monthly,TRUE,Átlag (rendszeres)
+2025-12-01,atlag,Bruttó,nemzetgazdasag,NA,789200,monthly,TRUE,Átlag (teljes)
+2025-12-01,atlag,Nettó,nemzetgazdasag,NA,548900,monthly,TRUE,Átlag (kedvezménnyel)
+2025-12-01,median,Bruttó,nemzetgazdasag,NA,607700,monthly,TRUE,Medián
+2025-12-01,median,Nettó,nemzetgazdasag,NA,427500,monthly,TRUE,Medián
+2025-12-01,rendsz,Bruttó,nemzetgazdasag,NA,683400,monthly,TRUE,Átlag (rendszeres)
+2026-01-01,atlag,Bruttó,nemzetgazdasag,NA,840600,monthly,TRUE,Átlag (teljes)
+2026-01-01,atlag,Nettó,nemzetgazdasag,NA,585700,monthly,TRUE,Átlag (kedvezménnyel)
+2026-01-01,median,Bruttó,nemzetgazdasag,NA,598700,monthly,TRUE,Medián
+2026-01-01,median,Nettó,nemzetgazdasag,NA,420200,monthly,TRUE,Medián
+2026-01-01,rendsz,Bruttó,nemzetgazdasag,NA,694700,monthly,TRUE,Átlag (rendszeres)
+2026-02-01,atlag,Bruttó,nemzetgazdasag,NA,725500,monthly,TRUE,Átlag (teljes)
+2026-02-01,atlag,Nettó,nemzetgazdasag,NA,509200,monthly,TRUE,Átlag (kedvezménnyel)
+2026-02-01,median,Bruttó,nemzetgazdasag,NA,591900,monthly,TRUE,Medián
+2026-02-01,median,Nettó,nemzetgazdasag,NA,417100,monthly,TRUE,Medián
+2026-02-01,rendsz,Bruttó,nemzetgazdasag,NA,691300,monthly,TRUE,Átlag (rendszeres)
+2026-03-01,atlag,Bruttó,nemzetgazdasag,NA,779800,monthly,TRUE,Átlag (teljes)
+2026-03-01,atlag,Nettó,nemzetgazdasag,NA,546000,monthly,TRUE,Átlag (kedvezménnyel)
+2026-03-01,median,Bruttó,nemzetgazdasag,NA,609000,monthly,TRUE,Medián
+2026-03-01,median,Nettó,nemzetgazdasag,NA,432100,monthly,TRUE,Medián
+2026-03-01,rendsz,Bruttó,nemzetgazdasag,NA,706900,monthly,TRUE,Átlag (rendszeres)
+2026-04-01,atlag,Bruttó,nemzetgazdasag,NA,772200,monthly,TRUE,Átlag (teljes)
+2026-04-01,atlag,Nettó,nemzetgazdasag,NA,541200,monthly,TRUE,Átlag (kedvezménnyel)
+2026-04-01,median,Bruttó,nemzetgazdasag,NA,616000,monthly,TRUE,Medián
+2026-04-01,median,Nettó,nemzetgazdasag,NA,436400,monthly,TRUE,Medián
+2026-04-01,rendsz,Bruttó,nemzetgazdasag,NA,711400,monthly,TRUE,Átlag (rendszeres)
+2026-05-01,atlag,Bruttó,nemzetgazdasag,NA,764100,monthly,TRUE,Átlag (teljes)
+2026-05-01,atlag,Nettó,nemzetgazdasag,NA,535900,monthly,TRUE,Átlag (kedvezménnyel)
+2026-05-01,median,Bruttó,nemzetgazdasag,NA,615600,monthly,TRUE,Medián
+2026-05-01,median,Nettó,nemzetgazdasag,NA,436200,monthly,TRUE,Medián
+2026-05-01,rendsz,Bruttó,nemzetgazdasag,NA,718200,monthly,TRUE,Átlag (rendszeres)

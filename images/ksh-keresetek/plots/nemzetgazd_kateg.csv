@@ -1,0 +1,264 @@
+date,measure,tax,scope,netto_koncepcio,value,period,incl_kozfoglalk,sorozat
+2024-01-01,atlag,brutto,Költségvetés,NA,583300,monthly,TRUE,Bruttó teljes átlag
+2024-01-01,atlag,brutto,Nem közfoglalkoztatottak,NA,615100,monthly,FALSE,Bruttó teljes átlag
+2024-01-01,atlag,brutto,Nonprofit,NA,605100,monthly,TRUE,Bruttó teljes átlag
+2024-01-01,atlag,brutto,Vállalkozás,NA,611400,monthly,TRUE,Bruttó teljes átlag
+2024-01-01,rendsz,brutto,Költségvetés,NA,576200,monthly,TRUE,Bruttó rendszeres átlag
+2024-01-01,rendsz,brutto,Nonprofit,NA,599400,monthly,TRUE,Bruttó rendszeres átlag
+2024-01-01,rendsz,brutto,Vállalkozás,NA,576700,monthly,TRUE,Bruttó rendszeres átlag
+2024-02-01,atlag,brutto,Költségvetés,NA,582100,monthly,TRUE,Bruttó teljes átlag
+2024-02-01,atlag,brutto,Nem közfoglalkoztatottak,NA,615400,monthly,FALSE,Bruttó teljes átlag
+2024-02-01,atlag,brutto,Nonprofit,NA,608000,monthly,TRUE,Bruttó teljes átlag
+2024-02-01,atlag,brutto,Vállalkozás,NA,611800,monthly,TRUE,Bruttó teljes átlag
+2024-02-01,rendsz,brutto,Költségvetés,NA,572900,monthly,TRUE,Bruttó rendszeres átlag
+2024-02-01,rendsz,brutto,Nonprofit,NA,602600,monthly,TRUE,Bruttó rendszeres átlag
+2024-02-01,rendsz,brutto,Vállalkozás,NA,577000,monthly,TRUE,Bruttó rendszeres átlag
+2024-03-01,atlag,brutto,Költségvetés,NA,606000,monthly,TRUE,Bruttó teljes átlag
+2024-03-01,atlag,brutto,Nem közfoglalkoztatottak,NA,669500,monthly,FALSE,Bruttó teljes átlag
+2024-03-01,atlag,brutto,Nonprofit,NA,638800,monthly,TRUE,Bruttó teljes átlag
+2024-03-01,atlag,brutto,Vállalkozás,NA,675300,monthly,TRUE,Bruttó teljes átlag
+2024-03-01,rendsz,brutto,Költségvetés,NA,588800,monthly,TRUE,Bruttó rendszeres átlag
+2024-03-01,rendsz,brutto,Nonprofit,NA,620200,monthly,TRUE,Bruttó rendszeres átlag
+2024-03-01,rendsz,brutto,Vállalkozás,NA,598900,monthly,TRUE,Bruttó rendszeres átlag
+2024-04-01,atlag,brutto,Költségvetés,NA,621600,monthly,TRUE,Bruttó teljes átlag
+2024-04-01,atlag,brutto,Nem közfoglalkoztatottak,NA,656300,monthly,FALSE,Bruttó teljes átlag
+2024-04-01,atlag,brutto,Nonprofit,NA,632300,monthly,TRUE,Bruttó teljes átlag
+2024-04-01,atlag,brutto,Vállalkozás,NA,653300,monthly,TRUE,Bruttó teljes átlag
+2024-04-01,rendsz,brutto,Költségvetés,NA,600600,monthly,TRUE,Bruttó rendszeres átlag
+2024-04-01,rendsz,brutto,Nonprofit,NA,620700,monthly,TRUE,Bruttó rendszeres átlag
+2024-04-01,rendsz,brutto,Vállalkozás,NA,592500,monthly,TRUE,Bruttó rendszeres átlag
+2024-05-01,atlag,brutto,Költségvetés,NA,609800,monthly,TRUE,Bruttó teljes átlag
+2024-05-01,atlag,brutto,Nem közfoglalkoztatottak,NA,663300,monthly,FALSE,Bruttó teljes átlag
+2024-05-01,atlag,brutto,Nonprofit,NA,656200,monthly,TRUE,Bruttó teljes átlag
+2024-05-01,atlag,brutto,Vállalkozás,NA,663700,monthly,TRUE,Bruttó teljes átlag
+2024-05-01,rendsz,brutto,Költségvetés,NA,592900,monthly,TRUE,Bruttó rendszeres átlag
+2024-05-01,rendsz,brutto,Nonprofit,NA,636200,monthly,TRUE,Bruttó rendszeres átlag
+2024-05-01,rendsz,brutto,Vállalkozás,NA,609100,monthly,TRUE,Bruttó rendszeres átlag
+2024-06-01,atlag,brutto,Költségvetés,NA,630100,monthly,TRUE,Bruttó teljes átlag
+2024-06-01,atlag,brutto,Nem közfoglalkoztatottak,NA,653000,monthly,FALSE,Bruttó teljes átlag
+2024-06-01,atlag,brutto,Nonprofit,NA,660000,monthly,TRUE,Bruttó teljes átlag
+2024-06-01,atlag,brutto,Vállalkozás,NA,643600,monthly,TRUE,Bruttó teljes átlag
+2024-06-01,rendsz,brutto,Költségvetés,NA,597800,monthly,TRUE,Bruttó rendszeres átlag
+2024-06-01,rendsz,brutto,Nonprofit,NA,631300,monthly,TRUE,Bruttó rendszeres átlag
+2024-06-01,rendsz,brutto,Vállalkozás,NA,595000,monthly,TRUE,Bruttó rendszeres átlag
+2024-07-01,atlag,brutto,Költségvetés,NA,625000,monthly,TRUE,Bruttó teljes átlag
+2024-07-01,atlag,brutto,Nem közfoglalkoztatottak,NA,647400,monthly,FALSE,Bruttó teljes átlag
+2024-07-01,atlag,brutto,Nonprofit,NA,650800,monthly,TRUE,Bruttó teljes átlag
+2024-07-01,atlag,brutto,Vállalkozás,NA,638700,monthly,TRUE,Bruttó teljes átlag
+2024-07-01,rendsz,brutto,Költségvetés,NA,604400,monthly,TRUE,Bruttó rendszeres átlag
+2024-07-01,rendsz,brutto,Nonprofit,NA,629600,monthly,TRUE,Bruttó rendszeres átlag
+2024-07-01,rendsz,brutto,Vállalkozás,NA,598800,monthly,TRUE,Bruttó rendszeres átlag
+2024-08-01,atlag,brutto,Költségvetés,NA,609200,monthly,TRUE,Bruttó teljes átlag
+2024-08-01,atlag,brutto,Nem közfoglalkoztatottak,NA,639200,monthly,FALSE,Bruttó teljes átlag
+2024-08-01,atlag,brutto,Nonprofit,NA,641600,monthly,TRUE,Bruttó teljes átlag
+2024-08-01,atlag,brutto,Vállalkozás,NA,633100,monthly,TRUE,Bruttó teljes átlag
+2024-08-01,rendsz,brutto,Költségvetés,NA,596800,monthly,TRUE,Bruttó rendszeres átlag
+2024-08-01,rendsz,brutto,Nonprofit,NA,619700,monthly,TRUE,Bruttó rendszeres átlag
+2024-08-01,rendsz,brutto,Vállalkozás,NA,600800,monthly,TRUE,Bruttó rendszeres átlag
+2024-09-01,atlag,brutto,Költségvetés,NA,612100,monthly,TRUE,Bruttó teljes átlag
+2024-09-01,atlag,brutto,Nem közfoglalkoztatottak,NA,637300,monthly,FALSE,Bruttó teljes átlag
+2024-09-01,atlag,brutto,Nonprofit,NA,638600,monthly,TRUE,Bruttó teljes átlag
+2024-09-01,atlag,brutto,Vállalkozás,NA,630700,monthly,TRUE,Bruttó teljes átlag
+2024-09-01,rendsz,brutto,Költségvetés,NA,592600,monthly,TRUE,Bruttó rendszeres átlag
+2024-09-01,rendsz,brutto,Nonprofit,NA,629100,monthly,TRUE,Bruttó rendszeres átlag
+2024-09-01,rendsz,brutto,Vállalkozás,NA,606100,monthly,TRUE,Bruttó rendszeres átlag
+2024-10-01,atlag,brutto,Költségvetés,NA,616900,monthly,TRUE,Bruttó teljes átlag
+2024-10-01,atlag,brutto,Nem közfoglalkoztatottak,NA,647400,monthly,FALSE,Bruttó teljes átlag
+2024-10-01,atlag,brutto,Nonprofit,NA,646700,monthly,TRUE,Bruttó teljes átlag
+2024-10-01,atlag,brutto,Vállalkozás,NA,642100,monthly,TRUE,Bruttó teljes átlag
+2024-10-01,rendsz,brutto,Költségvetés,NA,597000,monthly,TRUE,Bruttó rendszeres átlag
+2024-10-01,rendsz,brutto,Nonprofit,NA,638100,monthly,TRUE,Bruttó rendszeres átlag
+2024-10-01,rendsz,brutto,Vállalkozás,NA,615100,monthly,TRUE,Bruttó rendszeres átlag
+2024-11-01,atlag,brutto,Költségvetés,NA,692000,monthly,TRUE,Bruttó teljes átlag
+2024-11-01,atlag,brutto,Nem közfoglalkoztatottak,NA,706600,monthly,FALSE,Bruttó teljes átlag
+2024-11-01,atlag,brutto,Nonprofit,NA,703600,monthly,TRUE,Bruttó teljes átlag
+2024-11-01,atlag,brutto,Vállalkozás,NA,695100,monthly,TRUE,Bruttó teljes átlag
+2024-11-01,rendsz,brutto,Költségvetés,NA,613000,monthly,TRUE,Bruttó rendszeres átlag
+2024-11-01,rendsz,brutto,Nonprofit,NA,657100,monthly,TRUE,Bruttó rendszeres átlag
+2024-11-01,rendsz,brutto,Vállalkozás,NA,609500,monthly,TRUE,Bruttó rendszeres átlag
+2024-12-01,atlag,brutto,Költségvetés,NA,681500,monthly,TRUE,Bruttó teljes átlag
+2024-12-01,atlag,brutto,Nem közfoglalkoztatottak,NA,740000,monthly,FALSE,Bruttó teljes átlag
+2024-12-01,atlag,brutto,Nonprofit,NA,804600,monthly,TRUE,Bruttó teljes átlag
+2024-12-01,atlag,brutto,Vállalkozás,NA,733100,monthly,TRUE,Bruttó teljes átlag
+2024-12-01,rendsz,brutto,Költségvetés,NA,610200,monthly,TRUE,Bruttó rendszeres átlag
+2024-12-01,rendsz,brutto,Nonprofit,NA,680200,monthly,TRUE,Bruttó rendszeres átlag
+2024-12-01,rendsz,brutto,Vállalkozás,NA,624100,monthly,TRUE,Bruttó rendszeres átlag
+2025-01-01,atlag,brutto,Költségvetés,NA,652200,monthly,TRUE,Bruttó teljes átlag
+2025-01-01,atlag,brutto,Nem közfoglalkoztatottak,NA,678900,monthly,FALSE,Bruttó teljes átlag
+2025-01-01,atlag,brutto,Nonprofit,NA,677300,monthly,TRUE,Bruttó teljes átlag
+2025-01-01,atlag,brutto,Vállalkozás,NA,671700,monthly,TRUE,Bruttó teljes átlag
+2025-01-01,rendsz,brutto,Költségvetés,NA,645100,monthly,TRUE,Bruttó rendszeres átlag
+2025-01-01,rendsz,brutto,Nonprofit,NA,668300,monthly,TRUE,Bruttó rendszeres átlag
+2025-01-01,rendsz,brutto,Vállalkozás,NA,635400,monthly,TRUE,Bruttó rendszeres átlag
+2025-02-01,atlag,brutto,Költségvetés,NA,637500,monthly,TRUE,Bruttó teljes átlag
+2025-02-01,atlag,brutto,Nem közfoglalkoztatottak,NA,672100,monthly,FALSE,Bruttó teljes átlag
+2025-02-01,atlag,brutto,Nonprofit,NA,673000,monthly,TRUE,Bruttó teljes átlag
+2025-02-01,atlag,brutto,Vállalkozás,NA,667100,monthly,TRUE,Bruttó teljes átlag
+2025-02-01,rendsz,brutto,Költségvetés,NA,626400,monthly,TRUE,Bruttó rendszeres átlag
+2025-02-01,rendsz,brutto,Nonprofit,NA,666800,monthly,TRUE,Bruttó rendszeres átlag
+2025-02-01,rendsz,brutto,Vállalkozás,NA,630600,monthly,TRUE,Bruttó rendszeres átlag
+2025-03-01,atlag,brutto,Költségvetés,NA,661200,monthly,TRUE,Bruttó teljes átlag
+2025-03-01,atlag,brutto,Nem közfoglalkoztatottak,NA,725800,monthly,FALSE,Bruttó teljes átlag
+2025-03-01,atlag,brutto,Nonprofit,NA,693000,monthly,TRUE,Bruttó teljes átlag
+2025-03-01,atlag,brutto,Vállalkozás,NA,731700,monthly,TRUE,Bruttó teljes átlag
+2025-03-01,atlag,netto,Költségvetés,NA,453800,monthly,TRUE,Nettó átlag
+2025-03-01,atlag,netto,Nem közfoglalkoztatottak,NA,498100,monthly,FALSE,Nettó átlag
+2025-03-01,atlag,netto,Nonprofit,NA,479900,monthly,TRUE,Nettó átlag
+2025-03-01,atlag,netto,Vállalkozás,NA,502000,monthly,TRUE,Nettó átlag
+2025-03-01,rendsz,brutto,Költségvetés,NA,647000,monthly,TRUE,Bruttó rendszeres átlag
+2025-03-01,rendsz,brutto,Nonprofit,NA,681400,monthly,TRUE,Bruttó rendszeres átlag
+2025-03-01,rendsz,brutto,Vállalkozás,NA,645800,monthly,TRUE,Bruttó rendszeres átlag
+2025-04-01,atlag,brutto,Költségvetés,NA,678600,monthly,TRUE,Bruttó teljes átlag
+2025-04-01,atlag,brutto,Nem közfoglalkoztatottak,NA,720100,monthly,FALSE,Bruttó teljes átlag
+2025-04-01,atlag,brutto,Nonprofit,NA,710900,monthly,TRUE,Bruttó teljes átlag
+2025-04-01,atlag,brutto,Vállalkozás,NA,716500,monthly,TRUE,Bruttó teljes átlag
+2025-04-01,atlag,netto,Költségvetés,NA,465700,monthly,TRUE,Nettó átlag
+2025-04-01,atlag,netto,Nem közfoglalkoztatottak,NA,494500,monthly,FALSE,Nettó átlag
+2025-04-01,atlag,netto,Nonprofit,NA,491800,monthly,TRUE,Nettó átlag
+2025-04-01,atlag,netto,Vállalkozás,NA,491900,monthly,TRUE,Nettó átlag
+2025-04-01,rendsz,brutto,Költségvetés,NA,656000,monthly,TRUE,Bruttó rendszeres átlag
+2025-04-01,rendsz,brutto,Nonprofit,NA,692900,monthly,TRUE,Bruttó rendszeres átlag
+2025-04-01,rendsz,brutto,Vállalkozás,NA,654600,monthly,TRUE,Bruttó rendszeres átlag
+2025-05-01,atlag,brutto,Költségvetés,NA,670300,monthly,TRUE,Bruttó teljes átlag
+2025-05-01,atlag,brutto,Nem közfoglalkoztatottak,NA,714700,monthly,FALSE,Bruttó teljes átlag
+2025-05-01,atlag,brutto,Nonprofit,NA,710300,monthly,TRUE,Bruttó teljes átlag
+2025-05-01,atlag,brutto,Vállalkozás,NA,711300,monthly,TRUE,Bruttó teljes átlag
+2025-05-01,atlag,netto,Költségvetés,NA,460200,monthly,TRUE,Nettó átlag
+2025-05-01,atlag,netto,Nem közfoglalkoztatottak,NA,490900,monthly,FALSE,Nettó átlag
+2025-05-01,atlag,netto,Nonprofit,NA,491700,monthly,TRUE,Nettó átlag
+2025-05-01,atlag,netto,Vállalkozás,NA,488600,monthly,TRUE,Nettó átlag
+2025-05-01,rendsz,brutto,Költségvetés,NA,656400,monthly,TRUE,Bruttó rendszeres átlag
+2025-05-01,rendsz,brutto,Nonprofit,NA,691800,monthly,TRUE,Bruttó rendszeres átlag
+2025-05-01,rendsz,brutto,Vállalkozás,NA,657700,monthly,TRUE,Bruttó rendszeres átlag
+2025-06-01,atlag,brutto,Költségvetés,NA,695200,monthly,TRUE,Bruttó teljes átlag
+2025-06-01,atlag,brutto,Nem közfoglalkoztatottak,NA,716200,monthly,FALSE,Bruttó teljes átlag
+2025-06-01,atlag,brutto,Nonprofit,NA,730000,monthly,TRUE,Bruttó teljes átlag
+2025-06-01,atlag,brutto,Vállalkozás,NA,704300,monthly,TRUE,Bruttó teljes átlag
+2025-06-01,atlag,netto,Költségvetés,NA,477000,monthly,TRUE,Nettó átlag
+2025-06-01,atlag,netto,Nem közfoglalkoztatottak,NA,492200,monthly,FALSE,Nettó átlag
+2025-06-01,atlag,netto,Nonprofit,NA,505500,monthly,TRUE,Nettó átlag
+2025-06-01,atlag,netto,Vállalkozás,NA,484100,monthly,TRUE,Nettó átlag
+2025-06-01,rendsz,brutto,Költségvetés,NA,658300,monthly,TRUE,Bruttó rendszeres átlag
+2025-06-01,rendsz,brutto,Nonprofit,NA,698100,monthly,TRUE,Bruttó rendszeres átlag
+2025-06-01,rendsz,brutto,Vállalkozás,NA,650400,monthly,TRUE,Bruttó rendszeres átlag
+2025-07-01,atlag,brutto,Költségvetés,NA,691700,monthly,TRUE,Bruttó teljes átlag
+2025-07-01,atlag,brutto,Nem közfoglalkoztatottak,NA,705200,monthly,FALSE,Bruttó teljes átlag
+2025-07-01,atlag,brutto,Nonprofit,NA,709600,monthly,TRUE,Bruttó teljes átlag
+2025-07-01,atlag,brutto,Vállalkozás,NA,692700,monthly,TRUE,Bruttó teljes átlag
+2025-07-01,atlag,netto,Költségvetés,NA,477500,monthly,TRUE,Nettó átlag
+2025-07-01,atlag,netto,Nem közfoglalkoztatottak,NA,487200,monthly,FALSE,Nettó átlag
+2025-07-01,atlag,netto,Nonprofit,NA,493600,monthly,TRUE,Nettó átlag
+2025-07-01,atlag,netto,Vállalkozás,NA,478600,monthly,TRUE,Nettó átlag
+2025-07-01,rendsz,brutto,Költségvetés,NA,669900,monthly,TRUE,Bruttó rendszeres átlag
+2025-07-01,rendsz,brutto,Nonprofit,NA,684400,monthly,TRUE,Bruttó rendszeres átlag
+2025-07-01,rendsz,brutto,Vállalkozás,NA,649900,monthly,TRUE,Bruttó rendszeres átlag
+2025-08-01,atlag,brutto,Költségvetés,NA,669700,monthly,TRUE,Bruttó teljes átlag
+2025-08-01,atlag,brutto,Nem közfoglalkoztatottak,NA,694400,monthly,FALSE,Bruttó teljes átlag
+2025-08-01,atlag,brutto,Nonprofit,NA,702800,monthly,TRUE,Bruttó teljes átlag
+2025-08-01,atlag,brutto,Vállalkozás,NA,685100,monthly,TRUE,Bruttó teljes átlag
+2025-08-01,atlag,netto,Költségvetés,NA,462600,monthly,TRUE,Nettó átlag
+2025-08-01,atlag,netto,Nem közfoglalkoztatottak,NA,480100,monthly,FALSE,Nettó átlag
+2025-08-01,atlag,netto,Nonprofit,NA,489300,monthly,TRUE,Nettó átlag
+2025-08-01,atlag,netto,Vállalkozás,NA,473600,monthly,TRUE,Nettó átlag
+2025-08-01,rendsz,brutto,Költségvetés,NA,661600,monthly,TRUE,Bruttó rendszeres átlag
+2025-08-01,rendsz,brutto,Nonprofit,NA,678200,monthly,TRUE,Bruttó rendszeres átlag
+2025-08-01,rendsz,brutto,Vállalkozás,NA,650200,monthly,TRUE,Bruttó rendszeres átlag
+2025-09-01,atlag,brutto,Költségvetés,NA,691900,monthly,TRUE,Bruttó teljes átlag
+2025-09-01,atlag,brutto,Nem közfoglalkoztatottak,NA,698300,monthly,FALSE,Bruttó teljes átlag
+2025-09-01,atlag,brutto,Nonprofit,NA,700300,monthly,TRUE,Bruttó teljes átlag
+2025-09-01,atlag,brutto,Vállalkozás,NA,684300,monthly,TRUE,Bruttó teljes átlag
+2025-09-01,atlag,netto,Költségvetés,NA,477600,monthly,TRUE,Nettó átlag
+2025-09-01,atlag,netto,Nem közfoglalkoztatottak,NA,482700,monthly,FALSE,Nettó átlag
+2025-09-01,atlag,netto,Nonprofit,NA,487800,monthly,TRUE,Nettó átlag
+2025-09-01,atlag,netto,Vállalkozás,NA,473000,monthly,TRUE,Nettó átlag
+2025-09-01,rendsz,brutto,Költségvetés,NA,664200,monthly,TRUE,Bruttó rendszeres átlag
+2025-09-01,rendsz,brutto,Nonprofit,NA,689200,monthly,TRUE,Bruttó rendszeres átlag
+2025-09-01,rendsz,brutto,Vállalkozás,NA,656300,monthly,TRUE,Bruttó rendszeres átlag
+2025-10-01,atlag,brutto,Költségvetés,NA,689300,monthly,TRUE,Bruttó teljes átlag
+2025-10-01,atlag,brutto,Nem közfoglalkoztatottak,NA,704200,monthly,FALSE,Bruttó teljes átlag
+2025-10-01,atlag,brutto,Nonprofit,NA,702900,monthly,TRUE,Bruttó teljes átlag
+2025-10-01,atlag,brutto,Vállalkozás,NA,692700,monthly,TRUE,Bruttó teljes átlag
+2025-10-01,atlag,netto,Költségvetés,NA,482300,monthly,TRUE,Nettó átlag
+2025-10-01,atlag,netto,Nem közfoglalkoztatottak,NA,490200,monthly,FALSE,Nettó átlag
+2025-10-01,atlag,netto,Nonprofit,NA,496000,monthly,TRUE,Nettó átlag
+2025-10-01,atlag,netto,Vállalkozás,NA,481000,monthly,TRUE,Nettó átlag
+2025-10-01,rendsz,brutto,Költségvetés,NA,670800,monthly,TRUE,Bruttó rendszeres átlag
+2025-10-01,rendsz,brutto,Nonprofit,NA,693000,monthly,TRUE,Bruttó rendszeres átlag
+2025-10-01,rendsz,brutto,Vállalkozás,NA,664600,monthly,TRUE,Bruttó rendszeres átlag
+2025-11-01,atlag,brutto,Költségvetés,NA,771700,monthly,TRUE,Bruttó teljes átlag
+2025-11-01,atlag,brutto,Nem közfoglalkoztatottak,NA,769200,monthly,FALSE,Bruttó teljes átlag
+2025-11-01,atlag,brutto,Nonprofit,NA,786400,monthly,TRUE,Bruttó teljes átlag
+2025-11-01,atlag,brutto,Vállalkozás,NA,748800,monthly,TRUE,Bruttó teljes átlag
+2025-11-01,atlag,netto,Költségvetés,NA,538900,monthly,TRUE,Nettó átlag
+2025-11-01,atlag,netto,Nem közfoglalkoztatottak,NA,534600,monthly,FALSE,Nettó átlag
+2025-11-01,atlag,netto,Nonprofit,NA,553700,monthly,TRUE,Nettó átlag
+2025-11-01,atlag,netto,Vállalkozás,NA,519200,monthly,TRUE,Nettó átlag
+2025-11-01,rendsz,brutto,Költségvetés,NA,679100,monthly,TRUE,Bruttó rendszeres átlag
+2025-11-01,rendsz,brutto,Nonprofit,NA,739500,monthly,TRUE,Bruttó rendszeres átlag
+2025-11-01,rendsz,brutto,Vállalkozás,NA,653100,monthly,TRUE,Bruttó rendszeres átlag
+2025-12-01,atlag,brutto,Költségvetés,NA,736900,monthly,TRUE,Bruttó teljes átlag
+2025-12-01,atlag,brutto,Nem közfoglalkoztatottak,NA,802800,monthly,FALSE,Bruttó teljes átlag
+2025-12-01,atlag,brutto,Nonprofit,NA,882300,monthly,TRUE,Bruttó teljes átlag
+2025-12-01,atlag,brutto,Vállalkozás,NA,794100,monthly,TRUE,Bruttó teljes átlag
+2025-12-01,atlag,netto,Költségvetés,NA,515500,monthly,TRUE,Nettó átlag
+2025-12-01,atlag,netto,Nem közfoglalkoztatottak,NA,558200,monthly,FALSE,Nettó átlag
+2025-12-01,atlag,netto,Nonprofit,NA,621100,monthly,TRUE,Nettó átlag
+2025-12-01,atlag,netto,Vállalkozás,NA,550600,monthly,TRUE,Nettó átlag
+2025-12-01,rendsz,brutto,Költségvetés,NA,672800,monthly,TRUE,Bruttó rendszeres átlag
+2025-12-01,rendsz,brutto,Nonprofit,NA,734000,monthly,TRUE,Bruttó rendszeres átlag
+2025-12-01,rendsz,brutto,Vállalkozás,NA,680900,monthly,TRUE,Bruttó rendszeres átlag
+2026-01-01,atlag,brutto,Költségvetés,NA,NA,monthly,TRUE,Bruttó teljes átlag
+2026-01-01,atlag,brutto,Nem közfoglalkoztatottak,NA,855000,monthly,FALSE,Bruttó teljes átlag
+2026-01-01,atlag,brutto,Nonprofit,NA,739600,monthly,TRUE,Bruttó teljes átlag
+2026-01-01,atlag,brutto,Vállalkozás,NA,722700,monthly,TRUE,Bruttó teljes átlag
+2026-01-01,atlag,netto,Költségvetés,NA,NA,monthly,TRUE,Nettó átlag
+2026-01-01,atlag,netto,Nem közfoglalkoztatottak,NA,595500,monthly,FALSE,Nettó átlag
+2026-01-01,atlag,netto,Nonprofit,NA,525700,monthly,TRUE,Nettó átlag
+2026-01-01,atlag,netto,Vállalkozás,NA,504800,monthly,TRUE,Nettó átlag
+2026-01-01,rendsz,brutto,Költségvetés,NA,NA,monthly,TRUE,Bruttó rendszeres átlag
+2026-01-01,rendsz,brutto,Nonprofit,NA,726800,monthly,TRUE,Bruttó rendszeres átlag
+2026-01-01,rendsz,brutto,Vállalkozás,NA,683800,monthly,TRUE,Bruttó rendszeres átlag
+2026-02-01,atlag,brutto,Költségvetés,NA,728700,monthly,TRUE,Bruttó teljes átlag
+2026-02-01,atlag,brutto,Nem közfoglalkoztatottak,NA,737500,monthly,FALSE,Bruttó teljes átlag
+2026-02-01,atlag,brutto,Nonprofit,NA,740600,monthly,TRUE,Bruttó teljes átlag
+2026-02-01,atlag,brutto,Vállalkozás,NA,723000,monthly,TRUE,Bruttó teljes átlag
+2026-02-01,atlag,netto,Költségvetés,NA,515300,monthly,TRUE,Nettó átlag
+2026-02-01,atlag,netto,Nem közfoglalkoztatottak,NA,517400,monthly,FALSE,Nettó átlag
+2026-02-01,atlag,netto,Nonprofit,NA,527100,monthly,TRUE,Nettó átlag
+2026-02-01,atlag,netto,Vállalkozás,NA,505500,monthly,TRUE,Nettó átlag
+2026-02-01,rendsz,brutto,Költségvetés,NA,703400,monthly,TRUE,Bruttó rendszeres átlag
+2026-02-01,rendsz,brutto,Nonprofit,NA,731000,monthly,TRUE,Bruttó rendszeres átlag
+2026-02-01,rendsz,brutto,Vállalkozás,NA,683500,monthly,TRUE,Bruttó rendszeres átlag
+2026-03-01,atlag,brutto,Költségvetés,NA,739500,monthly,TRUE,Bruttó teljes átlag
+2026-03-01,atlag,brutto,Nem közfoglalkoztatottak,NA,793000,monthly,FALSE,Bruttó teljes átlag
+2026-03-01,atlag,brutto,Nonprofit,NA,762900,monthly,TRUE,Bruttó teljes átlag
+2026-03-01,atlag,brutto,Vállalkozás,NA,793200,monthly,TRUE,Bruttó teljes átlag
+2026-03-01,atlag,netto,Költségvetés,NA,522500,monthly,TRUE,Nettó átlag
+2026-03-01,atlag,netto,Nem közfoglalkoztatottak,NA,555000,monthly,FALSE,Nettó átlag
+2026-03-01,atlag,netto,Nonprofit,NA,542600,monthly,TRUE,Nettó átlag
+2026-03-01,atlag,netto,Vállalkozás,NA,553100,monthly,TRUE,Nettó átlag
+2026-03-01,rendsz,brutto,Költségvetés,NA,708300,monthly,TRUE,Bruttó rendszeres átlag
+2026-03-01,rendsz,brutto,Nonprofit,NA,738200,monthly,TRUE,Bruttó rendszeres átlag
+2026-03-01,rendsz,brutto,Vállalkozás,NA,703100,monthly,TRUE,Bruttó rendszeres átlag
+2026-04-01,atlag,brutto,Költségvetés,NA,751100,monthly,TRUE,Bruttó teljes átlag
+2026-04-01,atlag,brutto,Nem közfoglalkoztatottak,NA,785300,monthly,FALSE,Bruttó teljes átlag
+2026-04-01,atlag,brutto,Nonprofit,NA,764800,monthly,TRUE,Bruttó teljes átlag
+2026-04-01,atlag,brutto,Vállalkozás,NA,779000,monthly,TRUE,Bruttó teljes átlag
+2026-04-01,atlag,netto,Költségvetés,NA,531200,monthly,TRUE,Nettó átlag
+2026-04-01,atlag,netto,Nem közfoglalkoztatottak,NA,550100,monthly,FALSE,Nettó átlag
+2026-04-01,atlag,netto,Nonprofit,NA,544200,monthly,TRUE,Nettó átlag
+2026-04-01,atlag,netto,Vállalkozás,NA,543800,monthly,TRUE,Nettó átlag
+2026-04-01,rendsz,brutto,Költségvetés,NA,720200,monthly,TRUE,Bruttó rendszeres átlag
+2026-04-01,rendsz,brutto,Nonprofit,NA,747000,monthly,TRUE,Bruttó rendszeres átlag
+2026-04-01,rendsz,brutto,Vállalkozás,NA,705000,monthly,TRUE,Bruttó rendszeres átlag
+2026-05-01,atlag,brutto,Költségvetés,NA,733100,monthly,TRUE,Bruttó teljes átlag
+2026-05-01,atlag,brutto,Nem közfoglalkoztatottak,NA,776900,monthly,FALSE,Bruttó teljes átlag
+2026-05-01,atlag,brutto,Nonprofit,NA,773400,monthly,TRUE,Bruttó teljes átlag
+2026-05-01,atlag,brutto,Vállalkozás,NA,771900,monthly,TRUE,Bruttó teljes átlag
+2026-05-01,atlag,netto,Költségvetés,NA,519100,monthly,TRUE,Nettó átlag
+2026-05-01,atlag,netto,Nem közfoglalkoztatottak,NA,544700,monthly,FALSE,Nettó átlag
+2026-05-01,atlag,netto,Nonprofit,NA,550400,monthly,TRUE,Nettó átlag
+2026-05-01,atlag,netto,Vállalkozás,NA,539100,monthly,TRUE,Nettó átlag
+2026-05-01,rendsz,brutto,Költségvetés,NA,715100,monthly,TRUE,Bruttó rendszeres átlag
+2026-05-01,rendsz,brutto,Nonprofit,NA,745700,monthly,TRUE,Bruttó rendszeres átlag
+2026-05-01,rendsz,brutto,Vállalkozás,NA,716100,monthly,TRUE,Bruttó rendszeres átlag
