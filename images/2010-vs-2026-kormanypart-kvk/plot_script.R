@@ -43,7 +43,7 @@ make_config <- function() {
 
   list(
       files=list(
-      polls="inputs/median_polls_2009_2026.csv",   # 2009 - 2026/07, long, file2 már beolvasztva
+      polls="inputs/median_polls_2009_2026.csv",
       val  ="inputs/val_eredmenyek.csv"
     ),
     valasztas    =valasztas,
@@ -63,14 +63,6 @@ make_config <- function() {
                            "belőle kivált DK együttes támogatottsága.")
   )
 }
-
-# # ---- Segéd: dátumjavítás ---------------------------------------------------
-# 
-# # javit_datum <- function(x, jav) {
-# #   ha <- as.Date(names(jav)); ra <- as.Date(unname(jav))
-# #   for (i in seq_along(jav)) x <- if_else(x == ha[i], ra[i], x)
-# #   x
-# # }
 
 # ---- Segéd: DK összevonása az MSZP-vel -------------------------------------
 # A két párt támogatottságát dátumonként összeadjuk, MSZP néven. A dk_benne
@@ -130,8 +122,9 @@ build_felmeresek <- function(polls, cfg) {
 
 # ---- nincs_partja szürke idősor, hiánypótlással ----------------------------
 # A régi Medián-hullámoknál gyakran nem közöltek külön "nincs pártja / NT-NV"
-# sávot. Ez a szám azonban rekonstruálható: nincs_partja=100 - Σ(összes párt,
-# az "egyeb"-et is beleértve). Ez PONTOS, de CSAK ha az "egyeb" is közölve van
+# sávot. Ez a szám rekonstruálható: 
+# nincs_partja=100 - Σ(összes párt, az "egyeb"-et is beleértve). 
+# Ez PONTOS, de CSAK ha az "egyeb" is közölve van
 # (különben a kis pártok tévesen a nincs_partja-ba olvadnának) -> ezért kapuzzuk.
 
 build_nincs <- function(polls, cfg, potol_hianyt=TRUE) {
@@ -633,3 +626,13 @@ dir.create("plots/jobbik_MH", showWarnings=FALSE, recursive=TRUE)   # <- új
   }
 
 })
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# # ---- Segéd: dátumjavítás ---------------------------------------------------
+# 
+# # javit_datum <- function(x, jav) {
+# #   ha <- as.Date(names(jav)); ra <- as.Date(unname(jav))
+# #   for (i in seq_along(jav)) x <- if_else(x == ha[i], ra[i], x)
+# #   x
+# # }
