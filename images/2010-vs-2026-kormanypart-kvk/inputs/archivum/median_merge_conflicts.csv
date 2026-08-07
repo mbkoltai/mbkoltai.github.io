@@ -1,0 +1,21 @@
+part,datum,metric,file1_ertek_MEGTARTVA,file2_ertek_elvetve,ok
+MiHazank,2026-03-19,teljes_nepesseg,3.0,5.0,forrasok kozti elteres -> file1 a helyes
+MiHazank,2026-03-19,valasztani_tudok,4.0,7.0,forrasok kozti elteres -> file1 a helyes
+MiHazank,2026-03-19,biztos_szavazok,4.0,6.0,forrasok kozti elteres -> file1 a helyes
+egyeb,2024-05-28,valasztani_tudok,1.0,10.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-06-02,valasztani_tudok,1.0,6.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-07-07,teljes_nepesseg,2.0,4.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-07-07,valasztani_tudok,3.0,6.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-07-07,biztos_szavazok,2.0,5.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-09-07,teljes_nepesseg,2.0,5.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-09-07,valasztani_tudok,4.0,8.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-09-07,biztos_szavazok,4.0,8.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-10-31,teljes_nepesseg,1.0,4.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-10-31,valasztani_tudok,2.0,5.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-10-31,biztos_szavazok,0.0,4.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-11-23,teljes_nepesseg,1.0,4.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-11-23,valasztani_tudok,1.0,4.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2024-11-23,biztos_szavazok,1.0,4.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2025-06-01,teljes_nepesseg,1.0,3.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2025-06-01,valasztani_tudok,2.0,4.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb
+egyeb,2025-06-01,biztos_szavazok,1.0,2.0,file2 'Egyeb' szelesebb gyujtokat. -> file1 reszletesebb

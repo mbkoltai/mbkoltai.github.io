@@ -42,10 +42,9 @@ make_config <- function() {
     left_join(valasztas, by="ev")
 
   list(
-    files=list(
-      polls ="inputs/median_polls.csv",                    # 2009 - 2026/05 (long)
-      median="inputs/Median_teljes_nepesseg_osszes.csv",   # 2024 - 2026/07 (wide)
-      val   ="inputs/val_eredmenyek.csv"
+      files=list(
+      polls="inputs/median_polls_2009_2026.csv",   # 2009 - 2026/07, long, file2 már beolvasztva
+      val  ="inputs/val_eredmenyek.csv"
     ),
     valasztas    =valasztas,
     szeriak      =szeriak,
@@ -54,7 +53,7 @@ make_config <- function() {
     # Közös ablakhoz állítsd pl.: x_ablak=c(-16, 5)
     x_ablak      =NULL,
     # A 2026-05-01-es hullám valós közepe 2026-04-30 -> erre javítjuk.
-    datum_javitas=c("2026-05-01"="2026-04-30"),
+    # datum_javitas=c("2026-05-01"="2026-04-30"),
     panel_cimkek =c(
       uj    ="Új kormánypárt\nFidesz 2010  vs.  TISZA 2026", #  (2/3-os többség)
       bukott="Bukott kormánypárt\nMSZP 2010  vs.  Fidesz 2026"
@@ -65,13 +64,13 @@ make_config <- function() {
   )
 }
 
-# ---- Segéd: dátumjavítás ---------------------------------------------------
-
-javit_datum <- function(x, jav) {
-  ha <- as.Date(names(jav)); ra <- as.Date(unname(jav))
-  for (i in seq_along(jav)) x <- if_else(x == ha[i], ra[i], x)
-  x
-}
+# # ---- Segéd: dátumjavítás ---------------------------------------------------
+# 
+# # javit_datum <- function(x, jav) {
+# #   ha <- as.Date(names(jav)); ra <- as.Date(unname(jav))
+# #   for (i in seq_along(jav)) x <- if_else(x == ha[i], ra[i], x)
+# #   x
+# # }
 
 # ---- Segéd: DK összevonása az MSZP-vel -------------------------------------
 # A két párt támogatottságát dátumonként összeadjuk, MSZP néven. A dk_benne
@@ -97,27 +96,10 @@ osszevon_mszp_dk <- function(polls) {
 # ---- Felmérések beolvasása + összefésülés ----------------------------------
 
 read_polls <- function(cfg) {
-  # CSV1 (long)
-  polls1 <- read_csv(cfg$files$polls, na=c("", "NA"), show_col_types=F) %>%
+  read_csv(cfg$files$polls, na=c("", "NA"), show_col_types=F) %>%
+    # mutate(datum=javit_datum(as.Date(datum), cfg$datum_javitas)) %>%
     select(part, datum, teljes_nepesseg) %>%
-    mutate(datum=javit_datum(as.Date(datum), cfg$datum_javitas)) %>%
-    filter(!is.na(teljes_nepesseg))
-
-  # CSV2 (wide) — csak "Teljes népesség", csak TISZA + Fidesz + Pártnélküli + Mi Hazánk.
-  # A dátumok itt hónapra kerekítettek, ezért CSAK a CSV1 utolsó időpontja
-  # UTÁNI hullámokat vesszük át (2026-06-25 és 2026-07-23).
-  polls2 <- read_csv(cfg$files$median, na=c("", "NA"), show_col_types=F) %>%
-    filter(kateg == "Teljes népesség") %>%
-    mutate(datum=javit_datum(as.Date(datum, format="%Y/%m/%d"), cfg$datum_javitas)) %>%
-    select(datum, TISZA, Fidesz, Pártnélküli, `Mi Hazánk`) %>%                    # <- +Mi Hazánk
-    pivot_longer(c(TISZA, Fidesz, Pártnélküli, `Mi Hazánk`),                      # <- ide is
-                 names_to="part", values_to="teljes_nepesseg") %>%
-    mutate(part=recode(part, "TISZA"="Tisza",
-                               "Pártnélküli"="nincs_partja",
-                               "Mi Hazánk"="MiHazank")) %>%      # <- egységes név (CSV1: MiHazank)
-    filter(!is.na(teljes_nepesseg), datum > max(polls1$datum))
-
-  bind_rows(polls1, polls2) %>%
+    filter(!is.na(teljes_nepesseg)) %>%
     osszevon_mszp_dk() %>%
     arrange(part, datum)
 }
@@ -310,6 +292,7 @@ build_plot <- function(felmeresek, eredmenyek, cfg, max_span) {
   cap <- paste0("Forrás: Medián / hvg.hu; választási eredmény: NVI ",
     "(listás szavazat a névjegyzékben szereplők arányában).",
     "\nVálasztások: 2010. április 11., 2026. április 12.")
+  
   if (dk_shown) cap <- paste0(cap, "\n", cfg$dk_labjegyzet)
 
   ggplot(df, aes(x=rel_honap, y=teljes_nepesseg,
@@ -391,10 +374,14 @@ build_plot_ido <- function(felmeresek, eredmenyek, cfg, max_span,
 
   df <- szur_ablak(felmeresek, max_span)
   dk_shown <- any(df$dk_benne)
+  
+  # CAPTION
   cap <- paste0("Forrás: Medián / hvg.hu; választási eredmény: NVI ",
     "(listás szavazat a névjegyzékben szereplők arányában).",
     "\nVálasztások: 2010. április 11., 2026. április 12.")
   if (dk_shown) cap <- paste0(cap, "\n", cfg$dk_labjegyzet)
+  if (!is.null(jobbik) || !is.null(mihazank))                       # <- új
+  cap <- paste0(cap, "\nFekete vonal = Jobbik, sötétszürke = Mi Hazánk.")
 
   # a relatív lépésköz a window-hoz igazodjon (mint a szerep-ábrán)
   br_rel <- rel_break(max_span)
@@ -483,10 +470,10 @@ build_plot_ido <- function(felmeresek, eredmenyek, cfg, max_span,
     { if (!is.null(jdf))
         list(
           geom_line(data=jdf, aes(x=.x, y=teljes_nepesseg, group=ciklus),
-                    inherit.aes=F, colour="black",
+                    inherit.aes=F, colour="grey5",
                     linewidth=0.6, alpha=0.9),
           geom_point(data=jdf, aes(x=.x, y=teljes_nepesseg),
-                     inherit.aes=F, colour="black",
+                     inherit.aes=F, colour="grey5",
                      size=1.6, alpha=0.8)
         )
       else NULL } +
@@ -495,9 +482,9 @@ build_plot_ido <- function(felmeresek, eredmenyek, cfg, max_span,
         list(
           geom_point(data=jer, aes(x=.x, y=ertek),
                      inherit.aes=F, shape=23, size=4.2, stroke=0.4,
-                     colour="black", fill="black"),
+                     colour="grey5", fill="grey5"),
           geom_text(data=jer, aes(x=.x, y=ertek, label=sprintf("%.1f%%", ertek)),
-                    inherit.aes=F, colour="black", vjust=-1/2, hjust=-1/8,
+                    inherit.aes=F, colour="grey5", vjust=2.5, hjust=1/2, nudge_x=-1.1,   # <- volt -1/2
                     size=4, fontface="bold")
         )
       else NULL } +
@@ -518,7 +505,7 @@ build_plot_ido <- function(felmeresek, eredmenyek, cfg, max_span,
                      inherit.aes=F, shape=23, size=4.2, stroke=0.4,
                      colour="black", fill="grey30"),
           geom_text(data=mer, aes(x=.x, y=ertek, label=sprintf("%.1f%%", ertek)),
-                    inherit.aes=F, colour="grey30", vjust=-1/2, hjust=-1/8,
+                    inherit.aes=F, colour="grey30", vjust=3/2, hjust=-1/8,   # <- volt -1/2
                     size=4, fontface="bold")
         )
       else NULL } +
@@ -602,9 +589,10 @@ x_modok    <- c("relativ", "datum")
 datum_break <- c("200"=2, "360"=4, "650"=6,"740"=6,"1100"=6,"1500"=8)
 
 abrak <- list()
+dir.create("plots/jobbik_MH", showWarnings=FALSE, recursive=TRUE)   # <- új
 
 # 1. ábra: SZEREP szerinti panelek (csak relatív idő, nincs x_mode)
-  for (ms in max_time_span[6]) {
+  for (ms in max_time_span) {
     p_i <- build_plot(data$felmeresek, data$eredmenyek, cfg, max_span=ms)
     fajl <- abra_fajlnev("median_szerep", p_i)
     ggsave(plot=p_i, filename=paste0("plots/", fajl),
@@ -614,7 +602,7 @@ abrak <- list()
   }
 
   # 2. ábra: IDŐSZAK szerinti panelek (relatív ÉS naptári x tengely)
-  for (ms in max_time_span[6]) {
+  for (ms in max_time_span) {
     for (xm in x_modok) {
       # meglévő változat (Jobbik / Mi Hazánk nélkül)
       p_i <- build_plot_ido(data$felmeresek, data$eredmenyek, cfg,
@@ -628,6 +616,7 @@ abrak <- list()
       abrak[[fajl]] <- p_i
       message("mentve: ", fajl)
 
+
       # ÚJ változat: kis ellenzéki pártokkal (Jobbik 2010 + Mi Hazánk 2026)
       p_j <- build_plot_ido(data$felmeresek, data$eredmenyek, cfg,
                             max_span=ms, x_mode=xm,
@@ -636,7 +625,7 @@ abrak <- list()
                             nincs=data$nincs, jobbik=data$jobbik,
                             mihazank=data$mihazank)
       fajl <- abra_fajlnev("median_idoszak", p_j)
-      ggsave(plot=p_j, filename=paste0("plots/", fajl),
+      ggsave(plot=p_j, filename=paste0("plots/jobbik_MH/", fajl),   # <- volt "plots/"
              width=12, height=6, dpi=300, bg="white")
       abrak[[fajl]] <- p_j
       message("mentve: ", fajl)
