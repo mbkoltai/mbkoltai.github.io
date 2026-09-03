@@ -1,0 +1,32 @@
+category,name,parent,settlements,population,center_population
+Agglomeráció,Budapesti agglomeráció,,81,2596842,1685209
+Budapesti szektor,Északi szektor,Budapesti agglomeráció,10,142384,
+Budapesti szektor,Keleti szektor,Budapesti agglomeráció,11,149183,
+Budapesti szektor,Délkeleti szektor,Budapesti agglomeráció,9,114396,
+Budapesti szektor,Déli szektor,Budapesti agglomeráció,15,245974,
+Budapesti szektor,Nyugati szektor,Budapesti agglomeráció,12,105902,
+Budapesti szektor,Északnyugati szektor,Budapesti agglomeráció,23,153794,
+Agglomeráció,Győri agglomeráció,,78,248617,129373
+Agglomeráció,Miskolci agglomeráció,,41,234171,141440
+Agglomeráció,Pécsi agglomeráció,,49,188170,139412
+Agglomerálódó térség,Balatoni,,53,150098,
+Agglomerálódó térség,Egri,,19,74844,48686
+Agglomerálódó térség,Szombathelyi,,63,121813,76918
+Agglomerálódó térség,Zalaegerszegi,,67,86923,53960
+Nagyvárosi településegyüttes,Békéscsabai,,11,122659,53944
+Nagyvárosi településegyüttes,Debreceni,,13,268538,202130
+Nagyvárosi településegyüttes,Kaposvári,,30,78576,58459
+Nagyvárosi településegyüttes,Kecskeméti,,13,143961,108651
+Nagyvárosi településegyüttes,Nyíregyházi,,11,146028,114873
+Nagyvárosi településegyüttes,Salgótarjáni,,12,43556,30416
+Nagyvárosi településegyüttes,Soproni,,15,80421,60820
+Nagyvárosi településegyüttes,Szegedi,,16,204442,157282
+Nagyvárosi településegyüttes,Szekszárdi,,10,42728,29337
+Nagyvárosi településegyüttes,Székesfehérvári,,43,181905,95241
+Nagyvárosi településegyüttes,Szolnoki,,13,98570,65564
+Nagyvárosi településegyüttes,Tatabányai,,11,85278,64785
+Nagyvárosi településegyüttes,Veszprémi,,27,93615,55118
+Nagyvárosi településegyüttes,Dunaújvárosi,,9,66957,41193
+Nagyvárosi településegyüttes,Nagykanizsai,,27,55331,42042
+Nagyvárosi településegyüttes,Bajai,,3,36851,32401
+Nagyvárosi településegyüttes,Esztergomi,,2,30687,28521
