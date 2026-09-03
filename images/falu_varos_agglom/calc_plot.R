@@ -396,6 +396,10 @@ local({
     tab_options(table.font.size = px(13), data_row.padding = px(8),
                 heading.title.font.size = px(18)) |>
     gtsave(paste0("plots/jogallas_table_", sel_yr, ".html"))
+  
+  webshot("plots/jogallas_table_2025.html", "plots/jogallas_table_2025.png",
+        vwidth = 800, vheight = 600, zoom = 2)
+  
 })
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -671,6 +675,12 @@ local({
     tab_options(table.font.size = px(13), data_row.padding = px(8),
                 heading.title.font.size = px(18)) |>
     gtsave(paste0("plots/meret_table_", sel_yr, ".html"))
+  
+  library(webshot2)
+
+webshot("plots/meret_table_2025.html", "plots/meret_table_2025.png",
+        vwidth = 800, vheight = 600, zoom = 2)
+  
 })
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
