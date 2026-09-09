@@ -1,77 +1,69 @@
-library(tidyverse)
-library(gt)
+# load data, libraries
+source("load_data.R")
 
-# this is list of settlements belonging to agglomerations, from
-# https://doi.org/10.15196/TS640304
-# https://www.ksh.hu/statszemle_archive/terstat/2024/2024_03/ts640304.pdf
-hu_agglomeracio_telepulesek_2024 <- read_csv(
-  "adatok/hu_agglomeracio_telepulesek_2024.csv")
 
-# ojs.elte.hu/tft/article/view/220 1. Tablazat: lakossag-eloszlas kategoriankent
-# agglomeraciok listaja: https://www.ksh.hu/stadat_files/fol/hu/fol0016.html
-
-# this is from KSH, https://www.ksh.hu/apps/hntr.egyeb?p_lang=HU&p_sablon=LETOLTES
-# HNT lakónépesség
-# telepules_lista <- read_csv("telepules_lista.csv")
-# all HNT files are at https://github.com/ferenci-tamas/IrszHnk
-# and were then aggregated by Claude
-hu_hnt_lakonepesseg_2012_2025 <- read_csv(
-  "adatok/hu_hnt_lakonepesseg_2012_2025.csv") |>
-  mutate(telepules_aggr=ifelse(grepl("Budapest",telepules),"Budapest",telepules)) |>
-  group_by(year,telepules_aggr,jogallas,megye) |>
-  summarise(
-    terulet_ha=sum(terulet_ha),
-    lakonepesseg=sum(lakonepesseg),
-    lakasok=sum(lakasok)) |> 
-  ungroup() |>
-  rename(telepules=telepules_aggr)
-
-# A közüzemi szennyvízgyűjtő hálózatba bekapcsolt lakások száma: 41 -> 85%
+# A közüzemi szennyvízgyűjtő hálózatba bekapcsolt lakások száma (1990 -> most): 41 -> 85%
 # https://ksh.hu/s/kiadvanyok/fenntarthato-fejlodes-indikatorai-2022/1-12-sdg-3
+# ivóvízvezeték: ... -> 95%
 # A közüzemi ivóvízvezeték- és szennyvízgyűjtő- hálózatba bekapcsolt lakások aránya 
 # https://www.ksh.hu/stadat_files/kor/hu/kor0066.html
 # 3. táblázat. A városi és a falusi népesség aránya, 1900–1990 (%)
 # https://mek.oszk.hu/02100/02185/html/171.html
 
 # 5e feletti telepulesek aranya: 9.3+7.8+11.2+20.9+1.5+17.7=68.4%
-# 5e felett + kisebb agglomeracios = 68.4 + (1.6+2.2+6+2.9) = 81.1%
+# 5e felett + kisebb agglomeracios=68.4 + (1.6+2.2+6+2.9)=81.1%
 # 10e felett: 7.8+11.2+20.9+1.5+17.7=59.1%
-# 10e felett + kisebb agglomeracios = 59.1 + (1.6+2.2+6+2.9) = 71.8%
+# 10e felett + kisebb agglomeracios=59.1 + (1.6+2.2+6+2.9)=71.8%
 
 # osszefoglalo statisztika jogallas szerint
-hu_hnt_lakonepesseg_2012_2025 |>
-  mutate(jogallas=case_when(grepl("megyei",jogallas) ~
-    "megyeszékhely/megyei jogú város",
-    grepl("fővárosi",jogallas) ~ "Budapest", .default=jogallas)) |>
-  group_by(year,jogallas) |> 
-  summarise(sum_pop=sum(lakonepesseg),n=n()) |>
+hnt_2004_2010_2025_jogallas |>
+  mutate(
+    jogallas=case_when(
+      grepl("megyei", jogallas) ~ "msz/mjv",
+      grepl("fővárosi", jogallas) ~ "Budapest",
+      .default=jogallas) ) |>
+  group_by(year, jogallas) |>
+  summarise(
+    sum_pop=sum(lakonepesseg, na.rm=TRUE),
+    n=n(), .groups="drop" ) |>
   (\(df) list(
     pop=df |>
       select(year, jogallas, sum_pop) |>
-      pivot_wider(names_from=jogallas, values_from=sum_pop) |>
-    mutate(TOTAL = rowSums(across(where(is.numeric)))),
+      pivot_wider(
+        names_from=jogallas,
+        values_from=sum_pop,
+        values_fill=0 ) |>
+      select(year, Budapest, `msz/mjv`,város,
+        nagyközség, község) |>
+      mutate(TOTAL=Budapest + `msz/mjv` + város + nagyközség + község),
     n=df |>
       select(year, jogallas, n) |>
-      pivot_wider(names_from=jogallas, values_from=n) |>
-    mutate(TOTAL = rowSums(across(where(is.numeric))))
+      pivot_wider(
+        names_from=jogallas,
+        values_from=n,
+        values_fill=0) |>
+      select(year, Budapest,`msz/mjv`, város,
+        nagyközség, község ) |>
+      mutate(TOTAL=Budapest + `msz/mjv` +
+          város + nagyközség + község )
   ))()
-
 
 # agglomerations: https://www.ksh.hu/teruletiatlasz_egyeb_teruletilehatarolasok
 # join with agglom data
-hu_hnt_lakonepesseg_2012_2025 |> 
+hnt_2004_2010_2025_jogallas |>
   left_join(hu_agglomeracio_telepulesek_2024) |>
   mutate(agglom=ifelse(!is.na(szerkezet),T,F)) |> 
-  filter(!agglom & jogallas=="község") |> # lakonepesseg<3e3 & year==2025 & 
+  filter(!agglom & grepl("község",jogallas)) |> # lakonepesseg<3e3 & year==2025 & 
   group_by(year) |>
   summarise(sum(lakonepesseg))
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
-# # FIX eves kategorizálás meret szerint
+# TREND: FIX eves kategorizálás meret szerint
 
 local({
-  fix_year <- c(2012,2025)[2]
+  fix_year <- c(2001, 2025)[1]
+  save_flag <- T
 
   brks <- c(-Inf, 1e3, 2e3, 5e3, 1e4, 5e4, Inf)
   fin  <- brks[is.finite(brks)]
@@ -80,12 +72,11 @@ local({
             paste0(k(head(fin, -1)), "–", k(fin[-1])),
             paste0(">", k(tail(fin, 1))))
 
-  natl <- hu_hnt_lakonepesseg_2012_2025 |>
-    summarise(natl = sum(lakonepesseg), .by = year)
+  dat <- HNT_1990_2025 |> filter(year >= 2001)
 
-  hu_nobp <- hu_hnt_lakonepesseg_2012_2025 |> filter(!grepl("Budapest", telepules))
+  natl <- dat |> summarise(natl = sum(lakonepesseg), .by = year)
+  hu_nobp <- dat |> filter(telepules != "Budapest")
 
-  # frozen bands taken from fix_year
   bandfix <- hu_nobp |>
     filter(year == fix_year) |>
     mutate(band = cut(lakonepesseg, brks, labs, right = FALSE)) |>
@@ -99,11 +90,10 @@ local({
     left_join(natl, by = "year") |>
     mutate(pct = 100 * pop / natl, mill = pop / 1e6)
 
-  bp <- hu_hnt_lakonepesseg_2012_2025 |>
-    filter(grepl("Budapest", telepules)) |>
-    summarise(pop = sum(lakonepesseg), .by = year) |>
+  bp <- dat |>
+    filter(telepules == "Budapest") |>
     left_join(natl, by = "year") |>
-    mutate(pct = 100 * pop / natl, mill = pop / 1e6) |>
+    mutate(pct = 100 * lakonepesseg / natl, mill = lakonepesseg / 1e6) |>
     filter(year %in% range(year)) |> arrange(year)
   subtitle <- sprintf(
     "Budapest: %.1f%% → %.1f%% | %.2fm → %.2fm fő",
@@ -119,7 +109,7 @@ local({
   ends <- d |> filter(year %in% range(year)) |>
     mutate(lab = case_when(
              metric != "Az ország %-ában" ~ sprintf("%.2fm", value),
-             year == fix_year             ~ sprintf("%.1f%% | n=%d", value, n),  # n at fix year
+             year == fix_year             ~ sprintf("%.1f%% | n=%d", value, n),
              T ~ sprintf("%.1f%%", value)),
            vj = if_else(agglom == "Agglom. kívül", -0.8, 1.6) +
                 if_else(band == tail(labs, 1), 0.6, 0),
@@ -129,6 +119,8 @@ local({
              year == min(year)                                ~ 0.15,
              T                                                ~ 0.85))
 
+  yr_breaks <- seq(2000, 2025, 10)
+
   p <- ggplot(d, aes(year, value, colour = agglom, group = agglom)) +
     facet_grid(metric ~ band, scales = "free_y", switch = "y") +
     geom_line(linewidth = 0.8, show.legend = F) +
@@ -137,85 +129,90 @@ local({
                shape = 21, colour = "black", stroke = 0.7, size = 2) +
     geom_text(data = ends, aes(label = lab, vjust = vj, hjust = hj),
               size = 3.75, fontface = "bold", show.legend = FALSE) +
-    scale_x_continuous(breaks = seq(2012, 2025, 4), expand = expansion(mult = 0.1)) +
+    scale_x_continuous(breaks = yr_breaks, expand = expansion(mult = 0.1)) +
     scale_y_continuous(expand = expansion(mult = 0.12)) +
     labs(x = NULL, y = NULL, colour = NULL, fill = NULL,
-         title = sprintf("%d-ös méretkategóriák szerinti népességarány és -szám alakulása", fix_year),
-         subtitle = subtitle) +
+         title = sprintf("%d-ös méretkategóriák szerinti népességarány és -szám, 2001–2025", fix_year),
+         subtitle = subtitle,
+         caption = "Forrás: KSH Helységnévtár (hntr)") +
     theme_bw(base_size = 15) +
     theme(legend.position = "top", strip.placement = "outside",
           plot.title = element_text(size = 16, face = "bold"),
           plot.subtitle = element_text(size = 12))
 
-  ggsave(sprintf("plots/idosor_meret_fix_%d.png", fix_year), p,
-         width = 14, height = 8, units = "in", dpi = 300, bg = "white")
+  if (save_flag) {
+    ggsave(sprintf("plots/idosor_meret_fix_%d_from2001.png", fix_year), p,
+           width = 14, height = 8, units = "in", dpi = 300, bg = "white")
+  }
   print(p)
 })
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # ugyanez jogallas (telep.tipus) szerint
 
 local({
-
-  # melyik év kategorizálását fixáljuk?
   sel_yr <- 2025
+  floating <- F       # FALSE = frozen at sel_yr, TRUE = each year's own jogállás
+  save_flag <- TRUE
 
-  # collapse the two big-city ranks; keep község / nagyközség separate; Budapest own level
+  start_yr <- if (floating) 2010 else 2001   # floating can only go as far as jogállás data allows
+
   recl <- function(x) dplyr::case_when(
     x %in% c("község","nagyközség")       ~ x,
     x == "fővárosi kerület"               ~ "Budapest",
     stringr::str_detect(x, "megyei jogú") ~ "megyeszékhely/mjv",
     TRUE                                  ~ "város")
-  jlev <- c("község","nagyközség","város","megyeszékhely/mjv")   # panel order (Budapest excluded)
+  jlev <- c("község","nagyközség","város","megyeszékhely/mjv","Budapest")
 
-  natl <- hu_hnt_lakonepesseg_2012_2025 |>
-    summarise(natl = sum(lakonepesseg), .by = year)
+  if (floating) {
+    # each year carries its OWN jogállás -> use the jogállás frame directly
+    dat <- hnt_2004_2010_2025_jogallas |>
+      filter(year >= start_yr) |>
+      mutate(jog = factor(recl(jogallas), levels = jlev))
+  } else {
+    # freeze jogállás at sel_yr, population from the continuous hntr series
+    fix_jogallas <- hnt_2004_2010_2025_jogallas |>
+      filter(year == sel_yr) |>
+      mutate(jog = factor(recl(jogallas), levels = jlev)) |>
+      select(telepules, jog)
+    dat <- HNT_1990_2025 |>
+      filter(year >= start_yr) |>
+      inner_join(fix_jogallas, by = "telepules")
+  }
 
-  # freeze each settlement's jogállás category at sel_yr
-  fix_jogallas <- hu_hnt_lakonepesseg_2012_2025 |>
-    filter(year == sel_yr) |>
-    mutate(jog = factor(recl(jogallas), levels = c(jlev, "Budapest"))) |>
-    select(telepules, jog)
+  natl <- dat |> summarise(natl = sum(lakonepesseg), .by = year)
 
-  base <- hu_hnt_lakonepesseg_2012_2025 |>
-    inner_join(fix_jogallas, by = "telepules") |>
+  base <- dat |>
     left_join(hu_agglomeracio_telepulesek_2024, by = "telepules") |>
     mutate(agglom = if_else(!is.na(szerkezet), "Agglomerációban", "Agglom. kívül")) |>
     summarise(pop = sum(lakonepesseg), n = n(), .by = c(year, jog, agglom)) |>
     left_join(natl, by = "year") |>
     mutate(pct = 100 * pop / natl, mill = pop / 1e6)
 
-  # subtitle: Budapest only (its own frozen level, excluded from panels)
-  bp <- base |> filter(jog == "Budapest") |>
-    summarise(pct = sum(pop)/first(natl)*100, mill = sum(pop)/1e6, .by = year) |>
-    filter(year %in% range(year)) |> arrange(year)
-  subtitle <- sprintf(
-    "Budapest: %.1f%% → %.1f%% | %.2fm → %.2fm fő   ·   %d-ös besorolás rögzítve",
-    #  (a panelekből kihagyva)
-    bp$pct[1], bp$pct[2], bp$mill[1], bp$mill[2], sel_yr)
-
-  d <- base |> filter(jog != "Budapest") |>
-    mutate(jog = fct_drop(jog)) |>
+  d <- base |>
     pivot_longer(c(mill, pct), names_to = "metric", values_to = "value") |>
     mutate(metric = recode(metric,
                            pct  = "Az ország %-ában",
                            mill = "Lakónépesség (millió fő)") |>
                     factor(levels = c("Az ország %-ában", "Lakónépesség (millió fő)")))
 
+  mode_label <- if (floating) "éves (változó)" else sprintf("%d-ös (rögzített)", sel_yr)
+
   ends <- d |> filter(year %in% range(year)) |>
     mutate(lab = case_when(
              metric != "Az ország %-ában" ~ sprintf("%.2fm", value),
-             year == sel_yr               ~ sprintf("%.1f%% (n=%d)", value, n),  # n at the frozen year
+             year == max(year)            ~ sprintf("%.1f%% (n=%d)", value, n),
              T ~ sprintf("%.1f%%", value)),
            vj = if_else(agglom == "Agglom. kívül", -0.8, 2),
-           # hj keyed to screen position (left/right edge), NOT to which year carries n
            hj = case_when(
              metric != "Az ország %-ában" & year == min(year) ~ 0.3,
              metric != "Az ország %-ában"                     ~ 0.85,
              year == min(year)                                ~ 0.16,
              TRUE                                             ~ 0.92))
 
-  break_vals <- seq(min(d$year), max(d$year), 4)
+  yr_breaks <- seq(ceiling(start_yr/5)*5, 2025, 5)
 
   p <- ggplot(d, aes(year, value, colour = agglom, group = agglom)) +
     facet_grid(metric ~ jog, scales = "free_y", switch = "y") +
@@ -225,18 +222,29 @@ local({
                shape = 21, colour = "black", stroke = 0.7, size = 2) +
     geom_text(data = ends, aes(label = lab, vjust = vj, hjust = hj),
               size = 3.75, fontface = "bold", show.legend = FALSE) +
-    scale_x_continuous(breaks = break_vals, expand = expansion(mult = c(0.08, 0.05))) +
+    scale_x_continuous(breaks = yr_breaks, expand = expansion(mult = c(0.08, 0.05))) +
     scale_y_continuous(expand = expansion(mult = 0.12)) +
     labs(x = NULL, y = NULL, colour = NULL, fill = NULL,
-         title = paste0(sel_yr, "-ös jogállás szerinti népességarány és -szám alakulása"),
-         subtitle = subtitle) +
+         title = sprintf("Jogállás szerinti népességarány és -szám, %d–2025", start_yr),
+         subtitle = sprintf("Besorolás: %s", mode_label),
+         caption = if (floating)
+           "Forrás: KSH HNT · Minden év saját jogállás-besorolásával"
+         else
+           paste0("Forrás: KSH Helységnévtár (hntr) · ",
+      "A 2001 és 2011 népszámlálási illesztések kisebb törést okozhatnak")) +
     theme_bw(base_size = 15) +
     theme(legend.position = "top", strip.placement = "outside",
           plot.title = element_text(size = 16, face = "bold"),
           plot.subtitle = element_text(size = 12))
 
-  ggsave(paste0("plots/idosor_jogallas_fix_", sel_yr, ".png"), p,
-         width = 12, height = 8, units = "in", dpi = 300, bg = "white")
+  fname <- if (floating) {
+    sprintf("plots/idosor_jogallas_floating_from%d.png", start_yr)
+  } else {
+    sprintf("plots/idosor_jogallas_fix_%d_from%d.png", sel_yr, start_yr)
+  }
+  if (save_flag) {
+    ggsave(fname, p, width = 14, height = 8, units = "in", dpi = 300, bg = "white")
+  }
   print(p)
 })
 
@@ -246,14 +254,14 @@ local({
 # popul eloszlas kategoria szerint EGY EVBEN
 
 local({
-  
-  sel_yr <- range(hu_hnt_lakonepesseg_2012_2025$year)[1]
-  bp_pop <- hu_hnt_lakonepesseg_2012_2025 |>
+  save_flag <- T
+  sel_yr <- c(2004,2010,2020,2025)[4]
+  bp_pop <- hnt_2004_2010_2025_jogallas |>
     filter(year == sel_yr, grepl("Budapest", telepules)) |>
     summarise(p=sum(lakonepesseg)) |> pull(p)
-  natl <- hu_hnt_lakonepesseg_2012_2025 |>
+  natl <- hnt_2004_2010_2025_jogallas |>
     filter(year == sel_yr) |> summarise(p=sum(lakonepesseg)) |> pull(p)
-  pd <- hu_hnt_lakonepesseg_2012_2025 |>
+  pd <- hnt_2004_2010_2025_jogallas |>
     left_join(hu_agglomeracio_telepulesek_2024, by="telepules") |>
     mutate(agglom=if_else(!is.na(szerkezet), "Agglomerációban", "Agglom. kívül")) |>
     filter(year == sel_yr, telepules != "Budapest",
@@ -273,7 +281,7 @@ local({
               n=n(), pop=sum(lakonepesseg), .by=c(panel, jogallas3, agglom))
 
   # n label -> ABOVE the box
-    n_lab <- stats |> mutate(lab = sprintf("n=%d", n))
+    n_lab <- stats |> mutate(lab=sprintf("n=%d", n))
 
   # summary (median + össz) -> BELOW the box, n removed
   lane <- stats |>
@@ -324,54 +332,58 @@ local({
           plot.title=element_text(face="bold"),
           plot.caption=element_text(size=13),
           panel.spacing=unit(14, "pt"))
+  # SAVE
+  if (save_flag) {
   ggsave(paste0("plots/box_jogallas_",sel_yr,".png"), last_plot(),
          width=14, height=6.2, units="in", dpi=300, bg="white")
+    }
   print(last_plot())
 })
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 # osszefoglalo tablazat ugyanerrol
 
-
 local({
-  sel_yr <- range(hu_hnt_lakonepesseg_2012_2025$year)[2]
-  fmt <- scales::label_number(big.mark = " ")
+  sel_yr <- range(hnt_2004_2010_2025_jogallas$year)[2]
+  fmt <- scales::label_number(big.mark=" ")
 
-  natl <- hu_hnt_lakonepesseg_2012_2025 |>
-    filter(year == sel_yr) |> summarise(p = sum(lakonepesseg)) |> pull(p)
+  natl <- hnt_2004_2010_2025_jogallas |>
+    filter(year == sel_yr) |> summarise(p=sum(lakonepesseg)) |> pull(p)
 
-  pd <- hu_hnt_lakonepesseg_2012_2025 |>
-    left_join(hu_agglomeracio_telepulesek_2024, by = "telepules") |>
-    mutate(agglom = if_else(!is.na(szerkezet), "Agglomerációban", "Agglom. kívül")) |>
+  pd <- hnt_2004_2010_2025_jogallas |>
+    left_join(hu_agglomeracio_telepulesek_2024, by="telepules") |>
+    mutate(agglom=if_else(!is.na(szerkezet), "Agglomerációban", "Agglom. kívül")) |>
     filter(year == sel_yr, telepules != "Budapest",
            jogallas %in% c("város","nagyközség","község",
                            "megyei jogú város","megyeszékhely, megyei jogú város")) |>
-    mutate(jog = case_when(
+    mutate(jog=case_when(
              jogallas == "község"                        ~ "község",
              jogallas == "nagyközség"                    ~ "nagyközség",
              jogallas == "város"                         ~ "város",
              jogallas == "megyei jogú város"             ~ "megyei jogú város",
              TRUE                                        ~ "megyeszékhely") |>
-           factor(levels = c("község","nagyközség","város",
+           factor(levels=c("község","nagyközség","város",
                              "megyei jogú város","megyeszékhely")))
 
   cell <- pd |>
-    summarise(n = n(), pop = sum(lakonepesseg),
-              med = median(lakonepesseg),
-              q1 = quantile(lakonepesseg, .25), q3 = quantile(lakonepesseg, .75),
-              lo = min(lakonepesseg), hi = max(lakonepesseg),
+    summarise(n=n(), pop=sum(lakonepesseg),
+              med=median(lakonepesseg),
+              q1=quantile(lakonepesseg, .25), q3=quantile(lakonepesseg, .75),
+              lo=min(lakonepesseg), hi=max(lakonepesseg),
               # name the towns when the cell is small (<=3)
-              names = if_else(n() <= 3,
-                              paste(telepules, collapse = ", "), NA_character_),
-              .by = c(jog, agglom)) |>
-    mutate(text = if_else(
+              names=if_else(n() <= 3,
+                              paste(telepules, collapse=", "), NA_character_),
+              .by=c(jog, agglom)) |>
+    mutate(text=if_else(
       n <= 3,
       # small cell: n + names + population
-      paste0("n = ", n, " (", names, ")<br>",
+      paste0("n=", n, " (", names, ")<br>",
              sprintf("%.3fm fő (ország %.2f%%-a)", pop/1e6, 100*pop/natl), "<br>",
              "méret: ", fmt(lo), if_else(n > 1, paste0(" - ", fmt(hi)), "")),
       # full cell
-      paste0("n = ", n, "<br>",
+      paste0("n=", n, "<br>",
              sprintf("%.2fm fő (ország %.1f%%-a)", pop/1e6, 100*pop/natl), "<br>",
              "medián: ", fmt(round(med)), " fő<br>",
              "IQR: ", fmt(round(q1)), " - ", fmt(round(q3)), "<br>",
@@ -379,26 +391,26 @@ local({
 
   tab <- cell |>
     select(jog, agglom, text) |>
-    pivot_wider(names_from = agglom, values_from = text) |>
+    pivot_wider(names_from=agglom, values_from=text) |>
     arrange(jog)
 
   gt(tab) |>
-    fmt_markdown(columns = everything()) |>
-    fmt_missing(columns = everything(), missing_text = " - ") |>
-    cols_label(jog = "Jogállás") |>
+    fmt_markdown(columns=everything()) |>
+    fmt_missing(columns=everything(), missing_text=" - ") |>
+    cols_label(jog="Jogállás") |>
     tab_header(
-      title = md(paste0("**Településméret és agglomeráció jogállás szerint, ", sel_yr, "**")),
-      subtitle = md(sprintf("Budapest nélkül · ország összesen %.2fm fő", natl/1e6))) |>
-    tab_style(style = cell_text(weight = "bold"),
-              locations = cells_body(columns = jog)) |>
-    tab_style(style = cell_text(v_align = "top"), locations = cells_body()) |>
+      title=md(paste0("**Településméret és agglomeráció jogállás szerint, ", sel_yr, "**")),
+      subtitle=md(sprintf("Budapest nélkül · ország összesen %.2fm fő", natl/1e6))) |>
+    tab_style(style=cell_text(weight="bold"),
+              locations=cells_body(columns=jog)) |>
+    tab_style(style=cell_text(v_align="top"), locations=cells_body()) |>
     cols_width(jog ~ px(160), everything() ~ px(300)) |>
-    tab_options(table.font.size = px(13), data_row.padding = px(8),
-                heading.title.font.size = px(18)) |>
+    tab_options(table.font.size=px(13), data_row.padding=px(8),
+                heading.title.font.size=px(18)) |>
     gtsave(paste0("plots/jogallas_table_", sel_yr, ".html"))
   
   webshot("plots/jogallas_table_2025.html", "plots/jogallas_table_2025.png",
-        vwidth = 800, vheight = 600, zoom = 2)
+        vwidth=800, vheight=600, zoom=2)
   
 })
 
@@ -407,22 +419,22 @@ local({
 # buborék ábrák
 
 local({
-  sel_yr <- 2025
-  fmt <- scales::label_number(big.mark = " ")
+  sel_yr <- c(2004,2010,2025)[1]
+  fmt <- scales::label_number(big.mark=" ")
 
   jog_lvls <- c("község","nagyközség","város","megyei jogú város","megyeszékhely","Budapest")
 
-  sett <- hu_hnt_lakonepesseg_2012_2025 |>
+  sett <- hnt_2004_2010_2025_jogallas |>
     filter(year == sel_yr) |>
-    mutate(telepules = if_else(grepl("Budapest", telepules), "Budapest", telepules)) |>
-    summarise(pop = sum(lakonepesseg), jogallas = first(jogallas), .by = telepules)
+    mutate(telepules=if_else(grepl("Budapest", telepules), "Budapest", telepules)) |>
+    summarise(pop=sum(lakonepesseg), jogallas=first(jogallas), .by=telepules)
   natl <- sum(sett$pop)
 
   cells <- sett |>
-    left_join(hu_agglomeracio_telepulesek_2024, by = "telepules") |>
+    left_join(hu_agglomeracio_telepulesek_2024, by="telepules") |>
     mutate(
-      agglom = if_else(!is.na(szerkezet), "Agglomerációban", "Agglom. kívül"),
-      jog = case_when(
+      agglom=if_else(!is.na(szerkezet), "Agglomerációban", "Agglom. kívül"),
+      jog=case_when(
         telepules == "Budapest"                          ~ "Budapest",
         jogallas == "község"                             ~ "község",
         jogallas == "nagyközség"                         ~ "nagyközség",
@@ -430,16 +442,16 @@ local({
         jogallas == "megyei jogú város"                  ~ "megyei jogú város",
         str_detect(jogallas, "megyeszékhely")            ~ "megyeszékhely",
         TRUE                                             ~ NA_character_) |>
-        factor(levels = jog_lvls)) |>
+        factor(levels=jog_lvls)) |>
     filter(!is.na(jog)) |>
-    summarise(n = n(), tot = sum(pop), med = median(pop),
-              .by = c(jog, agglom)) |>
+    summarise(n=n(), tot=sum(pop), med=median(pop),
+              .by=c(jog, agglom)) |>
     mutate(
-      pct = 100 * tot / natl,
-      x = as.integer(jog),
-      y = if_else(agglom == "Agglomerációban", 2, 1),
-      inside = sprintf("%.2fm", tot / 1e6),
-      below = case_when(
+      pct=100 * tot / natl,
+      x=as.integer(jog),
+      y=if_else(agglom == "Agglomerációban", 2, 1),
+      inside=sprintf("%.2fm", tot / 1e6),
+      below=case_when(
         jog == "Budapest" ~ sprintf("ország %.1f%%-a", pct),
         n <= 3            ~ sprintf("n=%d\nország %.1f%%-a", n, pct),
         TRUE              ~ sprintf("n=%d\nmedián %s fő\nország %.1f%%-a",
@@ -447,8 +459,8 @@ local({
 
     # after the cells mutate block, compute row totals
   row_tot <- cells |>
-    summarise(rtot = sum(tot), .by = agglom) |>
-    mutate(lab = sprintf("%s\n%.2fm fő (%.1f%%)",
+    summarise(rtot=sum(tot), .by=agglom) |>
+    mutate(lab=sprintf("%s\n%.2fm fő (%.1f%%)",
                          if_else(agglom == "Agglomerációban", "Agglomerációban", "Agglom.-n kívül"),
                          rtot / 1e6, 100 * rtot / natl))
 
@@ -456,35 +468,35 @@ local({
   ylabs <- row_tot |> arrange(agglom) |> pull(lab)   # alphabetical: Agglom. kívül=1, Agglomerációban=2
   
   ggplot(cells, aes(x, y)) +
-    geom_point(aes(size = tot, fill = agglom),
-               shape = 21, colour = "white", stroke = 1.2, alpha = 0.9) +
-    scale_size_area(max_size = 60, guide = "none") +
-    geom_text(aes(label = inside), fontface = "bold", size = 4, colour = "grey15") +
-    geom_text(aes(label = below), vjust = 1, nudge_y = -0.4,
-              size = 4, lineheight = 0.9) +
-    scale_x_continuous(breaks = 1:length(jog_lvls), labels = jog_lvls,
-                       position = "top", limits = c(0.5, length(jog_lvls) + 0.5),
-                       expand = expansion(0)) +
-    scale_y_continuous(breaks = c(1, 2),
-                       labels = ylabs,
-                       limits = c(0.35, 2.55), expand = expansion(0)) +
-    scale_fill_manual(values = c("Agglomerációban" = "#00BFC4",
-                                 "Agglom. kívül" = "#F8766D"), guide = "none") +
-    geom_hline(yintercept = 1.35) +
-    labs(x = NULL, y = NULL,
-         title = paste0("Jogállás és agglomeráció, ", sel_yr),
-         subtitle = "A körök területe a kategória összlakosságával arányos",
-         caption = sprintf("Ország összesen %.2fm fő", natl/1e6)) +
+    geom_point(aes(size=tot, fill=agglom),
+               shape=21, colour="white", stroke=1.2, alpha=0.9) +
+    scale_size_area(max_size=60, guide="none") +
+    geom_text(aes(label=inside), fontface="bold", size=4, colour="grey15") +
+    geom_text(aes(label=below), vjust=1, nudge_y=-0.4,
+              size=4, lineheight=0.9) +
+    scale_x_continuous(breaks=1:length(jog_lvls), labels=jog_lvls,
+                       position="top", limits=c(0.5, length(jog_lvls) + 0.5),
+                       expand=expansion(0)) +
+    scale_y_continuous(breaks=c(1, 2),
+                       labels=ylabs,
+                       limits=c(0.35, 2.55), expand=expansion(0)) +
+    scale_fill_manual(values=c("Agglomerációban"="#00BFC4",
+                                 "Agglom. kívül"="#F8766D"), guide="none") +
+    geom_hline(yintercept=1.35) +
+    labs(x=NULL, y=NULL,
+         title=paste0("Jogállás és agglomeráció, ", sel_yr),
+         subtitle="A körök területe a kategória összlakosságával arányos",
+         caption=sprintf("Ország összesen %.2fm fő", natl/1e6)) +
     theme_bw() +
-    theme(panel.grid = element_blank(),
-          axis.text.x.top = element_text(face = "bold", size = 16),
-          axis.text.y = element_text(face = "bold", size = 16),
-          plot.title = element_text(face = "bold", size = 19),
-          plot.caption = element_text(size=16)
+    theme(panel.grid=element_blank(),
+          axis.text.x.top=element_text(face="bold", size=16),
+          axis.text.y=element_text(face="bold", size=16),
+          plot.title=element_text(face="bold", size=19),
+          plot.caption=element_text(size=16)
       )
 
   ggsave(paste0("plots/bubble_jogallas_", sel_yr, ".png"), last_plot(),
-         width = 16, height = 7.5, units = "in", dpi = 300, bg = "white")
+         width=16, height=7.5, units="in", dpi=300, bg="white")
   print(last_plot())
 })
 
@@ -495,7 +507,7 @@ local({
 
 local({
   
-  sel_yr <- c(2012,2025)[1]
+  sel_yr <- c(2004,2010,2025)[1]
   
   brks <- c(-Inf, 1e3, 2e3, 5e3, 1e4, 3e4, Inf)
   fin  <- brks[is.finite(brks)]
@@ -504,13 +516,13 @@ local({
             paste0(k(head(fin, -1)), "–", k(fin[-1])),
             paste0(">", k(tail(fin, 1))))
 
-  bp_pop <- hu_hnt_lakonepesseg_2012_2025 |>
+  bp_pop <- hnt_2004_2010_2025_jogallas |>
     filter(year == sel_yr, grepl("Budapest", telepules)) |>
     summarise(p=sum(lakonepesseg)) |> pull(p)
-  natl <- hu_hnt_lakonepesseg_2012_2025 |>
+  natl <- hnt_2004_2010_2025_jogallas |>
     filter(year == sel_yr) |> summarise(p=sum(lakonepesseg)) |> pull(p)
 
-  pd <- hu_hnt_lakonepesseg_2012_2025 |>
+  pd <- hnt_2004_2010_2025_jogallas |>
     left_join(hu_agglomeracio_telepulesek_2024, by="telepules") |>
     mutate(agglom=if_else(!is.na(szerkezet), "Agglomerációban", "Agglom. kívül")) |>
     filter(year == sel_yr, telepules != "Budapest",
@@ -607,46 +619,46 @@ local({
   labs <- c(paste0("<", k(fin[1])),
             paste0(k(head(fin, -1)), "-", k(fin[-1])),
             paste0(">", k(tail(fin, 1))))
-  fmt <- scales::label_number(big.mark = " ")
+  fmt <- scales::label_number(big.mark=" ")
 
-  natl <- hu_hnt_lakonepesseg_2012_2025 |>
-    filter(year == sel_yr) |> summarise(p = sum(lakonepesseg)) |> pull(p)
+  natl <- hnt_2004_2010_2025_jogallas |>
+    filter(year == sel_yr) |> summarise(p=sum(lakonepesseg)) |> pull(p)
 
-  pd <- hu_hnt_lakonepesseg_2012_2025 |>
-    left_join(hu_agglomeracio_telepulesek_2024, by = "telepules") |>
-    mutate(agglom = if_else(!is.na(szerkezet), "Agglomerációban", "Agglom. kívül")) |>
+  pd <- hnt_2004_2010_2025_jogallas |>
+    left_join(hu_agglomeracio_telepulesek_2024, by="telepules") |>
+    mutate(agglom=if_else(!is.na(szerkezet), "Agglomerációban", "Agglom. kívül")) |>
     filter(year == sel_yr, telepules != "Budapest",
            jogallas %in% c("város","nagyközség","község",
                            "megyei jogú város","megyeszékhely, megyei jogú város")) |>
     mutate(
-      band = cut(lakonepesseg, brks, labs, right = FALSE),
-      tipus = case_when(
+      band=cut(lakonepesseg, brks, labs, right=FALSE),
+      tipus=case_when(
         jogallas == "község"                ~ "község",
         jogallas == "nagyközség"            ~ "nagyközség",
         str_detect(jogallas, "megyei jogú") ~ "megyeszékhely/mjv",
         TRUE                                ~ "város") |>
-        factor(levels = c("község","nagyközség","város","megyeszékhely/mjv")))
+        factor(levels=c("község","nagyközség","város","megyeszékhely/mjv")))
 
   # composition-by-type string, only when >1 type present
   comp <- pd |>
-    count(band, agglom, tipus, .drop = FALSE) |>
+    count(band, agglom, tipus, .drop=FALSE) |>
     filter(n > 0) |>
     summarise(
-      ntypes = n(),
-      comp = paste(sprintf("%s: %d (%.0f%%)", tipus, n, 100*n/sum(n)), collapse = "<br>"),
-      .by = c(band, agglom)) |>
-    mutate(comp = if_else(ntypes > 1, comp, NA_character_))
+      ntypes=n(),
+      comp=paste(sprintf("%s: %d (%.0f%%)", tipus, n, 100*n/sum(n)), collapse="<br>"),
+      .by=c(band, agglom)) |>
+    mutate(comp=if_else(ntypes > 1, comp, NA_character_))
 
   # core stats per cell
   cell <- pd |>
-    summarise(n = n(), pop = sum(lakonepesseg),
-              med = median(lakonepesseg),
-              q1 = quantile(lakonepesseg, .25), q3 = quantile(lakonepesseg, .75),
-              lo = min(lakonepesseg), hi = max(lakonepesseg),
-              .by = c(band, agglom)) |>
-    left_join(comp, by = c("band","agglom")) |>
-    mutate(text = paste0(
-      "n = ", n, "<br>",
+    summarise(n=n(), pop=sum(lakonepesseg),
+              med=median(lakonepesseg),
+              q1=quantile(lakonepesseg, .25), q3=quantile(lakonepesseg, .75),
+              lo=min(lakonepesseg), hi=max(lakonepesseg),
+              .by=c(band, agglom)) |>
+    left_join(comp, by=c("band","agglom")) |>
+    mutate(text=paste0(
+      "n=", n, "<br>",
       sprintf("%.2fm fő (ország %.1f%%-a)", pop/1e6, 100*pop/natl), "<br>",
       "medián: ", fmt(round(med)), " fő<br>",
       "IQR: ", fmt(round(q1)), "-", fmt(round(q3)), "<br>",
@@ -658,28 +670,28 @@ local({
   # wide: bands as rows, agglom as columns
   tab <- cell |>
     select(band, agglom, text) |>
-    pivot_wider(names_from = agglom, values_from = text) |>
+    pivot_wider(names_from=agglom, values_from=text) |>
     arrange(band)
 
   gt(tab) |>
-    fmt_markdown(columns = everything()) |>
-    cols_label(band = "Méretkategória") |>
+    fmt_markdown(columns=everything()) |>
+    cols_label(band="Méretkategória") |>
     tab_header(
-      title = md(paste0("**Településméret és agglomeráció, ", sel_yr, "**")),
-      subtitle = md(sprintf("Budapest nélkül · ország összesen %.2fm fő", natl/1e6))) |>
-    tab_style(style = cell_text(weight = "bold"),
-              locations = cells_body(columns = band)) |>
-    tab_style(style = cell_text(v_align = "top"),
-              locations = cells_body()) |>
+      title=md(paste0("**Településméret és agglomeráció, ", sel_yr, "**")),
+      subtitle=md(sprintf("Budapest nélkül · ország összesen %.2fm fő", natl/1e6))) |>
+    tab_style(style=cell_text(weight="bold"),
+              locations=cells_body(columns=band)) |>
+    tab_style(style=cell_text(v_align="top"),
+              locations=cells_body()) |>
     cols_width(band ~ px(130), everything() ~ px(300)) |>
-    tab_options(table.font.size = px(13), data_row.padding = px(8),
-                heading.title.font.size = px(18)) |>
+    tab_options(table.font.size=px(13), data_row.padding=px(8),
+                heading.title.font.size=px(18)) |>
     gtsave(paste0("plots/meret_table_", sel_yr, ".html"))
   
   library(webshot2)
 
 webshot("plots/meret_table_2025.html", "plots/meret_table_2025.png",
-        vwidth = 800, vheight = 600, zoom = 2)
+        vwidth=800, vheight=600, zoom=2)
   
 })
 
@@ -689,7 +701,7 @@ webshot("plots/meret_table_2025.html", "plots/meret_table_2025.png",
 # buborék ábrák
 
 local({
-  sel_yr <- 2025
+  sel_yr <- c(2004,2025)[1]
   brks <- c(-Inf, 1e3, 2e3, 5e3, 1e4, 3e4, Inf)
   k    <- function(x) paste0(x/1e3, "k")
   fin  <- brks[is.finite(brks)]
@@ -698,7 +710,7 @@ local({
             paste0(">", k(tail(fin, 1))))
   fmt  <- scales::label_number(big.mark=" ")
   band_lvls <- c(labs, "Budapest")
-  sett <- hu_hnt_lakonepesseg_2012_2025 |>
+  sett <- hnt_2004_2010_2025_jogallas |>
     filter(year == sel_yr) |>
     mutate(telepules=if_else(grepl("Budapest", telepules), "Budapest", telepules)) |>
     summarise(pop=sum(lakonepesseg), .by=telepules)
@@ -717,14 +729,14 @@ local({
       x=as.integer(band),
       y=if_else(agglom == "Agglomerációban", 2, 1),
       inside=sprintf("%.2fm", tot / 1e6),
-      below = case_when(
+      below=case_when(
         band == "Budapest" ~ sprintf("ország %.1f%%-a", pct),
         n == 1 ~ sprintf("n=1 · %s fő\nország %.1f%%-a", fmt(tot), pct),
         TRUE ~ sprintf("n=%d \n medián %s fő\nország %.1f%%-a", n, fmt(round(med)), pct)))
 
   row_tot <- cells |>
-    summarise(rtot = sum(tot), .by = agglom) |>
-    mutate(lab = sprintf("%s\n%.2fm fő (%.1f%%)", agglom, rtot / 1e6, 100 * rtot / natl))
+    summarise(rtot=sum(tot), .by=agglom) |>
+    mutate(lab=sprintf("%s\n%.2fm fő (%.1f%%)", agglom, rtot / 1e6, 100 * rtot / natl))
   ylabs <- row_tot |> arrange(agglom) |> pull(lab)
 
   ggplot(cells, aes(x, y)) +
@@ -758,8 +770,6 @@ local({
   print(last_plot())
 })
 
-
-
 # ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -775,7 +785,7 @@ local({
 #   jog_levels <- c("község/nagyközség", "város",
 #                   "megyeszékhely/megyei jogú város", "Budapest")
 # 
-#   dat <- hu_hnt_lakonepesseg_2012_2025 |>
+#   dat <- hnt_2004_2010_2025_jogallas |>
 #     left_join(hu_agglomeracio_telepulesek_2024, by="telepules") |>
 #     mutate(
 #       agglom=if_else(!is.na(szerkezet), "Agglomerációban", "Agglom. kívül"),

@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
+<head>
+	<title>Magyarország helységnévtára</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+	<link rel="stylesheet" type="text/css" media="all" href="/css/redmond/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/js/colorbox/colorbox.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/helysegnevtar2022.css" />
+	<!--[if IE 6]><link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/ie6.css" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/ie7.css" /><![endif]-->
+
+	<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.10.3.autocomplete.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.autocomplete-html.js"></script>
+	<script type="text/javascript" src="/js/jquery.jlabel-1.3.custom.min.js"></script>
+	<script type="text/javascript" src="/js/colorbox/jquery.colorbox.min.js"></script>
+	<script type="text/javascript" src="/js/highcharts-3.0.1.js"></script>
+	<script type="text/javascript" src="/js/highcharts.hu.min.js"></script>
+
+	<script type="text/javascript" src="/js/helysegnevtar/helysegnevtar.min.js"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="page-head">
+			<div class="content">
+				<ul id="menu">
+					<li><a href="/apps/hntr.main?p_lang=HU">Kezdőlap</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=TAJEKOZTATO">Tájékoztató</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=FOGALMAK">Fogalmak, módszertan</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=FUGGELEK">Függelék</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=HELYNEVKONYV">Helynévkönyv</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=LETOLTES">Letöltés</a></li>
+				</ul>
+				<div id="lang">
+					<a class="en" href="/apps/hntr.main?p_lang=EN">English</a>
+				</div>
+			</div>
+		</div>
+		<div id="page-searchbar">
+			<div class="content">
+				<form method="post" action="/apps/hntr.kereses">
+					<input type="hidden" name="p_lang" value="HU" />
+					<a href="/apps/hntr.main?p_lang=HU" id="hnt-logo"></a>
+					<div id="search">
+						<input type="text"   id="p_szo"  name="p_szo" title="településnév, településrésznév, irányítószám, körzetszám vagy KSH-kód" />
+						<input type="submit" id="submit" value="Keresés" />
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="page-body">
+			<div class="content">
+				<div id="pagenav">
+					<ul>
+						<li id="nav-info"><a href="#data-info"><i></i><span>Alapadatok</span></a></li>
+						<li id="nav-cens"><a href="#data-cens"><i></i><span>Népesség, lakásállomány, terület</span></a></li>
+						<li id="nav-ethn"><a href="#data-ethn"><i></i><span>Nemzetiségi és vallási megoszlás</span></a></li>
+						<li id="nav-dist"><a href="#data-dist"><i></i><span>Városrészek, településrészek</span></a></li>
+						<li id="nav-hist"><a href="#data-hist"><i></i><span>Területszervezési változások</span></a></li>
+					</ul>
+				</div>
+				<div class="jump-to-top-button hidden" title="Ugrás az oldal tetejére"></div>
+
+				<div id="page-body-data">
+					<h1>Tiszajenő</h1>
+
+
+
+					<div id="data-info">
+						<h2>Alapadatok</h2>
+
+						<div id="data-base">
+							<table>
+								<tbody>
+								<tr><th width="220">Nemzetiségi név:</th><td>&ndash;</td></tr>
+								<tr><th>KSH-kód:</th><td>29346</td></tr>
+								<tr><th>Jogállás:</th><td>Község</td></tr>
+								<tr><th>Régió:</th><td>Észak-Alföld</td></tr>
+								<tr><th>Vármegye:</th><td>Jász-Nagykun-Szolnok</td></tr>
+								<tr><th>Járás neve (kódja):</th><td>Szolnoki (167)</td></tr>
+								<tr><th>Járás székhelye:</th><td>Szolnok</td></tr>
+								<tr><th>Közös önkormányzati hivatali kód:</th><td><span title="közös önkormányzati hivatalt fenntartó község, város önkormányzata, amely egyben a hivatal székhelye">2</span></td></tr>
+								<tr><th>Közös önkormányzati hivatal székhelye:</th><td>Tiszajenő</td></tr>
+								<tr><th>Nemzetiségi önkormányzat:</th><td>&ndash;</td></tr>
+								<tr><th>Távhívó körzetszám:</th><td>56</td></tr>
+								<tr><th>Vasútállomás:</th><td>Tiszajenő alsó (0,5&nbsp;km)</td></tr>
+								</tbody>
+							</table>
+							
+							<table class="comments">
+								<tr><th>2 =</th><td>közös önkormányzati hivatalt fenntartó község, város önkormányzata, amely egyben a hivatal székhelye</td></tr>
+							</table>
+						</div>
+
+						<div id="data-maps">
+							<div id="data-maps-sett">
+								<div>
+									<img src="/images/helysegnevtar/mo_alap.png" width="420" height="262" alt="" />
+									<img src="/images/helysegnevtar/mo_pont.png" width="8" height="8" style="left: 252px; top: 144px; margin-left: -4px; margin-top: -4px;" alt="" />
+								</div>
+
+								<p>
+									<a id="maps-osm"    title="Megtekintés az OpenStreetMap térképen" href="http://www.openstreetmap.hu/terkep/Tiszajen%C5%91" target="_blank"></a>
+									<a id="maps-google" title="Megtekintés a Google Térképen" href="http://www.google.com/maps?q=Tiszajen%C5%91,+Magyarorsz%C3%A1g" target="_blank"></a>
+									<a id="maps-bing"   title="Megtekintés a Bing Maps-en" href="http://www.bing.com/maps/?v=2&amp;where1=Tiszajen%C5%91,+Magyarorsz%C3%A1g&amp;sty=r" target="_blank"></a>
+								</p>
+							</div>
+							<div id="data-maps-dist">
+								<a href="#" class="data-maps-close"></a>
+								<h3>Szolnoki járás (167)</h3>
+								<img src="/images/helysegnevtar/maps/dist_167.png" width="420" height="262" alt="" />
+								<p>Települések: 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=11305">Besenyszög</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=34175">Csataszög</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=34050">Hunyadfalva</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=11235">Kőtelek</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=02626">Martfű</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=15574">Nagykörű</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14207">Rákóczifalva</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=12423">Rákócziújfalu</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=05874">Szajol</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=05777">Szászberek</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=27854">Szolnok</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=29346">Tiszajenő</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=17695">Tiszasüly</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=31866">Tiszavárkony</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=07490">Tószeg</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=15291">Újszász</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=21157">Vezseny</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14836">Zagyvarékas</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div id="data-cens">
+						<h2>Népesség, lakásállomány, terület</h2>
+						<table>
+						<thead>
+							<tr>
+								<th width="40%">Időpont</th>
+								<th width="20%">Lakónépesség <i title="Tiszajenő lakónépességének alakulása [fő]"></i></th>
+								<th width="20%">Lakások száma <i title="Tiszajenő lakásai számának alakulása [darab]"></i></th>
+								<th width="20%">Területnagyság (hektár) <i title="Tiszajenő területnagyságának alakulása [hektár]"></i></th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<th>2025. 01. 01.</th>
+								<td>1 450</td>
+								<td>821</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2024. 01. 01.</th>
+								<td>1 445</td>
+								<td>820</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2023. 01. 01.</th>
+								<td>1 478</td>
+								<td>820</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2022. 10. 01. (a népszámlálás időpontjában)</th>
+								<td>1 490</td>
+								<td>820</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2021. 01. 01.</th>
+								<td>1 544</td>
+								<td>812</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2020. 01. 01.</th>
+								<td>1 541</td>
+								<td>812</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2019. 01. 01.</th>
+								<td>1 493</td>
+								<td>812</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2018. 01. 01.</th>
+								<td>1 499</td>
+								<td>811</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2017. 01. 01.</th>
+								<td>1 537</td>
+								<td>811</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2016. 01. 01.</th>
+								<td>1 554</td>
+								<td>811</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2015. 01. 01.</th>
+								<td>1 560</td>
+								<td>811</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2014. 01. 01.</th>
+								<td>1 592</td>
+								<td>813</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2013. 01. 01.</th>
+								<td>1 612</td>
+								<td>813</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2012. 01. 01.</th>
+								<td>1 625</td>
+								<td>815</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2011. 10. 01. (a népszámlálás időpontjában)</th>
+								<td>1 630</td>
+								<td>816</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2010. 01. 01.</th>
+								<td>1 660</td>
+								<td>794</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2009. 01. 01.</th>
+								<td>1 656</td>
+								<td>791</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2008. 01. 01.</th>
+								<td>1 648</td>
+								<td>790</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2007. 01. 01.</th>
+								<td>1 643</td>
+								<td>791</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2006. 01. 01.</th>
+								<td>1 661</td>
+								<td>792</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2005. 01. 01.</th>
+								<td>1 668</td>
+								<td>789</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2004. 01. 01.</th>
+								<td>1 674</td>
+								<td>784</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2003. 01. 01.</th>
+								<td>1 698</td>
+								<td>782</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2002. 01. 01.</th>
+								<td>1 699</td>
+								<td>779</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2001. 02. 01. (a népszámlálás időpontjában)</th>
+								<td>1 697</td>
+								<td>815</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>2000. 01. 01.</th>
+								<td>1 642</td>
+								<td>780</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>1999. 01. 01.</th>
+								<td>1 632</td>
+								<td>780</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>1998. 01. 01.</th>
+								<td>1 632</td>
+								<td>780</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>1997. 01. 01.</th>
+								<td>1 638</td>
+								<td>779</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>1996. 01. 01.</th>
+								<td>1 629</td>
+								<td>778</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>1995. 01. 01.</th>
+								<td>1 656</td>
+								<td>773</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>1994. 01. 01.</th>
+								<td>1 649</td>
+								<td>768</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>1993. 01. 01.</th>
+								<td>1 640</td>
+								<td>762</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>1992. 01. 01.</th>
+								<td>1 650</td>
+								<td>756</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>1991. 01. 01.</th>
+								<td>1 663</td>
+								<td>750</td>
+								<td>2 819</td>
+							</tr>
+							<tr>
+								<th>1990. 01. 01. (a népszámlálás időpontjában)</th>
+								<td>1 630</td>
+								<td>744</td>
+								<td>2 819</td>
+							</tr>
+						</tbody>
+						</table>
+
+					</div>
+
+					<div id="data-ethn">
+						<h2>Nemzetiségi és vallási megoszlás</h2>
+						<table>
+							<thead>
+								<tr><th colspan="3">A helység lakóinak nemzetiségi kötődése 2022-ben <i></i></th></tr>
+							</thead>
+							<tbody>
+
+<tr><th>magyar</th><td>91,1%</td><td class="ethn-bar"><b style="width:91.1%"></b></td></tr>
+<tr><th>német</th><td>0,7%</td><td class="ethn-bar"><b style="width:0.7%"></b></td></tr>
+<tr><th>cigány (roma)</th><td>0,5%</td><td class="ethn-bar"><b style="width:0.5%"></b></td></tr>
+<tr><th>román</th><td>0,3%</td><td class="ethn-bar"><b style="width:0.3%"></b></td></tr>
+<tr><th>ukrán</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>szlovák</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>horvát</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>szlovén</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>szerb</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>lengyel</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>görög</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>örmény</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>bolgár</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>ruszin</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>egyéb, nem hazai nemzetiség</th><td>2,3%</td><td class="ethn-bar"><b style="width:2.3%"></b></td></tr>
+<tr><th>nem kívánt válaszolni, nincs válasz</th><td>8,8%</td><td class="ethn-bar"><b style="width:8.8%"></b></td></tr>
+							</tbody>
+						</table>
+						<table id="data-religion">
+							<thead>
+								<tr><th colspan="3">A helység lakóinak vallási összetétele 2022-ben <i></i></th></tr>
+							</thead>
+							<tbody>
+
+<tr><th>római katolikus</th><td>29,4%</td><td class="ethn-bar"><b style="width:29.4%"></b></td></tr>
+<tr><th>református</th><td>8,1%</td><td class="ethn-bar"><b style="width:8.1%"></b></td></tr>
+<tr><th>egyéb katolikus</th><td>1,1%</td><td class="ethn-bar"><b style="width:1.1%"></b></td></tr>
+<tr><th>egyéb keresztény felekezethez tartozó</th><td>0,9%</td><td class="ethn-bar"><b style="width:0.9%"></b></td></tr>
+<tr><th>evangélikus</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>görög katolikus</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>izraelita</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>ortodox keresztény</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>egyéb vallási közösséghez, felekezethez tartozik</th><td>0,2%</td><td class="ethn-bar"><b style="width:0.2%"></b></td></tr>
+<tr><th>vallási közösséghez, felekezethez nem tartozik</th><td>21,1%</td><td class="ethn-bar"><b style="width:21.1%"></b></td></tr>
+<tr><th>nem kívánt válaszolni, nincs válasz</th><td>38,9%</td><td class="ethn-bar"><b style="width:38.9%"></b></td></tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="data-dist">
+						<h2>Városrészek, településrészek</h2>
+						<table>
+							<thead>
+
+							<tr>
+								<th width="28%" rowspan="2">A helység városrészei, a helységhez tartozó településrészek jellege és megnevezése</th>
+
+								<th width="14%">A népszámlálási lakónépesség</th>
+								<th width="14%">A lakások</th>
+								<th width="14%">A lakott egyéb lakóegységek</th>
+
+								<th width="10%" rowspan="2">Postai irányítószám</th>
+								<th width="10%" rowspan="2">A külterület települési jellege</th>
+								<th width="10%" rowspan="2">A településrész távolsága a központi belterület centrumától (km)</th>
+							</tr>
+							<tr>
+								<th colspan="3">száma 2022. október 1-jén, a 2025. január 1-jei közigazgatási állapot szerint</th>
+							</tr>
+							</thead>
+							<tbody>
+
+							<tr>
+								<th>Központi belterület</th>
+								<td>1 176</td>
+								<td>571</td>
+								<td>1</td>
+								<td class="tc">5094</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+
+							<tr>
+								<th>Külterület</th>
+								<td colspan="7"></td>
+							</tr>
+
+							<tr>
+								<th class="ind">Akácos út</th>
+								<td>38</td>
+								<td>35</td>
+								<td>0</td>
+								<td class="tc">5094</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>2,5</td>
+							</tr>
+							<tr>
+								<th class="ind">Belsőjenő</th>
+								<td>27</td>
+								<td>36</td>
+								<td>0</td>
+								<td class="tc">5094</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>5,6</td>
+							</tr>
+							<tr>
+								<th class="ind">Dózsatelep</th>
+								<td>10</td>
+								<td>5</td>
+								<td>0</td>
+								<td class="tc">5094</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>4,4</td>
+							</tr>
+							<tr>
+								<th class="ind">Kossuth út</th>
+								<td>64</td>
+								<td>52</td>
+								<td>0</td>
+								<td class="tc">5094</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>4,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Külsőjenő</th>
+								<td>11</td>
+								<td>18</td>
+								<td>0</td>
+								<td class="tc">5094</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>4,1</td>
+							</tr>
+							<tr>
+								<th class="ind">Petőfi út</th>
+								<td>37</td>
+								<td>21</td>
+								<td>0</td>
+								<td class="tc">5094</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>3,7</td>
+							</tr>
+							<tr>
+								<th class="ind">Széchenyi út</th>
+								<td>35</td>
+								<td>23</td>
+								<td>0</td>
+								<td class="tc">5094</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>3,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Zártkert</th>
+								<td>89</td>
+								<td>59</td>
+								<td>0</td>
+								<td class="tc">5094</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>0,5</td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="comments">
+
+							<tr>
+								<th>Lh. =</th>
+								<td>gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely</td>
+							</tr>
+						</table>
+					</div>
+					<div id="data-hist">
+						<h2>Területszervezési változások</h2>
+						<table>
+							<caption>Községgé alakítás</caption>
+							<thead>
+								<tr>
+									<th width="15%" rowspan="3">A hatálybalépés időpontja</th>
+									<th width="20%" rowspan="3">A megalakult község neve</th>
+									<th colspan="2">Az anyaközség(ek), város(ok)</th>
+								</tr>
+								<tr>
+									<th width="20%">neve,</th>
+									<th width="45%">településrészeinek megnevezése,</th>
+								</tr>
+								<tr>
+									<th colspan="2">amely(ek)ből a község alakult</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1954</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=29346">Tiszajenő</a></td>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=11004">Jászkarajenő</a></td>
+									<td>Jenő</td>
+								</tr>								<tr>
+									<th>&nbsp;</th>
+									<td>&nbsp;</td>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=21157">Vezseny</a></td>
+									<td>Vezsenyi szőlők</td>
+								</tr>
+							</tbody>
+						</table>
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="page-foot">
+			<div class="content">
+				<a href="https://www.ksh.hu/"><img id="ksh_logo" src="/images/helysegnevtar/logos/ksh_logo.png" width="97" height="40" alt="Központi Statisztikai Hivatal" /></a>
+				&copy; Központi Statisztikai Hivatal, 1873&ndash;2025
+				<a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=KONYVEK"><img id="hnt1873" src="/images/helysegnevtar/hnt_konyvek/hnt_1873_tn.jpg" width="28" height="40" alt="A Magyar Korona Országainak Helységnévtára, 1873" /><i></i></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

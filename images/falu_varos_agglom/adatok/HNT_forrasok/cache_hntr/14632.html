@@ -1,0 +1,611 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
+<head>
+	<title>Magyarország helységnévtára</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+	<link rel="stylesheet" type="text/css" media="all" href="/css/redmond/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/js/colorbox/colorbox.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/helysegnevtar2022.css" />
+	<!--[if IE 6]><link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/ie6.css" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/ie7.css" /><![endif]-->
+
+	<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.10.3.autocomplete.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.autocomplete-html.js"></script>
+	<script type="text/javascript" src="/js/jquery.jlabel-1.3.custom.min.js"></script>
+	<script type="text/javascript" src="/js/colorbox/jquery.colorbox.min.js"></script>
+	<script type="text/javascript" src="/js/highcharts-3.0.1.js"></script>
+	<script type="text/javascript" src="/js/highcharts.hu.min.js"></script>
+
+	<script type="text/javascript" src="/js/helysegnevtar/helysegnevtar.min.js"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="page-head">
+			<div class="content">
+				<ul id="menu">
+					<li><a href="/apps/hntr.main?p_lang=HU">Kezdőlap</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=TAJEKOZTATO">Tájékoztató</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=FOGALMAK">Fogalmak, módszertan</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=FUGGELEK">Függelék</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=HELYNEVKONYV">Helynévkönyv</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=LETOLTES">Letöltés</a></li>
+				</ul>
+				<div id="lang">
+					<a class="en" href="/apps/hntr.main?p_lang=EN">English</a>
+				</div>
+			</div>
+		</div>
+		<div id="page-searchbar">
+			<div class="content">
+				<form method="post" action="/apps/hntr.kereses">
+					<input type="hidden" name="p_lang" value="HU" />
+					<a href="/apps/hntr.main?p_lang=HU" id="hnt-logo"></a>
+					<div id="search">
+						<input type="text"   id="p_szo"  name="p_szo" title="településnév, településrésznév, irányítószám, körzetszám vagy KSH-kód" />
+						<input type="submit" id="submit" value="Keresés" />
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="page-body">
+			<div class="content">
+				<div id="pagenav">
+					<ul>
+						<li id="nav-info"><a href="#data-info"><i></i><span>Alapadatok</span></a></li>
+						<li id="nav-cens"><a href="#data-cens"><i></i><span>Népesség, lakásállomány, terület</span></a></li>
+						<li id="nav-ethn"><a href="#data-ethn"><i></i><span>Nemzetiségi és vallási megoszlás</span></a></li>
+						<li id="nav-dist"><a href="#data-dist"><i></i><span>Városrészek, településrészek</span></a></li>
+						<li id="nav-hist"><a href="#data-hist"><i></i><span>Területszervezési változások</span></a></li>
+					</ul>
+				</div>
+				<div class="jump-to-top-button hidden" title="Ugrás az oldal tetejére"></div>
+
+				<div id="page-body-data">
+					<h1>Fonyód</h1>
+
+
+
+					<div id="data-info">
+						<h2>Alapadatok</h2>
+
+						<div id="data-base">
+							<table>
+								<tbody>
+								<tr><th width="220">Nemzetiségi név:</th><td>&ndash;</td></tr>
+								<tr><th>KSH-kód:</th><td>14632</td></tr>
+								<tr><th>Jogállás:</th><td>Város</td></tr>
+								<tr><th>Régió:</th><td>Dél-Dunántúl</td></tr>
+								<tr><th>Vármegye:</th><td>Somogy</td></tr>
+								<tr><th>Járás neve (kódja):</th><td>Fonyódi (142)</td></tr>
+								<tr><th>Járás székhelye:</th><td>Fonyód</td></tr>
+								<tr><th>Közös önkormányzati hivatali kód:</th><td><span title="önálló polgármesteri hivatalt fenntartó önkormányzat">1</span></td></tr>
+								<tr><th>Közös önkormányzati hivatal székhelye:</th><td>&ndash;</td></tr>
+								<tr><th>Nemzetiségi önkormányzat:</th><td>&ndash;</td></tr>
+								<tr><th>Távhívó körzetszám:</th><td>85</td></tr>
+								<tr><th>Vasútállomás:</th><td>Fonyód (1,0&nbsp;km)</td></tr>
+								</tbody>
+							</table>
+							
+							<table class="comments">
+								<tr><th>1 =</th><td>önálló polgármesteri hivatalt fenntartó önkormányzat</td></tr>
+							</table>
+						</div>
+
+						<div id="data-maps">
+							<div id="data-maps-sett">
+								<div>
+									<img src="/images/helysegnevtar/mo_alap.png" width="420" height="262" alt="" />
+									<img src="/images/helysegnevtar/mo_pont.png" width="8" height="8" style="left: 91px; top: 168px; margin-left: -4px; margin-top: -4px;" alt="" />
+								</div>
+
+								<p>
+									<a id="maps-osm"    title="Megtekintés az OpenStreetMap térképen" href="http://www.openstreetmap.hu/terkep/Fony%C3%B3d" target="_blank"></a>
+									<a id="maps-google" title="Megtekintés a Google Térképen" href="http://www.google.com/maps?q=Fony%C3%B3d,+Magyarorsz%C3%A1g" target="_blank"></a>
+									<a id="maps-bing"   title="Megtekintés a Bing Maps-en" href="http://www.bing.com/maps/?v=2&amp;where1=Fony%C3%B3d,+Magyarorsz%C3%A1g&amp;sty=r" target="_blank"></a>
+								</p>
+							</div>
+							<div id="data-maps-dist">
+								<a href="#" class="data-maps-close"></a>
+								<h3>Fonyódi járás (142)</h3>
+								<img src="/images/helysegnevtar/maps/dist_142.png" width="420" height="262" alt="" />
+								<p>Települések: 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=33853">Balatonboglár</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=20729">Balatonfenyves</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=33862">Balatonlelle</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=17358">Buzsák</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14632">Fonyód</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=06451">Gamás</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=23904">Gyugy</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=18634">Hács</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=05263">Karád</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=30827">Kisberény</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14863">Látrány</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=26675">Lengyeltóti</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=16823">Ordacsehi</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=07056">Öreglak</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=26392">Pamuk</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32470">Somogybabod</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32601">Somogytúr</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=21856">Somogyvámos</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=19442">Somogyvár</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=11101">Szőlősgyörök</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=06877">Visz</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div id="data-cens">
+						<h2>Népesség, lakásállomány, terület</h2>
+						<table>
+						<thead>
+							<tr>
+								<th width="40%">Időpont</th>
+								<th width="20%">Lakónépesség <i title="Fonyód lakónépességének alakulása [fő]"></i></th>
+								<th width="20%">Lakások száma <i title="Fonyód lakásai számának alakulása [darab]"></i></th>
+								<th width="20%">Területnagyság (hektár) <i title="Fonyód területnagyságának alakulása [hektár]"></i></th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<th>2025. 01. 01.</th>
+								<td>5 055</td>
+								<td>3 058</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2024. 01. 01.</th>
+								<td>5 065</td>
+								<td>3 043</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2023. 01. 01.</th>
+								<td>5 014</td>
+								<td>3 033</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2022. 10. 01. (a népszámlálás időpontjában)</th>
+								<td>5 080</td>
+								<td>3 029</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2021. 01. 01.</th>
+								<td>5 077</td>
+								<td>2 773</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2020. 01. 01.</th>
+								<td>4 830</td>
+								<td>2 742</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2019. 01. 01.</th>
+								<td>4 861</td>
+								<td>2 625</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2018. 01. 01.</th>
+								<td>4 869</td>
+								<td>2 614</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2017. 01. 01.</th>
+								<td>4 800</td>
+								<td>2 597</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2016. 01. 01.</th>
+								<td>4 763</td>
+								<td>2 591</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2015. 01. 01.</th>
+								<td>4 774</td>
+								<td>2 589</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2014. 01. 01.</th>
+								<td>4 784</td>
+								<td>2 588</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2013. 01. 01.</th>
+								<td>4 861</td>
+								<td>2 582</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2012. 01. 01.</th>
+								<td>4 870</td>
+								<td>2 571</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2011. 10. 01. (a népszámlálás időpontjában)</th>
+								<td>4 903</td>
+								<td>2 568</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2010. 01. 01.</th>
+								<td>4 886</td>
+								<td>2 596</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2009. 01. 01.</th>
+								<td>4 965</td>
+								<td>2 580</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2008. 01. 01.</th>
+								<td>5 041</td>
+								<td>2 576</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2007. 01. 01.</th>
+								<td>5 128</td>
+								<td>2 568</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2006. 01. 01.</th>
+								<td>5 106</td>
+								<td>2 515</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2005. 01. 01.</th>
+								<td>5 224</td>
+								<td>2 483</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2004. 01. 01.</th>
+								<td>5 195</td>
+								<td>2 465</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2003. 01. 01.</th>
+								<td>5 257</td>
+								<td>2 399</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2002. 01. 01.</th>
+								<td>5 296</td>
+								<td>2 363</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2001. 02. 01. (a népszámlálás időpontjában)</th>
+								<td>5 283</td>
+								<td>2 347</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>2000. 01. 01.</th>
+								<td>5 057</td>
+								<td>2 118</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>1999. 01. 01.</th>
+								<td>5 036</td>
+								<td>2 094</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>1998. 01. 01.</th>
+								<td>5 070</td>
+								<td>2 077</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>1997. 01. 01.</th>
+								<td>5 069</td>
+								<td>2 047</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>1996. 01. 01.</th>
+								<td>5 008</td>
+								<td>2 034</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>1995. 01. 01.</th>
+								<td>4 962</td>
+								<td>2 023</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>1994. 01. 01.</th>
+								<td>5 136</td>
+								<td>2 011</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>1993. 01. 01.</th>
+								<td>5 074</td>
+								<td>2 009</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>1992. 01. 01.</th>
+								<td>5 084</td>
+								<td>2 007</td>
+								<td>5 355</td>
+							</tr>
+							<tr>
+								<th>1991. 01. 01.</th>
+								<td>7 308</td>
+								<td>2 938</td>
+								<td>10 548</td>
+							</tr>
+							<tr>
+								<th>1990. 01. 01. (a népszámlálás időpontjában)</th>
+								<td>7 307</td>
+								<td>2 923</td>
+								<td>10 548</td>
+							</tr>
+						</tbody>
+						</table>
+
+					</div>
+
+					<div id="data-ethn">
+						<h2>Nemzetiségi és vallási megoszlás</h2>
+						<table>
+							<thead>
+								<tr><th colspan="3">A helység lakóinak nemzetiségi kötődése 2022-ben <i></i></th></tr>
+							</thead>
+							<tbody>
+
+<tr><th>magyar</th><td>86,7%</td><td class="ethn-bar"><b style="width:86.7%"></b></td></tr>
+<tr><th>német</th><td>3,3%</td><td class="ethn-bar"><b style="width:3.3%"></b></td></tr>
+<tr><th>cigány (roma)</th><td>0,2%</td><td class="ethn-bar"><b style="width:0.2%"></b></td></tr>
+<tr><th>lengyel</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>román</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>szerb</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>görög</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>szlovák</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>ukrán</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>horvát</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>szlovén</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>örmény</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>bolgár</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>ruszin</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>egyéb, nem hazai nemzetiség</th><td>3,3%</td><td class="ethn-bar"><b style="width:3.3%"></b></td></tr>
+<tr><th>nem kívánt válaszolni, nincs válasz</th><td>12,6%</td><td class="ethn-bar"><b style="width:12.6%"></b></td></tr>
+							</tbody>
+						</table>
+						<table id="data-religion">
+							<thead>
+								<tr><th colspan="3">A helység lakóinak vallási összetétele 2022-ben <i></i></th></tr>
+							</thead>
+							<tbody>
+
+<tr><th>római katolikus</th><td>36,8%</td><td class="ethn-bar"><b style="width:36.8%"></b></td></tr>
+<tr><th>református</th><td>6,7%</td><td class="ethn-bar"><b style="width:6.7%"></b></td></tr>
+<tr><th>evangélikus</th><td>1,5%</td><td class="ethn-bar"><b style="width:1.5%"></b></td></tr>
+<tr><th>egyéb katolikus</th><td>1,1%</td><td class="ethn-bar"><b style="width:1.1%"></b></td></tr>
+<tr><th>egyéb keresztény felekezethez tartozó</th><td>0,8%</td><td class="ethn-bar"><b style="width:0.8%"></b></td></tr>
+<tr><th>görög katolikus</th><td>0,2%</td><td class="ethn-bar"><b style="width:0.2%"></b></td></tr>
+<tr><th>izraelita</th><td>0,2%</td><td class="ethn-bar"><b style="width:0.2%"></b></td></tr>
+<tr><th>ortodox keresztény</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>egyéb vallási közösséghez, felekezethez tartozik</th><td>0,4%</td><td class="ethn-bar"><b style="width:0.4%"></b></td></tr>
+<tr><th>vallási közösséghez, felekezethez nem tartozik</th><td>10,8%</td><td class="ethn-bar"><b style="width:10.8%"></b></td></tr>
+<tr><th>nem kívánt válaszolni, nincs válasz</th><td>41,3%</td><td class="ethn-bar"><b style="width:41.3%"></b></td></tr>
+							</tbody>
+
+						</table>
+					</div>
+
+					<div id="data-dist">
+						<h2>Városrészek, településrészek</h2>
+						<table>
+							<thead>
+							<tr>
+								<th width="28%" rowspan="2">A helység városrészei, a helységhez tartozó településrészek jellege és megnevezése</th>
+
+								<th width="14%">A népszámlálási lakónépesség</th>
+								<th width="14%">A lakások</th>
+								<th width="14%">A lakott egyéb lakóegységek</th>
+
+								<th width="10%" rowspan="2">Postai irányítószám</th>
+								<th width="10%" rowspan="2">A külterület települési jellege</th>
+								<th width="10%" rowspan="2">A településrész távolsága a központi belterület centrumától (km)</th>
+							</tr>
+							<tr>
+								<th colspan="3">száma 2022. október 1-jén, a 2025. január 1-jei közigazgatási állapot szerint</th>
+							</tr>
+							</thead>
+							<tbody>
+
+							<tr>
+								<th>Központi belterület</th>
+								<td>4 794</td>
+								<td>3 014</td>
+								<td>0</td>
+								<td class="tc">8640</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+
+							<tr>
+								<th>Külterület</th>
+								<td colspan="7"></td>
+							</tr>
+
+							<tr>
+								<th class="ind">Fehérbézseny</th>
+								<td>&ndash;</td>
+								<td>3</td>
+								<td>0</td>
+								<td class="tc">8640</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>4,4</td>
+							</tr>
+							<tr>
+								<th class="ind">Feketebézseny</th>
+								<td>19</td>
+								<td>11</td>
+								<td>0</td>
+								<td class="tc">8640</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>5,5</td>
+							</tr>
+							<tr>
+								<th class="ind">Kopaszdomb</th>
+								<td>1</td>
+								<td>1</td>
+								<td>0</td>
+								<td class="tc">8640</td>
+								<td class="tc"><span class="footer-idx" title="üzemi (ipari üzemi) szolgálati vagy készenléti lakás">Üszl.</span></td>
+								<td>2,0</td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="comments">
+
+							<tr>
+								<th>Mgl. =</th>
+								<td>mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák</td>
+							</tr>
+							<tr>
+								<th>Üszl. =</th>
+								<td>üzemi (ipari üzemi) szolgálati vagy készenléti lakás</td>
+							</tr>
+						</table>
+					</div>
+					<div id="data-hist">
+						<h2>Területszervezési változások</h2>
+						<table>
+							<caption>Községgé alakítás</caption>
+							<thead>
+								<tr>
+									<th width="15%" rowspan="3">A hatálybalépés időpontja</th>
+									<th width="20%" rowspan="3">A megalakult község neve</th>
+									<th colspan="2">Az anyaközség(ek), város(ok)</th>
+								</tr>
+								<tr>
+									<th width="20%">neve,</th>
+									<th width="45%">településrészeinek megnevezése,</th>
+								</tr>
+								<tr>
+									<th colspan="2">amely(ek)ből a község alakult</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1905</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14632">Fonyód</a></td>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=26675">Lengyeltóti</a></td>
+									<td>Fonyód fürdőtelep</td>
+								</tr>
+								<tr>
+									<th>1992. 01. 01.</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=20729">Balatonfenyves</a><span class="idx" title="Első ízben 1958-ban alakult községgé a Balatonmáriafürdő községhez tartozott V. és VI. szakasz, a Balatonkeresztúr községhez tartozott Józseftelep, a Fonyód községhez tartozott Balatonfenyves, valamint a Somogyszentpál községhez tartozott Imremajor és Pálmajor nevű lakotthelyekből. 1981-ben egyesült Fonyód községgel Fonyód néven, majd 1992-ben ismét önálló községgé alakult.">1</span></td>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14632">Fonyód</a><span class="idx" title="1905-ben alakult Lengyeltóti község területéből.">2</span></td>
+									<td>Gátőrház, Imremajor, központi belterület egy része, Pálmajor, Rigóháza, Vadászház</td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<caption>Helységek egyesítése</caption>
+							<thead>
+								<tr>
+									<th width="15%">A hatálybalépés időpontja</th>
+									<th width="85%">Az egyesítésben érintett helységek neve</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1981. 12. 31.</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14632">Fonyód</a> = <a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=20729">Balatonfenyves</a><span class="idx" title="1958-ban alakult Balatonkeresztúr, Balatonmáriafürdő, Fonyód és Somogyszentpál községek területéből. 1992-ben Balatonfenyves néven ismét önálló községgé alakult.">3</span> + <a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14632">Fonyód</a><span class="idx" title="1905-ben alakult Lengyeltóti község területéből.">2</span> </td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<caption>Várossá nyilvánítás</caption>
+							<thead>
+								<tr>
+									<th width="15%">A hatálybalépés időpontja</th>
+									<th width="40%">A város neve</th>
+									<th width="45%">A község(ek) neve, amely(ek)ből a várossá nyilvánítás történt</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1989. 03. 01.</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14632">Fonyód</a><span class="idx" title="1992-ben Balatonfenyves ismét önálló községgé alakult.">4</span></td>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14632">Fonyód</a><span class="idx" title="1905-ben alakult Lengyeltóti község területéből. 1981-ben hozzácsatolták Balatonfenyves községet, amely 1958-ban alakult Balatonmáriafürdő, Balatonkeresztúr, Fonyód és Somogyszentpál községek területéből.">5</span></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="comments">
+
+							<tr>
+								<th>1 =</th>
+								<td>Első ízben 1958-ban alakult községgé a Balatonmáriafürdő községhez tartozott V. és VI. szakasz, a Balatonkeresztúr községhez tartozott Józseftelep, a Fonyód községhez tartozott Balatonfenyves, valamint a Somogyszentpál községhez tartozott Imremajor és Pálmajor nevű lakotthelyekből. 1981-ben egyesült Fonyód községgel Fonyód néven, majd 1992-ben ismét önálló községgé alakult.</td>
+							</tr>
+							<tr>
+								<th>2 =</th>
+								<td>1905-ben alakult Lengyeltóti község területéből.</td>
+							</tr>
+							<tr>
+								<th>3 =</th>
+								<td>1958-ban alakult Balatonkeresztúr, Balatonmáriafürdő, Fonyód és Somogyszentpál községek területéből. 1992-ben Balatonfenyves néven ismét önálló községgé alakult.</td>
+							</tr>
+							<tr>
+								<th>4 =</th>
+								<td>1992-ben Balatonfenyves ismét önálló községgé alakult.</td>
+							</tr>
+							<tr>
+								<th>5 =</th>
+								<td>1905-ben alakult Lengyeltóti község területéből. 1981-ben hozzácsatolták Balatonfenyves községet, amely 1958-ban alakult Balatonmáriafürdő, Balatonkeresztúr, Fonyód és Somogyszentpál községek területéből.</td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="page-foot">
+			<div class="content">
+				<a href="https://www.ksh.hu/"><img id="ksh_logo" src="/images/helysegnevtar/logos/ksh_logo.png" width="97" height="40" alt="Központi Statisztikai Hivatal" /></a>
+				&copy; Központi Statisztikai Hivatal, 1873&ndash;2025
+				<a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=KONYVEK"><img id="hnt1873" src="/images/helysegnevtar/hnt_konyvek/hnt_1873_tn.jpg" width="28" height="40" alt="A Magyar Korona Országainak Helységnévtára, 1873" /><i></i></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

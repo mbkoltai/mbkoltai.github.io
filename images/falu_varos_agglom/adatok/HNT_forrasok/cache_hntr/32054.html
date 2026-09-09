@@ -1,0 +1,1135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
+<head>
+	<title>Magyarország helységnévtára</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+	<link rel="stylesheet" type="text/css" media="all" href="/css/redmond/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/js/colorbox/colorbox.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/helysegnevtar2022.css" />
+	<!--[if IE 6]><link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/ie6.css" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/ie7.css" /><![endif]-->
+
+	<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.10.3.autocomplete.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.autocomplete-html.js"></script>
+	<script type="text/javascript" src="/js/jquery.jlabel-1.3.custom.min.js"></script>
+	<script type="text/javascript" src="/js/colorbox/jquery.colorbox.min.js"></script>
+	<script type="text/javascript" src="/js/highcharts-3.0.1.js"></script>
+	<script type="text/javascript" src="/js/highcharts.hu.min.js"></script>
+
+	<script type="text/javascript" src="/js/helysegnevtar/helysegnevtar.min.js"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="page-head">
+			<div class="content">
+				<ul id="menu">
+					<li><a href="/apps/hntr.main?p_lang=HU">Kezdőlap</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=TAJEKOZTATO">Tájékoztató</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=FOGALMAK">Fogalmak, módszertan</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=FUGGELEK">Függelék</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=HELYNEVKONYV">Helynévkönyv</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=LETOLTES">Letöltés</a></li>
+				</ul>
+				<div id="lang">
+					<a class="en" href="/apps/hntr.main?p_lang=EN">English</a>
+				</div>
+			</div>
+		</div>
+		<div id="page-searchbar">
+			<div class="content">
+				<form method="post" action="/apps/hntr.kereses">
+					<input type="hidden" name="p_lang" value="HU" />
+					<a href="/apps/hntr.main?p_lang=HU" id="hnt-logo"></a>
+					<div id="search">
+						<input type="text"   id="p_szo"  name="p_szo" title="településnév, településrésznév, irányítószám, körzetszám vagy KSH-kód" />
+						<input type="submit" id="submit" value="Keresés" />
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="page-body">
+			<div class="content">
+				<div id="pagenav">
+					<ul>
+						<li id="nav-info"><a href="#data-info"><i></i><span>Alapadatok</span></a></li>
+						<li id="nav-cens"><a href="#data-cens"><i></i><span>Népesség, lakásállomány, terület</span></a></li>
+						<li id="nav-ethn"><a href="#data-ethn"><i></i><span>Nemzetiségi és vallási megoszlás</span></a></li>
+						<li id="nav-dist"><a href="#data-dist"><i></i><span>Városrészek, településrészek</span></a></li>
+						<li id="nav-hist"><a href="#data-hist"><i></i><span>Területszervezési változások</span></a></li>
+					</ul>
+				</div>
+				<div class="jump-to-top-button hidden" title="Ugrás az oldal tetejére"></div>
+
+				<div id="page-body-data">
+					<h1>Zalaegerszeg</h1>
+
+
+
+					<div id="data-info">
+						<h2>Alapadatok</h2>
+
+						<div id="data-base">
+							<table>
+								<tbody>
+								<tr><th width="220">Nemzetiségi név:</th><td>&ndash;</td></tr>
+								<tr><th>KSH-kód:</th><td>32054</td></tr>
+								<tr><th>Jogállás:</th><td>Vármegyeszékhely, megyei jogú város</td></tr>
+								<tr><th>Régió:</th><td>Nyugat-Dunántúl</td></tr>
+								<tr><th>Vármegye:</th><td>Zala</td></tr>
+								<tr><th>Járás neve (kódja):</th><td>Zalaegerszegi (197)</td></tr>
+								<tr><th>Járás székhelye:</th><td>Zalaegerszeg</td></tr>
+								<tr><th>Közös önkormányzati hivatali kód:</th><td><span title="önálló polgármesteri hivatalt fenntartó önkormányzat">1</span></td></tr>
+								<tr><th>Közös önkormányzati hivatal székhelye:</th><td>&ndash;</td></tr>
+								<tr><th>Nemzetiségi önkormányzat:</th><td>horvát, német, roma</td></tr>
+								<tr><th>Távhívó körzetszám:</th><td>92</td></tr>
+								<tr><th>Vasútállomás:</th><td>Zalaegerszeg (1,0&nbsp;km)</td></tr>
+								</tbody>
+							</table>
+							
+							<table class="comments">
+								<tr><th>1 =</th><td>önálló polgármesteri hivatalt fenntartó önkormányzat</td></tr>
+							</table>
+						</div>
+
+						<div id="data-maps">
+							<div id="data-maps-sett">
+								<div>
+									<img src="/images/helysegnevtar/mo_alap.png" width="420" height="262" alt="" />
+									<img src="/images/helysegnevtar/mo_pont.png" width="8" height="8" style="left: 45px; top: 159px; margin-left: -4px; margin-top: -4px;" alt="" />
+								</div>
+
+								<p>
+									<a id="maps-osm"    title="Megtekintés az OpenStreetMap térképen" href="http://www.openstreetmap.hu/terkep/Zalaegerszeg" target="_blank"></a>
+									<a id="maps-google" title="Megtekintés a Google Térképen" href="http://www.google.com/maps?q=Zalaegerszeg,+Magyarorsz%C3%A1g" target="_blank"></a>
+									<a id="maps-bing"   title="Megtekintés a Bing Maps-en" href="http://www.bing.com/maps/?v=2&amp;where1=Zalaegerszeg,+Magyarorsz%C3%A1g&amp;sty=r" target="_blank"></a>
+								</p>
+							</div>
+							<div id="data-maps-dist">
+								<a href="#" class="data-maps-close"></a>
+								<h3>Zalaegerszegi járás (197)</h3>
+								<img src="/images/helysegnevtar/maps/dist_197.png" width="420" height="262" alt="" />
+								<p>Települések: 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=02644">Alibánfa</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=23384">Almásháza</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=19512">Alsónemesapáti</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=21263">Babosdöbréte</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=30368">Bagod</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=04738">Bak</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=15097">Baktüttös</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=18360">Becsvölgye</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=12830">Bezeréd</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=17543">Bocfölde</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=10782">Boncodfölde</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=22877">Böde</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=20613">Búcsúszentlászló</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=23436">Csatár</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=10649">Csertalakos</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=31149">Csonkahegyhát</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=27492">Csöde</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32708">Dobronhegy</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=33428">Egervár</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=08068">Gellénháza</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=17613">Gombosszeg</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=29771">Gősfa</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=02097">Gutorfölde</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=12539">Gyűrűs</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=10931">Hagyárosbörönd</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=28325">Hottó</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=03188">Iborfia</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32063">Kávás</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=25353">Kemendollár</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=06071">Keménfa</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=21379">Kisbucsa</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=20312">Kiskutas</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=16081">Kispáli</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=19479">Kustánszeg</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=33792">Lakhegy</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=03054">Lickóvadamos</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=02662">Milejszeg</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=04756">Misefa</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=20589">Nagykapornak</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=22178">Nagykutas</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=04455">Nagylengyel</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=28468">Nagypáli</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=06169">Nemesapáti</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=07658">Nemeshetés</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=18023">Nemesrádó</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=25609">Nemessándorháza</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=08059">Nemesszentandrás</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=25414">Németfalu</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=20835">Orbányosfa</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=22497">Ormándlak</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=18953">Ozmánbük</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=31741">Pacsa</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=24776">Padár</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14720">Pálfiszeg</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=05704">Pethőhenye</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=19178">Petrikeresztúr</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=21050">Pókaszepetk</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=09867">Pölöske</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=27465">Pusztaederics</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=26639">Pusztaszentlászló</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=27720">Salomvár</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=08101">Sárhida</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=19080">Söjtör</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=03124">Szentkozmadombja</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=30067">Szentpéterfölde</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=11165">Szentpéterúr</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=08828">Teskánd</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=27951">Tilaj</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=05342">Tófej</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=10302">Vasboldogasszony</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=14322">Vaspör</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=08369">Vöckönd</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=28495">Zalaboldogfa</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=02486">Zalacséb</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=23834">Zalaháshágy</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=16896">Zalaigrice</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=12496">Zalaistvánd</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=30313">Zalalövő</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=33136">Zalaszentgyörgy</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=02608">Zalaszentiván</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=13301">Zalaszentlőrinc</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=18449">Zalaszentmihály</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=29683">Zalatárnok</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div id="data-cens">
+						<h2>Népesség, lakásállomány, terület</h2>
+						<table>
+						<thead>
+							<tr>
+								<th width="40%">Időpont</th>
+								<th width="20%">Lakónépesség <i title="Zalaegerszeg lakónépességének alakulása [fő]"></i></th>
+								<th width="20%">Lakások száma <i title="Zalaegerszeg lakásai számának alakulása [darab]"></i></th>
+								<th width="20%">Területnagyság (hektár) <i title="Zalaegerszeg területnagyságának alakulása [hektár]"></i></th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<th>2025. 01. 01.</th>
+								<td>53 960</td>
+								<td>27 954</td>
+								<td>10 246</td>
+							</tr>
+							<tr>
+								<th>2024. 01. 01.</th>
+								<td>55 152</td>
+								<td>27 926</td>
+								<td>10 246</td>
+							</tr>
+							<tr>
+								<th>2023. 01. 01.</th>
+								<td>55 433</td>
+								<td>27 908</td>
+								<td>10 246</td>
+							</tr>
+							<tr>
+								<th>2022. 10. 01. (a népszámlálás időpontjában)</th>
+								<td>54 973</td>
+								<td>27 876</td>
+								<td>10 246</td>
+							</tr>
+							<tr>
+								<th>2021. 01. 01.</th>
+								<td>56 004</td>
+								<td>26 427</td>
+								<td>10 246</td>
+							</tr>
+							<tr>
+								<th>2020. 01. 01.</th>
+								<td>57 263</td>
+								<td>26 282</td>
+								<td>10 246</td>
+							</tr>
+							<tr>
+								<th>2019. 01. 01.</th>
+								<td>57 891</td>
+								<td>26 170</td>
+								<td>10 246</td>
+							</tr>
+							<tr>
+								<th>2018. 01. 01.</th>
+								<td>58 234</td>
+								<td>26 082</td>
+								<td>10 246</td>
+							</tr>
+							<tr>
+								<th>2017. 01. 01.</th>
+								<td>58 581</td>
+								<td>26 031</td>
+								<td>10 240</td>
+							</tr>
+							<tr>
+								<th>2016. 01. 01.</th>
+								<td>59 215</td>
+								<td>26 021</td>
+								<td>10 241</td>
+							</tr>
+							<tr>
+								<th>2015. 01. 01.</th>
+								<td>59 216</td>
+								<td>25 973</td>
+								<td>10 241</td>
+							</tr>
+							<tr>
+								<th>2014. 01. 01.</th>
+								<td>59 438</td>
+								<td>25 951</td>
+								<td>10 241</td>
+							</tr>
+							<tr>
+								<th>2013. 01. 01.</th>
+								<td>59 701</td>
+								<td>25 928</td>
+								<td>10 241</td>
+							</tr>
+							<tr>
+								<th>2012. 01. 01.</th>
+								<td>59 673</td>
+								<td>25 901</td>
+								<td>10 241</td>
+							</tr>
+							<tr>
+								<th>2011. 10. 01. (a népszámlálás időpontjában)</th>
+								<td>59 933</td>
+								<td>25 883</td>
+								<td>10 241</td>
+							</tr>
+							<tr>
+								<th>2010. 01. 01.</th>
+								<td>61 705</td>
+								<td>25 620</td>
+								<td>9 985</td>
+							</tr>
+							<tr>
+								<th>2009. 01. 01.</th>
+								<td>61 774</td>
+								<td>25 497</td>
+								<td>9 985</td>
+							</tr>
+							<tr>
+								<th>2008. 01. 01.</th>
+								<td>61 717</td>
+								<td>25 309</td>
+								<td>9 985</td>
+							</tr>
+							<tr>
+								<th>2007. 01. 01.</th>
+								<td>61 898</td>
+								<td>25 103</td>
+								<td>9 985</td>
+							</tr>
+							<tr>
+								<th>2006. 01. 01.</th>
+								<td>61 814</td>
+								<td>24 764</td>
+								<td>9 985</td>
+							</tr>
+							<tr>
+								<th>2005. 01. 01.</th>
+								<td>62 029</td>
+								<td>24 383</td>
+								<td>9 986</td>
+							</tr>
+							<tr>
+								<th>2004. 01. 01.</th>
+								<td>62 148</td>
+								<td>24 023</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>2003. 01. 01.</th>
+								<td>62 158</td>
+								<td>23 551</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>2002. 01. 01.</th>
+								<td>62 079</td>
+								<td>23 277</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+
+								<th>2001. 02. 01. (a népszámlálás időpontjában)</th>
+								<td>62 255</td>
+								<td>23 055</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>2000. 01. 01.</th>
+								<td>60 422</td>
+								<td>22 509</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>1999. 01. 01.</th>
+								<td>61 033</td>
+								<td>22 466</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>1998. 01. 01.</th>
+								<td>61 310</td>
+								<td>22 406</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>1997. 01. 01.</th>
+								<td>61 690</td>
+								<td>22 263</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>1996. 01. 01.</th>
+								<td>61 678</td>
+								<td>22 079</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>1995. 01. 01.</th>
+								<td>61 520</td>
+								<td>21 961</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>1994. 01. 01.</th>
+								<td>62 908</td>
+								<td>21 914</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>1993. 01. 01.</th>
+								<td>62 829</td>
+								<td>21 851</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>1992. 01. 01.</th>
+								<td>62 637</td>
+								<td>21 726</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>1991. 01. 01.</th>
+								<td>62 357</td>
+								<td>21 458</td>
+								<td>9 998</td>
+							</tr>
+							<tr>
+								<th>1990. 01. 01. (a népszámlálás időpontjában)</th>
+								<td>62 212</td>
+								<td>21 153</td>
+								<td>9 998</td>
+							</tr>
+						</tbody>
+						</table>
+
+					</div>
+
+					<div id="data-ethn">
+						<h2>Nemzetiségi és vallási megoszlás</h2>
+						<table>
+							<thead>
+								<tr><th colspan="3">A helység lakóinak nemzetiségi kötődése 2022-ben <i></i></th></tr>
+							</thead>
+							<tbody>
+
+<tr><th>magyar</th><td>89,7%</td><td class="ethn-bar"><b style="width:89.7%"></b></td></tr>
+<tr><th>cigány (roma)</th><td>0,8%</td><td class="ethn-bar"><b style="width:0.8%"></b></td></tr>
+<tr><th>német</th><td>0,8%</td><td class="ethn-bar"><b style="width:0.8%"></b></td></tr>
+<tr><th>ukrán</th><td>0,5%</td><td class="ethn-bar"><b style="width:0.5%"></b></td></tr>
+<tr><th>horvát</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>román</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>lengyel</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>szlovák</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>szlovén</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>szerb</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>görög</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>örmény</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>bolgár</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>ruszin</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>egyéb, nem hazai nemzetiség</th><td>2,8%</td><td class="ethn-bar"><b style="width:2.8%"></b></td></tr>
+<tr><th>nem kívánt válaszolni, nincs válasz</th><td>9,7%</td><td class="ethn-bar"><b style="width:9.7%"></b></td></tr>
+							</tbody>
+						</table>
+						<table id="data-religion">
+							<thead>
+								<tr><th colspan="3">A helység lakóinak vallási összetétele 2022-ben <i></i></th></tr>
+							</thead>
+							<tbody>
+
+<tr><th>római katolikus</th><td>43,0%</td><td class="ethn-bar"><b style="width:43.0%"></b></td></tr>
+<tr><th>református</th><td>2,7%</td><td class="ethn-bar"><b style="width:2.7%"></b></td></tr>
+<tr><th>egyéb keresztény felekezethez tartozó</th><td>1,4%</td><td class="ethn-bar"><b style="width:1.4%"></b></td></tr>
+<tr><th>egyéb katolikus</th><td>1,1%</td><td class="ethn-bar"><b style="width:1.1%"></b></td></tr>
+<tr><th>evangélikus</th><td>1,1%</td><td class="ethn-bar"><b style="width:1.1%"></b></td></tr>
+<tr><th>görög katolikus</th><td>0,2%</td><td class="ethn-bar"><b style="width:0.2%"></b></td></tr>
+<tr><th>ortodox keresztény</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>izraelita</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>egyéb vallási közösséghez, felekezethez tartozik</th><td>0,2%</td><td class="ethn-bar"><b style="width:0.2%"></b></td></tr>
+<tr><th>vallási közösséghez, felekezethez nem tartozik</th><td>10,6%</td><td class="ethn-bar"><b style="width:10.6%"></b></td></tr>
+<tr><th>nem kívánt válaszolni, nincs válasz</th><td>39,5%</td><td class="ethn-bar"><b style="width:39.5%"></b></td></tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="data-dist">
+						<h2>Városrészek, településrészek</h2>
+						<table>
+							<thead>
+							<tr>
+								<th width="28%" rowspan="2">A helység városrészei, a helységhez tartozó településrészek jellege és megnevezése</th>
+
+								<th width="14%">A népszámlálási lakónépesség</th>
+								<th width="14%">A lakások</th>
+								<th width="14%">A lakott egyéb lakóegységek</th>
+
+								<th width="10%" rowspan="2">Postai irányítószám</th>
+								<th width="10%" rowspan="2">A külterület települési jellege</th>
+								<th width="10%" rowspan="2">A településrész távolsága a központi belterület centrumától (km)</th>
+							</tr>
+							<tr>
+								<th colspan="3">száma 2022. október 1-jén, a 2025. január 1-jei közigazgatási állapot szerint</th>
+							</tr>
+							</thead>
+							<tbody>
+
+							<tr>
+								<th>Központi belterület</th>
+								<td>38 631</td>
+								<td>21 342</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+							<tr>
+								<th>Egyéb belterület</th>
+								<td colspan="7"></td>
+							</tr>
+
+							<tr>
+								<th class="ind">Alsójánkahegyi</th>
+								<td>5</td>
+								<td>4</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+							<tr>
+								<th class="ind">Andráshida</th>
+								<td>2 399</td>
+								<td>958</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>4,4</td>
+							</tr>
+							<tr>
+								<th class="ind">Bazita</th>
+								<td>523</td>
+								<td>226</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>7,6</td>
+							</tr>
+							<tr>
+								<th class="ind">Botfa</th>
+								<td>723</td>
+								<td>283</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>6,5</td>
+							</tr>
+							<tr>
+								<th class="ind">Csácsbozsok</th>
+								<td>2 690</td>
+								<td>1 011</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>3,2</td>
+							</tr>
+							<tr>
+								<th class="ind">Ebergény</th>
+								<td>213</td>
+								<td>96</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>6,6</td>
+							</tr>
+							<tr>
+								<th class="ind">Kaszaháza</th>
+								<td>61</td>
+								<td>16</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>1,6</td>
+							</tr>
+							<tr>
+								<th class="ind">Kertváros</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+							<tr>
+								<th class="ind">Landorhegy-Dél</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+							<tr>
+								<th class="ind">Landorhegy-Észak</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+							<tr>
+								<th class="ind">Nekeresd</th>
+								<td>431</td>
+								<td>199</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+							<tr>
+								<th class="ind">Neszele</th>
+								<td>683</td>
+								<td>276</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+							<tr>
+								<th class="ind">Ola</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+							<tr>
+								<th class="ind">Páterdomb</th>
+								<td>9</td>
+								<td>4</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>1,9</td>
+							</tr>
+							<tr>
+								<th class="ind">Pózva</th>
+								<td>1 115</td>
+								<td>209</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>4,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Ságod</th>
+								<td>885</td>
+								<td>355</td>
+								<td>1</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>3,5</td>
+							</tr>
+							<tr>
+								<th class="ind">Szenterzsébethegy</th>
+								<td>488</td>
+								<td>214</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>7,7</td>
+							</tr>
+							<tr>
+								<th class="ind">Vorhota</th>
+								<td>333</td>
+								<td>126</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>5,7</td>
+							</tr>
+							<tr>
+								<th class="ind">Zalabesenyő</th>
+								<td>1 004</td>
+								<td>391</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc">&ndash;</td>
+								<td>4,6</td>
+							</tr>
+							<tr>
+								<th>Külterület</th>
+								<td colspan="7"></td>
+							</tr>
+
+							<tr>
+								<th class="ind">Alsóerdő</th>
+								<td>12</td>
+								<td>5</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>4,1</td>
+							</tr>
+							<tr>
+								<th class="ind">Avashegy</th>
+								<td>42</td>
+								<td>24</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>7,1</td>
+							</tr>
+							<tr>
+								<th class="ind">Becsali</th>
+								<td>627</td>
+								<td>276</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>4,3</td>
+							</tr>
+							<tr>
+								<th class="ind">Bekeháza</th>
+								<td>6</td>
+								<td>6</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>6,1</td>
+							</tr>
+							<tr>
+								<th class="ind">Botfa külterület</th>
+								<td>13</td>
+								<td>10</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="üdülőhely, üdülőterület, üdülőként vagy hétvégi pihenésre használt tanya, présház, gazdasági vagy egyéb rendeltetésű épület">Üd.</span></td>
+								<td>4,6</td>
+							</tr>
+							<tr>
+								<th class="ind">Budaivölgy</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>5,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Cimpóhegy</th>
+								<td>6</td>
+								<td>4</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="üdülőhely, üdülőterület, üdülőként vagy hétvégi pihenésre használt tanya, présház, gazdasági vagy egyéb rendeltetésű épület">Üd.</span></td>
+								<td>5,7</td>
+							</tr>
+							<tr>
+								<th class="ind">Csács külterület</th>
+								<td>112</td>
+								<td>53</td>
+								<td>1</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="üdülőhely, üdülőterület, üdülőként vagy hétvégi pihenésre használt tanya, présház, gazdasági vagy egyéb rendeltetésű épület">Üd.</span></td>
+								<td>2,5</td>
+							</tr>
+							<tr>
+								<th class="ind">Csácsbozsok külterület</th>
+								<td>226</td>
+								<td>141</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="üdülőhely, üdülőterület, üdülőként vagy hétvégi pihenésre használt tanya, présház, gazdasági vagy egyéb rendeltetésű épület">Üd.</span></td>
+								<td>2,6</td>
+							</tr>
+							<tr>
+								<th class="ind">Csácsihegy</th>
+								<td>130</td>
+								<td>68</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>5,3</td>
+							</tr>
+							<tr>
+								<th class="ind">Csáford</th>
+								<td>108</td>
+								<td>48</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>8,8</td>
+							</tr>
+							<tr>
+								<th class="ind">Ebergénydűlő</th>
+								<td>18</td>
+								<td>8</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>9,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Egerszeghegy</th>
+								<td>777</td>
+								<td>401</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>5,9</td>
+							</tr>
+							<tr>
+								<th class="ind">Gálafejpuszta</th>
+								<td>172</td>
+								<td>100</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>6,2</td>
+							</tr>
+							<tr>
+								<th class="ind">Gévahegy</th>
+								<td>121</td>
+								<td>73</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>3,3</td>
+							</tr>
+							<tr>
+								<th class="ind">Gógánhegy</th>
+								<td>293</td>
+								<td>169</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>6,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Hatház</th>
+								<td>149</td>
+								<td>64</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>8,4</td>
+							</tr>
+							<tr>
+								<th class="ind">Jánkahegy</th>
+								<td>776</td>
+								<td>377</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>2,9</td>
+							</tr>
+							<tr>
+								<th class="ind">Karácsonyhegy</th>
+								<td>10</td>
+								<td>8</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="üdülőhely, üdülőterület, üdülőként vagy hétvégi pihenésre használt tanya, présház, gazdasági vagy egyéb rendeltetésű épület">Üd.</span></td>
+								<td>3,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Kisbükk</th>
+								<td>43</td>
+								<td>22</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>8,1</td>
+							</tr>
+							<tr>
+								<th class="ind">Lukahegy</th>
+								<td>101</td>
+								<td>52</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>5,8</td>
+							</tr>
+							<tr>
+								<th class="ind">Magasbük</th>
+								<td>35</td>
+								<td>10</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>9,1</td>
+							</tr>
+							<tr>
+								<th class="ind">Nekeresd külterület</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="külterület összeírt lakóegység és népesség nélkül">Kt.</span></td>
+								<td>2,6</td>
+							</tr>
+							<tr>
+								<th class="ind">Neszele külterület</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="külterület összeírt lakóegység és népesség nélkül">Kt.</span></td>
+								<td>1,8</td>
+							</tr>
+							<tr>
+								<th class="ind">Öreghegy</th>
+								<td>123</td>
+								<td>86</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>6,5</td>
+							</tr>
+							<tr>
+								<th class="ind">Pipahegy</th>
+								<td>47</td>
+								<td>27</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="üdülőhely, üdülőterület, üdülőként vagy hétvégi pihenésre használt tanya, présház, gazdasági vagy egyéb rendeltetésű épület">Üd.</span></td>
+								<td>1,2</td>
+							</tr>
+							<tr>
+								<th class="ind">Ságod külterület</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="ipartelep">Ipt.</span></td>
+								<td>4,1</td>
+							</tr>
+							<tr>
+								<th class="ind">Szekeresvölgy</th>
+								<td>32</td>
+								<td>14</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>3,5</td>
+							</tr>
+							<tr>
+								<th class="ind">Szenterzsébethegy külterület</th>
+								<td>56</td>
+								<td>30</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="üdülőhely, üdülőterület, üdülőként vagy hétvégi pihenésre használt tanya, présház, gazdasági vagy egyéb rendeltetésű épület">Üd.</span></td>
+								<td>4,6</td>
+							</tr>
+							<tr>
+								<th class="ind">Újhegy</th>
+								<td>12</td>
+								<td>4</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>7,9</td>
+							</tr>
+							<tr>
+								<th class="ind">Vakaroshegy</th>
+								<td>188</td>
+								<td>86</td>
+								<td>0</td>
+								<td class="tc">8900</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>6,1</td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="comments">
+
+							<tr>
+								<th>Ipt. =</th>
+								<td>ipartelep</td>
+							</tr>
+							<tr>
+								<th>Kt. =</th>
+								<td>külterület összeírt lakóegység és népesség nélkül</td>
+							</tr>
+							<tr>
+								<th>Lh. =</th>
+								<td>gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely</td>
+							</tr>
+							<tr>
+								<th>Mgl. =</th>
+								<td>mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák</td>
+							</tr>
+							<tr>
+								<th>Üd. =</th>
+								<td>üdülőhely, üdülőterület, üdülőként vagy hétvégi pihenésre használt tanya, présház, gazdasági vagy egyéb rendeltetésű épület</td>
+							</tr>
+						</table>
+					</div>
+					<div id="data-hist">
+						<h2>Területszervezési változások</h2>
+						<table>
+							<caption>Várossá nyilvánítás</caption>
+							<thead>
+								<tr>
+									<th width="15%">A hatálybalépés időpontja</th>
+									<th width="40%">A város neve</th>
+									<th width="45%">A község(ek) neve, amely(ek)ből a várossá nyilvánítás történt</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1900 előtt</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a></td>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<caption>Helységek egyesítése</caption>
+							<thead>
+								<tr>
+									<th width="15%">A hatálybalépés időpontja</th>
+									<th width="85%">Az egyesítésben érintett helységek neve</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1933</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a><span class="idx" title="1958-ban hozzácsatolták Zalabesenyő, 1963-ban Csácsbozsok és Pózva, 1969-ben Andráshida, Bazita, Ebergény, Ságod  és Szenterzsébethegy, valamint 1981-ben Botfa községet.">1</span> = <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=51865">Kaszaháza</a> + <a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a> </td>
+								</tr>
+								<tr>
+									<th>1958</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a><span class="idx" title="1963-ban hozzácsatolták Csácsbozsok és Pózva, 1969-ben Andráshida, Bazita, Ebergény, Ságod és Szenterzsébethegy, majd 1981-ben Botfa községeket.">2</span> = <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=50683">Zalabesenyő</a> + <a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a><span class="idx" title="Az 1933-ban hozzácsatolt Kaszaháza községgel.">3</span> </td>
+								</tr>
+								<tr>
+									<th>1963</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a><span class="idx" title="1969-ben hozzácsatolták Andráshida, Bazita, Ebergény, Ságod és Szenterzsébethegy községeket, majd 1981-ben Botfa községet.">4</span> = <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=52008">Csácsbozsok</a> + <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=50738">Pózva</a> + <a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a><span class="idx" title="Az 1933-ban hozzácsatolt Kaszaháza és az 1958-ban hozzácsatolt Zalabesenyő községgel.">5</span> </td>
+								</tr>
+								<tr>
+									<th>1969</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a><span class="idx" title="1981-ben hozzácsatolták Botfa községet.">6</span> = <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=51675">Andráshida</a><span class="idx" title="Andráshida és Apátfa egyesülése 1940-ben, majd Andráshida és Vorhota egyesülése 1950-ben Andráshida néven.">7</span> + <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=52009">Bazita</a> + <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=52010">Ebergény</a> + <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=51804">Ságod</a> + <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=52011">Szenterzsébethegy</a> + <a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a><span class="idx" title="Az 1933-ban hozzácsatolt Kaszaháza, az 1958-ban hozzácsatolt Zalabesenyő, valamint az 1963-ban hozzácsatolt Csácsbozsok és Pózva községekkel.">8</span> </td>
+								</tr>
+								<tr>
+									<th>1981. 12. 31.</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a> = <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=50739">Botfa</a> + <a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a><span class="idx" title="Az 1933-ban hozzácsatolt Kaszaháza, az 1958-ban hozzácsatolt Zalabesenyő, az 1963-ban hozzácsatolt Csácsbozsok és Pózva, valamint az 1969-ben hozzácsatolt Andráshida, Bazita, Ebergény, Ságod és Szenterzsébethegy községekkel.">9</span> </td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<caption>Megyei jogú várossá nyilvánítás</caption>
+							<thead>
+								<tr>
+									<th width="15%" rowspan="2">A hatálybalépés időpontja</th>
+									<th colspan="2">A megyei jogú város</th>
+								</tr>
+								<tr>
+									<th width="42.5%">neve</th>
+									<th width="42.5%">megyei beosztása</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1990. 12. 01.</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32054">Zalaegerszeg</a></td>
+									<td>Zala</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="comments">
+
+							<tr>
+								<th>1 =</th>
+								<td>1958-ban hozzácsatolták Zalabesenyő, 1963-ban Csácsbozsok és Pózva, 1969-ben Andráshida, Bazita, Ebergény, Ságod  és Szenterzsébethegy, valamint 1981-ben Botfa községet.</td>
+							</tr>
+							<tr>
+								<th>2 =</th>
+								<td>1963-ban hozzácsatolták Csácsbozsok és Pózva, 1969-ben Andráshida, Bazita, Ebergény, Ságod és Szenterzsébethegy, majd 1981-ben Botfa községeket.</td>
+							</tr>
+							<tr>
+								<th>3 =</th>
+								<td>Az 1933-ban hozzácsatolt Kaszaháza községgel.</td>
+							</tr>
+							<tr>
+								<th>4 =</th>
+								<td>1969-ben hozzácsatolták Andráshida, Bazita, Ebergény, Ságod és Szenterzsébethegy községeket, majd 1981-ben Botfa községet.</td>
+							</tr>
+							<tr>
+								<th>5 =</th>
+								<td>Az 1933-ban hozzácsatolt Kaszaháza és az 1958-ban hozzácsatolt Zalabesenyő községgel.</td>
+							</tr>
+							<tr>
+								<th>6 =</th>
+								<td>1981-ben hozzácsatolták Botfa községet.</td>
+							</tr>
+							<tr>
+								<th>7 =</th>
+								<td>Andráshida és Apátfa egyesülése 1940-ben, majd Andráshida és Vorhota egyesülése 1950-ben Andráshida néven.</td>
+							</tr>
+							<tr>
+								<th>8 =</th>
+								<td>Az 1933-ban hozzácsatolt Kaszaháza, az 1958-ban hozzácsatolt Zalabesenyő, valamint az 1963-ban hozzácsatolt Csácsbozsok és Pózva községekkel.</td>
+							</tr>
+							<tr>
+								<th>9 =</th>
+								<td>Az 1933-ban hozzácsatolt Kaszaháza, az 1958-ban hozzácsatolt Zalabesenyő, az 1963-ban hozzácsatolt Csácsbozsok és Pózva, valamint az 1969-ben hozzácsatolt Andráshida, Bazita, Ebergény, Ságod és Szenterzsébethegy községekkel.</td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="page-foot">
+			<div class="content">
+				<a href="https://www.ksh.hu/"><img id="ksh_logo" src="/images/helysegnevtar/logos/ksh_logo.png" width="97" height="40" alt="Központi Statisztikai Hivatal" /></a>
+				&copy; Központi Statisztikai Hivatal, 1873&ndash;2025
+				<a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=KONYVEK"><img id="hnt1873" src="/images/helysegnevtar/hnt_konyvek/hnt_1873_tn.jpg" width="28" height="40" alt="A Magyar Korona Országainak Helységnévtára, 1873" /><i></i></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

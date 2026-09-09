@@ -1,0 +1,833 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
+<head>
+	<title>Magyarország helységnévtára</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+	<link rel="stylesheet" type="text/css" media="all" href="/css/redmond/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/js/colorbox/colorbox.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/helysegnevtar2022.css" />
+	<!--[if IE 6]><link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/ie6.css" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/ie7.css" /><![endif]-->
+
+	<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.10.3.autocomplete.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.autocomplete-html.js"></script>
+	<script type="text/javascript" src="/js/jquery.jlabel-1.3.custom.min.js"></script>
+	<script type="text/javascript" src="/js/colorbox/jquery.colorbox.min.js"></script>
+	<script type="text/javascript" src="/js/highcharts-3.0.1.js"></script>
+	<script type="text/javascript" src="/js/highcharts.hu.min.js"></script>
+
+	<script type="text/javascript" src="/js/helysegnevtar/helysegnevtar.min.js"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="page-head">
+			<div class="content">
+				<ul id="menu">
+					<li><a href="/apps/hntr.main?p_lang=HU">Kezdőlap</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=TAJEKOZTATO">Tájékoztató</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=FOGALMAK">Fogalmak, módszertan</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=FUGGELEK">Függelék</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=HELYNEVKONYV">Helynévkönyv</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=LETOLTES">Letöltés</a></li>
+				</ul>
+				<div id="lang">
+					<a class="en" href="/apps/hntr.main?p_lang=EN">English</a>
+				</div>
+			</div>
+		</div>
+		<div id="page-searchbar">
+			<div class="content">
+				<form method="post" action="/apps/hntr.kereses">
+					<input type="hidden" name="p_lang" value="HU" />
+					<a href="/apps/hntr.main?p_lang=HU" id="hnt-logo"></a>
+					<div id="search">
+						<input type="text"   id="p_szo"  name="p_szo" title="településnév, településrésznév, irányítószám, körzetszám vagy KSH-kód" />
+						<input type="submit" id="submit" value="Keresés" />
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="page-body">
+			<div class="content">
+				<div id="pagenav">
+					<ul>
+						<li id="nav-info"><a href="#data-info"><i></i><span>Alapadatok</span></a></li>
+						<li id="nav-cens"><a href="#data-cens"><i></i><span>Népesség, lakásállomány, terület</span></a></li>
+						<li id="nav-ethn"><a href="#data-ethn"><i></i><span>Nemzetiségi és vallási megoszlás</span></a></li>
+						<li id="nav-dist"><a href="#data-dist"><i></i><span>Városrészek, településrészek</span></a></li>
+						<li id="nav-hist"><a href="#data-hist"><i></i><span>Területszervezési változások</span></a></li>
+					</ul>
+				</div>
+				<div class="jump-to-top-button hidden" title="Ugrás az oldal tetejére"></div>
+
+				<div id="page-body-data">
+					<h1>Dabas</h1>
+
+
+
+					<div id="data-info">
+						<h2>Alapadatok</h2>
+
+						<div id="data-base">
+							<table>
+								<tbody>
+								<tr><th width="220">Nemzetiségi név:</th><td>&ndash;</td></tr>
+								<tr><th>KSH-kód:</th><td>09247</td></tr>
+								<tr><th>Jogállás:</th><td>Város</td></tr>
+								<tr><th>Régió:</th><td>Pest</td></tr>
+								<tr><th>Vármegye:</th><td>Pest</td></tr>
+								<tr><th>Járás neve (kódja):</th><td>Dabasi (125)</td></tr>
+								<tr><th>Járás székhelye:</th><td>Dabas</td></tr>
+								<tr><th>Közös önkormányzati hivatali kód:</th><td><span title="önálló polgármesteri hivatalt fenntartó önkormányzat">1</span></td></tr>
+								<tr><th>Közös önkormányzati hivatal székhelye:</th><td>&ndash;</td></tr>
+								<tr><th>Nemzetiségi önkormányzat:</th><td>roma, szlovák, ukrán</td></tr>
+								<tr><th>Távhívó körzetszám:</th><td>29</td></tr>
+								<tr><th>Vasútállomás:</th><td>Dabas (2,0&nbsp;km)</td></tr>
+								</tbody>
+							</table>
+							
+							<table class="comments">
+								<tr><th>1 =</th><td>önálló polgármesteri hivatalt fenntartó önkormányzat</td></tr>
+							</table>
+						</div>
+
+						<div id="data-maps">
+							<div id="data-maps-sett">
+								<div>
+									<img src="/images/helysegnevtar/mo_alap.png" width="420" height="262" alt="" />
+									<img src="/images/helysegnevtar/mo_pont.png" width="8" height="8" style="left: 198px; top: 130px; margin-left: -4px; margin-top: -4px;" alt="" />
+								</div>
+
+								<p>
+									<a id="maps-osm"    title="Megtekintés az OpenStreetMap térképen" href="http://www.openstreetmap.hu/terkep/Dabas" target="_blank"></a>
+									<a id="maps-google" title="Megtekintés a Google Térképen" href="http://www.google.com/maps?q=Dabas,+Magyarorsz%C3%A1g" target="_blank"></a>
+									<a id="maps-bing"   title="Megtekintés a Bing Maps-en" href="http://www.bing.com/maps/?v=2&amp;where1=Dabas,+Magyarorsz%C3%A1g&amp;sty=r" target="_blank"></a>
+								</p>
+							</div>
+							<div id="data-maps-dist">
+								<a href="#" class="data-maps-close"></a>
+								<h3>Dabasi járás (125)</h3>
+								<img src="/images/helysegnevtar/maps/dist_125.png" width="420" height="262" alt="" />
+								<p>Települések: 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32027">Bugyi</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=09247">Dabas</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=09849">Hernád</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32106">Inárcs</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32230">Kakucs</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=05281">Örkény</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=23083">Pusztavacs</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=08332">Táborfalva</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=27386">Tatárszentgyörgy</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=06293">Újhartyán</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=19682">Újlengyel</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div id="data-cens">
+						<h2>Népesség, lakásállomány, terület</h2>
+						<table>
+						<thead>
+							<tr>
+								<th width="40%">Időpont</th>
+								<th width="20%">Lakónépesség <i title="Dabas lakónépességének alakulása [fő]"></i></th>
+								<th width="20%">Lakások száma <i title="Dabas lakásai számának alakulása [darab]"></i></th>
+								<th width="20%">Területnagyság (hektár) <i title="Dabas területnagyságának alakulása [hektár]"></i></th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<th>2025. 01. 01.</th>
+								<td>17 670</td>
+								<td>7 053</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2024. 01. 01.</th>
+								<td>17 542</td>
+								<td>6 980</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2023. 01. 01.</th>
+								<td>17 527</td>
+								<td>6 875</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2022. 10. 01. (a népszámlálás időpontjában)</th>
+								<td>17 490</td>
+								<td>6 857</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2021. 01. 01.</th>
+								<td>17 149</td>
+								<td>6 879</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2020. 01. 01.</th>
+								<td>17 100</td>
+								<td>6 813</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2019. 01. 01.</th>
+								<td>16 916</td>
+								<td>6 770</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2018. 01. 01.</th>
+								<td>16 759</td>
+								<td>6 736</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2017. 01. 01.</th>
+								<td>16 670</td>
+								<td>6 711</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2016. 01. 01.</th>
+								<td>16 514</td>
+								<td>6 684</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2015. 01. 01.</th>
+								<td>16 457</td>
+								<td>6 646</td>
+								<td>16 602</td>
+							</tr>
+							<tr>
+								<th>2014. 01. 01.</th>
+								<td>16 481</td>
+								<td>6 635</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2013. 01. 01.</th>
+								<td>16 450</td>
+								<td>6 612</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2012. 01. 01.</th>
+								<td>16 473</td>
+								<td>6 580</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2011. 10. 01. (a népszámlálás időpontjában)</th>
+								<td>16 489</td>
+								<td>6 557</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2010. 01. 01.</th>
+								<td>16 777</td>
+								<td>6 043</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2009. 01. 01.</th>
+								<td>16 671</td>
+								<td>6 007</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2008. 01. 01.</th>
+								<td>16 595</td>
+								<td>5 950</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2007. 01. 01.</th>
+								<td>16 422</td>
+								<td>5 922</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2006. 01. 01.</th>
+								<td>16 361</td>
+								<td>5 893</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2005. 01. 01.</th>
+								<td>16 232</td>
+								<td>5 868</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2004. 01. 01.</th>
+								<td>16 093</td>
+								<td>5 837</td>
+								<td>16 599</td>
+							</tr>
+							<tr>
+								<th>2003. 01. 01.</th>
+								<td>16 018</td>
+								<td>5 810</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>2002. 01. 01.</th>
+								<td>16 021</td>
+								<td>5 790</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>2001. 02. 01. (a népszámlálás időpontjában)</th>
+								<td>15 879</td>
+								<td>5 763</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>2000. 01. 01.</th>
+								<td>15 235</td>
+								<td>5 611</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>1999. 01. 01.</th>
+								<td>15 202</td>
+								<td>5 577</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>1998. 01. 01.</th>
+								<td>15 173</td>
+								<td>5 567</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>1997. 01. 01.</th>
+								<td>15 086</td>
+								<td>5 549</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>1996. 01. 01.</th>
+								<td>15 062</td>
+								<td>5 544</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>1995. 01. 01.</th>
+								<td>15 018</td>
+								<td>5 512</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>1994. 01. 01.</th>
+								<td>14 563</td>
+								<td>5 485</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>1993. 01. 01.</th>
+								<td>14 648</td>
+								<td>5 462</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>1992. 01. 01.</th>
+								<td>14 657</td>
+								<td>5 432</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>1991. 01. 01.</th>
+								<td>14 751</td>
+								<td>5 404</td>
+								<td>16 609</td>
+							</tr>
+							<tr>
+								<th>1990. 01. 01. (a népszámlálás időpontjában)</th>
+								<td>14 800</td>
+								<td>5 387</td>
+								<td>16 609</td>
+							</tr>
+						</tbody>
+						</table>
+
+					</div>
+
+					<div id="data-ethn">
+						<h2>Nemzetiségi és vallási megoszlás</h2>
+						<table>
+							<thead>
+								<tr><th colspan="3">A helység lakóinak nemzetiségi kötődése 2022-ben <i></i></th></tr>
+							</thead>
+							<tbody>
+
+<tr><th>magyar</th><td>89,8%</td><td class="ethn-bar"><b style="width:89.8%"></b></td></tr>
+<tr><th>szlovák</th><td>4,4%</td><td class="ethn-bar"><b style="width:4.4%"></b></td></tr>
+<tr><th>cigány (roma)</th><td>0,8%</td><td class="ethn-bar"><b style="width:0.8%"></b></td></tr>
+<tr><th>német</th><td>0,5%</td><td class="ethn-bar"><b style="width:0.5%"></b></td></tr>
+<tr><th>román</th><td>0,4%</td><td class="ethn-bar"><b style="width:0.4%"></b></td></tr>
+<tr><th>ukrán</th><td>0,3%</td><td class="ethn-bar"><b style="width:0.3%"></b></td></tr>
+<tr><th>horvát</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>bolgár</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>szerb</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>szlovén</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>görög</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>örmény</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>ruszin</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>lengyel</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>egyéb, nem hazai nemzetiség</th><td>2,4%</td><td class="ethn-bar"><b style="width:2.4%"></b></td></tr>
+<tr><th>nem kívánt válaszolni, nincs válasz</th><td>10,0%</td><td class="ethn-bar"><b style="width:10.0%"></b></td></tr>
+							</tbody>
+						</table>
+						<table id="data-religion">
+							<thead>
+								<tr><th colspan="3">A helység lakóinak vallási összetétele 2022-ben <i></i></th></tr>
+							</thead>
+							<tbody>
+
+<tr><th>római katolikus</th><td>37,9%</td><td class="ethn-bar"><b style="width:37.9%"></b></td></tr>
+<tr><th>református</th><td>7,6%</td><td class="ethn-bar"><b style="width:7.6%"></b></td></tr>
+<tr><th>evangélikus</th><td>3,2%</td><td class="ethn-bar"><b style="width:3.2%"></b></td></tr>
+<tr><th>egyéb katolikus</th><td>1,0%</td><td class="ethn-bar"><b style="width:1.0%"></b></td></tr>
+<tr><th>egyéb keresztény felekezethez tartozó</th><td>0,9%</td><td class="ethn-bar"><b style="width:0.9%"></b></td></tr>
+<tr><th>görög katolikus</th><td>0,5%</td><td class="ethn-bar"><b style="width:0.5%"></b></td></tr>
+<tr><th>ortodox keresztény</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>izraelita</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>egyéb vallási közösséghez, felekezethez tartozik</th><td>0,2%</td><td class="ethn-bar"><b style="width:0.2%"></b></td></tr>
+<tr><th>vallási közösséghez, felekezethez nem tartozik</th><td>10,1%</td><td class="ethn-bar"><b style="width:10.1%"></b></td></tr>
+<tr><th>nem kívánt válaszolni, nincs válasz</th><td>38,4%</td><td class="ethn-bar"><b style="width:38.4%"></b></td></tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="data-dist">
+						<h2>Városrészek, településrészek</h2>
+						<table>
+							<thead>
+							<tr>
+								<th width="28%" rowspan="2">A helység városrészei, a helységhez tartozó településrészek jellege és megnevezése</th>
+
+								<th width="14%">A népszámlálási lakónépesség</th>
+								<th width="14%">A lakások</th>
+								<th width="14%">A lakott egyéb lakóegységek</th>
+
+								<th width="10%" rowspan="2">Postai irányítószám</th>
+								<th width="10%" rowspan="2">A külterület települési jellege</th>
+								<th width="10%" rowspan="2">A településrész távolsága a központi belterület centrumától (km)</th>
+
+							</tr>
+							<tr>
+								<th colspan="3">száma 2022. október 1-jén, a 2025. január 1-jei közigazgatási állapot szerint</th>
+							</tr>
+							</thead>
+							<tbody>
+
+							<tr>
+								<th>Központi belterület</th>
+								<td>15 604</td>
+								<td>6 128</td>
+								<td>0</td>
+								<td class="tc">2370</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+							<tr>
+								<th>Egyéb belterület</th>
+								<td colspan="7"></td>
+							</tr>
+
+							<tr>
+								<th class="ind">Dabasiszőlők</th>
+								<td>881</td>
+								<td>346</td>
+								<td>1</td>
+								<td class="tc">2370</td>
+								<td class="tc">&ndash;</td>
+								<td>9,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Öregországút</th>
+								<td>78</td>
+								<td>35</td>
+								<td>0</td>
+								<td class="tc">2370</td>
+								<td class="tc">&ndash;</td>
+								<td>3,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Sári-Besnyő</th>
+								<td>474</td>
+								<td>170</td>
+								<td>0</td>
+								<td class="tc">2371</td>
+								<td class="tc">&ndash;</td>
+								<td>6,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Szőlőhegy</th>
+								<td>86</td>
+								<td>34</td>
+								<td>0</td>
+								<td class="tc">2373</td>
+								<td class="tc">&ndash;</td>
+								<td>1,3</td>
+							</tr>
+							<tr>
+								<th>Külterület</th>
+								<td colspan="7"></td>
+							</tr>
+
+							<tr>
+								<th class="ind">Acsaitanya</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2370</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>3,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Alsóbabád</th>
+								<td>32</td>
+								<td>13</td>
+								<td>0</td>
+								<td class="tc">2371</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>5,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Alsóbesnyő</th>
+								<td>7</td>
+								<td>3</td>
+								<td>0</td>
+								<td class="tc">2371</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>0,1</td>
+							</tr>
+							<tr>
+								<th class="ind">Antaltanya</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2370</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>2,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Bednáriktanya</th>
+								<td>2</td>
+								<td>1</td>
+								<td>0</td>
+								<td class="tc">2370</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>7,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Belsőmántelek</th>
+								<td>40</td>
+								<td>15</td>
+								<td>0</td>
+								<td class="tc">2371</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>9,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Betonút</th>
+								<td>60</td>
+								<td>25</td>
+								<td>0</td>
+								<td class="tc">2373</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>0,1</td>
+							</tr>
+							<tr>
+								<th class="ind">Cibakpuszta</th>
+								<td>4</td>
+								<td>4</td>
+								<td>0</td>
+								<td class="tc">2371</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>3,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Csaptanya</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2370</td>
+								<td class="tc"><span class="footer-idx" title="mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák">Mgl.</span></td>
+								<td>2,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Hadnagytanya</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2370</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>0,5</td>
+							</tr>
+							<tr>
+								<th class="ind">Homok utca</th>
+								<td>6</td>
+								<td>6</td>
+								<td>0</td>
+								<td class="tc">2373</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>1,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Kenderföld</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2373</td>
+								<td class="tc"><span class="footer-idx" title="külterület összeírt lakóegység és népesség nélkül">Kt.</span></td>
+								<td>1,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Konzervgyáridűlő</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2373</td>
+								<td class="tc"><span class="footer-idx" title="külterület összeírt lakóegység és népesség nélkül">Kt.</span></td>
+								<td>1,5</td>
+							</tr>
+							<tr>
+								<th class="ind">Légrádi út</th>
+								<td>14</td>
+								<td>9</td>
+								<td>0</td>
+								<td class="tc">2373</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>1,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Merczeltanya</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2370</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>7,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Örkényi út</th>
+								<td>41</td>
+								<td>15</td>
+								<td>0</td>
+								<td class="tc">2373</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>5,8</td>
+							</tr>
+							<tr>
+								<th class="ind">Presenszkitanya</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2370</td>
+								<td class="tc"><span class="footer-idx" title="külterület összeírt lakóegység és népesség nélkül">Kt.</span></td>
+								<td>0,2</td>
+							</tr>
+							<tr>
+								<th class="ind">Sáriszőlők</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2371</td>
+								<td class="tc"><span class="footer-idx" title="külterület összeírt lakóegység és népesség nélkül">Kt.</span></td>
+								<td>1,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Segesvári út</th>
+								<td>133</td>
+								<td>50</td>
+								<td>0</td>
+								<td class="tc">2373</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>5,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Szabadság út</th>
+								<td>8</td>
+								<td>3</td>
+								<td>0</td>
+								<td class="tc">2370</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>0,3</td>
+							</tr>
+							<tr>
+								<th class="ind">Szívóstanya</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2370</td>
+								<td class="tc"><span class="footer-idx" title="külterület összeírt lakóegység és népesség nélkül">Kt.</span></td>
+								<td>3,5</td>
+							</tr>
+							<tr>
+								<th class="ind">Vasúti őrház</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2373</td>
+								<td class="tc"><span class="footer-idx" title="külterület összeírt lakóegység és népesség nélkül">Kt.</span></td>
+								<td>2,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Zlinszkytanya</th>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td>&ndash;</td>
+								<td class="tc">2370</td>
+								<td class="tc"><span class="footer-idx" title="üzemi (ipari üzemi) szolgálati vagy készenléti lakás">Üszl.</span></td>
+								<td>0,4</td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="comments">
+
+							<tr>
+								<th>Kt. =</th>
+								<td>külterület összeírt lakóegység és népesség nélkül</td>
+							</tr>
+							<tr>
+								<th>Lh. =</th>
+								<td>gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely</td>
+							</tr>
+							<tr>
+								<th>Mgl. =</th>
+								<td>mezőgazdasági jellegű (készenléti, szolgálati) lakótelep, illetve lakóhely, mezőgazdasági jellegű tanyák</td>
+							</tr>
+							<tr>
+								<th>Üszl. =</th>
+								<td>üzemi (ipari üzemi) szolgálati vagy készenléti lakás</td>
+							</tr>
+						</table>
+					</div>
+					<div id="data-hist">
+						<h2>Területszervezési változások</h2>
+						<table>
+							<caption>Helységek egyesítése</caption>
+							<thead>
+								<tr>
+									<th width="15%">A hatálybalépés időpontja</th>
+									<th width="85%">Az egyesítésben érintett helységek neve</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1950</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=09247">Dabas</a><span class="idx" title="1966-ban Gyón és Sári községekkel egyesült Dabas néven.">1</span> = <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=50270">Alsódabas</a> + <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=52068">Felsődabas</a> </td>
+								</tr>
+								<tr>
+									<th>1966</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=09247">Dabas</a> = <a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=09247">Dabas</a><span class="idx" title="1950-ben Alsódabas és Felsődabas egyesítéséből keletkezett.">2</span> + <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=51282">Gyón</a> + <a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=51281">Sári</a> </td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<caption>Községgé alakítás</caption>
+							<thead>
+								<tr>
+									<th width="15%" rowspan="3">A hatálybalépés időpontja</th>
+									<th width="20%" rowspan="3">A megalakult község neve</th>
+									<th colspan="2">Az anyaközség(ek), város(ok)</th>
+								</tr>
+								<tr>
+									<th width="20%">neve,</th>
+									<th width="45%">településrészeinek megnevezése,</th>
+								</tr>
+								<tr>
+									<th colspan="2">amely(ek)ből a község alakult</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1950</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=09973">Délegyháza</a></td>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32027">Bugyi</a></td>
+									<td>Alsódélegyháza</td>
+								</tr>								<tr>
+									<th>&nbsp;</th>
+									<td>&nbsp;</td>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=09247">Dabas</a><span class="idx" title="1950-ben Alsódabas és Felsődabas községek egyesítéséből keletkezett. Felsődélegyháza lakotthely Alsódabas községhez tartozott.">3</span></td>
+									<td>Felsődélegyháza</td>
+								</tr>								<tr>
+									<th>&nbsp;</th>
+									<td>&nbsp;</td>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=10816">Kiskunlacháza</a></td>
+									<td>Gallahegy</td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<caption>Várossá nyilvánítás</caption>
+							<thead>
+								<tr>
+									<th width="15%">A hatálybalépés időpontja</th>
+									<th width="40%">A város neve</th>
+									<th width="45%">A község(ek) neve, amely(ek)ből a várossá nyilvánítás történt</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1989. 03. 01.</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=09247">Dabas</a></td>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=09247">Dabas</a><span class="idx" title="1950-ben Alsódabas és Felsődabas községek egyesítéséből keletkezett, 1966-ban hozzácsatolták Gyón és Sári községeket.">4</span></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="comments">
+
+							<tr>
+								<th>1 =</th>
+								<td>1966-ban Gyón és Sári községekkel egyesült Dabas néven.</td>
+							</tr>
+							<tr>
+								<th>2 =</th>
+								<td>1950-ben Alsódabas és Felsődabas egyesítéséből keletkezett.</td>
+							</tr>
+							<tr>
+								<th>3 =</th>
+								<td>1950-ben Alsódabas és Felsődabas községek egyesítéséből keletkezett. Felsődélegyháza lakotthely Alsódabas községhez tartozott.</td>
+							</tr>
+							<tr>
+								<th>4 =</th>
+								<td>1950-ben Alsódabas és Felsődabas községek egyesítéséből keletkezett, 1966-ban hozzácsatolták Gyón és Sári községeket.</td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="page-foot">
+			<div class="content">
+				<a href="https://www.ksh.hu/"><img id="ksh_logo" src="/images/helysegnevtar/logos/ksh_logo.png" width="97" height="40" alt="Központi Statisztikai Hivatal" /></a>
+				&copy; Központi Statisztikai Hivatal, 1873&ndash;2025
+				<a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=KONYVEK"><img id="hnt1873" src="/images/helysegnevtar/hnt_konyvek/hnt_1873_tn.jpg" width="28" height="40" alt="A Magyar Korona Országainak Helységnévtára, 1873" /><i></i></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

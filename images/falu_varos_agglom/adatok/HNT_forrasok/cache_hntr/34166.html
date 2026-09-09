@@ -1,0 +1,570 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
+<head>
+	<title>Magyarország helységnévtára</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+	<link rel="stylesheet" type="text/css" media="all" href="/css/redmond/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/js/colorbox/colorbox.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/helysegnevtar2022.css" />
+	<!--[if IE 6]><link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/ie6.css" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" media="all" href="/css/helysegnevtar/ie7.css" /><![endif]-->
+
+	<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.10.3.autocomplete.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.autocomplete-html.js"></script>
+	<script type="text/javascript" src="/js/jquery.jlabel-1.3.custom.min.js"></script>
+	<script type="text/javascript" src="/js/colorbox/jquery.colorbox.min.js"></script>
+	<script type="text/javascript" src="/js/highcharts-3.0.1.js"></script>
+	<script type="text/javascript" src="/js/highcharts.hu.min.js"></script>
+
+	<script type="text/javascript" src="/js/helysegnevtar/helysegnevtar.min.js"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="page-head">
+			<div class="content">
+				<ul id="menu">
+					<li><a href="/apps/hntr.main?p_lang=HU">Kezdőlap</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=TAJEKOZTATO">Tájékoztató</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=FOGALMAK">Fogalmak, módszertan</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=FUGGELEK">Függelék</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=HELYNEVKONYV">Helynévkönyv</a></li>
+					<li><a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=LETOLTES">Letöltés</a></li>
+				</ul>
+				<div id="lang">
+					<a class="en" href="/apps/hntr.main?p_lang=EN">English</a>
+				</div>
+			</div>
+		</div>
+		<div id="page-searchbar">
+			<div class="content">
+				<form method="post" action="/apps/hntr.kereses">
+					<input type="hidden" name="p_lang" value="HU" />
+					<a href="/apps/hntr.main?p_lang=HU" id="hnt-logo"></a>
+					<div id="search">
+						<input type="text"   id="p_szo"  name="p_szo" title="településnév, településrésznév, irányítószám, körzetszám vagy KSH-kód" />
+						<input type="submit" id="submit" value="Keresés" />
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="page-body">
+			<div class="content">
+				<div id="pagenav">
+					<ul>
+						<li id="nav-info"><a href="#data-info"><i></i><span>Alapadatok</span></a></li>
+						<li id="nav-cens"><a href="#data-cens"><i></i><span>Népesség, lakásállomány, terület</span></a></li>
+						<li id="nav-ethn"><a href="#data-ethn"><i></i><span>Nemzetiségi és vallási megoszlás</span></a></li>
+						<li id="nav-dist"><a href="#data-dist"><i></i><span>Városrészek, településrészek</span></a></li>
+						<li id="nav-hist"><a href="#data-hist"><i></i><span>Területszervezési változások</span></a></li>
+					</ul>
+				</div>
+				<div class="jump-to-top-button hidden" title="Ugrás az oldal tetejére"></div>
+
+				<div id="page-body-data">
+					<h1>Kerepes</h1>
+
+
+
+					<div id="data-info">
+						<h2>Alapadatok</h2>
+
+						<div id="data-base">
+							<table>
+								<tbody>
+								<tr><th width="220">Nemzetiségi név:</th><td>&ndash;</td></tr>
+								<tr><th>KSH-kód:</th><td>34166</td></tr>
+								<tr><th>Jogállás:</th><td>Város</td></tr>
+								<tr><th>Régió:</th><td>Pest</td></tr>
+								<tr><th>Vármegye:</th><td>Pest</td></tr>
+								<tr><th>Járás neve (kódja):</th><td>Gödöllői (128)</td></tr>
+								<tr><th>Járás székhelye:</th><td>Gödöllő</td></tr>
+								<tr><th>Közös önkormányzati hivatali kód:</th><td><span title="önálló polgármesteri hivatalt fenntartó önkormányzat">1</span></td></tr>
+								<tr><th>Közös önkormányzati hivatal székhelye:</th><td>&ndash;</td></tr>
+								<tr><th>Nemzetiségi önkormányzat:</th><td>német, szlovák</td></tr>
+								<tr><th>Távhívó körzetszám:</th><td>28</td></tr>
+								<tr><th>Vasútállomás:</th><td>Kerepes HÉV (2,0&nbsp;km)</td></tr>
+								</tbody>
+							</table>
+							
+							<table class="comments">
+								<tr><th>1 =</th><td>önálló polgármesteri hivatalt fenntartó önkormányzat</td></tr>
+							</table>
+						</div>
+
+						<div id="data-maps">
+							<div id="data-maps-sett">
+								<div>
+									<img src="/images/helysegnevtar/mo_alap.png" width="420" height="262" alt="" />
+									<img src="/images/helysegnevtar/mo_pont.png" width="8" height="8" style="left: 198px; top: 95px; margin-left: -4px; margin-top: -4px;" alt="" />
+								</div>
+
+								<p>
+									<a id="maps-osm"    title="Megtekintés az OpenStreetMap térképen" href="http://www.openstreetmap.hu/terkep/Kerepes" target="_blank"></a>
+									<a id="maps-google" title="Megtekintés a Google Térképen" href="http://www.google.com/maps?q=Kerepes,+Magyarorsz%C3%A1g" target="_blank"></a>
+									<a id="maps-bing"   title="Megtekintés a Bing Maps-en" href="http://www.bing.com/maps/?v=2&amp;where1=Kerepes,+Magyarorsz%C3%A1g&amp;sty=r" target="_blank"></a>
+								</p>
+							</div>
+							<div id="data-maps-dist">
+								<a href="#" class="data-maps-close"></a>
+								<h3>Gödöllői járás (128)</h3>
+								<img src="/images/helysegnevtar/maps/dist_128.png" width="420" height="262" alt="" />
+								<p>Települések: 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=22804">Csömör</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=18397">Dány</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=13480">Erdőkertes</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=32559">Gödöllő</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=07807">Isaszeg</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=34166">Kerepes</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=34157">Kistarcsa</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=17783">Mogyoród</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=23409">Nagytarcsa</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=04057">Pécel</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=21458">Szada</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=09104">Vácszentlászló</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=17598">Valkó</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=18342">Veresegyház</a>, 
+<a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=22035">Zsámbok</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div id="data-cens">
+						<h2>Népesség, lakásállomány, terület</h2>
+						<table>
+						<thead>
+							<tr>
+								<th width="40%">Időpont</th>
+								<th width="20%">Lakónépesség <i title="Kerepes lakónépességének alakulása [fő]"></i></th>
+								<th width="20%">Lakások száma <i title="Kerepes lakásai számának alakulása [darab]"></i></th>
+								<th width="20%">Területnagyság (hektár) <i title="Kerepes területnagyságának alakulása [hektár]"></i></th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<th>2025. 01. 01.</th>
+								<td>11 175</td>
+								<td>4 216</td>
+								<td>2 425</td>
+							</tr>
+							<tr>
+								<th>2024. 01. 01.</th>
+								<td>11 136</td>
+								<td>4 140</td>
+								<td>2 425</td>
+							</tr>
+							<tr>
+								<th>2023. 01. 01.</th>
+								<td>11 066</td>
+								<td>4 086</td>
+								<td>2 425</td>
+							</tr>
+							<tr>
+								<th>2022. 10. 01. (a népszámlálás időpontjában)</th>
+								<td>10 962</td>
+								<td>4 080</td>
+								<td>2 425</td>
+							</tr>
+							<tr>
+								<th>2021. 01. 01.</th>
+								<td>10 501</td>
+								<td>3 871</td>
+								<td>2 425</td>
+							</tr>
+							<tr>
+								<th>2020. 01. 01.</th>
+								<td>10 428</td>
+								<td>3 800</td>
+								<td>2 425</td>
+							</tr>
+							<tr>
+								<th>2019. 01. 01.</th>
+								<td>10 300</td>
+								<td>3 774</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2018. 01. 01.</th>
+								<td>10 152</td>
+								<td>3 761</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2017. 01. 01.</th>
+								<td>10 063</td>
+								<td>3 745</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2016. 01. 01.</th>
+								<td>9 989</td>
+								<td>3 748</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2015. 01. 01.</th>
+								<td>9 941</td>
+								<td>3 743</td>
+								<td>2 407</td>
+							</tr>
+							<tr>
+								<th>2014. 01. 01.</th>
+								<td>9 920</td>
+								<td>3 738</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2013. 01. 01.</th>
+								<td>9 957</td>
+								<td>3 736</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2012. 01. 01.</th>
+								<td>9 914</td>
+								<td>3 710</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2011. 10. 01. (a népszámlálás időpontjában)</th>
+								<td>9 814</td>
+								<td>3 704</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2010. 01. 01.</th>
+								<td>9 975</td>
+								<td>3 332</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2009. 01. 01.</th>
+								<td>9 960</td>
+								<td>3 304</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2008. 01. 01.</th>
+								<td>9 903</td>
+								<td>3 280</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2007. 01. 01.</th>
+								<td>9 682</td>
+								<td>3 275</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2006. 01. 01.</th>
+								<td>9 416</td>
+								<td>3 239</td>
+								<td>2 408</td>
+							</tr>
+							<tr>
+								<th>2005. 01. 01.</th>
+								<td>9 247</td>
+								<td>3 145</td>
+								<td>2 407</td>
+							</tr>
+							<tr>
+								<th>2004. 01. 01.</th>
+								<td>9 069</td>
+								<td>3 019</td>
+								<td>2 407</td>
+							</tr>
+							<tr>
+								<th>2003. 01. 01.</th>
+								<td>8 781</td>
+								<td>2 923</td>
+								<td>2 407</td>
+							</tr>
+							<tr>
+								<th>2002. 01. 01.</th>
+								<td>8 455</td>
+								<td>2 827</td>
+								<td>2 407</td>
+							</tr>
+							<tr>
+								<th>2001. 02. 01. (a népszámlálás időpontjában)</th>
+								<td>8 220</td>
+								<td>2 785</td>
+								<td>2 407</td>
+							</tr>
+							<tr>
+								<th>2000. 01. 01.</th>
+								<td>7 629</td>
+								<td>2 619</td>
+								<td>2 407</td>
+							</tr>
+							<tr>
+								<th>1999. 01. 01.</th>
+								<td>7 484</td>
+								<td>2 609</td>
+								<td>2 497</td>
+							</tr>
+							<tr>
+								<th>1998. 01. 01.</th>
+								<td>7 369</td>
+								<td>2 585</td>
+								<td>2 578</td>
+							</tr>
+							<tr>
+								<th>1997. 01. 01.</th>
+								<td>7 191</td>
+								<td>2 545</td>
+								<td>2 438</td>
+							</tr>
+							<tr>
+								<th>1996. 01. 01.</th>
+								<td>7 013</td>
+								<td>2 506</td>
+								<td>2 438</td>
+							</tr>
+							<tr>
+								<th>1995. 01. 01.</th>
+								<td>6 878</td>
+								<td>2 474</td>
+								<td>2 438</td>
+							</tr>
+						</tbody>
+						</table>
+
+					</div>
+
+					<div id="data-ethn">
+						<h2>Nemzetiségi és vallási megoszlás</h2>
+						<table>
+							<thead>
+								<tr><th colspan="3">A helység lakóinak nemzetiségi kötődése 2022-ben <i></i></th></tr>
+							</thead>
+							<tbody>
+
+<tr><th>magyar</th><td>87,3%</td><td class="ethn-bar"><b style="width:87.3%"></b></td></tr>
+<tr><th>német</th><td>3,6%</td><td class="ethn-bar"><b style="width:3.6%"></b></td></tr>
+<tr><th>cigány (roma)</th><td>1,1%</td><td class="ethn-bar"><b style="width:1.1%"></b></td></tr>
+<tr><th>szlovák</th><td>0,6%</td><td class="ethn-bar"><b style="width:0.6%"></b></td></tr>
+<tr><th>román</th><td>0,4%</td><td class="ethn-bar"><b style="width:0.4%"></b></td></tr>
+<tr><th>ukrán</th><td>0,2%</td><td class="ethn-bar"><b style="width:0.2%"></b></td></tr>
+<tr><th>szerb</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>lengyel</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>horvát</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>örmény</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>bolgár</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>görög</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>ruszin</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>szlovén</th><td>0,0%</td><td class="ethn-bar"><b style="width:0.0%"></b></td></tr>
+<tr><th>egyéb, nem hazai nemzetiség</th><td>3,9%</td><td class="ethn-bar"><b style="width:3.9%"></b></td></tr>
+<tr><th>nem kívánt válaszolni, nincs válasz</th><td>12,5%</td><td class="ethn-bar"><b style="width:12.5%"></b></td></tr>
+							</tbody>
+						</table>
+						<table id="data-religion">
+							<thead>
+								<tr><th colspan="3">A helység lakóinak vallási összetétele 2022-ben <i></i></th></tr>
+							</thead>
+							<tbody>
+
+<tr><th>római katolikus</th><td>24,6%</td><td class="ethn-bar"><b style="width:24.6%"></b></td></tr>
+<tr><th>református</th><td>8,3%</td><td class="ethn-bar"><b style="width:8.3%"></b></td></tr>
+<tr><th>egyéb keresztény felekezethez tartozó</th><td>2,6%</td><td class="ethn-bar"><b style="width:2.6%"></b></td></tr>
+<tr><th>evangélikus</th><td>1,4%</td><td class="ethn-bar"><b style="width:1.4%"></b></td></tr>
+<tr><th>görög katolikus</th><td>1,3%</td><td class="ethn-bar"><b style="width:1.3%"></b></td></tr>
+<tr><th>egyéb katolikus</th><td>0,7%</td><td class="ethn-bar"><b style="width:0.7%"></b></td></tr>
+<tr><th>izraelita</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>ortodox keresztény</th><td>0,1%</td><td class="ethn-bar"><b style="width:0.1%"></b></td></tr>
+<tr><th>egyéb vallási közösséghez, felekezethez tartozik</th><td>0,3%</td><td class="ethn-bar"><b style="width:0.3%"></b></td></tr>
+<tr><th>vallási közösséghez, felekezethez nem tartozik</th><td>17,1%</td><td class="ethn-bar"><b style="width:17.1%"></b></td></tr>
+<tr><th>nem kívánt válaszolni, nincs válasz</th><td>43,5%</td><td class="ethn-bar"><b style="width:43.5%"></b></td></tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="data-dist">
+						<h2>Városrészek, településrészek</h2>
+						<table>
+							<thead>
+							<tr>
+								<th width="28%" rowspan="2">A helység városrészei, a helységhez tartozó településrészek jellege és megnevezése</th>
+
+								<th width="14%">A népszámlálási lakónépesség</th>
+								<th width="14%">A lakások</th>
+								<th width="14%">A lakott egyéb lakóegységek</th>
+
+								<th width="10%" rowspan="2">Postai irányítószám</th>
+								<th width="10%" rowspan="2">A külterület települési jellege</th>
+								<th width="10%" rowspan="2">A településrész távolsága a központi belterület centrumától (km)</th>
+							</tr>
+							<tr>
+								<th colspan="3">száma 2022. október 1-jén, a 2025. január 1-jei közigazgatási állapot szerint</th>
+							</tr>
+							</thead>
+							<tbody>
+
+							<tr>
+								<th>Központi belterület</th>
+								<td>10 918</td>
+								<td>3 996</td>
+								<td>3</td>
+								<td class="tc">2144</td>
+								<td class="tc">&ndash;</td>
+								<td>&ndash;</td>
+							</tr>
+
+							<tr>
+
+								<th>Külterület</th>
+								<td colspan="7"></td>
+							</tr>
+
+							<tr>
+								<th class="ind">Barbertanya</th>
+								<td>4</td>
+								<td>1</td>
+								<td>0</td>
+								<td class="tc">2144</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>4,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Községszéli település</th>
+								<td>207</td>
+								<td>57</td>
+								<td>1</td>
+								<td class="tc">2144</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>2,0</td>
+							</tr>
+							<tr>
+								<th class="ind">Szőlő sor</th>
+								<td>71</td>
+								<td>21</td>
+								<td>0</td>
+								<td class="tc">2144</td>
+								<td class="tc"><span class="footer-idx" title="gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely">Lh.</span></td>
+								<td>0,5</td>
+							</tr>
+							<tr>
+								<th class="ind">Tsz-tanya</th>
+								<td>21</td>
+								<td>5</td>
+								<td>0</td>
+								<td class="tc">2144</td>
+								<td class="tc"><span class="footer-idx" title="üzemi (ipari üzemi) szolgálati vagy készenléti lakás">Üszl.</span></td>
+								<td>2,0</td>
+							</tr>
+							</tbody>
+						</table>
+						<table class="comments">
+
+							<tr>
+								<th>Lh. =</th>
+								<td>gazdasági tevékenységhez, vagy egyéb funkcióhoz nem köthető lakóhely</td>
+							</tr>
+							<tr>
+								<th>Üszl. =</th>
+								<td>üzemi (ipari üzemi) szolgálati vagy készenléti lakás</td>
+							</tr>
+						</table>
+					</div>
+					<div id="data-hist">
+						<h2>Területszervezési változások</h2>
+						<table>
+							<caption>Helységek egyesítése</caption>
+							<thead>
+								<tr>
+									<th width="15%">A hatálybalépés időpontja</th>
+									<th width="85%">Az egyesítésben érintett helységek neve</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1978. 12. 31.</th>
+									<td><a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=51065">Kerepestarcsa</a><span class="idx" title="Kerepestarcsa községnév 1994-ben megszűnt, mivel a község területéből Kerepes és Kistarcsa néven ismét két önálló község alakult.">1</span> = <a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=34166">Kerepes</a><span class="idx" title="1994-ben e néven ismét önálló községgé alakult .">2</span> + <a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=34157">Kistarcsa</a><span class="idx" title="1994-ben e néven ismét önálló községgé alakult .">2</span> </td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<caption>Községgé alakítás</caption>
+							<thead>
+								<tr>
+									<th width="15%" rowspan="3">A hatálybalépés időpontja</th>
+									<th width="20%" rowspan="3">A megalakult község neve</th>
+									<th colspan="2">Az anyaközség(ek), város(ok)</th>
+								</tr>
+								<tr>
+									<th width="20%">neve,</th>
+									<th width="45%">településrészeinek megnevezése,</th>
+								</tr>
+								<tr>
+									<th colspan="2">amely(ek)ből a község alakult</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>1994. 12. 11.</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=34166">Kerepes</a><span class="idx" title="1978-ig önálló község volt; 1978 és 1994 között egyesítve volt Kistarcsa községgel Kerepestarcsa néven; 1994-ben ismét önálló községgé alakult.">3</span></td>
+									<td><a href="/apps/hntr.tortenet?p_lang=HU&amp;p_id=51065">Kerepestarcsa</a><span class="idx" title="Kerepestarcsa községnév 1994-ben megszűnt, mivel a község területéből Kerepes és Kistarcsa néven ismét két önálló község alakult.">1</span></td>
+									<td>Barbertanya (Teréziamajor egy része), központi belterület egy része, Községszéli település, Szőlősor, Tsz-tanya</td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<caption>Várossá nyilvánítás</caption>
+							<thead>
+								<tr>
+									<th width="15%">A hatálybalépés időpontja</th>
+									<th width="40%">A város neve</th>
+									<th width="45%">A község(ek) neve, amely(ek)ből a várossá nyilvánítás történt</th>
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<th>2013. 07. 15.</th>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=34166">Kerepes</a></td>
+									<td><a href="/apps/hntr.telepules?p_lang=HU&amp;p_id=34166">Kerepes</a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="comments">
+
+							<tr>
+								<th>1 =</th>
+								<td>Kerepestarcsa községnév 1994-ben megszűnt, mivel a község területéből Kerepes és Kistarcsa néven ismét két önálló község alakult.</td>
+							</tr>
+							<tr>
+								<th>2 =</th>
+								<td>1994-ben e néven ismét önálló községgé alakult .</td>
+							</tr>
+							<tr>
+								<th>3 =</th>
+								<td>1978-ig önálló község volt; 1978 és 1994 között egyesítve volt Kistarcsa községgel Kerepestarcsa néven; 1994-ben ismét önálló községgé alakult.</td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="page-foot">
+			<div class="content">
+				<a href="https://www.ksh.hu/"><img id="ksh_logo" src="/images/helysegnevtar/logos/ksh_logo.png" width="97" height="40" alt="Központi Statisztikai Hivatal" /></a>
+				&copy; Központi Statisztikai Hivatal, 1873&ndash;2025
+				<a href="/apps/hntr.egyeb?p_lang=HU&amp;p_sablon=KONYVEK"><img id="hnt1873" src="/images/helysegnevtar/hnt_konyvek/hnt_1873_tn.jpg" width="28" height="40" alt="A Magyar Korona Országainak Helységnévtára, 1873" /><i></i></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
