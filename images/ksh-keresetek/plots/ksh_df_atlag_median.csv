@@ -158,3 +158,13 @@ date,measure,tax,scope,netto_koncepcio,value,period,incl_kozfoglalk,metric
 2026-05-01,median,Bruttó,nemzetgazdasag,NA,615600,monthly,TRUE,Medián
 2026-05-01,median,Nettó,nemzetgazdasag,NA,436200,monthly,TRUE,Medián
 2026-05-01,rendsz,Bruttó,nemzetgazdasag,NA,718200,monthly,TRUE,Átlag (rendszeres)
+2026-06-01,atlag,Bruttó,nemzetgazdasag,NA,754700,monthly,TRUE,Átlag (teljes)
+2026-06-01,atlag,Nettó,nemzetgazdasag,NA,529700,monthly,TRUE,Átlag (kedvezménnyel)
+2026-06-01,median,Bruttó,nemzetgazdasag,NA,617900,monthly,TRUE,Medián
+2026-06-01,median,Nettó,nemzetgazdasag,NA,438000,monthly,TRUE,Medián
+2026-06-01,rendsz,Bruttó,nemzetgazdasag,NA,708600,monthly,TRUE,Átlag (rendszeres)
+2026-07-01,atlag,Bruttó,nemzetgazdasag,NA,745500,monthly,TRUE,Átlag (teljes)
+2026-07-01,atlag,Nettó,nemzetgazdasag,NA,523300,monthly,TRUE,Átlag (kedvezménnyel)
+2026-07-01,median,Bruttó,nemzetgazdasag,NA,618200,monthly,TRUE,Medián
+2026-07-01,median,Nettó,nemzetgazdasag,NA,437900,monthly,TRUE,Medián
+2026-07-01,rendsz,Bruttó,nemzetgazdasag,NA,706900,monthly,TRUE,Átlag (rendszeres)

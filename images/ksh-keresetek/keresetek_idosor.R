@@ -5,12 +5,16 @@
 # 1) download the html like https://www.ksh.hu/gyorstajekoztatok/ker/ker2605.html
 # [or run: 
 # source ~/ksh-venv/bin/activate
-# python3 -c "from ksh_keresetek import download; download()"
+# python3 -c "from ksh_parse import download; download()"
 # ]
-# 2) python3 ksh_keresetek.py
+# 2) python3 ksh_parse.py
 
 rm(list=ls())
-lapply(c("tidyverse","ggplot2","scales","plotly","htmlwidgets"), \(x) library(x, character.only=T) )
+
+lapply(c("tidyverse","scales","plotly","htmlwidgets","ggplot2"), 
+  \(x) library(x, character.only=T) )
+source("functions.R")
+
 # library(stringr)
 standard_theme <- theme(plot.title=element_text(hjust=0.5,size=20),
                         axis.text.x=element_text(size=14),
@@ -404,6 +408,7 @@ pA
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # create plotly
 
+
 pA_ply <- local({
   p <- pA +
     # explicit group: the per-row `text` string otherwise shatters the lines
@@ -452,6 +457,7 @@ pA_ply
 
 # SAVE
 saveWidget(pA_ply, "plots/nemzetgazd_kateg.html", selfcontained=T)
+
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
@@ -517,7 +523,7 @@ pB <- local({
   
   df_B <- df_B |> mutate(agazat = factor(agazat, levels = ord))
 
-  ggplot(df_B, aes(date, value/1e3, colour = sorozat, group = sorozat)) +
+  pB <- ggplot(df_B, aes(date, value/1e3, colour = sorozat, group = sorozat)) +
     geom_line(linewidth = 0.5) +
     geom_point(size = 0.9) +
     facet_wrap(~agazat, nrow = 3,
@@ -545,12 +551,14 @@ pB <- local({
   ggsave("plots/nemzetgazd_agak.png", width = 20, height = 10, dpi = 150) # plot = pB, 
   # CSV
   write_csv(df_B,file = "plots/nemzetgazd_agak.csv")
+  pB
 })
 pB
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 # PLOTLY
+
 pB_ply <- local({
   p <- pB +
     aes(text = paste0(format(date, "%Y. %m."), "<br>",
@@ -663,3 +671,9 @@ pB_ply <- local({
 pB_ply
 
 saveWidget(pB_ply, "plots/nemzetgazd_agak.html", selfcontained = TRUE)
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+# this was a false diagnosis, but i will keep it:
+# # we need older ggplot version, otherwise clash with plotly
+# .libPaths(c("~/r-ggplot35", .libPaths()))
+# library(ggplot2)

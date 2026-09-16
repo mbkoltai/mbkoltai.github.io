@@ -262,3 +262,25 @@ date,measure,tax,scope,netto_koncepcio,value,period,incl_kozfoglalk,sorozat
 2026-05-01,rendsz,brutto,Költségvetés,NA,715100,monthly,TRUE,Bruttó rendszeres átlag
 2026-05-01,rendsz,brutto,Nonprofit,NA,745700,monthly,TRUE,Bruttó rendszeres átlag
 2026-05-01,rendsz,brutto,Vállalkozás,NA,716100,monthly,TRUE,Bruttó rendszeres átlag
+2026-06-01,atlag,brutto,Költségvetés,NA,744700,monthly,TRUE,Bruttó teljes átlag
+2026-06-01,atlag,brutto,Nem közfoglalkoztatottak,NA,767300,monthly,FALSE,Bruttó teljes átlag
+2026-06-01,atlag,brutto,Nonprofit,NA,789500,monthly,TRUE,Bruttó teljes átlag
+2026-06-01,atlag,brutto,Vállalkozás,NA,753800,monthly,TRUE,Bruttó teljes átlag
+2026-06-01,atlag,netto,Költségvetés,NA,527200,monthly,TRUE,Nettó átlag
+2026-06-01,atlag,netto,Nem közfoglalkoztatottak,NA,538300,monthly,FALSE,Nettó átlag
+2026-06-01,atlag,netto,Nonprofit,NA,561600,monthly,TRUE,Nettó átlag
+2026-06-01,atlag,netto,Vállalkozás,NA,527000,monthly,TRUE,Nettó átlag
+2026-06-01,rendsz,brutto,Költségvetés,NA,717600,monthly,TRUE,Bruttó rendszeres átlag
+2026-06-01,rendsz,brutto,Nonprofit,NA,757600,monthly,TRUE,Bruttó rendszeres átlag
+2026-06-01,rendsz,brutto,Vállalkozás,NA,700800,monthly,TRUE,Bruttó rendszeres átlag
+2026-07-01,atlag,brutto,Költségvetés,NA,743000,monthly,TRUE,Bruttó teljes átlag
+2026-07-01,atlag,brutto,Nem közfoglalkoztatottak,NA,757700,monthly,FALSE,Bruttó teljes átlag
+2026-07-01,atlag,brutto,Nonprofit,NA,764200,monthly,TRUE,Bruttó teljes átlag
+2026-07-01,atlag,brutto,Vállalkozás,NA,744200,monthly,TRUE,Bruttó teljes átlag
+2026-07-01,atlag,netto,Költségvetés,NA,525700,monthly,TRUE,Nettó átlag
+2026-07-01,atlag,netto,Nem közfoglalkoztatottak,NA,531700,monthly,FALSE,Nettó átlag
+2026-07-01,atlag,netto,Nonprofit,NA,543400,monthly,TRUE,Nettó átlag
+2026-07-01,atlag,netto,Vállalkozás,NA,520500,monthly,TRUE,Nettó átlag
+2026-07-01,rendsz,brutto,Költségvetés,NA,721200,monthly,TRUE,Bruttó rendszeres átlag
+2026-07-01,rendsz,brutto,Nonprofit,NA,741700,monthly,TRUE,Bruttó rendszeres átlag
+2026-07-01,rendsz,brutto,Vállalkozás,NA,699000,monthly,TRUE,Bruttó rendszeres átlag

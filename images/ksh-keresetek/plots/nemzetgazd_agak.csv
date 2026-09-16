@@ -741,6 +741,46 @@ date,measure,tax,scope,netto_koncepcio,value,period,incl_kozfoglalk,agazat,soroz
 2026-05-01,atlag,brutto,tavkozles_es_it_szolgaltatas,NA,1251200,monthly,FALSE,Távközlés és IT-szolgáltatás,saját ág
 2026-05-01,atlag,brutto,tudomanyos_es_muszaki_tevekenyseg,NA,962800,monthly,FALSE,Tudományos és műszaki tevékenység,saját ág
 2026-05-01,atlag,brutto,viz_es_hulladekgazdalkodas,NA,776100,monthly,FALSE,Víz- és hulladékgazdálkodás,saját ág
+2026-06-01,atlag,brutto,adminisztrativ_szolgaltatas,NA,625800,monthly,FALSE,Adminisztratív szolgáltatás,saját ág
+2026-06-01,atlag,brutto,banyaszat,NA,886500,monthly,FALSE,Bányászat,saját ág
+2026-06-01,atlag,brutto,egeszsegugy_szocialis_ellatas,NA,815900,monthly,FALSE,"Egészségügy, szociális ellátás",saját ág
+2026-06-01,atlag,brutto,egyeb_szolgaltatas,NA,569600,monthly,FALSE,Egyéb szolgáltatás,saját ág
+2026-06-01,atlag,brutto,energiaipar,NA,1041900,monthly,FALSE,Energiaipar,saját ág
+2026-06-01,atlag,brutto,epitoipar,NA,613600,monthly,FALSE,Építőipar,saját ág
+2026-06-01,atlag,brutto,feldolgozoipar,NA,788500,monthly,FALSE,Feldolgozóipar,saját ág
+2026-06-01,atlag,brutto,ingatlanugyletek,NA,679200,monthly,FALSE,Ingatlanügyletek,saját ág
+2026-06-01,atlag,brutto,kereskedelem,NA,674200,monthly,FALSE,Kereskedelem,saját ág
+2026-06-01,atlag,brutto,kozigazgatas,NA,833700,monthly,FALSE,Közigazgatás,saját ág
+2026-06-01,atlag,brutto,mezogazdasag,NA,592900,monthly,FALSE,Mezőgazdaság,saját ág
+2026-06-01,atlag,brutto,muveszet_sport_szabadido,NA,740100,monthly,FALSE,"Művészet, sport, szabadidő",saját ág
+2026-06-01,atlag,brutto,oktatas,NA,811200,monthly,FALSE,Oktatás,saját ág
+2026-06-01,atlag,brutto,penzugyi_szolgaltatas,NA,1180900,monthly,FALSE,Pénzügyi szolgáltatás,saját ág
+2026-06-01,atlag,brutto,szallashely_szolgaltatas_vendeglatas,NA,482700,monthly,FALSE,"Szálláshely-szolgáltatás, vendéglátás",saját ág
+2026-06-01,atlag,brutto,szallitas_raktarozas,NA,689600,monthly,FALSE,"Szállítás, raktározás",saját ág
+2026-06-01,atlag,brutto,tartalomszolgaltatas,NA,942300,monthly,FALSE,Tartalomszolgáltatás,saját ág
+2026-06-01,atlag,brutto,tavkozles_es_it_szolgaltatas,NA,1204800,monthly,FALSE,Távközlés és IT-szolgáltatás,saját ág
+2026-06-01,atlag,brutto,tudomanyos_es_muszaki_tevekenyseg,NA,953300,monthly,FALSE,Tudományos és műszaki tevékenység,saját ág
+2026-06-01,atlag,brutto,viz_es_hulladekgazdalkodas,NA,743100,monthly,FALSE,Víz- és hulladékgazdálkodás,saját ág
+2026-07-01,atlag,brutto,adminisztrativ_szolgaltatas,NA,619900,monthly,FALSE,Adminisztratív szolgáltatás,saját ág
+2026-07-01,atlag,brutto,banyaszat,NA,914300,monthly,FALSE,Bányászat,saját ág
+2026-07-01,atlag,brutto,egeszsegugy_szocialis_ellatas,NA,805100,monthly,FALSE,"Egészségügy, szociális ellátás",saját ág
+2026-07-01,atlag,brutto,egyeb_szolgaltatas,NA,551600,monthly,FALSE,Egyéb szolgáltatás,saját ág
+2026-07-01,atlag,brutto,energiaipar,NA,1038200,monthly,FALSE,Energiaipar,saját ág
+2026-07-01,atlag,brutto,epitoipar,NA,601900,monthly,FALSE,Építőipar,saját ág
+2026-07-01,atlag,brutto,feldolgozoipar,NA,778300,monthly,FALSE,Feldolgozóipar,saját ág
+2026-07-01,atlag,brutto,ingatlanugyletek,NA,661000,monthly,FALSE,Ingatlanügyletek,saját ág
+2026-07-01,atlag,brutto,kereskedelem,NA,669200,monthly,FALSE,Kereskedelem,saját ág
+2026-07-01,atlag,brutto,kozigazgatas,NA,833700,monthly,FALSE,Közigazgatás,saját ág
+2026-07-01,atlag,brutto,mezogazdasag,NA,592400,monthly,FALSE,Mezőgazdaság,saját ág
+2026-07-01,atlag,brutto,muveszet_sport_szabadido,NA,693100,monthly,FALSE,"Művészet, sport, szabadidő",saját ág
+2026-07-01,atlag,brutto,oktatas,NA,802900,monthly,FALSE,Oktatás,saját ág
+2026-07-01,atlag,brutto,penzugyi_szolgaltatas,NA,1137700,monthly,FALSE,Pénzügyi szolgáltatás,saját ág
+2026-07-01,atlag,brutto,szallashely_szolgaltatas_vendeglatas,NA,478300,monthly,FALSE,"Szálláshely-szolgáltatás, vendéglátás",saját ág
+2026-07-01,atlag,brutto,szallitas_raktarozas,NA,694200,monthly,FALSE,"Szállítás, raktározás",saját ág
+2026-07-01,atlag,brutto,tartalomszolgaltatas,NA,932100,monthly,FALSE,Tartalomszolgáltatás,saját ág
+2026-07-01,atlag,brutto,tavkozles_es_it_szolgaltatas,NA,1199100,monthly,FALSE,Távközlés és IT-szolgáltatás,saját ág
+2026-07-01,atlag,brutto,tudomanyos_es_muszaki_tevekenyseg,NA,930600,monthly,FALSE,Tudományos és műszaki tevékenység,saját ág
+2026-07-01,atlag,brutto,viz_es_hulladekgazdalkodas,NA,720600,monthly,FALSE,Víz- és hulladékgazdálkodás,saját ág
 2023-01-01,atlag,brutto,informacio_kommunikacio,NA,867200,monthly,FALSE,Tartalomszolgáltatás,"Információ, kommunikáció (TEÁOR'08)"
 2023-01-01,atlag,brutto,informacio_kommunikacio,NA,867200,monthly,FALSE,Távközlés és IT-szolgáltatás,"Információ, kommunikáció (TEÁOR'08)"
 2023-02-01,atlag,brutto,informacio_kommunikacio,NA,907600,monthly,FALSE,Tartalomszolgáltatás,"Információ, kommunikáció (TEÁOR'08)"
