@@ -2,12 +2,10 @@
 # (date | type | value | period), produced by ksh_parse.py
 
 # steps to extract new data
-# 1) download the html like https://www.ksh.hu/gyorstajekoztatok/ker/ker2605.html
-# [or run: 
-# source ~/ksh-venv/bin/activate
-# python3 -c "from ksh_parse import download; download()"
-# ]
-# 2) python3 ksh_parse.py
+# 1) download the html by running
+# python3 ksh_download.py
+# 2) extract data by running 
+# python3 ksh_parse.py
 
 rm(list=ls())
 
